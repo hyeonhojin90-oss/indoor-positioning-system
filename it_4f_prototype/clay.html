@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT융합대학 4층 클레이 3D 지도</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./src/clay.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>IT융합대학 4층 클레이 지도</h1>
+          <p>LiDAR 스캔, 평면도, 현장 사진을 바탕으로 안내용 구조만 남긴 3D 모델</p>
+        </div>
+        <a class="link-button" href="./index.html">2D/PDR 보기</a>
+      </header>
+
+      <section class="workspace">
+        <div class="viewer-wrap">
+          <canvas id="clayCanvas" aria-label="IT융합대학 4층 클레이형 3D 지도"></canvas>
+        </div>
+
+        <aside class="panel">
+          <label>
+            목적지
+            <select id="targetSelect"></select>
+          </label>
+
+          <div class="button-row">
+            <button id="viewIso" type="button">입체 시점</button>
+            <button id="viewTop" type="button">위에서 보기</button>
+          </div>
+
+          <label class="check-row">
+            <input id="labelToggle" type="checkbox" checked />
+            강의실 번호 표시
+          </label>
+
+          <label class="check-row">
+            <input id="scanHintToggle" type="checkbox" checked />
+            스캔 참고 구역 표시
+          </label>
+
+          <div class="legend">
+            <div><span class="swatch corridor"></span>복도</div>
+            <div><span class="swatch room"></span>강의실</div>
+            <div><span class="swatch facility"></span>엘레베이터/계단</div>
+            <div><span class="swatch route"></span>경로</div>
+            <div><span class="swatch target"></span>목적지</div>
+          </div>
+
+          <div id="detail" class="detail"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="./src/clay4f.js"></script>
+  </body>
+</html>

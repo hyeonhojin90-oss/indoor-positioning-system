@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT융합대학 4층 PDR + 자기장 프로토타입</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>IT융합대학 4층 실내 위치 보정</h1>
+          <p>4층 엘레베이터 앞에서 출발해 PDR 이동값과 자기장 fingerprint 후보를 결합하는 알고리즘 초안.</p>
+        </div>
+        <div class="top-actions">
+          <a class="link-button" href="./clay.html">클레이 3D 보기</a>
+          <div class="badge">4F map graph v0.1</div>
+        </div>
+      </header>
+
+      <section class="layout">
+        <div class="map-card">
+          <div class="map-toolbar">
+            <label>
+              목적지
+              <select id="targetSelect"></select>
+            </label>
+            <button id="resetButton">시점/위치 초기화</button>
+            <label class="checkbox">
+              <input id="labelToggle" type="checkbox" checked />
+              전체 강의실 번호 보기
+            </label>
+          </div>
+          <div class="svg-wrap">
+            <svg id="mapSvg" viewBox="0 0 840 430" role="img" aria-label="IT융합대학 4층 단순 평면도"></svg>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <h2>알고리즘 테스트</h2>
+          <div class="control-grid">
+            <label>
+              걸음 수
+              <input id="stepsInput" type="number" min="0" value="10" />
+            </label>
+            <label>
+              방향
+              <select id="directionSelect">
+                <option value="left">엘레베이터에서 내려 왼쪽: 4218 → 4228</option>
+                <option value="right">엘레베이터에서 내려 오른쪽: 4213 → 4204</option>
+              </select>
+            </label>
+            <button id="moveButton" class="primary">PDR 이동 반영</button>
+          </div>
+
+          <div class="control-grid">
+            <label>
+              현재 자기장 Total
+              <input id="magInput" type="number" step="0.1" value="47" />
+            </label>
+            <label>
+              비교 방식
+              <input value="Total 기반 1차 비교" disabled />
+            </label>
+            <button id="magButton">자기장 보정 적용</button>
+          </div>
+
+          <div id="readout" class="readout"></div>
+          <pre id="eventLog"></pre>
+        </aside>
+      </section>
+
+      <section class="notes">
+        <h2>현재 모델 기준</h2>
+        <ul>
+          <li>4층은 메인 복도 하나에 강의실이 위/아래로 붙은 구조로 단순화했다.</li>
+          <li>안내 방향은 정문 기준이 아니라 엘레베이터에서 내린 사용자 기준으로 잡았다.</li>
+          <li>4218~4228 및 4120~4128은 엘레베이터에서 내려 왼쪽, 4213~4204는 엘레베이터에서 내려 오른쪽 구간으로 배치했다.</li>
+          <li>정문에서 건물을 봤을 때의 좌우와 엘레베이터에서 내린 뒤의 좌우가 반대로 느껴질 수 있어, 데이터에는 두 기준을 함께 기록했다.</li>
+          <li>자기장 기준점은 현재 4층 엘레베이터 앞 47 μT, 엘레베이터 내부 19 μT만 실측값이고 나머지는 임시값이다.</li>
+          <li>다음 단계에서는 4213, 4210, 4218, 4120 앞에서 X/Y/Z/Total 평균을 추가하면 된다.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

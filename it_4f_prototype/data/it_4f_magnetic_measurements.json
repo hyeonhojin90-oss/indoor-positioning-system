@@ -1,0 +1,58 @@
+{
+  "version": "4f-magnetic-v0.2",
+  "date": "2026-08-16",
+  "device_note": "사용자 스마트폰으로 Physics Toolbox Sensor Suite 자력계 측정. 메모값은 엘레베이터 앞에서 복도 방향으로 진입하는 자세 기준.",
+  "important_note": "폰 방향을 반대로 하면 Bx/By/Bz와 Btotal 일부가 달라질 수 있으므로, 1차 보정은 Btotal 중심으로 사용하고 PDR 진행 방향과 함께 판단한다.",
+  "manual_points": [
+    { "id": "4F_EV_FRONT", "label": "4층 엘레베이터 앞 평균", "total": 46, "note": "짝수층 방향 48, 홀수층 앞 44의 중간값" },
+    { "id": "4F_EV_FRONT_EVEN_SIDE", "label": "4층 엘레베이터 앞 짝수층 방향", "total": 48 },
+    { "id": "4F_EV_FRONT_ODD_SIDE", "label": "4층 엘레베이터 앞 홀수층 앞", "total": 44 },
+    { "id": "4F_4213_FRONT", "label": "4213 앞", "total": 41 },
+    { "id": "4F_4212_FRONT", "label": "4212 앞", "total": 44 },
+    { "id": "4F_4210_FRONT", "label": "4210 앞", "total": 49 },
+    { "id": "4F_4208_FRONT", "label": "4208 앞", "total": 42 },
+    { "id": "4F_4204_FRONT", "label": "4204 쪽 왼쪽 복도 끝", "total": 33 },
+    { "id": "4F_LEFT_STAIRS_FRONT", "label": "4층 좌측 계단 앞", "total": 48 },
+    { "id": "4F_LEFT_STAIRS_INSIDE", "label": "4층 좌측 계단 내부", "total": 62 },
+    { "id": "4F_4218_FRONT", "label": "4218 앞", "total": 45 },
+    { "id": "4F_4225_FRONT", "label": "4225 앞", "total": 30 },
+    { "id": "4F_4227_FRONT", "label": "4227 앞 또는 4227/4228 구간", "total": 37 },
+    { "id": "4F_4128_FRONT", "label": "4128 앞", "total": 42 }
+  ],
+  "csv_traces": [
+    {
+      "file": "magnetometer_2026-08-16_15-38-53.csv",
+      "description": "엘레베이터 앞에서 우측으로 걸어가면서 건물 좌측면 비상계단으로 이동",
+      "samples": 5484,
+      "duration_sec": 54.58,
+      "btotal_avg": 45.01,
+      "btotal_min": 30.66,
+      "btotal_max": 62.97,
+      "btotal_std": 7.56,
+      "chunks": [
+        { "index": 1, "avg": 44.64, "min": 33.45, "max": 52.48 },
+        { "index": 2, "avg": 49.75, "min": 36.96, "max": 62.97 },
+        { "index": 3, "avg": 43.14, "min": 38.13, "max": 46.46 },
+        { "index": 4, "avg": 37.36, "min": 30.66, "max": 46.09 },
+        { "index": 5, "avg": 50.13, "min": 31.01, "max": 62.53 }
+      ]
+    },
+    {
+      "file": "magnetometer_2026-08-16_15-40-04.csv",
+      "description": "반대로 건물 좌측면 비상계단 쪽에서 엘레베이터 앞까지 이동",
+      "samples": 5472,
+      "duration_sec": 54.46,
+      "btotal_avg": 48.15,
+      "btotal_min": 26.07,
+      "btotal_max": 76.32,
+      "btotal_std": 8.42,
+      "chunks": [
+        { "index": 1, "avg": 47.95, "min": 26.07, "max": 70.43 },
+        { "index": 2, "avg": 43.05, "min": 31.25, "max": 50.97 },
+        { "index": 3, "avg": 47.28, "min": 36.8, "max": 66.64 },
+        { "index": 4, "avg": 52.42, "min": 37.72, "max": 76.32 },
+        { "index": 5, "avg": 50.04, "min": 48.0, "max": 57.86 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "building": "조선대학교 IT융합대학",
+  "floor": 4,
+  "version": "4f-v0.3",
+  "units": "meter-like-map-coordinate",
+  "scale_note": "x축은 건물 긴 복도 방향을 단순화한 좌표이다. 실제 거리와 완전히 같지는 않고, PDR/자기장 보정 알고리즘 검증용이다.",
+  "origin_note": "4층 메인 복도 왼쪽 끝을 x=0, 메인 복도 중심선을 y=0으로 둔다.",
+  "orientation_model": {
+    "primary_navigation_frame": "elevator_exit",
+    "description": "사용자 안내는 정문 기준 좌우가 아니라 엘레베이터에서 내린 뒤 바라보는 방향을 기준으로 한다.",
+    "photo_1": "엘레베이터와 계단이 있는 4층 허브 구역이다. 엘레베이터 옆에 계단과 게시판/창가가 있다.",
+    "photo_2": "정문에서 건물을 봤을 때는 오른쪽 구역이지만, 4층 엘레베이터에서 내려 이동하려면 왼쪽으로 가는 복도이다.",
+    "photo_3": "정문에서 건물을 봤을 때는 왼쪽 구역이지만, 4층 엘레베이터에서 내려 이동하려면 오른쪽으로 가는 복도이다.",
+    "left_from_elevator": {
+      "building_front_zone": "left_wing_or_near_elevator_side",
+      "description": "엘레베이터에서 내려 왼쪽으로 이동하는 복도",
+      "room_zone": "4218~4228 및 4120~4128 방향"
+    },
+    "right_from_elevator": {
+      "building_front_zone": "right_wing_or_outer_4210_side",
+      "description": "엘레베이터에서 내려 오른쪽으로 이동하는 복도",
+      "room_zone": "4213~4204 방향"
+    }
+  },
+  "scan_references": [
+    {
+      "id": "it_4f_elevator_stairs",
+      "file": "../glb_viewer/assets/it_4f_elevator_stairs.glb",
+      "zone": "elevator_hub",
+      "description": "4층 엘레베이터와 일부 메인계단 구역"
+    },
+    {
+      "id": "it_4f_right_from_elevator_left_wing",
+      "file": "../glb_viewer/assets/it_4f_right_from_elevator_left_wing.glb",
+      "floorplan_image": "../glb_viewer/assets/it_4f_right_from_elevator_left_wing_floorplan.png",
+      "zone": "right_from_elevator_left_wing",
+      "description": "엘레베이터에서 내려 오른쪽으로 가는 긴 복도. 정문 기준 건물 왼쪽 구역.",
+      "bbox_size": [
+        8.526,
+        8.625,
+        58.391
+      ]
+    },
+    {
+      "id": "it_4f_left_from_elevator_right_wing",
+      "file": "../glb_viewer/assets/it_4f_left_from_elevator_right_wing.glb",
+      "floorplan_image": "../glb_viewer/assets/it_4f_left_from_elevator_right_wing_floorplan.png",
+      "zone": "left_from_elevator_right_wing",
+      "description": "엘레베이터에서 내려 왼쪽으로 가는 복도. 정문 기준 건물 오른쪽 구역. 3D는 엘레베이터 가까운 부분 위주로 참고하고 먼 구간은 평면도를 기준으로 보정한다.",
+      "bbox_size": [
+        62.506,
+        3.553,
+        36.204
+      ]
+    }
+  ],
+  "corridors": [
+    {
+      "id": "4F_MAIN_CORRIDOR",
+      "label": "4층 메인 복도",
+      "path": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 107,
+          "y": 0
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "id": "4F_LEFT_STAIRS",
+      "type": "stairs",
+      "label": "왼쪽 계단",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "4F_EV_FRONT",
+      "type": "elevator",
+      "label": "4층 엘레베이터 앞",
+      "x": 62,
+      "y": 0,
+      "mag_total_avg": 47,
+      "mag_total_std": 3,
+      "mag_source": "사용자 1차 측정값"
+    },
+    {
+      "id": "4F_CENTER_STAIRS",
+      "type": "stairs",
+      "label": "중앙 계단",
+      "x": 59,
+      "y": -7
+    },
+    {
+      "id": "4F_RIGHT_STAIRS",
+      "type": "stairs",
+      "label": "오른쪽 계단",
+      "x": 107,
+      "y": 0
+    }
+  ],
+  "rooms": [
+    {
+      "id": "4204",
+      "label": "4204",
+      "x": 111,
+      "y": 8,
+      "front_x": 111,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4205",
+      "label": "4205",
+      "x": 105,
+      "y": 8,
+      "front_x": 105,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4206",
+      "label": "4206",
+      "x": 99,
+      "y": 8,
+      "front_x": 99,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4207",
+      "label": "4207",
+      "x": 93,
+      "y": 8,
+      "front_x": 93,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4208",
+      "label": "4208",
+      "x": 87,
+      "y": 8,
+      "front_x": 87,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4209",
+      "label": "4209",
+      "x": 81,
+      "y": 8,
+      "front_x": 81,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4210",
+      "label": "4210",
+      "x": 75,
+      "y": 8,
+      "front_x": 75,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4211",
+      "label": "4211",
+      "x": 71,
+      "y": 8,
+      "front_x": 71,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4212",
+      "label": "4212",
+      "x": 67,
+      "y": 8,
+      "front_x": 67,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4213",
+      "label": "4213",
+      "x": 64,
+      "y": 8,
+      "front_x": 64,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4218",
+      "label": "4218",
+      "x": 52,
+      "y": 8,
+      "front_x": 52,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4222",
+      "label": "4222",
+      "x": 42,
+      "y": 8,
+      "front_x": 42,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4225",
+      "label": "4225",
+      "x": 30,
+      "y": 8,
+      "front_x": 30,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4228",
+      "label": "4228",
+      "x": 20,
+      "y": 8,
+      "front_x": 20,
+      "front_y": 0,
+      "side": "upper"
+    },
+    {
+      "id": "4120",
+      "label": "전자정보시스템 소프트웨어실험실 4120",
+      "x": 52,
+      "y": -8,
+      "front_x": 52,
+      "front_y": 0,
+      "side": "lower"
+    },
+    {
+      "id": "4122",
+      "label": "4122",
+      "x": 44,
+      "y": -8,
+      "front_x": 44,
+      "front_y": 0,
+      "side": "lower"
+    },
+    {
+      "id": "4123",
+      "label": "4123",
+      "x": 40,
+      "y": -8,
+      "front_x": 40,
+      "front_y": 0,
+      "side": "lower"
+    },
+    {
+      "id": "4124",
+      "label": "4124",
+      "x": 36,
+      "y": -8,
+      "front_x": 36,
+      "front_y": 0,
+      "side": "lower"
+    },
+    {
+      "id": "4125",
+      "label": "4125",
+      "x": 32,
+      "y": -8,
+      "front_x": 32,
+      "front_y": 0,
+      "side": "lower"
+    },
+    {
+      "id": "4126",
+      "label": "4126",
+      "x": 28,
+      "y": -8,
+      "front_x": 28,
+      "front_y": 0,
+      "side": "lower"
+    },
+    {
+      "id": "4127",
+      "label": "4127",
+      "x": 24,
+      "y": -8,
+      "front_x": 24,
+      "front_y": 0,
+      "side": "lower"
+    },
+    {
+      "id": "4128",
+      "label": "4128",
+      "x": 20,
+      "y": -8,
+      "front_x": 20,
+      "front_y": 0,
+      "side": "lower"
+    }
+  ],
+  "magnetic_fingerprints": [
+    {
+      "id": "4F_EV_FRONT",
+      "label": "4층 엘레베이터 앞 복도 평균",
+      "x": 62,
+      "y": 0,
+      "total_avg": 46,
+      "total_std": 3,
+      "note": "짝수층 방향 48 μT, 홀수층 앞 44 μT의 중간값. 엘레베이터 앞 기준점."
+    },
+    {
+      "id": "4F_EV_FRONT_EVEN_SIDE",
+      "label": "4층 엘레베이터 앞 짝수층 방향",
+      "x": 62,
+      "y": 0,
+      "total_avg": 48,
+      "total_std": 3,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_EV_FRONT_ODD_SIDE",
+      "label": "4층 엘레베이터 앞 홀수층 앞",
+      "x": 62,
+      "y": 0,
+      "total_avg": 44,
+      "total_std": 3,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_4213_FRONT",
+      "label": "4213 앞",
+      "x": 64,
+      "y": 0,
+      "total_avg": 41,
+      "total_std": 3,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_4212_FRONT",
+      "label": "4212 앞",
+      "x": 67,
+      "y": 0,
+      "total_avg": 44,
+      "total_std": 3,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_4210_FRONT",
+      "label": "4210 앞",
+      "x": 73,
+      "y": 0,
+      "total_avg": 49,
+      "total_std": 4,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_4208_FRONT",
+      "label": "4208 앞",
+      "x": 87,
+      "y": 0,
+      "total_avg": 42,
+      "total_std": 4,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_4204_FRONT",
+      "label": "4204 쪽 왼쪽 복도 끝",
+      "x": 111,
+      "y": 0,
+      "total_avg": 33,
+      "total_std": 4,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_LEFT_STAIRS_FRONT",
+      "label": "4층 좌측 계단 앞",
+      "x": 124,
+      "y": 0,
+      "total_avg": 48,
+      "total_std": 4,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_LEFT_STAIRS_INSIDE",
+      "label": "4층 좌측 계단 내부",
+      "x": 126,
+      "y": 0,
+      "total_avg": 62,
+      "total_std": 5,
+      "note": "사용자 메모 측정값. 계단 내부 진입 이벤트 후보."
+    },
+    {
+      "id": "4F_4218_FRONT",
+      "label": "4218 앞",
+      "x": 52,
+      "y": 0,
+      "total_avg": 45,
+      "total_std": 4,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_4225_FRONT",
+      "label": "4225 앞",
+      "x": 30,
+      "y": 0,
+      "total_avg": 30,
+      "total_std": 4,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "4F_4227_FRONT",
+      "label": "4227 앞 또는 4227/4228 구간",
+      "x": 24,
+      "y": 0,
+      "total_avg": 37,
+      "total_std": 4,
+      "note": "사용자 메모 측정값. 평면도상 4227 표기는 추후 확인 필요."
+    },
+    {
+      "id": "4F_4128_FRONT",
+      "label": "4128 앞",
+      "x": 20,
+      "y": 0,
+      "total_avg": 42,
+      "total_std": 4,
+      "note": "사용자 메모 측정값."
+    },
+    {
+      "id": "EV_INSIDE",
+      "label": "엘레베이터 내부",
+      "x": 62,
+      "y": -3,
+      "total_avg": 19,
+      "total_std": 4,
+      "note": "사용자 1차 측정값. 실내 층 전환 이벤트 판단용."
+    }
+  ],
+  "routing": {
+    "default_start": "4F_EV_FRONT",
+    "step_length_m": 0.65,
+    "snap_to_corridor": true,
+    "room_arrival_radius": 2.5
+  }
+}
