@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT융합대학 2층 구조 검토도</title>
+  <script>
+    if (new URLSearchParams(window.location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embed");
+    }
+  </script>
+  <link rel="stylesheet" href="../../src/floors/floor-03.css" />
+  <link rel="stylesheet" href="../../src/floors/floor-02.css" />
+</head>
+<body>
+<main class="plan-shell">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">2F 구조 재구성</p>
+      <h1>IT융합대학 2층 2D 구조 검토도</h1>
+      <p>코어와 계단의 공통 기준선을 고정하고, 2층 피난안내도와 현장 설명에 맞춰 강의실·학습공간·증축부를 배치했습니다.</p>
+    </div>
+    <nav class="top-actions">
+      <a class="secondary-link" href="./index.html">2D 전체 보기</a>
+      <a class="secondary-link" href="../../clay.html">3D 돌아가기</a>
+    </nav>
+  </header>
+  <section class="toolbar">
+    <div class="view-buttons">
+      <button class="active" data-view="all">전체 구조</button>
+      <button data-view="extension">2층 증축부</button>
+      <button data-view="core">코어</button>
+    </div>
+    <p id="viewStatus">2층 공통틀과 증축부를 함께 표시하고 있습니다.</p>
+  </section>
+  <section class="plan-layout">
+    <div class="plan-stage">
+      <svg id="floorPlan" viewBox="0 0 1380 1180" role="img" aria-labelledby="planTitle planDesc">
+        <title id="planTitle">4층 구조를 상속한 IT융합대학 2층 평면 구조</title>
+        <desc id="planDesc">가로 메인복도, 중앙 코어, 화장실 통로와 양쪽 계단은 3층과 4층의 고정 좌표를 유지한다. 2층 방 번호와 S-space, 2105, 2104, 2107 개방공간, TDM 및 증축부 진입구를 표시한 구조도.</desc>
+        <defs>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M20 0H0V20" fill="none" stroke="#e7ebef" />
+          </pattern>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0 0L8 4L0 8Z" fill="#2f6f61" />
+          </marker>
+        </defs>
+        <rect class="sheet-grid" x="20" y="20" width="1340" height="1140" />
+        <g id="buildingPlan">
+          <g class="inherited-shell" transform="translate(0 470)">
+            <rect class="common-frame" x="70" y="120" width="1240" height="284" />
+            <rect class="main-corridor" x="70" y="230" width="1240" height="64" />
+            <text x="690" y="268">메인 복도 · 2층 공통틀</text>
+
+            <g class="left-end-stair">
+              <rect x="25" y="294" width="45" height="110" />
+              <path class="stair-step" d="M34 314h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27" />
+              <text transform="translate(48 350) rotate(-90)">왼쪽계단</text>
+            </g>
+
+            <g class="room-row inherited-rooms">
+              <rect x="70" y="120" width="128" height="110" />
+              <rect x="198" y="120" width="150" height="110" />
+              <rect x="348" y="120" width="164" height="110" />
+              <rect x="512" y="120" width="118" height="110" />
+              <text x="134" y="175">2128</text>
+              <text x="273" y="175">2125</text>
+              <text x="430" y="175">2122</text>
+              <text x="571" y="175">2119</text>
+              <rect x="70" y="294" width="150" height="110" />
+              <rect x="220" y="294" width="145" height="110" />
+              <rect x="365" y="294" width="205" height="110" />
+              <text x="145" y="349">2228</text>
+              <text x="292" y="349">2225</text>
+              <text x="468" y="349">2221</text>
+              <text class="row-label upper-row" x="310" y="98">왼쪽복도 위쪽: 2128 · 2125 · 2122 · 2119</text>
+              <text class="row-label lower-row" x="300" y="430">왼쪽복도 아래쪽: 2228 · 2225 · 2221</text>
+            </g>
+
+            <g class="unused-zone inherited-unused-zone">
+              <rect x="630" y="120" width="388" height="110" />
+              <line x1="650" y1="132" x2="998" y2="218" />
+              <line x1="998" y1="132" x2="650" y2="218" />
+            </g>
+
+            <g class="core-module">
+              <rect x="570" y="294" width="230" height="250" />
+              <rect class="restroom-core" x="570" y="294" width="60" height="250" />
+              <rect class="facility ev-bank" x="630" y="294" width="60" height="250" />
+              <rect class="facility ev-car" x="642" y="314" width="34" height="64" />
+              <rect class="facility ev-car" x="642" y="394" width="34" height="64" />
+              <line class="core-separator" x1="630" y1="294" x2="630" y2="544" />
+              <line class="core-separator" x1="690" y1="294" x2="690" y2="544" />
+              <rect class="core-corridor" x="690" y="294" width="42" height="250" />
+              <rect class="stair-box" x="752" y="336" width="36" height="180" />
+              <path class="stair-step" d="M758 352h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24" />
+              <text class="core-side-label" x="600" y="419" transform="rotate(-90 600 419)">메인 화장실</text>
+              <text x="660" y="346">EV</text>
+              <text x="660" y="426">EV</text>
+              <text x="660" y="494">엘레베이터 2대</text>
+              <text x="711" y="318">코어복도</text>
+              <text x="770" y="530">메인계단</text>
+            </g>
+
+            <g class="room-row right-common">
+              <rect x="800" y="294" width="100" height="110" />
+              <rect x="900" y="294" width="180" height="110" />
+              <rect x="1080" y="294" width="58" height="110" />
+              <rect x="1138" y="294" width="60" height="110" />
+              <rect x="1198" y="294" width="54" height="110" />
+              <text x="850" y="349">2211</text>
+              <text x="990" y="349">2210</text>
+              <text class="small-room-label" x="1109" y="349">2210-1</text>
+              <text x="1168" y="349">2205</text>
+              <text x="1225" y="349">2204</text>
+              <text class="row-label lower-row" x="1025" y="430">오른쪽복도 아래쪽: 2211 · 2210 · 2210-1 · 2205 · 2204</text>
+            </g>
+
+            <g class="floor2-open-zone">
+              <rect class="open-zone-shell" x="1018" y="120" width="62" height="110" />
+              <text class="open-zone-title" x="1049" y="160">2107</text>
+              <text class="open-zone-note" x="1049" y="184">개방공간</text>
+            </g>
+
+            <g class="study-zone">
+            <path class="study-floor" d="M1080 120H1310V230H1080Z" />
+              <text class="study-zone-label" x="1109" y="178">ㄷ자 책상</text>
+              <g class="desk-u-shape" aria-label="ㄷ자 책상">
+                <rect x="1090" y="130" width="38" height="13" />
+                <rect x="1090" y="207" width="38" height="13" />
+                <rect x="1090" y="143" width="13" height="64" />
+                <rect x="1106" y="158" width="18" height="11" />
+                <rect x="1106" y="184" width="18" height="11" />
+              </g>
+              <rect class="structural-column" x="1128" y="212" width="18" height="18" />
+              <text class="column-label" x="1137" y="204">기둥</text>
+            <rect class="tdm-extension" x="1198" y="126" width="112" height="104" />
+            <text class="tdm-extension-label" x="1254" y="178">TDM</text>
+              <path class="entry-clearance" d="M1169 230V164H1198" />
+              <text class="entry-label" x="1169" y="151">진입구</text>
+            </g>
+
+            <g class="end-facilities">
+              <rect x="1252" y="294" width="30" height="110" />
+              <text transform="translate(1267 349) rotate(-90)">화장실 통로</text>
+              <rect class="right-stair-entry" x="1282" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1291 323) rotate(-90)">계단 입구</text>
+              <rect class="right-stair-flight" x="1300" y="294" width="52" height="58" />
+              <path class="stair-step right-end-stair-step" d="M1304 304h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44" />
+              <text class="right-stair-zone" transform="translate(1326 323) rotate(-90)">12+12계단</text>
+              <rect class="right-stair-landing" x="1352" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1361 323) rotate(-90)">중간참</text>
+              <text x="1326" y="370">오른쪽계단</text>
+            </g>
+          </g>
+
+          <g class="extension-layer">
+            <g class="s-space-open">
+              <rect class="s-space-floor" x="1018" y="85" width="50" height="500" />
+              <path class="s-space-outer-boundary" d="M1068 85H1018V585H1035" />
+              <text x="1043" y="335" transform="rotate(-90 1043 335)">S-space</text>
+            </g>
+
+            <g class="extension-corridor">
+              <path d="M1146 85H1192V585H1146Z" />
+              <text x="1169" y="335" transform="rotate(-90 1169 335)">증축부 복도</text>
+            </g>
+
+            <g class="extension-room it-hall">
+              <path d="M1068 85H1146V585H1068Z" />
+              <text x="1107" y="210">2105-2</text>
+              <line x1="1068" y1="335" x2="1146" y2="335" />
+              <text x="1107" y="460">2105-1</text>
+            </g>
+
+            <g class="extension-room room-3104">
+              <path d="M1198 85H1310V335H1198Z" />
+              <path d="M1198 335H1310V585H1198Z" />
+              <text x="1254" y="210">2104-2</text>
+              <text x="1254" y="460">2104-1</text>
+            </g>
+
+            <path class="branch-opening" d="M1146 700H1198" />
+            <path class="branch-opening s-space-opening" d="M1035 590H1068" />
+            <path class="movement floor2-entry-flow" d="M1169 732V105" marker-end="url(#arrow)" />
+            <path class="movement s-space-flow" d="M1049 636V365" marker-end="url(#arrow)" />
+            <text class="movement-label s-space-entry-label" x="965" y="620">2107 → S-space</text>
+            <text class="movement-label floor2-movement-label" x="1105" y="725">메인복도 → 2107 옆 진입구 → 증축부</text>
+            <text class="layer-title" x="1066" y="58">2층 증축부: S-space · 2105-1/2 · 증축부 복도 · 2104-1/2</text>
+            <g class="dimension-note">
+              <text x="70" y="1050">고정 구조: 공통 외곽 · 코어 · 메인계단 · 좌우 사이드계단 · 화장실 통로</text>
+              <text x="70" y="1073">2층 전용 구조: 2107 개방공간 · S-space · ㄷ자 책상 · 기둥-TDM 사이 진입구</text>
+            </g>
+          </g>
+
+          <g class="legend-on-map">
+            <rect class="legend-common" x="75" y="1080" width="22" height="22" />
+            <text x="108" y="1097">4층에서 그대로 상속</text>
+            <rect class="legend-added" x="300" y="1080" width="22" height="22" />
+            <text x="333" y="1097">2층에서 사용</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <aside class="review-panel">
+      <section>
+        <h2>이번 구조 원칙</h2>
+        <ul>
+          <li>빨간 공통틀, 코어, 화장실 통로, 좌우 사이드계단은 3·4층과 같은 기준선에 둡니다.</li>
+          <li>왼쪽복도 위쪽은 2128·2125·2122·2119, 아래쪽은 2228·2225·2221로 구분합니다.</li>
+          <li>오른쪽복도 아래쪽은 2211·2210·2210-1·2205·2204 순서입니다.</li>
+          <li>긴 X 구역은 유지하고 오른쪽의 작은 X는 제거해 TDM과 2107 개방영역으로 사용합니다.</li>
+          <li>증축부 진입은 오른쪽 메인복도에서 안쪽으로 들어가 기둥과 TDM 사이를 통과합니다.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>자료 사용 기준</h2>
+        <dl>
+          <div><dt>공통틀</dt><dd>4F/3F 기준 유지</dd></div>
+          <div><dt>2F 방 번호</dt><dd>사용자 설명 + 피난안내도</dd></div>
+          <div><dt>증축부</dt><dd>피난안내도 + GLB</dd></div>
+          <div><dt>기둥·진입구</dt><dd>현장 설명 우선</dd></div>
+        </dl>
+      </section>
+      <section class="pending-section">
+        <h2>다음 확인 대상</h2>
+        <p>이번 배치에서는 구조와 동선을 먼저 고정했습니다. 다음 단계에서 GLB를 대조해 S-space, 책상, 2107과 증축 강의실의 실제 비율을 세부 조정합니다.</p>
+      </section>
+      <div class="legend">
+        <span><i class="common-swatch"></i>공통 구조</span>
+        <span><i class="added-swatch"></i>2층 증축 사용부</span>
+        <span><i class="hall-swatch"></i>2105</span>
+        <span><i class="free-swatch"></i>S-space / 학습공간</span>
+        <span><i class="corridor-swatch"></i>증축부 복도</span>
+        <span><i class="opening-swatch"></i>출입구</span>
+      </div>
+    </aside>
+  </section>
+</main>
+<script src="../../src/floors/floor-02.js?v=fixed-shell-2f"></script>
+</body>
+</html>
+

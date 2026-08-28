@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT융합대학 실내 클레이 3D 지도</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./src/clay.css?v=embedded-pdr-2" />
+  </head>
+  <body>
+    <script>
+      const embedMode = new URLSearchParams(window.location.search).get("embed");
+      if (embedMode) document.body.classList.add("embedded-clay");
+      if (embedMode === "algorithm") document.body.classList.add("embedded-clay-algorithm");
+    </script>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">IT융합대학 4층 클레이 지도</h1>
+          <p id="pageSubtitle">GLB 복도와 12.73m 중앙 코어를 결합한 4층 안내 모델</p>
+        </div>
+        <div class="top-links">
+          <a class="link-button" href="./index.html">2D 보기</a>
+          <a class="link-button" href="./pdr.html">알고리즘 테스트</a>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <div class="viewer-wrap">
+          <canvas id="clayCanvas" aria-label="IT융합대학 4층 클레이형 3D 지도"></canvas>
+          <div class="viewer-floor-panel" aria-label="엘레베이터식 현재층 표시">
+            <button class="floor-step" type="button" data-floor-step="up" aria-label="위층으로">▲</button>
+            <div class="viewer-floor-screen" aria-live="polite">
+              <span>현재층</span>
+              <strong id="viewerFloorDisplay">1F-10F</strong>
+            </div>
+            <button class="floor-step" type="button" data-floor-step="down" aria-label="아래층으로">▼</button>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <label>
+            층 선택
+            <select id="floorSelect">
+              <option value="1">1층 정문·행정실층</option>
+              <option value="2">2층 S-space 확장층</option>
+              <option value="3">3층 IT홀 확장층</option>
+              <option value="4">4층 표준층</option>
+              <option value="5">5층 표준층</option>
+              <option value="6">6층 표준층</option>
+              <option value="7">7층 표준층</option>
+              <option value="8">8층 표준층</option>
+              <option value="9">9층 표준층</option>
+              <option value="10">10층 표준층</option>
+              <option value="both">1F ~ 10F 통합 보기</option>
+            </select>
+          </label>
+
+          <div class="current-floor-display" aria-live="polite">
+            <span>현재층</span>
+            <strong id="currentFloorDisplay">1F-10F</strong>
+          </div>
+
+          <div class="floor-indicator" aria-label="엘레베이터식 층 전환">
+            <button class="floor-tile" type="button" data-floor-jump="1">1F</button>
+            <button class="floor-tile" type="button" data-floor-jump="2">2F</button>
+            <button class="floor-tile" type="button" data-floor-jump="3">3F</button>
+            <button class="floor-tile" type="button" data-floor-jump="4">4F</button>
+            <button class="floor-tile" type="button" data-floor-jump="5">5F</button>
+            <button class="floor-tile" type="button" data-floor-jump="6">6F</button>
+            <button class="floor-tile" type="button" data-floor-jump="7">7F</button>
+            <button class="floor-tile" type="button" data-floor-jump="8">8F</button>
+            <button class="floor-tile" type="button" data-floor-jump="9">9F</button>
+            <button class="floor-tile" type="button" data-floor-jump="10">10F</button>
+            <button class="floor-tile wide" type="button" data-floor-jump="both">통합</button>
+          </div>
+
+          <div class="stair-preview-card" aria-label="메인계단 내부 컷뷰">
+            <div class="stair-preview-head">
+              <span>계단 내부</span>
+              <strong id="stairPreviewTitle">중앙 메인계단</strong>
+            </div>
+            <div class="stair-preview-viewport">
+              <canvas id="stairPreviewCanvas" aria-label="중앙 메인계단 내부 미리보기"></canvas>
+              <div class="stair-floor-tags" aria-hidden="true">
+                <span id="stairUpperFloorTag">4F</span>
+                <span id="stairLowerFloorTag">3F</span>
+              </div>
+            </div>
+            <div id="stairPreviewState" class="stair-preview-state">1F↔2F↔3F↔4F↔5F↔6F↔7F↔8F↔9F↔10F</div>
+            <p id="stairPreviewText" class="stair-preview-text">중앙 메인계단 내부 이동 구간입니다.</p>
+          </div>
+
+          <label>
+            목적지
+            <select id="targetSelect"></select>
+          </label>
+
+          <div class="button-row">
+            <button id="viewIso" type="button">입체 시점</button>
+            <button id="viewTop" type="button">위에서 보기</button>
+            <button id="viewHub" type="button">허브 확대</button>
+            <button id="viewEndStair" type="button">사이드 계단 확대</button>
+            <button id="viewWalk" type="button">보행 시점</button>
+          </div>
+
+          <label class="check-row">
+            <input id="labelToggle" type="checkbox" checked />
+            강의실 번호 표시
+          </label>
+
+          <label class="check-row">
+            <input id="scanHintToggle" type="checkbox" />
+            스캔 참고 구역 표시
+          </label>
+
+          <div class="legend">
+            <div><span class="swatch corridor"></span>복도</div>
+            <div><span class="swatch room"></span>강의실</div>
+            <div><span class="swatch facility"></span>엘레베이터/계단</div>
+            <div><span class="swatch route"></span>경로</div>
+            <div><span class="swatch target"></span>목적지</div>
+          </div>
+
+          <div id="detail" class="detail"></div>
+
+          <a id="scanSourceLink" class="link-button source-link" href="./scan3f.html" hidden>3층 원본 GLB 대조</a>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module">
+      import(`./src/map-3d.js?v=${Date.now()}`);
+    </script>
+  </body>
+</html>
+
