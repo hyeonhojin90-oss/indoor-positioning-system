@@ -377,7 +377,7 @@ async function loadInlinePlan(floor) {
   const host = $(`floor${floor}Host`);
   if (!host || host.dataset.loaded === "true") return;
   const [htmlResponse, cssResponse, floorCssResponse] = await Promise.all([
-  fetch(`./floor${floor === 10 ? 6 : floor}-plan.html?v=${floor === 10 ? "floor10-full-core-stair-1" : floor === 1 || floor === 2 ? "right-stair-layout-3" : floor === 3 ? "right-stair-extension-align-1" : floor === 5 ? "right-stair-layout-5f-1" : floor === 7 ? "floor7-evac-verified-1" : "embed-source-7"}`),
+  fetch(`./pages/floors/floor-${String(floor === 10 ? 6 : floor).padStart(2, "0")}.html?v=${floor === 10 ? "floor10-full-core-stair-1" : floor === 1 || floor === 2 ? "right-stair-layout-3" : floor === 3 ? "right-stair-extension-align-1" : floor === 5 ? "right-stair-layout-5f-1" : floor === 7 ? "floor7-evac-verified-1" : "embed-source-7"}`),
     fetch("./src/floors/floor-03.css?v=right-stair-extension-align-1"),
     floor === 1
     ? fetch("./src/floors/floor-01.css?v=right-stair-layout-3")

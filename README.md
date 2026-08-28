@@ -1,39 +1,27 @@
-# Indoor Navigation Prototype
+# 교내 이동·실내 안내 프로젝트
 
-Chosun University IT College indoor navigation prototype.
+조선대학교 자율설계학기제 프로젝트의 코드, 지도, 센서 실험과 문서를 한 저장소에서 관리한다.
 
-## Current Focus
+## 영역
 
-- Building: IT융합대학
-- Floor: 4F first
-- Goal: 2D floor map, clay-style 3D map, and indoor guidance using PDR plus magnetic fingerprint experiments.
+- `indoor/`: IT융합대학 1~10층 2D·3D 지도, PDR·자기장 실험, GLB 도구
+- `gps/`: GPS 수집 펌웨어, 원시·가공 데이터, 실험 문서
+- `app/`: 향후 Android/iOS 안내 앱
+- `docs/`: 전체 구조, 결정, 진행상황과 작업 기록
 
-## Run Locally
+## 현재 상태 확인
 
-Open a terminal in this repository and run:
+작업 시작 전 `AGENTS.md`, `docs/CURRENT_STATUS.md`, 작업 영역의 지침과 상태 문서를 순서대로 읽는다.
+
+## 실내 지도 실행
 
 ```powershell
-cd .\it_4f_prototype
-python -m http.server 8125
+cd .\indoor\web
+python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Then open:
+- 2D 지도: `http://127.0.0.1:4173/index.html`
+- 3D 지도: `http://127.0.0.1:4173/clay.html`
+- PDR 실험: `http://127.0.0.1:4173/pdr.html`
 
-```text
-http://127.0.0.1:8125/
-http://127.0.0.1:8125/clay.html
-```
-
-## Important Files
-
-- `it_4f_prototype/index.html`: 2D/PDR prototype
-- `it_4f_prototype/src/app.js`: 2D map and guidance logic
-- `it_4f_prototype/clay.html`: clay 3D prototype page
-- `it_4f_prototype/src/clay4f.js`: clay 3D model logic
-- `it_4f_prototype/data/it_4f_map.json`: 4F map data
-- `it_4f_prototype/data/it_4f_magnetic_measurements.json`: magnetic measurement data
-- `glb_viewer/`: LiDAR/GLB scan viewer and assets
-
-## Handoff
-
-Before continuing work with another Codex account, read `HANDOFF.md` and `TODO.md`.
+대용량 GLB·PDF·이미지는 Git LFS로 관리한다. 작업 완료는 코드 저장뿐 아니라 실행·검증과 상태 문서 갱신까지 포함한다.

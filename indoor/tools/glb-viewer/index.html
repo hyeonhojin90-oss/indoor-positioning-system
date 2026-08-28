@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LiDAR GLB Viewer</title>
+    <link rel="icon" href="data:," />
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <style>
       :root {
@@ -174,7 +175,7 @@
         <section class="panel viewer-panel">
           <model-viewer
             id="viewer"
-            src="./assets/it_4f_elevator_stairs.glb"
+            src="../../web/assets/3f/it_3f_right_wing.glb"
             camera-controls
             touch-action="pan-y"
             auto-rotate
@@ -284,7 +285,7 @@
 
       function applyScan() {
         const scan = currentScan();
-        viewer.src = isMono ? scan.mono : scan.color;
+        viewer.setAttribute("src", isMono ? scan.mono : scan.color);
         fileLabel.textContent = scan.file;
         sizeLabel.textContent = scan.size;
         useLabel.textContent = scan.use;
@@ -312,6 +313,8 @@
       scanSelect.addEventListener("change", () => {
         applyScan();
       });
+
+      applyScan();
     </script>
   </body>
 </html>
