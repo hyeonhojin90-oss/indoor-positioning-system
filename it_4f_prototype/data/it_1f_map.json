@@ -1,0 +1,46 @@
+{
+  "building": "조선대학교 IT융합대학",
+  "floor": 1,
+  "version": "1f-v0.2-3d-from-final-2d",
+  "inherits": "it_4f_map.json",
+  "remove_facility_ids": [],
+  "room_mapping_note": "확정된 floor1-plan.html 좌표를 사용하며 코어, 화장실, 메인계단, 양쪽 계단은 공통 기준틀을 재사용한다.",
+  "rooms": [
+    { "id": "1128", "label": "1128", "x": 128.418, "y": 8, "front_x": 128.418, "front_y": 0, "side": "upper", "width": 13.977 },
+    { "id": "1125", "label": "1125", "x": 113.240, "y": 8, "front_x": 113.240, "front_y": 0, "side": "upper", "width": 16.380 },
+    { "id": "1122", "label": "1122", "x": 96.095, "y": 8, "front_x": 96.095, "front_y": 0, "side": "upper", "width": 17.909 },
+    { "id": "1119", "label": "1119", "x": 80.698, "y": 8, "front_x": 80.698, "front_y": 0, "side": "upper", "width": 12.886 },
+    { "id": "1228", "label": "1228", "x": 127.217, "y": -8, "front_x": 127.217, "front_y": 0, "side": "lower", "width": 16.380 },
+    { "id": "1225", "label": "1225", "x": 111.110, "y": -8, "front_x": 111.110, "front_y": 0, "side": "lower", "width": 15.834 },
+    { "id": "1221", "label": "1221", "x": 92.000, "y": -8, "front_x": 92.000, "front_y": 0, "side": "lower", "width": 22.386 },
+    { "id": "1107", "label": "1107", "x": 27.737, "y": 8, "front_x": 27.737, "front_y": 0, "side": "upper", "width": 8.299 },
+    { "id": "1105-2", "label": "1105-2", "x": 21.785, "y": 8, "front_x": 21.785, "front_y": 0, "side": "upper", "width": 3.604 },
+    { "id": "1105-1", "label": "1105-1", "x": 18.182, "y": 8, "front_x": 18.182, "front_y": 0, "side": "upper", "width": 3.604 },
+    { "id": "1103", "label": "1103", "x": 12.613, "y": 8, "front_x": 12.613, "front_y": 0, "side": "upper", "width": 7.535 },
+    { "id": "1101", "label": "1101", "x": 4.423, "y": 8, "front_x": 4.423, "front_y": 0, "side": "upper", "width": 8.845 },
+    { "id": "1213", "label": "1213", "x": 60.502, "y": -8, "front_x": 60.502, "front_y": 0, "side": "lower", "width": 7.702, "hide_door": true },
+    { "id": "1210", "label": "1210", "x": 46.382, "y": -8, "front_x": 46.382, "front_y": 0, "side": "lower", "width": 11.809 },
+    { "id": "1209", "label": "1209", "x": 29.182, "y": -8, "front_x": 29.182, "front_y": 0, "side": "lower", "width": 22.591 },
+    { "id": "1204", "label": "1204", "x": 11.745, "y": -8, "front_x": 11.745, "front_y": 0, "side": "lower", "width": 12.283 },
+    { "id": "REST-AREA", "label": "휴식공간", "placement": "extension-marker", "extension_zone": "rest-area" },
+    { "id": "ADMIN", "label": "행정실", "placement": "extension-marker", "extension_zone": "admin" },
+    { "id": "OUTDOOR-CORRIDOR", "label": "야외 복도", "placement": "extension-marker", "extension_zone": "outdoor-corridor" }
+  ],
+  "floor1_extension": {
+    "status": "rebuilt_from_final_2d_plan",
+    "shared_structure_rule": "core_restrooms_main_stairs_and_side_stairs_are_fixed",
+    "main_entrance_svg_range": [634, 696],
+    "rest_area_svg_range": [696, 1018],
+    "admin_svg_bounds": [1018, 70, 1310, 400],
+    "outdoor_corridor_svg_bounds": [1018, 410, 1310, 530],
+    "passage_svg_range": [860, 894]
+  },
+  "doors": [
+    { "id": "DOOR-1213-1210", "between": ["1213", "1210"], "status": "implemented" },
+    { "id": "MAIN-ENTRANCE", "near": "1119-right", "type": "double-door", "status": "implemented" }
+  ],
+  "routing": {
+    "hub_junction": { "x": 70.804, "y": 0 },
+    "main_entrance_junction": { "x": 70.804, "y": 0 }
+  }
+}

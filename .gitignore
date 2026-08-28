@@ -17,3 +17,9 @@ Thumbs.db
 # Temporary archives
 *.tmp
 *.log
+
+# Codex local workspace state
+.codex/
+
+# Generated inspection files
+tmp/

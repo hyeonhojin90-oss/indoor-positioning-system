@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT융합대학 실내 길찾기 테스트</title>
+    <link rel="stylesheet" href="./src/styles.css?v=indoor-nav-3d-2" />
+  </head>
+  <body class="navigation-page">
+    <main>
+      <header>
+        <div>
+          <h1>IT융합대학 실내 길찾기</h1>
+          <p>중앙 코어 복도를 기준점으로 3F·4F 위치를 보정하고 목적지까지 안내합니다.</p>
+        </div>
+        <div class="top-actions">
+          <a class="link-button secondary" href="./index.html">2D 보기</a>
+          <a class="link-button" href="./clay.html">3D 보기</a>
+          <div id="navBadge" class="badge">PDR + 자기장 v1</div>
+        </div>
+      </header>
+
+      <section class="nav-layout" aria-label="실내 길찾기 테스트 화면">
+        <section class="nav-map-panel" aria-label="3층과 4층 경로 지도">
+          <div class="nav-map-head">
+            <div>
+              <strong id="routeTitle">4F 중앙 코어 복도에서 출발</strong>
+              <span id="routeMeta">목적지를 선택하면 이동 경로를 계산합니다.</span>
+            </div>
+            <div id="navStatus" class="nav-status idle">준비됨</div>
+          </div>
+          <div class="map-mode-tabs" role="tablist" aria-label="길찾기 지도 보기 선택">
+            <button class="active" type="button" role="tab" aria-selected="true" data-map-mode="2d">2D 원본</button>
+            <button type="button" role="tab" aria-selected="false" data-map-mode="3d">3D 통합</button>
+          </div>
+          <div id="nativeMapArea">
+            <div class="native-map-tabs" role="tablist" aria-label="길찾기 기준 2D 층 선택">
+              <button class="active" type="button" role="tab" aria-selected="true" data-native-floor="4">4F 원본 2D</button>
+              <button type="button" role="tab" aria-selected="false" data-native-floor="3">3F 원본 2D</button>
+            </div>
+            <div class="nav-map-wrap native-map-wrap">
+              <iframe id="nativeMap4" class="native-map-frame" data-native-map-floor="4" title="IT융합대학 4층 원본 2D 지도" src="./index.html?embed=1&floor=4&target=4213&mapVersion=core-align-6"></iframe>
+              <iframe id="nativeMap3" class="native-map-frame" data-native-map-floor="3" title="IT융합대학 3층 원본 2D 지도" src="./index.html?embed=1&floor=3&mapVersion=core-align-6" hidden></iframe>
+            </div>
+          </div>
+          <div id="algorithm3dArea" class="algorithm-3d-wrap" hidden>
+            <iframe id="algorithm3dFrame" class="algorithm-3d-frame" title="IT융합대학 3층과 4층 통합 3D 지도" src="about:blank"></iframe>
+          </div>
+          <ol id="routeSteps" class="route-steps" aria-label="경로 단계"></ol>
+        </section>
+
+        <aside class="nav-console" aria-label="위치와 센서 제어">
+          <section class="nav-control-section">
+            <h2>경로 설정</h2>
+            <label>
+              현재 위치 기준
+              <select id="startFloorSelect">
+                <option value="4">4F 중앙 코어 복도</option>
+                <option value="3">3F 중앙 코어 복도</option>
+              </select>
+            </label>
+            <label>
+              목적지
+              <select id="targetSelect"></select>
+            </label>
+            <label>
+              층간 이동 방식
+              <select id="verticalModeSelect">
+                <option value="stairs">중앙 메인계단 이용</option>
+                <option value="elevator">엘레베이터 이용</option>
+              </select>
+            </label>
+            <button id="resetPositionButton" type="button">코어 복도로 위치 초기화</button>
+          </section>
+
+          <section class="nav-control-section">
+            <h2>수동 테스트</h2>
+            <div class="manual-step-grid">
+              <label>
+                걸음 수
+                <input id="stepsInput" type="number" min="1" max="200" value="10" />
+              </label>
+              <label>
+                이동 방향
+                <select id="directionSelect">
+                  <option value="map-right">지도 오른쪽</option>
+                  <option value="map-left">지도 왼쪽</option>
+                  <option value="toward-main">메인 복도 쪽</option>
+                  <option value="toward-core">코어 안쪽</option>
+                </select>
+              </label>
+            </div>
+            <button id="moveButton" class="primary" type="button">걸음 이동 반영</button>
+            <label>
+              자기장 Total (μT)
+              <input id="magInput" type="number" inputmode="decimal" step="0.1" placeholder="예: 46" />
+            </label>
+            <button id="magButton" type="button">자기장 보정 적용</button>
+          </section>
+
+          <section class="nav-control-section sensor-section">
+            <h2>휴대폰 센서</h2>
+            <p id="sensorHelp">센서 시작 후 메인 복도 방향을 지정하면 걸음이 현재 지도 좌표에 반영됩니다.</p>
+            <div class="sensor-actions">
+              <button id="sensorButton" class="primary" type="button">센서 사용 시작</button>
+              <button id="calibrateButton" type="button" disabled>현재 방향을 지도 오른쪽으로 설정</button>
+            </div>
+            <div id="sensorReadout" class="sensor-readout">센서 대기 중</div>
+          </section>
+
+          <section class="nav-readout" aria-live="polite">
+            <h2>현재 상태</h2>
+            <div id="positionReadout"></div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="algorithm-note">
+        <h2>현재 적용 방식</h2>
+        <p>출발 위치는 중앙 코어 복도이며, PDR 걸음 좌표를 복도 그래프에 스냅합니다. 4층에서는 현장 자기장 지문값으로 PDR 오차를 가중 보정하고, 3층은 측정값이 모이기 전까지 복도 스냅만 적용합니다. 실제 휴대폰 방향은 현장에서 한 번 지도 방향에 맞춰야 합니다.</p>
+      </section>
+    </main>
+
+    <script type="module" src="./src/pdr.js?v=indoor-nav-3d-2"></script>
+  </body>
+</html>

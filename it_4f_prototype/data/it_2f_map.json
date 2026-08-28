@@ -1,0 +1,41 @@
+{
+  "building": "조선대학교 IT융합대학",
+  "floor": 2,
+  "version": "2f-v0.1-rebuilt-from-current-2d",
+  "inherits": "it_4f_map.json",
+  "remove_facility_ids": [],
+  "room_mapping_note": "2층 피난안내도와 확정된 floor2-plan.html 좌표를 사용하며 코어, 화장실, 메인계단, 양쪽 계단은 공통 기준틀을 재사용한다.",
+  "rooms": [
+    { "id": "2128", "label": "2128", "x": 128.418, "y": 8, "front_x": 128.418, "front_y": 0, "side": "upper", "width": 13.977 },
+    { "id": "2125", "label": "2125", "x": 113.240, "y": 8, "front_x": 113.240, "front_y": 0, "side": "upper", "width": 16.380 },
+    { "id": "2122", "label": "2122", "x": 96.095, "y": 8, "front_x": 96.095, "front_y": 0, "side": "upper", "width": 17.909 },
+    { "id": "2119", "label": "2119", "x": 80.698, "y": 8, "front_x": 80.698, "front_y": 0, "side": "upper", "width": 12.886 },
+    { "id": "2228", "label": "2228", "x": 127.217, "y": -8, "front_x": 127.217, "front_y": 0, "side": "lower", "width": 16.380 },
+    { "id": "2225", "label": "2225", "x": 111.110, "y": -8, "front_x": 111.110, "front_y": 0, "side": "lower", "width": 15.834 },
+    { "id": "2221", "label": "2221", "x": 92.000, "y": -8, "front_x": 92.000, "front_y": 0, "side": "lower", "width": 22.386 },
+    { "id": "2211", "label": "2211", "x": 60.089, "y": -8, "front_x": 60.089, "front_y": 0, "side": "lower", "width": 17.143 },
+    { "id": "2210", "label": "2210", "x": 39.964, "y": -8, "front_x": 39.964, "front_y": 0, "side": "lower", "width": 23.105 },
+    { "id": "2210-1", "label": "2210-1", "x": 24.689, "y": -8, "front_x": 24.689, "front_y": 0, "side": "lower", "width": 7.445 },
+    { "id": "2205", "label": "2205", "x": 17.116, "y": -8, "front_x": 17.116, "front_y": 0, "side": "lower", "width": 7.702 },
+    { "id": "2204", "label": "2204", "x": 9.435, "y": -8, "front_x": 9.435, "front_y": 0, "side": "lower", "width": 7.661 },
+    { "id": "2107", "label": "2107 개방공간", "placement": "extension-marker", "extension_zone": "2107" },
+    { "id": "S-SPACE", "label": "S-space", "placement": "extension-marker", "extension_zone": "s-space" },
+    { "id": "STUDY", "label": "ㄷ자 학습공간", "placement": "extension-marker", "extension_zone": "study" },
+    { "id": "TDM", "label": "TDM", "placement": "extension-marker", "extension_zone": "tdm" },
+    { "id": "2105-1", "label": "2105-1", "placement": "extension-marker", "extension_zone": "2105-1" },
+    { "id": "2105-2", "label": "2105-2", "placement": "extension-marker", "extension_zone": "2105-2" },
+    { "id": "2104-1", "label": "2104-1", "placement": "extension-marker", "extension_zone": "2104-1" },
+    { "id": "2104-2", "label": "2104-2", "placement": "extension-marker", "extension_zone": "2104-2" }
+  ],
+  "floor2_extension": {
+    "status": "rebuilt_from_current_2d_plan",
+    "shared_structure_rule": "core_restrooms_main_stairs_and_side_stairs_are_fixed",
+    "entry_map_x": 15.397,
+    "side": "upper",
+    "room_door_width": 1.2
+  },
+  "routing": {
+    "hub_junction": { "x": 70.804, "y": 0 },
+    "extension_junction": { "x": 15.397, "y": 0 }
+  }
+}

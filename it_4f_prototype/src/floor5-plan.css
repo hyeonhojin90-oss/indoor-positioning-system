@@ -1,0 +1,114 @@
+.floor5-plan #floorPlan,
+#floorPlan {
+  aspect-ratio: 1380 / 1180;
+}
+
+.floor5-standard-note {
+  fill: #355064;
+  font-size: 13px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.floor5-row-label {
+  fill: #4b5b69;
+  font-size: 11px;
+  font-weight: 750;
+  text-anchor: middle;
+}
+
+.floor5-small-room,
+.floor5-small-room text {
+  font-size: 10px !important;
+}
+
+.floor5-photo-note {
+  fill: #8a5a00;
+  font-size: 11px;
+  font-weight: 800;
+  text-anchor: start;
+}
+
+.floor5-outdoor-access rect {
+  fill: #e0f2fe;
+  stroke: #0284c7;
+  stroke-width: 2.2;
+  stroke-dasharray: 7 6;
+}
+
+.floor5-outdoor-access text {
+  fill: #075985;
+  font-size: 11px;
+  font-weight: 850;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.floor5-outdoor-door {
+  fill: none;
+  stroke: #2f6fed;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.floor5-outdoor-flow {
+  fill: none;
+  stroke: #0284c7;
+  stroke-width: 4;
+  stroke-dasharray: 9 7;
+  stroke-linecap: round;
+}
+
+.floor5-outdoor-access .floor5-outdoor-label {
+  fill: #0369a1;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.floor5-outdoor-narrow {
+  fill: rgba(224, 242, 254, .45);
+  stroke: #94a3b8;
+  stroke-width: 2;
+}
+
+.floor5-outdoor-zone {
+  pointer-events: none;
+}
+
+.floor5-outdoor-zone .outdoor-zone-shell {
+  fill: rgba(252, 231, 243, .42);
+  stroke: #d8a307;
+  stroke-width: 5;
+  stroke-dasharray: 15 9;
+}
+
+.floor5-outdoor-zone text {
+  font-size: 13px;
+  font-weight: 850;
+  text-anchor: middle;
+}
+
+.floor5-outdoor-zone .outdoor-zone-title {
+  fill: #9a6700;
+}
+
+.floor5-common-frame {
+  fill: none !important;
+}
+
+.end-facilities .right-stair-entry {
+  fill: #e8edf2;
+}
+
+.end-facilities .right-stair-flight {
+  fill: #eef3fb;
+}
+
+.end-facilities .right-stair-landing {
+  fill: #e5e8f6;
+}
+
+.end-facilities .right-stair-zone {
+  fill: #596779;
+  font-size: 9px;
+}

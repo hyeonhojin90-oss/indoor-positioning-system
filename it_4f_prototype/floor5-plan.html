@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT융합대학 5층 구조 검토도</title>
+  <script>
+    if (new URLSearchParams(window.location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embed");
+    }
+  </script>
+  <link rel="stylesheet" href="./src/floor3-plan.css" />
+  <link rel="stylesheet" href="./src/floor5-plan.css" />
+</head>
+<body>
+<main class="plan-shell">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">5F 표준층 초안</p>
+      <h1>IT융합대학 5층 2D 구조 검토도</h1>
+      <p>빨간박스 공통 본동 틀 안에서 5층 피난안내도 기준 호실을 배치하고, 기존 증축 외형과 복도 위 빈 공간을 야외공간으로 통합해 표시합니다.</p>
+    </div>
+    <nav class="top-actions"><a class="secondary-link" href="./index.html">2D 전체 보기</a><a class="secondary-link" href="./clay.html?floor=5">5층 3D 보기</a></nav>
+  </header>
+  <section class="plan-layout">
+    <div class="plan-stage">
+      <svg id="floorPlan" viewBox="0 0 1380 1180" role="img" aria-labelledby="planTitle planDesc">
+        <title id="planTitle">IT융합대학 5층 표준 본동 평면 구조</title>
+        <desc id="planDesc">4층과 같은 코어, 화장실, 엘레베이터, 계단 좌표를 고정하고 5층 호실과 야외공간을 배치한 평면 구조도.</desc>
+        <defs>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#e7ebef" /></pattern>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#2f6f61" /></marker>
+        </defs>
+        <rect class="sheet-grid" x="20" y="20" width="1340" height="1140" />
+        <text class="layer-title" x="690" y="54">5층 표준 본동 + 야외공간 통합 표시</text>
+
+        <g id="buildingPlan">
+          <g class="floor5-outdoor-zone" aria-label="5층 야외공간">
+            <rect class="outdoor-zone-shell" x="1018" y="85" width="292" height="615" />
+            <text class="outdoor-zone-title" x="1164" y="112">5층 야외공간</text>
+          </g>
+
+          <g class="inherited-shell" transform="translate(0 470)">
+            <path class="common-frame floor5-common-frame" d="M70 120H1018 M70 120V404H1310V230" />
+            <rect class="main-corridor" x="70" y="230" width="1240" height="64" />
+            <text x="690" y="268">메인 복도 · 5층 공통틀</text>
+
+            <g class="left-end-stair">
+              <rect x="25" y="294" width="45" height="110" />
+              <path class="stair-step" d="M34 314h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27" />
+              <text transform="translate(48 350) rotate(-90)">왼쪽계단</text>
+            </g>
+
+            <g class="room-row inherited-rooms">
+              <rect x="70" y="120" width="26" height="110" /><rect x="96" y="120" width="30" height="110" /><rect x="126" y="120" width="30" height="110" /><rect x="156" y="120" width="30" height="110" />
+              <rect x="186" y="120" width="100" height="110" /><rect x="286" y="120" width="40" height="110" /><rect x="326" y="120" width="44" height="110" /><rect x="370" y="120" width="38" height="110" />
+              <rect x="408" y="120" width="38" height="110" /><rect x="446" y="120" width="38" height="110" /><rect x="484" y="120" width="38" height="110" /><rect x="522" y="120" width="38" height="110" /><rect x="560" y="120" width="70" height="110" />
+              <text class="floor5-small-room" x="83" y="175">5128-7</text><text class="floor5-small-room" x="111" y="175">5128-6</text><text class="floor5-small-room" x="141" y="175">5128-5</text><text class="floor5-small-room" x="171" y="175">5128-4</text>
+              <text x="236" y="175">5126</text><text class="floor5-small-room" x="306" y="175">5126-1</text><text class="floor5-small-room" x="348" y="175">5123</text><text class="floor5-small-room" x="389" y="175">5122</text>
+              <text class="floor5-small-room" x="427" y="175">5121</text><text class="floor5-small-room" x="465" y="175">5120</text><text class="floor5-small-room" x="503" y="175">5119</text><text class="floor5-small-room" x="541" y="175">5118</text><text x="595" y="175">5117</text>
+
+              <rect x="70" y="294" width="130" height="110" /><rect x="200" y="294" width="60" height="110" /><rect x="260" y="294" width="60" height="110" /><rect x="320" y="294" width="60" height="110" />
+              <rect x="380" y="294" width="60" height="110" /><rect x="440" y="294" width="45" height="110" /><rect x="485" y="294" width="45" height="110" /><rect x="530" y="294" width="40" height="110" />
+              <text x="135" y="349">5228</text><text class="floor5-small-room" x="230" y="349">5227-6</text><text class="floor5-small-room" x="290" y="349">5227-5</text><text class="floor5-small-room" x="350" y="349">5227-4</text>
+              <text x="410" y="349">5224</text><text class="floor5-small-room" x="462" y="349">5223</text><text class="floor5-small-room" x="507" y="349">5222</text><text class="floor5-small-room" x="550" y="349">5221</text>
+
+              <text class="floor5-row-label" x="350" y="98">왼쪽복도 위쪽: 5128-7 ~ 5117</text>
+              <text class="floor5-row-label" x="320" y="430">왼쪽복도 아래쪽: 5228 ~ 5221</text>
+            </g>
+
+            <g class="core-module">
+              <rect x="570" y="294" width="230" height="250" />
+              <rect class="restroom-core" x="570" y="294" width="60" height="250" />
+              <rect class="facility ev-bank" x="630" y="294" width="60" height="250" />
+              <rect class="facility ev-car" x="642" y="314" width="34" height="64" />
+              <rect class="facility ev-car" x="642" y="394" width="34" height="64" />
+              <line class="core-separator" x1="630" y1="294" x2="630" y2="544" />
+              <line class="core-separator" x1="690" y1="294" x2="690" y2="544" />
+              <rect class="core-corridor" x="690" y="294" width="42" height="250" />
+              <rect class="stair-box" x="752" y="336" width="36" height="180" />
+              <path class="stair-step" d="M758 352h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24" />
+              <text class="core-side-label" x="600" y="419" transform="rotate(-90 600 419)">메인 화장실</text>
+              <text x="660" y="346">EV</text><text x="660" y="426">EV</text>
+              <text x="660" y="494">엘레베이터 2대</text>
+              <text x="711" y="318">코어복도</text><text x="770" y="530">메인계단</text>
+            </g>
+
+            <g class="room-row inherited-rooms">
+              <rect x="752" y="120" width="130" height="110" /><rect x="882" y="120" width="136" height="110" />
+              <text x="817" y="175">5114</text><text x="950" y="175">5111</text>
+              <rect x="800" y="294" width="82" height="110" /><rect x="882" y="294" width="82" height="110" /><rect x="964" y="294" width="150" height="110" />
+              <rect x="1114" y="294" width="138" height="110" />
+              <text x="841" y="349">5213</text><text x="923" y="349">5212</text><text x="1039" y="349">5209</text>
+              <text x="1183" y="340">편의점</text><text class="floor5-small-room" x="1183" y="363">5205 · 5205-1</text>
+              <text class="floor5-row-label" x="885" y="98">오른쪽복도 위쪽: 5114 · 5111</text>
+              <text class="floor5-row-label" x="1040" y="430">오른쪽복도 아래쪽: 5213 · 5212 · 5209 · 편의점</text>
+              <g class="floor5-outdoor-access">
+                <path class="floor5-outdoor-door floor5-upper-outdoor-door" d="M1060 230h58" />
+                <text class="floor5-outdoor-label" x="1089" y="217">야외문</text>
+                <path class="floor5-outdoor-door" d="M1310 246v36" />
+                <text class="floor5-outdoor-label" x="1272" y="236">복도 끝 야외문</text>
+              </g>
+            </g>
+
+            <g class="end-facilities">
+              <rect x="1252" y="294" width="30" height="110" />
+              <text transform="translate(1267 349) rotate(-90)">화장실 통로</text>
+              <rect class="right-stair-entry" x="1282" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1291 323) rotate(-90)">계단 입구</text>
+              <rect class="right-stair-flight" x="1300" y="294" width="52" height="58" />
+              <path class="stair-step right-end-stair-step" d="M1304 304h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44" />
+              <text class="right-stair-zone" transform="translate(1326 323) rotate(-90)">12+12계단</text>
+              <rect class="right-stair-landing" x="1352" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1361 323) rotate(-90)">중간참</text>
+              <text x="1326" y="370">오른쪽계단</text>
+            </g>
+
+            <text class="floor5-photo-note" x="70" y="472">주의: 5227 계열은 5층 피난안내도 사진 판독 기반 임시 표시</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </section>
+</main>
+</body>
+</html>

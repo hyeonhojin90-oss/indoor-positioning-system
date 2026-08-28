@@ -1,0 +1,91 @@
+{
+  "building": "조선대학교 IT융합대학",
+  "floor": 3,
+  "status": "evidence-analysis-before-modeling",
+  "source_priority": [
+    "lidar_glb",
+    "polycam_floorplan_report",
+    "site_annotation_and_notes",
+    "evacuation_plan_for_room_labels_only"
+  ],
+  "sources": {
+    "glb": "../assets/3f/it_3f_right_wing.glb",
+    "polycam_report": "../assets/3f/it_3f_spatial_report.pdf",
+    "glb_bbox_meter": [39.8218, 7.382324, 53.039406],
+    "glb_mesh_count": 6,
+    "glb_material_count": 6
+  },
+  "shared_from_floor_4": {
+    "core_corridor_geometry": true,
+    "left_corridor_geometry": true,
+    "room_labels_replaced_for_floor_3": true,
+    "note": "공통 구조는 4층 형상을 복제하고 3층 피난안내도는 강의실 매핑에만 사용한다."
+  },
+  "right_wing_annotations": [
+    {
+      "color": "green",
+      "meaning": "기존 오른쪽 복도에서 3층 확장부 접속점으로 들어오는 진행 방향",
+      "confidence": "confirmed"
+    },
+    {
+      "color": "white",
+      "meaning": "사이드계단 입구",
+      "confidence": "confirmed"
+    },
+    {
+      "color": "blue",
+      "meaning": "IT홀 입구",
+      "confidence": "confirmed"
+    },
+    {
+      "color": "pink",
+      "meaning": "새로운 넓은 공간 방향",
+      "confidence": "confirmed"
+    },
+    {
+      "color": "red",
+      "meaning": "기존 빨간색 라인의 위치 기준점",
+      "geometry_type": "unconfirmed",
+      "confidence": "position-only"
+    }
+  ],
+  "confirmed_measurements_m": {
+    "new_space_length": 25.317,
+    "new_space_width": 7.167,
+    "yellow_opening_width": 6.121,
+    "blue_it_hall_stair_width": 2.422,
+    "interpretation": "The yellow mark is the full opening through the red boundary wall, not a single standard door. The red-boundary right side reuses floor 4 unchanged."
+  },
+  "polycam_rooms": [
+    {
+      "id": "ROOM_1",
+      "interpretation": "긴 오른쪽 복도 후보",
+      "detected_openings": { "windows": 1, "doors": 2 },
+      "fixtures": { "cabinets": 7 }
+    },
+    {
+      "id": "ROOM_2",
+      "interpretation": "IT홀·사이드계단·신규 공간 접속부 후보",
+      "detected_openings": { "windows": 2, "doors": 1 },
+      "fixtures": { "cabinets": 1, "stairs": 1 }
+    },
+    {
+      "id": "ROOM_3",
+      "interpretation": "작은 별도 공간 후보",
+      "name_status": "unconfirmed"
+    }
+  ],
+  "alignment_anchors": [
+    "right_corridor_green_centerline",
+    "side_stair_entrance_center",
+    "it_hall_entrance_center",
+    "new_space_turning_corner",
+    "red_marker_position",
+    "polycam_room1_room2_boundary"
+  ],
+  "non_negotiable": [
+    "GLB에서 보이는 모든 문과 개구부를 보존한다.",
+    "빨간 표시의 형상 의미가 확정되기 전에는 GLB 원형을 변경하지 않는다.",
+    "피난안내도의 비율로 GLB 형상을 변형하지 않는다."
+  ]
+}

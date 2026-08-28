@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IT융합대학 3층 GLB 원본 검사</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { width: 100%; height: 100%; margin: 0; }
+      body { background: #f4f6f8; color: #172033; font-family: Arial, "Malgun Gothic", sans-serif; }
+      main { display: grid; grid-template-rows: auto 1fr; width: 100%; height: 100%; }
+      header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 18px; border-bottom: 1px solid #d9e0e8; background: #fff; }
+      h1 { margin: 0; font-size: 18px; }
+      p { margin: 4px 0 0; color: #667085; font-size: 13px; }
+      a { color: #155eef; font-weight: 700; text-decoration: none; }
+      model-viewer { width: 100%; height: 100%; min-height: 0; background: #eef2f6; }
+      @media (max-width: 620px) {
+        header { align-items: flex-start; }
+        h1 { font-size: 16px; }
+        p { max-width: 250px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>3층 오른쪽 복도·IT홀 확장부 원본 GLB</h1>
+          <p>문, 계단 입구, IT홀 입구와 신규 공간을 확인하는 1차 형상 근거</p>
+        </div>
+        <a href="./clay.html">클레이 지도</a>
+      </header>
+      <model-viewer
+        src="./assets/3f/it_3f_right_wing.glb"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        shadow-intensity="0.6"
+        exposure="1"
+        alt="IT융합대학 3층 오른쪽 복도 원본 LiDAR 스캔"
+      ></model-viewer>
+    </main>
+  </body>
+</html>

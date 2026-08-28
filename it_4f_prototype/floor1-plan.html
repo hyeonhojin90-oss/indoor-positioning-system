@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT융합대학 1층 구조 검토도</title>
+  <script>
+    if (new URLSearchParams(window.location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embed");
+    }
+  </script>
+  <link rel="stylesheet" href="./src/floor3-plan.css" />
+  <link rel="stylesheet" href="./src/floor1-plan.css" />
+</head>
+<body>
+<main class="plan-shell">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">1F 구조 재구성</p>
+      <h1>IT융합대학 1층 2D 구조 검토도</h1>
+      <p>고정된 본동 틀 안에 1층 강의실을 배치하고, 별도 행정실 건물과 야외 복도를 구분했습니다.</p>
+    </div>
+    <nav class="top-actions">
+      <a class="secondary-link" href="./index.html">2D 전체 보기</a>
+      <a class="secondary-link" href="./clay.html">3D 돌아가기</a>
+    </nav>
+  </header>
+
+  <section class="toolbar">
+    <div class="view-buttons">
+      <button class="active" data-view="all">전체 구조</button>
+      <button data-view="admin">행정실·야외 복도</button>
+      <button data-view="core">코어</button>
+    </div>
+    <p id="viewStatus">1층 본동과 별도 행정실 건물을 함께 표시하고 있습니다.</p>
+  </section>
+
+  <section class="plan-layout">
+    <div class="plan-stage">
+      <svg id="floorPlan" viewBox="0 0 1380 1160" role="img" aria-labelledby="planTitle planDesc">
+        <title id="planTitle">IT융합대학 1층 평면 구조</title>
+        <desc id="planDesc">다른 층과 같은 코어와 계단 좌표를 유지한 본동, 오른쪽 위 1107부터 1101까지의 강의실, 야외 복도와 하나로 통합한 행정실을 표시한다.</desc>
+        <defs>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M20 0H0V20" fill="none" stroke="#e7ebef" />
+          </pattern>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0 0L8 4L0 8Z" fill="#2f6f61" />
+          </marker>
+        </defs>
+
+        <rect class="sheet-grid" x="20" y="20" width="1340" height="1120" />
+        <g id="buildingPlan">
+          <g class="admin-building">
+            <rect class="admin-shell" x="1018" y="70" width="292" height="330" />
+            <text class="admin-title" x="1164" y="222">행정실</text>
+            <text class="admin-note" x="1164" y="253">내부 호실은 통합 표시</text>
+          </g>
+
+          <g class="outdoor-corridor">
+            <rect x="1018" y="410" width="292" height="120" />
+            <path class="outdoor-edge" d="M1018 410H1310M1018 530H1310" />
+            <path class="outdoor-flow" d="M1044 470H1278" marker-end="url(#arrow)" />
+            <text x="1164" y="450">야외 복도</text>
+            <text class="outdoor-note" x="1164" y="500">본동과 행정실 사이 외부 이동</text>
+          </g>
+
+          <g class="inherited-shell" transform="translate(0 410)">
+            <rect class="common-frame" x="70" y="120" width="1240" height="284" />
+            <rect class="main-corridor" x="70" y="230" width="1240" height="64" />
+            <text x="690" y="268">메인 복도 · 1층 공통틀</text>
+
+            <g class="left-end-stair">
+              <rect x="25" y="294" width="45" height="110" />
+              <path class="stair-step" d="M34 314h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27" />
+              <text transform="translate(48 350) rotate(-90)">왼쪽계단</text>
+            </g>
+
+            <g class="room-row left-rooms">
+              <rect x="70" y="120" width="128" height="110" />
+              <rect x="198" y="120" width="150" height="110" />
+              <rect x="348" y="120" width="164" height="110" />
+              <rect x="512" y="120" width="118" height="110" />
+              <text x="134" y="175">1128</text>
+              <text x="273" y="175">1125</text>
+              <text x="430" y="175">1122</text>
+              <text x="571" y="175">1119</text>
+
+              <rect x="70" y="294" width="150" height="110" />
+              <rect x="220" y="294" width="145" height="110" />
+              <rect x="365" y="294" width="205" height="110" />
+              <text x="145" y="349">1228</text>
+              <text x="292" y="349">1225</text>
+              <text x="468" y="349">1221</text>
+              <text class="row-label upper-row" x="310" y="98">왼쪽복도 위쪽: 1128 · 1125 · 1122 · 1119</text>
+              <text class="row-label lower-row" x="300" y="430">왼쪽복도 아래쪽: 1228 · 1225 · 1221</text>
+            </g>
+
+            <g class="upper-gap rest-area" aria-label="1층 휴식공간">
+              <path d="M696 120H1018V230H696" />
+              <text x="857" y="175">휴식공간</text>
+            </g>
+
+            <g class="main-entrance" aria-label="1119 오른쪽 메인입구">
+              <line class="wall-opening-mask" x1="634" y1="120" x2="696" y2="120" />
+              <path class="door-leaf" d="M636 120L662 146M694 120L668 146" />
+              <path class="door-swing" d="M636 120A36 36 0 0 1 662 146M694 120A36 36 0 0 0 668 146" />
+            </g>
+
+            <g class="room-row right-upper-rooms">
+              <rect x="1018" y="120" width="76" height="110" />
+              <rect x="1094" y="120" width="33" height="110" />
+              <rect x="1127" y="120" width="33" height="110" />
+              <rect x="1160" y="120" width="69" height="110" />
+              <rect x="1229" y="120" width="81" height="110" />
+              <text x="1056" y="175">1107</text>
+              <text class="small-room-label" x="1110.5" y="175">1105-2</text>
+              <text class="small-room-label" x="1143.5" y="175">1105-1</text>
+              <text x="1194.5" y="175">1103</text>
+              <text x="1269.5" y="175">1101</text>
+            </g>
+
+            <g class="core-module">
+              <rect x="570" y="294" width="230" height="250" />
+              <rect class="restroom-core" x="570" y="294" width="60" height="250" />
+              <rect class="facility ev-bank" x="630" y="294" width="60" height="250" />
+              <rect class="facility ev-car" x="642" y="314" width="34" height="64" />
+              <rect class="facility ev-car" x="642" y="394" width="34" height="64" />
+              <line class="core-separator" x1="630" y1="294" x2="630" y2="544" />
+              <line class="core-separator" x1="690" y1="294" x2="690" y2="544" />
+              <rect class="core-corridor" x="690" y="294" width="42" height="250" />
+              <rect class="stair-box" x="752" y="336" width="36" height="180" />
+              <path class="stair-step" d="M758 352h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24" />
+              <text class="core-side-label" x="600" y="419" transform="rotate(-90 600 419)">메인 화장실</text>
+              <text x="660" y="346">EV</text>
+              <text x="660" y="426">EV</text>
+              <text x="660" y="494">엘레베이터 2대</text>
+              <text x="711" y="318">코어복도</text>
+              <text x="770" y="530">메인계단</text>
+            </g>
+
+            <g class="room-row right-lower-rooms">
+              <rect x="800" y="294" width="60" height="110" />
+              <rect x="894" y="294" width="92" height="110" />
+              <rect x="986" y="294" width="176" height="110" />
+              <rect x="1162" y="294" width="90" height="110" />
+              <text x="830" y="349">1213</text>
+              <text x="940" y="349">1210</text>
+              <text x="1074" y="349">1209</text>
+              <text x="1207" y="349">1204</text>
+              <text class="row-label lower-row" x="1026" y="430">오른쪽복도 아래쪽: 1213 · 1210 · 1209 · 1204</text>
+              <g class="door-passage" aria-label="1213과 1210 사이 빈 통로">
+                <rect class="passage-fill" x="860" y="294" width="34" height="110" />
+                <path class="passage-outline" d="M860 294V404H894V294" />
+              </g>
+              <g class="internal-door passage-door" aria-label="1213과 1210 사이 문">
+                <line class="wall-opening-mask" x1="864" y1="294" x2="890" y2="294" />
+                <line x1="864" y1="294" x2="888" y2="318" />
+                <path d="M864 294A34 34 0 0 1 888 318" />
+              </g>
+            </g>
+
+            <g class="end-facilities">
+              <rect x="1252" y="294" width="30" height="110" />
+              <text transform="translate(1267 349) rotate(-90)">화장실 통로</text>
+              <rect class="right-stair-entry" x="1282" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1291 323) rotate(-90)">계단 입구</text>
+              <rect class="right-stair-flight" x="1300" y="294" width="52" height="58" />
+              <path class="stair-step right-end-stair-step" d="M1304 304h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44" />
+              <text class="right-stair-zone" transform="translate(1326 323) rotate(-90)">12+12계단</text>
+              <rect class="right-stair-landing" x="1352" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1361 323) rotate(-90)">중간참</text>
+              <text x="1326" y="370">오른쪽계단</text>
+            </g>
+          </g>
+
+          <g class="dimension-note">
+            <text x="70" y="1035">고정 구조: 본동 외곽 · 코어 · 메인계단 · 좌우 사이드계단 · 화장실 통로</text>
+            <text x="70" y="1058">1층 전용 구조: 오른쪽 위 강의실 행 · 야외 복도 · 통합 행정실 · 1213-1210 사이 문</text>
+          </g>
+
+          <g class="legend-on-map">
+            <rect class="legend-common" x="75" y="1080" width="22" height="22" />
+            <text x="108" y="1097">본동 공통 구조</text>
+            <rect class="legend-outdoor" x="292" y="1080" width="22" height="22" />
+            <text x="325" y="1097">야외 복도</text>
+            <rect class="legend-admin" x="480" y="1080" width="22" height="22" />
+            <text x="513" y="1097">행정실</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <aside class="review-panel">
+      <section>
+        <h2>이번 구조 원칙</h2>
+        <ul>
+          <li>빨간 본동 틀과 코어·계단 위치는 다른 층과 동일하게 고정합니다.</li>
+          <li>오른쪽복도 위쪽 1107·1105-2·1105-1·1103·1101은 모두 독립 강의실입니다.</li>
+          <li>행정실은 야외 복도 위쪽 노란 박스만 통합해 표시합니다.</li>
+          <li>1213과 1210 사이 문 하나만 표시합니다.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>표시 기준</h2>
+        <p>1119 오른쪽 빈 구간의 외벽에 메인입구를 표시합니다. 행정실 내부 호실은 개별 목적지로 나누지 않습니다.</p>
+      </section>
+      <div class="legend">
+        <span><i class="common-swatch"></i>본동</span>
+        <span><i class="outdoor-swatch"></i>야외 복도</span>
+        <span><i class="admin-swatch"></i>행정실</span>
+        <span><i class="opening-swatch"></i>문</span>
+      </div>
+    </aside>
+  </section>
+</main>
+<script src="./src/floor1-plan.js?v=initial-1f"></script>
+</body>
+</html>

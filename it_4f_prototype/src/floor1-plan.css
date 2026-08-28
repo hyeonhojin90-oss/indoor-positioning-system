@@ -1,0 +1,145 @@
+.admin-building .admin-shell {
+  fill: #e9edf3;
+  stroke: #5e6d7d;
+  stroke-width: 4;
+}
+
+.admin-building text,
+.outdoor-corridor text {
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.admin-title {
+  fill: #243446;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.admin-note {
+  fill: #667485;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.outdoor-corridor rect {
+  fill: #f8d8e8;
+  stroke: none;
+}
+
+.outdoor-corridor .outdoor-edge {
+  fill: none;
+  stroke: #c04778;
+  stroke-width: 3;
+}
+
+.outdoor-corridor .outdoor-flow {
+  fill: none;
+  stroke: #2f6f61;
+  stroke-width: 5;
+  stroke-dasharray: 12 8;
+}
+
+.outdoor-corridor text {
+  fill: #8a2755;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.outdoor-corridor .outdoor-note {
+  fill: #7a5265;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.right-upper-rooms .small-room-label {
+  font-size: 11px;
+}
+
+.upper-gap path {
+  fill: #f8fafc;
+  stroke: #7a8796;
+  stroke-width: 2.5;
+}
+
+.rest-area path {
+  fill: #eef5ef;
+}
+
+.rest-area text {
+  fill: #356557;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.internal-door line,
+.internal-door path {
+  fill: none;
+  stroke: #2f6fed;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.door-passage .passage-fill {
+  fill: #f8fafc;
+  stroke: none;
+}
+
+.door-passage .passage-outline {
+  fill: none;
+  stroke: #7a8796;
+  stroke-width: 2.5;
+}
+
+.passage-door .wall-opening-mask {
+  stroke: #f8fafc;
+  stroke-width: 8;
+}
+
+.main-entrance .wall-opening-mask {
+  stroke: #f8fafc;
+  stroke-width: 9;
+}
+
+.main-entrance .door-leaf,
+.main-entrance .door-swing {
+  fill: none;
+  stroke: #2f6fed;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.main-entrance .door-swing {
+  stroke-width: 2.5;
+  stroke-dasharray: 5 4;
+}
+
+.legend-outdoor,
+.outdoor-swatch {
+  background: #f8d8e8;
+  fill: #f8d8e8;
+}
+
+.legend-admin,
+.admin-swatch {
+  background: #e9edf3;
+  fill: #e9edf3;
+}
+
+.end-facilities .right-stair-entry {
+  fill: #e8edf2;
+}
+
+.end-facilities .right-stair-flight {
+  fill: #eef3fb;
+}
+
+.end-facilities .right-stair-landing {
+  fill: #e5e8f6;
+}
+
+.end-facilities .right-stair-zone {
+  fill: #596779;
+  font-size: 9px;
+}

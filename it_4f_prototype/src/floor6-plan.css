@@ -1,0 +1,53 @@
+#floorPlan { aspect-ratio: 1500 / 780; }
+
+.floor6-common-frame { fill: none !important; }
+
+.end-facilities .floor6-stair-entry { fill: #e8edf2; }
+.end-facilities .floor6-stair-flight { fill: #eef3fb; }
+.end-facilities .floor6-stair-landing { fill: #e5e8f6; }
+.end-facilities .floor6-stair-zone { font-size: 9px; fill: #596779; }
+
+.end-facilities .floor6-room-6202 {
+  fill: var(--free) !important;
+  stroke: none !important;
+}
+
+.floor6-6202-boundary {
+  fill: none;
+  stroke: var(--common-line);
+  stroke-width: 2.5;
+}
+
+.floor6-6202-door {
+  stroke: #66c8ea;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.end-facilities .floor6-6202-label {
+  fill: #834570;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.floor6-row-label {
+  fill: #4b5b69;
+  font-size: 11px !important;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.floor6-lab-note {
+  fill: #667487 !important;
+  font-size: 9px !important;
+  font-weight: 750;
+}
+
+.floor6-small-room { font-size: 11px !important; }
+
+.floor6-l-corner {
+  fill: none;
+  stroke: #697888;
+  stroke-width: 4;
+  stroke-linejoin: miter;
+}

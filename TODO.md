@@ -16,8 +16,8 @@
 - Refine clay 3D model into a clean single 4F space.
 - Make the `ㅗ` shape obvious.
 - Verify elevator and stair positions.
-- Verify `4213`, `4218`, `4210`, `4204`, `4120~4128` positions.
-- Improve route drawing so it follows corridors only.
+- Get user visual confirmation for the revised `4213`, `4218`, `4210`, `4204`, `4120~4128` positions.
+- Apply the confirmed 2D room coordinates to the clay 3D model.
 
 ## Indoor Positioning
 
@@ -28,6 +28,6 @@
 
 ## GitHub
 
-- Create GitHub repository.
-- Push this workspace.
+- Repository created and initial workspace pushed: `https://github.com/hyeonhojin90-oss/indoor-nav-it4f`.
+- Commit and push the latest 2D/PDR v0.4 changes after user confirms room placement.
 - Use `HANDOFF.md` when switching Codex accounts.

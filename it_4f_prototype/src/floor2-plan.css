@@ -1,0 +1,156 @@
+.floor2-open-zone .open-zone-shell {
+  fill: #f1f5f9;
+  stroke: var(--common-line);
+  stroke-width: 2.5;
+}
+
+.floor2-open-zone text {
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.floor2-open-zone .open-zone-title {
+  fill: #1f2937;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.floor2-open-zone .open-zone-note {
+  fill: #667485;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.study-zone .tdm-extension {
+  fill: #e7edf6;
+  stroke: #52657a;
+  stroke-width: 2;
+}
+
+.study-zone .tdm-extension-label {
+  fill: #334155;
+  font-size: 12px;
+  font-weight: 850;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.right-common .small-room-label {
+  font-size: 11px;
+}
+
+.s-space-open .s-space-floor {
+  fill: #dceee8;
+  stroke: none;
+}
+
+.s-space-open .s-space-outer-boundary {
+  fill: none;
+  stroke: var(--added-line);
+  stroke-width: 3;
+}
+
+.s-space-open text {
+  fill: var(--ink);
+  font-size: 17px;
+  font-weight: 850;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.s-space-open .source-note {
+  fill: var(--muted);
+  font-size: 10px;
+}
+
+.study-zone .study-floor {
+  fill: #f5f1e8;
+  stroke: #8b8171;
+  stroke-width: 2.5;
+}
+
+.study-zone-label {
+  fill: #6a5f51;
+  font-size: 13px;
+  font-weight: 850;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.desk-u-shape rect {
+  fill: #c49a6c;
+  stroke: #765a3a;
+  stroke-width: 1.5;
+}
+
+.structural-column {
+  fill: #d7a92f;
+  stroke: #7b5d0d;
+  stroke-width: 2.5;
+}
+
+.column-label,
+.entry-label {
+  fill: #6b4f0b;
+  font-size: 10px;
+  font-weight: 850;
+  text-anchor: middle;
+}
+
+.entry-clearance {
+  fill: none;
+  stroke: #2f6fed;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.floor2-entry-flow {
+  stroke: #2f6fed;
+  stroke-dasharray: 12 8;
+}
+
+.s-space-flow {
+  stroke: #2f6f61;
+  stroke-width: 4;
+  stroke-dasharray: 8 7;
+}
+
+.s-space-opening {
+  stroke: #2f6fed;
+}
+
+.s-space-entry-label {
+  fill: #245ec9;
+  font-size: 10px;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.floor2-movement-label {
+  fill: #245ec9;
+  font-size: 11px;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.end-facilities .right-stair-entry {
+  fill: #e8edf2;
+}
+
+.end-facilities .right-stair-flight {
+  fill: #eef3fb;
+}
+
+.end-facilities .right-stair-landing {
+  fill: #e5e8f6;
+}
+
+.end-facilities .right-stair-zone {
+  fill: #596779;
+  font-size: 9px;
+}

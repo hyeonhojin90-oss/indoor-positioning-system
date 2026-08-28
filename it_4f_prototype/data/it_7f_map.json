@@ -1,0 +1,51 @@
+{
+  "building": "조선대학교 IT융합대학",
+  "floor": 7,
+  "version": "7f-v1-evacuation-plan-verified",
+  "inherits": "it_4f_map.json",
+  "units": "meter-like-map-coordinate",
+  "scale_note": "7층은 6층에서 확정한 6~10층 공통 본동 틀과 고정 코어·좌우 계단을 재사용하고, 7층 피난안내도에 맞춰 강의실 순서와 폭만 배치한다.",
+  "remove_facility_ids": ["4F_4204_END_STAIRS"],
+  "floor6_right_end": {
+    "stair_anchor": "reuse_4f_right_end_stair",
+    "room_id": "7202",
+    "room_depth": 3.73,
+    "passage_center_x": 6.275,
+    "passage_width": 1.96,
+    "passage_depth": 4.16,
+    "note": "7206 오른쪽 통로를 통해 7202로 진입하며 오른쪽 계단 위치는 4층 고정틀과 동일하다."
+  },
+  "rooms": [
+    { "id": "7128", "label": "7128", "x": 130.86, "y": 8, "width": 9.10, "side": "upper" },
+    { "id": "7126", "label": "7126", "x": 124.03, "y": 8, "width": 4.55, "side": "upper" },
+    { "id": "7125", "label": "7125", "x": 119.48, "y": 8, "width": 4.55, "side": "upper" },
+    { "id": "7123", "label": "7123", "x": 112.66, "y": 8, "width": 9.10, "side": "upper" },
+    { "id": "7122", "label": "7122", "x": 103.56, "y": 8, "width": 9.10, "side": "upper" },
+    { "id": "7120", "label": "7120", "x": 96.73, "y": 8, "width": 4.55, "side": "upper" },
+    { "id": "7119", "label": "7119", "x": 92.18, "y": 8, "width": 4.55, "side": "upper" },
+    { "id": "7117", "label": "7117", "x": 85.36, "y": 8, "width": 9.10, "side": "upper" },
+
+    { "id": "7228", "label": "7228", "x": 130.31, "y": -8, "width": 10.19, "side": "lower" },
+    { "id": "7226", "label": "7226", "x": 122.67, "y": -8, "width": 5.10, "side": "lower" },
+    { "id": "7225", "label": "7225", "x": 110.84, "y": -8, "width": 18.56, "side": "lower" },
+    { "id": "7221", "label": "7221", "x": 91.185, "y": -8, "width": 20.75, "side": "lower" },
+
+    { "id": "7114", "label": "7114", "x": 63.61, "y": 8, "width": 10.10, "side": "upper" },
+    { "id": "7112", "label": "7112", "x": 56.035, "y": 8, "width": 5.05, "side": "upper" },
+    { "id": "7111", "label": "7111", "x": 50.985, "y": 8, "width": 5.05, "side": "upper" },
+    { "id": "7109", "label": "7109", "x": 43.41, "y": 8, "width": 10.10, "side": "upper" },
+    { "id": "7108", "label": "7108", "x": 33.31, "y": 8, "width": 10.10, "side": "upper" },
+    { "id": "7106", "label": "7106", "x": 25.735, "y": 8, "width": 5.05, "side": "upper" },
+    { "id": "7105", "label": "7105", "x": 20.685, "y": 8, "width": 5.05, "side": "upper" },
+    { "id": "7103", "label": "7103", "x": 14.58, "y": 8, "width": 7.16, "side": "upper" },
+
+    { "id": "7213", "label": "7213", "x": 66.135, "y": -8, "width": 5.05, "side": "lower" },
+    { "id": "7212", "label": "7212", "x": 56.035, "y": -8, "width": 15.15, "side": "lower" },
+    { "id": "7210", "label": "7210", "x": 38.36, "y": -8, "width": 20.20, "side": "lower" },
+    { "id": "7206", "label": "7206", "x": 19.63, "y": -8, "width": 17.26, "side": "lower" },
+    { "id": "7202", "label": "7202", "placement": "floor6-end-room", "x": 6.275, "y": -8, "width": 9.45, "side": "lower", "hide_door": true }
+  ],
+  "routing": {
+    "hub_junction": { "x": 70.804, "y": 0 }
+  }
+}
