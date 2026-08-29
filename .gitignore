@@ -9,6 +9,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .vscode/
+.idea/
 
 # Local env/secrets
 .env
@@ -23,3 +24,9 @@ Thumbs.db
 
 # Generated inspection files
 tmp/
+
+# GPS disposable temporary exports only
+gps/data/temp/
+
+# Keep gps/data/raw tracked when it contains reproducible project data.
+# Do not add gps/data/raw/ to this ignore file without reviewing the data policy.
