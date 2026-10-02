@@ -1,136 +1,45 @@
-# 자율설계 프로젝트
+# 실내지도 제작 및 실내측위
 
-개발 보조 도구: [학교 AI MCP](tools/school-ai-mcp/README.md)는 기본 Codex를 유지하면서 학교 6.1 Sol·6 Astra·Opus 5.5에 선택한 내용의 검토를 요청한다. 실행·키 관리·검증 범위는 도구 문서를 따른다.
+조선대학교 IT융합대학의 실내 2D·3D 지도와 휴대폰 센서를 이용한 실내 위치 추정 연구·개발 자료다. 진현호가 담당한 지도 제작, 실내 측위 및 현장 수집·분석 내용을 증빙하기 위한 저장소다.
 
-조선대학교 자율설계학기제에서 진행하는 교내 셔틀·실내 이동 통합 안내 시스템 프로젝트다.
+## 포함한 작업
 
-실내 측위의 최신 완료·미완료 상태는 [CURRENT_STATUS](docs/CURRENT_STATUS.md)를 기준으로 확인한다. [BLE/AP 수정 및 실험 결과](indoor/data/analysis/radio-fix-20260923/REPORT.md), [RoNIN PC 추론 실행 방법](indoor/tools/ronin/README.md)은 각 상세 문서에 기록한다. PC 실험 완료와 Android 배포 완료는 구분한다.
+- 피난안내도·현장 사진·GLB/LiDAR·실측을 활용한 1~10층 2D·3D 지도
+- 실제 복도 거리표와 도면 표시 좌표의 변환, 층별 이동 가능 범위
+- PDR·파티클·지도 제약, 자기장 격자/8걸음 패턴, BLE·AP 보정 코드
+- Android 지도·강의실 안내·경로 라벨·센서 기준점 수집 앱과 이전 Expo 실험 앱
+- 보행·기준점 측정 원본/정정본, 보폭·RoNIN·센서 조합 비교와 실패 사례
 
-## 프로젝트 목적
+## 코드와 자료 찾기
 
-셔틀 승차 인원 계수의 공개 영상 실험은 [실행 방법](tools/passenger-counter/README.md)과 [결과·실패 사례](tools/passenger-counter/RESULTS.md)에 기록한다. 문 검출·사람 추적·집계를 PC에서 비교 중이며 Jetson Orin Nano와 실제 정류장·강의실 카메라 검증은 미완료다. 최신 전체 상태는 `docs/CURRENT_STATUS.md`를 따른다.
+| 경로 | 내용 |
+|---|---|
+| `indoor/web` | 2D·3D 지도, 공용 지도 자료와 측위 엔진 |
+| `app/android-native` | Android Studio 앱 소스와 단위검사 |
+| `app/expo-sensor-collector` | 이전 센서 수집·재생 실험 앱 |
+| `app/android-updates` | Android 수정 및 검증 기록 |
+| `indoor/data/raw`, `curated` | 측정 원본과 정정 자료 |
+| `indoor/data/analysis` | 실험 조건·결과·오차·실패 사례 |
+| `indoor/tools`, `tools` | 분석·재생·지도 검사·앱 동기화 도구 |
+| `docs`, `indoor/docs` | 실내측위 진행상황·설계 결정·지도 근거 |
 
-대학교 내 이동 편의성을 높이기 위해 셔틀버스의 실외 위치 안내부터 하차 후 단과대학 건물 내부의 목적 강의실 안내까지 하나의 서비스로 연결한다.
+## 실행
 
-최종적으로 사용자가 다음 과정을 연속해서 이용할 수 있도록 하는 것이 목표다.
-
-1. 셔틀버스의 위치와 도착 정보를 확인한다.
-2. 셔틀에서 내린 뒤 목적 건물까지 이동한다.
-3. 건물 내부에서 자신의 위치를 추정한다.
-4. 원하는 강의실까지 2D 지도 또는 AR 안내를 받는다.
-
-## 시스템 구성
-
-### 1. 실외 위치 안내
-
-실외 위치 안내는 셔틀버스의 위치를 확인하는 구간과 셔틀 하차 후 목적 단과대학까지 이동하는 구간으로 나뉜다.
-
-#### 셔틀버스 위치 추적
-
-버스 내부에 장착한 T-Beam의 GPS 기능을 이용해 셔틀의 위치 정보를 수집하고 사용자에게 전달한다. 실제 운행 환경에서 발생하는 위치 오차를 분석한 뒤 적절한 보정 방식을 적용한다.
-
-#### 정류장에서 단과대학까지의 안내
-
-사용자가 셔틀에서 내린 뒤에는 버스에 장착된 T-Beam이 아니라 사용자의 휴대폰 GPS를 이용해 정류장에서 목적 단과대학 입구까지 안내한다.
-
-건물 입구에 도착하면 휴대폰 GPS 기반 실외 안내에서 PDR·자기장·지도 정합 기반의 실내 안내로 전환한다. 따라서 전체 안내 흐름은 다음과 같다.
-
-```text
-버스 T-Beam 위치 추적
-→ 정류장 하차
-→ 휴대폰 GPS로 단과대학까지 안내
-→ 건물 진입 감지 및 실내 위치 추정 전환
-→ 목적 강의실까지 안내
-```
-
-현재 Arduino UNO 기반 원시 GPS 수집 스케치를 보존한 상태이며, 실제 데이터셋 수집·파싱·보정 로직 구현은 다음 단계다.
-
-### 2. 실내 위치 추정
-
-건물 내부에서는 GPS 정확도가 낮기 때문에 휴대폰의 가속도계, 자이로스코프, 자기장 센서와 기압계 등을 활용한 PDR 기반 위치 추정을 검토하고 있다.
-
-기본 개발 방향은 다음과 같다.
-
-```text
-PDR + 자기장 기반 보정 + 지도 정합
-```
-
-Wi-Fi RTT 지원 환경의 1차 확인은 완료했다. Galaxy Tab SM-X216N은 미지원이었고, 별도 RTT 지원 Android 휴대폰에서는 현장 AP 12개 중 RTT responder가 0개였다. 현재 측위에서는 RTT 거리측정을 제외한다. 건물 전체 AP의 미지원을 확정한 것은 아니며, 일반 AP의 BSSID·RSSI 지문은 별도 보정 후보로 수집·검증한다. 단계별 완료 여부는 [`docs/ROADMAP.md`](docs/ROADMAP.md), 전체 진행상황은 [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)를 따른다.
-
-현재 Android 앱과 4층 반복 보행·기준점 자료를 이용한 센서 보정 비교까지 진행했다. 실제 현장 정확도와 미완료 항목은 최신 진행상황 문서를 따른다.
-
-### 3. 건물 지도
-
-IT융합대학 1~10층의 강의실과 주요 코어를 확인할 수 있는 2D·3D 웹 지도를 구현했다.
-
-- 1~10층 지도 데이터와 층별 2D 검토도
-- 1~10층 단독 3D와 통합 3D
-- 강의실 검색과 층 선택
-- PDR·자기장 실험 화면
-- 3·4층 GLB·LiDAR 참고 자료와 검사 도구
-
-현재 지도는 기능 개발에 사용할 수 있는 프로토타입이다. 일부 층의 비례 치수는 피난안내도를 근거로 작성했으므로 현장 구조 및 추가 자료와의 최종 검수가 남아 있다.
-
-### 4. 사용자 애플리케이션
-
-사용자가 셔틀 위치, 현재 위치, 목적 강의실과 이동 경로를 확인할 수 있는 모바일 서비스를 개발할 예정이다.
-
-현재 Android 앱에는 공용 지도 표시, 경로 라벨·센서 기준점 수집과 실내 위치 추정 실험 기능을 구현했다. 최신 소스는 `app/android-native`에서 확인할 수 있다. 셔틀·실외·실내 안내의 전체 서비스 연계와 iOS 확장은 후속 작업이다.
-
-Android 앱은 공용 웹 지도와 측위 코드를 재사용한다. 카메라 화면에 이동 방향과 남은 거리를 표시하는 AR 안내는 향후 확장 후보다.
-
-## 현재 진행상황
-
-최신 구현·현장 검증 여부의 기준은 [CURRENT_STATUS](docs/CURRENT_STATUS.md)다. 2026-10-03 저장소 정리 기준으로 다음을 포함한다.
-
-- IT융합대학 1~10층 공용 2D·3D 웹 지도와 2~10층 실측 거리표, 2·3층 추가 영역 자료
-- [Android 앱 소스](app/android-native/README.md): 지도, 경로 라벨·센서 기준점 수집, PDR·파티클 및 자기장/BLE/AP 보정
-- 기준점 접근뿐 아니라 걸음 동반 회전·지속 불확실성에서 AP를 요청하는 정책과 요청 예산·이동 품질 기록
-- 자기장 격자 우선/V2 보조 및 보폭·RoNIN·신호 비교 실험 코드와 결과
-- [버스 승차 인원 계수 프로토타입](tools/passenger-counter/README.md)의 코드·설정·결과 기록
-- GPS 원시 수집 펌웨어와 전체 설계·결정·작업 기록
-
-최신 Android 버전은 `1.0.20261002.1`(versionCode 8)이다. 빌드·단위검증과 실제 기기 설치·보행 정확도는 구분한다. 회전/AP 최신 구성의 현장 정확도, 자동 초기 위치, 계단 층 확정 후 재개, 설치 비콘 등록 등은 아직 검증 또는 구현이 남아 있다. [미완료 합의 목록](docs/INDOOR_AGREEMENT_AUDIT_20261002.md)을 참고한다. 실제 카메라·Orin 검증과 셔틀·실외·실내 전체 서비스 연계도 완료한 것으로 주장하지 않는다.
-
-## 저장소 복제 및 데이터
+Git LFS를 설치한 뒤 저장소를 복제한다.
 
 ```powershell
 git clone https://github.com/hyeonhojin90-oss/indoor-positioning-system.git
 cd indoor-positioning-system
 git lfs pull
+python -m http.server 4175 --bind 127.0.0.1 --directory indoor/web
 ```
 
-측정 원본·정정본의 JSONL, GLB·이미지·PDF는 Git LFS로 관리한다. 실험 재현에는 해당 자료가 필요하므로 원본을 보존한다. APK와 소스 ZIP 복제본, 개인·팀 보고서 내보내기, 빌드 캐시, 실행 임시 결과는 GitHub 업로드에서 제외한다. 다운로드한 연구 모델과 외부 영상은 각 도구 README의 출처·라이선스·설치 방법을 따른다. 세부 포함 범위는 [GitHub 소스 배포 기록](docs/GITHUB_SNAPSHOT_20261003.md)을 참고한다.
+2D 지도는 `http://127.0.0.1:4175/index.html`, 3D 지도는 `http://127.0.0.1:4175/clay.html`에서 확인한다. 3D 표시에는 인터넷으로 불러오는 Three.js가 필요하다.
 
-## 프로젝트 구조
+Android Studio에서 `app/android-native`를 연다. SDK/JDK 및 빌드 방법은 [앱 안내](app/android-native/README.md)를 따른다. Node.js를 준비하면 `npm test`로 실내 검사 스크립트 14개를 실행한다. 브라우저 검사는 `npm ci`, 위 지도 서버와 Windows Edge를 준비한 뒤 `npm run test:browser`로 실행한다. Python 분석은 필요한 경우 `python -m pip install -r indoor/tools/requirements-analysis.txt`로 분석 패키지를 준비한다. RoNIN 학습 모델은 [출처·설치 안내](indoor/tools/ronin/README.md)에 따라 별도로 받는다.
 
-```text
-자율설계 2/
-├─ docs/       프로젝트 개요, 구조, 결정, 진행상황과 작업 기록
-├─ gps/        GPS 펌웨어, 데이터, 보정 코드와 실험 문서
-├─ indoor/     1~10층 지도, PDR·자기장 실험과 GLB 도구
-└─ app/        Android 우선 모바일 애플리케이션과 향후 iOS 확장
-```
+## 현재 결과와 한계
 
-작업을 시작하기 전 루트 `AGENTS.md`, `docs/CURRENT_STATUS.md`, 해당 작업 영역의 `AGENTS.md`와 상태 문서를 확인한다.
+지도·수집 앱·센서 융합 실험 코드를 구현했다. 자기장 보정으로 일부 기록의 평균 오차가 소폭 줄었지만 큰 누적 오차가 남아 있다. 같은 기록을 다시 계산한 개발 평가와 독립 현장 정확도를 구분한다. 전 층 자동 초기 위치·층 이동 종료 판정·설치 비콘 연동 등은 완료한 것으로 주장하지 않는다.
 
-## 실내 지도 실행
-
-실내 검사는 저장소 루트의 `npm test`로 실행한다. 브라우저 검사는 `npm ci` 후 Windows Edge와 4175 서버를 준비해 `npm run test:browser`로 실행한다. Android 빌드는 [앱 README](app/android-native/README.md)를 따른다.
-
-```powershell
-cd .\indoor\web
-python -m http.server 4173 --bind 127.0.0.1
-```
-
-- 2D 지도: `http://127.0.0.1:4173/index.html`
-- 3D 지도: `http://127.0.0.1:4173/clay.html`
-- PDR 실험: `http://127.0.0.1:4173/pdr.html`
-
-## 작업 및 기록 원칙
-
-- 확인이나 분석만 수행한 상태를 작업 완료로 판단하지 않는다.
-- 구현 후 가능한 범위에서 실행하고 실제 결과를 검증한다.
-- 전체 상태는 `docs/CURRENT_STATUS.md`, 날짜별 작업은 `docs/WORKLOG.md`에 기록한다.
-- 중요한 설계 결정은 `docs/DECISIONS.md`에 기록한다.
-- 대용량 GLB·PDF·이미지는 Git LFS로 관리한다.
+[현재 상태](docs/CURRENT_STATUS.md), [분석 자료](indoor/data/analysis), [미완료 항목](docs/INDOOR_AGREEMENT_AUDIT_20261002.md), [공개 범위](docs/GITHUB_SNAPSHOT_20261003.md)를 함께 확인한다. APK·개인 보고서·SDK 경로·개인키·빌드 캐시는 포함하지 않는다.

@@ -92,9 +92,9 @@ iOS 자료도 별도 평가했다. 같은 회차 제외 크기+수직성분 DTW+
 
 ```powershell
 node indoor/tools/evaluate_room_segments_20261002.cjs
-& 'tools/passenger-counter/.venv/Scripts/python.exe' -X utf8 indoor/tools/report_room_segments_20261002.py
+python -X utf8 indoor/tools/report_room_segments_20261002.py
 ```
 
-Node 평가기는 별도 패키지가 필요 없다. 그림은 이미 설치된 프로젝트 Python의 matplotlib를 재사용했다. 이 Python 환경이나 승차 집계 코드/데이터는 수정하지 않았다.
+Node 평가기는 별도 패키지가 필요 없다. 그림은 이미 설치된 프로젝트 Python의 matplotlib를 재사용했다. 분석에는 위 Python 패키지 환경이 필요하며 원시 측정 자료는 수정하지 않는다.
 
 원본 SHA, 실행 코드 SHA, 회차/날짜 참조 제외, 걸음/구간 경계, m_v 물리 범위, 현재/과거 입력으로만 도달 확인한 것을 검사했다. 34775개 검증 통과. 수치·원본 manifest·예측별 참조 회차는 results.json, 원시 대상 구간 표는target-segments.csv, 무결성 검사는verification.json에 있다.

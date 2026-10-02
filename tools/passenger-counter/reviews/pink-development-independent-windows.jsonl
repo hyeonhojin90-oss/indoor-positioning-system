@@ -1,3 +1,0 @@
-{"person": "brown-shirt", "direction": "out", "start_s": 0.6666666666666666, "end_s": 2.0, "note": "Visible step-to-road descent; initially at doorway."}
-{"person": "mint-polo", "direction": "out", "start_s": 3.0, "end_s": 3.8333333333333335, "note": "Step descent, partial occlusion by foreground officer."}
-{"person": "checked-shirt", "direction": "out", "start_s": 4.0, "end_s": 5.0, "note": "Step descent, partial occlusion."}

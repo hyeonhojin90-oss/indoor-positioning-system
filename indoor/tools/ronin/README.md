@@ -7,8 +7,8 @@
 저장소 루트 PowerShell에서:
 
 ```powershell
-& 'tools/passenger-counter/.venv/Scripts/python.exe' indoor/tools/ronin/run_android.py
-& 'tools/passenger-counter/.venv/Scripts/python.exe' indoor/tools/ronin/test_bridge.py
+python indoor/tools/ronin/run_android.py
+python indoor/tools/ronin/test_bridge.py
 ```
 
 기존 CPU PyTorch 환경(torch/numpy/scipy)을 재사용한다. `weinberg-combined-20260923/results.json`의11회 파일목록 및 실측 종점거리로 평가한다. 원본 데이터는 읽기만 한다. `--limit 1`은 연결 확인용이며 기본11회 결과 파일을 덮어쓰므로 별도 `--output`을 권장한다.

@@ -1,0 +1,5 @@
+# Optional offline analysis packages; Android and Node tests do not require them.
+numpy
+scipy
+matplotlib
+torch

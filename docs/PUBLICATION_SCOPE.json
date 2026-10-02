@@ -1,0 +1,38 @@
+{
+  "source_commit": "e49cabba93210c95fd64bc872e1d475190971451",
+  "remote_parent_commit": "e49cabba93210c95fd64bc872e1d475190971451",
+  "scope": "indoor maps, positioning, Android/Expo collection, measurements and analyses",
+  "selected_source_files": 924,
+  "removed_from_current_public_tree": 451,
+  "excluded_domains": [
+    "gps",
+    "tools/passenger-counter",
+    "tools/school-ai-mcp",
+    "report generation tools",
+    "whole-project documents"
+  ],
+  "instruction_path_adaptations": [
+    "indoor/data/analysis/room-segments-20261002/REPORT.md",
+    "indoor/tools/report_room_segments_20261002.py",
+    "indoor/tools/ronin/README.md",
+    "indoor/tools/ronin/run_android.py"
+  ],
+  "workspace_source_files_deleted": 0,
+  "remote_history_rewritten": false,
+  "verification": {
+    "indoor_test_scripts": 14,
+    "android": {
+      "gradle_exit": 0,
+      "unit_tests": 37,
+      "failures": 0,
+      "lint_errors": 0,
+      "lint_warnings": 14,
+      "matched_shared_assets": 34,
+      "apk_crc": "passed",
+      "apk_sha256": "04dbd0c6d5d631b843c583c81be9c6caa16871da5b7741d3dfb63017679446e5",
+      "device_installation": "not_performed",
+      "field_accuracy": "not_validated"
+    },
+    "retained_maps_native_app_and_raw_data_unchanged": true
+  }
+}

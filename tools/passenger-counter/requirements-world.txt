@@ -1,2 +1,0 @@
--r requirements.txt
-git+https://github.com/ultralytics/CLIP.git@a13192f8cb767260d7dfd98c843b0716593169e7

@@ -1,3 +1,0 @@
-{"frame": 368, "track_id": 46, "direction": "out", "status": "accepted", "person": "pink-hat-child", "note": "Original montage; child leaving behind red coat."}
-{"frame": 377, "track_id": 46, "direction": "in", "status": "uncertain", "note": "Same child ID reverses after 9 frames; no supported reboarding in source montage. Reject additional success."}
-{"frame": 421, "track_id": 2, "direction": "in", "status": "accepted", "person": "red-coat", "note": "Source event montage; unchanged review window."}

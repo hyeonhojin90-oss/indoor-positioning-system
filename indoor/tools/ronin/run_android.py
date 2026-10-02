@@ -1,5 +1,5 @@
 """Offline RoNIN ResNet inference on Android JSONL. No endpoint fitting or retraining.
-Run with tools/passenger-counter/.venv/Scripts/python.exe.
+Run with python.
 Outputs raw horizontal velocity and start-relative ENU trajectory, not a deployed map fix.
 """
 import argparse

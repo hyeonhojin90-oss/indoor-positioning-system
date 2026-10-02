@@ -149,8 +149,8 @@ lines += ["", "평균은 도달을 검출한 회차만의 조건부 평균이다
           "- 기준점 비콘으로 코어/계단 위치를 확인한 뒤 통로 진행 상태와 걸음으로 연결하고, 자기장 곡선의 일치가 유효할 때 주변 후보만 조정하는 시험을 이어갈 근거는 있다. 강의실을 특정 걸음 수로 확정하거나 자기장 하나로 순간 이동시키는 근거는 없다.",
           "- m_v가 도움이 되는 구간 식별과 도움이 없는 도착 시점 조건을 분리한다. 이동 중 자기장 패턴을 버리거나 모든 구간에 동일한 큰 가중치를 주는 것으로 결론내리지 않는다.",
           "- 참조 신호 보정의 신뢰도/판단 보류, 실제 코어 시작으로 이어진 전 경로 상태 추적, U턴과 파지 변경 자료는 별도 검증이 남는다. 이번 결과로 운영 엔진의 PDR을 제거하지 않았다.", "",
-          "## 재현·검증", "", "```powershell", "node indoor/tools/evaluate_room_segments_20261002.cjs", "& 'tools/passenger-counter/.venv/Scripts/python.exe' -X utf8 indoor/tools/report_room_segments_20261002.py", "```", "",
-          "Node 평가기는 별도 패키지가 필요 없다. 그림은 이미 설치된 프로젝트 Python의 matplotlib를 재사용했다. 이 Python 환경이나 승차 집계 코드/데이터는 수정하지 않았다.", "",
+          "## 재현·검증", "", "```powershell", "node indoor/tools/evaluate_room_segments_20261002.cjs", "python -X utf8 indoor/tools/report_room_segments_20261002.py", "```", "",
+          "Node 평가기는 별도 패키지가 필요 없다. 그림은 이미 설치된 프로젝트 Python의 matplotlib를 재사용했다. 분석에는 위 Python 패키지 환경이 필요하며 원시 측정 자료는 수정하지 않는다.", "",
           f"원본 SHA, 실행 코드 SHA, 회차/날짜 참조 제외, 걸음/구간 경계, m_v 물리 범위, 현재/과거 입력으로만 도달 확인한 것을 검사했다. {len(checks)}개 검증 통과. 수치·원본 manifest·예측별 참조 회차는 results.json, 원시 대상 구간 표는target-segments.csv, 무결성 검사는verification.json에 있다." ]
 report="\n".join(lines)+"\n"
 # Escape magnitude bars within Markdown table cells.

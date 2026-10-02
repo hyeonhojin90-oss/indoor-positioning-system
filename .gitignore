@@ -48,8 +48,8 @@ Thumbs.db
 # Generated inspection files
 tmp/
 
-# GPS disposable temporary exports only
-gps/data/temp/
 
-# Keep gps/data/raw tracked when it contains reproducible project data.
-# Do not add gps/data/raw/ to this ignore file without reviewing the data policy.
+# Indoor-only public repository scope
+/gps/
+/tools/passenger-counter/
+/tools/school-ai-mcp/
