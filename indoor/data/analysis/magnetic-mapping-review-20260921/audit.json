@@ -1,0 +1,77 @@
+{
+  "review_date": "2026-09-21",
+  "kind": "read_only_source_audit_not_performance_experiment",
+  "floor4": {
+    "metric": {
+      "mapBreaks": [
+        3.363100346020758,
+        69.424,
+        72.184
+      ],
+      "meterBreaks": [
+        0,
+        48.68545341491699,
+        51.70113432407379
+      ],
+      "metersPerLegacyUnit": 0.7089047775478136,
+      "calibrationSteps": 81,
+      "status": "user_confirmed_20260914"
+    },
+    "core_x": 70.804,
+    "right_endpoint_x": 3.363100346020758,
+    "diagram_delta_not_meters": 67.44089965397924,
+    "reference_distance_m": 50.19329386949539
+  },
+  "model": {
+    "version": 2,
+    "templates": 423,
+    "independent_source_files": 11,
+    "sequenceValidated": null
+  },
+  "sources": [
+    {
+      "file": "indoor/web/src/positioning/navigation.js",
+      "sha256": "e40122da6a7f3f6052083ddde3b802ad0e8fec9d6c55ac4f54b823608a6f3e13"
+    },
+    {
+      "file": "indoor/web/src/positioning/fusion-engine.js",
+      "sha256": "a26c5c0bc4ad14422b39f9f13562350dd6d22d79366af36ab7b443a2c467528f"
+    },
+    {
+      "file": "indoor/web/src/positioning/runtime.js",
+      "sha256": "3caf1530283ffa8f522901963ec66d16768a9deffb0d56634545cf1f53e9f870"
+    },
+    {
+      "file": "indoor/web/src/positioning/calibration.js",
+      "sha256": "76e6a08593bd890870ed5ae70cdc966ca802bb169c676d9035e4b13e12c00640"
+    },
+    {
+      "file": "indoor/tools/train_motion_models.cjs",
+      "sha256": "2eacc7b417ead037f8c7c77f9bf8720e30f34d72ca4ed94e8ca8aec7343b80c0"
+    },
+    {
+      "file": "indoor/web/data/navigation/areas-v1.json",
+      "sha256": "3f7f5af9af827794d214abf974a109dda512dc206ba4a653f24c94cdf06acf6f"
+    },
+    {
+      "file": "indoor/web/data/maps/floor-04-survey.json",
+      "sha256": "517b3d1cacffd537088bc6d3dd9f4498895575db4e74027e9c3bee6969f2fc2a"
+    },
+    {
+      "file": "indoor/web/data/positioning/motion-models.json",
+      "sha256": "70ccb6f139bdf04ae3968a0cabf03ccbb607f4ca8aaa9130cfab0740b1529912"
+    },
+    {
+      "file": "C:/Users/20222967/AndroidStudioProjects/IndoorPositioningPrototype/app/src/main/java/com/example/indoorpositioning/GuidanceApCoordinator.kt",
+      "sha256": "61d43e70cb8457397dfc11c55dc4168d38d1f61b660a35d80b9361eb2de2f25a"
+    },
+    {
+      "file": "C:/Users/20222967/AndroidStudioProjects/IndoorPositioningPrototype/app/src/main/java/com/example/indoorpositioning/MainActivity.kt",
+      "sha256": "f1bd3d951e77c0302f74419f255db494bfe3678a4ae2e561d68952c692c770c5"
+    },
+    {
+      "file": "C:/Users/20222967/Downloads/클릭앵커매핑_자기장SLAM_상세정리.pdf",
+      "sha256": "ff704571cdd0871c1818381645e256014fe93604c34ecd24d9c0a597688a8683"
+    }
+  ]
+}

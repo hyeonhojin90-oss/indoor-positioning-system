@@ -1,0 +1,408 @@
+{
+  "method": "Fresh single AP scans; leave-one-day-out. Unknown locations and phone variability not validated. No query-day leakage.",
+  "selection": "4F core/stairs, valid complete label, zero steps, fresh AP result. 4122 and non-fresh scans excluded.",
+  "selected": [
+    {
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "day": "20260917",
+      "zone": "core_junction",
+      "scans": 3
+    },
+    {
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "day": "20260917",
+      "zone": "stairs_left",
+      "scans": 3
+    },
+    {
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "day": "20260922",
+      "zone": "stairs_left",
+      "scans": 2
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "day": "20260915",
+      "zone": "core_junction",
+      "scans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "day": "20260915",
+      "zone": "core_junction",
+      "scans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "day": "20260915",
+      "zone": "stairs_right",
+      "scans": 3
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "day": "20260919",
+      "zone": "stairs_right",
+      "scans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "day": "20260919",
+      "zone": "stairs_left",
+      "scans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "day": "20260922",
+      "zone": "core_junction",
+      "scans": 2
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "day": "20260922",
+      "zone": "stairs_right",
+      "scans": 2
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "day": "20260923",
+      "zone": "core_junction",
+      "scans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "day": "20260923",
+      "zone": "stairs_left",
+      "scans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "day": "20260923",
+      "zone": "core_junction",
+      "scans": 1
+    }
+  ],
+  "references": [
+    {
+      "id": "F4_CORE",
+      "sessions": 6,
+      "days": 4,
+      "apIds": 173,
+      "verified": true
+    },
+    {
+      "id": "F4_LEFT_STAIRS",
+      "sessions": 4,
+      "days": 4,
+      "apIds": 113,
+      "verified": true
+    },
+    {
+      "id": "F4_RIGHT_STAIRS",
+      "sessions": 3,
+      "days": 3,
+      "apIds": 82,
+      "verified": true
+    }
+  ],
+  "leaveDayOut": {
+    "n": 22,
+    "correct": 22,
+    "wrong": 0,
+    "hold": 0
+  },
+  "currentProductionToday": {
+    "n": 3,
+    "correct": 3,
+    "wrong": 0,
+    "hold": 0
+  },
+  "leaveDayOutResults": [
+    {
+      "day": "20260917",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.2760518391927083,
+      "margin": 2.392625397326899
+    },
+    {
+      "day": "20260917",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.33620001680107525,
+      "margin": 2.252300959761425
+    },
+    {
+      "day": "20260917",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.31412353515625,
+      "margin": 3.06771240234375
+    },
+    {
+      "day": "20260917",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.1052283653846153,
+      "margin": 4.282271634615385
+    },
+    {
+      "day": "20260917",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.036529541015625,
+      "margin": 3.5787265353732636
+    },
+    {
+      "day": "20260917",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.1453006628787878,
+      "margin": 4.270470821496212
+    },
+    {
+      "day": "20260922",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.5894481803797469,
+      "margin": 3.068721270051288
+    },
+    {
+      "day": "20260922",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.6984269425675675,
+      "margin": 3.565890456796839
+    },
+    {
+      "day": "20260915",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.47453507133152173,
+      "margin": 1.2437754755434782
+    },
+    {
+      "day": "20260915",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.56539306640625,
+      "margin": 3.1172498201069074
+    },
+    {
+      "day": "20260915",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "F4_RIGHT_STAIRS",
+      "prediction": "F4_RIGHT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.2837646484375,
+      "margin": 2.8787597656250004
+    },
+    {
+      "day": "20260915",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "F4_RIGHT_STAIRS",
+      "prediction": "F4_RIGHT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.31158447265625,
+      "margin": 3.8275575991030095
+    },
+    {
+      "day": "20260915",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "F4_RIGHT_STAIRS",
+      "prediction": "F4_RIGHT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.082265625,
+      "margin": 3.0544309303977277
+    },
+    {
+      "day": "20260919",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "truth": "F4_RIGHT_STAIRS",
+      "prediction": "F4_RIGHT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.5363393930288461,
+      "margin": 1.5908800671984267
+    },
+    {
+      "day": "20260919",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.04083251953125,
+      "margin": 2.28408935546875
+    },
+    {
+      "day": "20260922",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.30669751213592233,
+      "margin": 3.0901419765004414
+    },
+    {
+      "day": "20260922",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.5099423363095238,
+      "margin": 2.4650158110119045
+    },
+    {
+      "day": "20260922",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "F4_RIGHT_STAIRS",
+      "prediction": "F4_RIGHT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.370234375,
+      "margin": 2.976822231359649
+    },
+    {
+      "day": "20260922",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "F4_RIGHT_STAIRS",
+      "prediction": "F4_RIGHT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.46641820790816324,
+      "margin": 2.305829661410019
+    },
+    {
+      "day": "20260923",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.2773244121287129,
+      "margin": 2.3325750381027683
+    },
+    {
+      "day": "20260923",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 1.1580771169354838,
+      "margin": 2.3691915128722085
+    },
+    {
+      "day": "20260923",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.20587807513297873,
+      "margin": 2.405824052526596
+    }
+  ],
+  "currentProductionTodayResults": [
+    {
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.10004069010416666,
+      "margin": 2.509858760127315
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "F4_LEFT_STAIRS",
+      "prediction": "F4_LEFT_STAIRS",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.5560096153846154,
+      "margin": 3.250321367847092
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "F4_CORE",
+      "prediction": "F4_CORE",
+      "accepted": true,
+      "reason": "relative_zone_scores",
+      "score": 0.07754703443877552,
+      "margin": 2.7361788631676074
+    }
+  ],
+  "nonAnchor4209": {
+    "scans": 4,
+    "acceptedAsAnchor": 0,
+    "results": [
+      {
+        "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+        "prediction": null,
+        "accepted": false,
+        "reason": "wifi_unknown_or_unqualified",
+        "score": null,
+        "margin": null
+      },
+      {
+        "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+        "prediction": null,
+        "accepted": false,
+        "reason": "wifi_unknown_or_unqualified",
+        "score": null,
+        "margin": null
+      },
+      {
+        "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+        "prediction": null,
+        "accepted": false,
+        "reason": "wifi_unknown_or_unqualified",
+        "score": null,
+        "margin": null
+      },
+      {
+        "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+        "prediction": null,
+        "accepted": false,
+        "reason": "wifi_unknown_or_unqualified",
+        "score": null,
+        "margin": null
+      }
+    ]
+  }
+}

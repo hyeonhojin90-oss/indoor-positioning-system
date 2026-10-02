@@ -1,0 +1,11 @@
+{
+  "source_archive": "2026. 9. 15 (2).zip",
+  "new_sha256": "b3b7048db75e42515284da1e340e1754ee4abd58a8a83b8e828c27f195447d84",
+  "prior_file": "indoor\\data\\analysis\\detailed-20260915\\core-20260915.glb",
+  "all_named_position_arrays_identical": false,
+  "core_left_to_restroom_end_wall_center_m": 7.408454418182373,
+  "core_width_wall_center_m": 2.9753482341766357,
+  "core_width_clear_m": 2.8753483295440674,
+  "previous_runtime_core_width_m": 3.0156809091567993,
+  "measurement_wall_bounds_identical": true
+}

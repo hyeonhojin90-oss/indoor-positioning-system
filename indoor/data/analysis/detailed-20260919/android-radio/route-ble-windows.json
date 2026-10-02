@@ -1,0 +1,716 @@
+{
+  "createdAt": "2026-09-19T06:37:51.604Z",
+  "method": "Disjoint 5 s moving BLE windows classified against the later stationary anchors from the same day/device.",
+  "anchors": [
+    {
+      "zone": "f2_extension_2105_2",
+      "signals": 37
+    },
+    {
+      "zone": "f2_extension_2105_1",
+      "signals": 43
+    },
+    {
+      "zone": "f2_extension_tdm_side",
+      "signals": 39
+    },
+    {
+      "zone": "f2_study_inside",
+      "signals": 31
+    },
+    {
+      "zone": "stairs_right",
+      "signals": 12
+    },
+    {
+      "zone": "f2_extension_entry",
+      "signals": 49
+    },
+    {
+      "zone": "f2_study_entry_main",
+      "signals": 33
+    },
+    {
+      "zone": "f2_2107_entry_main",
+      "signals": 17
+    },
+    {
+      "zone": "core_junction",
+      "signals": 19
+    },
+    {
+      "zone": "main_left",
+      "signals": 12
+    },
+    {
+      "zone": "stairs_left",
+      "signals": 9
+    }
+  ],
+  "routes": [
+    {
+      "file": "indoor_positioning_20260919_114450.jsonl",
+      "route": "2F_CORE_TO_LEFT_STAIRS",
+      "durationSeconds": 35.229,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "코어복도 출구 중앙점",
+          "signals": 8,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 5,
+          "lap": 0,
+          "at": "코어복도 출구 중앙점",
+          "signals": 9,
+          "predicted": "main_left",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 1,
+          "at": "2119 앞",
+          "signals": 8,
+          "predicted": "main_left",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "reason": "insufficient_signals",
+          "signals": 3
+        },
+        {
+          "second": 20,
+          "lap": 3,
+          "at": "2125 앞",
+          "signals": 5,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 25,
+          "reason": "insufficient_signals",
+          "signals": 4
+        },
+        {
+          "second": 30,
+          "lap": 4,
+          "at": "2128 앞",
+          "signals": 8,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 35,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "main_left": 2
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_114551.jsonl",
+      "route": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "durationSeconds": 34.639,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "왼쪽 계단 입구",
+          "signals": 6,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 5,
+          "lap": 0,
+          "at": "왼쪽 계단 입구",
+          "signals": 6,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 10,
+          "reason": "insufficient_signals",
+          "signals": 2
+        },
+        {
+          "second": 15,
+          "reason": "insufficient_signals",
+          "signals": 4
+        },
+        {
+          "second": 20,
+          "lap": 2,
+          "at": "2125 앞",
+          "signals": 8,
+          "predicted": "main_left",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 25,
+          "lap": 3,
+          "at": "2122 앞",
+          "signals": 9,
+          "predicted": "main_left",
+          "weight": 0.5176336570867617,
+          "margin": 0.0352673141735233,
+          "secondZone": "core_junction",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 30,
+          "lap": 4,
+          "at": "2119 앞",
+          "signals": 8,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        }
+      ],
+      "counts": {
+        "main_left": 2
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_114630.jsonl",
+      "route": "2F_CORE_TO_RIGHT_STAIRS",
+      "durationSeconds": 47.647,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "코어·오른쪽 메인복도 교차점",
+          "signals": 10,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 5,
+          "lap": 1,
+          "at": "2211 문 1 앞",
+          "signals": 12,
+          "predicted": "core_junction",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 2,
+          "at": "2211 문 2 앞",
+          "signals": 17,
+          "predicted": "f2_2107_entry_main",
+          "weight": 0.17257353038873435,
+          "margin": 0.012999085511610942,
+          "secondZone": "f2_extension_2105_2",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 3,
+          "at": "2210 문 1 앞",
+          "signals": 8,
+          "predicted": "f2_2107_entry_main",
+          "weight": 0.1666729253757759,
+          "margin": 0.0034967469931743433,
+          "secondZone": "f2_study_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "lap": 3,
+          "at": "2210 문 1 앞",
+          "signals": 15,
+          "predicted": "f2_study_inside",
+          "weight": 0.14887892638031378,
+          "margin": 0.009526579793848383,
+          "secondZone": "f2_extension_2105_1",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 25,
+          "lap": 3,
+          "at": "2210 문 1 앞",
+          "signals": 10,
+          "predicted": "f2_study_entry_main",
+          "weight": 0.15170934912635664,
+          "margin": 0.010831606676458855,
+          "secondZone": "f2_study_inside",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 30,
+          "lap": 4,
+          "at": "2107 진입 가능점 앞",
+          "signals": 12,
+          "predicted": "f2_study_inside",
+          "weight": 0.14813266777452086,
+          "margin": 0.004516282060772786,
+          "secondZone": "f2_extension_2105_1",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 35,
+          "lap": 6,
+          "at": "2210-1 앞 앞",
+          "signals": 20,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.16650007020463412,
+          "margin": 0.009290790256661463,
+          "secondZone": "f2_extension_tdm_side",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 40,
+          "lap": 8,
+          "at": "2204 앞 앞",
+          "signals": 10,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.15337586518924085,
+          "margin": 0.01493794001675433,
+          "secondZone": "f2_study_inside",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 45,
+          "lap": 9,
+          "at": "오른쪽 끝 화장실 통로 앞 앞",
+          "signals": 5,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        }
+      ],
+      "counts": {
+        "core_junction": 1,
+        "f2_2107_entry_main": 2,
+        "f2_study_inside": 2,
+        "f2_study_entry_main": 1,
+        "f2_extension_2105_1": 2
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_114722.jsonl",
+      "route": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "durationSeconds": 53.22,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "오른쪽 계단 입구",
+          "signals": 9,
+          "predicted": "f2_study_entry_main",
+          "weight": 0.139332452117751,
+          "margin": 0.0027278765362868385,
+          "secondZone": "f2_study_inside",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 1,
+          "at": "오른쪽 끝 화장실 통로 앞 앞",
+          "signals": 21,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.18791286888730147,
+          "margin": 0.008025106924616388,
+          "secondZone": "f2_extension_tdm_side",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 2,
+          "at": "2204 앞 앞",
+          "signals": 13,
+          "predicted": "f2_study_inside",
+          "weight": 0.15425636368277704,
+          "margin": 0.017205215736520285,
+          "secondZone": "f2_study_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 4,
+          "at": "2210-1 앞 앞",
+          "signals": 7,
+          "predicted": "f2_2107_entry_main",
+          "weight": 0.186956734264266,
+          "margin": 0.01918614529076826,
+          "secondZone": "f2_study_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "lap": 4,
+          "at": "2210-1 앞 앞",
+          "signals": 15,
+          "predicted": "core_junction",
+          "weight": 0.505018257960772,
+          "margin": 0.010036515921544142,
+          "secondZone": "f2_2107_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 25,
+          "lap": 5,
+          "at": "2210 문 2 · 2107 끝점 앞",
+          "signals": 8,
+          "predicted": "core_junction",
+          "weight": 0.5095911060046036,
+          "margin": 0.019182212009207222,
+          "secondZone": "f2_2107_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 30,
+          "lap": 5,
+          "at": "2210 문 2 · 2107 끝점 앞",
+          "signals": 11,
+          "predicted": "f2_study_entry_main",
+          "weight": 0.15112092129707705,
+          "margin": 0.0025671858790375646,
+          "secondZone": "f2_2107_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 35,
+          "lap": 6,
+          "at": "2107 진입 가능점 앞",
+          "signals": 10,
+          "predicted": "f2_2107_entry_main",
+          "weight": 0.3020138626404179,
+          "margin": 0.009984302308010506,
+          "secondZone": "core_junction",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 40,
+          "lap": 6,
+          "at": "2107 진입 가능점 앞",
+          "signals": 10,
+          "predicted": "f2_2107_entry_main",
+          "weight": 0.5244593591071701,
+          "margin": 0.048918718214340184,
+          "secondZone": "core_junction",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 45,
+          "lap": 7,
+          "at": "2210 문 1 앞",
+          "signals": 14,
+          "predicted": "core_junction",
+          "weight": 0.51213432357449,
+          "margin": 0.02426864714897975,
+          "secondZone": "f2_2107_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 50,
+          "lap": 9,
+          "at": "2211 문 1 앞",
+          "signals": 6,
+          "predicted": "core_junction",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        }
+      ],
+      "counts": {
+        "f2_study_entry_main": 2,
+        "f2_extension_2105_1": 1,
+        "f2_study_inside": 1,
+        "f2_2107_entry_main": 3,
+        "core_junction": 4
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_114854.jsonl",
+      "route": "2F_STUDY_V3_REVERSE",
+      "durationSeconds": 20.329,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "signals": 11,
+          "predicted": "f2_study_inside",
+          "weight": 0.14680958677134814,
+          "margin": 0.01186686641759202,
+          "secondZone": "f2_study_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 0,
+          "at": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "signals": 21,
+          "predicted": "f2_extension_tdm_side",
+          "weight": 0.1718623658228281,
+          "margin": 0.011832748307924745,
+          "secondZone": "f2_extension_2105_1",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 0,
+          "at": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "signals": 27,
+          "predicted": "f2_study_inside",
+          "weight": 0.17092918295055634,
+          "margin": 0.007356004342134542,
+          "secondZone": "f2_extension_entry",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 1,
+          "at": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+          "signals": 12,
+          "predicted": "f2_study_entry_main",
+          "weight": 0.14540718327925795,
+          "margin": 0.005231384217718765,
+          "secondZone": "f2_extension_entry",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "f2_study_inside": 2,
+        "f2_extension_tdm_side": 1,
+        "f2_study_entry_main": 1
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_114920.jsonl",
+      "route": "2F_STUDY_V3",
+      "durationSeconds": 15.23,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "signals": 17,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.1515347380858087,
+          "margin": 0.005105611099931989,
+          "secondZone": "f2_study_inside",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 0,
+          "at": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "signals": 22,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.1744142232308114,
+          "margin": 0.0013314335787212583,
+          "secondZone": "f2_extension_tdm_side",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 1,
+          "at": "책상공간 진입 전 · 책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "signals": 25,
+          "predicted": "f2_extension_tdm_side",
+          "weight": 0.16248793321092467,
+          "margin": 0.005092781712262934,
+          "secondZone": "f2_extension_2105_1",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "f2_extension_2105_1": 2,
+        "f2_extension_tdm_side": 1
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_114945.jsonl",
+      "route": "2F_EXTENSION_V3",
+      "durationSeconds": 25.939,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+          "signals": 27,
+          "predicted": "f2_extension_tdm_side",
+          "weight": 0.17889040430058345,
+          "margin": 0.0093698730653545,
+          "secondZone": "f2_extension_entry",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 1,
+          "at": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+          "signals": 31,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.15716122336384492,
+          "margin": 0.0007716200792592109,
+          "secondZone": "f2_extension_tdm_side",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 3,
+          "at": "2105-1·2104-1 사이 · 증축복도 중앙선",
+          "signals": 29,
+          "predicted": "f2_extension_2105_2",
+          "weight": 0.21293517963129216,
+          "margin": 0.02107582189822474,
+          "secondZone": "f2_extension_2105_1",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 3,
+          "at": "2105-1·2104-1 사이 · 증축복도 중앙선",
+          "signals": 25,
+          "predicted": "f2_extension_2105_2",
+          "weight": 0.3441403426172317,
+          "margin": 0.18550202288995168,
+          "secondZone": "f2_study_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "lap": 4,
+          "at": "2105-2·2104-2 사이 · 증축복도 중앙선",
+          "signals": 24,
+          "predicted": "f2_extension_2105_2",
+          "weight": 0.25730287999312185,
+          "margin": 0.10881802421947312,
+          "secondZone": "f2_extension_2105_1",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 25,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "f2_extension_tdm_side": 1,
+        "f2_extension_2105_1": 1,
+        "f2_extension_2105_2": 3
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_115013.jsonl",
+      "route": "2F_EXTENSION_V3_REVERSE",
+      "durationSeconds": 23.807,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "증축복도 계단 진입 전 · 복도 중앙선",
+          "signals": 29,
+          "predicted": "f2_extension_2105_2",
+          "weight": 0.19994387038838077,
+          "margin": 0.07634826533513929,
+          "secondZone": "f2_extension_tdm_side",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 1,
+          "at": "2105-2·2104-2 사이 · 증축복도 중앙선",
+          "signals": 28,
+          "predicted": "f2_extension_2105_2",
+          "weight": 0.33490976820832863,
+          "margin": 0.1852687413104195,
+          "secondZone": "f2_study_entry_main",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 1,
+          "at": "2105-2·2104-2 사이 · 증축복도 중앙선",
+          "signals": 21,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.18426877990623783,
+          "margin": 0.02671138253256558,
+          "secondZone": "f2_extension_2105_2",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 1,
+          "at": "2105-2·2104-2 사이 · 증축복도 중앙선",
+          "signals": 26,
+          "predicted": "f2_extension_tdm_side",
+          "weight": 0.1737977884506621,
+          "margin": 0.0007519399773727176,
+          "secondZone": "f2_extension_2105_1",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "lap": 3,
+          "at": "TDM 옆 · TDM 외벽 가로폭 중앙 정면 · 증축복도 중앙선",
+          "signals": 23,
+          "predicted": "f2_extension_2105_1",
+          "weight": 0.17302754311905819,
+          "margin": 0.013533667774391245,
+          "secondZone": "f2_extension_entry",
+          "reason": "relative_zone_scores"
+        }
+      ],
+      "counts": {
+        "f2_extension_2105_2": 2,
+        "f2_extension_2105_1": 2,
+        "f2_extension_tdm_side": 1
+      }
+    }
+  ],
+  "limitation": "A moving window is labelled only by the most recently pressed lap, so this is a temporal plausibility check, not coordinate accuracy. Same-day references are not an independent test."
+}

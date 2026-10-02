@@ -1,0 +1,684 @@
+{
+  "purpose": "Analysis only. Session-level LOSO comparison; no production update.",
+  "distanceMeters": null,
+  "fixedStrideMeters": 0.6194213261100863,
+  "combinedCorridors": true,
+  "fullTrainingConstant": {
+    "degree": 0,
+    "defaultF": 1.757469244288225,
+    "coefficients": [
+      0.41334796940278346
+    ]
+  },
+  "limitations": [
+    "One user and one Galaxy model.",
+    "Only endpoint distance is physical truth; per-step ground truth is unavailable.",
+    "Acceleration magnitude residual is used because phone-frame vertical acceleration is not logged.",
+    "Quadratic K(f) is high overfit risk with this session count."
+  ],
+  "method": "Current detector thresholds; per-step q=(peak-valley)^0.25; K(f) fitted from training-session aggregate distance only; predicted strides bounded to fixed 65-135%.",
+  "sessions": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 87,
+      "medianFrequencyHz": 1.9455252918287937
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 69,
+      "medianFrequencyHz": 2.0986381974173316
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 85,
+      "medianFrequencyHz": 1.6820869762046233
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 78,
+      "medianFrequencyHz": 1.7452006980802792
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "steps": 72,
+      "medianFrequencyHz": 1.7391304347826086
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "steps": 76,
+      "medianFrequencyHz": 1.7985611510791366
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 87,
+      "medianFrequencyHz": 1.612907421715457
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 94,
+      "medianFrequencyHz": 1.7064846416382253
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "steps": 79,
+      "medianFrequencyHz": 1.6978124450516983
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "steps": 80,
+      "medianFrequencyHz": 1.6
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "steps": 73,
+      "medianFrequencyHz": 1.5847900341571228
+    }
+  ],
+  "summary": {
+    "fixed": {
+      "mae": 3.4259515754562218,
+      "betterThanFixed": null,
+      "worst": 8.05247723943112
+    },
+    "constantWeinberg": {
+      "mae": 3.2300182810289253,
+      "betterThanFixed": 6,
+      "worst": 7.553092852202596
+    },
+    "adaptiveLinear": {
+      "mae": 3.8421982888199095,
+      "betterThanFixed": 5,
+      "worst": 8.254006516854872
+    },
+    "adaptiveQuadratic": {
+      "mae": 3.3271586713637022,
+      "betterThanFixed": 7,
+      "worst": 8.546160729438661
+    }
+  },
+  "folds": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "distanceM": 50.17312741491699,
+      "steps": 87,
+      "fixedError": 3.7165279566605136,
+      "constant": {
+        "distance": 55.9892804823412,
+        "error": 5.81615306742421,
+        "meanStride": 0.6435549480728874,
+        "minStride": 0.4262250881468461,
+        "maxStride": 0.7949950266360021,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7271157167530224,
+          "coefficients": [
+            0.4182928795064678
+          ]
+        }
+      },
+      "linear": {
+        "distance": 57.35079914911191,
+        "error": 7.1776717341949166,
+        "meanStride": 0.6592045879208265,
+        "minStride": 0.43474620124064345,
+        "maxStride": 0.8052190875561988,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7271157167530224,
+          "coefficients": [
+            0.34924495253421173,
+            0.038627819019866665
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 58.71928814435565,
+        "error": 8.546160729438661,
+        "meanStride": 0.6749343464868466,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.8362187902486166,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7271157167530224,
+          "coefficients": [
+            -0.16222996658606587,
+            0.6462322707097576,
+            -0.164170846775421
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "distanceM": 50.17312741491699,
+      "steps": 69,
+      "fixedError": 7.433055913321041,
+      "constant": {
+        "distance": 46.46856178743817,
+        "error": 3.7045656274788215,
+        "meanStride": 0.6734574172092488,
+        "minStride": 0.49505881288612125,
+        "maxStride": 0.7721729005723761,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7064846416382253,
+          "coefficients": [
+            0.41068549575859403
+          ]
+        }
+      },
+      "linear": {
+        "distance": 41.91912089806212,
+        "error": 8.254006516854872,
+        "meanStride": 0.6075234912762626,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7639614349594689,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7064846416382253,
+          "coefficients": [
+            0.5775938579660809,
+            -0.09373158756203832
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 45.30222153966832,
+        "error": 4.870905875248674,
+        "meanStride": 0.6565539353575118,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.8362187902486166,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7064846416382253,
+          "coefficients": [
+            -0.0894627242892343,
+            0.7241964797457321,
+            -0.2274268251026187
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "distanceM": 50.17312741491699,
+      "steps": 85,
+      "fixedError": 2.4776853044403424,
+      "constant": {
+        "distance": 51.155761158979296,
+        "error": 0.982633744062305,
+        "meanStride": 0.6018324842232858,
+        "minStride": 0.4084400842527545,
+        "maxStride": 0.7793524569965153,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.763668430335097,
+          "coefficients": [
+            0.4141189780515908
+          ]
+        }
+      },
+      "linear": {
+        "distance": 51.217299827320154,
+        "error": 1.0441724124031637,
+        "meanStride": 0.6025564685567077,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7853847439048383,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.763668430335097,
+          "coefficients": [
+            0.432736544727388,
+            -0.010218310637178193
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 53.692299874493,
+        "error": 3.519172459576012,
+        "meanStride": 0.631674116170506,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.8362187902486166,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.763668430335097,
+          "coefficients": [
+            -0.12638564627851295,
+            0.6572266267024043,
+            -0.18083913265950588
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "distanceM": 50.17312741491699,
+      "steps": 78,
+      "fixedError": 1.858263978330264,
+      "constant": {
+        "distance": 47.46599534835555,
+        "error": 2.7071320665614422,
+        "meanStride": 0.6085384019019943,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7580068588906451,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7621159053083937,
+          "coefficients": [
+            0.4112968428127128
+          ]
+        }
+      },
+      "linear": {
+        "distance": 47.48958276027843,
+        "error": 2.6835446546385597,
+        "meanStride": 0.6088408046189543,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7622488094874479,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7621159053083937,
+          "coefficients": [
+            0.42817877012696015,
+            -0.00928760773983348
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 50.14566933265252,
+        "error": 0.02745808226447366,
+        "meanStride": 0.6428931965724681,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.8260655520099328,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7621159053083937,
+          "coefficients": [
+            -0.02219833973339158,
+            0.527511051906908,
+            -0.14514104865324012
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "distanceM": 48.835051199999995,
+      "steps": 72,
+      "fixedError": 4.236715720073782,
+      "constant": {
+        "distance": 44.73817464793104,
+        "error": 4.096876552068956,
+        "meanStride": 0.62136353677682,
+        "minStride": 0.5018912676652464,
+        "maxStride": 0.734347443679876,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7621159053083937,
+          "coefficients": [
+            0.41051198751221357
+          ]
+        }
+      },
+      "linear": {
+        "distance": 44.76058108296794,
+        "error": 4.074470117032057,
+        "meanStride": 0.6216747372634436,
+        "minStride": 0.4934911167919961,
+        "maxStride": 0.7399940631736569,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7621159053083937,
+          "coefficients": [
+            0.4220200406980184,
+            -0.0063220873263706975
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 46.59309452887456,
+        "error": 2.241956671125436,
+        "meanStride": 0.6471263129010355,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7843860207400161,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7621159053083937,
+          "coefficients": [
+            0.026151126539524505,
+            0.4663035992635508,
+            -0.12803422628633065
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "distanceM": 48.835051199999995,
+      "steps": 76,
+      "fixedError": 1.7590304156334398,
+      "constant": {
+        "distance": 47.68301319922808,
+        "error": 1.1520380007719169,
+        "meanStride": 0.6274080684108958,
+        "minStride": 0.4877885087596389,
+        "maxStride": 0.75586334988468,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7513134851138354,
+          "coefficients": [
+            0.41250210160937845
+          ]
+        }
+      },
+      "linear": {
+        "distance": 47.60586831235066,
+        "error": 1.229182887649337,
+        "meanStride": 0.6263930041098771,
+        "minStride": 0.47139740941012487,
+        "maxStride": 0.7619291365347048,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7513134851138354,
+          "coefficients": [
+            0.43222419682745056,
+            -0.01088100681462653
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 49.95203532099628,
+        "error": 1.1169841209962854,
+        "meanStride": 0.6572636226446879,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.8267155413394048,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7513134851138354,
+          "coefficients": [
+            -0.0637492422780937,
+            0.5781329404917773,
+            -0.15894470944360384
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "distanceM": 50.17312741491699,
+      "steps": 87,
+      "fixedError": 3.7165279566605136,
+      "constant": {
+        "distance": 52.40854002178017,
+        "error": 2.2354126068631786,
+        "meanStride": 0.6023970117445997,
+        "minStride": 0.427399608252129,
+        "maxStride": 0.7410129262904377,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7761989342806395,
+          "coefficients": [
+            0.4151404845237464
+          ]
+        }
+      },
+      "linear": {
+        "distance": 52.8849887265532,
+        "error": 2.7118613116362127,
+        "meanStride": 0.6078734336385425,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7300845584597512,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7761989342806395,
+          "coefficients": [
+            0.4533156465271089,
+            -0.020792672035256334
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 55.020772994591105,
+        "error": 4.847645579674115,
+        "meanStride": 0.6324226780987483,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7973205769899006,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7761989342806395,
+          "coefficients": [
+            -0.08053407627420317,
+            0.6173925625618889,
+            -0.1732589105596053
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "distanceM": 50.17312741491699,
+      "steps": 94,
+      "fixedError": 8.05247723943112,
+      "constant": {
+        "distance": 57.72622026711959,
+        "error": 7.553092852202596,
+        "meanStride": 0.614108726245953,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7508576500113019,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7590163122849576,
+          "coefficients": [
+            0.4198969008452205
+          ]
+        }
+      },
+      "linear": {
+        "distance": 57.89017570906367,
+        "error": 7.717048294146679,
+        "meanStride": 0.6158529330751454,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7675711466456089,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7590163122849576,
+          "coefficients": [
+            0.4556818686607229,
+            -0.01961728934779764
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 57.52149595069438,
+        "error": 7.348368535777389,
+        "meanStride": 0.6119308079861104,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7708811148662752,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7590163122849576,
+          "coefficients": [
+            0.2950889008982895,
+            0.16948787395755213,
+            -0.05088022472186778
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "distanceM": 48.835051199999995,
+      "steps": 79,
+      "fixedError": 0.09923356269681705,
+      "constant": {
+        "distance": 47.06173414763911,
+        "error": 1.7733170523608877,
+        "meanStride": 0.5957181537675836,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7252840211548122,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7667844522968197,
+          "coefficients": [
+            0.41204696900668963
+          ]
+        }
+      },
+      "linear": {
+        "distance": 47.12909846175672,
+        "error": 1.7059527382432762,
+        "meanStride": 0.5965708666045154,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7297873568774859,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7667844522968197,
+          "coefficients": [
+            0.4223410917833933,
+            -0.005639322610645838
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 48.75709685266014,
+        "error": 0.07795434733985473,
+        "meanStride": 0.6171784411729132,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7759443979362461,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7667844522968197,
+          "coefficients": [
+            -0.2402883155854838,
+            0.7751344850168808,
+            -0.2099355631172589
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "distanceM": 48.835051199999995,
+      "steps": 80,
+      "fixedError": 0.7186548888069098,
+      "constant": {
+        "distance": 47.81783848329329,
+        "error": 1.0172127167067018,
+        "meanStride": 0.5977229810411662,
+        "minStride": 0.47493770385073736,
+        "maxStride": 0.7345438234283148,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7730496453900708,
+          "coefficients": [
+            0.4125991595657121
+          ]
+        }
+      },
+      "linear": {
+        "distance": 47.936503273484114,
+        "error": 0.8985479265158816,
+        "meanStride": 0.5992062909185514,
+        "minStride": 0.4672347597649295,
+        "maxStride": 0.7394227388798914,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7730496453900708,
+          "coefficients": [
+            0.42177087446711453,
+            -0.004997033809532729
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 49.57114271937636,
+        "error": 0.736091519376366,
+        "meanStride": 0.6196392839922045,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.8052479680135882,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7730496453900708,
+          "coefficients": [
+            -0.3948676458714813,
+            0.9401804120790778,
+            -0.2504399671223311
+          ]
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "distanceM": 48.835051199999995,
+      "steps": 73,
+      "fixedError": 3.6172943939636966,
+      "constant": {
+        "distance": 44.343284395182835,
+        "error": 4.491766804817161,
+        "meanStride": 0.607442251988806,
+        "minStride": 0.49321600443803404,
+        "maxStride": 0.7096823246104582,
+        "model": {
+          "degree": 0,
+          "defaultF": 1.7761989342806395,
+          "coefficients": [
+            0.4102642164548313
+          ]
+        }
+      },
+      "linear": {
+        "distance": 44.067328616295946,
+        "error": 4.7677225837040496,
+        "meanStride": 0.6036620358396705,
+        "minStride": 0.47560355630485435,
+        "maxStride": 0.7215431063883788,
+        "model": {
+          "degree": 1,
+          "defaultF": 1.7761989342806395,
+          "coefficients": [
+            0.38793555419527814,
+            0.01217789925401867
+          ]
+        }
+      },
+      "quadratic": {
+        "distance": 45.56900373581654,
+        "error": 3.2660474641834583,
+        "meanStride": 0.6242329278878977,
+        "minStride": 0.4026238619715561,
+        "maxStride": 0.7766031972070605,
+        "model": {
+          "degree": 2,
+          "defaultF": 1.7761989342806395,
+          "coefficients": [
+            0.017174028226193183,
+            0.4601836656302614,
+            -0.12259875382119018
+          ]
+        }
+      }
+    }
+  ]
+}

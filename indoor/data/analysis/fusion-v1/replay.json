@@ -1,0 +1,328 @@
+{
+  "version": "fusion-v1-shadow-20260907",
+  "method": "leave-one-session-out, three same-day iOS 4F right runs",
+  "limitations": [
+    "900ms label windows are weak zone labels, not independently surveyed position truth",
+    "No same-run training; raw hashes checked before replay",
+    "Heading forced from known route because schema4 did not record absolute heading",
+    "No independent metric position accuracy; no new Android AP anchor logs; no cross-device pooling",
+    "Most label windows are main corridor; report macro recall as well as accuracy"
+  ],
+  "zone_evaluation": {
+    "windows": 36,
+    "accuracy": 0.9166666666666666,
+    "macro_recall": 0.7666666666666666,
+    "confusion": {
+      "core_junction": {
+        "stairs_right": 2,
+        "core_junction": 1
+      },
+      "main_right": {
+        "main_right": 29,
+        "stairs_right": 1
+      },
+      "stairs_right": {
+        "stairs_right": 3
+      }
+    }
+  },
+  "sessions": [
+    {
+      "file": "indoor_positioning_ios_20260905_170448.jsonl",
+      "raw_sha256": "160f26a38538f7440014f631790e1b90cafdd0b3530a896b66368fe60eaaa861",
+      "heading_source": "route_assumption_355deg_not_recorded_sensor",
+      "held_out_training_windows": 24,
+      "detected_steps": 82,
+      "zone_updates": 31,
+      "legacy_final_x": 0,
+      "area_only": {
+        "version": "fusion-v1-shadow-20260907",
+        "floor": 4,
+        "x": 7.478649766379435,
+        "y": -0.10696308430463189,
+        "zone": "main_right",
+        "zoneLabel": "오른쪽 강의실 라인",
+        "spread": 2.467842573246009,
+        "modeWeight": 0.43573086125712085,
+        "calibratedProbability": false,
+        "reason": "tracking",
+        "steps": 82,
+        "strideMode": "fixed_baseline_untrained",
+        "hypotheses": [
+          {
+            "floor": 4,
+            "zone": "main_right",
+            "label": "오른쪽 강의실 라인",
+            "weight": 0.43573086125712085
+          },
+          {
+            "floor": 4,
+            "zone": "stairs_right",
+            "label": "오른쪽 계단 입구",
+            "weight": 0.3387463247422657
+          },
+          {
+            "floor": 4,
+            "zone": "unknown",
+            "label": "미확인 영역",
+            "weight": 0.22552281400061422
+          }
+        ],
+        "floorCandidates": [
+          {
+            "floor": 4,
+            "weight": 0.9999999999999998
+          }
+        ],
+        "verticalStatus": "baseline",
+        "zoneEvidence": [],
+        "observationReason": "not_observed",
+        "particleCount": 160
+      },
+      "with_zone": {
+        "version": "fusion-v1-shadow-20260907",
+        "floor": 4,
+        "x": 7.75215924326373,
+        "y": 0.10293885553412094,
+        "zone": "main_right",
+        "zoneLabel": "오른쪽 강의실 라인",
+        "spread": 2.3581413303000125,
+        "modeWeight": 0.4753002593776066,
+        "calibratedProbability": false,
+        "reason": "tracking",
+        "steps": 82,
+        "strideMode": "fixed_baseline_untrained",
+        "hypotheses": [
+          {
+            "floor": 4,
+            "zone": "main_right",
+            "label": "오른쪽 강의실 라인",
+            "weight": 0.4753002593776066
+          },
+          {
+            "floor": 4,
+            "zone": "stairs_right",
+            "label": "오른쪽 계단 입구",
+            "weight": 0.3464768246257508
+          },
+          {
+            "floor": 4,
+            "zone": "unknown",
+            "label": "미확인 영역",
+            "weight": 0.1782229159966436
+          }
+        ],
+        "floorCandidates": [
+          {
+            "floor": 4,
+            "weight": 1.0000000000000018
+          }
+        ],
+        "verticalStatus": "baseline",
+        "zoneEvidence": [
+          "magnetic"
+        ],
+        "observationReason": "not_observed",
+        "particleCount": 160
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170648.jsonl",
+      "raw_sha256": "72994a78fff96b93e1d8436252a15045c5debc40b5cccad238f3b2474581bd0b",
+      "heading_source": "route_assumption_355deg_not_recorded_sensor",
+      "held_out_training_windows": 24,
+      "detected_steps": 83,
+      "zone_updates": 37,
+      "legacy_final_x": 0,
+      "area_only": {
+        "version": "fusion-v1-shadow-20260907",
+        "floor": 4,
+        "x": 7.408319412915525,
+        "y": -0.01730164258623799,
+        "zone": "main_right",
+        "zoneLabel": "오른쪽 강의실 라인",
+        "spread": 2.0701798775419866,
+        "modeWeight": 0.3979725913286942,
+        "calibratedProbability": false,
+        "reason": "tracking",
+        "steps": 83,
+        "strideMode": "fixed_baseline_untrained",
+        "hypotheses": [
+          {
+            "floor": 4,
+            "zone": "main_right",
+            "label": "오른쪽 강의실 라인",
+            "weight": 0.3979725913286942
+          },
+          {
+            "floor": 4,
+            "zone": "stairs_right",
+            "label": "오른쪽 계단 입구",
+            "weight": 0.3899502334548458
+          },
+          {
+            "floor": 4,
+            "zone": "unknown",
+            "label": "미확인 영역",
+            "weight": 0.2120771752164607
+          }
+        ],
+        "floorCandidates": [
+          {
+            "floor": 4,
+            "weight": 0.9999999999999997
+          }
+        ],
+        "verticalStatus": "baseline",
+        "zoneEvidence": [],
+        "observationReason": "not_observed",
+        "particleCount": 160
+      },
+      "with_zone": {
+        "version": "fusion-v1-shadow-20260907",
+        "floor": 4,
+        "x": 0.7152167743065688,
+        "y": 0.1571376190553792,
+        "zone": "stairs_right",
+        "zoneLabel": "오른쪽 계단 입구",
+        "spread": 1.6220395044487912,
+        "modeWeight": 0.4075218959375544,
+        "calibratedProbability": false,
+        "reason": "tracking",
+        "steps": 83,
+        "strideMode": "fixed_baseline_untrained",
+        "hypotheses": [
+          {
+            "floor": 4,
+            "zone": "stairs_right",
+            "label": "오른쪽 계단 입구",
+            "weight": 0.4075218959375544
+          },
+          {
+            "floor": 4,
+            "zone": "main_right",
+            "label": "오른쪽 강의실 라인",
+            "weight": 0.4071300067238998
+          },
+          {
+            "floor": 4,
+            "zone": "unknown",
+            "label": "미확인 영역",
+            "weight": 0.18534809733854601
+          }
+        ],
+        "floorCandidates": [
+          {
+            "floor": 4,
+            "weight": 1
+          }
+        ],
+        "verticalStatus": "baseline",
+        "zoneEvidence": [
+          "magnetic"
+        ],
+        "observationReason": "not_observed",
+        "particleCount": 160
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170852.jsonl",
+      "raw_sha256": "8f221a8985cc44f1cfb5252ba69b0e0ec5ff08c040981d5fd10537cf2b6777ba",
+      "heading_source": "route_assumption_355deg_not_recorded_sensor",
+      "held_out_training_windows": 24,
+      "detected_steps": 81,
+      "zone_updates": 27,
+      "legacy_final_x": 0,
+      "area_only": {
+        "version": "fusion-v1-shadow-20260907",
+        "floor": 4,
+        "x": 8.225415062648493,
+        "y": -0.1037879302207834,
+        "zone": "main_right",
+        "zoneLabel": "오른쪽 강의실 라인",
+        "spread": 2.4210974083952275,
+        "modeWeight": 0.44550024596409354,
+        "calibratedProbability": false,
+        "reason": "tracking",
+        "steps": 81,
+        "strideMode": "fixed_baseline_untrained",
+        "hypotheses": [
+          {
+            "floor": 4,
+            "zone": "main_right",
+            "label": "오른쪽 강의실 라인",
+            "weight": 0.44550024596409354
+          },
+          {
+            "floor": 4,
+            "zone": "stairs_right",
+            "label": "오른쪽 계단 입구",
+            "weight": 0.41848137886877385
+          },
+          {
+            "floor": 4,
+            "zone": "unknown",
+            "label": "미확인 영역",
+            "weight": 0.13601837516713122
+          }
+        ],
+        "floorCandidates": [
+          {
+            "floor": 4,
+            "weight": 0.9999999999999962
+          }
+        ],
+        "verticalStatus": "baseline",
+        "zoneEvidence": [],
+        "observationReason": "not_observed",
+        "particleCount": 160
+      },
+      "with_zone": {
+        "version": "fusion-v1-shadow-20260907",
+        "floor": 4,
+        "x": 1.012895844035458,
+        "y": -0.0444126178948925,
+        "zone": "stairs_right",
+        "zoneLabel": "오른쪽 계단 입구",
+        "spread": 1.733162884104063,
+        "modeWeight": 0.4330903455932121,
+        "calibratedProbability": false,
+        "reason": "tracking",
+        "steps": 81,
+        "strideMode": "fixed_baseline_untrained",
+        "hypotheses": [
+          {
+            "floor": 4,
+            "zone": "stairs_right",
+            "label": "오른쪽 계단 입구",
+            "weight": 0.4330903455932121
+          },
+          {
+            "floor": 4,
+            "zone": "main_right",
+            "label": "오른쪽 강의실 라인",
+            "weight": 0.4162625032789355
+          },
+          {
+            "floor": 4,
+            "zone": "unknown",
+            "label": "미확인 영역",
+            "weight": 0.1506471511278513
+          }
+        ],
+        "floorCandidates": [
+          {
+            "floor": 4,
+            "weight": 0.9999999999999972
+          }
+        ],
+        "verticalStatus": "baseline",
+        "zoneEvidence": [
+          "magnetic"
+        ],
+        "observationReason": "not_observed",
+        "particleCount": 160
+      }
+    }
+  ]
+}

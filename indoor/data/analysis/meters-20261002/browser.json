@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "coordinates": "legacy",
+      "floor": 1,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 2,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 3,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 4,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 5,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 6,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 7,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 8,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 9,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "floor": 10,
+      "units": "legacy_map_units"
+    },
+    {
+      "coordinates": "legacy",
+      "apCoordinateConversion": true
+    },
+    {
+      "coordinates": "legacy",
+      "verifiedVerticalBridge": true
+    },
+    {
+      "coordinates": "meters",
+      "floor": 1,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 2,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 3,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 4,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 5,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 6,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 7,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 8,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 9,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "floor": 10,
+      "units": "legacy_display"
+    },
+    {
+      "coordinates": "meters",
+      "apCoordinateConversion": true
+    },
+    {
+      "coordinates": "meters",
+      "verifiedVerticalBridge": true
+    },
+    {
+      "existing2d": 1
+    },
+    {
+      "existing2d": 2
+    },
+    {
+      "existing2d": 3
+    },
+    {
+      "existing2d": 4
+    },
+    {
+      "existing2d": 5
+    },
+    {
+      "existing2d": 10
+    },
+    {
+      "navigationOverlay": 2,
+      "outOfScopeDoesNotMeanWall": true
+    },
+    {
+      "navigationOverlay": 3,
+      "outOfScopeDoesNotMeanWall": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failedRequests": []
+}

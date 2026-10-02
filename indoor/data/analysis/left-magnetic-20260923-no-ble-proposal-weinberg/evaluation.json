@@ -1,0 +1,1295 @@
+{
+  "lengthM": 48.835051199999995,
+  "method": "Full runtime LOSO, same raw sensor stream, query hash excluded from templates, BLE refs from separate stationary sessions; no query laps used by engine",
+  "limitations": [
+    "Endpoint uses survey and user start/end labels, not independently tracked trajectory",
+    "Intermediate errors are weak step-interpolated truth and cannot certify meter accuracy",
+    "No AP observations; does not evaluate AP fusion",
+    "This compares V2 pattern features, not a left-grid HMM"
+  ],
+  "summary": {
+    "pdr": {
+      "endpointMAE": 2.5158519672103905,
+      "worstEndpoint": 4.555435302749238,
+      "weakIntermediateMAE": 1.4295958983210681,
+      "sequenceApplied": 0,
+      "bleApplied": 0
+    },
+    "ble": {
+      "endpointMAE": 2.5173445195170148,
+      "worstEndpoint": 4.563446205118893,
+      "weakIntermediateMAE": 1.4366934535969755,
+      "sequenceApplied": 0,
+      "bleApplied": 10
+    },
+    "norm": {
+      "endpointMAE": 2.5168732694934306,
+      "worstEndpoint": 4.561089955000973,
+      "weakIntermediateMAE": 1.4363254912497943,
+      "sequenceApplied": 1,
+      "bleApplied": 10
+    },
+    "mv": {
+      "endpointMAE": 2.5144944291784457,
+      "worstEndpoint": 4.563446205118893,
+      "weakIntermediateMAE": 1.4346892502009987,
+      "sequenceApplied": 4,
+      "bleApplied": 10
+    }
+  },
+  "folds": [
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "sha256": "36012da448caa08ee06471d51cd5543b2b1905a58fddc3b2fe933ba29a5ac6b2",
+      "direction": "forward",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.7044611934451126,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 1.7691391131168597
+        },
+        "ble": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.7044611934451126,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "weakIntermediateMAE": 1.7691391131168597
+        },
+        "norm": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.7044611934451126,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "weakIntermediateMAE": 1.7691391131168597
+        },
+        "mv": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.6981069253337324,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "ambiguous_sequence": 6,
+              "outside_pdr_gate": 2,
+              "applied": 1
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "weakIntermediateMAE": 1.7655702776021955
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "sha256": "a9fa387ef0ec2f70dcf6e9b01f7a56e88785ad276140c70678dbc5ea798899a4",
+      "direction": "reverse",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.2471584186703453,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 0.9760491628459115
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9096,
+              "steps": 13,
+              "beforeM": 41.28629581477293,
+              "afterM": 41.29408301032373,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.9525390625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12200,
+              "steps": 18,
+              "beforeM": 38.11260345266588,
+              "afterM": 38.12034841138146,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.0853515625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.2649635824555716,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "weakIntermediateMAE": 0.9884366664327596
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9096,
+              "steps": 13,
+              "beforeM": 41.28629581477293,
+              "afterM": 41.29408301032373,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.9525390625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12200,
+              "steps": 18,
+              "beforeM": 38.11260345266588,
+              "afterM": 38.12034841138146,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.0853515625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.2649635824555716,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "weakIntermediateMAE": 0.9884366664327596
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9096,
+              "steps": 13,
+              "beforeM": 41.28629581477293,
+              "afterM": 41.29408301032373,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.9525390625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12200,
+              "steps": 18,
+              "beforeM": 38.11260345266588,
+              "afterM": 38.12034841138146,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.0853515625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.2649635824555716,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "weakIntermediateMAE": 0.9884366664327596
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "sha256": "72e83cb3e821401411b310861127af84864d337d1206568eaa5e0851d80099cd",
+      "direction": "reverse",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 4.555435302749238,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 2.539626256136148
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9587,
+              "steps": 13,
+              "beforeM": 41.11002197448633,
+              "afterM": 41.11803287685589,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.235009765625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 73,
+          "endpointErrorM": 4.563446205118893,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "weakIntermediateMAE": 2.546210559453637
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9587,
+              "steps": 13,
+              "beforeM": 41.11002197448633,
+              "afterM": 41.11803287685589,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.235009765625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 73,
+          "endpointErrorM": 4.561089955000973,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "applied": 1
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "weakIntermediateMAE": 2.5443707477177306
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9587,
+              "steps": 13,
+              "beforeM": 41.11002197448633,
+              "afterM": 41.11803287685589,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.235009765625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 73,
+          "endpointErrorM": 4.563446205118893,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "weakIntermediateMAE": 2.546210559453637
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "sha256": "18d62c8c11910ebb932fba49b4fae252481ae42e06dbf613d78362197dc9b8fa",
+      "direction": "forward",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 79,
+          "endpointErrorM": 1.9794303274366882,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 0.8581761373292827
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 45917,
+              "steps": 63,
+              "beforeM": 37.72652515436474,
+              "afterM": 37.74757024685175,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.568994140625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 48976,
+              "steps": 66,
+              "beforeM": 39.49190123698223,
+              "afterM": 39.51478311848069,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.865625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 55015,
+              "steps": 79,
+              "beforeM": 46.89973414203749,
+              "afterM": 46.90730550057975,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.752587890625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 79,
+          "endpointErrorM": 1.9277456994202709,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "weakIntermediateMAE": 0.8501456090159017
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 45917,
+              "steps": 63,
+              "beforeM": 37.72652515436474,
+              "afterM": 37.74757024685175,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.568994140625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 48976,
+              "steps": 66,
+              "beforeM": 39.49190123698223,
+              "afterM": 39.51478311848069,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.865625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 55015,
+              "steps": 79,
+              "beforeM": 46.89973414203749,
+              "afterM": 46.90730550057975,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.752587890625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 79,
+          "endpointErrorM": 1.9277456994202709,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "weakIntermediateMAE": 0.8501456090159017
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 45917,
+              "steps": 63,
+              "beforeM": 37.7302855976518,
+              "afterM": 37.75117658067009,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.568994140625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 48976,
+              "steps": 66,
+              "beforeM": 39.49550757080047,
+              "afterM": 39.51821553595626,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.865625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 55015,
+              "steps": 79,
+              "beforeM": 46.90315892348582,
+              "afterM": 46.91065843015937,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.752587890625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 79,
+          "endpointErrorM": 1.9243927698406225,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "applied": 1,
+              "outside_pdr_gate": 1,
+              "ambiguous_sequence": 7
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "weakIntermediateMAE": 0.8469211435524265
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "sha256": "6fbbfeff7c38d50540bfe13f91c4f4de4a68d711e4b6114cc4382b5c1e549c3b",
+      "direction": "reverse",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 80,
+          "endpointErrorM": 1.092774593750569,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 1.0049888221771401
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9195,
+              "steps": 9,
+              "beforeM": 43.55400342121057,
+              "afterM": 43.560284210046234,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.6625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12270,
+              "steps": 13,
+              "beforeM": 41.323566462968955,
+              "afterM": 41.331511383483985,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.6634765625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 15294,
+              "steps": 18,
+              "beforeM": 38.52420655622899,
+              "afterM": 38.532321199125036,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.533837890625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 18320,
+              "steps": 19,
+              "beforeM": 38.034449228907775,
+              "afterM": 38.042348003619026,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.32265625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 80,
+          "endpointErrorM": 1.1261059171452246,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "weakIntermediateMAE": 1.0295353199657198
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9195,
+              "steps": 9,
+              "beforeM": 43.55400342121057,
+              "afterM": 43.560284210046234,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.6625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12270,
+              "steps": 13,
+              "beforeM": 41.323566462968955,
+              "afterM": 41.331511383483985,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.6634765625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 15294,
+              "steps": 18,
+              "beforeM": 38.52420655622899,
+              "afterM": 38.532321199125036,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.533837890625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 18320,
+              "steps": 19,
+              "beforeM": 38.034449228907775,
+              "afterM": 38.042348003619026,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.32265625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 80,
+          "endpointErrorM": 1.1261059171452246,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "weakIntermediateMAE": 1.0295353199657198
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9195,
+              "steps": 9,
+              "beforeM": 43.55400342121057,
+              "afterM": 43.560284210046234,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.6625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12270,
+              "steps": 13,
+              "beforeM": 41.323566462968955,
+              "afterM": 41.331511383483985,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.6634765625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 15294,
+              "steps": 18,
+              "beforeM": 38.52015270685942,
+              "afterM": 38.52823925916029,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.533837890625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 18320,
+              "steps": 19,
+              "beforeM": 38.03036728894308,
+              "afterM": 38.03823887450588,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.32265625,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 80,
+          "endpointErrorM": 1.1215626631434077,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 2,
+            "reasons": {
+              "ambiguous_sequence": 6,
+              "applied": 2
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "weakIntermediateMAE": 1.0263076039639745
+        }
+      }
+    }
+  ]
+}

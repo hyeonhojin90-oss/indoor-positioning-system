@@ -1,0 +1,111 @@
+{
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260923_133352.jsonl",
+      "zone": "core_junction",
+      "durationS": 31.388,
+      "steps": 0,
+      "freshAp": true,
+      "apCount": 132,
+      "apAtS": 2.7,
+      "bleObservations": 1171,
+      "bleIds": 296,
+      "bleIdsAtLeast3": 149,
+      "magSamples": 1573,
+      "magMedianUt": 55.795182325963495,
+      "magStdUt": 2.8466489724679382,
+      "stepChanges": [],
+      "labelReplacementCharacters": 0
+    },
+    {
+      "file": "indoor_positioning_20260923_133501.jsonl",
+      "zone": "stairs_left",
+      "durationS": 31.179,
+      "steps": 0,
+      "freshAp": true,
+      "apCount": 70,
+      "apAtS": 2.72,
+      "bleObservations": 1252,
+      "bleIds": 190,
+      "bleIdsAtLeast3": 122,
+      "magSamples": 1559,
+      "magMedianUt": 44.843890761674594,
+      "magStdUt": 2.7722265613988095,
+      "stepChanges": [],
+      "labelReplacementCharacters": 0
+    },
+    {
+      "file": "indoor_positioning_20260923_133657.jsonl",
+      "zone": "stairs_right",
+      "durationS": 30.868,
+      "steps": 4,
+      "freshAp": true,
+      "apCount": 53,
+      "apAtS": 2.79,
+      "bleObservations": 506,
+      "bleIds": 126,
+      "bleIdsAtLeast3": 60,
+      "magSamples": 1545,
+      "magMedianUt": 68.67068407670409,
+      "magStdUt": 6.688067159092929,
+      "stepChanges": [
+        {
+          "seconds": 0.11,
+          "value": 27064
+        },
+        {
+          "seconds": 0.63,
+          "value": 27065
+        },
+        {
+          "seconds": 1.2,
+          "value": 27066
+        },
+        {
+          "seconds": 1.79,
+          "value": 27067
+        }
+      ],
+      "labelReplacementCharacters": 0
+    }
+  ],
+  "pairs": [
+    {
+      "a": "core_junction",
+      "b": "stairs_left",
+      "ap": {
+        "common": 29,
+        "medianAbsoluteRssiDiffDb": 13
+      },
+      "ble": {
+        "common": 7,
+        "medianAbsoluteRssiDiffDb": 4.5
+      }
+    },
+    {
+      "a": "core_junction",
+      "b": "stairs_right",
+      "ap": {
+        "common": 31,
+        "medianAbsoluteRssiDiffDb": 10
+      },
+      "ble": {
+        "common": 8,
+        "medianAbsoluteRssiDiffDb": 6.75
+      }
+    },
+    {
+      "a": "stairs_left",
+      "b": "stairs_right",
+      "ap": {
+        "common": 24,
+        "medianAbsoluteRssiDiffDb": 10.5
+      },
+      "ble": {
+        "common": 2,
+        "medianAbsoluteRssiDiffDb": 20.25
+      }
+    }
+  ],
+  "note": "Single session per location: descriptive fingerprint differences only, not independent classification validation. Raw files unchanged."
+}

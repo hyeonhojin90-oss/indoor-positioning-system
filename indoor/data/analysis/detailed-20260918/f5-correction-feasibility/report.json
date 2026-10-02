@@ -1,0 +1,1144 @@
+{
+  "limitations": [
+    "One stationary session per location; same-session holdout is optimistic, not walking or independent-session validation.",
+    "Common-ID median absolute RSSI difference; >=5 shared IDs required. No missing-ID penalty. Exploratory matching only.",
+    "5F assignments user-supported but tentative; 5119 explicitly confirmed."
+  ],
+  "sessions": [
+    {
+      "name": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+      "file": "indoor_positioning_20260918_160943__corrected-f5-stairs-right-inside.jsonl",
+      "durationSeconds": 8.27,
+      "freshWifi": 1,
+      "wifiTests": [],
+      "halfTests": [
+        {
+          "prediction": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+            "shared": 9,
+            "mad": 3,
+            "jaccard": 0.75
+          },
+          "margin": null
+        },
+        {
+          "prediction": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+            "shared": 9,
+            "mad": 3,
+            "jaccard": 0.75
+          },
+          "margin": null
+        }
+      ],
+      "windows": [],
+      "windowSummary": {
+        "tested": 0,
+        "correct": 0,
+        "noMatch": 0,
+        "medianMargin": null
+      }
+    },
+    {
+      "name": "오른쪽 강의실 라인 · 5209",
+      "file": "indoor_positioning_20260918_161212__corrected-f5-main-right-5209.jsonl",
+      "durationSeconds": 115.269,
+      "freshWifi": 3,
+      "wifiTests": [
+        {
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 69,
+            "mad": 1.5,
+            "jaccard": 0.5798319327731093
+          },
+          "other": {
+            "name": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+            "shared": 18,
+            "mad": 10.5,
+            "jaccard": 0.1935483870967742
+          },
+          "margin": 9
+        },
+        {
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 79,
+            "mad": 1.5,
+            "jaccard": 0.6638655462184874
+          },
+          "other": {
+            "name": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+            "shared": 17,
+            "mad": 13,
+            "jaccard": 0.1717171717171717
+          },
+          "margin": 11.5
+        },
+        {
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 74,
+            "mad": 1,
+            "jaccard": 0.6218487394957983
+          },
+          "other": {
+            "name": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+            "shared": 17,
+            "mad": 13,
+            "jaccard": 0.1717171717171717
+          },
+          "margin": 12
+        }
+      ],
+      "halfTests": [
+        {
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 36,
+            "mad": 1.75,
+            "jaccard": 0.5
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 8,
+            "mad": 3.75,
+            "jaccard": 0.1038961038961039
+          },
+          "margin": 2
+        },
+        {
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 36,
+            "mad": 1.75,
+            "jaccard": 0.5
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 12,
+            "mad": 2.75,
+            "jaccard": 0.1348314606741573
+          },
+          "margin": 1
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "identifiers": 16,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 15,
+            "mad": 2.5,
+            "jaccard": 0.23809523809523808
+          },
+          "margin": null
+        },
+        {
+          "start": 5000,
+          "identifiers": 14,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 13,
+            "mad": 3.5,
+            "jaccard": 0.20634920634920634
+          },
+          "margin": null
+        },
+        {
+          "start": 10000,
+          "identifiers": 5,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 5,
+            "mad": 10,
+            "jaccard": 0.08064516129032258
+          },
+          "margin": null
+        },
+        {
+          "start": 15000,
+          "identifiers": 15,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 13,
+            "mad": 4.5,
+            "jaccard": 0.203125
+          },
+          "margin": null
+        },
+        {
+          "start": 20000,
+          "identifiers": 19,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 17,
+            "mad": 3,
+            "jaccard": 0.265625
+          },
+          "margin": null
+        },
+        {
+          "start": 25000,
+          "identifiers": 25,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 19,
+            "mad": 1.5,
+            "jaccard": 0.27941176470588236
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 6,
+            "mad": 2,
+            "jaccard": 0.10344827586206896
+          },
+          "margin": 0.5
+        },
+        {
+          "start": 30000,
+          "identifiers": 20,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 19,
+            "mad": 4,
+            "jaccard": 0.30158730158730157
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 5,
+            "mad": 7,
+            "jaccard": 0.09259259259259259
+          },
+          "margin": 3
+        },
+        {
+          "start": 35000,
+          "identifiers": 6,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 6,
+            "mad": 4.5,
+            "jaccard": 0.0967741935483871
+          },
+          "margin": null
+        },
+        {
+          "start": 40000,
+          "identifiers": 4,
+          "prediction": null,
+          "correct": false,
+          "margin": null
+        },
+        {
+          "start": 45000,
+          "identifiers": 11,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 10,
+            "mad": 2,
+            "jaccard": 0.15873015873015872
+          },
+          "margin": null
+        },
+        {
+          "start": 50000,
+          "identifiers": 22,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 20,
+            "mad": 3,
+            "jaccard": 0.3125
+          },
+          "margin": null
+        },
+        {
+          "start": 60000,
+          "identifiers": 22,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 17,
+            "mad": 3.5,
+            "jaccard": 0.3333333333333333
+          },
+          "margin": null
+        },
+        {
+          "start": 65000,
+          "identifiers": 24,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 21,
+            "mad": 2,
+            "jaccard": 0.42857142857142855
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 7,
+            "mad": 2,
+            "jaccard": 0.125
+          },
+          "margin": 0
+        },
+        {
+          "start": 70000,
+          "identifiers": 16,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 13,
+            "mad": 3,
+            "jaccard": 0.2653061224489796
+          },
+          "margin": null
+        },
+        {
+          "start": 75000,
+          "identifiers": 22,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 15,
+            "mad": 2,
+            "jaccard": 0.2830188679245283
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 8,
+            "mad": 3.75,
+            "jaccard": 0.1509433962264151
+          },
+          "margin": 1.75
+        },
+        {
+          "start": 80000,
+          "identifiers": 20,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 15,
+            "mad": 2,
+            "jaccard": 0.29411764705882354
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 5,
+            "mad": 4,
+            "jaccard": 0.09259259259259259
+          },
+          "margin": 2
+        },
+        {
+          "start": 85000,
+          "identifiers": 21,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 13,
+            "mad": 3.5,
+            "jaccard": 0.24074074074074073
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 8,
+            "mad": 4.5,
+            "jaccard": 0.15384615384615385
+          },
+          "margin": 1
+        },
+        {
+          "start": 90000,
+          "identifiers": 19,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 15,
+            "mad": 3,
+            "jaccard": 0.3
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 8,
+            "mad": 5.25,
+            "jaccard": 0.16
+          },
+          "margin": 2.25
+        },
+        {
+          "start": 95000,
+          "identifiers": 20,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 16,
+            "mad": 1,
+            "jaccard": 0.32
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 9,
+            "mad": 3,
+            "jaccard": 0.18
+          },
+          "margin": 2
+        },
+        {
+          "start": 100000,
+          "identifiers": 17,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 10,
+            "mad": 2.75,
+            "jaccard": 0.18867924528301888
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 5,
+            "mad": 14.5,
+            "jaccard": 0.09803921568627451
+          },
+          "margin": 11.75
+        },
+        {
+          "start": 105000,
+          "identifiers": 17,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 11,
+            "mad": 2,
+            "jaccard": 0.21153846153846154
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 5,
+            "mad": 3.5,
+            "jaccard": 0.09803921568627451
+          },
+          "margin": 1.5
+        },
+        {
+          "start": 110000,
+          "identifiers": 19,
+          "prediction": "오른쪽 강의실 라인 · 5209",
+          "correct": true,
+          "self": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 10,
+            "mad": 5,
+            "jaccard": 0.18181818181818182
+          },
+          "margin": null
+        }
+      ],
+      "windowSummary": {
+        "tested": 22,
+        "correct": 21,
+        "noMatch": 1,
+        "medianMargin": 1.875
+      }
+    },
+    {
+      "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "file": "indoor_positioning_20260918_161443__corrected-f5-core.jsonl",
+      "durationSeconds": 46.309,
+      "freshWifi": 2,
+      "wifiTests": [
+        {
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 50,
+            "mad": 1,
+            "jaccard": 0.5208333333333334
+          },
+          "other": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 12,
+            "mad": 2,
+            "jaccard": 0.096
+          },
+          "margin": 1
+        },
+        {
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 50,
+            "mad": 1,
+            "jaccard": 0.5208333333333334
+          },
+          "other": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 19,
+            "mad": 6,
+            "jaccard": 0.1557377049180328
+          },
+          "margin": 5
+        }
+      ],
+      "halfTests": [
+        {
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 18,
+            "mad": 1.25,
+            "jaccard": 0.5142857142857142
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 13,
+            "mad": 2,
+            "jaccard": 0.1368421052631579
+          },
+          "margin": 0.75
+        },
+        {
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 18,
+            "mad": 1.25,
+            "jaccard": 0.5142857142857142
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 8,
+            "mad": 4.5,
+            "jaccard": 0.08080808080808081
+          },
+          "margin": 3.25
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "identifiers": 20,
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 13,
+            "mad": 1.5,
+            "jaccard": 0.3939393939393939
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 11,
+            "mad": 3.5,
+            "jaccard": 0.12222222222222222
+          },
+          "margin": 2
+        },
+        {
+          "start": 5000,
+          "identifiers": 17,
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 12,
+            "mad": 1,
+            "jaccard": 0.3870967741935484
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 11,
+            "mad": 6,
+            "jaccard": 0.12643678160919541
+          },
+          "margin": 5
+        },
+        {
+          "start": 10000,
+          "identifiers": 12,
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 10,
+            "mad": 1.75,
+            "jaccard": 0.35714285714285715
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 8,
+            "mad": 3.5,
+            "jaccard": 0.09411764705882353
+          },
+          "margin": 1.75
+        },
+        {
+          "start": 15000,
+          "identifiers": 18,
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 13,
+            "mad": 1.5,
+            "jaccard": 0.41935483870967744
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 10,
+            "mad": 4,
+            "jaccard": 0.11235955056179775
+          },
+          "margin": 2.5
+        },
+        {
+          "start": 25000,
+          "identifiers": 10,
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": false,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 8,
+            "mad": 2.5,
+            "jaccard": 0.27586206896551724
+          },
+          "other": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 5,
+            "mad": 1.5,
+            "jaccard": 0.0847457627118644
+          },
+          "margin": -1
+        },
+        {
+          "start": 30000,
+          "identifiers": 10,
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 8,
+            "mad": 1.75,
+            "jaccard": 0.27586206896551724
+          },
+          "other": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 6,
+            "mad": 5.75,
+            "jaccard": 0.10344827586206896
+          },
+          "margin": 4
+        },
+        {
+          "start": 35000,
+          "identifiers": 14,
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 11,
+            "mad": 1.5,
+            "jaccard": 0.36666666666666664
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 6,
+            "mad": 5.5,
+            "jaccard": 0.06741573033707865
+          },
+          "margin": 4
+        },
+        {
+          "start": 40000,
+          "identifiers": 14,
+          "prediction": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+          "correct": true,
+          "self": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 10,
+            "mad": 1,
+            "jaccard": 0.3225806451612903
+          },
+          "other": {
+            "name": "오른쪽 강의실 라인 · 5209",
+            "shared": 6,
+            "mad": 4.5,
+            "jaccard": 0.06741573033707865
+          },
+          "margin": 3.5
+        }
+      ],
+      "windowSummary": {
+        "tested": 8,
+        "correct": 7,
+        "noMatch": 0,
+        "medianMargin": 3
+      }
+    },
+    {
+      "name": "왼쪽 강의실 라인 · 5119",
+      "file": "indoor_positioning_20260918_161545__corrected-f5-main-left-5119.jsonl",
+      "durationSeconds": 30.889,
+      "freshWifi": 1,
+      "wifiTests": [],
+      "halfTests": [
+        {
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 28,
+            "mad": 1.5,
+            "jaccard": 0.6086956521739131
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 10,
+            "mad": 4.25,
+            "jaccard": 0.14705882352941177
+          },
+          "margin": 2.75
+        },
+        {
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 28,
+            "mad": 1.5,
+            "jaccard": 0.6086956521739131
+          },
+          "other": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 6,
+            "mad": 2,
+            "jaccard": 0.08450704225352113
+          },
+          "margin": 0.5
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "identifiers": 28,
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 22,
+            "mad": 2.25,
+            "jaccard": 0.5365853658536586
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 9,
+            "mad": 6,
+            "jaccard": 0.15517241379310345
+          },
+          "margin": 3.75
+        },
+        {
+          "start": 5000,
+          "identifiers": 29,
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 23,
+            "mad": 2,
+            "jaccard": 0.5609756097560976
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 9,
+            "mad": 4,
+            "jaccard": 0.15254237288135594
+          },
+          "margin": 2
+        },
+        {
+          "start": 10000,
+          "identifiers": 22,
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 21,
+            "mad": 2,
+            "jaccard": 0.5833333333333334
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 7,
+            "mad": 8,
+            "jaccard": 0.12962962962962962
+          },
+          "margin": 6
+        },
+        {
+          "start": 20000,
+          "identifiers": 26,
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 20,
+            "mad": 1.5,
+            "jaccard": 0.4444444444444444
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 7,
+            "mad": 9,
+            "jaccard": 0.1206896551724138
+          },
+          "margin": 7.5
+        },
+        {
+          "start": 25000,
+          "identifiers": 28,
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 23,
+            "mad": 2,
+            "jaccard": 0.5227272727272727
+          },
+          "other": {
+            "name": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+            "shared": 9,
+            "mad": 9.5,
+            "jaccard": 0.15517241379310345
+          },
+          "margin": 7.5
+        }
+      ],
+      "windowSummary": {
+        "tested": 5,
+        "correct": 5,
+        "noMatch": 0,
+        "medianMargin": 6
+      }
+    },
+    {
+      "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "file": "indoor_positioning_20260918_161643__corrected-f5-stairs-left.jsonl",
+      "durationSeconds": 32.49,
+      "freshWifi": 1,
+      "wifiTests": [],
+      "halfTests": [
+        {
+          "prediction": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 20,
+            "mad": 1.75,
+            "jaccard": 0.625
+          },
+          "other": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 6,
+            "mad": 3,
+            "jaccard": 0.07894736842105263
+          },
+          "margin": 1.25
+        },
+        {
+          "prediction": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 20,
+            "mad": 1.75,
+            "jaccard": 0.625
+          },
+          "margin": null
+        }
+      ],
+      "windows": [
+        {
+          "start": 0,
+          "identifiers": 20,
+          "prediction": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 14,
+            "mad": 1.5,
+            "jaccard": 0.4666666666666667
+          },
+          "other": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 5,
+            "mad": 3,
+            "jaccard": 0.07246376811594203
+          },
+          "margin": 1.5
+        },
+        {
+          "start": 5000,
+          "identifiers": 14,
+          "prediction": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 11,
+            "mad": 3,
+            "jaccard": 0.4074074074074074
+          },
+          "other": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 5,
+            "mad": 6,
+            "jaccard": 0.07936507936507936
+          },
+          "margin": 3
+        },
+        {
+          "start": 10000,
+          "identifiers": 16,
+          "prediction": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 14,
+            "mad": 1.75,
+            "jaccard": 0.5384615384615384
+          },
+          "margin": null
+        },
+        {
+          "start": 20000,
+          "identifiers": 25,
+          "prediction": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+          "correct": true,
+          "self": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 21,
+            "mad": 1,
+            "jaccard": 0.65625
+          },
+          "margin": null
+        },
+        {
+          "start": 25000,
+          "identifiers": 15,
+          "prediction": "왼쪽 강의실 라인 · 5119",
+          "correct": false,
+          "self": {
+            "name": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+            "shared": 14,
+            "mad": 2.5,
+            "jaccard": 0.4827586206896552
+          },
+          "other": {
+            "name": "왼쪽 강의실 라인 · 5119",
+            "shared": 5,
+            "mad": 2,
+            "jaccard": 0.078125
+          },
+          "margin": -0.5
+        }
+      ],
+      "windowSummary": {
+        "tested": 5,
+        "correct": 4,
+        "noMatch": 0,
+        "medianMargin": 1.5
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "a": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+      "b": "오른쪽 강의실 라인 · 5209",
+      "wifi": {
+        "shared": 20,
+        "mad": 13,
+        "jaccard": 0.15748031496062992
+      },
+      "ble": {
+        "shared": 4,
+        "mad": 4,
+        "jaccard": 0.043478260869565216
+      }
+    },
+    {
+      "a": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+      "b": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "wifi": {
+        "shared": 5,
+        "mad": 8.5,
+        "jaccard": 0.04201680672268908
+      },
+      "ble": {
+        "shared": 1,
+        "mad": 1.5,
+        "jaccard": 0.018867924528301886
+      }
+    },
+    {
+      "a": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+      "b": "왼쪽 강의실 라인 · 5119",
+      "wifi": {
+        "shared": 2,
+        "mad": 5.5,
+        "jaccard": 0.01652892561983471
+      },
+      "ble": {
+        "shared": 0,
+        "mad": null,
+        "jaccard": 0
+      }
+    },
+    {
+      "a": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+      "b": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "wifi": {
+        "shared": 5,
+        "mad": 8,
+        "jaccard": 0.056179775280898875
+      },
+      "ble": {
+        "shared": 0,
+        "mad": null,
+        "jaccard": 0
+      }
+    },
+    {
+      "a": "오른쪽 강의실 라인 · 5209",
+      "b": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "wifi": {
+        "shared": 31,
+        "mad": 17,
+        "jaccard": 0.16847826086956522
+      },
+      "ble": {
+        "shared": 13,
+        "mad": 3,
+        "jaccard": 0.12149532710280374
+      }
+    },
+    {
+      "a": "오른쪽 강의실 라인 · 5209",
+      "b": "왼쪽 강의실 라인 · 5119",
+      "wifi": {
+        "shared": 16,
+        "mad": 24,
+        "jaccard": 0.08080808080808081
+      },
+      "ble": {
+        "shared": 3,
+        "mad": 11,
+        "jaccard": 0.022727272727272728
+      }
+    },
+    {
+      "a": "오른쪽 강의실 라인 · 5209",
+      "b": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "wifi": {
+        "shared": 18,
+        "mad": 21.5,
+        "jaccard": 0.10778443113772455
+      },
+      "ble": {
+        "shared": 1,
+        "mad": 20.5,
+        "jaccard": 0.00819672131147541
+      }
+    },
+    {
+      "a": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "b": "왼쪽 강의실 라인 · 5119",
+      "wifi": {
+        "shared": 32,
+        "mad": 9.75,
+        "jaccard": 0.20125786163522014
+      },
+      "ble": {
+        "shared": 10,
+        "mad": 6.25,
+        "jaccard": 0.12048192771084337
+      }
+    },
+    {
+      "a": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "b": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "wifi": {
+        "shared": 19,
+        "mad": 5,
+        "jaccard": 0.13286713286713286
+      },
+      "ble": {
+        "shared": 3,
+        "mad": 1,
+        "jaccard": 0.038461538461538464
+      }
+    },
+    {
+      "a": "왼쪽 강의실 라인 · 5119",
+      "b": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "wifi": {
+        "shared": 16,
+        "mad": 2,
+        "jaccard": 0.1103448275862069
+      },
+      "ble": {
+        "shared": 7,
+        "mad": 2,
+        "jaccard": 0.07865168539325842
+      }
+    }
+  ]
+}

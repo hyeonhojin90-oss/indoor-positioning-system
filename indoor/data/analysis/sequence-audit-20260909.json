@@ -1,0 +1,1441 @@
+{
+  "engineVersion": "fusion-v2-extension-diagnostics-20260909",
+  "mapVersion": "areas-v1-20260909",
+  "limitations": [
+    "Existing tuning sessions, not independent validation",
+    "Map units, not meter accuracy",
+    "Both arms use magnetic zone observations",
+    "Unknown fraction is sampled at steps, not elapsed time",
+    "No raw or training data modified"
+  ],
+  "sessions": [
+    {
+      "file": "indoor_positioning_ios_20260908_132920.jsonl",
+      "sha256": "5b0e6c73cb004b1c2db0b4cb7e4d0a506e1b084452251aa4778c6c8a12d658f5",
+      "direction": "forward",
+      "off": {
+        "mae": 3.8343325240422597,
+        "median": 3.694697602653644,
+        "p95": 7.715614976672098,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 1.7215327216311678,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 0.46774836303181894,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 2.5428063294204057,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 3.2375932790277915,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 1.7520237034388515,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 4.531681669843767,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 3.694697602653644,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 6.050055569058554,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 6.532642518665938,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 7.715614976672098,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 3.931261031020819,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 8
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 3.414489899866942,
+          "y": -0.013578876657349869,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 3.8096239301503783,
+          "displayMass": 0.8142972457546602,
+          "modeWeight": 0.4151226101630763,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 83,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "stairs_right",
+              "label": "오른쪽 계단 입구",
+              "weight": 0.4151226101630763
+            },
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.399174635591584
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 0.17016725358872759
+            },
+            {
+              "floor": 4,
+              "zone": "side_passage",
+              "label": "사이드 화장실 통로",
+              "weight": 0.015535500656611696
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.0000000000000004
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.7769586097327887,
+          "branchProposals": 2,
+          "corridorHeadingOffset": 25.253994056945558,
+          "corridorDirection": -1,
+          "recoveryCount": 0,
+          "sequenceReason": "ambiguous_sequence",
+          "landmarks": [
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 3.41451690026344
+            },
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 67.38951146819382
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 131.99251079860412
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": false,
+          "sequenceStats": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "ambiguous_sequence",
+            "margin": 0.06250119219309376,
+            "applied": false,
+            "candidates": [
+              {
+                "x": 5.977406911192778,
+                "score": 0.06921859543705854,
+                "floor": 4
+              },
+              {
+                "x": 39.08722466900745,
+                "score": 0.1317197876301523,
+                "floor": 4
+              },
+              {
+                "x": 6.424479309513146,
+                "score": 0.13455485638890247,
+                "floor": 4
+              }
+            ],
+            "applicationReason": "pattern_disabled"
+          }
+        }
+      },
+      "on": {
+        "mae": 3.8343325240422597,
+        "median": 3.694697602653644,
+        "p95": 7.715614976672098,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 1.7215327216311678,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 0.46774836303181894,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 2.5428063294204057,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 3.2375932790277915,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 1.7520237034388515,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 4.531681669843767,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 3.694697602653644,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 6.050055569058554,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 6.532642518665938,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 7.715614976672098,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 3.931261031020819,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 8
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 3.414489899866942,
+          "y": -0.013578876657349869,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 3.8096239301503783,
+          "displayMass": 0.8142972457546602,
+          "modeWeight": 0.4151226101630763,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 83,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "stairs_right",
+              "label": "오른쪽 계단 입구",
+              "weight": 0.4151226101630763
+            },
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.399174635591584
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 0.17016725358872759
+            },
+            {
+              "floor": 4,
+              "zone": "side_passage",
+              "label": "사이드 화장실 통로",
+              "weight": 0.015535500656611696
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.0000000000000004
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.7769586097327887,
+          "branchProposals": 2,
+          "corridorHeadingOffset": 25.253994056945558,
+          "corridorDirection": -1,
+          "recoveryCount": 0,
+          "sequenceReason": "ambiguous_sequence",
+          "landmarks": [
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 3.41451690026344
+            },
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 67.38951146819382
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 131.99251079860412
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": true,
+          "sequenceStats": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "ambiguous_sequence",
+            "margin": 0.06250119219309376,
+            "applied": false,
+            "candidates": [
+              {
+                "x": 5.977406911192778,
+                "score": 0.06921859543705854,
+                "floor": 4
+              },
+              {
+                "x": 39.08722466900745,
+                "score": 0.1317197876301523,
+                "floor": 4
+              },
+              {
+                "x": 6.424479309513146,
+                "score": 0.13455485638890247,
+                "floor": 4
+              }
+            ],
+            "applicationReason": "ambiguous_sequence"
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133049.jsonl",
+      "sha256": "339142dee5907606a51e3139b6e13b79147492e56adacdc684712af0229884bc",
+      "direction": "reverse",
+      "off": {
+        "mae": 3.2809029517818784,
+        "median": 4.356222820303714,
+        "p95": 6.940684874675047,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 6.940684874675047,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 4.86924005292645,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 4.356222820303714,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 1.117464203992423,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 1.0507607659325195,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 0.8860702612529323,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 1.1723736993128853,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 1.8975909319355182,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 4.856049548246993,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 4.505952986306696,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 4.437522324715483,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 7
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 67.0612133441486,
+          "y": -0.0013118279323131104,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 5.71430229078786,
+          "displayMass": 0.9743461935910629,
+          "modeWeight": 0.6654142278188688,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 78,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.6654142278188688
+            },
+            {
+              "floor": 4,
+              "zone": "main_left",
+              "label": "왼쪽 강의실 라인",
+              "weight": 0.21808721691088245
+            },
+            {
+              "floor": 4,
+              "zone": "core_junction",
+              "label": "코어·메인복도 교차영역",
+              "weight": 0.09084474886131161
+            },
+            {
+              "floor": 4,
+              "zone": "core",
+              "label": "코어복도",
+              "weight": 0.025653806320106574
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 8.88321989207557e-11
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.0000000000000027
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.9081619419925966,
+          "branchProposals": 0,
+          "corridorHeadingOffset": 12.768957173696968,
+          "corridorDirection": 1,
+          "recoveryCount": 0,
+          "sequenceReason": "no_sequence_reference",
+          "landmarks": [
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 3.742786885745878
+            },
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 67.06121335697942
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 68.34578666844094
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": false,
+          "sequenceStats": {
+            "evaluated": 7,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 7
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "no_sequence_reference",
+            "applied": false,
+            "candidates": [],
+            "applicationReason": "pattern_disabled"
+          }
+        }
+      },
+      "on": {
+        "mae": 3.2809029517818784,
+        "median": 4.356222820303714,
+        "p95": 6.940684874675047,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 6.940684874675047,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 4.86924005292645,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 4.356222820303714,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 1.117464203992423,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 1.0507607659325195,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 0.8860702612529323,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 1.1723736993128853,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 1.8975909319355182,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 4.856049548246993,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 4.505952986306696,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 4.437522324715483,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 7
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 67.0612133441486,
+          "y": -0.0013118279323131104,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 5.71430229078786,
+          "displayMass": 0.9743461935910629,
+          "modeWeight": 0.6654142278188688,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 78,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.6654142278188688
+            },
+            {
+              "floor": 4,
+              "zone": "main_left",
+              "label": "왼쪽 강의실 라인",
+              "weight": 0.21808721691088245
+            },
+            {
+              "floor": 4,
+              "zone": "core_junction",
+              "label": "코어·메인복도 교차영역",
+              "weight": 0.09084474886131161
+            },
+            {
+              "floor": 4,
+              "zone": "core",
+              "label": "코어복도",
+              "weight": 0.025653806320106574
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 8.88321989207557e-11
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.0000000000000027
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.9081619419925966,
+          "branchProposals": 0,
+          "corridorHeadingOffset": 12.768957173696968,
+          "corridorDirection": 1,
+          "recoveryCount": 0,
+          "sequenceReason": "no_sequence_reference",
+          "landmarks": [
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 3.742786885745878
+            },
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 67.06121335697942
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 68.34578666844094
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": true,
+          "sequenceStats": {
+            "evaluated": 7,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 7
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "no_sequence_reference",
+            "applied": false,
+            "candidates": [],
+            "applicationReason": "no_sequence_reference"
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133154.jsonl",
+      "sha256": "f655d48b3a907deb7778bc1239f3ae37eec43ec2e955ba7c506582363f35591c",
+      "direction": "forward",
+      "off": {
+        "mae": 5.163278277137057,
+        "median": 5.577004079885999,
+        "p95": 11.374998739092552,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 0.0215131346668207,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 1.2072309815459255,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 1.7454062475045202,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 3.324034962583937,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 2.731700906711076,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 6.388938135758767,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 5.577004079885999,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 8.80994130893362,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 9.311315767028994,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 11.374998739092552,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 6.303976784795426,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 7
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 6.303939000365671,
+          "y": -0.021826197754375855,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 4.308920700509758,
+          "displayMass": 0.8756090629648997,
+          "modeWeight": 0.652314853882785,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 78,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.652314853882785
+            },
+            {
+              "floor": 4,
+              "zone": "stairs_right",
+              "label": "오른쪽 계단 입구",
+              "weight": 0.22329420908211473
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 0.10346442012639682
+            },
+            {
+              "floor": 4,
+              "zone": "side_passage",
+              "label": "사이드 화장실 통로",
+              "weight": 0.02092651690870489
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.000000000000002
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.9319985278385728,
+          "branchProposals": 9,
+          "corridorHeadingOffset": 29.800046932359923,
+          "corridorDirection": -1,
+          "recoveryCount": 0,
+          "sequenceReason": "ambiguous_sequence",
+          "landmarks": [
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 6.3039767847954264
+            },
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 64.5000646925215
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 129.10306284460574
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": false,
+          "sequenceStats": {
+            "evaluated": 7,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 7
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "ambiguous_sequence",
+            "margin": 0.005635812790855815,
+            "applied": false,
+            "candidates": [
+              {
+                "x": 12.320751927305956,
+                "score": 0.032660514553824974,
+                "floor": 4
+              },
+              {
+                "x": 42.06316074071153,
+                "score": 0.03829632734468079,
+                "floor": 4
+              },
+              {
+                "x": 5.05780584793235,
+                "score": 0.041341311968450915,
+                "floor": 4
+              }
+            ],
+            "applicationReason": "pattern_disabled"
+          }
+        }
+      },
+      "on": {
+        "mae": 5.163278277137057,
+        "median": 5.577004079885999,
+        "p95": 11.374998739092552,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 0.0215131346668207,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 1.2072309815459255,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 1.7454062475045202,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 3.324034962583937,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 2.731700906711076,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 6.388938135758767,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 5.577004079885999,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 8.80994130893362,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 9.311315767028994,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 11.374998739092552,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 6.303976784795426,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 7
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 6.303939000365671,
+          "y": -0.021826197754375855,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 4.308920700509758,
+          "displayMass": 0.8756090629648997,
+          "modeWeight": 0.652314853882785,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 78,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.652314853882785
+            },
+            {
+              "floor": 4,
+              "zone": "stairs_right",
+              "label": "오른쪽 계단 입구",
+              "weight": 0.22329420908211473
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 0.10346442012639682
+            },
+            {
+              "floor": 4,
+              "zone": "side_passage",
+              "label": "사이드 화장실 통로",
+              "weight": 0.02092651690870489
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.000000000000002
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.9319985278385728,
+          "branchProposals": 9,
+          "corridorHeadingOffset": 29.800046932359923,
+          "corridorDirection": -1,
+          "recoveryCount": 0,
+          "sequenceReason": "ambiguous_sequence",
+          "landmarks": [
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 6.3039767847954264
+            },
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 64.5000646925215
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 129.10306284460574
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": true,
+          "sequenceStats": {
+            "evaluated": 7,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 7
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "ambiguous_sequence",
+            "margin": 0.005635812790855815,
+            "applied": false,
+            "candidates": [
+              {
+                "x": 12.320751927305956,
+                "score": 0.032660514553824974,
+                "floor": 4
+              },
+              {
+                "x": 42.06316074071153,
+                "score": 0.03829632734468079,
+                "floor": 4
+              },
+              {
+                "x": 5.05780584793235,
+                "score": 0.041341311968450915,
+                "floor": 4
+              }
+            ],
+            "applicationReason": "ambiguous_sequence"
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133254.jsonl",
+      "sha256": "ea005fd1e98b5f0250931a1a84cd11ee3d8a1ced8d26824ba08566c968d40816",
+      "direction": "reverse",
+      "off": {
+        "mae": 3.19364282296131,
+        "median": 3.310825182361313,
+        "p95": 6.048317478811224,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 6.048317478811224,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 4.833897556540673,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 4.31357364981594,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 1.0711616964536255,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 0.9959338052749693,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 1.8088821325414344,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 1.241814008174508,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 2.8362339304448767,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 4.936449868261498,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 3.7329817438943422,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 3.310825182361313,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 67.4931748176387,
+          "y": -2.9566550582694605e-26,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 5.846849286544262,
+          "displayMass": 0.9999999999530612,
+          "modeWeight": 0.6416678813625198,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 78,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.6416678813625198
+            },
+            {
+              "floor": 4,
+              "zone": "main_left",
+              "label": "왼쪽 강의실 라인",
+              "weight": 0.25514780631093414
+            },
+            {
+              "floor": 4,
+              "zone": "core_junction",
+              "label": "코어·메인복도 교차영역",
+              "weight": 0.10318431227960727
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 4.693775130402808e-11
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.0000000000000002
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.8785767616079065,
+          "branchProposals": 0,
+          "corridorHeadingOffset": 17.807246887626174,
+          "corridorDirection": 1,
+          "recoveryCount": 0,
+          "sequenceReason": "no_sequence_reference",
+          "landmarks": [
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 3.310825182361299
+            },
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 67.4931748176387
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 67.91382518236131
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": false,
+          "sequenceStats": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "no_sequence_reference",
+            "applied": false,
+            "candidates": [],
+            "applicationReason": "pattern_disabled"
+          }
+        }
+      },
+      "on": {
+        "mae": 3.19364282296131,
+        "median": 3.310825182361313,
+        "p95": 6.048317478811224,
+        "unknownStepFraction": 0,
+        "laps": [
+          {
+            "lap": 1,
+            "error": 6.048317478811224,
+            "floor": 4
+          },
+          {
+            "lap": 2,
+            "error": 4.833897556540673,
+            "floor": 4
+          },
+          {
+            "lap": 3,
+            "error": 4.31357364981594,
+            "floor": 4
+          },
+          {
+            "lap": 4,
+            "error": 1.0711616964536255,
+            "floor": 4
+          },
+          {
+            "lap": 5,
+            "error": 0.9959338052749693,
+            "floor": 4
+          },
+          {
+            "lap": 6,
+            "error": 1.8088821325414344,
+            "floor": 4
+          },
+          {
+            "lap": 7,
+            "error": 1.241814008174508,
+            "floor": 4
+          },
+          {
+            "lap": 8,
+            "error": 2.8362339304448767,
+            "floor": 4
+          },
+          {
+            "lap": 9,
+            "error": 4.936449868261498,
+            "floor": 4
+          },
+          {
+            "lap": 10,
+            "error": 3.7329817438943422,
+            "floor": 4
+          },
+          {
+            "lap": 11,
+            "error": 3.310825182361313,
+            "floor": 4
+          }
+        ],
+        "sequenceStats": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 6
+          }
+        },
+        "final": {
+          "version": "fusion-v2-extension-diagnostics-20260909",
+          "floor": 4,
+          "x": 67.4931748176387,
+          "y": -2.9566550582694605e-26,
+          "zone": "main_right",
+          "zoneLabel": "오른쪽 강의실 라인",
+          "spread": 5.846849286544262,
+          "displayMass": 0.9999999999530612,
+          "modeWeight": 0.6416678813625198,
+          "calibratedProbability": false,
+          "reason": "tracking",
+          "steps": 78,
+          "strideMode": "fixed_baseline_untrained",
+          "hypotheses": [
+            {
+              "floor": 4,
+              "zone": "main_right",
+              "label": "오른쪽 강의실 라인",
+              "weight": 0.6416678813625198
+            },
+            {
+              "floor": 4,
+              "zone": "main_left",
+              "label": "왼쪽 강의실 라인",
+              "weight": 0.25514780631093414
+            },
+            {
+              "floor": 4,
+              "zone": "core_junction",
+              "label": "코어·메인복도 교차영역",
+              "weight": 0.10318431227960727
+            },
+            {
+              "floor": 4,
+              "zone": "unknown",
+              "label": "미확인 영역",
+              "weight": 4.693775130402808e-11
+            }
+          ],
+          "floorCandidates": [
+            {
+              "floor": 4,
+              "weight": 1.0000000000000002
+            }
+          ],
+          "verticalStatus": "baseline",
+          "zoneEvidence": [
+            "magnetic"
+          ],
+          "observationReason": "relative_zone_scores",
+          "particleCount": 160,
+          "motionQuality": 0.8785767616079065,
+          "branchProposals": 0,
+          "corridorHeadingOffset": 17.807246887626174,
+          "corridorDirection": 1,
+          "recoveryCount": 0,
+          "sequenceReason": "no_sequence_reference",
+          "landmarks": [
+            {
+              "id": "CORE",
+              "label": "코어 교차영역",
+              "x": 70.804,
+              "distance": 3.310825182361299
+            },
+            {
+              "id": "RIGHT_STAIRS",
+              "label": "오른쪽 계단 입구",
+              "x": 0,
+              "distance": 67.4931748176387
+            },
+            {
+              "id": "LEFT_STAIRS",
+              "label": "왼쪽 계단 입구",
+              "x": 135.407,
+              "distance": 67.91382518236131
+            }
+          ],
+          "navigationVersion": "areas-v1-20260909",
+          "modelVersion": 2,
+          "magneticZoneEnabled": true,
+          "sequenceEnabled": true,
+          "sequenceStats": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 6
+            }
+          },
+          "sequenceDiagnostic": {
+            "reason": "no_sequence_reference",
+            "applied": false,
+            "candidates": [],
+            "applicationReason": "no_sequence_reference"
+          }
+        }
+      }
+    }
+  ]
+}

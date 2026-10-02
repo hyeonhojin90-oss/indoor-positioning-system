@@ -1,0 +1,532 @@
+{
+  "model": "official RoNIN ResNet18 checkpoint_gsn_latest.pt",
+  "checkpointSha256": "5ae5c9e508f2dc9609c25b59d0e3dfd770ecbcde6920cbc5be3c6d9fed8a6346",
+  "inferenceExecuted": true,
+  "runtimeDefault": false,
+  "trainingOnLocalLogs": false,
+  "method": "Android rotation-vector device-to-ENU; sensor clocks; offline linear IMU interpolation + quaternion SLERP to 200Hz; gyro then acceleration including gravity; trailing200 samples; 20Hz velocity; forward hold integration after1s warmup",
+  "limitations": [
+    "No start Tango calibration; ENU yaw is not fitted using endpoint",
+    "Android calibrated IMU used without dataset-specific bias/scale calibration",
+    "200Hz interpolation cannot restore missing information; native rates and gaps reported",
+    "Offline interpolation uses next sensor sample; not a strictly causal phone pipeline",
+    "One-second warmup unestimated, no retrospective extrapolation",
+    "Displacement magnitude error is NOT 2D endpoint position error; opposite/wrong heading can have same magnitude",
+    "Straight full routes only; no map/particle/BLE/AP integration and no mobile deployment",
+    "No local training; small same-user/device set is development evaluation"
+  ],
+  "summary": {
+    "succeeded": 11,
+    "failed": 0,
+    "displacementMagnitudeMAE": 8.459183558553558,
+    "pathLengthMAE": 6.6407484224720426
+  },
+  "sessions": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "sha256": "0436540d9e5eeaabbf66d49716cb0cc542bcb4b113aae255dc5be596aa7492cc",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "distanceM": 50.17312741491699,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 20187,
+            "medianHz": 457.0452217500272,
+            "maxGapMs": 3.278493881225586,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2019,
+            "medianHz": 45.70203214383002,
+            "maxGapMs": 35.79878807067871,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2019,
+            "medianHz": 45.70203214383002,
+            "maxGapMs": 37.98675537109375,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.00800776481628418,
+        "endCoverageGapS": 0.004252195358276367,
+        "medianGlobalAcceleration": [
+          -0.0387272823651006,
+          0.013469496431043226,
+          9.829603173712016
+        ],
+        "sensorClockOffsetS": 1788946256.5425668,
+        "hasLongGap": false
+      },
+      "windows": 864,
+      "displacementM": 44.38710582910203,
+      "integratedPathM": 45.318273046057115,
+      "displacementMagnitudeErrorM": 5.786021585814957,
+      "pathLengthErrorM": 4.8548543688598755,
+      "maxSpeedMps": 1.412230134010315,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 0.8007934093475342
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "sha256": "1151ac394094d34c76803372d34068d9cff2b810cb2287b05b6da1454056de0c",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "distanceM": 50.17312741491699,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 14473,
+            "medianHz": 457.0452217500272,
+            "maxGapMs": 3.832101821899414,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 1447,
+            "medianHz": 45.70502021379769,
+            "maxGapMs": 40.172576904296875,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 1447,
+            "medianHz": 45.70502021379769,
+            "maxGapMs": 40.172576904296875,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.014262676239013672,
+        "endCoverageGapS": 0.01060628890991211,
+        "medianGlobalAcceleration": [
+          -0.050715455846447544,
+          -0.01569020786145714,
+          9.96318502220307
+        ],
+        "sensorClockOffsetS": 1788946256.5425565,
+        "hasLongGap": false
+      },
+      "windows": 613,
+      "displacementM": 35.4516990225758,
+      "integratedPathM": 37.276958070306875,
+      "displacementMagnitudeErrorM": 14.721428392341188,
+      "pathLengthErrorM": 12.896169344610115,
+      "maxSpeedMps": 1.41407310962677,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 0.7308568954467773
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "sha256": "40c42039f9b994f768bdeb66656303b5e8add21b1e65638fa07881aec147b776",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "distanceM": 50.17312741491699,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 23930,
+            "medianHz": 457.09503051438537,
+            "maxGapMs": 2.193927764892578,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2393,
+            "medianHz": 45.71199389679037,
+            "maxGapMs": 21.87657356262207,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2393,
+            "medianHz": 45.71199389679037,
+            "maxGapMs": 21.88277244567871,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.01901841163635254,
+        "endCoverageGapS": 0.0053174495697021484,
+        "medianGlobalAcceleration": [
+          -0.06125271522822484,
+          0.07924214393274731,
+          9.87458632626338
+        ],
+        "sensorClockOffsetS": 1789823485.901017,
+        "hasLongGap": false
+      },
+      "windows": 1027,
+      "displacementM": 37.97309284151877,
+      "integratedPathM": 46.96359847857515,
+      "displacementMagnitudeErrorM": 12.20003457339822,
+      "pathLengthErrorM": 3.20952893634184,
+      "maxSpeedMps": 1.2195732593536377,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.2902634143829346
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "sha256": "423e57c8c3ff2ee633fce1f72ffd2a21365c7372b4a063c8c3da368530dc3b95",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "distanceM": 50.17312741491699,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 21712,
+            "medianHz": 457.09503051438537,
+            "maxGapMs": 2.187967300415039,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2171,
+            "medianHz": 45.710499357004295,
+            "maxGapMs": 21.877288818359375,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2171,
+            "medianHz": 45.710499357004295,
+            "maxGapMs": 21.877288818359375,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.009918212890625,
+        "endCoverageGapS": 0.014333486557006836,
+        "medianGlobalAcceleration": [
+          0.0864603422693837,
+          0.0029208183465403437,
+          9.805389716555693
+        ],
+        "sensorClockOffsetS": 1789823485.9009938,
+        "hasLongGap": false
+      },
+      "windows": 930,
+      "displacementM": 44.07999234470925,
+      "integratedPathM": 44.8777143108142,
+      "displacementMagnitudeErrorM": 6.093135070207744,
+      "pathLengthErrorM": 5.295413104102792,
+      "maxSpeedMps": 1.224644422531128,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.1052758693695068
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "sha256": "36012da448caa08ee06471d51cd5543b2b1905a58fddc3b2fe933ba29a5ac6b2",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "distanceM": 48.835051199999995,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 21020,
+            "medianHz": 457.09503051438537,
+            "maxGapMs": 3.875732421875,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2102,
+            "medianHz": 45.71000119879249,
+            "maxGapMs": 40.6193733215332,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2102,
+            "medianHz": 45.71000119879249,
+            "maxGapMs": 40.6193733215332,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.005297422409057617,
+        "endCoverageGapS": 0.019263505935668945,
+        "medianGlobalAcceleration": [
+          0.006893797296532611,
+          -0.10872066609843811,
+          9.844423215493586
+        ],
+        "sensorClockOffsetS": 1789823485.9009893,
+        "hasLongGap": false
+      },
+      "windows": 900,
+      "displacementM": 42.002566877002955,
+      "integratedPathM": 42.784628135526496,
+      "displacementMagnitudeErrorM": 6.83248432299704,
+      "pathLengthErrorM": 6.050423064473499,
+      "maxSpeedMps": 1.2701847553253174,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.0549852848052979
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "sha256": "a9fa387ef0ec2f70dcf6e9b01f7a56e88785ad276140c70678dbc5ea798899a4",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "distanceM": 48.835051199999995,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 21736,
+            "medianHz": 457.09503051438537,
+            "maxGapMs": 4.422426223754883,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2174,
+            "medianHz": 45.70850678930276,
+            "maxGapMs": 37.8880500793457,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2174,
+            "medianHz": 45.70850678930276,
+            "maxGapMs": 37.8880500793457,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.021075963973999023,
+        "endCoverageGapS": 0.007311344146728516,
+        "medianGlobalAcceleration": [
+          0.018077409015212598,
+          0.04079599786749588,
+          9.837366182557712
+        ],
+        "sensorClockOffsetS": 1789823485.900986,
+        "hasLongGap": false
+      },
+      "windows": 931,
+      "displacementM": 40.70431794356347,
+      "integratedPathM": 41.6091004805908,
+      "displacementMagnitudeErrorM": 8.130733256436528,
+      "pathLengthErrorM": 7.225950719409198,
+      "maxSpeedMps": 1.2980793714523315,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.073664903640747
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+      "sha256": "a2e451a5b1a7dca0999ea56de649f071ddf9b219a7d706a09f59fe434d2949aa",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "distanceM": 50.17312741491699,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 29341,
+            "medianHz": 499.9766360710454,
+            "maxGapMs": 5.000114440917969,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2935,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 41.0001277923584,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2935,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 42.00005531311035,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.0010001659393310547,
+        "endCoverageGapS": 0.006999969482421875,
+        "medianGlobalAcceleration": [
+          -0.013438831555409148,
+          0.031112499818115147,
+          9.832333701493912
+        ],
+        "sensorClockOffsetS": 1789823485.9009988,
+        "hasLongGap": false
+      },
+      "windows": 1264,
+      "displacementM": 46.1192813402261,
+      "integratedPathM": 47.30857396093094,
+      "displacementMagnitudeErrorM": 4.053846074690888,
+      "pathLengthErrorM": 2.8645534539860478,
+      "maxSpeedMps": 1.1874209642410278,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.631453037261963
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl",
+      "sha256": "779246ff8b5ae98dbf8bb289580318c2cdba2ebf8137d0b9719ecd9f98ca3e18",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "distanceM": 50.17312741491699,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 31404,
+            "medianHz": 499.9766360710454,
+            "maxGapMs": 4.999876022338867,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 3140,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 40.9998893737793,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 3140,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 42.00005531311035,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.004999876022338867,
+        "endCoverageGapS": 0.017000198364257812,
+        "medianGlobalAcceleration": [
+          0.009346940529088688,
+          0.014755017071330201,
+          9.825818485161708
+        ],
+        "sensorClockOffsetS": 1789823485.9010146,
+        "hasLongGap": false
+      },
+      "windows": 1354,
+      "displacementM": 42.69696176537991,
+      "integratedPathM": 44.0253811805313,
+      "displacementMagnitudeErrorM": 7.47616564953708,
+      "pathLengthErrorM": 6.147746234385693,
+      "maxSpeedMps": 1.2785277366638184,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.9281589984893799
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "sha256": "18d62c8c11910ebb932fba49b4fae252481ae42e06dbf613d78362197dc9b8fa",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "distanceM": 48.835051199999995,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 25808,
+            "medianHz": 499.9766360710454,
+            "maxGapMs": 5.000114440917969,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2582,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 36.00001335144043,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2582,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 36.00001335144043,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.0009999275207519531,
+        "endCoverageGapS": 0.0009999275207519531,
+        "medianGlobalAcceleration": [
+          0.050312588432643635,
+          0.016091060579120034,
+          9.798202271691704
+        ],
+        "sensorClockOffsetS": 1789823485.9009821,
+        "hasLongGap": false
+      },
+      "windows": 1110,
+      "displacementM": 40.61365470453606,
+      "integratedPathM": 41.8947900766205,
+      "displacementMagnitudeErrorM": 8.221396495463935,
+      "pathLengthErrorM": 6.940261123379493,
+      "maxSpeedMps": 1.3017628192901611,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.3654093742370605
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "sha256": "6fbbfeff7c38d50540bfe13f91c4f4de4a68d711e4b6114cc4382b5c1e549c3b",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "distanceM": 48.835051199999995,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 31527,
+            "medianHz": 499.9766360710454,
+            "maxGapMs": 6.000041961669922,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 3154,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 42.00005531311035,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 3154,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 42.00005531311035,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.0009999275207519531,
+        "endCoverageGapS": 0.01699995994567871,
+        "medianGlobalAcceleration": [
+          -0.005826327101882467,
+          -0.0774361365615186,
+          9.814910944542882
+        ],
+        "sensorClockOffsetS": 1789823485.901009,
+        "hasLongGap": false
+      },
+      "windows": 1360,
+      "displacementM": 38.04968268990606,
+      "integratedPathM": 39.28504226976589,
+      "displacementMagnitudeErrorM": 10.785368510093939,
+      "pathLengthErrorM": 9.550008930234107,
+      "maxSpeedMps": 1.2198227643966675,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.8102858066558838
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "sha256": "72e83cb3e821401411b310861127af84864d337d1206568eaa5e0851d80099cd",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "distanceM": 48.835051199999995,
+      "status": "inferred",
+      "diagnostics": {
+        "streams": {
+          "accelerometer_mps2": {
+            "samples": 24261,
+            "medianHz": 499.9766360710454,
+            "maxGapMs": 4.000186920166016,
+            "gapsOver250ms": 0
+          },
+          "gyroscope_radps": {
+            "samples": 2425,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 92.00000762939453,
+            "gapsOver250ms": 0
+          },
+          "rotation_vector": {
+            "samples": 2425,
+            "medianHz": 45.45439176374966,
+            "maxGapMs": 92.00000762939453,
+            "gapsOver250ms": 0
+          }
+        },
+        "startCoverageDelayS": 0.006999969482421875,
+        "endCoverageGapS": 0.003000020980834961,
+        "medianGlobalAcceleration": [
+          0.016279103228676567,
+          0.008810686453248229,
+          9.809786558673602
+        ],
+        "sensorClockOffsetS": 1789823485.9010158,
+        "hasLongGap": false
+      },
+      "windows": 1042,
+      "displacementM": 40.08464598689237,
+      "integratedPathM": 40.82172783259019,
+      "displacementMagnitudeErrorM": 8.750405213107626,
+      "pathLengthErrorM": 8.013323367409804,
+      "maxSpeedMps": 1.254969835281372,
+      "warmupUnestimatedS": 1.0,
+      "elapsedS": 1.2231216430664062
+    }
+  ]
+}

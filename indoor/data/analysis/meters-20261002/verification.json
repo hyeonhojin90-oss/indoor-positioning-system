@@ -1,0 +1,19 @@
+{
+  "recordedUtc": "2026-10-02T08:47:27.134720+00:00",
+  "sourceSha256": {
+    "indoor/web/src/positioning/navigation.js": "5044778bf2177e05594accaf608dbb69f77acba14a8932e0539f3037dce1ff0b",
+    "indoor/web/src/positioning/fusion-engine.js": "9abaace7e1a9d679c7834a67fd261e835989f9a1541150ec5aabae3c6b121edb",
+    "indoor/web/src/positioning/runtime.js": "52a7e577952de41f365e177d433bd209f74563e52d674b40d639f5c09bef9f97",
+    "indoor/web/src/positioning/android-route-runtime.js": "da76d600cd8e904d12bb94582f1f43cd0335776250ff714e36a292084b3b0935",
+    "indoor/web/src/positioning/review.js": "60c0462518ce32b9133df451fbce5ffc19ede70cc3a6f6aa1f3caf8521513985",
+    "indoor/web/data/navigation/areas-v1.json": "2cde60d7ca80e4c57ed7b980b59ecb8dc451342ce1c3960744fb43a9e5155d78"
+  },
+  "scopeAssertions": 141,
+  "browserChecks": 32,
+  "navigationBrowserChecks": 10,
+  "fieldVerified": false,
+  "apkBuiltThisTask": false,
+  "sourceReplaySessions": 11,
+  "replaysAcrossVersions": 204,
+  "backupFilesVerified": 36
+}

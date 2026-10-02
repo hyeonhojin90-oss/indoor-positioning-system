@@ -1,0 +1,535 @@
+[
+  {
+    "file": "indoor_positioning_ios_20260914_133338.jsonl",
+    "route": "4F_CORE_TO_RIGHT_STAIRS",
+    "seconds": 48.467,
+    "completed": true,
+    "laps": 12,
+    "expected": 12,
+    "steps": 78,
+    "counter": 71,
+    "stats": {
+      "evaluated": 6,
+      "applied": 0,
+      "reasons": {
+        "ambiguous_sequence": 6
+      }
+    },
+    "vertical": "baseline",
+    "errors": {
+      "legacy_pdr": {
+        "n": 11,
+        "mean": 5.602486195286164,
+        "last": 4.370617283950601
+      },
+      "map_constraints_sequence_off": {
+        "n": 11,
+        "mean": 6.184033692426917,
+        "last": 6.525115451682149
+      },
+      "map_constraints_sequence_on": {
+        "n": 11,
+        "mean": 6.184033669801796,
+        "last": 6.525115202805803
+      }
+    },
+    "labels": [
+      {
+        "t": 6.516,
+        "label": "4213 앞",
+        "comparison": true
+      },
+      {
+        "t": 10.814,
+        "label": "4212 앞",
+        "comparison": true
+      },
+      {
+        "t": 12.996,
+        "label": "4211 앞",
+        "comparison": true
+      },
+      {
+        "t": 16.164,
+        "label": "4210 앞",
+        "comparison": true
+      },
+      {
+        "t": 20.77,
+        "label": "4209 앞",
+        "comparison": true
+      },
+      {
+        "t": 22.847,
+        "label": "4208 앞",
+        "comparison": true
+      },
+      {
+        "t": 26.464,
+        "label": "4207 앞",
+        "comparison": true
+      },
+      {
+        "t": 28.964,
+        "label": "4206 앞",
+        "comparison": true
+      },
+      {
+        "t": 32.41,
+        "label": "4205 앞",
+        "comparison": true
+      },
+      {
+        "t": 35.222,
+        "label": "4204 앞",
+        "comparison": true
+      },
+      {
+        "t": 43.047,
+        "label": "오른쪽 끝 화장실 통로 앞",
+        "comparison": false
+      },
+      {
+        "t": 46.202,
+        "label": "오른쪽 계단 입구",
+        "comparison": true
+      }
+    ],
+    "sensors": {
+      "gyroscope_rads": 973,
+      "heading_degrees": 540,
+      "accelerometer_mps2": 972,
+      "magnetic_field_ut": 486,
+      "device_motion_rotation_rads": 972,
+      "pressure_hpa": 44,
+      "step_counter": 18
+    }
+  },
+  {
+    "file": "indoor_positioning_ios_20260914_133455.jsonl",
+    "route": "4F_RIGHT_STAIR_INTERIOR",
+    "seconds": 21.709,
+    "completed": true,
+    "laps": 2,
+    "expected": 2,
+    "counter": 0,
+    "errors": {
+      "legacy_pdr": {
+        "n": 0,
+        "mean": null
+      },
+      "map_constraints_sequence_off": {
+        "n": 0,
+        "mean": null
+      },
+      "map_constraints_sequence_on": {
+        "n": 0,
+        "mean": null
+      }
+    },
+    "labels": [
+      {
+        "t": 18.151,
+        "label": "오른쪽 계단 내부 · 같은 층 평탄부 10초 정지 완료",
+        "comparison": false
+      },
+      {
+        "t": 20.498,
+        "label": "오른쪽 계단 입구",
+        "comparison": false
+      }
+    ],
+    "sensors": {
+      "accelerometer_mps2": 435,
+      "gyroscope_rads": 435,
+      "heading_degrees": 170,
+      "device_motion_rotation_rads": 435,
+      "magnetic_field_ut": 218,
+      "pressure_hpa": 19
+    }
+  },
+  {
+    "file": "indoor_positioning_ios_20260914_133534.jsonl",
+    "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+    "seconds": 49.433,
+    "completed": true,
+    "laps": 12,
+    "expected": 12,
+    "steps": 80,
+    "counter": 66,
+    "stats": {
+      "evaluated": 4,
+      "applied": 0,
+      "reasons": {
+        "no_sequence_reference": 4
+      }
+    },
+    "vertical": "baseline",
+    "errors": {
+      "legacy_pdr": {
+        "n": 11,
+        "mean": 3.332698316498312,
+        "last": 2.622370370370362
+      },
+      "map_constraints_sequence_off": {
+        "n": 11,
+        "mean": 3.372593935091214,
+        "last": 2.9883550279730997
+      },
+      "map_constraints_sequence_on": {
+        "n": 11,
+        "mean": 3.372593898245015,
+        "last": 2.9883546226649287
+      }
+    },
+    "labels": [
+      {
+        "t": 4.533,
+        "label": "오른쪽 끝 화장실 통로 앞",
+        "comparison": false
+      },
+      {
+        "t": 12.003,
+        "label": "4204 앞",
+        "comparison": true
+      },
+      {
+        "t": 14.748,
+        "label": "4205 앞",
+        "comparison": true
+      },
+      {
+        "t": 18.05,
+        "label": "4206 앞",
+        "comparison": true
+      },
+      {
+        "t": 21.1,
+        "label": "4207 앞",
+        "comparison": true
+      },
+      {
+        "t": 25.3,
+        "label": "4208 앞",
+        "comparison": true
+      },
+      {
+        "t": 27.667,
+        "label": "4209 앞",
+        "comparison": true
+      },
+      {
+        "t": 32.784,
+        "label": "4210 앞",
+        "comparison": true
+      },
+      {
+        "t": 36.784,
+        "label": "4211 앞",
+        "comparison": true
+      },
+      {
+        "t": 38.553,
+        "label": "4212 앞",
+        "comparison": true
+      },
+      {
+        "t": 43.389,
+        "label": "4213 앞",
+        "comparison": true
+      },
+      {
+        "t": 48.681,
+        "label": "코어복도 출구 중앙점",
+        "comparison": true
+      }
+    ],
+    "sensors": {
+      "accelerometer_mps2": 992,
+      "gyroscope_rads": 992,
+      "device_motion_rotation_rads": 992,
+      "magnetic_field_ut": 496,
+      "heading_degrees": 628,
+      "pressure_hpa": 45,
+      "step_counter": 14
+    }
+  },
+  {
+    "file": "indoor_positioning_ios_20260914_133637.jsonl",
+    "route": "4F_CORE_TO_RIGHT_STAIRS",
+    "seconds": 44.684,
+    "completed": true,
+    "laps": 12,
+    "expected": 12,
+    "steps": 72,
+    "counter": 63,
+    "stats": {
+      "evaluated": 5,
+      "applied": 0,
+      "reasons": {
+        "ambiguous_sequence": 5
+      }
+    },
+    "vertical": "baseline",
+    "errors": {
+      "legacy_pdr": {
+        "n": 11,
+        "mean": 8.224856565656534,
+        "last": 8.741234567901216
+      },
+      "map_constraints_sequence_off": {
+        "n": 11,
+        "mean": 8.725822294138284,
+        "last": 10.148942224864946
+      },
+      "map_constraints_sequence_on": {
+        "n": 11,
+        "mean": 8.725823075228362,
+        "last": 10.148950816855757
+      }
+    },
+    "labels": [
+      {
+        "t": 5.883,
+        "label": "4213 앞",
+        "comparison": true
+      },
+      {
+        "t": 10.308,
+        "label": "4212 앞",
+        "comparison": true
+      },
+      {
+        "t": 11.833,
+        "label": "4211 앞",
+        "comparison": true
+      },
+      {
+        "t": 14.901,
+        "label": "4210 앞",
+        "comparison": true
+      },
+      {
+        "t": 18.834,
+        "label": "4209 앞",
+        "comparison": true
+      },
+      {
+        "t": 21.05,
+        "label": "4208 앞",
+        "comparison": true
+      },
+      {
+        "t": 24.918,
+        "label": "4207 앞",
+        "comparison": true
+      },
+      {
+        "t": 26.801,
+        "label": "4206 앞",
+        "comparison": true
+      },
+      {
+        "t": 30.286,
+        "label": "4205 앞",
+        "comparison": true
+      },
+      {
+        "t": 33.98,
+        "label": "4204 앞",
+        "comparison": true
+      },
+      {
+        "t": 40.917,
+        "label": "오른쪽 끝 화장실 통로 앞",
+        "comparison": false
+      },
+      {
+        "t": 43.736,
+        "label": "오른쪽 계단 입구",
+        "comparison": true
+      }
+    ],
+    "sensors": {
+      "accelerometer_mps2": 897,
+      "gyroscope_rads": 897,
+      "heading_degrees": 476,
+      "magnetic_field_ut": 449,
+      "device_motion_rotation_rads": 897,
+      "pressure_hpa": 41,
+      "step_counter": 13
+    }
+  },
+  {
+    "file": "indoor_positioning_ios_20260914_133734.jsonl",
+    "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+    "seconds": 44.767,
+    "completed": true,
+    "laps": 12,
+    "expected": 12,
+    "steps": 75,
+    "counter": 66,
+    "stats": {
+      "evaluated": 4,
+      "applied": 0,
+      "reasons": {
+        "no_sequence_reference": 4
+      }
+    },
+    "vertical": "baseline",
+    "errors": {
+      "legacy_pdr": {
+        "n": 11,
+        "mean": 4.307540291806965,
+        "last": 7.867111111111136
+      },
+      "map_constraints_sequence_off": {
+        "n": 11,
+        "mean": 4.41347950756198,
+        "last": 8.17016793587262
+      },
+      "map_constraints_sequence_on": {
+        "n": 11,
+        "mean": 4.413479541710607,
+        "last": 8.170168311507545
+      }
+    },
+    "labels": [
+      {
+        "t": 1.656,
+        "label": "오른쪽 끝 화장실 통로 앞",
+        "comparison": false
+      },
+      {
+        "t": 10.618,
+        "label": "4204 앞",
+        "comparison": true
+      },
+      {
+        "t": 13.367,
+        "label": "4205 앞",
+        "comparison": true
+      },
+      {
+        "t": 16.783,
+        "label": "4206 앞",
+        "comparison": true
+      },
+      {
+        "t": 18.734,
+        "label": "4207 앞",
+        "comparison": true
+      },
+      {
+        "t": 22.505,
+        "label": "4208 앞",
+        "comparison": true
+      },
+      {
+        "t": 24.835,
+        "label": "4209 앞",
+        "comparison": true
+      },
+      {
+        "t": 28.656,
+        "label": "4210 앞",
+        "comparison": true
+      },
+      {
+        "t": 32.118,
+        "label": "4211 앞",
+        "comparison": true
+      },
+      {
+        "t": 33.902,
+        "label": "4212 앞",
+        "comparison": true
+      },
+      {
+        "t": 38.003,
+        "label": "4213 앞",
+        "comparison": true
+      },
+      {
+        "t": 43.371,
+        "label": "코어복도 출구 중앙점",
+        "comparison": true
+      }
+    ],
+    "sensors": {
+      "accelerometer_mps2": 899,
+      "gyroscope_rads": 899,
+      "heading_degrees": 580,
+      "magnetic_field_ut": 449,
+      "device_motion_rotation_rads": 898,
+      "pressure_hpa": 41,
+      "step_counter": 14
+    }
+  },
+  {
+    "file": "indoor_positioning_ios_20260914_133851.jsonl",
+    "route": "3F_CORE_TO_LEFT_STAIRS",
+    "seconds": 37.466,
+    "completed": true,
+    "laps": 4,
+    "expected": 4,
+    "steps": 63,
+    "counter": 58,
+    "stats": {
+      "evaluated": 4,
+      "applied": 0,
+      "reasons": {
+        "no_sequence_reference": 4
+      }
+    },
+    "vertical": "baseline",
+    "errors": {
+      "legacy_pdr": {
+        "n": 2,
+        "mean": 9.001617283950381,
+        "last": 9.53322222222181
+      },
+      "map_constraints_sequence_off": {
+        "n": 2,
+        "mean": 9.922933902132073,
+        "last": 11.154073016360016
+      },
+      "map_constraints_sequence_on": {
+        "n": 2,
+        "mean": 9.922933902132058,
+        "last": 11.154073016360002
+      }
+    },
+    "labels": [
+      {
+        "t": 6.114,
+        "label": "3120 앞",
+        "comparison": true
+      },
+      {
+        "t": 16.209,
+        "label": "3128-B 앞",
+        "comparison": false
+      },
+      {
+        "t": 26.485,
+        "label": "3128-A 앞",
+        "comparison": false
+      },
+      {
+        "t": 36.972,
+        "label": "왼쪽 계단 입구",
+        "comparison": true
+      }
+    ],
+    "sensors": {
+      "accelerometer_mps2": 752,
+      "gyroscope_rads": 752,
+      "heading_degrees": 624,
+      "magnetic_field_ut": 376,
+      "device_motion_rotation_rads": 752,
+      "pressure_hpa": 34,
+      "step_counter": 11
+    }
+  }
+]

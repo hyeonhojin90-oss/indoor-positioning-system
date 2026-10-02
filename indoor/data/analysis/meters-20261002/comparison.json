@@ -1,0 +1,548 @@
+{
+  "before": {
+    "left": {
+      "pdr": {
+        "n": 5,
+        "endpointMAE": 1.9855103452123373,
+        "worst": 3.6823558224065778,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 5,
+        "endpointMAE": 1.972219420740744,
+        "worst": 3.690507092835851,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 10
+      },
+      "v2": {
+        "n": 5,
+        "endpointMAE": 1.9852451466448144,
+        "worst": 3.6810298295689634,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 5,
+        "endpointMAE": 1.971950155186427,
+        "worst": 3.6891607650642655,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 10
+      },
+      "grid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      }
+    },
+    "right": {
+      "pdr": {
+        "n": 6,
+        "endpointMAE": 4.362154001079281,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 6,
+        "endpointMAE": 4.362154001079281,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2": {
+        "n": 6,
+        "endpointMAE": 4.362154001079281,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 6,
+        "endpointMAE": 4.362154001079281,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid": {
+        "n": 6,
+        "endpointMAE": 4.15196816641737,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 3,
+        "harmsOverPdr": 0,
+        "magneticApplications": 16,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 6,
+        "endpointMAE": 4.15196816641737,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 3,
+        "harmsOverPdr": 0,
+        "magneticApplications": 16,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 6,
+        "endpointMAE": 4.15196816641737,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 3,
+        "harmsOverPdr": 0,
+        "magneticApplications": 16,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 6,
+        "endpointMAE": 4.15196816641737,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 3,
+        "harmsOverPdr": 0,
+        "magneticApplications": 16,
+        "bleApplications": 0
+      }
+    }
+  },
+  "scope_legacy": {
+    "left": {
+      "pdr": {
+        "n": 5,
+        "endpointMAE": 1.976249657847596,
+        "worst": 3.6823558224065778,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 5,
+        "endpointMAE": 1.9807028301311846,
+        "worst": 3.690507092835759,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 10
+      },
+      "v2": {
+        "n": 5,
+        "endpointMAE": 1.9759844592800733,
+        "worst": 3.6810298295689634,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 5,
+        "endpointMAE": 1.9804335645768858,
+        "worst": 3.6891607650642655,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 10
+      },
+      "grid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      }
+    },
+    "right": {
+      "pdr": {
+        "n": 6,
+        "endpointMAE": 4.215501268389234,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 6,
+        "endpointMAE": 4.215501268389234,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2": {
+        "n": 6,
+        "endpointMAE": 4.215501268389234,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 6,
+        "endpointMAE": 4.215501268389234,
+        "worst": 8.05952536933043,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid": {
+        "n": 6,
+        "endpointMAE": 3.849719198021132,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 5,
+        "harmsOverPdr": 0,
+        "magneticApplications": 15,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 6,
+        "endpointMAE": 3.849719198021132,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 5,
+        "harmsOverPdr": 0,
+        "magneticApplications": 15,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 6,
+        "endpointMAE": 3.849719198021132,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 5,
+        "harmsOverPdr": 0,
+        "magneticApplications": 15,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 6,
+        "endpointMAE": 3.849719198021132,
+        "worst": 7.879098941628847,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 5,
+        "harmsOverPdr": 0,
+        "magneticApplications": 15,
+        "bleApplications": 0
+      }
+    }
+  },
+  "scope_meters": {
+    "left": {
+      "pdr": {
+        "n": 5,
+        "endpointMAE": 2.0015292003772784,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 5,
+        "endpointMAE": 1.9936504700196962,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 10
+      },
+      "v2": {
+        "n": 5,
+        "endpointMAE": 2.0012374722467925,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 5,
+        "endpointMAE": 1.9933542587801825,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 10
+      },
+      "grid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      }
+    },
+    "right": {
+      "pdr": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,1837 @@
+{
+  "version": 1,
+  "createdAt": "2026-09-23T03:26:24.868Z",
+  "files": 4,
+  "coordinate": {
+    "rightCoreToStairM": 50.17312741491699,
+    "leftCoreToStairM": 48.835051199999995
+  },
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260922_191446.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "durationS": 53.816,
+      "schema": 9,
+      "ended": true,
+      "parseErrors": 0,
+      "labelCount": 12,
+      "labels": [
+        "4213 앞",
+        "4212 앞",
+        "4211 앞",
+        "4210 앞",
+        "4209 앞",
+        "4208 앞",
+        "4207 앞",
+        "4206 앞",
+        "4205 앞",
+        "4204 앞",
+        "오른쪽 끝 화장실 통로 앞 앞",
+        "오른쪽 계단 입구"
+      ],
+      "duplicateSuffixLabels": [
+        "오른쪽 끝 화장실 통로 앞 앞"
+      ],
+      "stepCounterDelta": 62,
+      "kinds": {
+        "session_start": 1,
+        "ble_scan_status": 2,
+        "sample": 32625,
+        "ble_observation": 1155,
+        "derived_fusion": 108,
+        "label": 12,
+        "session_end": 1
+      },
+      "bleUniqueIds": 169,
+      "productionBleReferenceCommonIds": 11,
+      "reverseSeedAblation": null,
+      "directionSeedAblation": {
+        "unseededEndpointErrorM": 1.0210078397366933,
+        "seededEndpointErrorM": 1.7764247636757995
+      },
+      "pdr": {
+        "detectedSteps": 85,
+        "endpointEstimateM": -1.7908346703473272,
+        "endpointTruthM": 0,
+        "endpointErrorM": 1.7908346703473272,
+        "weakLapMeanM": 2.1135270000845257,
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 10
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "laps": [
+          {
+            "label": "4213 앞",
+            "estimateX": 61.45616599036325,
+            "estimateM": 42.81333218245063,
+            "truthX": 61.5076,
+            "truthM": 42.85123793446473,
+            "errorM": 0.037905752014097516
+          },
+          {
+            "label": "4212 앞",
+            "estimateX": 53.05128790101697,
+            "estimateM": 36.619118921349866,
+            "truthX": 55.8159,
+            "truthM": 38.656578209073125,
+            "errorM": 2.0374592877232587
+          },
+          {
+            "label": "4211 앞",
+            "estimateX": 51.37031228314764,
+            "estimateM": 35.38027626912966,
+            "truthX": 50.2681,
+            "truthM": 34.567969669528246,
+            "errorM": 0.8123065996014134
+          },
+          {
+            "label": "4210 앞",
+            "estimateX": 45.48689762060522,
+            "estimateM": 31.04432698635911,
+            "truthX": 44.3642,
+            "truthM": 30.21692313637655,
+            "errorM": 0.8274038499825593
+          },
+          {
+            "label": "4209 앞",
+            "estimateX": 37.922507340193576,
+            "estimateM": 25.469535051368428,
+            "truthX": 38.0361,
+            "truthM": 25.55325038337646,
+            "errorM": 0.08371533200803327
+          },
+          {
+            "label": "4208 앞",
+            "estimateX": 34.560556104454946,
+            "estimateM": 22.99184974692804,
+            "truthX": 31.7837,
+            "truthM": 20.94536689214564,
+            "errorM": 2.0464828547824006
+          },
+          {
+            "label": "4207 앞",
+            "estimateX": 28.677141441912443,
+            "estimateM": 18.65590046415743,
+            "truthX": 25.6752,
+            "truthM": 16.44353458676155,
+            "errorM": 2.2123658773958788
+          },
+          {
+            "label": "4206 앞",
+            "estimateX": 25.315190206173842,
+            "estimateM": 16.17821515971706,
+            "truthX": 19.8471,
+            "truthM": 12.148351013215015,
+            "errorM": 4.029864146502044
+          },
+          {
+            "label": "4205 앞",
+            "estimateX": 20.27226335256603,
+            "estimateM": 12.461687203056574,
+            "truthX": 14.1554,
+            "truthM": 7.953691287823409,
+            "errorM": 4.507995915233165
+          },
+          {
+            "label": "4204 앞",
+            "estimateX": 15.22933649895813,
+            "estimateM": 8.74515924639602,
+            "truthX": 8.6315,
+            "truthM": 3.882696531056416,
+            "errorM": 4.862462715339603
+          },
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "estimateX": 4.302036517131357,
+            "estimateM": 0.6919756385036157,
+            "truthX": null,
+            "truthM": null,
+            "errorM": null
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "estimateX": 0.8358857885009943,
+            "estimateM": -1.7908346703473272,
+            "truthX": 3.363100346020758,
+            "truthM": 0,
+            "errorM": 1.7908346703473272
+          }
+        ]
+      },
+      "mode4": {
+        "detectedSteps": 85,
+        "endpointEstimateM": -1.7764247636757995,
+        "endpointTruthM": 0,
+        "endpointErrorM": 1.7764247636757995,
+        "weakLapMeanM": 2.1224719227889284,
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 8,
+            "recent_zone_observation": 2
+          }
+        },
+        "ble": {
+          "evaluated": 18,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 17
+          }
+        },
+        "laps": [
+          {
+            "label": "4213 앞",
+            "estimateX": 61.49443171928775,
+            "estimateM": 42.84153319655579,
+            "truthX": 61.5076,
+            "truthM": 42.85123793446473,
+            "errorM": 0.00970473790894033
+          },
+          {
+            "label": "4212 앞",
+            "estimateX": 53.08955362994113,
+            "estimateM": 36.647319935454775,
+            "truthX": 55.8159,
+            "truthM": 38.656578209073125,
+            "errorM": 2.00925827361835
+          },
+          {
+            "label": "4211 앞",
+            "estimateX": 51.40857801207207,
+            "estimateM": 35.408477283234774,
+            "truthX": 50.2681,
+            "truthM": 34.567969669528246,
+            "errorM": 0.8405076137065279
+          },
+          {
+            "label": "4210 앞",
+            "estimateX": 45.52516334952959,
+            "estimateM": 31.072528000464178,
+            "truthX": 44.3642,
+            "truthM": 30.21692313637655,
+            "errorM": 0.8556048640876277
+          },
+          {
+            "label": "4209 앞",
+            "estimateX": 37.96077306911777,
+            "estimateM": 25.49773606547337,
+            "truthX": 38.0361,
+            "truthM": 25.55325038337646,
+            "errorM": 0.0555143179030928
+          },
+          {
+            "label": "4208 앞",
+            "estimateX": 34.5988218333791,
+            "estimateM": 23.020050761032948,
+            "truthX": 31.7837,
+            "truthM": 20.94536689214564,
+            "errorM": 2.074683868887309
+          },
+          {
+            "label": "4207 앞",
+            "estimateX": 28.715407170836638,
+            "estimateM": 18.684101478262367,
+            "truthX": 25.6752,
+            "truthM": 16.44353458676155,
+            "errorM": 2.2405668915008157
+          },
+          {
+            "label": "4206 앞",
+            "estimateX": 25.353455935098104,
+            "estimateM": 16.20641617382205,
+            "truthX": 19.8471,
+            "truthM": 12.148351013215015,
+            "errorM": 4.058065160607034
+          },
+          {
+            "label": "4205 앞",
+            "estimateX": 20.310529081490245,
+            "estimateM": 12.489888217161525,
+            "truthX": 14.1554,
+            "truthM": 7.953691287823409,
+            "errorM": 4.536196929338116
+          },
+          {
+            "label": "4204 앞",
+            "estimateX": 15.267602227882405,
+            "estimateM": 8.773360260501015,
+            "truthX": 8.6315,
+            "truthM": 3.882696531056416,
+            "errorM": 4.890663729444599
+          },
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "estimateX": 4.340344265765221,
+            "estimateM": 0.7202076202252276,
+            "truthX": null,
+            "truthM": null,
+            "errorM": null
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "estimateX": 0.85622095763513,
+            "estimateM": -1.7764247636757995,
+            "truthX": 3.363100346020758,
+            "truthM": 0,
+            "errorM": 1.7764247636757995
+          }
+        ]
+      },
+      "saved": {
+        "predictions": 108,
+        "endpoint": {
+          "label": "오른쪽 계단 입구",
+          "predictionGapMs": 199,
+          "steps": 85,
+          "mode4X": 5.020380020105005,
+          "baselineX": 61.3634666666667,
+          "truthX": 3.363100346020758,
+          "mode4ErrorM": 1.221379254456721,
+          "baselineErrorM": 42.74501478700094,
+          "zone": "main_right",
+          "spread": 0.8620292979428712,
+          "sequenceApplied": 0,
+          "bleApplied": 0
+        },
+        "weakLapMode4MeanM": 4.224646155368413,
+        "weakLapBaselineMeanM": 15.504743106003334,
+        "laps": [
+          {
+            "label": "4213 앞",
+            "predictionGapMs": 403,
+            "steps": 11,
+            "mode4X": 64.58723085372702,
+            "baselineX": 70.804,
+            "truthX": 61.5076,
+            "mode4ErrorM": 2.2696212926194548,
+            "baselineErrorM": 7.321889480452263,
+            "zone": "main_right",
+            "spread": 0.7617104665640263,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4212 앞",
+            "predictionGapMs": 51,
+            "steps": 22,
+            "mode4X": 55.34186495544589,
+            "baselineX": 70.804,
+            "truthX": 55.8159,
+            "mode4ErrorM": 0.3493535691999483,
+            "baselineErrorM": 11.516549205843866,
+            "zone": "main_right",
+            "spread": 0.7617089330596802,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4211 앞",
+            "predictionGapMs": 370,
+            "steps": 24,
+            "mode4X": 53.66088933757659,
+            "baselineX": 70.804,
+            "truthX": 50.2681,
+            "mode4ErrorM": 2.500412318124745,
+            "baselineErrorM": 15.605157745388745,
+            "zone": "main_right",
+            "spread": 0.7617089330593376,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4210 앞",
+            "predictionGapMs": 257,
+            "steps": 31,
+            "mode4X": 47.777474675034085,
+            "baselineX": 60.18340000000003,
+            "truthX": 44.3642,
+            "mode4ErrorM": 2.515509568505827,
+            "baselineErrorM": 11.658408055223397,
+            "zone": "main_right",
+            "spread": 0.7617089330593146,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4209 앞",
+            "predictionGapMs": 212,
+            "steps": 40,
+            "mode4X": 41.053572203557,
+            "baselineX": 49.5628,
+            "truthX": 38.0361,
+            "mode4ErrorM": 2.2238117126252703,
+            "baselineErrorM": 8.494928449614601,
+            "zone": "main_right",
+            "spread": 0.7617089330593156,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4208 앞",
+            "predictionGapMs": 111,
+            "steps": 43,
+            "mode4X": 39.37259658568758,
+            "baselineX": 48.382733333333334,
+            "truthX": 31.7837,
+            "mode4ErrorM": 5.5928525516358185,
+            "baselineErrorM": 12.233128345444438,
+            "zone": "main_right",
+            "spread": 0.7617089330593141,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4207 앞",
+            "predictionGapMs": 438,
+            "steps": 51,
+            "mode4X": 32.64869411421052,
+            "baselineX": 42.48239999999999,
+            "truthX": 25.6752,
+            "mode4ErrorM": 5.1393142481392715,
+            "baselineErrorM": 12.386542673823595,
+            "zone": "main_right",
+            "spread": 0.7617089330593135,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4206 앞",
+            "predictionGapMs": 344,
+            "steps": 54,
+            "mode4X": 30.127230687406684,
+            "baselineX": 38.942199999999985,
+            "truthX": 19.8471,
+            "mode4ErrorM": 7.576233843355611,
+            "baselineErrorM": 14.07267546116717,
+            "zone": "main_right",
+            "spread": 0.7617089330593148,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4205 앞",
+            "predictionGapMs": 215,
+            "steps": 61,
+            "mode4X": 25.08430383379874,
+            "baselineX": 31.86179999999998,
+            "truthX": 14.1554,
+            "mode4ErrorM": 8.054365612086633,
+            "baselineErrorM": 13.049233614152863,
+            "zone": "main_right",
+            "spread": 0.7617089330593141,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4204 앞",
+            "predictionGapMs": 360,
+            "steps": 66,
+            "mode4X": 20.88186478912559,
+            "baselineX": 37.76213333333332,
+            "truthX": 8.6315,
+            "mode4ErrorM": 9.028253738303238,
+            "baselineErrorM": 21.468646347924782,
+            "zone": "main_right",
+            "spread": 0.7617089330593148,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "predictionGapMs": 412,
+            "steps": 80,
+            "mode4X": 9.115035463987034,
+            "baselineX": 54.283066666666684,
+            "truthX": null,
+            "mode4ErrorM": null,
+            "baselineErrorM": null,
+            "zone": "main_right",
+            "spread": 0.7617089414986967,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "predictionGapMs": 199,
+            "steps": 85,
+            "mode4X": 5.020380020105005,
+            "baselineX": 61.3634666666667,
+            "truthX": 3.363100346020758,
+            "mode4ErrorM": 1.221379254456721,
+            "baselineErrorM": 42.74501478700094,
+            "zone": "main_right",
+            "spread": 0.8620292979428712,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          }
+        ]
+      },
+      "bleIdentityCounts": {
+        "address": 169,
+        "manufacturerPayload": 120,
+        "servicePayload": 25,
+        "serviceUuid": 8
+      }
+    },
+    {
+      "file": "indoor_positioning_20260922_191556.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "durationS": 48.265,
+      "schema": 9,
+      "ended": true,
+      "parseErrors": 0,
+      "labelCount": 12,
+      "labels": [
+        "오른쪽 끝 화장실 통로 앞 앞",
+        "4204 앞",
+        "4205 앞",
+        "4206 앞",
+        "4207 앞",
+        "4208 앞",
+        "4209 앞",
+        "4210 앞",
+        "4211 앞",
+        "4212 앞",
+        "4213 앞",
+        "코어복도 출구 중앙점 앞"
+      ],
+      "duplicateSuffixLabels": [
+        "오른쪽 끝 화장실 통로 앞 앞"
+      ],
+      "stepCounterDelta": 71,
+      "kinds": {
+        "session_start": 1,
+        "ble_scan_status": 2,
+        "sample": 29273,
+        "derived_fusion": 97,
+        "ble_observation": 1229,
+        "label": 12,
+        "session_end": 1
+      },
+      "bleUniqueIds": 174,
+      "productionBleReferenceCommonIds": 10,
+      "reverseSeedAblation": {
+        "oldSeedX": 0.681550173010379,
+        "correctedSeedX": 3.363100346020758,
+        "oldEndpointErrorM": 3.796173624309972,
+        "correctedEndpointErrorM": 1.8111658685663912
+      },
+      "directionSeedAblation": {
+        "unseededEndpointErrorM": 4.7785220136623465,
+        "seededEndpointErrorM": 1.8111658685663912
+      },
+      "pdr": {
+        "detectedSteps": 78,
+        "endpointEstimateM": 48.37107250051521,
+        "endpointTruthM": 50.17312741491699,
+        "endpointErrorM": 1.8020549144017792,
+        "weakLapMeanM": 3.3903066205323396,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 9
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "laps": [
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "estimateX": 7.654565032746785,
+            "estimateM": 3.162716602131168,
+            "truthX": null,
+            "truthM": null,
+            "errorM": null
+          },
+          {
+            "label": "4204 앞",
+            "estimateX": 20.261882166766465,
+            "estimateM": 12.4540364937825,
+            "truthX": 8.6315,
+            "truthM": 3.882696531056416,
+            "errorM": 8.571339962726084
+          },
+          {
+            "label": "4205 앞",
+            "estimateX": 23.623833402504932,
+            "estimateM": 14.93172179822277,
+            "truthX": 14.1554,
+            "truthM": 7.953691287823409,
+            "errorM": 6.9780305103993605
+          },
+          {
+            "label": "4206 앞",
+            "estimateX": 27.826272447178276,
+            "estimateM": 18.028828428773302,
+            "truthX": 19.8471,
+            "truthM": 12.148351013215015,
+            "errorM": 5.880477415558287
+          },
+          {
+            "label": "4207 앞",
+            "estimateX": 32.02871149185133,
+            "estimateM": 21.125935059323616,
+            "truthX": 25.6752,
+            "truthM": 16.44353458676155,
+            "errorM": 4.682400472562065
+          },
+          {
+            "label": "4208 앞",
+            "estimateX": 37.07163834545933,
+            "estimateM": 24.84246301598424,
+            "truthX": 31.7837,
+            "truthM": 20.94536689214564,
+            "errorM": 3.897096123838601
+          },
+          {
+            "label": "4209 앞",
+            "estimateX": 39.593101772263054,
+            "estimateM": 26.700726994314355,
+            "truthX": 38.0361,
+            "truthM": 25.55325038337646,
+            "errorM": 1.1474766109378933
+          },
+          {
+            "label": "4210 앞",
+            "estimateX": 47.15749205267511,
+            "estimateM": 32.275518929305335,
+            "truthX": 44.3642,
+            "truthM": 30.21692313637655,
+            "errorM": 2.0585957929287844
+          },
+          {
+            "label": "4211 앞",
+            "estimateX": 52.20041890628271,
+            "estimateM": 35.992046885965664,
+            "truthX": 50.2681,
+            "truthM": 34.567969669528246,
+            "errorM": 1.4240772164374178
+          },
+          {
+            "label": "4212 앞",
+            "estimateX": 54.72188233308651,
+            "estimateM": 37.850310864295835,
+            "truthX": 55.8159,
+            "truthM": 38.656578209073125,
+            "errorM": 0.8062673447772895
+          },
+          {
+            "label": "4213 앞",
+            "estimateX": 61.44578480456366,
+            "estimateM": 42.805681473176534,
+            "truthX": 61.5076,
+            "truthM": 42.85123793446473,
+            "errorM": 0.045556461288192907
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "estimateX": 68.99741906909185,
+            "estimateM": 48.37107250051523,
+            "truthX": 70.804,
+            "truthM": 50.17312741491699,
+            "errorM": 1.802054914401758
+          }
+        ]
+      },
+      "mode4": {
+        "detectedSteps": 78,
+        "endpointEstimateM": 48.3619615463506,
+        "endpointTruthM": 50.17312741491699,
+        "endpointErrorM": 1.8111658685663912,
+        "weakLapMeanM": 3.3860462909011138,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 9
+          }
+        },
+        "ble": {
+          "evaluated": 16,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 15
+          }
+        },
+        "laps": [
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "estimateX": 7.64190645658662,
+            "estimateM": 3.1533875054465494,
+            "truthX": null,
+            "truthM": null,
+            "errorM": null
+          },
+          {
+            "label": "4204 앞",
+            "estimateX": 20.249223590606206,
+            "estimateM": 12.444707397097812,
+            "truthX": 8.6315,
+            "truthM": 3.882696531056416,
+            "errorM": 8.562010866041396
+          },
+          {
+            "label": "4205 앞",
+            "estimateX": 23.61117482634475,
+            "estimateM": 14.922392701538138,
+            "truthX": 14.1554,
+            "truthM": 7.953691287823409,
+            "errorM": 6.968701413714729
+          },
+          {
+            "label": "4206 앞",
+            "estimateX": 27.81361387101807,
+            "estimateM": 18.01949933208865,
+            "truthX": 19.8471,
+            "truthM": 12.148351013215015,
+            "errorM": 5.871148318873635
+          },
+          {
+            "label": "4207 앞",
+            "estimateX": 32.01605291569125,
+            "estimateM": 21.116605962639056,
+            "truthX": 25.6752,
+            "truthM": 16.44353458676155,
+            "errorM": 4.673071375877505
+          },
+          {
+            "label": "4208 앞",
+            "estimateX": 37.05897976929904,
+            "estimateM": 24.833133919299534,
+            "truthX": 31.7837,
+            "truthM": 20.94536689214564,
+            "errorM": 3.8877670271538953
+          },
+          {
+            "label": "4209 앞",
+            "estimateX": 39.580443196103026,
+            "estimateM": 26.691397897629837,
+            "truthX": 38.0361,
+            "truthM": 25.55325038337646,
+            "errorM": 1.138147514253376
+          },
+          {
+            "label": "4210 앞",
+            "estimateX": 47.14483347651461,
+            "estimateM": 32.26618983262047,
+            "truthX": 44.3642,
+            "truthM": 30.21692313637655,
+            "errorM": 2.0492666962439188
+          },
+          {
+            "label": "4211 앞",
+            "estimateX": 52.18776033012251,
+            "estimateM": 35.982717789281025,
+            "truthX": 50.2681,
+            "truthM": 34.567969669528246,
+            "errorM": 1.4147481197527796
+          },
+          {
+            "label": "4212 앞",
+            "estimateX": 54.70922375692649,
+            "estimateM": 37.84098176761132,
+            "truthX": 55.8159,
+            "truthM": 38.656578209073125,
+            "errorM": 0.8155964414618069
+          },
+          {
+            "label": "4213 앞",
+            "estimateX": 61.433126228403495,
+            "estimateM": 42.79635237649191,
+            "truthX": 61.5076,
+            "truthM": 42.85123793446473,
+            "errorM": 0.05488555797281691
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "estimateX": 68.98505648876026,
+            "estimateM": 48.3619615463506,
+            "truthX": 70.804,
+            "truthM": 50.17312741491699,
+            "errorM": 1.8111658685663912
+          }
+        ]
+      },
+      "saved": {
+        "predictions": 97,
+        "endpoint": {
+          "label": "코어복도 출구 중앙점 앞",
+          "predictionGapMs": 348,
+          "steps": 77,
+          "mode4X": 64.6262739544438,
+          "baselineX": 82.60466666666663,
+          "truthX": 70.804,
+          "mode4ErrorM": 5.02349426753991,
+          "baselineErrorM": 9.29165728681226,
+          "zone": "main_right",
+          "spread": 0.5409636057085998,
+          "sequenceApplied": 0,
+          "bleApplied": 0
+        },
+        "weakLapMode4MeanM": 2.897630387681393,
+        "weakLapBaselineMeanM": 6.168634749556886,
+        "laps": [
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "predictionGapMs": 298,
+            "steps": 5,
+            "mode4X": 4.95163952008422,
+            "baselineX": 0,
+            "truthX": null,
+            "mode4ErrorM": null,
+            "baselineErrorM": null,
+            "zone": "main_right",
+            "spread": 0.5409832219765986,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4204 앞",
+            "predictionGapMs": 222,
+            "steps": 20,
+            "mode4X": 17.558956654103874,
+            "baselineX": 16.520933333333335,
+            "truthX": 8.6315,
+            "mode4ErrorM": 6.579342354155845,
+            "baselineErrorM": 5.814341630707062,
+            "zone": "main_right",
+            "spread": 0.5409636057086176,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4205 앞",
+            "predictionGapMs": 120,
+            "steps": 24,
+            "mode4X": 20.920907889842383,
+            "baselineX": 22.421266666666657,
+            "truthX": 14.1554,
+            "mode4ErrorM": 4.986032901829155,
+            "baselineErrorM": 6.091764850944989,
+            "zone": "main_right",
+            "spread": 0.5409636057085994,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4206 앞",
+            "predictionGapMs": 77,
+            "steps": 29,
+            "mode4X": 25.123346934515546,
+            "baselineX": 28.321599999999986,
+            "truthX": 19.8471,
+            "mode4ErrorM": 3.8884798069879434,
+            "baselineErrorM": 6.245523102558304,
+            "zone": "main_right",
+            "spread": 0.5409636057085987,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4207 앞",
+            "predictionGapMs": 236,
+            "steps": 33,
+            "mode4X": 28.485298170254126,
+            "baselineX": 31.86179999999998,
+            "truthX": 25.6752,
+            "mode4ErrorM": 2.07098153788176,
+            "baselineErrorM": 4.559390315214721,
+            "zone": "main_right",
+            "spread": 0.5409636057085984,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4208 앞",
+            "predictionGapMs": 479,
+            "steps": 39,
+            "mode4X": 33.52822502386199,
+            "baselineX": 38.942199999999985,
+            "truthX": 31.7837,
+            "mode4ErrorM": 1.2856771891582,
+            "baselineErrorM": 5.275659582236546,
+            "zone": "main_right",
+            "spread": 0.5409636057085979,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4209 앞",
+            "predictionGapMs": 232,
+            "steps": 43,
+            "mode4X": 36.890176259600494,
+            "baselineX": 43.66246666666666,
+            "truthX": 38.0361,
+            "mode4ErrorM": 0.8445209976323227,
+            "baselineErrorM": 4.14651047260967,
+            "zone": "main_right",
+            "spread": 0.5409636057085973,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4210 앞",
+            "predictionGapMs": 218,
+            "steps": 51,
+            "mode4X": 43.614078731077804,
+            "baselineX": 51.92293333333334,
+            "truthX": 44.3642,
+            "mode4ErrorM": 0.5528231417515954,
+            "baselineErrorM": 5.570622887416491,
+            "zone": "main_right",
+            "spread": 0.5409636057085994,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4211 앞",
+            "predictionGapMs": 155,
+            "steps": 58,
+            "mode4X": 49.497493393620154,
+            "baselineX": 60.18340000000003,
+            "truthX": 50.2681,
+            "mode4ErrorM": 0.5679203921327911,
+            "baselineErrorM": 7.307361522071702,
+            "zone": "main_right",
+            "spread": 0.5409636057085986,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4212 앞",
+            "predictionGapMs": 358,
+            "steps": 60,
+            "mode4X": 51.17846901148954,
+            "baselineX": 62.543533333333365,
+            "truthX": 55.8159,
+            "mode4ErrorM": 3.4176862794574205,
+            "baselineErrorM": 4.958120173328801,
+            "zone": "main_right",
+            "spread": 0.5409636057085988,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4213 앞",
+            "predictionGapMs": 426,
+            "steps": 68,
+            "mode4X": 57.902371482966615,
+            "baselineX": 71.98406666666666,
+            "truthX": 61.5076,
+            "mode4ErrorM": 2.656975395968381,
+            "baselineErrorM": 8.594030421225206,
+            "zone": "main_right",
+            "spread": 0.5409636057085987,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "predictionGapMs": 348,
+            "steps": 77,
+            "mode4X": 64.6262739544438,
+            "baselineX": 82.60466666666663,
+            "truthX": 70.804,
+            "mode4ErrorM": 5.02349426753991,
+            "baselineErrorM": 9.29165728681226,
+            "zone": "main_right",
+            "spread": 0.5409636057085998,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          }
+        ]
+      },
+      "bleIdentityCounts": {
+        "address": 174,
+        "manufacturerPayload": 134,
+        "servicePayload": 24,
+        "serviceUuid": 9
+      }
+    },
+    {
+      "file": "indoor_positioning_20260922_191648.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "durationS": 48.659,
+      "schema": 9,
+      "ended": true,
+      "parseErrors": 0,
+      "labelCount": 10,
+      "labels": [
+        "4120 앞",
+        "4121 앞",
+        "4122 앞",
+        "4123 앞",
+        "4124 앞",
+        "4125 앞",
+        "4126 앞",
+        "4127 앞",
+        "4128 앞",
+        "왼쪽 계단 입구"
+      ],
+      "duplicateSuffixLabels": [],
+      "stepCounterDelta": 64,
+      "kinds": {
+        "session_start": 1,
+        "ble_scan_status": 2,
+        "sample": 29503,
+        "derived_fusion": 98,
+        "ble_observation": 1248,
+        "label": 10,
+        "session_end": 1
+      },
+      "bleUniqueIds": 170,
+      "productionBleReferenceCommonIds": 9,
+      "reverseSeedAblation": null,
+      "directionSeedAblation": {
+        "unseededEndpointErrorM": 3.995347837529323,
+        "seededEndpointErrorM": 3.641303303574162
+      },
+      "pdr": {
+        "detectedSteps": 73,
+        "endpointEstimateM": 95.36686108872391,
+        "endpointTruthM": 99.00817861491699,
+        "endpointErrorM": 3.6413175261930775,
+        "weakLapMeanM": 1.7333383635702453,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 9
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "laps": [
+          {
+            "label": "4120 앞",
+            "estimateX": 78.43656845727975,
+            "estimateM": 56.343317543788544,
+            "truthX": 81.5625,
+            "truthM": 58.684311483566056,
+            "errorM": 2.340993939777512
+          },
+          {
+            "label": "4121 앞",
+            "estimateX": 90.8432771758752,
+            "estimateM": 65.6346374354398,
+            "truthX": 90.3455,
+            "truthM": 65.2618546869509,
+            "errorM": 0.3727827484889019
+          },
+          {
+            "label": "4122 앞",
+            "estimateX": 101.59575806532436,
+            "estimateM": 73.68711467487071,
+            "truthX": 99.418,
+            "truthM": 72.05620294070349,
+            "errorM": 1.6309117341672277
+          },
+          {
+            "label": "4123 앞",
+            "estimateX": 104.07709980904347,
+            "estimateM": 75.54537865320098,
+            "truthX": 106.443,
+            "truthM": 77.31718905066347,
+            "errorM": 1.7718103974624881
+          },
+          {
+            "label": "4124 앞",
+            "estimateX": 110.69401112562791,
+            "estimateM": 80.5007492620818,
+            "truthX": 111.13,
+            "truthM": 80.82725907164317,
+            "errorM": 0.3265098095613723
+          },
+          {
+            "label": "4125 앞",
+            "estimateX": 114.0024667839198,
+            "estimateM": 82.97843456652197,
+            "truthX": 115.817,
+            "truthM": 84.33732909262288,
+            "errorM": 1.3588945261009115
+          },
+          {
+            "label": "4126 앞",
+            "estimateX": 118.1380363567851,
+            "estimateM": 86.07554119707248,
+            "truthX": 120.505,
+            "truthM": 87.8481480084225,
+            "errorM": 1.7726068113500162
+          },
+          {
+            "label": "4127 앞",
+            "estimateX": 123.10071984422328,
+            "estimateM": 89.792069153733,
+            "truthX": 125.192,
+            "truthM": 91.35821802940221,
+            "errorM": 1.5661488756692137
+          },
+          {
+            "label": "4128 앞",
+            "estimateX": 128.06340333166196,
+            "estimateM": 93.50859711039388,
+            "truthX": 131.4703,
+            "truthM": 96.06000437732561,
+            "errorM": 2.551407266931733
+          },
+          {
+            "label": "왼쪽 계단 입구",
+            "estimateX": 130.54474507538077,
+            "estimateM": 95.36686108872391,
+            "truthX": 135.407,
+            "truthM": 99.00817861491699,
+            "errorM": 3.6413175261930775
+          }
+        ]
+      },
+      "mode4": {
+        "detectedSteps": 73,
+        "endpointEstimateM": 95.36687531134282,
+        "endpointTruthM": 99.00817861491699,
+        "endpointErrorM": 3.641303303574162,
+        "weakLapMeanM": 1.7333298299989628,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 9
+          }
+        },
+        "ble": {
+          "evaluated": 15,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 12,
+            "relative_zone_scores": 2
+          }
+        },
+        "laps": [
+          {
+            "label": "4120 앞",
+            "estimateX": 78.43658744875697,
+            "estimateM": 56.34333176640746,
+            "truthX": 81.5625,
+            "truthM": 58.684311483566056,
+            "errorM": 2.3409797171585964
+          },
+          {
+            "label": "4121 앞",
+            "estimateX": 90.84329616735232,
+            "estimateM": 65.63465165805864,
+            "truthX": 90.3455,
+            "truthM": 65.2618546869509,
+            "errorM": 0.37279697110774634
+          },
+          {
+            "label": "4122 앞",
+            "estimateX": 101.59577705680192,
+            "estimateM": 73.68712889748988,
+            "truthX": 99.418,
+            "truthM": 72.05620294070349,
+            "errorM": 1.630925956786399
+          },
+          {
+            "label": "4123 앞",
+            "estimateX": 104.0771188005207,
+            "estimateM": 75.5453928758199,
+            "truthX": 106.443,
+            "truthM": 77.31718905066347,
+            "errorM": 1.7717961748435727
+          },
+          {
+            "label": "4124 앞",
+            "estimateX": 110.69403011710493,
+            "estimateM": 80.50076348470057,
+            "truthX": 111.13,
+            "truthM": 80.82725907164317,
+            "errorM": 0.32649558694259895
+          },
+          {
+            "label": "4125 앞",
+            "estimateX": 114.00248577539695,
+            "estimateM": 82.97844878914083,
+            "truthX": 115.817,
+            "truthM": 84.33732909262288,
+            "errorM": 1.358880303482053
+          },
+          {
+            "label": "4126 앞",
+            "estimateX": 118.13805534826247,
+            "estimateM": 86.07555541969151,
+            "truthX": 120.505,
+            "truthM": 87.8481480084225,
+            "errorM": 1.772592588730987
+          },
+          {
+            "label": "4127 앞",
+            "estimateX": 123.10073883570035,
+            "estimateM": 89.7920833763518,
+            "truthX": 125.192,
+            "truthM": 91.35821802940221,
+            "errorM": 1.5661346530504119
+          },
+          {
+            "label": "4128 앞",
+            "estimateX": 128.0634223231388,
+            "estimateM": 93.50861133301251,
+            "truthX": 131.4703,
+            "truthM": 96.06000437732561,
+            "errorM": 2.5513930443131017
+          },
+          {
+            "label": "왼쪽 계단 입구",
+            "estimateX": 130.544764066858,
+            "estimateM": 95.36687531134282,
+            "truthX": 135.407,
+            "truthM": 99.00817861491699,
+            "errorM": 3.641303303574162
+          }
+        ]
+      },
+      "saved": {
+        "predictions": 98,
+        "endpoint": {
+          "label": "왼쪽 계단 입구",
+          "predictionGapMs": 361,
+          "steps": 73,
+          "mode4X": 128.90015624515186,
+          "baselineX": 135.407,
+          "truthX": 135.407,
+          "mode4ErrorM": 4.872941582054935,
+          "baselineErrorM": 0,
+          "zone": "main_left",
+          "spread": 0.7335099863151149,
+          "sequenceApplied": 0,
+          "bleApplied": 0
+        },
+        "weakLapMode4MeanM": 2.8739341859558474,
+        "weakLapBaselineMeanM": 6.472573725096183,
+        "laps": [
+          {
+            "label": "4120 앞",
+            "predictionGapMs": 417,
+            "steps": 9,
+            "mode4X": 75.96486571247783,
+            "baselineX": 80.55539622641507,
+            "truthX": 81.5625,
+            "mode4ErrorM": 4.192039321749448,
+            "baselineErrorM": 0.7542147991627886,
+            "zone": "main_left",
+            "spread": 0.7338408696758395,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4121 앞",
+            "predictionGapMs": 395,
+            "steps": 24,
+            "mode4X": 88.37157443107336,
+            "baselineX": 97.62033962264145,
+            "truthX": 90.3455,
+            "mode4ErrorM": 1.4782626334829772,
+            "baselineErrorM": 5.448089709167718,
+            "zone": "main_left",
+            "spread": 0.7335099863154243,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4122 앞",
+            "predictionGapMs": 471,
+            "steps": 37,
+            "mode4X": 99.1240553205227,
+            "baselineX": 113.46635849056594,
+            "truthX": 99.418,
+            "mode4ErrorM": 0.22013364780451639,
+            "baselineErrorM": 10.520742902007939,
+            "zone": "main_left",
+            "spread": 0.7335099863151151,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4123 앞",
+            "predictionGapMs": 346,
+            "steps": 41,
+            "mode4X": 102.43251097881483,
+            "baselineX": 115.90420754716969,
+            "truthX": 106.443,
+            "mode4ErrorM": 3.003434453324161,
+            "baselineErrorM": 7.0854493222929875,
+            "zone": "main_left",
+            "spread": 0.7335099863151145,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4124 앞",
+            "predictionGapMs": 41,
+            "steps": 49,
+            "mode4X": 109.04942229539911,
+            "baselineX": 125.65560377358476,
+            "truthX": 111.13,
+            "mode4ErrorM": 1.5581338654231587,
+            "baselineErrorM": 10.87814942229349,
+            "zone": "main_left",
+            "spread": 0.7335099863151139,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4125 앞",
+            "predictionGapMs": 243,
+            "steps": 53,
+            "mode4X": 112.35787795369126,
+            "baselineX": 129.31237735849047,
+            "truthX": 115.817,
+            "mode4ErrorM": 2.590518581962513,
+            "baselineErrorM": 10.106618196681396,
+            "zone": "main_left",
+            "spread": 0.7335099863151145,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4126 앞",
+            "predictionGapMs": 144,
+            "steps": 57,
+            "mode4X": 115.66633361198332,
+            "baselineX": 132.96915094339616,
+            "truthX": 120.505,
+            "mode4ErrorM": 3.6236521933218455,
+            "baselineErrorM": 9.334338076249367,
+            "zone": "main_left",
+            "spread": 0.7335099863151141,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4127 앞",
+            "predictionGapMs": 376,
+            "steps": 63,
+            "mode4X": 120.6290170994215,
+            "baselineX": 135.407,
+            "truthX": 125.192,
+            "mode4ErrorM": 3.417194257641043,
+            "baselineErrorM": 7.649960585514776,
+            "zone": "main_left",
+            "spread": 0.7335099863151139,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4128 앞",
+            "predictionGapMs": 172,
+            "steps": 70,
+            "mode4X": 126.4188145014327,
+            "baselineX": 135.407,
+            "truthX": 131.4703,
+            "mode4ErrorM": 3.7830313227938746,
+            "baselineErrorM": 2.948174237591374,
+            "zone": "main_left",
+            "spread": 0.7335099863151137,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "왼쪽 계단 입구",
+            "predictionGapMs": 361,
+            "steps": 73,
+            "mode4X": 128.90015624515186,
+            "baselineX": 135.407,
+            "truthX": 135.407,
+            "mode4ErrorM": 4.872941582054935,
+            "baselineErrorM": 0,
+            "zone": "main_left",
+            "spread": 0.7335099863151149,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          }
+        ]
+      },
+      "bleIdentityCounts": {
+        "address": 170,
+        "manufacturerPayload": 151,
+        "servicePayload": 11,
+        "serviceUuid": 8
+      }
+    },
+    {
+      "file": "indoor_positioning_20260922_191741.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "durationS": 48.477,
+      "schema": 9,
+      "ended": true,
+      "parseErrors": 0,
+      "labelCount": 10,
+      "labels": [
+        "4128 앞",
+        "4127 앞",
+        "4126 앞",
+        "4125 앞",
+        "4124 앞",
+        "4123 앞",
+        "4122 앞",
+        "4121 앞",
+        "4120 앞",
+        "코어복도 출구 중앙점 앞"
+      ],
+      "duplicateSuffixLabels": [],
+      "stepCounterDelta": 58,
+      "kinds": {
+        "session_start": 1,
+        "ble_scan_status": 2,
+        "sample": 29377,
+        "ble_observation": 1407,
+        "derived_fusion": 97,
+        "label": 10,
+        "session_end": 1
+      },
+      "bleUniqueIds": 189,
+      "productionBleReferenceCommonIds": 10,
+      "reverseSeedAblation": {
+        "oldSeedX": 134.907,
+        "correctedSeedX": 135.407,
+        "oldEndpointErrorM": 1.504527622461481,
+        "correctedEndpointErrorM": 1.837432494231635
+      },
+      "directionSeedAblation": {
+        "unseededEndpointErrorM": 1.837432494231635,
+        "seededEndpointErrorM": 1.837432494231635
+      },
+      "pdr": {
+        "detectedSteps": 76,
+        "endpointEstimateM": 52.01094284950442,
+        "endpointTruthM": 50.17312741491699,
+        "endpointErrorM": 1.8378154345874265,
+        "weakLapMeanM": 1.8064638714622028,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 9
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "laps": [
+          {
+            "label": "4128 앞",
+            "estimateX": 132.16825663358418,
+            "estimateM": 96.58270048474776,
+            "truthX": 131.4703,
+            "truthM": 96.06000437732561,
+            "errorM": 0.5226961074221492
+          },
+          {
+            "label": "4127 앞",
+            "estimateX": 126.39562352998956,
+            "estimateM": 92.25960545614899,
+            "truthX": 125.192,
+            "truthM": 91.35821802940221,
+            "errorM": 0.9013874267467799
+          },
+          {
+            "label": "4126 앞",
+            "estimateX": 121.43294004255132,
+            "estimateM": 88.54307749948845,
+            "truthX": 120.505,
+            "truthM": 87.8481480084225,
+            "errorM": 0.6949294910659489
+          },
+          {
+            "label": "4125 앞",
+            "estimateX": 117.2973704696862,
+            "estimateM": 85.44597086893805,
+            "truthX": 115.817,
+            "truthM": 84.33732909262288,
+            "errorM": 1.1086417763151672
+          },
+          {
+            "label": "4124 앞",
+            "estimateX": 114.81602872596709,
+            "estimateM": 83.58770689060778,
+            "truthX": 111.13,
+            "truthM": 80.82725907164317,
+            "errorM": 2.7604478189646073
+          },
+          {
+            "label": "4123 앞",
+            "estimateX": 109.02623132395586,
+            "estimateM": 79.25175760783718,
+            "truthX": 106.443,
+            "truthM": 77.31718905066347,
+            "errorM": 1.934568557173705
+          },
+          {
+            "label": "4122 앞",
+            "estimateX": 104.89066175109063,
+            "estimateM": 76.1546509772867,
+            "truthX": 99.418,
+            "truthM": 72.05620294070349,
+            "errorM": 4.098448036583221
+          },
+          {
+            "label": "4121 앞",
+            "estimateX": 94.96529477621425,
+            "estimateM": 68.72159506396568,
+            "truthX": 90.3455,
+            "truthM": 65.2618546869509,
+            "errorM": 3.459740377014782
+          },
+          {
+            "label": "4120 앞",
+            "estimateX": 82.55858605761863,
+            "estimateM": 59.430275172314296,
+            "truthX": 81.5625,
+            "truthM": 58.684311483566056,
+            "errorM": 0.7459636887482404
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "estimateX": 72.65154420683984,
+            "estimateM": 52.01094284950442,
+            "truthX": 70.804,
+            "truthM": 50.17312741491699,
+            "errorM": 1.8378154345874265
+          }
+        ]
+      },
+      "mode4": {
+        "detectedSteps": 76,
+        "endpointEstimateM": 52.010559909148625,
+        "endpointTruthM": 50.17312741491699,
+        "endpointErrorM": 1.837432494231635,
+        "weakLapMeanM": 1.804320430931957,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 9
+          }
+        },
+        "ble": {
+          "evaluated": 16,
+          "applied": 2,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 11,
+            "relative_zone_scores": 4
+          }
+        },
+        "laps": [
+          {
+            "label": "4128 앞",
+            "estimateX": 132.16111858053625,
+            "estimateM": 96.57735483379585,
+            "truthX": 131.4703,
+            "truthM": 96.06000437732561,
+            "errorM": 0.5173504564702398
+          },
+          {
+            "label": "4127 앞",
+            "estimateX": 126.37572791262643,
+            "estimateM": 92.24470573136657,
+            "truthX": 125.192,
+            "truthM": 91.35821802940221,
+            "errorM": 0.8864877019643558
+          },
+          {
+            "label": "4126 앞",
+            "estimateX": 121.42394164814027,
+            "estimateM": 88.53633864852638,
+            "truthX": 120.505,
+            "truthM": 87.8481480084225,
+            "errorM": 0.6881906401038833
+          },
+          {
+            "label": "4125 앞",
+            "estimateX": 117.29869080679973,
+            "estimateM": 85.44695966256292,
+            "truthX": 115.817,
+            "truthM": 84.33732909262288,
+            "errorM": 1.1096305699400375
+          },
+          {
+            "label": "4124 앞",
+            "estimateX": 114.81734906308071,
+            "estimateM": 83.58869568423272,
+            "truthX": 111.13,
+            "truthM": 80.82725907164317,
+            "errorM": 2.7614366125895486
+          },
+          {
+            "label": "4123 앞",
+            "estimateX": 109.02755166106947,
+            "estimateM": 79.2527464014621,
+            "truthX": 106.443,
+            "truthM": 77.31718905066347,
+            "errorM": 1.9355573507986321
+          },
+          {
+            "label": "4122 앞",
+            "estimateX": 104.89198208820429,
+            "estimateM": 76.15563977091168,
+            "truthX": 99.418,
+            "truthM": 72.05620294070349,
+            "errorM": 4.099436830208191
+          },
+          {
+            "label": "4121 앞",
+            "estimateX": 94.96661511332788,
+            "estimateM": 68.72258385759062,
+            "truthX": 90.3455,
+            "truthM": 65.2618546869509,
+            "errorM": 3.4607291706397234
+          },
+          {
+            "label": "4120 앞",
+            "estimateX": 82.55990639473244,
+            "estimateM": 59.43126396593938,
+            "truthX": 81.5625,
+            "truthM": 58.684311483566056,
+            "errorM": 0.7469524823733238
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "estimateX": 72.65103286620081,
+            "estimateM": 52.010559909148625,
+            "truthX": 70.804,
+            "truthM": 50.17312741491699,
+            "errorM": 1.837432494231635
+          }
+        ]
+      },
+      "saved": {
+        "predictions": 97,
+        "endpoint": {
+          "label": "코어복도 출구 중앙점 앞",
+          "predictionGapMs": 444,
+          "steps": 76,
+          "mode4X": 72.20780494387861,
+          "baselineX": 64.70937735849068,
+          "truthX": 70.804,
+          "mode4ErrorM": 1.5055013991592574,
+          "baselineErrorM": 4.96224885720585,
+          "zone": "main_left",
+          "spread": 0.45889435503776205,
+          "sequenceApplied": 0,
+          "bleApplied": 0
+        },
+        "weakLapMode4MeanM": 1.5630640293828122,
+        "weakLapBaselineMeanM": 3.087023830527366,
+        "laps": [
+          {
+            "label": "4128 앞",
+            "predictionGapMs": 284,
+            "steps": 4,
+            "mode4X": 131.68123512598336,
+            "baselineX": 135.407,
+            "truthX": 131.4703,
+            "mode4ErrorM": 0.15796822318876025,
+            "baselineErrorM": 2.948174237591374,
+            "zone": "main_left",
+            "spread": 0.5204802752077607,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4127 앞",
+            "predictionGapMs": 256,
+            "steps": 11,
+            "mode4X": 125.89892508279338,
+            "baselineX": 135.407,
+            "truthX": 125.192,
+            "mode4ErrorM": 0.5294125325776946,
+            "baselineErrorM": 7.649960585514776,
+            "zone": "main_left",
+            "spread": 0.5349482038088128,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4126 앞",
+            "predictionGapMs": 133,
+            "steps": 17,
+            "mode4X": 120.9362415953552,
+            "baselineX": 123.2177547169811,
+            "truthX": 120.505,
+            "mode4ErrorM": 0.3229545968969063,
+            "baselineErrorM": 2.031567955269196,
+            "zone": "main_left",
+            "spread": 0.5349481991025848,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4125 앞",
+            "predictionGapMs": 82,
+            "steps": 22,
+            "mode4X": 116.80067202249002,
+            "baselineX": 115.9042075471698,
+            "truthX": 115.817,
+            "mode4ErrorM": 0.736666882146082,
+            "baselineErrorM": 0.06530928033366479,
+            "zone": "main_left",
+            "spread": 0.5349481991014366,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4124 앞",
+            "predictionGapMs": 84,
+            "steps": 25,
+            "mode4X": 114.31933027877088,
+            "baselineX": 112.24743396226415,
+            "truthX": 111.13,
+            "mode4ErrorM": 2.388472924795508,
+            "baselineErrorM": 0.8368405059458013,
+            "zone": "main_left",
+            "spread": 0.5349481991014357,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4123 앞",
+            "predictionGapMs": 30,
+            "steps": 32,
+            "mode4X": 108.52953287675963,
+            "baselineX": 103.71496226415096,
+            "truthX": 106.443,
+            "mode4ErrorM": 1.5625936630045913,
+            "baselineErrorM": 2.043013328932176,
+            "zone": "main_left",
+            "spread": 0.534948199101435,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4122 앞",
+            "predictionGapMs": 405,
+            "steps": 36,
+            "mode4X": 105.22107721846751,
+            "baselineX": 103.71496226415096,
+            "truthX": 99.418,
+            "mode4ErrorM": 4.34589446852425,
+            "baselineErrorM": 3.217972781027811,
+            "zone": "main_left",
+            "spread": 0.5349481991014357,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4121 앞",
+            "predictionGapMs": 477,
+            "steps": 48,
+            "mode4X": 95.2957102435911,
+            "baselineX": 93.96356603773589,
+            "truthX": 90.3455,
+            "mode4ErrorM": 3.7071868089557825,
+            "baselineErrorM": 2.7095509138002,
+            "zone": "main_left",
+            "spread": 0.5349481991014362,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "4120 앞",
+            "predictionGapMs": 99,
+            "steps": 64,
+            "mode4X": 82.06188761042262,
+            "baselineX": 75.67969811320764,
+            "truthX": 81.5625,
+            "mode4ErrorM": 0.37398879457929013,
+            "baselineErrorM": 4.40559985965281,
+            "zone": "main_left",
+            "spread": 0.534948199101434,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "predictionGapMs": 444,
+            "steps": 76,
+            "mode4X": 72.20780494387861,
+            "baselineX": 64.70937735849068,
+            "truthX": 70.804,
+            "mode4ErrorM": 1.5055013991592574,
+            "baselineErrorM": 4.96224885720585,
+            "zone": "main_left",
+            "spread": 0.45889435503776205,
+            "sequenceApplied": 0,
+            "bleApplied": 0
+          }
+        ]
+      },
+      "bleIdentityCounts": {
+        "address": 189,
+        "manufacturerPayload": 147,
+        "servicePayload": 20,
+        "serviceUuid": 8
+      }
+    }
+  ],
+  "bleWholeRouteRepeatability": [
+    {
+      "side": "right",
+      "commonIds": 113,
+      "medianAbsoluteRssiDifferenceDb": 2.5,
+      "commonManufacturerPayloadIds": 65,
+      "commonServicePayloadIds": 20,
+      "commonServiceUuids": 7
+    },
+    {
+      "side": "left",
+      "commonIds": 136,
+      "medianAbsoluteRssiDifferenceDb": 3.5,
+      "commonManufacturerPayloadIds": 92,
+      "commonServicePayloadIds": 10,
+      "commonServiceUuids": 6
+    }
+  ],
+  "summary": {
+    "pdrEndpointMeanM": 2.2680056363824024,
+    "mode4EndpointMeanM": 2.2665816075119967,
+    "savedMode4EndpointMeanM": 3.155829125802706,
+    "savedBaselineEndpointMeanM": 14.249730232754763,
+    "pdrWeakLapMeanM": 2.2609089639123283,
+    "mode4WeakLapMeanM": 2.2615421186552407,
+    "replaySequenceApplied": 0,
+    "replayBleApplied": 2,
+    "savedSequenceAppliedAtArrival": 0,
+    "savedBleAppliedAtArrival": 0,
+    "productionBleReferenceCommonIds": [
+      11,
+      10,
+      9,
+      10
+    ]
+  },
+  "limitations": [
+    "Only route endpoints are confirmed physical truth. Classroom-front lap coordinates are diagram-derived weak truth.",
+    "Whole-route BLE comparison measures repeatability, not point-level localization.",
+    "The files contain no saved derived prediction rows, so offline replay is required to assess mode 4."
+  ]
+}

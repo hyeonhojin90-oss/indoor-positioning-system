@@ -1,0 +1,4306 @@
+{
+  "version": "magnetic-grid-recovery-20260921",
+  "method": "same raw walk, mid-walk particle shift only; compare each perturbed run with its unperturbed same-mode control; query walk excluded from grid; no intermediate surveyed truth",
+  "scenarios": [
+    {
+      "fraction": 0.4,
+      "offsetM": -8
+    },
+    {
+      "fraction": 0.4,
+      "offsetM": -7
+    },
+    {
+      "fraction": 0.4,
+      "offsetM": -5
+    },
+    {
+      "fraction": 0.4,
+      "offsetM": 5
+    },
+    {
+      "fraction": 0.4,
+      "offsetM": 7
+    },
+    {
+      "fraction": 0.4,
+      "offsetM": 8
+    },
+    {
+      "fraction": 0.6,
+      "offsetM": -7
+    },
+    {
+      "fraction": 0.6,
+      "offsetM": 7
+    }
+  ],
+  "summary": {
+    "all": {
+      "trials": 136,
+      "initialAbsM": 6.749999999993733,
+      "pdrResidual8AbsM": 6.7443212423661265,
+      "gridResidual8AbsM": 6.712209218653435,
+      "pdrResidual16AbsM": 6.726629078972863,
+      "gridResidual16AbsM": 6.672586885699541,
+      "pdrEndpointResidualAbsM": 6.281535661811141,
+      "gridEndpointResidualAbsM": 6.111957785925538,
+      "gridBeatsPdrAt16": 67,
+      "gridImprovesOwnOffsetAt16": 14
+    },
+    "android": {
+      "trials": 48,
+      "initialAbsM": 6.749999999994494,
+      "pdrResidual8AbsM": 6.733910186717434,
+      "gridResidual8AbsM": 6.736439085552061,
+      "pdrResidual16AbsM": 6.684486288951127,
+      "gridResidual16AbsM": 6.69524679891207,
+      "pdrEndpointResidualAbsM": 5.739922633714035,
+      "gridEndpointResidualAbsM": 5.718787071151957,
+      "gridBeatsPdrAt16": 19,
+      "gridImprovesOwnOffsetAt16": 2
+    },
+    "ios": {
+      "trials": 88,
+      "initialAbsM": 6.749999999993317,
+      "pdrResidual8AbsM": 6.749999999992687,
+      "gridResidual8AbsM": 6.698992927617824,
+      "pdrResidual16AbsM": 6.749616055348351,
+      "gridResidual16AbsM": 6.660226933038159,
+      "pdrEndpointResidualAbsM": 6.576960949864104,
+      "gridEndpointResidualAbsM": 6.326414539438404,
+      "gridBeatsPdrAt16": 48,
+      "gridImprovesOwnOffsetAt16": 12
+    },
+    "sevenMeter40": {
+      "trials": 34,
+      "initialAbsM": 6.999999999991925,
+      "pdrResidual8AbsM": 6.999999999990813,
+      "gridResidual8AbsM": 6.974443708994581,
+      "pdrResidual16AbsM": 6.999999999990815,
+      "gridResidual16AbsM": 6.950790398308102,
+      "pdrEndpointResidualAbsM": 6.522095169259906,
+      "gridEndpointResidualAbsM": 6.314447715942618,
+      "gridBeatsPdrAt16": 18,
+      "gridImprovesOwnOffsetAt16": 2
+    }
+  },
+  "trials": [
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 43
+      },
+      "baseline": {
+        "initialResidualM": -7.999999999995069,
+        "residual8M": -7.999999999995037,
+        "residual16M": -7.999999999995062,
+        "endpointResidualM": -3.8037266496955624,
+        "actualEndpointErrorM": 4.2531338207713105,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.999999999982446,
+        "residual8M": -7.825454930007055,
+        "residual16M": -7.8254549300070835,
+        "endpointResidualM": -3.3603621584442394,
+        "actualEndpointErrorM": 4.1514543019875845,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 43
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000024002,
+        "residual8M": -7.000000000024002,
+        "residual16M": -7.000000000024002,
+        "endpointResidualM": -3.289962612484487,
+        "actualEndpointErrorM": 4.766897857982386,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000024382,
+        "residual8M": -6.913316154338354,
+        "residual16M": -6.913316154338389,
+        "endpointResidualM": -2.9942580263369507,
+        "actualEndpointErrorM": 4.517558434094873,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 43
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999981238,
+        "residual8M": -4.999999999981245,
+        "residual16M": -4.999999999981256,
+        "endpointResidualM": -2.397995342619474,
+        "actualEndpointErrorM": 5.658865127847399,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.9999999999869225,
+        "residual8M": -4.99999999998693,
+        "residual16M": -4.999999999986937,
+        "endpointResidualM": -2.434299603563865,
+        "actualEndpointErrorM": 5.077516856867959,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 43
+      },
+      "baseline": {
+        "initialResidualM": 4.99999999998175,
+        "residual8M": 4.99999999998175,
+        "residual16M": 4.999999999981746,
+        "endpointResidualM": 2.4842335087005267,
+        "actualEndpointErrorM": 10.5410939791674,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999974406,
+        "residual8M": 4.999999999974428,
+        "residual16M": 4.999999999974406,
+        "endpointResidualM": 2.4301631104546786,
+        "actualEndpointErrorM": 9.941979570886502,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 43
+      },
+      "baseline": {
+        "initialResidualM": 6.99999999996232,
+        "residual8M": 6.999999999962338,
+        "residual16M": 6.999999999962334,
+        "endpointResidualM": 3.4813585524086434,
+        "actualEndpointErrorM": 11.538219022875516,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999982837,
+        "residual8M": 6.9999999999828475,
+        "residual16M": 6.999999999982833,
+        "endpointResidualM": 3.4164243382071504,
+        "actualEndpointErrorM": 10.928240798638981,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 43
+      },
+      "baseline": {
+        "initialResidualM": 8.000000000028983,
+        "residual8M": 8.000000000028994,
+        "residual16M": 8.000000000028976,
+        "endpointResidualM": 3.9598963752891194,
+        "actualEndpointErrorM": 12.016756845755992,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000031722,
+        "residual8M": 8.00000000003174,
+        "residual16M": 8.000000000031719,
+        "endpointResidualM": 3.932327581030414,
+        "actualEndpointErrorM": 11.444144041462238,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 65
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999981782,
+        "residual8M": -6.999999999981796,
+        "residual16M": -7.001300508658453,
+        "endpointResidualM": -3.2899626124454855,
+        "actualEndpointErrorM": 4.766897858021387,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999992113,
+        "residual8M": -6.999999999992113,
+        "residual16M": -7.000878090924651,
+        "endpointResidualM": -3.3517934651499814,
+        "actualEndpointErrorM": 4.160022995281842,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 108,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 65
+      },
+      "baseline": {
+        "initialResidualM": 6.9999999999595985,
+        "residual8M": 6.227688962710879,
+        "residual16M": 3.876649640576346,
+        "endpointResidualM": 3.481358552418662,
+        "actualEndpointErrorM": 11.538219022885535,
+        "controlEndpointErrorM": 8.056860470466873,
+        "movedParticles": 107,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999959336,
+        "residual8M": 6.292663266252738,
+        "residual16M": 3.9334735614547682,
+        "endpointResidualM": 3.416424338206113,
+        "actualEndpointErrorM": 10.928240798637937,
+        "controlEndpointErrorM": 7.511816460431824,
+        "movedParticles": 111,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 38
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000021227,
+        "residual8M": -8.000000000021224,
+        "residual16M": -8.000000000021192,
+        "endpointResidualM": -6.937260233729042,
+        "actualEndpointErrorM": 0.1274394953113145,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000015536,
+        "residual8M": -8.000000000015529,
+        "residual16M": -8.000000000015543,
+        "endpointResidualM": -7.017454714928313,
+        "actualEndpointErrorM": 0.13867643648163153,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 38
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999998817,
+        "residual8M": -6.999999999998781,
+        "residual16M": -6.999999999998781,
+        "endpointResidualM": -5.9409126913898405,
+        "actualEndpointErrorM": 0.8689080470278867,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999985885,
+        "residual8M": -6.999999999985899,
+        "residual16M": -6.99999999998591,
+        "endpointResidualM": -6.117139939919703,
+        "actualEndpointErrorM": 0.7616383385269785,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 38
+      },
+      "baseline": {
+        "initialResidualM": -5.000000000012005,
+        "residual8M": -5.000000000011983,
+        "residual16M": -5.000000000011994,
+        "endpointResidualM": -4.03320900186754,
+        "actualEndpointErrorM": 2.776611736550187,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -5.000000000013358,
+        "residual8M": -5.000000000013355,
+        "residual16M": -5.000000000013369,
+        "endpointResidualM": -4.424997666550681,
+        "actualEndpointErrorM": 2.4537806118960006,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 38
+      },
+      "baseline": {
+        "initialResidualM": 5.000000000011433,
+        "residual8M": 5.00000000001144,
+        "residual16M": 5.000000000011447,
+        "endpointResidualM": 4.148554718683094,
+        "actualEndpointErrorM": 10.958375457100821,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 5.0000000000286065,
+        "residual8M": 5.000000000028621,
+        "residual16M": 5.000000000028592,
+        "endpointResidualM": 4.137791671975862,
+        "actualEndpointErrorM": 11.016569950422543,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 38
+      },
+      "baseline": {
+        "initialResidualM": 6.9999999999894555,
+        "residual8M": 6.9999999999894555,
+        "residual16M": 6.999999999989484,
+        "endpointResidualM": 5.836288767099532,
+        "actualEndpointErrorM": 12.64610950551726,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999989498,
+        "residual8M": 6.999999999989491,
+        "residual16M": 6.999999999989491,
+        "endpointResidualM": 5.823801164524873,
+        "actualEndpointErrorM": 12.702579442971555,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 38
+      },
+      "baseline": {
+        "initialResidualM": 7.999999999969159,
+        "residual8M": 7.9999999999691696,
+        "residual16M": 7.9999999999691696,
+        "endpointResidualM": 6.694395054415146,
+        "actualEndpointErrorM": 13.504215792832873,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.999999999978005,
+        "residual8M": 7.999999999977973,
+        "residual16M": 7.999999999977966,
+        "endpointResidualM": 6.687020019940171,
+        "actualEndpointErrorM": 13.565798298386852,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 56
+      },
+      "baseline": {
+        "initialResidualM": -6.9999999999650555,
+        "residual8M": -6.999999999965077,
+        "residual16M": -6.99999999996507,
+        "endpointResidualM": -5.94091269135636,
+        "actualEndpointErrorM": 0.8689080470613675,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.9999999999804245,
+        "residual8M": -6.999999999980403,
+        "residual16M": -6.999999999980417,
+        "endpointResidualM": -6.117139939889306,
+        "actualEndpointErrorM": 0.7616383385573755,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 94,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 56
+      },
+      "baseline": {
+        "initialResidualM": 7.0000000000315055,
+        "residual8M": 7.000000000031491,
+        "residual16M": 6.996172307887761,
+        "endpointResidualM": 5.836288767128437,
+        "actualEndpointErrorM": 12.646109505546164,
+        "controlEndpointErrorM": 6.809820738417727,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000025558,
+        "residual8M": 7.003456190252528,
+        "residual16M": 6.539153911214761,
+        "endpointResidualM": 5.823801164554922,
+        "actualEndpointErrorM": 12.702579443001603,
+        "controlEndpointErrorM": 6.878778278446681,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 35
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000022911,
+        "residual8M": -8.000000000022911,
+        "residual16M": -8.000000000022872,
+        "endpointResidualM": -7.974667039574705,
+        "actualEndpointErrorM": 4.312133266474504,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000022911,
+        "residual8M": -8.000000000022911,
+        "residual16M": -8.000000000022872,
+        "endpointResidualM": -7.969698778614905,
+        "actualEndpointErrorM": 4.3071650055147614,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 35
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000052321,
+        "residual8M": -7.000000000052324,
+        "residual16M": -7.000000000052285,
+        "endpointResidualM": -6.974667039604142,
+        "actualEndpointErrorM": 3.312133266503956,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000052321,
+        "residual8M": -7.000000000052324,
+        "residual16M": -7.000000000052285,
+        "endpointResidualM": -6.974667039604157,
+        "actualEndpointErrorM": 3.312133266503956,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 35
+      },
+      "baseline": {
+        "initialResidualM": -5.000000000003983,
+        "residual8M": -5.000000000003965,
+        "residual16M": -5.000000000003933,
+        "endpointResidualM": -5.02079871578804,
+        "actualEndpointErrorM": 1.3582649426879385,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -5.000000000003983,
+        "residual8M": -5.000000000003965,
+        "residual16M": -5.000000000003933,
+        "endpointResidualM": -5.020798715788054,
+        "actualEndpointErrorM": 1.3582649426879385,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 35
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999998213,
+        "residual8M": 4.999999999998277,
+        "residual16M": 4.99999999999822,
+        "endpointResidualM": 4.966144674532053,
+        "actualEndpointErrorM": 8.62867844763226,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999998213,
+        "residual8M": 4.999999999998277,
+        "residual16M": 4.99999999999822,
+        "endpointResidualM": 4.966144674532039,
+        "actualEndpointErrorM": 8.62867844763226,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 35
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999938602,
+        "residual8M": 6.9999999999386375,
+        "residual16M": 6.999999999938634,
+        "endpointResidualM": 6.968697816223177,
+        "actualEndpointErrorM": 10.631231589323406,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999938602,
+        "residual8M": 6.9999999999386375,
+        "residual16M": 6.999999999938634,
+        "endpointResidualM": 6.9686978162231625,
+        "actualEndpointErrorM": 10.631231589323406,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 35
+      },
+      "baseline": {
+        "initialResidualM": 7.9999999999489475,
+        "residual8M": 7.9999999999490115,
+        "residual16M": 7.999999999948972,
+        "endpointResidualM": 7.9671915542286555,
+        "actualEndpointErrorM": 11.629725327328856,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.9999999999489475,
+        "residual8M": 7.9999999999490115,
+        "residual16M": 7.999999999948972,
+        "endpointResidualM": 7.967191554228641,
+        "actualEndpointErrorM": 11.629725327328856,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 52
+      },
+      "baseline": {
+        "initialResidualM": -6.99999999996977,
+        "residual8M": -6.999999999969706,
+        "residual16M": -6.999999999969759,
+        "endpointResidualM": -6.974667039521513,
+        "actualEndpointErrorM": 3.312133266421341,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999969685,
+        "residual8M": -6.999999999969752,
+        "residual16M": -6.999999999969688,
+        "endpointResidualM": -6.974667039521528,
+        "actualEndpointErrorM": 3.312133266421341,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 87,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 52
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000018453,
+        "residual8M": 7.00000000001846,
+        "residual16M": 6.981219412837412,
+        "endpointResidualM": 6.968697816302985,
+        "actualEndpointErrorM": 10.631231589403193,
+        "controlEndpointErrorM": 3.6625337731001224,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000018488,
+        "residual8M": 7.000000000018481,
+        "residual16M": 6.981219412837454,
+        "endpointResidualM": 6.968697816302971,
+        "actualEndpointErrorM": 10.631231589403193,
+        "controlEndpointErrorM": 3.6625337731000798,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 28
+      },
+      "baseline": {
+        "initialResidualM": -7.999999999966981,
+        "residual8M": -7.999999999966928,
+        "residual16M": -7.9999999999669775,
+        "endpointResidualM": -7.999999999966988,
+        "actualEndpointErrorM": 15.674681228032142,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.999999999966882,
+        "residual8M": -7.999999999966935,
+        "residual16M": -7.977018673516465,
+        "endpointResidualM": -7.726075648025642,
+        "actualEndpointErrorM": 15.421543302303732,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 28
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999998863,
+        "residual8M": -6.999999999998803,
+        "residual16M": -6.99999999999887,
+        "endpointResidualM": -6.999999999998863,
+        "actualEndpointErrorM": 14.674681228064017,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.9999999999987566,
+        "residual8M": -6.999999999998796,
+        "residual16M": -6.977018673548329,
+        "endpointResidualM": -6.669802802102289,
+        "actualEndpointErrorM": 14.36527045638038,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 28
+      },
+      "baseline": {
+        "initialResidualM": -5.000000000001329,
+        "residual8M": -5.0000000000012825,
+        "residual16M": -5.0000000000013145,
+        "endpointResidualM": -5.000000000001329,
+        "actualEndpointErrorM": 12.674681228066483,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -5.000000000001222,
+        "residual8M": -5.000000000001311,
+        "residual16M": -4.977018673550798,
+        "endpointResidualM": -4.8778041626240025,
+        "actualEndpointErrorM": 12.573271816902093,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 28
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999996348,
+        "residual8M": 4.999999999996394,
+        "residual16M": 4.999999999996408,
+        "endpointResidualM": 4.999999999996412,
+        "actualEndpointErrorM": 2.674681228068742,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.9999999999964295,
+        "residual8M": 4.997999007638885,
+        "residual16M": 5.403736235754327,
+        "endpointResidualM": 5.404973957668737,
+        "actualEndpointErrorM": 2.290493696609353,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 28
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999989434,
+        "residual8M": 6.999999999989498,
+        "residual16M": 6.999999999989502,
+        "endpointResidualM": 7.0021757950841845,
+        "actualEndpointErrorM": 0.6725054329809694,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999989498,
+        "residual8M": 6.9992814302614015,
+        "residual16M": 7.226990435472725,
+        "endpointResidualM": 7.089252732806585,
+        "actualEndpointErrorM": 0.6062149214715049,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 28
+      },
+      "baseline": {
+        "initialResidualM": 8.000000000051706,
+        "residual8M": 8.000000000051767,
+        "residual16M": 8.000000000051788,
+        "endpointResidualM": 8.01263985037172,
+        "actualEndpointErrorM": 0.3379586223065658,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000051791,
+        "residual8M": 8.000000000051756,
+        "residual16M": 8.344316859493961,
+        "endpointResidualM": 8.085748248688226,
+        "actualEndpointErrorM": 0.39028059441013596,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 41
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000024013,
+        "residual8M": -7.000000000024009,
+        "residual16M": -7.000000000024006,
+        "endpointResidualM": -7.000000000024045,
+        "actualEndpointErrorM": 14.674681228089199,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000024013,
+        "residual8M": -6.997218331193682,
+        "residual16M": -6.997218331193679,
+        "endpointResidualM": -6.689511991989406,
+        "actualEndpointErrorM": 14.384979646267496,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 69,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 41
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000011834,
+        "residual8M": 7.000000000011749,
+        "residual16M": 7.0000000000117595,
+        "endpointResidualM": 7.0021757951083075,
+        "actualEndpointErrorM": 0.6725054329568465,
+        "controlEndpointErrorM": 7.674681228065154,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000010832,
+        "residual8M": 7.170149936332113,
+        "residual16M": 7.17014993633213,
+        "endpointResidualM": 7.161459936033808,
+        "actualEndpointErrorM": 0.5340077182442826,
+        "controlEndpointErrorM": 7.69546765427809,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 34
+      },
+      "baseline": {
+        "initialResidualM": -7.999999999985967,
+        "residual8M": -7.999999999985981,
+        "residual16M": -7.999999999985963,
+        "endpointResidualM": -7.383632918644821,
+        "actualEndpointErrorM": 5.595548600842882,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.999999999975639,
+        "residual8M": -7.983850789312136,
+        "residual16M": -7.983850789312115,
+        "endpointResidualM": -7.487431517805248,
+        "actualEndpointErrorM": 5.738642327137747,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 34
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999988518,
+        "residual8M": -6.99999999998855,
+        "residual16M": -6.999999999988514,
+        "endpointResidualM": -6.38363291864809,
+        "actualEndpointErrorM": 4.595548600846158,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999982773,
+        "residual8M": -6.983850789319291,
+        "residual16M": -6.983850789319256,
+        "endpointResidualM": -6.509227210673906,
+        "actualEndpointErrorM": 4.760438020006404,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 34
+      },
+      "baseline": {
+        "initialResidualM": -4.99999999995304,
+        "residual8M": -4.999999999953076,
+        "residual16M": -4.999999999953026,
+        "endpointResidualM": -4.383632918614033,
+        "actualEndpointErrorM": 2.5955486008120943,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999950095,
+        "residual8M": -4.9838507892865564,
+        "residual16M": -4.98385078928656,
+        "endpointResidualM": -4.493837008595193,
+        "actualEndpointErrorM": 2.7450478179276914,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 34
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999999936,
+        "residual8M": 4.999999999999929,
+        "residual16M": 4.999999999999904,
+        "endpointResidualM": 3.287561014341115,
+        "actualEndpointErrorM": 5.075645332143047,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999979792,
+        "residual8M": 5.016149210643309,
+        "residual16M": 5.016149210643334,
+        "endpointResidualM": 3.176868972558559,
+        "actualEndpointErrorM": 4.9256581632260605,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 34
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999994806,
+        "residual8M": 6.999999999994792,
+        "residual16M": 6.999999999994774,
+        "endpointResidualM": 4.695491920466075,
+        "actualEndpointErrorM": 6.483576238268014,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999981014,
+        "residual8M": 7.016149210644521,
+        "residual16M": 7.016149210644535,
+        "endpointResidualM": 4.585334366312587,
+        "actualEndpointErrorM": 6.334123556980089,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 34
+      },
+      "baseline": {
+        "initialResidualM": 7.999999999992244,
+        "residual8M": 7.999999999992227,
+        "residual16M": 7.999999999992202,
+        "endpointResidualM": 5.344008763691178,
+        "actualEndpointErrorM": 7.13209308149311,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.999999999988322,
+        "residual8M": 8.01614921065184,
+        "residual16M": 8.01614921065184,
+        "endpointResidualM": 5.255093919751779,
+        "actualEndpointErrorM": 7.003883110419281,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 51
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000004405,
+        "residual8M": -7.000000000004366,
+        "residual16M": -7.000000000004391,
+        "endpointResidualM": -6.38363291866397,
+        "actualEndpointErrorM": 4.595548600862031,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000031104,
+        "residual8M": -7.000000000031132,
+        "residual16M": -7.000000000031108,
+        "endpointResidualM": -6.525535510589897,
+        "actualEndpointErrorM": 4.776746319922395,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "steps": 85,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 51
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999984627,
+        "residual8M": 6.999999999984617,
+        "residual16M": 6.99999999998461,
+        "endpointResidualM": 4.695491920438492,
+        "actualEndpointErrorM": 6.483576238240431,
+        "controlEndpointErrorM": 1.7880843178019319,
+        "movedParticles": 108,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999986645,
+        "residual8M": 6.999999999986642,
+        "residual16M": 6.999999999986649,
+        "endpointResidualM": 4.563948358616308,
+        "actualEndpointErrorM": 6.31273754928381,
+        "controlEndpointErrorM": 1.7487891906675017,
+        "movedParticles": 112,
+        "gridAppliedAfterInjection": 0
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -7.9999999999968985,
+        "residual8M": -7.99999999999687,
+        "residual16M": -7.999999999996891,
+        "endpointResidualM": -7.990599092344716,
+        "actualEndpointErrorM": 9.792571491797098,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.9999999999905675,
+        "residual8M": -8.079230753592451,
+        "residual16M": -8.106458524107047,
+        "endpointResidualM": -8.558697407655721,
+        "actualEndpointErrorM": 10.19035200456701,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999969415,
+        "residual8M": -6.9999999999694005,
+        "residual16M": -6.999999999969422,
+        "endpointResidualM": -6.990599092317261,
+        "actualEndpointErrorM": 8.792571491769635,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999985295,
+        "residual8M": -7.045774705920312,
+        "residual16M": -7.073002476434933,
+        "endpointResidualM": -7.526444400950993,
+        "actualEndpointErrorM": 9.158098997862275,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -5.000000000005539,
+        "residual8M": -5.000000000005503,
+        "residual16M": -5.000000000005521,
+        "endpointResidualM": -4.990599092353342,
+        "actualEndpointErrorM": 6.792571491805745,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -5.0000000000122675,
+        "residual8M": -5.010012021271933,
+        "residual16M": -5.036934327344035,
+        "endpointResidualM": -4.3644465021103755,
+        "actualEndpointErrorM": 5.996101099021658,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999955566,
+        "residual8M": 4.999999999955595,
+        "residual16M": 4.999999999955591,
+        "endpointResidualM": 4.90030904875681,
+        "actualEndpointErrorM": 3.0983366493043647,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999975479,
+        "residual8M": 5.0041652759686315,
+        "residual16M": 4.9769375054540355,
+        "endpointResidualM": 4.612028413750394,
+        "actualEndpointErrorM": 2.980373816839112,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000000387,
+        "residual8M": 7.000000000000412,
+        "residual16M": 7.000000000000398,
+        "endpointResidualM": 6.90322595561512,
+        "actualEndpointErrorM": 5.101253556162575,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000008271,
+        "residual8M": 7.019988744565914,
+        "residual16M": 6.992760974051318,
+        "endpointResidualM": 6.487924291602106,
+        "actualEndpointErrorM": 4.856269694690823,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 7.999999999977284,
+        "residual8M": 7.999999999977302,
+        "residual16M": 7.999999999977284,
+        "endpointResidualM": 7.901204527329526,
+        "actualEndpointErrorM": 6.099232127877194,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.999999999994355,
+        "residual8M": 7.999999999994351,
+        "residual16M": 7.972772229479755,
+        "endpointResidualM": 7.410000741342358,
+        "actualEndpointErrorM": 5.778346144431097,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999967375,
+        "residual8M": -6.999999999967322,
+        "residual16M": -6.999999999967336,
+        "endpointResidualM": -6.990599092315172,
+        "actualEndpointErrorM": 8.79257149176756,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999964469,
+        "residual8M": -6.990365359115561,
+        "residual16M": -7.602602968984719,
+        "endpointResidualM": -7.455118327759109,
+        "actualEndpointErrorM": 9.086772924670392,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": 7.00000000000243,
+        "residual8M": 7.000000000002487,
+        "residual16M": 7.000000000002522,
+        "endpointResidualM": 6.9032259556759215,
+        "actualEndpointErrorM": 5.101253556223334,
+        "controlEndpointErrorM": 1.8019723994523957,
+        "movedParticles": 143,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999986084,
+        "residual8M": 6.9999999999860805,
+        "residual16M": 6.34341346250681,
+        "endpointResidualM": 6.489450646787979,
+        "actualEndpointErrorM": 4.857796049876697,
+        "controlEndpointErrorM": 1.6316545969112823,
+        "movedParticles": 144,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000011813,
+        "residual8M": -8.000000000011795,
+        "residual16M": -8.00000000001178,
+        "endpointResidualM": -8.055395827826672,
+        "actualEndpointErrorM": 6.891344212998739,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000004441,
+        "residual8M": -8.093380620004499,
+        "residual16M": -8.08672541038467,
+        "endpointResidualM": -7.288554308518549,
+        "actualEndpointErrorM": 6.253162613548902,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000014214,
+        "residual8M": -7.0000000000142215,
+        "residual16M": -7.000000000014214,
+        "endpointResidualM": -7.055395827829102,
+        "actualEndpointErrorM": 5.891344213001169,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.0000000000066365,
+        "residual8M": -7.093380620006712,
+        "residual16M": -7.093380620006695,
+        "endpointResidualM": -6.422134020548313,
+        "actualEndpointErrorM": 5.386742325578666,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999991953,
+        "residual8M": -4.999999999991967,
+        "residual16M": -4.9999999999919424,
+        "endpointResidualM": -5.055395827806834,
+        "actualEndpointErrorM": 3.8913442129789004,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999985022,
+        "residual8M": -5.093380619985119,
+        "residual16M": -5.093380619985098,
+        "endpointResidualM": -4.6378693801823445,
+        "actualEndpointErrorM": 3.6024776852126976,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": 5.00000000000183,
+        "residual8M": 5.000000000001805,
+        "residual16M": 5.000000000001826,
+        "endpointResidualM": 4.129618790486653,
+        "actualEndpointErrorM": 5.293670405314586,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.9999999999817355,
+        "residual8M": 4.9066193799816595,
+        "residual16M": 4.906619379981677,
+        "endpointResidualM": 4.027510108315525,
+        "actualEndpointErrorM": 5.062901803285172,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000015049,
+        "residual8M": 7.000000000015021,
+        "residual16M": 7.000000000015049,
+        "endpointResidualM": 5.650413562579068,
+        "actualEndpointErrorM": 6.814465177407001,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999995161,
+        "residual8M": 6.90661937999511,
+        "residual16M": 6.906619379995114,
+        "endpointResidualM": 5.76973497666345,
+        "actualEndpointErrorM": 6.805126671633097,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": 7.999999999994515,
+        "residual8M": 7.999999999994515,
+        "residual16M": 7.999999999994529,
+        "endpointResidualM": 6.488574439945452,
+        "actualEndpointErrorM": 7.6526260547734,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.999999999992635,
+        "residual8M": 7.906619379992566,
+        "residual16M": 7.906619379992584,
+        "endpointResidualM": 6.620910278525017,
+        "actualEndpointErrorM": 7.656301973494664,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 50
+      },
+      "baseline": {
+        "initialResidualM": -7.0000000000562785,
+        "residual8M": -7.000000000056282,
+        "residual16M": -7.000000000056289,
+        "endpointResidualM": -7.055395827871159,
+        "actualEndpointErrorM": 5.891344213043226,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000041609,
+        "residual8M": -7.00000000004162,
+        "residual16M": -6.872513741532913,
+        "endpointResidualM": -6.415046760170604,
+        "actualEndpointErrorM": 5.379655065200957,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 83,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 50
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000000114,
+        "residual8M": 7.000000000000092,
+        "residual16M": 6.966212871298708,
+        "endpointResidualM": 5.65041356258628,
+        "actualEndpointErrorM": 6.814465177414213,
+        "controlEndpointErrorM": 1.1640516148279332,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.00000000001495,
+        "residual8M": 7.000000000014957,
+        "residual16M": 7.061134971051629,
+        "endpointResidualM": 5.8060461964073085,
+        "actualEndpointErrorM": 6.841437891376955,
+        "controlEndpointErrorM": 1.035391694969647,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -7.999999999985775,
+        "residual8M": -7.999999999985761,
+        "residual16M": -7.999999999985764,
+        "endpointResidualM": -7.9999999999857465,
+        "actualEndpointErrorM": 10.432654513792016,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.99999999996945,
+        "residual8M": -8.00119315327159,
+        "residual16M": -8.169698627401718,
+        "endpointResidualM": -7.896813264289733,
+        "actualEndpointErrorM": 10.20881461021213,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 8
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999952038,
+        "residual8M": -6.999999999952024,
+        "residual16M": -6.999999999952035,
+        "endpointResidualM": -6.999999999952017,
+        "actualEndpointErrorM": 9.432654513758287,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999962871,
+        "residual8M": -7.000498809710098,
+        "residual16M": -7.167900113790488,
+        "endpointResidualM": -6.99743899165108,
+        "actualEndpointErrorM": 9.309440337573477,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -4.99999999998402,
+        "residual8M": -4.999999999984009,
+        "residual16M": -4.999999999983999,
+        "endpointResidualM": -4.999999999984013,
+        "actualEndpointErrorM": 7.432654513790283,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999976108,
+        "residual8M": -5.00009237152198,
+        "residual16M": -5.162936436049307,
+        "endpointResidualM": -5.1505159029778795,
+        "actualEndpointErrorM": 7.4625172489002765,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 7
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999937437,
+        "residual8M": 4.999999999937444,
+        "residual16M": 4.999999999937451,
+        "endpointResidualM": 4.968192199681923,
+        "actualEndpointErrorM": 2.535537685875653,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999934676,
+        "residual8M": 5.000990144674276,
+        "residual16M": 4.8366600043526695,
+        "endpointResidualM": 4.649118967245997,
+        "actualEndpointErrorM": 2.3371176213236,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000013944,
+        "residual8M": 7.0000000000139515,
+        "residual16M": 7.000000000013962,
+        "endpointResidualM": 6.9644526235213675,
+        "actualEndpointErrorM": 4.531798109715098,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.0000000000306315,
+        "residual8M": 7.004518272421475,
+        "residual16M": 6.835630322764363,
+        "endpointResidualM": 6.346547026134047,
+        "actualEndpointErrorM": 4.03454568021165,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 7.99999999999342,
+        "residual8M": 7.999999999993435,
+        "residual16M": 7.999999999993456,
+        "endpointResidualM": 7.961201236278576,
+        "actualEndpointErrorM": 5.528546722472306,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000018918,
+        "residual8M": 8.708053955328683,
+        "residual16M": 8.539166005671593,
+        "endpointResidualM": 7.953482047858678,
+        "actualEndpointErrorM": 5.641480701936281,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 46
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000005091,
+        "residual8M": -7.00000000000508,
+        "residual16M": -7.000000000005077,
+        "endpointResidualM": -7.000000000005052,
+        "actualEndpointErrorM": 9.432654513811322,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999993705,
+        "residual8M": -6.971749229624269,
+        "residual16M": -6.950078389814578,
+        "endpointResidualM": -6.971311808976218,
+        "actualEndpointErrorM": 9.283313154898615,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 46
+      },
+      "baseline": {
+        "initialResidualM": 7.0000000000061,
+        "residual8M": 7.000000000006111,
+        "residual16M": 7.000000000006075,
+        "endpointResidualM": 6.9644526235135515,
+        "actualEndpointErrorM": 4.531798109707282,
+        "controlEndpointErrorM": 2.43265451380627,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.99999999999859,
+        "residual8M": 6.295625421968296,
+        "residual16M": 7.114196716953558,
+        "endpointResidualM": 6.355083007841976,
+        "actualEndpointErrorM": 4.0430816619195795,
+        "controlEndpointErrorM": 2.312001345922397,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -7.999999999954159,
+        "residual8M": -7.99999999995417,
+        "residual16M": -7.999999999954188,
+        "endpointResidualM": -7.9675119437209645,
+        "actualEndpointErrorM": 9.99386081430523,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.999999999954159,
+        "residual8M": -7.99999999995417,
+        "residual16M": -7.999662338411472,
+        "endpointResidualM": -8.020759541073708,
+        "actualEndpointErrorM": 9.993572995059438,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999943295,
+        "residual8M": -6.999999999943306,
+        "residual16M": -6.999999999943324,
+        "endpointResidualM": -6.967511943710107,
+        "actualEndpointErrorM": 8.993860814294372,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999943295,
+        "residual8M": -6.999999999943306,
+        "residual16M": -6.999041398379976,
+        "endpointResidualM": -6.45826365812588,
+        "actualEndpointErrorM": 8.431077112111602,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999982538,
+        "residual8M": -4.999999999982563,
+        "residual16M": -4.999999999982538,
+        "endpointResidualM": -4.967511943749315,
+        "actualEndpointErrorM": 6.99386081433358,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999982538,
+        "residual8M": -4.999999999982563,
+        "residual16M": -4.994675937962548,
+        "endpointResidualM": -4.478710119808937,
+        "actualEndpointErrorM": 6.451523573794667,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999963325,
+        "residual8M": 4.999999999963336,
+        "residual16M": 4.999999999963325,
+        "endpointResidualM": 4.948076425149615,
+        "actualEndpointErrorM": 2.9217275545653507,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999963325,
+        "residual8M": 4.999999999963336,
+        "residual16M": 4.999999999963325,
+        "endpointResidualM": 4.6070567232875845,
+        "actualEndpointErrorM": 2.634243269301855,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000022663,
+        "residual8M": 7.000000000022656,
+        "residual16M": 7.000000000022656,
+        "endpointResidualM": 6.513847843720384,
+        "actualEndpointErrorM": 4.48749897313612,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000022663,
+        "residual8M": 7.000000000022656,
+        "residual16M": 7.000105654714975,
+        "endpointResidualM": 6.464736782407918,
+        "actualEndpointErrorM": 4.491923328422189,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 8.00000000002575,
+        "residual8M": 8.000000000025736,
+        "residual16M": 8.000000000025725,
+        "endpointResidualM": 6.897333219607695,
+        "actualEndpointErrorM": 4.870984349023431,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.00000000002575,
+        "residual8M": 8.000000000025736,
+        "residual16M": 8.000337661568427,
+        "endpointResidualM": 6.949361355377562,
+        "actualEndpointErrorM": 4.976547901391832,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": -7.0000000000254765,
+        "residual8M": -7.000000000025448,
+        "residual16M": -7.0000000000254765,
+        "endpointResidualM": -6.967511943792239,
+        "actualEndpointErrorM": 8.993860814376504,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.0000000000254765,
+        "residual8M": -7.000977713924403,
+        "residual16M": -6.902849363494596,
+        "endpointResidualM": -6.45921432831004,
+        "actualEndpointErrorM": 8.43202778229577,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999997566,
+        "residual8M": 6.999999999997598,
+        "residual16M": 6.999999999997577,
+        "endpointResidualM": 6.513847843669751,
+        "actualEndpointErrorM": 4.4874989730854935,
+        "controlEndpointErrorM": 2.026348870584272,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999997566,
+        "residual8M": 7.015895989640619,
+        "residual16M": 7.108923056104274,
+        "endpointResidualM": 6.464689949392493,
+        "actualEndpointErrorM": 4.491876495406764,
+        "controlEndpointErrorM": 1.9728134539857294,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -7.999999999991424,
+        "residual8M": -7.999999999991385,
+        "residual16M": -7.999999999991395,
+        "endpointResidualM": -7.991545095624893,
+        "actualEndpointErrorM": 9.828236660953344,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.99999999998683,
+        "residual8M": -7.9999999999868265,
+        "residual16M": -8.278709407747407,
+        "endpointResidualM": -7.8716934781502275,
+        "actualEndpointErrorM": 9.579194392133829,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 7
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999956962,
+        "residual8M": -6.999999999956909,
+        "residual16M": -6.999999999956934,
+        "endpointResidualM": -6.991545095590396,
+        "actualEndpointErrorM": 8.828236660918847,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999970402,
+        "residual8M": -6.999999999970399,
+        "residual16M": -7.27826752926936,
+        "endpointResidualM": -6.972344502305326,
+        "actualEndpointErrorM": 8.679845416288927,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999997186,
+        "residual8M": -4.999999999997144,
+        "residual16M": -4.999999999997179,
+        "endpointResidualM": -4.991545095630677,
+        "actualEndpointErrorM": 6.8282366609591065,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999992216,
+        "residual8M": -4.9999999999922125,
+        "residual16M": -5.278053567878985,
+        "endpointResidualM": -5.146689256958503,
+        "actualEndpointErrorM": 6.854190170942104,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 7
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999947196,
+        "residual8M": 4.999999999947235,
+        "residual16M": 4.999999999947217,
+        "endpointResidualM": 4.993576242482952,
+        "actualEndpointErrorM": 3.1568846771545367,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999961119,
+        "residual8M": 4.999999999961137,
+        "residual16M": 4.577981529122688,
+        "endpointResidualM": 4.58761739998566,
+        "actualEndpointErrorM": 2.880116486002059,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 6.99999999999795,
+        "residual8M": 6.999999999997993,
+        "residual16M": 6.999999999997964,
+        "endpointResidualM": 6.970639293467087,
+        "actualEndpointErrorM": 5.133947728138651,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000002341,
+        "residual8M": 7.00000000000237,
+        "residual16M": 6.603893088374463,
+        "endpointResidualM": 6.395707758933035,
+        "actualEndpointErrorM": 4.688206844949434,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 7.99999999998693,
+        "residual8M": 7.999999999986958,
+        "residual16M": 7.999999999986958,
+        "endpointResidualM": 7.969003440283352,
+        "actualEndpointErrorM": 6.132311874954915,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000000664,
+        "residual8M": 8.000000000000682,
+        "residual16M": 7.721993559420085,
+        "endpointResidualM": 7.942183680351285,
+        "actualEndpointErrorM": 6.234682766367683,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999973472,
+        "residual8M": -6.9999999999735,
+        "residual16M": -6.999999999973532,
+        "endpointResidualM": -6.991545095607016,
+        "actualEndpointErrorM": 8.828236660935453,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.99999999996712,
+        "residual8M": -6.733111390154754,
+        "residual16M": -6.947814912083103,
+        "endpointResidualM": -6.958676466202398,
+        "actualEndpointErrorM": 8.666177380186,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 78,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000017888,
+        "residual8M": 7.000000000017842,
+        "residual16M": 7.000000000017806,
+        "endpointResidualM": 6.970639293486869,
+        "actualEndpointErrorM": 5.133947728158432,
+        "controlEndpointErrorM": 1.8366915653284224,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000025786,
+        "residual8M": 7.229846634390732,
+        "residual16M": 7.122181801348667,
+        "endpointResidualM": 6.464387104593008,
+        "actualEndpointErrorM": 4.756886190609407,
+        "controlEndpointErrorM": 1.7075009139836013,
+        "movedParticles": 159,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000002238,
+        "residual8M": -8.000000000002231,
+        "residual16M": -8.000000000002249,
+        "endpointResidualM": -7.927138291001121,
+        "actualEndpointErrorM": 9.940915298656698,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000002323,
+        "residual8M": -7.910927946287266,
+        "residual16M": -7.908638784335533,
+        "endpointResidualM": -8.097095573489298,
+        "actualEndpointErrorM": 9.937232748296921,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999986599,
+        "residual8M": -6.999999999986578,
+        "residual16M": -6.999999999986567,
+        "endpointResidualM": -6.927138290985468,
+        "actualEndpointErrorM": 8.940915298641045,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999986549,
+        "residual8M": -6.910927946271492,
+        "residual16M": -6.905861669034355,
+        "endpointResidualM": -7.088323471054139,
+        "actualEndpointErrorM": 8.928460645861776,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -5.0000000000095355,
+        "residual8M": -5.000000000009514,
+        "residual16M": -5.000000000009521,
+        "endpointResidualM": -4.927138291008411,
+        "actualEndpointErrorM": 6.940915298663988,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -5.0000000000094715,
+        "residual8M": -4.9109279462944215,
+        "residual16M": -4.910927946294425,
+        "endpointResidualM": -4.275726979163004,
+        "actualEndpointErrorM": 6.115864153970641,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999984265,
+        "residual8M": 4.999999999984286,
+        "residual16M": 4.999999999984244,
+        "endpointResidualM": 4.899881841875278,
+        "actualEndpointErrorM": 2.886104834219701,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999984308,
+        "residual8M": 4.417052585489014,
+        "residual16M": 4.417052585488992,
+        "endpointResidualM": 4.51815093906481,
+        "actualEndpointErrorM": 2.678013764257173,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999988461,
+        "residual8M": 6.999999999988457,
+        "residual16M": 6.999999999988443,
+        "endpointResidualM": 6.881572077189446,
+        "actualEndpointErrorM": 4.867795069533869,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999988599,
+        "residual8M": 6.613203629682051,
+        "residual16M": 6.613203629682044,
+        "endpointResidualM": 6.668062685636137,
+        "actualEndpointErrorM": 4.8279255108285,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 7.999999999995065,
+        "residual8M": 7.999999999995062,
+        "residual16M": 7.999999999995058,
+        "endpointResidualM": 7.687850423690968,
+        "actualEndpointErrorM": 5.674073416035384,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.999999999995136,
+        "residual8M": 7.482470562339309,
+        "residual16M": 7.482470562339305,
+        "endpointResidualM": 7.538090948445699,
+        "actualEndpointErrorM": 5.697953773638062,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 48
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999963791,
+        "residual8M": -6.999999999963787,
+        "residual16M": -6.999999999963773,
+        "endpointResidualM": -6.927138290962674,
+        "actualEndpointErrorM": 8.94091529861825,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999986063,
+        "residual8M": -6.999999999986056,
+        "residual16M": -7.148491210184648,
+        "endpointResidualM": -7.17820575200215,
+        "actualEndpointErrorM": 9.01834292680978,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 80,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 48
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999956987,
+        "residual8M": 6.999999999956998,
+        "residual16M": 6.999999999957005,
+        "endpointResidualM": 6.881572077144064,
+        "actualEndpointErrorM": 4.867795069488494,
+        "controlEndpointErrorM": 2.0137770076555768,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.999999999981707,
+        "residual8M": 6.999999999981725,
+        "residual16M": 6.233157693485275,
+        "endpointResidualM": 6.683923699689579,
+        "actualEndpointErrorM": 4.843786524881942,
+        "controlEndpointErrorM": 1.8401371748076372,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000025448,
+        "residual8M": -8.00000000002548,
+        "residual16M": -8.000000000025473,
+        "endpointResidualM": -7.979023891471293,
+        "actualEndpointErrorM": 9.193811861611572,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.00000000000352,
+        "residual8M": -8.003012447232184,
+        "residual16M": -7.9893321237084045,
+        "endpointResidualM": -8.211437019686578,
+        "actualEndpointErrorM": 9.421481887256228,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999982673,
+        "residual8M": -6.999999999982705,
+        "residual16M": -6.999999999982695,
+        "endpointResidualM": -6.9790238914285325,
+        "actualEndpointErrorM": 8.193811861568811,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999971532,
+        "residual8M": -7.003012447200202,
+        "residual16M": -6.1337978776397435,
+        "endpointResidualM": -5.774226894007896,
+        "actualEndpointErrorM": 6.984271761577546,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999960412,
+        "residual8M": -4.9999999999604405,
+        "residual16M": -4.9999999999604405,
+        "endpointResidualM": -4.979023891406278,
+        "actualEndpointErrorM": 6.193811861546557,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999968676,
+        "residual8M": -5.003012447197353,
+        "residual16M": -4.405063588112249,
+        "endpointResidualM": -4.426449211041529,
+        "actualEndpointErrorM": 5.636494078611179,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999942975,
+        "residual8M": 4.9999999999429185,
+        "residual16M": 4.9999999999429505,
+        "endpointResidualM": 4.982705604931333,
+        "actualEndpointErrorM": 3.767917634791054,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999933205,
+        "residual8M": 5.602877053789459,
+        "residual16M": 5.602207571544888,
+        "endpointResidualM": 4.555849930893082,
+        "actualEndpointErrorM": 3.345805063323432,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999992376,
+        "residual8M": 6.999999999992287,
+        "residual16M": 6.999999999992326,
+        "endpointResidualM": 6.985428732053954,
+        "actualEndpointErrorM": 5.7706407619136755,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000003762,
+        "residual8M": 7.38540103219486,
+        "residual16M": 7.384731549950288,
+        "endpointResidualM": 6.947855936375916,
+        "actualEndpointErrorM": 5.737811068806266,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 7.999999999998977,
+        "residual8M": 7.999999999998927,
+        "residual16M": 7.9999999999989555,
+        "endpointResidualM": 7.982177344838263,
+        "actualEndpointErrorM": 6.767389374697984,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000019124,
+        "residual8M": 8.297901275099097,
+        "residual16M": 8.297231792854532,
+        "endpointResidualM": 7.857444489771588,
+        "actualEndpointErrorM": 6.647399622201938,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999972449,
+        "residual8M": -6.999999999972438,
+        "residual16M": -6.999999999972438,
+        "endpointResidualM": -6.979023891418265,
+        "actualEndpointErrorM": 8.193811861558544,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999976353,
+        "residual8M": -6.196564073161127,
+        "residual16M": -5.731136026185311,
+        "endpointResidualM": -6.095140613011964,
+        "actualEndpointErrorM": 7.305185480581613,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000002537,
+        "residual8M": 7.000000000002565,
+        "residual16M": 7.000000000002565,
+        "endpointResidualM": 6.985428732064179,
+        "actualEndpointErrorM": 5.7706407619239,
+        "controlEndpointErrorM": 1.2147879701402786,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 6.99999999999725,
+        "residual8M": 6.863194363408773,
+        "residual16M": 7.084115773564562,
+        "endpointResidualM": 6.944922214894852,
+        "actualEndpointErrorM": 5.734877347325202,
+        "controlEndpointErrorM": 1.2100448675696498,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000000309,
+        "residual8M": -8.000000000000323,
+        "residual16M": -8.000000000000306,
+        "endpointResidualM": -7.984925437282342,
+        "actualEndpointErrorM": 10.604373116229468,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000006171,
+        "residual8M": -8.013845076409059,
+        "residual16M": -8.013845076409059,
+        "endpointResidualM": -8.150700254247845,
+        "actualEndpointErrorM": 10.509578191056221,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999966558,
+        "residual8M": -6.999999999966565,
+        "residual16M": -6.999999999966583,
+        "endpointResidualM": -6.984925437248606,
+        "actualEndpointErrorM": 9.604373116195731,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999962252,
+        "residual8M": -7.013845076365147,
+        "residual16M": -7.013845076365147,
+        "endpointResidualM": -7.145580102550852,
+        "actualEndpointErrorM": 9.504458039359228,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999989502,
+        "residual8M": -4.999999999989505,
+        "residual16M": -4.999999999989512,
+        "endpointResidualM": -4.984925437271542,
+        "actualEndpointErrorM": 7.604373116218667,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999985814,
+        "residual8M": -5.0138450763886695,
+        "residual16M": -5.013845076388694,
+        "endpointResidualM": -5.118267746265609,
+        "actualEndpointErrorM": 7.477145683073985,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 4.99999999998618,
+        "residual8M": 4.999999999986176,
+        "residual16M": 4.999999999986198,
+        "endpointResidualM": 4.9754416451697665,
+        "actualEndpointErrorM": 2.3559939662226412,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999970697,
+        "residual8M": 4.5072015926669735,
+        "residual16M": 4.507201592666945,
+        "endpointResidualM": 4.277971026377486,
+        "actualEndpointErrorM": 1.9190930895691096,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000026525,
+        "residual8M": 7.0000000000265175,
+        "residual16M": 7.000000000026528,
+        "endpointResidualM": 7.083412559063063,
+        "actualEndpointErrorM": 4.463964880115938,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000010978,
+        "residual8M": 6.241087707895961,
+        "residual16M": 6.241087707895936,
+        "endpointResidualM": 6.826192142780279,
+        "actualEndpointErrorM": 4.467314205971903,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 31
+      },
+      "baseline": {
+        "initialResidualM": 8.00000000000604,
+        "residual8M": 8.000000000006015,
+        "residual16M": 8.000000000006022,
+        "endpointResidualM": 7.539818421951992,
+        "actualEndpointErrorM": 4.920370743004874,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.9999999999814335,
+        "residual8M": 7.9746723990368515,
+        "residual16M": 7.974672399036841,
+        "endpointResidualM": 7.309305745176502,
+        "actualEndpointErrorM": 4.950427808368126,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 46
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000001556,
+        "residual8M": -7.000000000001535,
+        "residual16M": -7.000000000001535,
+        "endpointResidualM": -6.984925437283586,
+        "actualEndpointErrorM": 9.604373116230711,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.0000000000159055,
+        "residual8M": -7.000000000015927,
+        "residual16M": -7.098732090060995,
+        "endpointResidualM": -7.131989853808982,
+        "actualEndpointErrorM": 9.490867790617372,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 77,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 46
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000000583,
+        "residual8M": 7.000000000000618,
+        "residual16M": 7.000000000000611,
+        "endpointResidualM": 7.083412559041257,
+        "actualEndpointErrorM": 4.463964880094132,
+        "controlEndpointErrorM": 2.619447678947168,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.00000000001096,
+        "residual8M": 7.000000000010935,
+        "residual16M": 6.234419343275867,
+        "endpointResidualM": 6.82398329831031,
+        "actualEndpointErrorM": 4.465105361501934,
+        "controlEndpointErrorM": 2.3588779368083763,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 30
+      },
+      "baseline": {
+        "initialResidualM": -7.9999999999515765,
+        "residual8M": -7.999999999951562,
+        "residual16M": -7.999999999951594,
+        "endpointResidualM": -7.999999999951555,
+        "actualEndpointErrorM": 11.671497165978003,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.999999999964707,
+        "residual8M": -7.999999999964697,
+        "residual16M": -8.10742344530501,
+        "endpointResidualM": -8.169954096345357,
+        "actualEndpointErrorM": 11.59173483038667,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 30
+      },
+      "baseline": {
+        "initialResidualM": -6.9999999999449685,
+        "residual8M": -6.999999999944947,
+        "residual16M": -6.999999999944983,
+        "endpointResidualM": -6.999999999944976,
+        "actualEndpointErrorM": 10.671497165971424,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999948642,
+        "residual8M": -6.999999999948638,
+        "residual16M": -7.106533806567995,
+        "endpointResidualM": -7.166669734391043,
+        "actualEndpointErrorM": 10.588450468432335,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 30
+      },
+      "baseline": {
+        "initialResidualM": -4.99999999995886,
+        "residual8M": -4.999999999958845,
+        "residual16M": -4.999999999958877,
+        "endpointResidualM": -4.999999999958867,
+        "actualEndpointErrorM": 8.671497165985315,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999962945,
+        "residual8M": -4.9999999999629345,
+        "residual16M": -5.10180150931042,
+        "endpointResidualM": -5.148521542357848,
+        "actualEndpointErrorM": 8.57030227639914,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 30
+      },
+      "baseline": {
+        "initialResidualM": 4.99999999998068,
+        "residual8M": 4.999999999980677,
+        "residual16M": 4.999999999980648,
+        "endpointResidualM": 5.032022544188358,
+        "actualEndpointErrorM": 1.3605253781619098,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.9999999999941025,
+        "residual8M": 4.999999999994095,
+        "residual16M": 4.557451838749763,
+        "endpointResidualM": 4.50004586516404,
+        "actualEndpointErrorM": 1.0782651311227482,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 30
+      },
+      "baseline": {
+        "initialResidualM": 6.9999999999939,
+        "residual8M": 6.9999999999939035,
+        "residual16M": 6.9999999999938645,
+        "endpointResidualM": 6.964452623501366,
+        "actualEndpointErrorM": 3.2929554574749176,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000016382,
+        "residual8M": 7.000000000016406,
+        "residual16M": 6.891979634335868,
+        "endpointResidualM": 6.29062388816704,
+        "actualEndpointErrorM": 2.8688431541257344,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 30
+      },
+      "baseline": {
+        "initialResidualM": 8.000000000000501,
+        "residual8M": 8.00000000000053,
+        "residual16M": 8.00000000000048,
+        "endpointResidualM": 7.9612012362856674,
+        "actualEndpointErrorM": 4.289704070259219,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000013824,
+        "residual8M": 8.000000000013866,
+        "residual16M": 7.891979634333268,
+        "endpointResidualM": 7.2158335468064365,
+        "actualEndpointErrorM": 3.7940528127651447,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 46
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000019668,
+        "residual8M": -7.000000000019611,
+        "residual16M": -7.000000000019632,
+        "endpointResidualM": -7.000000000019639,
+        "actualEndpointErrorM": 10.671497166046088,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000039652,
+        "residual8M": -7.02944027558155,
+        "residual16M": -7.0294402755815355,
+        "endpointResidualM": -7.046337541951452,
+        "actualEndpointErrorM": 10.46811827599278,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 76,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 46
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000018662,
+        "residual8M": 7.000000000018673,
+        "residual16M": 7.000000000018652,
+        "endpointResidualM": 6.9644526235261,
+        "actualEndpointErrorM": 3.2929554574996516,
+        "controlEndpointErrorM": 3.671497166026448,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.0000000000181615,
+        "residual8M": 6.293916271016883,
+        "residual16M": 6.350097589192437,
+        "endpointResidualM": 6.309705007019552,
+        "actualEndpointErrorM": 2.8879242729782604,
+        "controlEndpointErrorM": 3.421780734041292,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000020066,
+        "residual8M": -8.000000000020087,
+        "residual16M": -8.000000000020101,
+        "endpointResidualM": -8.137284202649461,
+        "actualEndpointErrorM": 7.658399193256706,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000011362,
+        "residual8M": -8.092281027609776,
+        "residual16M": -8.092281027609811,
+        "endpointResidualM": -8.260735779432743,
+        "actualEndpointErrorM": 7.687754556217129,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000001023,
+        "residual8M": -7.00000000000103,
+        "residual16M": -7.000000000001016,
+        "endpointResidualM": -7.137284202630404,
+        "actualEndpointErrorM": 6.658399193237649,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000002963,
+        "residual8M": -7.092281027601434,
+        "residual16M": -7.092281027601466,
+        "endpointResidualM": -7.243566253167259,
+        "actualEndpointErrorM": 6.670585029951646,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999978151,
+        "residual8M": -4.999999999978158,
+        "residual16M": -4.999999999978165,
+        "endpointResidualM": -5.137284202607539,
+        "actualEndpointErrorM": 4.658399193214784,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999968622,
+        "residual8M": -5.09228102756709,
+        "residual16M": -5.0922810275671,
+        "endpointResidualM": -4.8493487234346375,
+        "actualEndpointErrorM": 4.276367500219024,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": 4.99999999997868,
+        "residual8M": 4.9999999999786695,
+        "residual16M": 4.999999999978666,
+        "endpointResidualM": 4.526865768077542,
+        "actualEndpointErrorM": 5.005750777470297,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.999999999969177,
+        "residual8M": 4.4710930501010075,
+        "residual16M": 4.471093050100983,
+        "endpointResidualM": 4.38911465891465,
+        "actualEndpointErrorM": 4.962095882130264,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000013465,
+        "residual8M": 7.000000000013479,
+        "residual16M": 7.000000000013461,
+        "endpointResidualM": 5.821560319361403,
+        "actualEndpointErrorM": 6.300445328754151,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.0000000000118945,
+        "residual8M": 6.887949121600787,
+        "residual16M": 6.887949121600791,
+        "endpointResidualM": 5.677729459250536,
+        "actualEndpointErrorM": 6.250710682466149,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 33
+      },
+      "baseline": {
+        "initialResidualM": 8.00000000000998,
+        "residual8M": 8.000000000009983,
+        "residual16M": 8.000000000009965,
+        "endpointResidualM": 6.548161600047102,
+        "actualEndpointErrorM": 7.027046609439857,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000001943,
+        "residual8M": 7.896459276261776,
+        "residual16M": 7.8964592762617585,
+        "endpointResidualM": 6.40231883265497,
+        "actualEndpointErrorM": 6.975300055870605,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 49
+      },
+      "baseline": {
+        "initialResidualM": -7.000000000041133,
+        "residual8M": -7.000000000041101,
+        "residual16M": -7.00000000004114,
+        "endpointResidualM": -7.137284202670514,
+        "actualEndpointErrorM": 6.658399193277759,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000028411,
+        "residual8M": -7.0000000000284395,
+        "residual16M": -7.1623145915069415,
+        "endpointResidualM": -7.147307708626229,
+        "actualEndpointErrorM": 6.574326485410623,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 82,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 49
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000028425,
+        "residual8M": 7.000000000028457,
+        "residual16M": 7.000000000028443,
+        "endpointResidualM": 5.821560319389462,
+        "actualEndpointErrorM": 6.300445328782217,
+        "controlEndpointErrorM": 0.478885009392755,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000042554,
+        "residual8M": 6.99139368855834,
+        "residual16M": 6.219124875207548,
+        "endpointResidualM": 5.721251076512452,
+        "actualEndpointErrorM": 6.2942322997280655,
+        "controlEndpointErrorM": 0.5729812232156135,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -8.000000000025452,
+        "residual8M": -8.00000000002548,
+        "residual16M": -8.000000000025462,
+        "endpointResidualM": -7.995938726900313,
+        "actualEndpointErrorM": 7.954969209391358,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000002274,
+        "residual8M": -8.000000000002295,
+        "residual16M": -8.000000000002292,
+        "endpointResidualM": -8.097623231942066,
+        "actualEndpointErrorM": 8.028348172543573,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999982677,
+        "residual8M": -6.999999999982705,
+        "residual16M": -6.999999999982684,
+        "endpointResidualM": -6.995938726857574,
+        "actualEndpointErrorM": 6.954969209348619,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999978456,
+        "residual8M": -6.9999999999784706,
+        "residual16M": -6.9999999999784634,
+        "endpointResidualM": -5.8739556745600865,
+        "actualEndpointErrorM": 5.804680615161594,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -4.999999999960416,
+        "residual8M": -4.9999999999604405,
+        "residual16M": -4.99999999996043,
+        "endpointResidualM": -4.9959387268353055,
+        "actualEndpointErrorM": 4.95496920932635,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999983501,
+        "residual8M": -4.9999999999834905,
+        "residual16M": -4.9999999999834905,
+        "endpointResidualM": -4.452321561429478,
+        "actualEndpointErrorM": 4.383046502030986,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999942972,
+        "residual8M": 4.999999999942908,
+        "residual16M": 4.999999999942961,
+        "endpointResidualM": 4.965790769502185,
+        "actualEndpointErrorM": 5.00676028701114,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.9999999999469225,
+        "residual8M": 4.999999999946898,
+        "residual16M": 4.9999999999468905,
+        "endpointResidualM": 4.420213995155983,
+        "actualEndpointErrorM": 4.4894890545544754,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999992372,
+        "residual8M": 6.999999999992287,
+        "residual16M": 6.999999999992344,
+        "endpointResidualM": 6.968513896624891,
+        "actualEndpointErrorM": 7.009483414133847,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000005954,
+        "residual8M": 7.000000000005919,
+        "residual16M": 7.0000000000059295,
+        "endpointResidualM": 6.846633715570626,
+        "actualEndpointErrorM": 6.915908774969118,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 7.999999999998973,
+        "residual8M": 7.999999999998927,
+        "residual16M": 7.999999999998959,
+        "endpointResidualM": 7.965262509409229,
+        "actualEndpointErrorM": 8.006232026918184,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000021597,
+        "residual8M": 8.000000000021572,
+        "residual16M": 8.00000000002154,
+        "endpointResidualM": 7.845821461746567,
+        "actualEndpointErrorM": 7.91509652114506,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 49
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999988564,
+        "residual8M": -6.999999999988567,
+        "residual16M": -6.999999999988546,
+        "endpointResidualM": -6.995938726863443,
+        "actualEndpointErrorM": 6.954969209354488,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.999999999991758,
+        "residual8M": -6.230912429278341,
+        "residual16M": -6.230912429278284,
+        "endpointResidualM": -5.873955674573729,
+        "actualEndpointErrorM": 5.804680615175215,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "steps": 81,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 49
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000022627,
+        "residual8M": 7.000000000022581,
+        "residual16M": 7.000000000022638,
+        "endpointResidualM": 6.968513896655146,
+        "actualEndpointErrorM": 7.009483414164102,
+        "controlEndpointErrorM": 0.04096951750895528,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.00000000001781,
+        "residual8M": 7.105834664472795,
+        "residual16M": 7.100676410815993,
+        "endpointResidualM": 6.846633715581568,
+        "actualEndpointErrorM": 6.9159087749800605,
+        "controlEndpointErrorM": 0.06927505939849254,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 1
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -7.999999999998877,
+        "residual8M": -7.99999999999892,
+        "residual16M": -7.999999999998902,
+        "endpointResidualM": -7.931728030968905,
+        "actualEndpointErrorM": 9.369752285830117,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -8.000000000013078,
+        "residual8M": -8.000000000013106,
+        "residual16M": -7.993602373277888,
+        "endpointResidualM": -8.013780398882531,
+        "actualEndpointErrorM": 9.448704040975144,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -6.999999999974179,
+        "residual8M": -6.9999999999742215,
+        "residual16M": -6.999999999974218,
+        "endpointResidualM": -6.931728030944214,
+        "actualEndpointErrorM": 8.369752285805426,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -6.99999999996999,
+        "residual8M": -6.999999999970026,
+        "residual16M": -6.987675620748892,
+        "endpointResidualM": -5.775282195058772,
+        "actualEndpointErrorM": 7.210205837151392,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 5
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": -5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": -5.0000000000061675,
+        "residual8M": -5.000000000006189,
+        "residual16M": -5.000000000006185,
+        "endpointResidualM": -4.931728030976188,
+        "actualEndpointErrorM": 6.3697522858374,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -4.999999999976165,
+        "residual8M": -4.999999999976158,
+        "residual16M": -4.999999999976165,
+        "endpointResidualM": -4.362128372346447,
+        "actualEndpointErrorM": 5.7970520144390605,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 5,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 4.999999999987622,
+        "residual8M": 4.99999999998758,
+        "residual16M": 4.999999999987601,
+        "endpointResidualM": 4.581734881397082,
+        "actualEndpointErrorM": 3.1437106265358707,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 4.99999999998273,
+        "residual8M": 4.999999999982752,
+        "residual16M": 4.999999999982752,
+        "endpointResidualM": 3.8975146949572306,
+        "actualEndpointErrorM": 2.4625910528646173,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 3
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 7,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 7.000000000018936,
+        "residual8M": 7.000000000018886,
+        "residual16M": 7.0000000000189075,
+        "endpointResidualM": 6.5094376152939475,
+        "actualEndpointErrorM": 5.071413360432736,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.000000000014396,
+        "residual8M": 7.000000000014403,
+        "residual16M": 7.000000000014406,
+        "endpointResidualM": 6.37663834344491,
+        "actualEndpointErrorM": 4.941714701352296,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.4,
+        "offsetM": 8,
+        "step": 32
+      },
+      "baseline": {
+        "initialResidualM": 8.00000000001651,
+        "residual8M": 8.000000000016463,
+        "residual16M": 8.000000000016477,
+        "endpointResidualM": 7.2586449208169626,
+        "actualEndpointErrorM": 5.820620665955751,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 8.000000000001744,
+        "residual8M": 8.000000000001751,
+        "residual16M": 8.000000000001759,
+        "endpointResidualM": 7.146886647689996,
+        "actualEndpointErrorM": 5.711963005597383,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": -7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": -7.00000000001824,
+        "residual8M": -7.000000000018215,
+        "residual16M": -7.000000000018215,
+        "endpointResidualM": -6.931728030988232,
+        "actualEndpointErrorM": 8.369752285849444,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": -7.000000000025448,
+        "residual8M": -7.000000000025427,
+        "residual16M": -7.118365942853,
+        "endpointResidualM": -5.784282050654305,
+        "actualEndpointErrorM": 7.219205692746918,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 4
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "steps": 79,
+      "scenario": {
+        "fraction": 0.6,
+        "offsetM": 7,
+        "step": 47
+      },
+      "baseline": {
+        "initialResidualM": 6.999999999992948,
+        "residual8M": 6.999999999992973,
+        "residual16M": 6.999999999992966,
+        "endpointResidualM": 6.50943761526927,
+        "actualEndpointErrorM": 5.071413360408066,
+        "controlEndpointErrorM": 1.4380242548612117,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 0
+      },
+      "grid": {
+        "initialResidualM": 7.00000000000469,
+        "residual8M": 7.000000000004704,
+        "residual16M": 6.8554259275606455,
+        "endpointResidualM": 6.376638343472521,
+        "actualEndpointErrorM": 4.941714701379908,
+        "controlEndpointErrorM": 1.4349236420926132,
+        "movedParticles": 160,
+        "gridAppliedAfterInjection": 2
+      }
+    }
+  ]
+}

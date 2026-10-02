@@ -1,0 +1,844 @@
+{
+  "purpose": "Analysis only: validate peak/interval/gyro event confidence against public foot-labelled steps, then inspect untrained transfer distribution on local 4F logs.",
+  "archive": {
+    "path": "indoor\\data\\external\\walking-recognition\\walking-recognition-master.zip",
+    "sha256": "517ce737d6b648e3eb71805ca0031bf0b07f52dc25d5645bec1bba34f854ebf9",
+    "source": "https://gitlab.citius.gal/fernando.estevez/walking-recognition-dataset"
+  },
+  "detector": "Expo-equivalent: 20Hz downsample, magnitude gravity EMA tau=0.8s, peak >=1.0m/s\u00b2, 280ms separation.",
+  "truth": "Foot-sensor GT peak timestamps; ordered one-to-one event match within 250ms.",
+  "records": {
+    "all": 142,
+    "handheld": 38,
+    "usersHandheld": 7,
+    "byLocation": {
+      "hybrid_tests": {
+        "true_positive": 9250,
+        "false_positive": 2261,
+        "false_negative": 1731,
+        "truth_steps": 10981,
+        "detected_events": 11511,
+        "precision": 0.8035791851272696,
+        "recall": 0.8423640834168109,
+        "f1": 0.8225146718833364
+      },
+      "mobile_in_hand": {
+        "true_positive": 2299,
+        "false_positive": 434,
+        "false_negative": 409,
+        "truth_steps": 2708,
+        "detected_events": 2733,
+        "precision": 0.8412001463593121,
+        "recall": 0.8489660265878878,
+        "f1": 0.845065245359309
+      },
+      "mobile_in_pocket": {
+        "true_positive": 1131,
+        "false_positive": 415,
+        "false_negative": 192,
+        "truth_steps": 1323,
+        "detected_events": 1546,
+        "precision": 0.7315653298835705,
+        "recall": 0.854875283446712,
+        "f1": 0.7884280237016381
+      },
+      "not_walking": {
+        "true_positive": 11,
+        "false_positive": 218,
+        "false_negative": 2,
+        "truth_steps": 13,
+        "detected_events": 229,
+        "precision": 0.048034934497816595,
+        "recall": 0.8461538461538461,
+        "f1": 0.09090909090909091
+      }
+    }
+  },
+  "handheldUserHeldOut": {
+    "peak_only": {
+      "features": [
+        "peak_margin"
+      ],
+      "folds": [
+        {
+          "fold": 0,
+          "test_users": [
+            "user1",
+            "user7"
+          ],
+          "events": 1548,
+          "precision": 0.8171834625322998,
+          "auc": 0.5939384628276931,
+          "brier": 0.15131822051706034
+        },
+        {
+          "fold": 1,
+          "test_users": [
+            "user10",
+            "user9"
+          ],
+          "events": 410,
+          "precision": 0.8268292682926829,
+          "auc": 0.43732602102289253,
+          "brier": 0.14702070065863063
+        },
+        {
+          "fold": 2,
+          "test_users": [
+            "user15"
+          ],
+          "events": 223,
+          "precision": 0.9327354260089686,
+          "auc": 0.8003205128205129,
+          "brier": 0.06781868618035039
+        },
+        {
+          "fold": 3,
+          "test_users": [
+            "user5"
+          ],
+          "events": 343,
+          "precision": 0.8425655976676385,
+          "auc": 0.6760861207227989,
+          "brier": 0.13010311096181174
+        },
+        {
+          "fold": 4,
+          "test_users": [
+            "user6"
+          ],
+          "events": 209,
+          "precision": 0.9473684210526315,
+          "auc": 0.6496786042240588,
+          "brier": 0.06735061192614636
+        }
+      ],
+      "events": 2733,
+      "eventMatchRate": 0.8412001463593121,
+      "auc": 0.5014121547537198,
+      "brier": 0.13477654760378052,
+      "thresholdMetricsOutOfFold": {
+        "0.5": {
+          "true_positive": 2299,
+          "false_positive": 434,
+          "false_negative": 409,
+          "truth_steps": 2708,
+          "detected_events": 2733,
+          "precision": 0.8412001463593121,
+          "recall": 0.8489660265878878,
+          "f1": 0.845065245359309
+        },
+        "0.6": {
+          "true_positive": 2299,
+          "false_positive": 434,
+          "false_negative": 409,
+          "truth_steps": 2708,
+          "detected_events": 2733,
+          "precision": 0.8412001463593121,
+          "recall": 0.8489660265878878,
+          "f1": 0.845065245359309
+        },
+        "0.7": {
+          "true_positive": 2299,
+          "false_positive": 434,
+          "false_negative": 409,
+          "truth_steps": 2708,
+          "detected_events": 2733,
+          "precision": 0.8412001463593121,
+          "recall": 0.8489660265878878,
+          "f1": 0.845065245359309
+        },
+        "0.8": {
+          "true_positive": 2238,
+          "false_positive": 428,
+          "false_negative": 470,
+          "truth_steps": 2708,
+          "detected_events": 2666,
+          "precision": 0.8394598649662416,
+          "recall": 0.8264401772525849,
+          "f1": 0.8328991440267958
+        },
+        "0.9": {
+          "true_positive": 111,
+          "false_positive": 17,
+          "false_negative": 2597,
+          "truth_steps": 2708,
+          "detected_events": 128,
+          "precision": 0.8671875,
+          "recall": 0.04098966026587888,
+          "f1": 0.07827926657263752
+        }
+      },
+      "limit": "AUC evaluates false-positive discrimination among emitted events only. Missed ground-truth steps need a separate gap model."
+    },
+    "peak_interval": {
+      "features": [
+        "peak_margin",
+        "interval_deviation"
+      ],
+      "folds": [
+        {
+          "fold": 0,
+          "test_users": [
+            "user1",
+            "user7"
+          ],
+          "events": 1548,
+          "precision": 0.8171834625322998,
+          "auc": 0.5883378259472898,
+          "brier": 0.14549959557950828
+        },
+        {
+          "fold": 1,
+          "test_users": [
+            "user10",
+            "user9"
+          ],
+          "events": 410,
+          "precision": 0.8268292682926829,
+          "auc": 0.6016868170675973,
+          "brier": 0.136291532412915
+        },
+        {
+          "fold": 2,
+          "test_users": [
+            "user15"
+          ],
+          "events": 223,
+          "precision": 0.9327354260089686,
+          "auc": 0.7381410256410257,
+          "brier": 0.06467929883352226
+        },
+        {
+          "fold": 3,
+          "test_users": [
+            "user5"
+          ],
+          "events": 343,
+          "precision": 0.8425655976676385,
+          "auc": 0.7160707420222991,
+          "brier": 0.1167303588799053
+        },
+        {
+          "fold": 4,
+          "test_users": [
+            "user6"
+          ],
+          "events": 209,
+          "precision": 0.9473684210526315,
+          "auc": 0.9637281910009182,
+          "brier": 0.05311455385207733
+        }
+      ],
+      "events": 2733,
+      "eventMatchRate": 0.8412001463593121,
+      "auc": 0.6081135256162267,
+      "brier": 0.1268480939396784,
+      "thresholdMetricsOutOfFold": {
+        "0.5": {
+          "true_positive": 2277,
+          "false_positive": 410,
+          "false_negative": 431,
+          "truth_steps": 2708,
+          "detected_events": 2687,
+          "precision": 0.8474134722739114,
+          "recall": 0.8408419497784343,
+          "f1": 0.844114921223355
+        },
+        "0.6": {
+          "true_positive": 2260,
+          "false_positive": 393,
+          "false_negative": 448,
+          "truth_steps": 2708,
+          "detected_events": 2653,
+          "precision": 0.8518658122879759,
+          "recall": 0.8345642540620384,
+          "f1": 0.8431262824099981
+        },
+        "0.7": {
+          "true_positive": 2205,
+          "false_positive": 344,
+          "false_negative": 503,
+          "truth_steps": 2708,
+          "detected_events": 2549,
+          "precision": 0.8650451157316594,
+          "recall": 0.8142540620384048,
+          "f1": 0.8388814913448734
+        },
+        "0.8": {
+          "true_positive": 1988,
+          "false_positive": 270,
+          "false_negative": 720,
+          "truth_steps": 2708,
+          "detected_events": 2258,
+          "precision": 0.8804251550044287,
+          "recall": 0.7341211225997046,
+          "f1": 0.8006443817962143
+        },
+        "0.9": {
+          "true_positive": 717,
+          "false_positive": 115,
+          "false_negative": 1991,
+          "truth_steps": 2708,
+          "detected_events": 832,
+          "precision": 0.8617788461538461,
+          "recall": 0.26477104874446084,
+          "f1": 0.4050847457627118
+        }
+      },
+      "limit": "AUC evaluates false-positive discrimination among emitted events only. Missed ground-truth steps need a separate gap model."
+    },
+    "peak_interval_gyro": {
+      "features": [
+        "peak_margin",
+        "interval_deviation",
+        "gyro_relative_log"
+      ],
+      "folds": [
+        {
+          "fold": 0,
+          "test_users": [
+            "user1",
+            "user7"
+          ],
+          "events": 1548,
+          "precision": 0.8171834625322998,
+          "auc": 0.627433344041118,
+          "brier": 0.14085194511006757
+        },
+        {
+          "fold": 1,
+          "test_users": [
+            "user10",
+            "user9"
+          ],
+          "events": 410,
+          "precision": 0.8268292682926829,
+          "auc": 0.6407827495949147,
+          "brier": 0.13398585299025303
+        },
+        {
+          "fold": 2,
+          "test_users": [
+            "user15"
+          ],
+          "events": 223,
+          "precision": 0.9327354260089686,
+          "auc": 0.7541666666666667,
+          "brier": 0.06401457013330147
+        },
+        {
+          "fold": 3,
+          "test_users": [
+            "user5"
+          ],
+          "events": 343,
+          "precision": 0.8425655976676385,
+          "auc": 0.7500961168781238,
+          "brier": 0.11225313598962955
+        },
+        {
+          "fold": 4,
+          "test_users": [
+            "user6"
+          ],
+          "events": 209,
+          "precision": 0.9473684210526315,
+          "auc": 0.9857667584940312,
+          "brier": 0.05080354839826342
+        }
+      ],
+      "events": 2733,
+      "eventMatchRate": 0.8412001463593121,
+      "auc": 0.6468701078208718,
+      "brier": 0.12307684857511693,
+      "thresholdMetricsOutOfFold": {
+        "0.5": {
+          "true_positive": 2288,
+          "false_positive": 409,
+          "false_negative": 420,
+          "truth_steps": 2708,
+          "detected_events": 2697,
+          "precision": 0.8483500185391175,
+          "recall": 0.844903988183161,
+          "f1": 0.8466234967622571
+        },
+        "0.6": {
+          "true_positive": 2263,
+          "false_positive": 382,
+          "false_negative": 445,
+          "truth_steps": 2708,
+          "detected_events": 2645,
+          "precision": 0.8555765595463138,
+          "recall": 0.835672082717873,
+          "f1": 0.8455071922286568
+        },
+        "0.7": {
+          "true_positive": 2225,
+          "false_positive": 328,
+          "false_negative": 483,
+          "truth_steps": 2708,
+          "detected_events": 2553,
+          "precision": 0.8715236976106542,
+          "recall": 0.8216395864106352,
+          "f1": 0.8458467971868466
+        },
+        "0.8": {
+          "true_positive": 1987,
+          "false_positive": 248,
+          "false_negative": 721,
+          "truth_steps": 2708,
+          "detected_events": 2235,
+          "precision": 0.8890380313199105,
+          "recall": 0.733751846381093,
+          "f1": 0.8039652033178232
+        },
+        "0.9": {
+          "true_positive": 824,
+          "false_positive": 110,
+          "false_negative": 1884,
+          "truth_steps": 2708,
+          "detected_events": 934,
+          "precision": 0.8822269807280514,
+          "recall": 0.30428360413589367,
+          "f1": 0.4524986271279517
+        }
+      },
+      "limit": "AUC evaluates false-positive discrimination among emitted events only. Missed ground-truth steps need a separate gap model."
+    }
+  },
+  "local4FExternalModelTransfer": {
+    "sessions": [
+      {
+        "file": "indoor_positioning_ios_20260905_170448.jsonl",
+        "events": 82,
+        "meanExternalHandProbability": 0.7960673938593443,
+        "lowProbabilityFraction": 0.17073170731707318,
+        "medianProbability": 0.8459162409748788,
+        "externalModelSigmaEvents": 3.426449593276985,
+        "retainedEventsByThreshold": {
+          "0.5": 78,
+          "0.6": 73,
+          "0.7": 69,
+          "0.8": 58,
+          "0.9": 8
+        },
+        "endpointErrorMetersDescriptive": 2.574015070230537,
+        "chronologicalErrorMeters": 2.574015070230537
+      },
+      {
+        "file": "indoor_positioning_ios_20260905_170648.jsonl",
+        "events": 83,
+        "meanExternalHandProbability": 0.7793249113309081,
+        "lowProbabilityFraction": 0.18072289156626506,
+        "medianProbability": 0.8319127680624276,
+        "externalModelSigmaEvents": 3.4954183006887387,
+        "retainedEventsByThreshold": {
+          "0.5": 76,
+          "0.6": 73,
+          "0.7": 70,
+          "0.8": 58,
+          "0.9": 3
+        },
+        "endpointErrorMetersDescriptive": 3.2175188377881696,
+        "chronologicalErrorMeters": 3.2175188377881696
+      },
+      {
+        "file": "indoor_positioning_ios_20260905_170852.jsonl",
+        "events": 81,
+        "meanExternalHandProbability": 0.8217123276397054,
+        "lowProbabilityFraction": 0.16049382716049382,
+        "medianProbability": 0.8526495710424236,
+        "externalModelSigmaEvents": 3.317445387625523,
+        "retainedEventsByThreshold": {
+          "0.5": 78,
+          "0.6": 76,
+          "0.7": 74,
+          "0.8": 63,
+          "0.9": 12
+        },
+        "endpointErrorMetersDescriptive": 1.9305113026729046,
+        "chronologicalErrorMeters": 1.9305113026729046
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_132920.jsonl",
+        "events": 83,
+        "meanExternalHandProbability": 0.8530687063196805,
+        "lowProbabilityFraction": 0.03614457831325301,
+        "medianProbability": 0.8627079339485619,
+        "externalModelSigmaEvents": 3.180295166482223,
+        "retainedEventsByThreshold": {
+          "0.5": 82,
+          "0.6": 82,
+          "0.7": 81,
+          "0.8": 75,
+          "0.9": 13
+        },
+        "endpointErrorMetersDescriptive": 3.2175188377881696,
+        "chronologicalErrorMeters": 3.2175188377881696
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_133049.jsonl",
+        "events": 78,
+        "meanExternalHandProbability": 0.8630177148222004,
+        "lowProbabilityFraction": 0.02564102564102564,
+        "medianProbability": 0.8674385433247349,
+        "externalModelSigmaEvents": 3.0130267184415493,
+        "retainedEventsByThreshold": {
+          "0.5": 78,
+          "0.6": 78,
+          "0.7": 78,
+          "0.8": 73,
+          "0.9": 13
+        },
+        "endpointErrorMetersDescriptive": 7.105427357601002e-15,
+        "chronologicalErrorMeters": 7.105427357601002e-15
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_133154.jsonl",
+        "events": 78,
+        "meanExternalHandProbability": 0.8513162281022031,
+        "lowProbabilityFraction": 0.038461538461538464,
+        "medianProbability": 0.8603858949272765,
+        "externalModelSigmaEvents": 3.1116402159093233,
+        "retainedEventsByThreshold": {
+          "0.5": 78,
+          "0.6": 78,
+          "0.7": 76,
+          "0.8": 71,
+          "0.9": 6
+        },
+        "endpointErrorMetersDescriptive": 7.105427357601002e-15,
+        "chronologicalErrorMeters": 7.105427357601002e-15
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_133254.jsonl",
+        "events": 78,
+        "meanExternalHandProbability": 0.8663274091720539,
+        "lowProbabilityFraction": 0.01282051282051282,
+        "medianProbability": 0.8698386139262959,
+        "externalModelSigmaEvents": 2.9888817438460813,
+        "retainedEventsByThreshold": {
+          "0.5": 78,
+          "0.6": 78,
+          "0.7": 78,
+          "0.8": 73,
+          "0.9": 11
+        },
+        "endpointErrorMetersDescriptive": 7.105427357601002e-15,
+        "chronologicalErrorMeters": 7.105427357601002e-15
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133338.jsonl",
+        "events": 78,
+        "meanExternalHandProbability": 0.8436474839225233,
+        "lowProbabilityFraction": 0.0641025641025641,
+        "medianProbability": 0.854928883666054,
+        "externalModelSigmaEvents": 3.1682186055264854,
+        "retainedEventsByThreshold": {
+          "0.5": 78,
+          "0.6": 78,
+          "0.7": 75,
+          "0.8": 67,
+          "0.9": 7
+        },
+        "endpointErrorMetersDescriptive": 7.105427357601002e-15,
+        "chronologicalErrorMeters": 7.105427357601002e-15
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133534.jsonl",
+        "events": 80,
+        "meanExternalHandProbability": 0.8453476001497581,
+        "lowProbabilityFraction": 0.075,
+        "medianProbability": 0.8590540854050688,
+        "externalModelSigmaEvents": 3.1759447535368706,
+        "retainedEventsByThreshold": {
+          "0.5": 80,
+          "0.6": 79,
+          "0.7": 75,
+          "0.8": 68,
+          "0.9": 10
+        },
+        "endpointErrorMetersDescriptive": 1.287007535115272,
+        "chronologicalErrorMeters": 1.287007535115272
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133637.jsonl",
+        "events": 72,
+        "meanExternalHandProbability": 0.8605208235252834,
+        "lowProbabilityFraction": 0.013888888888888888,
+        "medianProbability": 0.8639798689608236,
+        "externalModelSigmaEvents": 2.9157347127838658,
+        "retainedEventsByThreshold": {
+          "0.5": 72,
+          "0.6": 72,
+          "0.7": 71,
+          "0.8": 66,
+          "0.9": 12
+        },
+        "endpointErrorMetersDescriptive": 3.861022605345795,
+        "chronologicalErrorMeters": 3.861022605345795
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133734.jsonl",
+        "events": 75,
+        "meanExternalHandProbability": 0.8551722072064323,
+        "lowProbabilityFraction": 0.06666666666666667,
+        "medianProbability": 0.8674634574809165,
+        "externalModelSigmaEvents": 3.0017712442173883,
+        "retainedEventsByThreshold": {
+          "0.5": 75,
+          "0.6": 75,
+          "0.7": 72,
+          "0.8": 65,
+          "0.9": 15
+        },
+        "endpointErrorMetersDescriptive": 1.9305113026728975,
+        "chronologicalErrorMeters": 1.9305113026728975
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_170738.jsonl",
+        "events": 80,
+        "meanExternalHandProbability": 0.7964261268256846,
+        "lowProbabilityFraction": 0.2,
+        "medianProbability": 0.8425359700065199,
+        "externalModelSigmaEvents": 3.3934812307016538,
+        "retainedEventsByThreshold": {
+          "0.5": 75,
+          "0.6": 73,
+          "0.7": 69,
+          "0.8": 58,
+          "0.9": 4
+        },
+        "endpointErrorMetersDescriptive": 1.287007535115272
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_170901.jsonl",
+        "events": 79,
+        "meanExternalHandProbability": 0.8068069539562839,
+        "lowProbabilityFraction": 0.189873417721519,
+        "medianProbability": 0.8554280550036133,
+        "externalModelSigmaEvents": 3.320523025128854,
+        "retainedEventsByThreshold": {
+          "0.5": 75,
+          "0.6": 72,
+          "0.7": 67,
+          "0.8": 61,
+          "0.9": 6
+        },
+        "endpointErrorMetersDescriptive": 0.6435037675576396
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171021.jsonl",
+        "events": 77,
+        "meanExternalHandProbability": 0.791352198224165,
+        "lowProbabilityFraction": 0.16883116883116883,
+        "medianProbability": 0.8426127306462949,
+        "externalModelSigmaEvents": 3.317505007101781,
+        "retainedEventsByThreshold": {
+          "0.5": 72,
+          "0.6": 71,
+          "0.7": 66,
+          "0.8": 56,
+          "0.9": 4
+        },
+        "endpointErrorMetersDescriptive": 0.6435037675576325
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171142.jsonl",
+        "events": 76,
+        "meanExternalHandProbability": 0.8086926507891168,
+        "lowProbabilityFraction": 0.18421052631578946,
+        "medianProbability": 0.8405719505041993,
+        "externalModelSigmaEvents": 3.289909744891453,
+        "retainedEventsByThreshold": {
+          "0.5": 74,
+          "0.6": 73,
+          "0.7": 65,
+          "0.8": 55,
+          "0.9": 6
+        },
+        "endpointErrorMetersDescriptive": 1.287007535115265
+      }
+    ],
+    "lowProbabilityVsEndpointErrorSpearmanDescriptive": 0.1624644021328223,
+    "chronological11ToNew4Uncertainty": {
+      "personalBaseMetersPerEvent": 0.6435037675576333,
+      "targetCoverage": 0.8,
+      "coverage": 1.0,
+      "meanRadiusMeters": 3.065578488509998,
+      "trials": [
+        {
+          "file": "indoor_positioning_ios_20260914_170738.jsonl",
+          "events": 80,
+          "absoluteErrorMeters": 1.287007535115272,
+          "radiusMeters": 3.1236861646320695,
+          "covered": true,
+          "meanExternalHandProbability": 0.7964261268256846,
+          "lowProbabilityFraction": 0.2
+        },
+        {
+          "file": "indoor_positioning_ios_20260914_170901.jsonl",
+          "events": 79,
+          "absoluteErrorMeters": 0.6435037675576396,
+          "radiusMeters": 3.056528422522792,
+          "covered": true,
+          "meanExternalHandProbability": 0.8068069539562839,
+          "lowProbabilityFraction": 0.189873417721519
+        },
+        {
+          "file": "indoor_positioning_ios_20260914_171021.jsonl",
+          "events": 77,
+          "absoluteErrorMeters": 0.6435037675576325,
+          "radiusMeters": 3.0537503487646442,
+          "covered": true,
+          "meanExternalHandProbability": 0.791352198224165,
+          "lowProbabilityFraction": 0.16883116883116883
+        },
+        {
+          "file": "indoor_positioning_ios_20260914_171142.jsonl",
+          "events": 76,
+          "absoluteErrorMeters": 1.287007535115265,
+          "radiusMeters": 3.028349018120487,
+          "covered": true,
+          "meanExternalHandProbability": 0.8086926507891168,
+          "lowProbabilityFraction": 0.18421052631578946
+        }
+      ]
+    },
+    "externalThresholdExploration11ToNew4": {
+      "0.5": {
+        "personalBaseMetersPerRetainedEvent": 0.6435037675576333,
+        "meanEndpointErrorMeters": 2.57401507023053,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "retainedEvents": 75,
+            "errorMeters": 1.9305113026728975
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "retainedEvents": 75,
+            "errorMeters": 1.9305113026728975
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "retainedEvents": 72,
+            "errorMeters": 3.861022605345795
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "retainedEvents": 74,
+            "errorMeters": 2.57401507023053
+          }
+        ]
+      },
+      "0.6": {
+        "personalBaseMetersPerRetainedEvent": 0.6435037675576333,
+        "meanEndpointErrorMeters": 3.700146663456387,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "retainedEvents": 73,
+            "errorMeters": 3.2175188377881625
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "retainedEvents": 72,
+            "errorMeters": 3.861022605345795
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "retainedEvents": 71,
+            "errorMeters": 4.5045263729034275
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "retainedEvents": 73,
+            "errorMeters": 3.2175188377881625
+          }
+        ]
+      },
+      "0.7": {
+        "personalBaseMetersPerRetainedEvent": 0.6692439182599386,
+        "meanEndpointErrorMeters": 5.521262325644493,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "retainedEvents": 69,
+            "errorMeters": 4.0154635095596305
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "retainedEvents": 67,
+            "errorMeters": 5.353951346079505
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "retainedEvents": 66,
+            "errorMeters": 6.023195264339449
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "retainedEvents": 65,
+            "errorMeters": 6.6924391825993865
+          }
+        ]
+      },
+      "0.8": {
+        "personalBaseMetersPerRetainedEvent": 0.7491536398432148,
+        "meanEndpointErrorMeters": 7.116959578510539,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "retainedEvents": 58,
+            "errorMeters": 6.742382758588931
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "retainedEvents": 61,
+            "errorMeters": 4.4949218390592875
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "retainedEvents": 56,
+            "errorMeters": 8.24069003827536
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "retainedEvents": 55,
+            "errorMeters": 8.989843678118575
+          }
+        ]
+      },
+      "0.9": {
+        "personalBaseMetersPerRetainedEvent": 4.182774489124616,
+        "meanEndpointErrorMeters": 29.279421423872314,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "retainedEvents": 4,
+            "errorMeters": 33.46219591299693
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "retainedEvents": 6,
+            "errorMeters": 25.096646934747696
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "retainedEvents": 4,
+            "errorMeters": 33.46219591299693
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "retainedEvents": 6,
+            "errorMeters": 25.096646934747696
+          }
+        ]
+      }
+    },
+    "limit": "No local event labels exist. This is a distribution/association check, not validation or a runtime model."
+  },
+  "decisionRule": "Do not apply unless handheld user-held-out discrimination is useful and the external score also predicts local held-out endpoint risk with a practical radius."
+}

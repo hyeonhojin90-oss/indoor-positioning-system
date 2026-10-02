@@ -1,0 +1,27 @@
+{
+  "source_file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_182257.jsonl",
+  "source_sha256": "e51aa257b9f18e5d5ec0e7c86ee5df7c775d75e0ae6e9dc08395b69df8da48ee",
+  "curated_file": "indoor\\data\\curated\\android\\2026-09-15\\indoor_positioning_20260915_182257__corrected-f2-study-entry-main.jsonl",
+  "original_label": {
+    "floor": "2",
+    "location": "기둥·TDM 사이 · 증축복도 진입점",
+    "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+    "event": "기준점 측정 시작",
+    "route_id": "F2_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+    "zone_id": "f2_extension_entry",
+    "lap_index": 0,
+    "lap_total": 0
+  },
+  "corrected_label": {
+    "floor": "2",
+    "location": "책상공간 진입 전 · 메인복도",
+    "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+    "event": "기준점 측정 시작",
+    "route_id": "F2_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+    "zone_id": "f2_study_entry_main",
+    "lap_index": 0,
+    "lap_total": 0
+  },
+  "reason": "User-confirmed label correction; raw Android JSONL is retained unchanged.",
+  "created_at": "2026-09-15T09:44:38.930Z"
+}

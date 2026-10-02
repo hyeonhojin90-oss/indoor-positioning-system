@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-09-15T09:47:00Z",
+  "scope": "2F static Android schema 7 anchor sessions. This is signal separability inspection, not walking-position accuracy or Fusion output.",
+  "wifi_fresh_scan_within_session": {
+    "method": "For zones with two fresh Wi-Fi scans, classify each scan using the other scan as its same-zone reference and every available 2F zone as a competing reference. Require at least two shared APs and compare median absolute RSSI error.",
+    "evaluable_fresh_scans": 6,
+    "correct_top1": 6,
+    "top1_accuracy": 1.0,
+    "median_margin_db": 3.1,
+    "evaluated_zones": [
+      "f2_extension_2104_1",
+      "f2_2107_entry_main",
+      "f2_study_entry_main"
+    ],
+    "shared_ap_range": [79, 96],
+    "limitation": "The two scans in each pair came from one stationary session, so this measures immediate repeatability rather than a different-time walking test. Zones with one fresh scan were not evaluated."
+  },
+  "ble_half_window": {
+    "method": "Split each stationary BLE observation sequence into first and latter halves. Classify each half against the opposite-half reference for every zone using median absolute RSSI error.",
+    "evaluated_half_windows": 16,
+    "correct_top1": 15,
+    "top1_accuracy": 0.9375,
+    "median_margin_db": 1.79,
+    "median_shared_transmitters": 63,
+    "closest_failure": {
+      "actual_zone": "f2_study_entry_main",
+      "predicted_zone": "f2_study_inside",
+      "best_mae_db": 2.63,
+      "same_zone_mae_db": 2.68,
+      "margin_db": 0.04
+    },
+    "limitation": "Halves are from the same stationary session. The result is optimistic and cannot establish real walking accuracy."
+  },
+  "interpretation": "The current signal strengths have enough provisional difference for coarse zone/portal confirmation, especially when PDR already narrows the candidate corridor. They do not yet support exact free-space coordinates or signal-only entry decisions between study_entry_main and study_inside."
+}

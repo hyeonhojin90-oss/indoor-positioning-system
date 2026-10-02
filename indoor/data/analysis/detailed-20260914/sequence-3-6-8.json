@@ -1,0 +1,42 @@
+{
+  "note": "Same endpoint suffixes of existing 8-step templates; source-session holdout, weak interpolated labels. Not independent field accuracy or full 3/6-step runtime cadence evaluation.",
+  "results": [
+    {
+      "steps": 3,
+      "queries": 112,
+      "sources": 3,
+      "accepted": 2,
+      "reasons": {
+        "ambiguous_sequence": 101,
+        "no_sequence_reference": 9,
+        "sequence_candidate": 2
+      },
+      "meanError": 37.14576925710338,
+      "over6": 2
+    },
+    {
+      "steps": 6,
+      "queries": 112,
+      "sources": 3,
+      "accepted": 6,
+      "reasons": {
+        "ambiguous_sequence": 106,
+        "sequence_candidate": 6
+      },
+      "meanError": 7.299350899888528,
+      "over6": 1
+    },
+    {
+      "steps": 8,
+      "queries": 112,
+      "sources": 3,
+      "accepted": 3,
+      "reasons": {
+        "ambiguous_sequence": 109,
+        "sequence_candidate": 3
+      },
+      "meanError": 7.292319296453591,
+      "over6": 1
+    }
+  ]
+}

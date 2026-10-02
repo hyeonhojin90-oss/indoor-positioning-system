@@ -1,0 +1,249 @@
+{
+  "nominal": 64,
+  "unique": 40,
+  "explanation": "4 app modes encode magnetic on/off and BLE on/off. Four magnetic variants only matter in the two magnetic-on modes. Per stride: two magnetic-off configurations + two BLE settings times four magnetic variants =10. Four strides =>40, not64 independent configurations.",
+  "apAxis": "AP off/qualified-anchor policy would double theoretical 40 to80 only with usable AP logs; not executed",
+  "ronin": "Separate velocity frontend; 11 raw inferences executed. Not yet part of40 full-fusion configurations.",
+  "rows": [
+    {
+      "pdr": "fixed",
+      "ble": false,
+      "magnetic": "off",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "fixed",
+      "ble": false,
+      "magnetic": "v2_norm",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "fixed",
+      "ble": false,
+      "magnetic": "v2_norm_mv",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "fixed",
+      "ble": false,
+      "magnetic": "grid_norm",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "fixed",
+      "ble": false,
+      "magnetic": "grid_norm_mv",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "fixed",
+      "ble": true,
+      "magnetic": "off",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "fixed",
+      "ble": true,
+      "magnetic": "v2_norm",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "fixed",
+      "ble": true,
+      "magnetic": "v2_norm_mv",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "fixed",
+      "ble": true,
+      "magnetic": "grid_norm",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "fixed",
+      "ble": true,
+      "magnetic": "grid_norm_mv",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": false,
+      "magnetic": "off",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": false,
+      "magnetic": "v2_norm",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": false,
+      "magnetic": "v2_norm_mv",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": false,
+      "magnetic": "grid_norm",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": false,
+      "magnetic": "grid_norm_mv",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": true,
+      "magnetic": "off",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": true,
+      "magnetic": "v2_norm",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": true,
+      "magnetic": "v2_norm_mv",
+      "status": "runtime-options-connected-not-all-combinations-evaluated"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": true,
+      "magnetic": "grid_norm",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "weinberg",
+      "ble": true,
+      "magnetic": "grid_norm_mv",
+      "status": "offline-grid-and-right-runtime-only"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": false,
+      "magnetic": "off",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": false,
+      "magnetic": "v2_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": false,
+      "magnetic": "v2_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": false,
+      "magnetic": "grid_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": false,
+      "magnetic": "grid_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": true,
+      "magnetic": "off",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": true,
+      "magnetic": "v2_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": true,
+      "magnetic": "v2_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": true,
+      "magnetic": "grid_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_linear",
+      "ble": true,
+      "magnetic": "grid_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": false,
+      "magnetic": "off",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": false,
+      "magnetic": "v2_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": false,
+      "magnetic": "v2_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": false,
+      "magnetic": "grid_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": false,
+      "magnetic": "grid_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": true,
+      "magnetic": "off",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": true,
+      "magnetic": "v2_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": true,
+      "magnetic": "v2_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": true,
+      "magnetic": "grid_norm",
+      "status": "stride-only-evaluated-not-full-runtime"
+    },
+    {
+      "pdr": "adaptive_quadratic",
+      "ble": true,
+      "magnetic": "grid_norm_mv",
+      "status": "stride-only-evaluated-not-full-runtime"
+    }
+  ]
+}

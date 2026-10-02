@@ -1,0 +1,33 @@
+{
+  "captured_date": "2026-09-21",
+  "source": "KakaoTalk received ZIP archives",
+  "files": [
+    {
+      "archive": "2026. 9. 21.zip",
+      "archive_sha256": "1FFD2892CDAF4B68612F546E1C4A86394666C4E661CE1FE0C92A61A2B0FC4B82",
+      "stored_as": "4f-left-corridor.glb",
+      "sha256": "9A9C4AF4AF1D279321465455D51D81288F721593067F54E21C185EA4D8A55DC1",
+      "bytes": 6666212,
+      "user_identification": "4층 왼쪽 복도 재측정",
+      "scope_note": "사용자 확인: 왼쪽 복도 구조는 2~10층 동일"
+    },
+    {
+      "archive": "2026. 9. 21 (1).zip",
+      "archive_sha256": "437838F96A6E78106E363E64258C173DC222ADC491DCB6ED9C675CD229AB2E4E",
+      "stored_as": "3f-right-corridor.glb",
+      "sha256": "DD0927A2AEBCB8D4D1188D15EE7AED930989B47941BF886A107DB16E805B7ADD",
+      "bytes": 20177912,
+      "user_identification": "3층 오른쪽 복도 재측정",
+      "scope_note": "메인복도 외 분기·증축 형상을 포함하므로 전체 bbox를 복도 길이로 사용하지 않음"
+    },
+    {
+      "archive": "2026. 9. 21 (2).zip",
+      "archive_sha256": "633521fad328fcebbdbd387ba995029d477069b63cfc27a3127903079a5c307b",
+      "stored_as": "2f-rescan.glb",
+      "sha256": "06caa3ceeec86c346f645009ee69b68f21f4a7ff45f95d3f72b7e5bb5a7e4d40",
+      "bytes": 23645048,
+      "user_identification": "2층 새 스캔",
+      "scope_note": "공유 링크 FE373BB5-7E56-4A58-9C41-2C61E5EBE7A5 관련 사용자 다운로드 완료 후 확인"
+    }
+  ]
+}

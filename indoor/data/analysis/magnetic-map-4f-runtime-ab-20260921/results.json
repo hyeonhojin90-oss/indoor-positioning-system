@@ -1,0 +1,1361 @@
+{
+  "version": "runtime-ab-20260921-ble-corrected",
+  "method": "4F right-corridor raw sensor replay through IndoorRuntime/IndoorFusion; query excluded from grid and sequence templates; baseline mode4 8-step norm plus available BLE versus optional guarded norm grid plus the same BLE. No AP in these walks.",
+  "bleReferenceSet": "app production 2026-09-17 stationary references",
+  "truth": "Endpoints confirmed. All intermediate truth is detected-step-linear interpolation, not surveyed position.",
+  "exclusions": [
+    {
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170448.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "excluded": "no_heading_samples"
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170648.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "excluded": "no_heading_samples"
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170852.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "excluded": "no_heading_samples"
+    }
+  ],
+  "summary": {
+    "overall": {
+      "sessions": 17,
+      "bleObservations": 3050,
+      "weakMeanM": 1.661681928555567,
+      "gridWeakMeanM": 1.6658888183684681,
+      "endpointMeanM": 2.8665345939049116,
+      "gridEndpointMeanM": 2.7685157647429697,
+      "weakWins": 8,
+      "endpointWins": 13,
+      "gridApplications": 92,
+      "baselineBleApplications": 0,
+      "gridBleApplications": 0,
+      "baselineBleWindows": 59,
+      "sequenceApplications": 1
+    },
+    "android": {
+      "sessions": 6,
+      "bleObservations": 3050,
+      "weakMeanM": 3.1026161730147446,
+      "gridWeakMeanM": 3.128501178825564,
+      "endpointMeanM": 4.965658821217367,
+      "gridEndpointMeanM": 4.854839992305908,
+      "weakWins": 3,
+      "endpointWins": 4,
+      "gridApplications": 15,
+      "baselineBleApplications": 0,
+      "gridBleApplications": 0,
+      "baselineBleWindows": 59,
+      "sequenceApplications": 1
+    },
+    "ios": {
+      "sessions": 11,
+      "bleObservations": 0,
+      "weakMeanM": 0.875717795214198,
+      "gridWeakMeanM": 0.8681002581191435,
+      "endpointMeanM": 1.721557742643572,
+      "gridEndpointMeanM": 1.630520731526822,
+      "weakWins": 5,
+      "endpointWins": 9,
+      "gridApplications": 77,
+      "baselineBleApplications": 0,
+      "gridBleApplications": 0,
+      "baselineBleWindows": 0,
+      "sequenceApplications": 0
+    }
+  },
+  "sessions": [
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 108,
+        "alignedSteps": 108,
+        "intermediateWeakMeanM": 6.871697695189912,
+        "intermediateWeakP90M": 11.226886671467703,
+        "endpointErrorM": 8.056860470466873,
+        "endpointEstimateM": 58.22998788538386,
+        "finalZone": "unknown",
+        "sequence": {
+          "evaluated": 12,
+          "applied": 1,
+          "reasons": {
+            "ambiguous_sequence": 10,
+            "applied": 1,
+            "unsupported_sequence_area": 1
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 108,
+        "alignedSteps": 108,
+        "intermediateWeakMeanM": 6.690247823388887,
+        "intermediateWeakP90M": 11.15795503878227,
+        "endpointErrorM": 7.511816460431831,
+        "endpointEstimateM": 57.68494387534882,
+        "finalZone": "unknown",
+        "sequence": {
+          "evaluated": 12,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 12
+          }
+        },
+        "grid": {
+          "evaluated": 108,
+          "applied": 2,
+          "reasons": {
+            "no_magnetic_sample": 4,
+            "outside_corridor": 27,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 15,
+            "applied": 2,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 94,
+        "alignedSteps": 96,
+        "intermediateWeakMeanM": 3.8542500551621464,
+        "intermediateWeakP90M": 6.924662544340137,
+        "endpointErrorM": 6.809820738417727,
+        "endpointEstimateM": 56.98294815333472,
+        "finalZone": "unknown",
+        "sequence": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 11
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 94,
+        "alignedSteps": 96,
+        "intermediateWeakMeanM": 4.185403386970644,
+        "intermediateWeakP90M": 7.004415025420009,
+        "endpointErrorM": 6.878778278446681,
+        "endpointEstimateM": 57.05190569336367,
+        "finalZone": "unknown",
+        "sequence": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 11
+          }
+        },
+        "grid": {
+          "evaluated": 94,
+          "applied": 1,
+          "reasons": {
+            "no_magnetic_sample": 2,
+            "outside_corridor": 13,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 16,
+            "applied": 1,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "bleObservations": 391,
+      "baseline": {
+        "detectedSteps": 87,
+        "alignedSteps": 87,
+        "intermediateWeakMeanM": 1.8488291724633188,
+        "intermediateWeakP90M": 3.305579439003533,
+        "endpointErrorM": 3.6625337731001224,
+        "endpointEstimateM": -3.6625337731001224,
+        "finalZone": "main_left",
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 9,
+            "outside_pdr_gate": 1
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 14,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 3,
+            "no_usable_features": 11
+          }
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 87,
+        "alignedSteps": 87,
+        "intermediateWeakMeanM": 1.8488291724633117,
+        "intermediateWeakP90M": 3.3055794390036253,
+        "endpointErrorM": 3.6625337731000798,
+        "endpointEstimateM": -3.6625337731000798,
+        "finalZone": "main_left",
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 10
+          }
+        },
+        "grid": {
+          "evaluated": 87,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 1,
+            "outside_corridor": 9,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 17,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 14,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 3,
+            "no_usable_features": 11
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "bleObservations": 300,
+      "baseline": {
+        "detectedSteps": 69,
+        "alignedSteps": 69,
+        "intermediateWeakMeanM": 3.9954716949580953,
+        "intermediateWeakP90M": 7.028328539950195,
+        "endpointErrorM": 7.674681228065154,
+        "endpointEstimateM": 42.49844618685184,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 8
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 10
+          }
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 69,
+        "alignedSteps": 69,
+        "intermediateWeakMeanM": 4.005626126114319,
+        "intermediateWeakP90M": 7.0491149661632235,
+        "endpointErrorM": 7.695467654278083,
+        "endpointEstimateM": 42.47765976063891,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 8
+          }
+        },
+        "grid": {
+          "evaluated": 69,
+          "applied": 4,
+          "reasons": {
+            "no_magnetic_sample": 2,
+            "outside_corridor": 1,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 10,
+            "applied": 4,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 10
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "bleObservations": 1149,
+      "baseline": {
+        "detectedSteps": 85,
+        "alignedSteps": 85,
+        "intermediateWeakMeanM": 1.1684121748272913,
+        "intermediateWeakP90M": 2.083809771507376,
+        "endpointErrorM": 1.7880843178019319,
+        "endpointEstimateM": 51.96121173271892,
+        "finalZone": "unknown",
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 10
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 18,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 2,
+            "no_usable_features": 16
+          }
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 85,
+        "alignedSteps": 85,
+        "intermediateWeakMeanM": 1.0342563413136296,
+        "intermediateWeakP90M": 1.9245668345456792,
+        "endpointErrorM": 1.7487891906675017,
+        "endpointEstimateM": 51.92191660558449,
+        "finalZone": "unknown",
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 10
+          }
+        },
+        "grid": {
+          "evaluated": 85,
+          "applied": 2,
+          "reasons": {
+            "no_magnetic_sample": 2,
+            "outside_corridor": 4,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 15,
+            "applied": 2,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 18,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 2,
+            "no_usable_features": 16
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "bleObservations": 1210,
+      "baseline": {
+        "detectedSteps": 78,
+        "alignedSteps": 78,
+        "intermediateWeakMeanM": 0.8770362454877013,
+        "intermediateWeakP90M": 1.6258042116936426,
+        "endpointErrorM": 1.8019723994523957,
+        "endpointEstimateM": 1.8019723994523957,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 7,
+            "outside_pdr_gate": 2
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 16,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 15
+          }
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 78,
+        "alignedSteps": 78,
+        "intermediateWeakMeanM": 1.0066442227025936,
+        "intermediateWeakP90M": 1.5513154915683314,
+        "endpointErrorM": 1.6316545969112681,
+        "endpointEstimateM": 1.6316545969112681,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 9
+          }
+        },
+        "grid": {
+          "evaluated": 78,
+          "applied": 6,
+          "reasons": {
+            "no_magnetic_sample": 2,
+            "outside_corridor": 0,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 11,
+            "applied": 6,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 16,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 15
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 83,
+        "alignedSteps": 83,
+        "intermediateWeakMeanM": 0.5065886467582831,
+        "intermediateWeakP90M": 0.976515100416087,
+        "endpointErrorM": 1.1640516148279332,
+        "endpointEstimateM": 51.337179029744924,
+        "finalZone": "stairs_right",
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 8
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 83,
+        "alignedSteps": 83,
+        "intermediateWeakMeanM": 0.5019826884164477,
+        "intermediateWeakP90M": 0.8586054539794858,
+        "endpointErrorM": 1.035391694969647,
+        "endpointEstimateM": 51.20851910988664,
+        "finalZone": "stairs_right",
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 8
+          }
+        },
+        "grid": {
+          "evaluated": 83,
+          "applied": 5,
+          "reasons": {
+            "no_magnetic_sample": 5,
+            "outside_corridor": 3,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 11,
+            "applied": 5,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 77,
+        "alignedSteps": 77,
+        "intermediateWeakMeanM": 1.2102345728982935,
+        "intermediateWeakP90M": 2.2074103952207986,
+        "endpointErrorM": 2.43265451380627,
+        "endpointEstimateM": 2.43265451380627,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 6
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 77,
+        "alignedSteps": 77,
+        "intermediateWeakMeanM": 1.1842066941633234,
+        "intermediateWeakP90M": 2.021929006013017,
+        "endpointErrorM": 2.312001345922397,
+        "endpointEstimateM": 2.312001345922397,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        },
+        "grid": {
+          "evaluated": 77,
+          "applied": 12,
+          "reasons": {
+            "no_magnetic_sample": 6,
+            "outside_corridor": 0,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 3,
+            "applied": 12,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 78,
+        "alignedSteps": 78,
+        "intermediateWeakMeanM": 1.0749377494511219,
+        "intermediateWeakP90M": 1.8270935342444687,
+        "endpointErrorM": 2.0263488705842647,
+        "endpointEstimateM": 48.146778544332726,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 7
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 78,
+        "alignedSteps": 78,
+        "intermediateWeakMeanM": 1.0873645517996697,
+        "intermediateWeakP90M": 1.851959513523326,
+        "endpointErrorM": 1.9728134539857294,
+        "endpointEstimateM": 48.20031396093126,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 7
+          }
+        },
+        "grid": {
+          "evaluated": 78,
+          "applied": 4,
+          "reasons": {
+            "no_magnetic_sample": 7,
+            "outside_corridor": 0,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 11,
+            "applied": 4,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 78,
+        "alignedSteps": 78,
+        "intermediateWeakMeanM": 0.9112459664155276,
+        "intermediateWeakP90M": 1.6614693808554524,
+        "endpointErrorM": 1.8366915653284224,
+        "endpointEstimateM": 1.8366915653284224,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 6
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 78,
+        "alignedSteps": 78,
+        "intermediateWeakMeanM": 0.7871069192660948,
+        "intermediateWeakP90M": 1.520020151899816,
+        "endpointErrorM": 1.7075009139835942,
+        "endpointEstimateM": 1.7075009139835942,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        },
+        "grid": {
+          "evaluated": 78,
+          "applied": 9,
+          "reasons": {
+            "no_magnetic_sample": 7,
+            "outside_corridor": 0,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 6,
+            "applied": 9,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 80,
+        "alignedSteps": 80,
+        "intermediateWeakMeanM": 1.0851770620115855,
+        "intermediateWeakP90M": 1.8789731660434725,
+        "endpointErrorM": 2.0137770076555768,
+        "endpointEstimateM": 48.159350407261414,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 5
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 80,
+        "alignedSteps": 80,
+        "intermediateWeakMeanM": 1.0966058597187747,
+        "intermediateWeakP90M": 1.8631726381485052,
+        "endpointErrorM": 1.8401371748076372,
+        "endpointEstimateM": 48.33299024010935,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 5
+          }
+        },
+        "grid": {
+          "evaluated": 80,
+          "applied": 6,
+          "reasons": {
+            "no_magnetic_sample": 10,
+            "outside_corridor": 1,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 9,
+            "applied": 6,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 79,
+        "alignedSteps": 79,
+        "intermediateWeakMeanM": 0.5836922233628444,
+        "intermediateWeakP90M": 1.0840409936678563,
+        "endpointErrorM": 1.2147879701402786,
+        "endpointEstimateM": 1.2147879701402786,
+        "finalZone": "core_junction",
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 6
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 79,
+        "alignedSteps": 79,
+        "intermediateWeakMeanM": 0.7133944278977229,
+        "intermediateWeakP90M": 1.1111422698183215,
+        "endpointErrorM": 1.2100448675696498,
+        "endpointEstimateM": 1.2100448675696498,
+        "finalZone": "core_junction",
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        },
+        "grid": {
+          "evaluated": 79,
+          "applied": 8,
+          "reasons": {
+            "no_magnetic_sample": 10,
+            "outside_corridor": 1,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 7,
+            "applied": 8,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 77,
+        "alignedSteps": 77,
+        "intermediateWeakMeanM": 1.3802671681447898,
+        "intermediateWeakP90M": 2.379128997643683,
+        "endpointErrorM": 2.619447678947168,
+        "endpointEstimateM": 47.55367973596982,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 4
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 77,
+        "alignedSteps": 77,
+        "intermediateWeakMeanM": 1.2803797559993784,
+        "intermediateWeakP90M": 2.163441486962938,
+        "endpointErrorM": 2.3588779368083763,
+        "endpointEstimateM": 47.814249478108614,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 4
+          }
+        },
+        "grid": {
+          "evaluated": 77,
+          "applied": 7,
+          "reasons": {
+            "no_magnetic_sample": 9,
+            "outside_corridor": 1,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 7,
+            "applied": 7,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 76,
+        "alignedSteps": 76,
+        "intermediateWeakMeanM": 1.923374591350013,
+        "intermediateWeakP90M": 3.3862373447915584,
+        "endpointErrorM": 3.671497166026448,
+        "endpointEstimateM": 3.671497166026448,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 5
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 76,
+        "alignedSteps": 76,
+        "intermediateWeakMeanM": 1.8043678152373708,
+        "intermediateWeakP90M": 3.1420466920220687,
+        "endpointErrorM": 3.421780734041292,
+        "endpointEstimateM": 3.421780734041292,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 5
+          }
+        },
+        "grid": {
+          "evaluated": 76,
+          "applied": 7,
+          "reasons": {
+            "no_magnetic_sample": 10,
+            "outside_corridor": 0,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 7,
+            "applied": 7,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 82,
+        "alignedSteps": 82,
+        "intermediateWeakMeanM": 0.15435744519444272,
+        "intermediateWeakP90M": 0.28116945787460423,
+        "endpointErrorM": 0.47888500939276213,
+        "endpointEstimateM": 50.65201242430975,
+        "finalZone": "stairs_right",
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 4
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 82,
+        "alignedSteps": 82,
+        "intermediateWeakMeanM": 0.19802207632393923,
+        "intermediateWeakP90M": 0.4246317761720846,
+        "endpointErrorM": 0.5729812232156135,
+        "endpointEstimateM": 50.746108638132604,
+        "finalZone": "stairs_right",
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 4
+          }
+        },
+        "grid": {
+          "evaluated": 82,
+          "applied": 7,
+          "reasons": {
+            "no_magnetic_sample": 13,
+            "outside_corridor": 2,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 7,
+            "applied": 7,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "platform": "ios",
+      "direction": "reverse",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 81,
+        "alignedSteps": 81,
+        "intermediateWeakMeanM": 0.04461085068033646,
+        "intermediateWeakP90M": 0.04503079063406812,
+        "endpointErrorM": 0.04096951750895528,
+        "endpointEstimateM": -0.04096951750895528,
+        "finalZone": "core_junction",
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 5
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 81,
+        "alignedSteps": 81,
+        "intermediateWeakMeanM": 0.0546701730319366,
+        "intermediateWeakP90M": 0.14322097051717542,
+        "endpointErrorM": 0.06927505939849254,
+        "endpointEstimateM": -0.06927505939849254,
+        "finalZone": "core_junction",
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 5
+          }
+        },
+        "grid": {
+          "evaluated": 81,
+          "applied": 7,
+          "reasons": {
+            "no_magnetic_sample": 8,
+            "outside_corridor": 3,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 8,
+            "applied": 7,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "platform": "ios",
+      "direction": "forward",
+      "bleObservations": 0,
+      "baseline": {
+        "detectedSteps": 79,
+        "alignedSteps": 79,
+        "intermediateWeakMeanM": 0.7584094710889382,
+        "intermediateWeakP90M": 1.2599814179129893,
+        "endpointErrorM": 1.4380242548612117,
+        "endpointEstimateM": 48.73510316005578,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 4
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 79,
+        "alignedSteps": 79,
+        "intermediateWeakMeanM": 0.8410018774559201,
+        "intermediateWeakP90M": 1.3594741086919768,
+        "endpointErrorM": 1.4349236420926132,
+        "endpointEstimateM": 48.73820377282438,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 4
+          }
+        },
+        "grid": {
+          "evaluated": 79,
+          "applied": 5,
+          "reasons": {
+            "no_magnetic_sample": 12,
+            "outside_corridor": 1,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 9,
+            "applied": 5,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        }
+      }
+    }
+  ]
+}

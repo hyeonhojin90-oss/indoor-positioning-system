@@ -1,0 +1,88 @@
+{
+  "createdAt": "2026-09-19T07:34:30.345Z",
+  "method": "Each stationary session is split in time. First half creates one BLE reference and second half is classified against all zones.",
+  "evaluated": 6,
+  "correct": 6,
+  "top1": 1,
+  "rows": [
+    {
+      "file": "indoor_positioning_20260919_111618.jsonl",
+      "truth": "stairs_right",
+      "label": "오른쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "referenceSignals": 19,
+      "querySignals": 18,
+      "predicted": "stairs_right",
+      "correct": true,
+      "topWeight": 0.3988052158310176,
+      "margin": 0.0801528388965489,
+      "second": "main_right",
+      "reason": "relative_zone_scores"
+    },
+    {
+      "file": "indoor_positioning_20260919_111707.jsonl",
+      "truth": "main_right",
+      "label": "오른쪽 강의실 라인 · 4206",
+      "referenceSignals": 19,
+      "querySignals": 19,
+      "predicted": "main_right",
+      "correct": true,
+      "topWeight": 0.4271127998015078,
+      "margin": 0.10438173328765465,
+      "second": "stairs_right",
+      "reason": "relative_zone_scores"
+    },
+    {
+      "file": "indoor_positioning_20260919_111758.jsonl",
+      "truth": "core_junction",
+      "label": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "referenceSignals": 17,
+      "querySignals": 24,
+      "predicted": "core_junction",
+      "correct": true,
+      "topWeight": 0.4938999302957702,
+      "margin": 0.22356417386342364,
+      "second": "stairs_right",
+      "reason": "relative_zone_scores"
+    },
+    {
+      "file": "indoor_positioning_20260919_112827.jsonl",
+      "truth": "stairs_left",
+      "label": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "referenceSignals": 23,
+      "querySignals": 23,
+      "predicted": "stairs_left",
+      "correct": true,
+      "topWeight": 0.7077242200051297,
+      "margin": 0.4154484400102594,
+      "second": "main_left",
+      "reason": "relative_zone_scores"
+    },
+    {
+      "file": "indoor_positioning_20260919_112915.jsonl",
+      "truth": "main_left",
+      "label": "왼쪽 강의실 라인 · 4124",
+      "referenceSignals": 23,
+      "querySignals": 25,
+      "predicted": "main_left",
+      "correct": true,
+      "topWeight": 0.534765472280059,
+      "margin": 0.29330771739065364,
+      "second": "core_junction",
+      "reason": "relative_zone_scores"
+    },
+    {
+      "file": "indoor_positioning_20260919_113013.jsonl",
+      "truth": "core_junction",
+      "label": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "referenceSignals": 27,
+      "querySignals": 29,
+      "predicted": "core_junction",
+      "correct": true,
+      "topWeight": 0.32927861870112496,
+      "margin": 0.13059235856765755,
+      "second": "stairs_right",
+      "reason": "relative_zone_scores"
+    }
+  ],
+  "limitation": "Same-session half split strongly overestimates field generalization. Every zone still needs independent repeat sessions."
+}

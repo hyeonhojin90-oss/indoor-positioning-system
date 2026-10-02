@@ -1,0 +1,2468 @@
+{
+  "method": "Actual sensor Runtime, fixed stride, production BLE refs, query excluded from V2 by source basename/hash and grid by content hash. Sensor timestamps and heading bridge follow existing left replay. No laps fed to engine.",
+  "limitations": [
+    "Endpoint physical distance only; no independent intermediate trajectory truth",
+    "Same user/device; retrospective model selection, not a new held-out final test",
+    "Right grid supported only; left compares PDR, BLE, V2, V2+BLE",
+    "AP absent from movement logs; no AP ranking",
+    "Replay wall time is desktop timing, not phone energy"
+  ],
+  "summary": {
+    "left": {
+      "pdr": {
+        "n": 5,
+        "endpointMAE": 2.0015292003772784,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 5,
+        "endpointMAE": 1.9936504700196962,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 10
+      },
+      "v2": {
+        "n": 5,
+        "endpointMAE": 2.0012374722467925,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 5,
+        "endpointMAE": 1.9933542587801825,
+        "worst": 3.7981902411567603,
+        "over3m": 2,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 1,
+        "bleApplications": 10
+      },
+      "grid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 0,
+        "endpointMAE": null,
+        "worst": null,
+        "over3m": 0,
+        "over5m": 0,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      }
+    },
+    "right": {
+      "pdr": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "ble": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "v2_ble": {
+        "n": 6,
+        "endpointMAE": 4.279681678423254,
+        "worst": 8.053369077185522,
+        "over3m": 4,
+        "over5m": 2,
+        "winsOverPdr": 0,
+        "harmsOverPdr": 0,
+        "magneticApplications": 0,
+        "bleApplications": 0
+      },
+      "grid": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      },
+      "grid_ble": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      },
+      "hybrid": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      },
+      "hybrid_ble": {
+        "n": 6,
+        "endpointMAE": 4.053323313342639,
+        "worst": 7.873441034364006,
+        "over3m": 3,
+        "over5m": 2,
+        "winsOverPdr": 4,
+        "harmsOverPdr": 0,
+        "magneticApplications": 14,
+        "bleApplications": 0
+      }
+    }
+  },
+  "folds": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "sha256": "0436540d9e5eeaabbf66d49716cb0cc542bcb4b113aae255dc5be596aa7492cc",
+      "corridor": "right",
+      "direction": "reverse",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825763,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 299.5786999999982
+        },
+        "ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825763,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 14,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 3,
+              "no_usable_features": 11
+            }
+          },
+          "replayMs": 250.6964999999982
+        },
+        "v2": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825763,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9,
+              "ambiguous_sequence": 1
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 187.1626000000033
+        },
+        "v2_ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825763,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9,
+              "ambiguous_sequence": 1
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 14,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 3,
+              "no_usable_features": 11
+            }
+          },
+          "replayMs": 209.9730000000054
+        },
+        "grid": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825834,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 1,
+              "outside_corridor": 9,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 17,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 297.60989999999583
+        },
+        "grid_ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825834,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 1,
+              "outside_corridor": 9,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 17,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 14,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 3,
+              "no_usable_features": 11
+            }
+          },
+          "replayMs": 298.95329999999376
+        },
+        "hybrid": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825834,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9,
+              "ambiguous_sequence": 1
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 1,
+              "outside_corridor": 9,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 17,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 306.6631999999954
+        },
+        "hybrid_ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.6673268326825834,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9,
+              "ambiguous_sequence": 1
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 1,
+              "outside_corridor": 9,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 17,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 14,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 3,
+              "no_usable_features": 11
+            }
+          },
+          "replayMs": 343.2372000000032
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "sha256": "1151ac394094d34c76803372d34068d9cff2b810cb2287b05b6da1454056de0c",
+      "corridor": "right",
+      "direction": "forward",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.451724209210477,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 171.35450000000128
+        },
+        "ble": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.451724209210477,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 10
+            }
+          },
+          "replayMs": 169.72149999999965
+        },
+        "v2": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.451724209210477,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 167.71929999999702
+        },
+        "v2_ble": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.451724209210477,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 10
+            }
+          },
+          "replayMs": 167.00830000000133
+        },
+        "grid": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.449872692388633,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 5,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 69,
+            "applied": 5,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 1,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 9,
+              "applied": 5,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 239.99790000000212
+        },
+        "grid_ble": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.449872692388633,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 5,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 69,
+            "applied": 5,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 1,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 9,
+              "applied": 5,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 10
+            }
+          },
+          "replayMs": 237.87260000000242
+        },
+        "hybrid": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.449872692388633,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 5,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 69,
+            "applied": 5,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 1,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 9,
+              "applied": 5,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 240.88150000000314
+        },
+        "hybrid_ble": {
+          "detectedSteps": 69,
+          "endpointErrorM": 7.449872692388633,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 5,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 69,
+            "applied": 5,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 1,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 9,
+              "applied": 5,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 10
+            }
+          },
+          "replayMs": 253.42289999999775
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "sha256": "40c42039f9b994f768bdeb66656303b5e8add21b1e65638fa07881aec147b776",
+      "corridor": "right",
+      "direction": "forward",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.4285948720911275,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 313.93309999999474
+        },
+        "ble": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.4285948720911275,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 17
+            }
+          },
+          "replayMs": 337.54479999999603
+        },
+        "v2": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.4285948720911275,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "outside_pdr_gate": 2
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 306.06550000000425
+        },
+        "v2_ble": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.4285948720911275,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "outside_pdr_gate": 2
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 17
+            }
+          },
+          "replayMs": 370.6461000000054
+        },
+        "grid": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.128814250538381,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9,
+              "grid_primary_applied": 1
+            }
+          },
+          "grid": {
+            "evaluated": 85,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 5,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 438.2552000000069
+        },
+        "grid_ble": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.128814250538381,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9,
+              "grid_primary_applied": 1
+            }
+          },
+          "grid": {
+            "evaluated": 85,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 5,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 17
+            }
+          },
+          "replayMs": 452.8767000000007
+        },
+        "hybrid": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.128814250538381,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 7,
+              "grid_primary_applied": 1,
+              "outside_pdr_gate": 2
+            }
+          },
+          "grid": {
+            "evaluated": 85,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 5,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 410.8787999999986
+        },
+        "hybrid_ble": {
+          "detectedSteps": 85,
+          "endpointErrorM": 1.128814250538381,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 7,
+              "grid_primary_applied": 1,
+              "outside_pdr_gate": 2
+            }
+          },
+          "grid": {
+            "evaluated": 85,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 5,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 17
+            }
+          },
+          "replayMs": 435.4285999999993
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "sha256": "423e57c8c3ff2ee633fce1f72ffd2a21365c7372b4a063c8c3da368530dc3b95",
+      "corridor": "right",
+      "direction": "reverse",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.8255754116706413,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 326.2488999999987
+        },
+        "ble": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.8255754116706413,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 15
+            }
+          },
+          "replayMs": 402.1918000000005
+        },
+        "v2": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.8255754116706413,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 332.46050000000105
+        },
+        "v2_ble": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.8255754116706413,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 15
+            }
+          },
+          "replayMs": 386.47529999999824
+        },
+        "grid": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.545260356504663,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 78,
+            "applied": 4,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 0,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 11,
+              "applied": 4,
+              "rejected_by_particle_gate": 2
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 441.80130000000645
+        },
+        "grid_ble": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.545260356504663,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 78,
+            "applied": 4,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 0,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 11,
+              "applied": 4,
+              "rejected_by_particle_gate": 2
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 15
+            }
+          },
+          "replayMs": 471.4279999999999
+        },
+        "hybrid": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.545260356504663,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 6,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 78,
+            "applied": 4,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 0,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 11,
+              "applied": 4,
+              "rejected_by_particle_gate": 2
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 420.02470000000176
+        },
+        "hybrid_ble": {
+          "detectedSteps": 78,
+          "endpointErrorM": 1.545260356504663,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 6,
+              "grid_primary_applied": 3
+            }
+          },
+          "grid": {
+            "evaluated": 78,
+            "applied": 4,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 0,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 11,
+              "applied": 4,
+              "rejected_by_particle_gate": 2
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 15
+            }
+          },
+          "replayMs": 436.8828999999969
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "sha256": "36012da448caa08ee06471d51cd5543b2b1905a58fddc3b2fe933ba29a5ac6b2",
+      "corridor": "left",
+      "direction": "forward",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.7981902411567603,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 335.2508000000016
+        },
+        "ble": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.7981902411567603,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "replayMs": 359.7016999999978
+        },
+        "v2": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.7981902411567603,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 310.52150000000256
+        },
+        "v2_ble": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.7981902411567603,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "replayMs": 364.02900000000227
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "sha256": "a9fa387ef0ec2f70dcf6e9b01f7a56e88785ad276140c70678dbc5ea798899a4",
+      "corridor": "left",
+      "direction": "reverse",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 76,
+          "endpointErrorM": 1.831556099169859,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 352.1198000000004
+        },
+        "ble": {
+          "detectedSteps": 76,
+          "endpointErrorM": 1.8468526389552125,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "replayMs": 420.95790000000125
+        },
+        "v2": {
+          "detectedSteps": 76,
+          "endpointErrorM": 1.831556099169859,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 339.4832999999999
+        },
+        "v2_ble": {
+          "detectedSteps": 76,
+          "endpointErrorM": 1.8468526389552125,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "replayMs": 403.11149999999907
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+      "sha256": "a2e451a5b1a7dca0999ea56de649f071ddf9b219a7d706a09f59fe434d2949aa",
+      "corridor": "right",
+      "direction": "forward",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.2514996676991794,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 357.0793000000049
+        },
+        "ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.2514996676991794,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 21,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 20
+            }
+          },
+          "replayMs": 355.72670000000653
+        },
+        "v2": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.2514996676991794,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 396.42520000000513
+        },
+        "v2_ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 3.2514996676991794,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 10
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 21,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 20
+            }
+          },
+          "replayMs": 409.6603000000032
+        },
+        "grid": {
+          "detectedSteps": 87,
+          "endpointErrorM": 2.6552247135775646,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8,
+              "grid_primary_applied": 2
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 3,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 7,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 14,
+              "applied": 3,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 453.5935000000027
+        },
+        "grid_ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 2.6552247135775646,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8,
+              "grid_primary_applied": 2
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 3,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 7,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 14,
+              "applied": 3,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 21,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 20
+            }
+          },
+          "replayMs": 453.9921000000031
+        },
+        "hybrid": {
+          "detectedSteps": 87,
+          "endpointErrorM": 2.6552247135775646,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "grid_primary_applied": 2
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 3,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 7,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 14,
+              "applied": 3,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 444.04559999999765
+        },
+        "hybrid_ble": {
+          "detectedSteps": 87,
+          "endpointErrorM": 2.6552247135775646,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "grid_primary_applied": 2
+            }
+          },
+          "grid": {
+            "evaluated": 87,
+            "applied": 3,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 7,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 14,
+              "applied": 3,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 21,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 20
+            }
+          },
+          "replayMs": 507.9628999999986
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl",
+      "sha256": "779246ff8b5ae98dbf8bb289580318c2cdba2ebf8137d0b9719ecd9f98ca3e18",
+      "corridor": "right",
+      "direction": "reverse",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 94,
+          "endpointErrorM": 8.053369077185522,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 11
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 341.5705999999918
+        },
+        "ble": {
+          "detectedSteps": 94,
+          "endpointErrorM": 8.053369077185522,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 11
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 22,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 4,
+              "no_usable_features": 18
+            }
+          },
+          "replayMs": 362.0769
+        },
+        "v2": {
+          "detectedSteps": 94,
+          "endpointErrorM": 8.053369077185522,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9,
+              "ambiguous_sequence": 2
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 326.1371000000072
+        },
+        "v2_ble": {
+          "detectedSteps": 94,
+          "endpointErrorM": 8.053369077185522,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 9,
+              "ambiguous_sequence": 2
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 22,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 4,
+              "no_usable_features": 18
+            }
+          },
+          "replayMs": 438.51149999999325
+        },
+        "grid": {
+          "detectedSteps": 94,
+          "endpointErrorM": 7.873441034364006,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10,
+              "grid_primary_applied": 1
+            }
+          },
+          "grid": {
+            "evaluated": 94,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 16,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 399.17119999999704
+        },
+        "grid_ble": {
+          "detectedSteps": 94,
+          "endpointErrorM": 7.873441034364006,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 10,
+              "grid_primary_applied": 1
+            }
+          },
+          "grid": {
+            "evaluated": 94,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 16,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 22,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 4,
+              "no_usable_features": 18
+            }
+          },
+          "replayMs": 431.7427000000025
+        },
+        "hybrid": {
+          "detectedSteps": 94,
+          "endpointErrorM": 7.873441034364006,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 8,
+              "grid_primary_applied": 1,
+              "ambiguous_sequence": 2
+            }
+          },
+          "grid": {
+            "evaluated": 94,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 16,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 468.72350000000733
+        },
+        "hybrid_ble": {
+          "detectedSteps": 94,
+          "endpointErrorM": 7.873441034364006,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "no_sequence_reference": 8,
+              "grid_primary_applied": 1,
+              "ambiguous_sequence": 2
+            }
+          },
+          "grid": {
+            "evaluated": 94,
+            "applied": 1,
+            "reasons": {
+              "no_magnetic_sample": 2,
+              "outside_corridor": 16,
+              "calibrating": 8,
+              "no_reference": 0,
+              "ambiguous": 16,
+              "applied": 1,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 22,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 4,
+              "no_usable_features": 18
+            }
+          },
+          "replayMs": 446.2207999999955
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "sha256": "18d62c8c11910ebb932fba49b4fae252481ae42e06dbf613d78362197dc9b8fa",
+      "corridor": "left",
+      "direction": "forward",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 79,
+          "endpointErrorM": 0.03054413628109387,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 403.8761000000086
+        },
+        "ble": {
+          "detectedSteps": 79,
+          "endpointErrorM": 0.001760917534468831,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "replayMs": 402.4412000000011
+        },
+        "v2": {
+          "detectedSteps": 79,
+          "endpointErrorM": 0.03054413628109387,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 355.93970000000263
+        },
+        "v2_ble": {
+          "detectedSteps": 79,
+          "endpointErrorM": 0.001760917534468831,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "replayMs": 379.92450000000827
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "sha256": "6fbbfeff7c38d50540bfe13f91c4f4de4a68d711e4b6114cc4382b5c1e549c3b",
+      "corridor": "left",
+      "direction": "reverse",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 80,
+          "endpointErrorM": 0.6575354477785211,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 454.87579999999434
+        },
+        "ble": {
+          "detectedSteps": 80,
+          "endpointErrorM": 0.6237835465088892,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "replayMs": 471.116399999999
+        },
+        "v2": {
+          "detectedSteps": 80,
+          "endpointErrorM": 0.6575354477785211,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 497.34229999998934
+        },
+        "v2_ble": {
+          "detectedSteps": 80,
+          "endpointErrorM": 0.6237835465088892,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "replayMs": 464.05899999999383
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "sha256": "72e83cb3e821401411b310861127af84864d337d1206568eaa5e0851d80099cd",
+      "corridor": "left",
+      "direction": "reverse",
+      "variants": {
+        "pdr": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.6898200775001584,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 277.8698000000004
+        },
+        "ble": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.6976650059431506,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "replayMs": 289.9131000000052
+        },
+        "v2": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.688361436847728,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "applied": 1
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "replayMs": 260.8072000000102
+        },
+        "v2_ble": {
+          "detectedSteps": 73,
+          "endpointErrorM": 3.6961839497455813,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "applied": 1
+            }
+          },
+          "grid": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {
+              "no_magnetic_sample": 0,
+              "outside_corridor": 0,
+              "calibrating": 0,
+              "no_reference": 0,
+              "ambiguous": 0,
+              "applied": 0,
+              "rejected_by_particle_gate": 0
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "replayMs": 287.63270000000193
+        }
+      }
+    }
+  ]
+}

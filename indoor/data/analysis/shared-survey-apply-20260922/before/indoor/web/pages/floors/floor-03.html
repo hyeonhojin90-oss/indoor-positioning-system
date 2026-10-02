@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT융합대학 3층 구조 검토도</title>
+  <script>
+    if (new URLSearchParams(window.location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embed");
+    }
+  </script>
+  <link rel="stylesheet" href="../../src/floors/floor-03.css" />
+</head>
+<body>
+<main class="plan-shell">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">3F 구조 확정 단계</p>
+      <h1>IT융합대학 3층 2D 구조 검토도</h1>
+      <p>4층 공통틀은 유지하고, 3203 라인에서 열린 입구를 통해 자유공간과 증축부 복도, IT홀, 3104-1·2로 이어지는 현재 3층 사용 구조를 재현했습니다.</p>
+    </div>
+    <nav class="top-actions"><a class="secondary-link" href="../../clay.html">3D 돌아가기</a><a class="secondary-link" href="../../scan3f.html">원본 GLB 보기</a></nav>
+  </header>
+  <section class="toolbar">
+    <div class="view-buttons"><button class="active" data-view="all">전체 구조</button><button data-view="extension">3층 증축부</button><button data-view="core">코어</button></div>
+    <p id="viewStatus">4층 기준틀과 3층 증축부를 함께 표시하고 있습니다.</p>
+  </section>
+  <section class="plan-layout">
+    <div class="plan-stage">
+      <svg id="floorPlan" viewBox="0 0 1380 1180" role="img" aria-labelledby="planTitle planDesc">
+        <title id="planTitle">4층 구조를 상속한 IT융합대학 3층 평면 구조</title>
+        <desc id="planDesc">가로 메인복도와 중앙 코어는 4층과 같고, 3203 라인에서 열린 입구를 지나 자유공간, 증축부 복도, IT홀, 3104-1과 3104-2로 이어지는 3층 2D 구조도.</desc>
+        <defs>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#e7ebef" /></pattern>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#2f6f61" /></marker>
+        </defs>
+        <rect class="sheet-grid" x="20" y="20" width="1340" height="1140" />
+        <g id="buildingPlan">
+          <g class="inherited-shell" transform="translate(0 470)">
+            <rect class="common-frame" x="70" y="120" width="1240" height="284" />
+            <rect class="main-corridor" x="70" y="230" width="1240" height="64" />
+            <text x="690" y="268">메인 복도 · 폭 2.34m</text>
+
+            <g class="left-end-stair">
+              <rect x="25" y="294" width="45" height="110" />
+              <path class="stair-step" d="M34 314h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27m-27 12h27" />
+              <text transform="translate(48 350) rotate(-90)">왼쪽계단</text>
+            </g>
+
+            <g class="room-row inherited-rooms">
+              <rect x="70" y="120" width="165" height="110" /><rect x="235" y="120" width="150" height="110" /><rect x="385" y="120" width="245" height="110" />
+              <text x="152" y="175">3128</text><text x="310" y="175">3128</text><text x="507" y="175">3120</text>
+              <rect x="70" y="294" width="150" height="110" /><rect x="220" y="294" width="145" height="110" /><rect x="365" y="294" width="205" height="110" />
+              <text x="145" y="349">3228</text><text x="292" y="349">3224</text><text x="468" y="349">3220</text>
+              <text class="row-label upper-row" x="300" y="98">왼쪽복도 위쪽: 31xx 라인</text>
+              <text class="row-label lower-row" x="300" y="430">왼쪽복도 아래쪽: 32xx 라인</text>
+            </g>
+
+            <g class="unused-zone inherited-unused-zone">
+              <rect x="630" y="120" width="388" height="110" />
+              <line x1="650" y1="132" x2="998" y2="218" />
+              <line x1="998" y1="132" x2="650" y2="218" />
+            </g>
+
+            <g class="core-module">
+              <rect x="570" y="294" width="230" height="250" />
+              <rect class="restroom-core" x="570" y="294" width="60" height="250" />
+              <rect class="facility ev-bank" x="630" y="294" width="60" height="250" />
+              <rect class="facility ev-car" x="642" y="314" width="34" height="64" />
+              <rect class="facility ev-car" x="642" y="394" width="34" height="64" />
+              <line class="core-separator" x1="630" y1="294" x2="630" y2="544" />
+              <line class="core-separator" x1="690" y1="294" x2="690" y2="544" />
+              <rect class="core-corridor" x="690" y="294" width="42" height="250" />
+              <rect class="stair-box" x="752" y="336" width="36" height="180" />
+              <path class="stair-step" d="M758 352h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24m-24 13h24" />
+              <text class="core-side-label" x="600" y="419" transform="rotate(-90 600 419)">메인 화장실</text>
+              <text x="660" y="346">EV</text><text x="660" y="426">EV</text>
+              <text x="660" y="494">엘레베이터 2대</text>
+              <text x="711" y="318">코어복도</text><text x="770" y="530">메인계단</text>
+            </g>
+
+            <g class="room-row right-common">
+              <rect x="800" y="294" width="150" height="110" /><rect x="950" y="294" width="68" height="110" /><rect x="1018" y="294" width="128" height="110" /><rect x="1146" y="294" width="106" height="110" />
+              <text x="875" y="349">3210</text><text x="984" y="349">3210-1</text><text x="1082" y="349">3208</text><text x="1199" y="349">3203</text>
+              <text class="row-label lower-row" x="1025" y="430">메인계단 옆 강의실: 3210 · 3210-1 · 3208 · 3203</text>
+            </g>
+
+            <g class="end-facilities">
+              <rect x="1252" y="294" width="30" height="110" />
+              <text transform="translate(1267 349) rotate(-90)">화장실 통로</text>
+              <rect class="right-stair-entry" x="1282" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1291 323) rotate(-90)">계단 입구</text>
+              <rect class="right-stair-flight" x="1300" y="294" width="52" height="58" />
+              <path class="stair-step right-end-stair-step" d="M1304 304h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44m-44 8h44" />
+              <text class="right-stair-zone" transform="translate(1326 323) rotate(-90)">12+12계단</text>
+              <rect class="right-stair-landing" x="1352" y="294" width="18" height="58" />
+              <text class="right-stair-zone" transform="translate(1361 323) rotate(-90)">중간참</text>
+              <text x="1326" y="370">오른쪽계단</text>
+            </g>
+          </g>
+
+          <g class="extension-layer">
+            <rect class="erase-mask" x="1300" y="590" width="60" height="174" />
+            <path class="blocked-boundary" d="M820 590H1180M1300 590V764" />
+            <rect class="erase-mask" x="1296" y="584" width="16" height="7" />
+            <rect class="erase-mask" x="1296" y="764" width="16" height="7" />
+            <path class="branch-opening" d="M1180 590H1248" />
+            <text class="movement-label" x="1070" y="610">3203 라인 첫 입구만 개방 · 나머지는 벽</text>
+
+            <g class="extension-room free-space">
+              <path d="M1146 455H1300V585H1146Z" />
+              <text x="1223" y="515">자유공간</text>
+              <text class="source-note" x="1223" y="540">3203+화장실 통로 폭</text>
+            </g>
+
+            <g class="unused-zone right-unused-zone">
+              <rect x="1300" y="590" width="60" height="110" />
+              <line x1="1310" y1="604" x2="1350" y2="686" />
+              <line x1="1350" y1="604" x2="1310" y2="686" />
+            </g>
+
+            <g class="extension-corridor">
+              <path d="M1146 85H1192V455H1146Z" />
+              <text x="1169" y="270" transform="rotate(-90 1169 270)">증축부 복도</text>
+            </g>
+
+            <g class="extension-room it-hall">
+              <path d="M1018 85H1146V455H1018Z" />
+              <text x="1082" y="270">IT홀</text>
+              <text class="source-note" x="1082" y="297">피난안내도 표기: 3108</text>
+            </g>
+
+            <g class="extension-room it-hall-lower">
+              <path d="M1018 455H1146V585H1018Z" />
+              <text class="source-note" x="1082" y="575">IT홀 하부 공간</text>
+              <path d="M1082 455H1146V520H1082Z" />
+              <line x1="1082" y1="520" x2="1146" y2="520" />
+              <path class="lower-stair-step" d="M1092 529h44m-44 9h44m-44 9h44m-44 9h44m-44 9h44" />
+              <text class="source-note" x="1114" y="552">계단</text>
+            </g>
+
+            <g class="extension-room room-3104">
+              <path d="M1198 85H1300V270H1198Z" />
+              <path d="M1198 270H1300V455H1198Z" />
+              <text x="1249" y="178">3104-1</text>
+              <text x="1249" y="363">3104-2</text>
+            </g>
+
+            <path class="it-hall-entry-flow" d="M1214 590V552H1114" marker-end="url(#arrow)" />
+            <path class="movement" d="M680 732H1214V590H1172V515H1169V105" marker-end="url(#arrow)" />
+            <text class="layer-title" x="930" y="145">노란 3층 증축공간: 자유공간 → 증축부 복도 → IT홀 / 3104-1·2</text>
+            <g class="dimension-note"><text x="500" y="900">증축부 외곽 약 25.32m</text><text x="500" y="923">3203 라인 입구 약 6.12m</text><text x="500" y="946">IT홀 입구는 피난안내도 기준</text></g>
+          </g>
+
+          <g class="legend-on-map"><rect class="legend-common" x="75" y="1080" width="22" height="22" /><text x="108" y="1097">4층에서 그대로 상속</text><rect class="legend-added" x="300" y="1080" width="22" height="22" /><text x="333" y="1097">3층에서 추가</text></g>
+        </g>
+      </svg>
+    </div>
+    <aside class="review-panel">
+      <section><h2>이번 구조 원칙</h2><ul><li>빨간 공통틀은 4층 구조를 그대로 사용합니다.</li><li>왼쪽복도 위쪽은 3128·3128·3120, 아래쪽은 3228·3224·3220으로 구분합니다.</li><li>3203 라인에서 자유공간으로 들어가는 입구만 열고, 나머지 경계는 벽으로 막습니다.</li><li>자유공간 뒤쪽은 증축부 복도이며, IT홀 입구는 피난안내도를 최우선으로 반영합니다.</li></ul></section>
+      <section><h2>자료 사용 기준</h2><dl><div><dt>빨간 공통틀</dt><dd>4F 기준 유지</dd></div><div><dt>3F 증축부</dt><dd>3F GLB·피난안내도</dd></div><div><dt>문·계단</dt><dd>3F GLB</dd></div><div><dt>강의실 번호</dt><dd>피난안내도</dd></div></dl></section>
+      <section class="pending-section"><h2>다음 확인 대상</h2><p>이 2D에서 3203 입구 폭, IT홀 문 위치, 3104-1·2 분할이 맞는지 먼저 검토합니다. 승인 후에만 3D 벽·문·계단 모델로 변환합니다.</p></section>
+      <div class="legend"><span><i class="common-swatch"></i>4층 공통</span><span><i class="added-swatch"></i>3층 증축</span><span><i class="hall-swatch"></i>IT홀</span><span><i class="free-swatch"></i>자유공간</span><span><i class="corridor-swatch"></i>증축부 복도</span><span><i class="opening-swatch"></i>출입구</span></div>
+    </aside>
+  </section>
+</main>
+<script src="../../src/floors/floor-03.js?v=embed-large-1"></script>
+</body>
+</html>

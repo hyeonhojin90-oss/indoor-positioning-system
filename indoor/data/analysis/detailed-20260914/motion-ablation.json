@@ -1,0 +1,161 @@
+{
+  "note": "Controlled motion-only replay of recorded legacy step events; no magnetic/quality weighting. Not exact live runtime reproduction. Unit scale isolates persistent particle stride variability, not all particle effects.",
+  "results": [
+    {
+      "id": "133338",
+      "map_only": {
+        "n": 11,
+        "mean": 6.235787542561301,
+        "steps": 78,
+        "skippedHeading": 0,
+        "final": 6.11971665468683,
+        "displayBoundMAE": {
+          "1": 6.073165442257605,
+          "2": 6.164074533166697,
+          "0.5": 6.023795543164482
+        }
+      },
+      "no_branches": {
+        "n": 11,
+        "mean": 6.166418480225743,
+        "steps": 78,
+        "skippedHeading": 0,
+        "final": 5.3717787432400925,
+        "displayBoundMAE": {
+          "1": 6.073165442257605,
+          "2": 6.164074533166697,
+          "0.5": 6.023795543164482
+        }
+      },
+      "no_branches_unit_scale": {
+        "n": 11,
+        "mean": 5.849095860334244,
+        "steps": 78,
+        "skippedHeading": 0,
+        "final": 3.026544121665409,
+        "displayBoundMAE": {
+          "1": 5.849095860334244,
+          "2": 5.849095860334244,
+          "0.5": 5.849095860334244
+        }
+      }
+    },
+    {
+      "id": "133534",
+      "map_only": {
+        "n": 11,
+        "mean": 3.31786468646887,
+        "steps": 80,
+        "skippedHeading": 0,
+        "final": 65.76893178729908,
+        "displayBoundMAE": {
+          "1": 3.31786468646887,
+          "2": 3.31786468646887,
+          "0.5": 3.31786468646887
+        }
+      },
+      "no_branches": {
+        "n": 11,
+        "mean": 3.31786468646887,
+        "steps": 80,
+        "skippedHeading": 0,
+        "final": 65.76893178729908,
+        "displayBoundMAE": {
+          "1": 3.31786468646887,
+          "2": 3.31786468646887,
+          "0.5": 3.31786468646887
+        }
+      },
+      "no_branches_unit_scale": {
+        "n": 11,
+        "mean": 3.3591920090996124,
+        "steps": 80,
+        "skippedHeading": 0,
+        "final": 69.93732502228846,
+        "displayBoundMAE": {
+          "1": 3.3591920090996124,
+          "2": 3.3591920090996124,
+          "0.5": 3.3591920090996124
+        }
+      }
+    },
+    {
+      "id": "133637",
+      "map_only": {
+        "n": 11,
+        "mean": 8.66290345479137,
+        "steps": 72,
+        "skippedHeading": 0,
+        "final": 9.370045570917469,
+        "displayBoundMAE": {
+          "1": 8.631776589949743,
+          "2": 8.66290345479137,
+          "0.5": 8.586322044495198
+        }
+      },
+      "no_branches": {
+        "n": 11,
+        "mean": 8.596601640713335,
+        "steps": 72,
+        "skippedHeading": 0,
+        "final": 8.485105497631158,
+        "displayBoundMAE": {
+          "1": 8.596601640713335,
+          "2": 8.596601640713335,
+          "0.5": 8.586322044495198
+        }
+      },
+      "no_branches_unit_scale": {
+        "n": 11,
+        "mean": 8.415691210472453,
+        "steps": 72,
+        "skippedHeading": 0,
+        "final": 8.05794575592693,
+        "displayBoundMAE": {
+          "1": 8.415691210472453,
+          "2": 8.415691210472453,
+          "0.5": 8.415691210472453
+        }
+      }
+    },
+    {
+      "id": "133734",
+      "map_only": {
+        "n": 11,
+        "mean": 4.413513658302086,
+        "steps": 75,
+        "skippedHeading": 0,
+        "final": 64.52432078726447,
+        "displayBoundMAE": {
+          "1": 4.413513658302086,
+          "2": 4.413513658302086,
+          "0.5": 4.413513658302086
+        }
+      },
+      "no_branches": {
+        "n": 11,
+        "mean": 4.413513658302086,
+        "steps": 75,
+        "skippedHeading": 0,
+        "final": 64.52432078726447,
+        "displayBoundMAE": {
+          "1": 4.413513658302086,
+          "2": 4.413513658302086,
+          "0.5": 4.413513658302086
+        }
+      },
+      "no_branches_unit_scale": {
+        "n": 11,
+        "mean": 4.291644076246151,
+        "steps": 75,
+        "skippedHeading": 0,
+        "final": 65.61754538298214,
+        "displayBoundMAE": {
+          "1": 4.291644076246151,
+          "2": 4.291644076246151,
+          "0.5": 4.291644076246151
+        }
+      }
+    }
+  ]
+}

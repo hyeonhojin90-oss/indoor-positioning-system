@@ -1,0 +1,1119 @@
+{
+  "metric": {
+    "rightCorridorMeters": 48.68545341491699,
+    "coreWallCenterMeters": 3.0156809091567993,
+    "coreCenterToRightEndMeters": 50.19329386949539,
+    "rightEndpointMapX": 3.363100346020758,
+    "rightEndpointMeaning": "main corridor line immediately before entering the right stairs",
+    "source": "floor-04-survey.json user-confirmed 2026-09-14"
+  },
+  "method": "Raw accelerometer/heading/magnetic/pressure replay through current Expo PDR and fusion runtime. Endpoint labels only.",
+  "limitations": [
+    "The physical scan-boundary registration is user-confirmed but classroom front distances remain unmeasured.",
+    "Older September 5 files have no heading sensor samples: fusion cannot be evaluated from them.",
+    "PDR map boundary clamping hides overshoot; deadReckoningErrorMeters reports the unbounded step-distance error.",
+    "This is a replay, not a new phone walk.",
+    "Sequence correction is disabled to isolate distance update."
+  ],
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260901_151808.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": false,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 108,
+        "truthMeters": 0,
+        "legacyMeters": -2.4785321738503168,
+        "legacyClamped": true,
+        "deadReckoningMeters": -16.73109795649846,
+        "deadReckoningErrorMeters": 16.73109795649846,
+        "deadReckoningProgressErrorMeters": 16.73109795649846,
+        "fusionEligible": false,
+        "fusionMeters": null,
+        "fusionErrorMeters": null,
+        "fusionProgressErrorMeters": null,
+        "fusionZone": null,
+        "recordedComparison": null,
+        "sequence": {
+          "evaluated": 13,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 13
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 108,
+          "truthMeters": 0,
+          "legacyMeters": -2.4785321738503168,
+          "legacyClamped": true,
+          "deadReckoningMeters": -16.73109795649846,
+          "deadReckoningErrorMeters": 16.73109795649846,
+          "deadReckoningProgressErrorMeters": 16.73109795649846,
+          "fusionEligible": false,
+          "fusionMeters": null,
+          "fusionErrorMeters": null,
+          "fusionProgressErrorMeters": null,
+          "fusionZone": null,
+          "recordedComparison": null,
+          "sequence": {
+            "evaluated": 13,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 13
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260901_153038.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": false,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 96,
+        "truthMeters": 0,
+        "legacyMeters": -2.4785321738503168,
+        "legacyClamped": true,
+        "deadReckoningMeters": -9.29505442027692,
+        "deadReckoningErrorMeters": 9.29505442027692,
+        "deadReckoningProgressErrorMeters": 9.29505442027692,
+        "fusionEligible": false,
+        "fusionMeters": null,
+        "fusionErrorMeters": null,
+        "fusionProgressErrorMeters": null,
+        "fusionZone": null,
+        "recordedComparison": null,
+        "sequence": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 11
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 96,
+          "truthMeters": 0,
+          "legacyMeters": -2.4785321738503168,
+          "legacyClamped": true,
+          "deadReckoningMeters": -9.29505442027692,
+          "deadReckoningErrorMeters": 9.29505442027692,
+          "deadReckoningProgressErrorMeters": 9.29505442027692,
+          "fusionEligible": false,
+          "fusionMeters": null,
+          "fusionErrorMeters": null,
+          "fusionProgressErrorMeters": null,
+          "fusionZone": null,
+          "recordedComparison": null,
+          "sequence": {
+            "evaluated": 11,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 11
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170448.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": false,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 82,
+        "truthMeters": 0,
+        "legacyMeters": -0.6196702946851878,
+        "legacyClamped": false,
+        "deadReckoningMeters": -0.6196702946851218,
+        "deadReckoningErrorMeters": 0.6196702946851218,
+        "deadReckoningProgressErrorMeters": 0.6196702946851218,
+        "fusionEligible": false,
+        "fusionMeters": null,
+        "fusionErrorMeters": null,
+        "fusionProgressErrorMeters": null,
+        "fusionZone": null,
+        "recordedComparison": null,
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 82,
+          "truthMeters": 0,
+          "legacyMeters": -0.6196702946851878,
+          "legacyClamped": false,
+          "deadReckoningMeters": -0.6196702946851218,
+          "deadReckoningErrorMeters": 0.6196702946851218,
+          "deadReckoningProgressErrorMeters": 0.6196702946851218,
+          "fusionEligible": false,
+          "fusionMeters": null,
+          "fusionErrorMeters": null,
+          "fusionProgressErrorMeters": null,
+          "fusionZone": null,
+          "recordedComparison": null,
+          "sequence": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170648.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": false,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 83,
+        "truthMeters": 0,
+        "legacyMeters": -1.239340589370316,
+        "legacyClamped": false,
+        "deadReckoningMeters": -1.2393405893702507,
+        "deadReckoningErrorMeters": 1.2393405893702507,
+        "deadReckoningProgressErrorMeters": 1.2393405893702507,
+        "fusionEligible": false,
+        "fusionMeters": null,
+        "fusionErrorMeters": null,
+        "fusionProgressErrorMeters": null,
+        "fusionZone": null,
+        "recordedComparison": null,
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 83,
+          "truthMeters": 0,
+          "legacyMeters": -1.239340589370316,
+          "legacyClamped": false,
+          "deadReckoningMeters": -1.2393405893702507,
+          "deadReckoningErrorMeters": 1.2393405893702507,
+          "deadReckoningProgressErrorMeters": 1.2393405893702507,
+          "fusionEligible": false,
+          "fusionMeters": null,
+          "fusionErrorMeters": null,
+          "fusionProgressErrorMeters": null,
+          "fusionZone": null,
+          "recordedComparison": null,
+          "sequence": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170852.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": false,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 81,
+        "truthMeters": 0,
+        "legacyMeters": -5.923842881214154e-14,
+        "legacyClamped": false,
+        "deadReckoningMeters": 7.105427357601002e-15,
+        "deadReckoningErrorMeters": 7.105427357601002e-15,
+        "deadReckoningProgressErrorMeters": -7.105427357601002e-15,
+        "fusionEligible": false,
+        "fusionMeters": null,
+        "fusionErrorMeters": null,
+        "fusionProgressErrorMeters": null,
+        "fusionZone": null,
+        "recordedComparison": null,
+        "sequence": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 7
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 81,
+          "truthMeters": 0,
+          "legacyMeters": -5.923842881214154e-14,
+          "legacyClamped": false,
+          "deadReckoningMeters": 7.105427357601002e-15,
+          "deadReckoningErrorMeters": 7.105427357601002e-15,
+          "deadReckoningProgressErrorMeters": -7.105427357601002e-15,
+          "fusionEligible": false,
+          "fusionMeters": null,
+          "fusionErrorMeters": null,
+          "fusionProgressErrorMeters": null,
+          "fusionZone": null,
+          "recordedComparison": null,
+          "sequence": {
+            "evaluated": 7,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_132920.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 83,
+        "truthMeters": 0,
+        "legacyMeters": -1.239340589370316,
+        "legacyClamped": false,
+        "deadReckoningMeters": -1.2393405893702507,
+        "deadReckoningErrorMeters": 1.2393405893702507,
+        "deadReckoningProgressErrorMeters": 1.2393405893702507,
+        "fusionEligible": true,
+        "fusionMeters": -1.1273580638691965,
+        "fusionErrorMeters": 1.1273580638691965,
+        "fusionProgressErrorMeters": 1.1273580638691953,
+        "fusionZone": "stairs_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 2.4785321738503168,
+          "legacyProgressErrorMeters": 2.4785321738503185,
+          "sequenceOffErrorMeters": 2.236962058825082,
+          "sequenceOffProgressErrorMeters": 2.2369620588250854,
+          "sequenceOnErrorMeters": 2.236962058825081,
+          "sequenceOnProgressErrorMeters": 2.2369620588250783,
+          "sequenceOnMinusOffMapUnits": 1.1657341758564144e-15
+        },
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 8
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 83,
+          "truthMeters": 0,
+          "legacyMeters": -1.239340589370316,
+          "legacyClamped": false,
+          "deadReckoningMeters": -1.2393405893702507,
+          "deadReckoningErrorMeters": 1.2393405893702507,
+          "deadReckoningProgressErrorMeters": 1.2393405893702507,
+          "fusionEligible": true,
+          "fusionMeters": -1.1273580638691965,
+          "fusionErrorMeters": 1.1273580638691965,
+          "fusionProgressErrorMeters": 1.1273580638691953,
+          "fusionZone": "stairs_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 2.4785321738503168,
+            "legacyProgressErrorMeters": 2.4785321738503185,
+            "sequenceOffErrorMeters": 2.236962058825082,
+            "sequenceOffProgressErrorMeters": 2.2369620588250854,
+            "sequenceOnErrorMeters": 2.236962058825081,
+            "sequenceOnProgressErrorMeters": 2.2369620588250783,
+            "sequenceOnMinusOffMapUnits": 1.1657341758564144e-15
+          },
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133049.jsonl",
+      "direction": "right_to_core",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "코어복도 출구 중앙점",
+        "steps": 77,
+        "truthMeters": 50.19329386949539,
+        "legacyMeters": 47.71461269075492,
+        "legacyClamped": false,
+        "deadReckoningMeters": 47.714612690754876,
+        "deadReckoningErrorMeters": 2.4786811787405156,
+        "deadReckoningProgressErrorMeters": -2.4786811787405156,
+        "fusionEligible": true,
+        "fusionMeters": 47.73158012529759,
+        "fusionErrorMeters": 2.4617137441978016,
+        "fusionProgressErrorMeters": -2.4617137441978016,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 3.0676506019561742,
+          "legacyProgressErrorMeters": -3.0676506019561742,
+          "sequenceOffErrorMeters": 3.6322815961868002,
+          "sequenceOffProgressErrorMeters": 3.6322815961868002,
+          "sequenceOnErrorMeters": 3.632284875968878,
+          "sequenceOnProgressErrorMeters": 3.632284875968878,
+          "sequenceOnMinusOffMapUnits": 0.000004626548133046526
+        },
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 77,
+          "truthMeters": 50.19329386949539,
+          "legacyMeters": 47.71461269075492,
+          "legacyClamped": false,
+          "deadReckoningMeters": 47.714612690754876,
+          "deadReckoningErrorMeters": 2.4786811787405156,
+          "deadReckoningProgressErrorMeters": -2.4786811787405156,
+          "fusionEligible": true,
+          "fusionMeters": 47.73158012529759,
+          "fusionErrorMeters": 2.4617137441978016,
+          "fusionProgressErrorMeters": -2.4617137441978016,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 3.0676506019561742,
+            "legacyProgressErrorMeters": -3.0676506019561742,
+            "sequenceOffErrorMeters": 3.6322815961868002,
+            "sequenceOffProgressErrorMeters": 3.6322815961868002,
+            "sequenceOnErrorMeters": 3.632284875968878,
+            "sequenceOnProgressErrorMeters": 3.632284875968878,
+            "sequenceOnMinusOffMapUnits": 0.000004626548133046526
+          },
+          "sequence": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133154.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 78,
+        "truthMeters": 0,
+        "legacyMeters": 1.8590108840553254,
+        "legacyClamped": false,
+        "deadReckoningMeters": 1.8590108840553867,
+        "deadReckoningErrorMeters": 1.8590108840553867,
+        "deadReckoningProgressErrorMeters": -1.8590108840553867,
+        "fusionEligible": true,
+        "fusionMeters": 2.0319907061257103,
+        "fusionErrorMeters": 2.0319907061257103,
+        "fusionProgressErrorMeters": -2.031990706125711,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 0.5459019618481393,
+          "legacyProgressErrorMeters": 0.5459019618481378,
+          "sequenceOffErrorMeters": 3.603926036294793,
+          "sequenceOffProgressErrorMeters": -3.6039260362947942,
+          "sequenceOnErrorMeters": 3.6039260362947956,
+          "sequenceOnProgressErrorMeters": -3.6039260362947942,
+          "sequenceOnMinusOffMapUnits": 3.552713678800501e-15
+        },
+        "sequence": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 7
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 78,
+          "truthMeters": 0,
+          "legacyMeters": 1.8590108840553254,
+          "legacyClamped": false,
+          "deadReckoningMeters": 1.8590108840553867,
+          "deadReckoningErrorMeters": 1.8590108840553867,
+          "deadReckoningProgressErrorMeters": -1.8590108840553867,
+          "fusionEligible": true,
+          "fusionMeters": 2.0319907061257103,
+          "fusionErrorMeters": 2.0319907061257103,
+          "fusionProgressErrorMeters": -2.031990706125711,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 0.5459019618481393,
+            "legacyProgressErrorMeters": 0.5459019618481378,
+            "sequenceOffErrorMeters": 3.603926036294793,
+            "sequenceOffProgressErrorMeters": -3.6039260362947942,
+            "sequenceOnErrorMeters": 3.6039260362947956,
+            "sequenceOnProgressErrorMeters": -3.6039260362947942,
+            "sequenceOnMinusOffMapUnits": 3.552713678800501e-15
+          },
+          "sequence": {
+            "evaluated": 7,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133254.jsonl",
+      "direction": "right_to_core",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "코어복도 출구 중앙점",
+        "steps": 78,
+        "truthMeters": 50.19329386949539,
+        "legacyMeters": 48.334282985440055,
+        "legacyClamped": false,
+        "deadReckoningMeters": 48.334282985440005,
+        "deadReckoningErrorMeters": 1.8590108840553867,
+        "deadReckoningProgressErrorMeters": -1.8590108840553867,
+        "fusionEligible": true,
+        "fusionMeters": 48.363753351241726,
+        "fusionErrorMeters": 1.8295405182536655,
+        "fusionProgressErrorMeters": -1.8295405182536655,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 2.423440531288769,
+          "legacyProgressErrorMeters": -2.423440531288769,
+          "sequenceOffErrorMeters": 18.566306529196783,
+          "sequenceOffProgressErrorMeters": -18.566306529196783,
+          "sequenceOnErrorMeters": 18.56612003268022,
+          "sequenceOnProgressErrorMeters": -18.56612003268022,
+          "sequenceOnMinusOffMapUnits": 0.00025305562138555615
+        },
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 78,
+          "truthMeters": 50.19329386949539,
+          "legacyMeters": 48.334282985440055,
+          "legacyClamped": false,
+          "deadReckoningMeters": 48.334282985440005,
+          "deadReckoningErrorMeters": 1.8590108840553867,
+          "deadReckoningProgressErrorMeters": -1.8590108840553867,
+          "fusionEligible": true,
+          "fusionMeters": 48.363753351241726,
+          "fusionErrorMeters": 1.8295405182536655,
+          "fusionProgressErrorMeters": -1.8295405182536655,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 2.423440531288769,
+            "legacyProgressErrorMeters": -2.423440531288769,
+            "sequenceOffErrorMeters": 18.566306529196783,
+            "sequenceOffProgressErrorMeters": -18.566306529196783,
+            "sequenceOnErrorMeters": 18.56612003268022,
+            "sequenceOnProgressErrorMeters": -18.56612003268022,
+            "sequenceOnMinusOffMapUnits": 0.00025305562138555615
+          },
+          "sequence": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133338.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 76,
+        "truthMeters": 0,
+        "legacyMeters": 3.098351473425583,
+        "legacyClamped": false,
+        "deadReckoningMeters": 3.0983514734256445,
+        "deadReckoningErrorMeters": 3.0983514734256445,
+        "deadReckoningProgressErrorMeters": -3.0983514734256445,
+        "fusionEligible": true,
+        "fusionMeters": 3.273969758365016,
+        "fusionErrorMeters": 3.273969758365016,
+        "fusionProgressErrorMeters": -3.2739697583650127,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 0.7425181794866537,
+          "legacyProgressErrorMeters": -0.7425181794866518,
+          "sequenceOffErrorMeters": 2.3303367034098286,
+          "sequenceOffProgressErrorMeters": -2.3303367034098272,
+          "sequenceOnErrorMeters": 2.3303365199933475,
+          "sequenceOnProgressErrorMeters": -2.3303365199933452,
+          "sequenceOnMinusOffMapUnits": -2.4887634619830123e-7
+        },
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 76,
+          "truthMeters": 0,
+          "legacyMeters": 3.098351473425583,
+          "legacyClamped": false,
+          "deadReckoningMeters": 3.0983514734256445,
+          "deadReckoningErrorMeters": 3.0983514734256445,
+          "deadReckoningProgressErrorMeters": -3.0983514734256445,
+          "fusionEligible": true,
+          "fusionMeters": 3.273969758365016,
+          "fusionErrorMeters": 3.273969758365016,
+          "fusionProgressErrorMeters": -3.2739697583650127,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 0.7425181794866537,
+            "legacyProgressErrorMeters": -0.7425181794866518,
+            "sequenceOffErrorMeters": 2.3303367034098286,
+            "sequenceOffProgressErrorMeters": -2.3303367034098272,
+            "sequenceOnErrorMeters": 2.3303365199933475,
+            "sequenceOnProgressErrorMeters": -2.3303365199933452,
+            "sequenceOnMinusOffMapUnits": -2.4887634619830123e-7
+          },
+          "sequence": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133534.jsonl",
+      "direction": "right_to_core",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "코어복도 출구 중앙점",
+        "steps": 78,
+        "truthMeters": 50.19329386949539,
+        "legacyMeters": 48.334282985440055,
+        "legacyClamped": false,
+        "deadReckoningMeters": 48.334282985440005,
+        "deadReckoningErrorMeters": 1.8590108840553867,
+        "deadReckoningProgressErrorMeters": -1.8590108840553867,
+        "fusionEligible": true,
+        "fusionMeters": 48.3637738281354,
+        "fusionErrorMeters": 1.8295200413599915,
+        "fusionProgressErrorMeters": -1.8295200413599915,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 2.423440531288769,
+          "legacyProgressErrorMeters": -2.423440531288769,
+          "sequenceOffErrorMeters": 2.693163303634023,
+          "sequenceOffProgressErrorMeters": -2.693163303634023,
+          "sequenceOnErrorMeters": 2.6931630049306676,
+          "sequenceOnProgressErrorMeters": -2.6931630049306676,
+          "sequenceOnMinusOffMapUnits": 4.0530817102535366e-7
+        },
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 4
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 78,
+          "truthMeters": 50.19329386949539,
+          "legacyMeters": 48.334282985440055,
+          "legacyClamped": false,
+          "deadReckoningMeters": 48.334282985440005,
+          "deadReckoningErrorMeters": 1.8590108840553867,
+          "deadReckoningProgressErrorMeters": -1.8590108840553867,
+          "fusionEligible": true,
+          "fusionMeters": 48.3637738281354,
+          "fusionErrorMeters": 1.8295200413599915,
+          "fusionProgressErrorMeters": -1.8295200413599915,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 2.423440531288769,
+            "legacyProgressErrorMeters": -2.423440531288769,
+            "sequenceOffErrorMeters": 2.693163303634023,
+            "sequenceOffProgressErrorMeters": -2.693163303634023,
+            "sequenceOnErrorMeters": 2.6931630049306676,
+            "sequenceOnProgressErrorMeters": -2.6931630049306676,
+            "sequenceOnMinusOffMapUnits": 4.0530817102535366e-7
+          },
+          "sequence": {
+            "evaluated": 4,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133637.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 71,
+        "truthMeters": 0,
+        "legacyMeters": 6.1967029468512225,
+        "legacyClamped": false,
+        "deadReckoningMeters": 6.196702946851289,
+        "deadReckoningErrorMeters": 6.196702946851289,
+        "deadReckoningProgressErrorMeters": -6.196702946851289,
+        "fusionEligible": true,
+        "fusionMeters": 6.341678368245327,
+        "fusionErrorMeters": 6.341678368245327,
+        "fusionProgressErrorMeters": -6.341678368245326,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 3.963568532823635,
+          "legacyProgressErrorMeters": -3.9635685328236363,
+          "sequenceOffErrorMeters": 5.001018611673739,
+          "sequenceOffProgressErrorMeters": -5.001018611673743,
+          "sequenceOnErrorMeters": 5.001024943785027,
+          "sequenceOnProgressErrorMeters": -5.001024943785026,
+          "sequenceOnMinusOffMapUnits": 0.000008591990811268602
+        },
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 5
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 71,
+          "truthMeters": 0,
+          "legacyMeters": 6.1967029468512225,
+          "legacyClamped": false,
+          "deadReckoningMeters": 6.196702946851289,
+          "deadReckoningErrorMeters": 6.196702946851289,
+          "deadReckoningProgressErrorMeters": -6.196702946851289,
+          "fusionEligible": true,
+          "fusionMeters": 6.341678368245327,
+          "fusionErrorMeters": 6.341678368245327,
+          "fusionProgressErrorMeters": -6.341678368245326,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 3.963568532823635,
+            "legacyProgressErrorMeters": -3.9635685328236363,
+            "sequenceOffErrorMeters": 5.001018611673739,
+            "sequenceOffProgressErrorMeters": -5.001018611673743,
+            "sequenceOnErrorMeters": 5.001024943785027,
+            "sequenceOnProgressErrorMeters": -5.001024943785026,
+            "sequenceOnMinusOffMapUnits": 0.000008591990811268602
+          },
+          "sequence": {
+            "evaluated": 5,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133734.jsonl",
+      "direction": "right_to_core",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "코어복도 출구 중앙점",
+        "steps": 72,
+        "truthMeters": 50.19329386949539,
+        "legacyMeters": 44.61626121732927,
+        "legacyClamped": false,
+        "deadReckoningMeters": 44.61626121732923,
+        "deadReckoningErrorMeters": 5.57703265216616,
+        "deadReckoningProgressErrorMeters": -5.57703265216616,
+        "fusionEligible": true,
+        "fusionMeters": 44.65718265261428,
+        "fusionErrorMeters": 5.53611121688111,
+        "fusionProgressErrorMeters": -5.53611121688111,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 6.288700955293173,
+          "legacyProgressErrorMeters": -6.288700955293173,
+          "sequenceOffErrorMeters": 6.512047276661491,
+          "sequenceOffProgressErrorMeters": -6.512047276661491,
+          "sequenceOnErrorMeters": 6.512047553496302,
+          "sequenceOnProgressErrorMeters": -6.512047553496302,
+          "sequenceOnMinusOffMapUnits": -3.756349258310365e-7
+        },
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 4
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 72,
+          "truthMeters": 50.19329386949539,
+          "legacyMeters": 44.61626121732927,
+          "legacyClamped": false,
+          "deadReckoningMeters": 44.61626121732923,
+          "deadReckoningErrorMeters": 5.57703265216616,
+          "deadReckoningProgressErrorMeters": -5.57703265216616,
+          "fusionEligible": true,
+          "fusionMeters": 44.65718265261428,
+          "fusionErrorMeters": 5.53611121688111,
+          "fusionProgressErrorMeters": -5.53611121688111,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 6.288700955293173,
+            "legacyProgressErrorMeters": -6.288700955293173,
+            "sequenceOffErrorMeters": 6.512047276661491,
+            "sequenceOffProgressErrorMeters": -6.512047276661491,
+            "sequenceOnErrorMeters": 6.512047553496302,
+            "sequenceOnProgressErrorMeters": -6.512047553496302,
+            "sequenceOnMinusOffMapUnits": -3.756349258310365e-7
+          },
+          "sequence": {
+            "evaluated": 4,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170738.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 80,
+        "truthMeters": 0,
+        "legacyMeters": 0.6196702946850692,
+        "legacyClamped": false,
+        "deadReckoningMeters": 0.619670294685136,
+        "deadReckoningErrorMeters": 0.619670294685136,
+        "deadReckoningProgressErrorMeters": -0.619670294685136,
+        "fusionEligible": true,
+        "fusionMeters": 2.0260341514792803,
+        "fusionErrorMeters": 2.0260341514792803,
+        "fusionProgressErrorMeters": -2.02603415147928,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 0.6196702946850692,
+          "legacyProgressErrorMeters": -0.6196702946850721,
+          "sequenceOffErrorMeters": 2.026034151479284,
+          "sequenceOffProgressErrorMeters": -2.026034151479287,
+          "sequenceOnErrorMeters": 2.0260341514792866,
+          "sequenceOnProgressErrorMeters": -2.026034151479287,
+          "sequenceOnMinusOffMapUnits": 3.552713678800501e-15
+        },
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 5
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 80,
+          "truthMeters": 0,
+          "legacyMeters": 0.6196702946850692,
+          "legacyClamped": false,
+          "deadReckoningMeters": 0.619670294685136,
+          "deadReckoningErrorMeters": 0.619670294685136,
+          "deadReckoningProgressErrorMeters": -0.619670294685136,
+          "fusionEligible": true,
+          "fusionMeters": 2.0260341514792803,
+          "fusionErrorMeters": 2.0260341514792803,
+          "fusionProgressErrorMeters": -2.02603415147928,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 0.6196702946850692,
+            "legacyProgressErrorMeters": -0.6196702946850721,
+            "sequenceOffErrorMeters": 2.026034151479284,
+            "sequenceOffProgressErrorMeters": -2.026034151479287,
+            "sequenceOnErrorMeters": 2.0260341514792866,
+            "sequenceOnProgressErrorMeters": -2.026034151479287,
+            "sequenceOnMinusOffMapUnits": 3.552713678800501e-15
+          },
+          "sequence": {
+            "evaluated": 5,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170901.jsonl",
+      "direction": "right_to_core",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "코어복도 출구 중앙점",
+        "steps": 79,
+        "truthMeters": 50.19329386949539,
+        "legacyMeters": 48.953953280125184,
+        "legacyClamped": false,
+        "deadReckoningMeters": 48.953953280125134,
+        "deadReckoningErrorMeters": 1.2393405893702578,
+        "deadReckoningProgressErrorMeters": -1.2393405893702578,
+        "fusionEligible": true,
+        "fusionMeters": 49.005572960308605,
+        "fusionErrorMeters": 1.1877209091867869,
+        "fusionProgressErrorMeters": -1.1877209091867869,
+        "fusionZone": "core_junction",
+        "recordedComparison": {
+          "legacyErrorMeters": 1.239340589370208,
+          "legacyProgressErrorMeters": -1.239340589370208,
+          "sequenceOffErrorMeters": 1.1877209091868934,
+          "sequenceOffProgressErrorMeters": -1.1877209091868934,
+          "sequenceOnErrorMeters": 1.1877209091868792,
+          "sequenceOnProgressErrorMeters": -1.1877209091868792,
+          "sequenceOnMinusOffMapUnits": 1.4210854715202004e-14
+        },
+        "sequence": {
+          "evaluated": 6,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 6
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 79,
+          "truthMeters": 50.19329386949539,
+          "legacyMeters": 48.953953280125184,
+          "legacyClamped": false,
+          "deadReckoningMeters": 48.953953280125134,
+          "deadReckoningErrorMeters": 1.2393405893702578,
+          "deadReckoningProgressErrorMeters": -1.2393405893702578,
+          "fusionEligible": true,
+          "fusionMeters": 49.005572960308605,
+          "fusionErrorMeters": 1.1877209091867869,
+          "fusionProgressErrorMeters": -1.1877209091867869,
+          "fusionZone": "core_junction",
+          "recordedComparison": {
+            "legacyErrorMeters": 1.239340589370208,
+            "legacyProgressErrorMeters": -1.239340589370208,
+            "sequenceOffErrorMeters": 1.1877209091868934,
+            "sequenceOffProgressErrorMeters": -1.1877209091868934,
+            "sequenceOnErrorMeters": 1.1877209091868792,
+            "sequenceOnProgressErrorMeters": -1.1877209091868792,
+            "sequenceOnMinusOffMapUnits": 1.4210854715202004e-14
+          },
+          "sequence": {
+            "evaluated": 6,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171021.jsonl",
+      "direction": "core_to_right",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "오른쪽 계단 입구",
+        "steps": 77,
+        "truthMeters": 0,
+        "legacyMeters": 2.4786811787404543,
+        "legacyClamped": false,
+        "deadReckoningMeters": 2.4786811787405156,
+        "deadReckoningErrorMeters": 2.4786811787405156,
+        "deadReckoningProgressErrorMeters": -2.4786811787405156,
+        "fusionEligible": true,
+        "fusionMeters": 2.649876088428413,
+        "fusionErrorMeters": 2.649876088428413,
+        "fusionProgressErrorMeters": -2.649876088428414,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 2.4786811787404543,
+          "legacyProgressErrorMeters": -2.4786811787404517,
+          "sequenceOffErrorMeters": 2.649876088428412,
+          "sequenceOffProgressErrorMeters": -2.649876088428414,
+          "sequenceOnErrorMeters": 2.6498760884284094,
+          "sequenceOnProgressErrorMeters": -2.6498760884284067,
+          "sequenceOnMinusOffMapUnits": -3.552713678800501e-15
+        },
+        "sequence": {
+          "evaluated": 4,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 4
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 77,
+          "truthMeters": 0,
+          "legacyMeters": 2.4786811787404543,
+          "legacyClamped": false,
+          "deadReckoningMeters": 2.4786811787405156,
+          "deadReckoningErrorMeters": 2.4786811787405156,
+          "deadReckoningProgressErrorMeters": -2.4786811787405156,
+          "fusionEligible": true,
+          "fusionMeters": 2.649876088428413,
+          "fusionErrorMeters": 2.649876088428413,
+          "fusionProgressErrorMeters": -2.649876088428414,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 2.4786811787404543,
+            "legacyProgressErrorMeters": -2.4786811787404517,
+            "sequenceOffErrorMeters": 2.649876088428412,
+            "sequenceOffProgressErrorMeters": -2.649876088428414,
+            "sequenceOnErrorMeters": 2.6498760884284094,
+            "sequenceOnProgressErrorMeters": -2.6498760884284067,
+            "sequenceOnMinusOffMapUnits": -3.552713678800501e-15
+          },
+          "sequence": {
+            "evaluated": 4,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171142.jsonl",
+      "direction": "right_to_core",
+      "hasHeading": true,
+      "endpoint": {
+        "label": "코어복도 출구 중앙점",
+        "steps": 76,
+        "truthMeters": 50.19329386949539,
+        "legacyMeters": 47.09494239606979,
+        "legacyClamped": false,
+        "deadReckoningMeters": 47.09494239606975,
+        "deadReckoningErrorMeters": 3.0983514734256445,
+        "deadReckoningProgressErrorMeters": -3.0983514734256445,
+        "fusionEligible": true,
+        "fusionMeters": 46.51588337687564,
+        "fusionErrorMeters": 3.6774104926197495,
+        "fusionProgressErrorMeters": -3.6774104926197495,
+        "fusionZone": "main_right",
+        "recordedComparison": {
+          "legacyErrorMeters": 3.098351473425602,
+          "legacyProgressErrorMeters": -3.098351473425602,
+          "sequenceOffErrorMeters": 3.677410492619728,
+          "sequenceOffProgressErrorMeters": -3.677410492619728,
+          "sequenceOnErrorMeters": 3.6774104926197424,
+          "sequenceOnProgressErrorMeters": -3.6774104926197424,
+          "sequenceOnMinusOffMapUnits": -1.4210854715202004e-14
+        },
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 5
+          }
+        }
+      },
+      "allEndpointLabels": [
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 76,
+          "truthMeters": 50.19329386949539,
+          "legacyMeters": 47.09494239606979,
+          "legacyClamped": false,
+          "deadReckoningMeters": 47.09494239606975,
+          "deadReckoningErrorMeters": 3.0983514734256445,
+          "deadReckoningProgressErrorMeters": -3.0983514734256445,
+          "fusionEligible": true,
+          "fusionMeters": 46.51588337687564,
+          "fusionErrorMeters": 3.6774104926197495,
+          "fusionProgressErrorMeters": -3.6774104926197495,
+          "fusionZone": "main_right",
+          "recordedComparison": {
+            "legacyErrorMeters": 3.098351473425602,
+            "legacyProgressErrorMeters": -3.098351473425602,
+            "sequenceOffErrorMeters": 3.677410492619728,
+            "sequenceOffProgressErrorMeters": -3.677410492619728,
+            "sequenceOnErrorMeters": 3.6774104926197424,
+            "sequenceOnProgressErrorMeters": -3.6774104926197424,
+            "sequenceOnMinusOffMapUnits": -1.4210854715202004e-14
+          },
+          "sequence": {
+            "evaluated": 5,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 5
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "allEndpointRuns": 17,
+    "deadReckoningEndpointMAEMeters": 3.4993146052807256,
+    "fusionEligibleRuns": 12,
+    "fusionEndpointMAEMeters": 2.8310770049176703
+  }
+}

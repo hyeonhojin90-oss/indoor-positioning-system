@@ -1,0 +1,1345 @@
+{
+  "purpose": "Analysis-only: leave-one-session-out replay of a single shared adaptive stride. It does not change the engine or learned model.",
+  "distanceMeters": 50.19329386949539,
+  "oldFixedMeters": 0.6196702946851282,
+  "method": {
+    "base": "Training sessions only: step-count weighted median of total-distance/detected-steps.",
+    "adaptive": "After W detected steps, ridge regression uses rolling median cadence and acceleration peak. Prediction is clamped to base ±10% then updated by 0.8 previous + 0.2 prediction. All steps share one value; particles and map state are excluded.",
+    "validation": "One full session held out at a time. Endpoint labels only; room-front labels are not physical-distance truth."
+  },
+  "sessions": [
+    {
+      "file": "indoor_positioning_ios_20260905_170448.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 82,
+      "effectiveStrideMeters": 0.612113339871895
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170648.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 83,
+      "effectiveStrideMeters": 0.6047384803553661
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170852.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 81,
+      "effectiveStrideMeters": 0.6196702946851282
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_132920.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 83,
+      "effectiveStrideMeters": 0.6047384803553661
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133049.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133154.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133254.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133338.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133534.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 80,
+      "effectiveStrideMeters": 0.6274161733686924
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133637.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 72,
+      "effectiveStrideMeters": 0.6971290815207694
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133734.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 75,
+      "effectiveStrideMeters": 0.6692439182599386
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170738.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 80,
+      "effectiveStrideMeters": 0.6274161733686924
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170901.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 79,
+      "effectiveStrideMeters": 0.6353581502467771
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171021.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 77,
+      "effectiveStrideMeters": 0.651860959344096
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171142.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 76,
+      "effectiveStrideMeters": 0.6604380772302025
+    }
+  ],
+  "summary": {
+    "3": {
+      "adaptiveEndpointMAEMeters": 1.5073332069078968,
+      "fixedHoldoutEndpointMAEMeters": 1.790949726080235,
+      "changeMeters": -0.2836165191723381,
+      "betterSessions": 15,
+      "worseSessions": 0
+    },
+    "6": {
+      "adaptiveEndpointMAEMeters": 1.4634579289274816,
+      "fixedHoldoutEndpointMAEMeters": 1.790949726080235,
+      "changeMeters": -0.32749179715275334,
+      "betterSessions": 15,
+      "worseSessions": 0
+    },
+    "8": {
+      "adaptiveEndpointMAEMeters": 1.4239775216947392,
+      "fixedHoldoutEndpointMAEMeters": 1.790949726080235,
+      "changeMeters": -0.3669722043854957,
+      "betterSessions": 15,
+      "worseSessions": 0
+    }
+  },
+  "chronologicalHoldout": {
+    "trainingSessions": [
+      "indoor_positioning_ios_20260905_170448.jsonl",
+      "indoor_positioning_ios_20260905_170648.jsonl",
+      "indoor_positioning_ios_20260905_170852.jsonl",
+      "indoor_positioning_ios_20260908_132920.jsonl",
+      "indoor_positioning_ios_20260908_133049.jsonl",
+      "indoor_positioning_ios_20260908_133154.jsonl",
+      "indoor_positioning_ios_20260908_133254.jsonl",
+      "indoor_positioning_ios_20260914_133338.jsonl",
+      "indoor_positioning_ios_20260914_133534.jsonl",
+      "indoor_positioning_ios_20260914_133637.jsonl",
+      "indoor_positioning_ios_20260914_133734.jsonl"
+    ],
+    "testSessions": [
+      "indoor_positioning_ios_20260914_170738.jsonl",
+      "indoor_positioning_ios_20260914_170901.jsonl",
+      "indoor_positioning_ios_20260914_171021.jsonl",
+      "indoor_positioning_ios_20260914_171142.jsonl"
+    ],
+    "baseStrideMeters": 0.6435037675576333,
+    "windows": {
+      "3": {
+        "fixedEndpointMAEMeters": 0.9652556513364523,
+        "adaptiveEndpointMAEMeters": 0.9678014520794456,
+        "changeMeters": 0.002545800742993265,
+        "tests": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "fixedErrorMeters": 1.287007535115272,
+            "estimatedMeters": 50.69970563576122,
+            "errorMeters": 0.5064117662658276,
+            "finalStrideMeters": 0.6307363372348171,
+            "meanStrideMeters": 0.6337463204470153,
+            "minStrideMeters": 0.6268078505256572,
+            "maxStrideMeters": 0.6435037675576333
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "fixedErrorMeters": 0.6435037675576396,
+            "estimatedMeters": 50.12440998000951,
+            "errorMeters": 0.06888388948588187,
+            "finalStrideMeters": 0.6335026823753489,
+            "meanStrideMeters": 0.6344862022786014,
+            "minStrideMeters": 0.6234767819420994,
+            "maxStrideMeters": 0.6461081391270833
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "fixedErrorMeters": 0.6435037675576325,
+            "estimatedMeters": 48.849002367743296,
+            "errorMeters": 1.344291501752096,
+            "finalStrideMeters": 0.6330647686259377,
+            "meanStrideMeters": 0.6344026281525104,
+            "minStrideMeters": 0.6260113614641867,
+            "maxStrideMeters": 0.6465728915108759
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "fixedErrorMeters": 1.287007535115265,
+            "estimatedMeters": 48.241675218681415,
+            "errorMeters": 1.9516186508139768,
+            "finalStrideMeters": 0.6364060565088366,
+            "meanStrideMeters": 0.6347588844563344,
+            "minStrideMeters": 0.625831530127266,
+            "maxStrideMeters": 0.6435037675576333
+          }
+        ],
+        "model": {
+          "coefficients": [
+            0.6371877126043342,
+            0.00417558053692177,
+            0.005583166602106921
+          ],
+          "cadenceMean": 1.6575721400205756,
+          "cadenceStd": 0.33422294048190493,
+          "peakMean": 2.577610394806151,
+          "peakStd": 0.9161246390633924
+        }
+      },
+      "6": {
+        "fixedEndpointMAEMeters": 0.9652556513364523,
+        "adaptiveEndpointMAEMeters": 0.9388955172354763,
+        "changeMeters": -0.02636013410097604,
+        "tests": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "fixedErrorMeters": 1.287007535115272,
+            "estimatedMeters": 50.64883165015337,
+            "errorMeters": 0.455537780657977,
+            "finalStrideMeters": 0.6300176307898668,
+            "meanStrideMeters": 0.6331103956269171,
+            "minStrideMeters": 0.6248014528162018,
+            "maxStrideMeters": 0.6435037675576333
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "fixedErrorMeters": 0.6435037675576396,
+            "estimatedMeters": 50.0429338498366,
+            "errorMeters": 0.1503600196587911,
+            "finalStrideMeters": 0.6317420428910205,
+            "meanStrideMeters": 0.6334548588586911,
+            "minStrideMeters": 0.6235152758486702,
+            "maxStrideMeters": 0.6514382916727172
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "fixedErrorMeters": 0.6435037675576325,
+            "estimatedMeters": 48.91495743211548,
+            "errorMeters": 1.278336437379913,
+            "finalStrideMeters": 0.6384965381827429,
+            "meanStrideMeters": 0.6352591874300711,
+            "minStrideMeters": 0.6251081893195714,
+            "maxStrideMeters": 0.655790148960752
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "fixedErrorMeters": 1.287007535115265,
+            "estimatedMeters": 48.32194603825017,
+            "errorMeters": 1.8713478312452239,
+            "finalStrideMeters": 0.6373666172428477,
+            "meanStrideMeters": 0.6358150794506601,
+            "minStrideMeters": 0.6282963373089377,
+            "maxStrideMeters": 0.6449556379163071
+          }
+        ],
+        "model": {
+          "coefficients": [
+            0.6371877126043377,
+            0.001946616223985156,
+            0.008685678627757461
+          ],
+          "cadenceMean": 1.693270591984672,
+          "cadenceStd": 0.16888132275012385,
+          "peakMean": 2.54280364443914,
+          "peakStd": 0.6560974642748053
+        }
+      },
+      "8": {
+        "fixedEndpointMAEMeters": 0.9652556513364523,
+        "adaptiveEndpointMAEMeters": 0.9626839430454552,
+        "changeMeters": -0.0025717082909970657,
+        "tests": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "fixedErrorMeters": 1.287007535115272,
+            "estimatedMeters": 50.489565286127,
+            "errorMeters": 0.2962714166316047,
+            "finalStrideMeters": 0.6309600116501485,
+            "meanStrideMeters": 0.6311195660765875,
+            "minStrideMeters": 0.6212803503170757,
+            "maxStrideMeters": 0.6435037675576333
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "fixedErrorMeters": 0.6435037675576396,
+            "estimatedMeters": 49.91809904073197,
+            "errorMeters": 0.27519482876342494,
+            "finalStrideMeters": 0.6292733845993097,
+            "meanStrideMeters": 0.6318746714016704,
+            "minStrideMeters": 0.6198310400275877,
+            "maxStrideMeters": 0.6556569674454188
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "fixedErrorMeters": 0.6435037675576325,
+            "estimatedMeters": 48.81859511283671,
+            "errorMeters": 1.374698756658681,
+            "finalStrideMeters": 0.6455962903777855,
+            "meanStrideMeters": 0.6340077287381392,
+            "minStrideMeters": 0.620862117863803,
+            "maxStrideMeters": 0.6583802270394867
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "fixedErrorMeters": 1.287007535115265,
+            "estimatedMeters": 48.28872309936728,
+            "errorMeters": 1.9045707701281103,
+            "finalStrideMeters": 0.6353448265081435,
+            "meanStrideMeters": 0.6353779355179906,
+            "minStrideMeters": 0.6253159567147044,
+            "maxStrideMeters": 0.6488570310548787
+          }
+        ],
+        "model": {
+          "coefficients": [
+            0.6371877126043239,
+            0.0027060950847990874,
+            0.010110709970581156
+          ],
+          "cadenceMean": 1.68909034946171,
+          "cadenceStd": 0.1397094487621254,
+          "peakMean": 2.513728118813319,
+          "peakStd": 0.5790254092550751
+        }
+      }
+    }
+  },
+  "folds": [
+    {
+      "file": "indoor_positioning_ios_20260905_170448.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 82,
+      "effectiveStrideMeters": 0.612113339871895,
+      "baseStrideMeters": 0.6435037675576333,
+      "currentFixedErrorMeters": 0.6196702946851218,
+      "fixedHoldoutErrorMeters": 2.574015070230537,
+      "windows": {
+        "3": {
+          "estimatedMeters": 52.47870352590069,
+          "errorMeters": 2.2854096564052995,
+          "finalStrideMeters": 0.6420975862837157,
+          "meanStrideMeters": 0.6399841893402524,
+          "minStrideMeters": 0.636026645479194,
+          "maxStrideMeters": 0.6455042163604655,
+          "model": {
+            "coefficients": [
+              0.640858918497532,
+              0.0016745025988108273,
+              0.004375139467583318
+            ],
+            "cadenceMean": 1.6134423232886648,
+            "cadenceStd": 0.37512016952305843,
+            "peakMean": 2.529550951966359,
+            "peakStd": 0.9102690729370067
+          }
+        },
+        "6": {
+          "estimatedMeters": 52.434904960694205,
+          "errorMeters": 2.2416110911988127,
+          "finalStrideMeters": 0.6421333132305566,
+          "meanStrideMeters": 0.6394500604962707,
+          "minStrideMeters": 0.6332897118705016,
+          "maxStrideMeters": 0.6495963997847235,
+          "model": {
+            "coefficients": [
+              0.640858918497531,
+              0.0003617328624301746,
+              0.006621519216828659
+            ],
+            "cadenceMean": 1.6626848314696432,
+            "cadenceStd": 0.19977099189149156,
+            "peakMean": 2.5021410941419107,
+            "peakStd": 0.6636472976271491
+          }
+        },
+        "8": {
+          "estimatedMeters": 52.3732017453255,
+          "errorMeters": 2.1799078758301107,
+          "finalStrideMeters": 0.637645322065992,
+          "meanStrideMeters": 0.6386975822600671,
+          "minStrideMeters": 0.6312076639928007,
+          "maxStrideMeters": 0.6501253413003449,
+          "model": {
+            "coefficients": [
+              0.6408589184975325,
+              0.000232888455576474,
+              0.007830767823654716
+            ],
+            "cadenceMean": 1.6593503652385093,
+            "cadenceStd": 0.16761534336701817,
+            "peakMean": 2.47692301331667,
+            "peakStd": 0.5809276817639539
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170648.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 83,
+      "effectiveStrideMeters": 0.6047384803553661,
+      "baseStrideMeters": 0.6435037675576333,
+      "currentFixedErrorMeters": 1.2393405893702507,
+      "fixedHoldoutErrorMeters": 3.2175188377881696,
+      "windows": {
+        "3": {
+          "estimatedMeters": 53.041890646882024,
+          "errorMeters": 2.848596777386632,
+          "finalStrideMeters": 0.6393462111218516,
+          "meanStrideMeters": 0.6390589234564099,
+          "minStrideMeters": 0.6362586501196756,
+          "maxStrideMeters": 0.6435037675576333,
+          "model": {
+            "coefficients": [
+              0.6413856941772842,
+              0.0010355430260930339,
+              0.0034249697203704694
+            ],
+            "cadenceMean": 1.6231347069578879,
+            "cadenceStd": 0.3739934818854534,
+            "peakMean": 2.555929556045094,
+            "peakStd": 0.9143266710634165
+          }
+        },
+        "6": {
+          "estimatedMeters": 52.93950641171304,
+          "errorMeters": 2.7462125422176484,
+          "finalStrideMeters": 0.6381515970145579,
+          "meanStrideMeters": 0.6378253784543739,
+          "minStrideMeters": 0.6338983386741697,
+          "maxStrideMeters": 0.6435037675576333,
+          "model": {
+            "coefficients": [
+              0.641385694177283,
+              -0.0001663100883133186,
+              0.005344760164095023
+            ],
+            "cadenceMean": 1.668253817281329,
+            "cadenceStd": 0.20208981752503605,
+            "peakMean": 2.5255983947921266,
+            "peakStd": 0.6633843229735052
+          }
+        },
+        "8": {
+          "estimatedMeters": 52.82235239278882,
+          "errorMeters": 2.6290585232934305,
+          "finalStrideMeters": 0.6378630245787336,
+          "meanStrideMeters": 0.6364138842504677,
+          "minStrideMeters": 0.6312763727073223,
+          "maxStrideMeters": 0.6435037675576333,
+          "model": {
+            "coefficients": [
+              0.6413856941772846,
+              0.0002015475260381081,
+              0.006403819169727426
+            ],
+            "cadenceMean": 1.6614532397451947,
+            "cadenceStd": 0.16919284313580113,
+            "peakMean": 2.497897800832437,
+            "peakStd": 0.5784169758114144
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170852.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 81,
+      "effectiveStrideMeters": 0.6196702946851282,
+      "baseStrideMeters": 0.6435037675576333,
+      "currentFixedErrorMeters": 7.105427357601002e-15,
+      "fixedHoldoutErrorMeters": 1.9305113026729046,
+      "windows": {
+        "3": {
+          "estimatedMeters": 51.7702340219805,
+          "errorMeters": 1.5769401524851077,
+          "finalStrideMeters": 0.6411017327621141,
+          "meanStrideMeters": 0.6391386916293889,
+          "minStrideMeters": 0.6344840271571517,
+          "maxStrideMeters": 0.6438313898115624,
+          "model": {
+            "coefficients": [
+              0.6403191360108725,
+              0.001998026766758027,
+              0.004289099150549889
+            ],
+            "cadenceMean": 1.6118177089354038,
+            "cadenceStd": 0.3811914481006683,
+            "peakMean": 2.5363427247394816,
+            "peakStd": 0.9186519649632178
+          }
+        },
+        "6": {
+          "estimatedMeters": 51.7103744426753,
+          "errorMeters": 1.5170805731799106,
+          "finalStrideMeters": 0.6430751986175711,
+          "meanStrideMeters": 0.6383996844774729,
+          "minStrideMeters": 0.6326689596801555,
+          "maxStrideMeters": 0.6438590727711442,
+          "model": {
+            "coefficients": [
+              0.640319136010871,
+              0.00031020971758812183,
+              0.006599914492464406
+            ],
+            "cadenceMean": 1.664089302286737,
+            "cadenceStd": 0.1999123724498201,
+            "peakMean": 2.505684678166415,
+            "peakStd": 0.6706452565840204
+          }
+        },
+        "8": {
+          "estimatedMeters": 51.63826563248984,
+          "errorMeters": 1.4449717629944487,
+          "finalStrideMeters": 0.6448218116591062,
+          "meanStrideMeters": 0.637509452252961,
+          "minStrideMeters": 0.6296017414893791,
+          "maxStrideMeters": 0.6453887606226418,
+          "model": {
+            "coefficients": [
+              0.6403191360108735,
+              0.00020028639711231855,
+              0.00792093332352061
+            ],
+            "cadenceMean": 1.6610862183121529,
+            "cadenceStd": 0.1662417575890694,
+            "peakMean": 2.4786049731848934,
+            "peakStd": 0.585084272429269
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_132920.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 83,
+      "effectiveStrideMeters": 0.6047384803553661,
+      "baseStrideMeters": 0.6435037675576333,
+      "currentFixedErrorMeters": 1.2393405893702507,
+      "fixedHoldoutErrorMeters": 3.2175188377881696,
+      "windows": {
+        "3": {
+          "estimatedMeters": 53.18704933450521,
+          "errorMeters": 2.9937554650098193,
+          "finalStrideMeters": 0.6407345738254935,
+          "meanStrideMeters": 0.6408078233072917,
+          "minStrideMeters": 0.637280907731332,
+          "maxStrideMeters": 0.6443583380575593,
+          "model": {
+            "coefficients": [
+              0.6413856941772842,
+              0.002304129531192626,
+              0.003976659641000984
+            ],
+            "cadenceMean": 1.6062924911583096,
+            "cadenceStd": 0.39345271142046473,
+            "peakMean": 2.535042216425297,
+            "peakStd": 0.9202399411069258
+          }
+        },
+        "6": {
+          "estimatedMeters": 53.109048853563394,
+          "errorMeters": 2.915754984068002,
+          "finalStrideMeters": 0.6403928725727911,
+          "meanStrideMeters": 0.6398680584766674,
+          "minStrideMeters": 0.6344213131139751,
+          "maxStrideMeters": 0.6442105160585697,
+          "model": {
+            "coefficients": [
+              0.6413856941772834,
+              0.0007644320293539787,
+              0.006173519595053257
+            ],
+            "cadenceMean": 1.6613788810729395,
+            "cadenceStd": 0.20412800287899444,
+            "peakMean": 2.5050590251006217,
+            "peakStd": 0.6723113251781587
+          }
+        },
+        "8": {
+          "estimatedMeters": 53.08166282805596,
+          "errorMeters": 2.8883689585605694,
+          "finalStrideMeters": 0.6417256256141338,
+          "meanStrideMeters": 0.63953810636212,
+          "minStrideMeters": 0.6329498186427397,
+          "maxStrideMeters": 0.6449996394698998,
+          "model": {
+            "coefficients": [
+              0.6413856941772851,
+              0.001047503444453843,
+              0.0073907512906523426
+            ],
+            "cadenceMean": 1.6559941348685638,
+            "cadenceStd": 0.1701313669308931,
+            "peakMean": 2.4760491004177974,
+            "peakStd": 0.589593419886767
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133049.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 1.8590108840553867,
+      "fixedHoldoutErrorMeters": 0.6353581502467804,
+      "windows": {
+        "3": {
+          "estimatedMeters": 50.005670768035614,
+          "errorMeters": 0.18762310145977779,
+          "finalStrideMeters": 0.640283361799315,
+          "meanStrideMeters": 0.6410983431799437,
+          "minStrideMeters": 0.6353581502467771,
+          "maxStrideMeters": 0.6481057508773357,
+          "model": {
+            "coefficients": [
+              0.6386167450914083,
+              0.0018833720029942712,
+              0.004698906601354975
+            ],
+            "cadenceMean": 1.6014254817659197,
+            "cadenceStd": 0.39384569651372064,
+            "peakMean": 2.489883941277633,
+            "peakStd": 0.8843219874466093
+          }
+        },
+        "6": {
+          "estimatedMeters": 50.05109436166105,
+          "errorMeters": 0.14219950783434143,
+          "finalStrideMeters": 0.6408350140153657,
+          "meanStrideMeters": 0.6416806969443725,
+          "minStrideMeters": 0.6353581502467771,
+          "maxStrideMeters": 0.6491641859440114,
+          "model": {
+            "coefficients": [
+              0.6386167450914075,
+              0.00021597071222030206,
+              0.006998872661840629
+            ],
+            "cadenceMean": 1.6581333187759209,
+            "cadenceStd": 0.20307680534409486,
+            "peakMean": 2.4669381506179855,
+            "peakStd": 0.6622846491909751
+          }
+        },
+        "8": {
+          "estimatedMeters": 50.07304695008903,
+          "errorMeters": 0.12024691940636245,
+          "finalStrideMeters": 0.6419870683546899,
+          "meanStrideMeters": 0.6419621403857568,
+          "minStrideMeters": 0.6353581502467771,
+          "maxStrideMeters": 0.6505552349838128,
+          "model": {
+            "coefficients": [
+              0.6386167450914094,
+              0.0002765138730074087,
+              0.00830938692884817
+            ],
+            "cadenceMean": 1.6530943052918101,
+            "cadenceStd": 0.1687636542640365,
+            "peakMean": 2.4427105147130983,
+            "peakStd": 0.5838269681298071
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133154.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 1.8590108840553867,
+      "fixedHoldoutErrorMeters": 0.6353581502467804,
+      "windows": {
+        "3": {
+          "estimatedMeters": 49.87649594231707,
+          "errorMeters": 0.316797927178321,
+          "finalStrideMeters": 0.6386802275335369,
+          "meanStrideMeters": 0.6394422556707317,
+          "minStrideMeters": 0.6351989131952922,
+          "maxStrideMeters": 0.6439338785592698,
+          "model": {
+            "coefficients": [
+              0.6386167450914083,
+              0.0018645744989338063,
+              0.004597366172634008
+            ],
+            "cadenceMean": 1.6014587036153503,
+            "cadenceStd": 0.3919800538776691,
+            "peakMean": 2.5117399094574195,
+            "peakStd": 0.9207143728784503
+          }
+        },
+        "6": {
+          "estimatedMeters": 49.87338982234917,
+          "errorMeters": 0.319904047146224,
+          "finalStrideMeters": 0.639423856751812,
+          "meanStrideMeters": 0.6394024336198612,
+          "minStrideMeters": 0.6334565122888782,
+          "maxStrideMeters": 0.6440381393356868,
+          "model": {
+            "coefficients": [
+              0.6386167450914075,
+              0.00017290145990629929,
+              0.0069779684336364
+            ],
+            "cadenceMean": 1.6596469519754755,
+            "cadenceStd": 0.20297931932221525,
+            "peakMean": 2.482378770904307,
+            "peakStd": 0.6752132741414418
+          }
+        },
+        "8": {
+          "estimatedMeters": 49.934735632463884,
+          "errorMeters": 0.25855823703150804,
+          "finalStrideMeters": 0.640972768287351,
+          "meanStrideMeters": 0.6401889183649215,
+          "minStrideMeters": 0.634036671396579,
+          "maxStrideMeters": 0.6460086138344304,
+          "model": {
+            "coefficients": [
+              0.6386167450914094,
+              0.0002903908306280589,
+              0.008268356939595302
+            ],
+            "cadenceMean": 1.6545684458107774,
+            "cadenceStd": 0.16962952285775948,
+            "peakMean": 2.4517600051722725,
+            "peakStd": 0.5915426164005393
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133254.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 1.8590108840553867,
+      "fixedHoldoutErrorMeters": 0.6353581502467804,
+      "windows": {
+        "3": {
+          "estimatedMeters": 49.96547420878971,
+          "errorMeters": 0.22781966070568416,
+          "finalStrideMeters": 0.6413230180485687,
+          "meanStrideMeters": 0.6405830026767911,
+          "minStrideMeters": 0.6351794312982992,
+          "maxStrideMeters": 0.6471186952614456,
+          "model": {
+            "coefficients": [
+              0.6386167450914083,
+              0.001807830317261591,
+              0.004762044636213695
+            ],
+            "cadenceMean": 1.5992177038560371,
+            "cadenceStd": 0.3941789423950859,
+            "peakMean": 2.497851810511932,
+            "peakStd": 0.880295210622162
+          }
+        },
+        "6": {
+          "estimatedMeters": 50.04522399304438,
+          "errorMeters": 0.14806987645101088,
+          "finalStrideMeters": 0.647244065278289,
+          "meanStrideMeters": 0.6416054358082613,
+          "minStrideMeters": 0.6326136631821291,
+          "maxStrideMeters": 0.654201751639506,
+          "model": {
+            "coefficients": [
+              0.6386167450914075,
+              0.00016429115335718242,
+              0.007202329763954189
+            ],
+            "cadenceMean": 1.65752602781918,
+            "cadenceStd": 0.20263920549386313,
+            "peakMean": 2.4665290875103056,
+            "peakStd": 0.6442645976386305
+          }
+        },
+        "8": {
+          "estimatedMeters": 50.05903997852025,
+          "errorMeters": 0.1342538909751454,
+          "finalStrideMeters": 0.6452788555322323,
+          "meanStrideMeters": 0.6417825638271827,
+          "minStrideMeters": 0.631713627902903,
+          "maxStrideMeters": 0.6590291312669815,
+          "model": {
+            "coefficients": [
+              0.6386167450914093,
+              0.00022134388684298895,
+              0.008532914352089777
+            ],
+            "cadenceMean": 1.6515869832640073,
+            "cadenceStd": 0.1673615430440701,
+            "peakMean": 2.443757743868279,
+            "peakStd": 0.5700774638491445
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133338.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 78,
+      "effectiveStrideMeters": 0.6435037675576333,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 1.8590108840553867,
+      "fixedHoldoutErrorMeters": 0.6353581502467804,
+      "windows": {
+        "3": {
+          "estimatedMeters": 49.920543480932686,
+          "errorMeters": 0.27275038856270584,
+          "finalStrideMeters": 0.6358331215394615,
+          "meanStrideMeters": 0.6400069677042652,
+          "minStrideMeters": 0.6353581502467771,
+          "maxStrideMeters": 0.6445943239944293,
+          "model": {
+            "coefficients": [
+              0.6386167450914083,
+              0.0018022333651526142,
+              0.004675146250232389
+            ],
+            "cadenceMean": 1.599684608211507,
+            "cadenceStd": 0.389445446204369,
+            "peakMean": 2.5078984817077306,
+            "peakStd": 0.9014243047383519
+          }
+        },
+        "6": {
+          "estimatedMeters": 49.82067474639527,
+          "errorMeters": 0.37261912310012235,
+          "finalStrideMeters": 0.6344874068667244,
+          "meanStrideMeters": 0.6387265993127599,
+          "minStrideMeters": 0.6309371542788387,
+          "maxStrideMeters": 0.6473259200022312,
+          "model": {
+            "coefficients": [
+              0.6386167450914075,
+              -0.00006201624190863226,
+              0.007120423516181808
+            ],
+            "cadenceMean": 1.6578481880103748,
+            "cadenceStd": 0.19666740303102098,
+            "peakMean": 2.4883578138714926,
+            "peakStd": 0.6702508412321827
+          }
+        },
+        "8": {
+          "estimatedMeters": 49.83824413273916,
+          "errorMeters": 0.35504973675622864,
+          "finalStrideMeters": 0.6331278063493003,
+          "meanStrideMeters": 0.6389518478556303,
+          "minStrideMeters": 0.6293966932056432,
+          "maxStrideMeters": 0.6486132488591911,
+          "model": {
+            "coefficients": [
+              0.6386167450914093,
+              -0.00010377487886911296,
+              0.00848454260155449
+            ],
+            "cadenceMean": 1.6529319486079268,
+            "cadenceStd": 0.163213614409538,
+            "peakMean": 2.4597121850917913,
+            "peakStd": 0.5874838754435
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133534.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 80,
+      "effectiveStrideMeters": 0.6274161733686924,
+      "baseStrideMeters": 0.6435037675576333,
+      "currentFixedErrorMeters": 0.619670294685136,
+      "fixedHoldoutErrorMeters": 1.287007535115272,
+      "windows": {
+        "3": {
+          "estimatedMeters": 51.299050916786555,
+          "errorMeters": 1.1057570472911635,
+          "finalStrideMeters": 0.6390109412942533,
+          "meanStrideMeters": 0.641238136459832,
+          "minStrideMeters": 0.6365962943059538,
+          "maxStrideMeters": 0.651095981803148,
+          "model": {
+            "coefficients": [
+              0.6397658589620466,
+              0.0021326787673875457,
+              0.004858217580668396
+            ],
+            "cadenceMean": 1.6023117277141132,
+            "cadenceStd": 0.38715490273123826,
+            "peakMean": 2.5116327046605647,
+            "peakStd": 0.8902771639464573
+          }
+        },
+        "6": {
+          "estimatedMeters": 51.318639513929526,
+          "errorMeters": 1.1253456444341339,
+          "finalStrideMeters": 0.6350993794356868,
+          "meanStrideMeters": 0.6414829939241191,
+          "minStrideMeters": 0.63397964349232,
+          "maxStrideMeters": 0.659130883353606,
+          "model": {
+            "coefficients": [
+              0.6397658589620492,
+              0.0001257492776459779,
+              0.007445916875145999
+            ],
+            "cadenceMean": 1.6637202703597176,
+            "cadenceStd": 0.20105821947312977,
+            "peakMean": 2.4837505155256636,
+            "peakStd": 0.649299193398746
+          }
+        },
+        "8": {
+          "estimatedMeters": 51.384156627375425,
+          "errorMeters": 1.1908627578800335,
+          "finalStrideMeters": 0.6338619229013966,
+          "meanStrideMeters": 0.6423019578421928,
+          "minStrideMeters": 0.6338619229013966,
+          "maxStrideMeters": 0.6620044504150322,
+          "model": {
+            "coefficients": [
+              0.6397658589620444,
+              0.00018341100692021795,
+              0.00889799805991634
+            ],
+            "cadenceMean": 1.6591173603230691,
+            "cadenceStd": 0.16833625951579995,
+            "peakMean": 2.4544620528175756,
+            "peakStd": 0.5679376885394913
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133637.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 72,
+      "effectiveStrideMeters": 0.6971290815207694,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 5.57703265216616,
+      "fixedHoldoutErrorMeters": 4.447507051727442,
+      "windows": {
+        "3": {
+          "estimatedMeters": 45.80281188375746,
+          "errorMeters": 4.390481985737935,
+          "finalStrideMeters": 0.6368650583264377,
+          "meanStrideMeters": 0.6361501650521869,
+          "minStrideMeters": 0.6330012054249697,
+          "maxStrideMeters": 0.6390954135348548,
+          "model": {
+            "coefficients": [
+              0.6347863655226096,
+              0.001200160886175556,
+              0.003431388752297308
+            ],
+            "cadenceMean": 1.6027942461273115,
+            "cadenceStd": 0.3948287235158805,
+            "peakMean": 2.4984004802062514,
+            "peakStd": 0.9067107947618805
+          }
+        },
+        "6": {
+          "estimatedMeters": 45.87093506502192,
+          "errorMeters": 4.322358804473474,
+          "finalStrideMeters": 0.6388907607470794,
+          "meanStrideMeters": 0.6370963203475266,
+          "minStrideMeters": 0.6314501596865366,
+          "maxStrideMeters": 0.6419154296922812,
+          "model": {
+            "coefficients": [
+              0.6347863655226135,
+              -0.000013335995956084267,
+              0.005178587306766986
+            ],
+            "cadenceMean": 1.6613429572424732,
+            "cadenceStd": 0.2037697584327486,
+            "peakMean": 2.467824264966475,
+            "peakStd": 0.6599595171647238
+          }
+        },
+        "8": {
+          "estimatedMeters": 45.936934166980805,
+          "errorMeters": 4.256359702514587,
+          "finalStrideMeters": 0.6402173786223393,
+          "meanStrideMeters": 0.6380129745414,
+          "minStrideMeters": 0.6311358946468478,
+          "maxStrideMeters": 0.6430494273482592,
+          "model": {
+            "coefficients": [
+              0.6347863655226131,
+              -0.00006982347129543594,
+              0.006152920673651212
+            ],
+            "cadenceMean": 1.6559744370977045,
+            "cadenceStd": 0.16943016871728667,
+            "peakMean": 2.438630746696219,
+            "peakStd": 0.5770569398026291
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133734.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 75,
+      "effectiveStrideMeters": 0.6692439182599386,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 3.7180217681107735,
+      "fixedHoldoutErrorMeters": 2.5414326009871075,
+      "windows": {
+        "3": {
+          "estimatedMeters": 47.92398061291878,
+          "errorMeters": 2.269313256576609,
+          "finalStrideMeters": 0.6344677991908003,
+          "meanStrideMeters": 0.6389864081722504,
+          "minStrideMeters": 0.6342675947034753,
+          "maxStrideMeters": 0.6446021534322708,
+          "model": {
+            "coefficients": [
+              0.6367781628983837,
+              0.0012087803221549585,
+              0.004025731581226077
+            ],
+            "cadenceMean": 1.598513543131858,
+            "cadenceStd": 0.3886033475824974,
+            "peakMean": 2.493470890861802,
+            "peakStd": 0.8835815409766501
+          }
+        },
+        "6": {
+          "estimatedMeters": 48.07904716078443,
+          "errorMeters": 2.114246708710965,
+          "finalStrideMeters": 0.6315014558276412,
+          "meanStrideMeters": 0.6410539621437924,
+          "minStrideMeters": 0.6315014558276412,
+          "maxStrideMeters": 0.6523478619081586,
+          "model": {
+            "coefficients": [
+              0.6367781628983861,
+              -0.0002755836271778637,
+              0.006021294486850735
+            ],
+            "cadenceMean": 1.6594619576978373,
+            "cadenceStd": 0.19827335063291612,
+            "peakMean": 2.4585018721955643,
+            "peakStd": 0.6331589293375944
+          }
+        },
+        "8": {
+          "estimatedMeters": 48.219393136557684,
+          "errorMeters": 1.9739007329377074,
+          "finalStrideMeters": 0.6315511870981367,
+          "meanStrideMeters": 0.6429252418207692,
+          "minStrideMeters": 0.6315511870981367,
+          "maxStrideMeters": 0.6567675347172638,
+          "model": {
+            "coefficients": [
+              0.6367781628983898,
+              -0.0004469901004208847,
+              0.007181502263944075
+            ],
+            "cadenceMean": 1.6541376650501365,
+            "cadenceStd": 0.1628495868110005,
+            "peakMean": 2.427437214701773,
+            "peakStd": 0.5498253638270701
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170738.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 80,
+      "effectiveStrideMeters": 0.6274161733686924,
+      "baseStrideMeters": 0.6435037675576333,
+      "currentFixedErrorMeters": 0.619670294685136,
+      "fixedHoldoutErrorMeters": 1.287007535115272,
+      "windows": {
+        "3": {
+          "estimatedMeters": 51.04943510756166,
+          "errorMeters": 0.8561412380662716,
+          "finalStrideMeters": 0.6361890895139365,
+          "meanStrideMeters": 0.6381179388445208,
+          "minStrideMeters": 0.6343696205634457,
+          "maxStrideMeters": 0.6435037675576333,
+          "model": {
+            "coefficients": [
+              0.6397658589620466,
+              0.0017819433531099014,
+              0.004430225866514529
+            ],
+            "cadenceMean": 1.6183646717863227,
+            "cadenceStd": 0.37315072942826355,
+            "peakMean": 2.53974205560063,
+            "peakStd": 0.9094981590613744
+          }
+        },
+        "6": {
+          "estimatedMeters": 51.009001519798105,
+          "errorMeters": 0.8157076503027128,
+          "finalStrideMeters": 0.6360119147067284,
+          "meanStrideMeters": 0.6376125189974763,
+          "minStrideMeters": 0.6308489570267102,
+          "maxStrideMeters": 0.6449114772280509,
+          "model": {
+            "coefficients": [
+              0.6397658589620492,
+              0.0000032687921864100675,
+              0.006878191178475139
+            ],
+            "cadenceMean": 1.6693292605644543,
+            "cadenceStd": 0.19623409271008968,
+            "peakMean": 2.5092257493550245,
+            "peakStd": 0.6610849726631886
+          }
+        },
+        "8": {
+          "estimatedMeters": 50.91747814813636,
+          "errorMeters": 0.7241842786409691,
+          "finalStrideMeters": 0.6368723993785137,
+          "meanStrideMeters": 0.6364684768517045,
+          "minStrideMeters": 0.6281958780371922,
+          "maxStrideMeters": 0.6435037675576333,
+          "model": {
+            "coefficients": [
+              0.6397658589620444,
+              0.00010088926528222094,
+              0.008114119001367544
+            ],
+            "cadenceMean": 1.6638139603463151,
+            "cadenceStd": 0.16519033871153305,
+            "peakMean": 2.4830604074232796,
+            "peakStd": 0.5821132283979317
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170901.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 79,
+      "effectiveStrideMeters": 0.6353581502467771,
+      "baseStrideMeters": 0.6435037675576333,
+      "currentFixedErrorMeters": 1.2393405893702578,
+      "fixedHoldoutErrorMeters": 0.6435037675576396,
+      "windows": {
+        "3": {
+          "estimatedMeters": 50.40376189873109,
+          "errorMeters": 0.21046802923569885,
+          "finalStrideMeters": 0.6371683781400261,
+          "meanStrideMeters": 0.6380223025155835,
+          "minStrideMeters": 0.6312891975708285,
+          "maxStrideMeters": 0.6469249750746927,
+          "model": {
+            "coefficients": [
+              0.6391985748993282,
+              0.002021757204867467,
+              0.004694840337036027
+            ],
+            "cadenceMean": 1.6169212711061138,
+            "cadenceStd": 0.37701904224338495,
+            "peakMean": 2.5322574449522106,
+            "peakStd": 0.90000284356029
+          }
+        },
+        "6": {
+          "estimatedMeters": 50.35861098766139,
+          "errorMeters": 0.16531711816600136,
+          "finalStrideMeters": 0.6366100944492628,
+          "meanStrideMeters": 0.6374507719957139,
+          "minStrideMeters": 0.6300118879278248,
+          "maxStrideMeters": 0.6509455721165113,
+          "model": {
+            "coefficients": [
+              0.6391985748993302,
+              0.00015702813082245793,
+              0.00714428623519088
+            ],
+            "cadenceMean": 1.6710879944104493,
+            "cadenceStd": 0.19545780555921682,
+            "peakMean": 2.505310322922218,
+            "peakStd": 0.6574063255617991
+          }
+        },
+        "8": {
+          "estimatedMeters": 50.3295256962404,
+          "errorMeters": 0.13623182674501066,
+          "finalStrideMeters": 0.6355783122832165,
+          "meanStrideMeters": 0.6370826037498785,
+          "minStrideMeters": 0.6281120377117784,
+          "maxStrideMeters": 0.6546782662933625,
+          "model": {
+            "coefficients": [
+              0.6391985748993286,
+              0.00029381765004978205,
+              0.00852762931123714
+            ],
+            "cadenceMean": 1.667845562216312,
+            "cadenceStd": 0.16189617714582005,
+            "peakMean": 2.475688983774616,
+            "peakStd": 0.5740433609014834
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171021.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "steps": 77,
+      "effectiveStrideMeters": 0.651860959344096,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 2.4786811787405156,
+      "fixedHoldoutErrorMeters": 1.2707163004935538,
+      "windows": {
+        "3": {
+          "estimatedMeters": 48.98704558732165,
+          "errorMeters": 1.206248282173739,
+          "finalStrideMeters": 0.6359280480168316,
+          "meanStrideMeters": 0.6361953972379435,
+          "minStrideMeters": 0.6319953708548852,
+          "maxStrideMeters": 0.6467346677175105,
+          "model": {
+            "coefficients": [
+              0.6380198028209473,
+              0.0024195369878355607,
+              0.0048162760605060225
+            ],
+            "cadenceMean": 1.619222298498762,
+            "cadenceStd": 0.3748424871374768,
+            "peakMean": 2.529055303543682,
+            "peakStd": 0.8984450845531884
+          }
+        },
+        "6": {
+          "estimatedMeters": 49.01101488572505,
+          "errorMeters": 1.1822789837703453,
+          "finalStrideMeters": 0.6397858211880803,
+          "meanStrideMeters": 0.636506686827598,
+          "minStrideMeters": 0.629733029551788,
+          "maxStrideMeters": 0.6543120114565972,
+          "model": {
+            "coefficients": [
+              0.63801980282095,
+              0.0006302487350563295,
+              0.007357984068162023
+            ],
+            "cadenceMean": 1.6675404865018792,
+            "cadenceStd": 0.1942955049387891,
+            "peakMean": 2.496160037551372,
+            "peakStd": 0.6487814541798498
+          }
+        },
+        "8": {
+          "estimatedMeters": 48.95478584809718,
+          "errorMeters": 1.2385080213982107,
+          "finalStrideMeters": 0.6452886602619899,
+          "meanStrideMeters": 0.6357764395856776,
+          "minStrideMeters": 0.6264640674580757,
+          "maxStrideMeters": 0.6569529613007856,
+          "model": {
+            "coefficients": [
+              0.6380198028209462,
+              0.0007600577468757602,
+              0.008724142794488158
+            ],
+            "cadenceMean": 1.6624738631523512,
+            "cadenceStd": 0.16395079115829078,
+            "peakMean": 2.468458613494882,
+            "peakStd": 0.5690322319505889
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171142.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "steps": 76,
+      "effectiveStrideMeters": 0.6604380772302025,
+      "baseStrideMeters": 0.6353581502467771,
+      "currentFixedErrorMeters": 3.0983514734256445,
+      "fixedHoldoutErrorMeters": 1.9060744507403342,
+      "windows": {
+        "3": {
+          "estimatedMeters": 48.331398734151705,
+          "errorMeters": 1.861895135343687,
+          "finalStrideMeters": 0.6375541599292311,
+          "meanStrideMeters": 0.6359394570283119,
+          "minStrideMeters": 0.6307814669528808,
+          "maxStrideMeters": 0.6411238426581874,
+          "model": {
+            "coefficients": [
+              0.637407151543369,
+              0.0026760767821810494,
+              0.004581677189698069
+            ],
+            "cadenceMean": 1.619452965382748,
+            "cadenceStd": 0.37802796717843967,
+            "peakMean": 2.522303863762235,
+            "peakStd": 0.919070027766816
+          }
+        },
+        "6": {
+          "estimatedMeters": 48.37013159063687,
+          "errorMeters": 1.8231622788585184,
+          "finalStrideMeters": 0.6385288442146101,
+          "meanStrideMeters": 0.636449099876801,
+          "minStrideMeters": 0.6322222593409693,
+          "maxStrideMeters": 0.6444371825776066,
+          "model": {
+            "coefficients": [
+              0.637407151543375,
+              0.0010113253114053915,
+              0.006941846708566997
+            ],
+            "cadenceMean": 1.6691546243237938,
+            "cadenceStd": 0.19088388442592966,
+            "peakMean": 2.491952171281306,
+            "peakStd": 0.6727353471464562
+          }
+        },
+        "8": {
+          "estimatedMeters": 48.364094269038624,
+          "errorMeters": 1.8291996004567679,
+          "finalStrideMeters": 0.6375660310958787,
+          "meanStrideMeters": 0.6363696614347187,
+          "minStrideMeters": 0.630778774439637,
+          "maxStrideMeters": 0.6436343468583907,
+          "model": {
+            "coefficients": [
+              0.6374071515433685,
+              0.0012895697403700933,
+              0.00812968461583971
+            ],
+            "cadenceMean": 1.6638556283675996,
+            "cadenceStd": 0.1554770267582975,
+            "peakMean": 2.463232482524035,
+            "peakStd": 0.5917652513889617
+          }
+        }
+      }
+    }
+  ]
+}

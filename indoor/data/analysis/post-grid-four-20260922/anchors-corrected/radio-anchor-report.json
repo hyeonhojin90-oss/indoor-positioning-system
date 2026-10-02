@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-09-22T12:31:48.296Z",
+  "purpose": "AP·BLE 신호 환경의 반복성·구역 분리력 사전검증. 위치 보정 또는 Fusion 적용 결과가 아님.",
+  "thresholds": {
+    "min_shared_signals_for_classification": 2,
+    "recommended_sessions_per_zone": 3
+  },
+  "input": {
+    "files": 3,
+    "accepted_schema7_zone_sessions": 3,
+    "skipped": 0
+  },
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "stairs_left",
+      "detail": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "duration_s": 33.829,
+      "completed": true,
+      "wifi_scans": 2,
+      "fresh_wifi_scans": 2,
+      "wifi_unique_aps": 125,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 900,
+      "ble_unique_transmitters": 74
+    },
+    {
+      "file": "indoor_positioning_20260922_211406.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "core_junction",
+      "detail": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+      "duration_s": 38.98,
+      "completed": true,
+      "wifi_scans": 2,
+      "fresh_wifi_scans": 2,
+      "wifi_unique_aps": 159,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 674,
+      "ble_unique_transmitters": 77
+    },
+    {
+      "file": "indoor_positioning_20260922_211528.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "stairs_right",
+      "detail": "오른쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+      "duration_s": 38.715,
+      "completed": true,
+      "wifi_scans": 2,
+      "fresh_wifi_scans": 2,
+      "wifi_unique_aps": 92,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 232,
+      "ble_unique_transmitters": 46
+    }
+  ],
+  "zones": {
+    "wifi": [
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "core_junction",
+        "sessions": 1,
+        "unique_signals": 159,
+        "signals_seen_in_67_percent_sessions": 159,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      },
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "stairs_left",
+        "sessions": 1,
+        "unique_signals": 125,
+        "signals_seen_in_67_percent_sessions": 125,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      },
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "stairs_right",
+        "sessions": 1,
+        "unique_signals": 92,
+        "signals_seen_in_67_percent_sessions": 92,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      }
+    ],
+    "ble": [
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "core_junction",
+        "sessions": 1,
+        "unique_signals": 77,
+        "signals_seen_in_67_percent_sessions": 77,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      },
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "stairs_left",
+        "sessions": 1,
+        "unique_signals": 74,
+        "signals_seen_in_67_percent_sessions": 74,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      },
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "stairs_right",
+        "sessions": 1,
+        "unique_signals": 46,
+        "signals_seen_in_67_percent_sessions": 46,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      }
+    ]
+  },
+  "leave_one_session_out": {
+    "wifi": {
+      "evaluated_sessions": 0,
+      "top1_accuracy": null,
+      "median_rssi_mae_db": null,
+      "median_shared_signals": null,
+      "limitation": "같은 플랫폼·층에서 구역 2개 이상과 각 구역의 반복 수집이 필요합니다."
+    },
+    "ble": {
+      "evaluated_sessions": 0,
+      "top1_accuracy": null,
+      "median_rssi_mae_db": null,
+      "median_shared_signals": null,
+      "limitation": "같은 플랫폼·층에서 구역 2개 이상과 각 구역의 반복 수집이 필요합니다."
+    }
+  }
+}

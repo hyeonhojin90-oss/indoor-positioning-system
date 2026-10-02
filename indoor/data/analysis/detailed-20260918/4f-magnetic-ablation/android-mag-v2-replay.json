@@ -1,0 +1,293 @@
+{
+  "createdAt": "2026-09-18T09:53:26.621Z",
+  "method": "Android 4F route leave-one-session-out replay. Scalar magnetic zone is disabled. V2 uses disjoint 8-step windows, direction/device matching, soft weighting, and a 12 m PDR gate.",
+  "results": [
+    {
+      "file": "indoor_positioning_20260901_151808.jsonl",
+      "pdr": {
+        "maeMeters": 5.072991685125973,
+        "endpointErrorMeters": 8.352546117754128,
+        "sequence": {
+          "evaluated": 12,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 12
+          }
+        },
+        "laps": [
+          {
+            "label": "4213 앞",
+            "errorMeters": 1.8818526519769136
+          },
+          {
+            "label": "4212 앞",
+            "errorMeters": 3.883895873436643
+          },
+          {
+            "label": "4211 앞",
+            "errorMeters": 3.5133091020025375
+          },
+          {
+            "label": "4210 앞",
+            "errorMeters": 4.739295221017041
+          },
+          {
+            "label": "4209 앞",
+            "errorMeters": 5.652655120183198
+          },
+          {
+            "label": "4208 앞",
+            "errorMeters": 4.762793397063103
+          },
+          {
+            "label": "4207 앞",
+            "errorMeters": 5.218323449160016
+          },
+          {
+            "label": "4206 앞",
+            "errorMeters": 5.260831938409413
+          },
+          {
+            "label": "4205 앞",
+            "errorMeters": 7.263436077611183
+          },
+          {
+            "label": "4204 앞",
+            "errorMeters": 5.273969587771525
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "errorMeters": 8.352546117754128
+          }
+        ]
+      },
+      "magV2": {
+        "maeMeters": 5.0637659511822575,
+        "endpointErrorMeters": 8.337126781560235,
+        "sequence": {
+          "evaluated": 12,
+          "applied": 1,
+          "reasons": {
+            "ambiguous_sequence": 10,
+            "applied": 1,
+            "unsupported_sequence_area": 1
+          }
+        },
+        "laps": [
+          {
+            "label": "4213 앞",
+            "errorMeters": 1.8818526519769136
+          },
+          {
+            "label": "4212 앞",
+            "errorMeters": 3.883895873436643
+          },
+          {
+            "label": "4211 앞",
+            "errorMeters": 3.5133091020025375
+          },
+          {
+            "label": "4210 앞",
+            "errorMeters": 4.726029991504472
+          },
+          {
+            "label": "4209 앞",
+            "errorMeters": 5.639389890670536
+          },
+          {
+            "label": "4208 앞",
+            "errorMeters": 4.749528167550508
+          },
+          {
+            "label": "4207 앞",
+            "errorMeters": 5.205058219647439
+          },
+          {
+            "label": "4206 앞",
+            "errorMeters": 5.247566708896805
+          },
+          {
+            "label": "4205 앞",
+            "errorMeters": 7.250176004634694
+          },
+          {
+            "label": "4204 앞",
+            "errorMeters": 5.2674920711240425
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "errorMeters": 8.337126781560235
+          }
+        ]
+      }
+    },
+    {
+      "file": "indoor_positioning_20260901_153038.jsonl",
+      "pdr": {
+        "maeMeters": 1.4791242081709102,
+        "endpointErrorMeters": 6.921715405184048,
+        "sequence": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 11
+          }
+        },
+        "laps": [
+          {
+            "label": "4213 앞",
+            "errorMeters": 0.6914819686317628
+          },
+          {
+            "label": "4212 앞",
+            "errorMeters": 1.9099808657672384
+          },
+          {
+            "label": "4211 앞",
+            "errorMeters": 0.3000535049628894
+          },
+          {
+            "label": "4210 앞",
+            "errorMeters": 0.33297126007804323
+          },
+          {
+            "label": "4209 앞",
+            "errorMeters": 1.2000589337731498
+          },
+          {
+            "label": "4208 앞",
+            "errorMeters": 0.309473084032053
+          },
+          {
+            "label": "4207 앞",
+            "errorMeters": 0.7657272627500191
+          },
+          {
+            "label": "4206 앞",
+            "errorMeters": 1.0507751320560121
+          },
+          {
+            "label": "4205 앞",
+            "errorMeters": 0.9077427946517194
+          },
+          {
+            "label": "4204 앞",
+            "errorMeters": 1.8803860779930757
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "errorMeters": 6.921715405184048
+          }
+        ]
+      },
+      "magV2": {
+        "maeMeters": 1.4791242081709102,
+        "endpointErrorMeters": 6.921715405184048,
+        "sequence": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 11
+          }
+        },
+        "laps": [
+          {
+            "label": "4213 앞",
+            "errorMeters": 0.6914819686317628
+          },
+          {
+            "label": "4212 앞",
+            "errorMeters": 1.9099808657672384
+          },
+          {
+            "label": "4211 앞",
+            "errorMeters": 0.3000535049628894
+          },
+          {
+            "label": "4210 앞",
+            "errorMeters": 0.33297126007804323
+          },
+          {
+            "label": "4209 앞",
+            "errorMeters": 1.2000589337731498
+          },
+          {
+            "label": "4208 앞",
+            "errorMeters": 0.309473084032053
+          },
+          {
+            "label": "4207 앞",
+            "errorMeters": 0.7657272627500191
+          },
+          {
+            "label": "4206 앞",
+            "errorMeters": 1.0507751320560121
+          },
+          {
+            "label": "4205 앞",
+            "errorMeters": 0.9077427946517194
+          },
+          {
+            "label": "4204 앞",
+            "errorMeters": 1.8803860779930757
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "errorMeters": 6.921715405184048
+          }
+        ]
+      }
+    },
+    {
+      "file": "indoor_positioning_20260901_155425.jsonl",
+      "pdr": {
+        "maeMeters": 4.011572900117429,
+        "endpointErrorMeters": 4.011572900117429,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "왼쪽 계단 입구",
+            "errorMeters": 4.011572900117429
+          }
+        ]
+      },
+      "magV2": {
+        "maeMeters": 4.011572900117429,
+        "endpointErrorMeters": 4.011572900117429,
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "왼쪽 계단 입구",
+            "errorMeters": 4.011572900117429
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "sessions": 3,
+    "pdrMAE": 3.5212295978047705,
+    "magV2MAE": 3.518154353156865,
+    "pdrEndpoint": 6.428611474351868,
+    "magV2Endpoint": 6.42347169562057,
+    "evaluated": 32,
+    "applied": 1
+  },
+  "limitations": [
+    "Only two right-direction sessions and one left-direction session exist. Left has no independent same-device reference.",
+    "Lap positions are map-derived weak labels.",
+    "No BLE exists in these historical moving logs."
+  ]
+}

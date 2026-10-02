@@ -1,0 +1,219 @@
+{
+  "version": "runtime-ab-20260921-same-day-ble-diagnostic",
+  "method": "4F right-corridor raw sensor replay through IndoorRuntime/IndoorFusion; query excluded from grid and sequence templates; baseline mode4 8-step norm plus available BLE versus optional guarded norm grid plus the same BLE. No AP in these walks.",
+  "bleReferenceSet": "2026-09-19 stationary sessions collected after queried walks; retrospective diagnostic only",
+  "truth": "Endpoints confirmed. All intermediate truth is detected-step-linear interpolation, not surveyed position.",
+  "exclusions": [],
+  "summary": {
+    "overall": {
+      "sessions": 2,
+      "bleObservations": 691,
+      "weakMeanM": 2.4456773034329142,
+      "gridWeakMeanM": 2.5581905048410087,
+      "endpointMeanM": 5.150402498434822,
+      "gridEndpointMeanM": 5.314260886447286,
+      "weakWins": 0,
+      "endpointWins": 1,
+      "gridApplications": 6,
+      "baselineBleApplications": 8,
+      "gridBleApplications": 8,
+      "baselineBleWindows": 25,
+      "sequenceApplications": 0
+    },
+    "android": {
+      "sessions": 2,
+      "bleObservations": 691,
+      "weakMeanM": 2.4456773034329142,
+      "gridWeakMeanM": 2.5581905048410087,
+      "endpointMeanM": 5.150402498434822,
+      "gridEndpointMeanM": 5.314260886447286,
+      "weakWins": 0,
+      "endpointWins": 1,
+      "gridApplications": 6,
+      "baselineBleApplications": 8,
+      "gridBleApplications": 8,
+      "baselineBleWindows": 25,
+      "sequenceApplications": 0
+    },
+    "ios": {
+      "sessions": 0,
+      "bleObservations": 0,
+      "weakMeanM": null,
+      "gridWeakMeanM": null,
+      "endpointMeanM": null,
+      "gridEndpointMeanM": null,
+      "weakWins": 0,
+      "endpointWins": 0,
+      "gridApplications": 0,
+      "baselineBleApplications": 0,
+      "gridBleApplications": 0,
+      "baselineBleWindows": 0,
+      "sequenceApplications": 0
+    }
+  },
+  "sessions": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "platform": "android",
+      "direction": "reverse",
+      "bleObservations": 391,
+      "baseline": {
+        "detectedSteps": 87,
+        "alignedSteps": 87,
+        "intermediateWeakMeanM": 0.884657987189384,
+        "intermediateWeakP90M": 2.0324887925190978,
+        "endpointErrorM": 2.6674213195534193,
+        "endpointEstimateM": -2.6674213195534193,
+        "finalZone": "main_left",
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 9,
+            "outside_pdr_gate": 1
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 14,
+          "applied": 3,
+          "reasons": {
+            "insufficient_ble_window": 3,
+            "relative_zone_scores": 9,
+            "no_usable_features": 2
+          }
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 87,
+        "alignedSteps": 87,
+        "intermediateWeakMeanM": 1.0993333830119894,
+        "intermediateWeakP90M": 2.430469701078474,
+        "endpointErrorM": 2.998006555324487,
+        "endpointEstimateM": -2.998006555324487,
+        "finalZone": "main_left",
+        "sequence": {
+          "evaluated": 10,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 10
+          }
+        },
+        "grid": {
+          "evaluated": 87,
+          "applied": 1,
+          "reasons": {
+            "no_magnetic_sample": 1,
+            "outside_corridor": 7,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 16,
+            "applied": 1,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 14,
+          "applied": 3,
+          "reasons": {
+            "insufficient_ble_window": 3,
+            "relative_zone_scores": 9,
+            "no_usable_features": 2
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "platform": "android",
+      "direction": "forward",
+      "bleObservations": 300,
+      "baseline": {
+        "detectedSteps": 69,
+        "alignedSteps": 69,
+        "intermediateWeakMeanM": 4.006696619676444,
+        "intermediateWeakP90M": 6.941171059401583,
+        "endpointErrorM": 7.633383677316225,
+        "endpointEstimateM": 42.55991019217917,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 8
+          }
+        },
+        "grid": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {
+            "no_magnetic_sample": 0,
+            "outside_corridor": 0,
+            "calibrating": 0,
+            "no_reference": 0,
+            "ambiguous": 0,
+            "applied": 0,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 11,
+          "applied": 5,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "relative_zone_scores": 10
+          }
+        }
+      },
+      "gridCandidate": {
+        "detectedSteps": 69,
+        "alignedSteps": 69,
+        "intermediateWeakMeanM": 4.017047626670028,
+        "intermediateWeakP90M": 6.900058025166565,
+        "endpointErrorM": 7.630515217570085,
+        "endpointEstimateM": 42.562778651925306,
+        "finalZone": "main_right",
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "pattern_disabled": 8
+          }
+        },
+        "grid": {
+          "evaluated": 69,
+          "applied": 5,
+          "reasons": {
+            "no_magnetic_sample": 2,
+            "outside_corridor": 1,
+            "calibrating": 8,
+            "no_reference": 0,
+            "ambiguous": 9,
+            "applied": 5,
+            "rejected_by_particle_gate": 0
+          }
+        },
+        "ble": {
+          "evaluated": 11,
+          "applied": 5,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "relative_zone_scores": 10
+          }
+        }
+      }
+    }
+  ]
+}

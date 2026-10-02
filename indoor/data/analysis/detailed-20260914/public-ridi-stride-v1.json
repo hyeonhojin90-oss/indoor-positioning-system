@@ -1,0 +1,257 @@
+{
+  "purpose": "Analysis-only public RIDI prior experiment; no production model update.",
+  "public_source": {
+    "name": "RIDI Robust IMU Double Integration",
+    "archive": "indoor\\data\\external\\ridi\\ridi_data_publish_v2.zip",
+    "sha256": "c454921f16a925dcd3a6545480531d770208b590b677e2e9a92877ed2d661c25",
+    "features": [
+      "accelerometer magnitude peak",
+      "inter-step cadence"
+    ],
+    "target": "ground-truth horizontal x-y displacement between detected steps"
+  },
+  "public_split": {
+    "train_subjects": [
+      "dan",
+      "hao",
+      "ma",
+      "ruixuan",
+      "shali",
+      "tang",
+      "xiaojing",
+      "yajie",
+      "zhicheng"
+    ],
+    "held_subjects": [
+      "hang",
+      "huayi"
+    ],
+    "train": {
+      "rows": 8571,
+      "mae_m": 0.06894751069264482,
+      "baseline_median_mae_m": 0.08586629571851756
+    },
+    "held": {
+      "rows": 4615,
+      "mae_m": 0.08182519159522811,
+      "baseline_median_mae_m": 0.09578794718751071
+    },
+    "model": {
+      "intercept": 0.6322394103497136,
+      "weights": [
+        -0.060654067472531506,
+        0.026332494886750893
+      ],
+      "mean": [
+        1.8872504190590125,
+        3.0330242660894795
+      ],
+      "scale": [
+        0.2837844447271904,
+        1.4138041955130738
+      ],
+      "median_stride": 0.6270695881040637
+    }
+  },
+  "local_application": {
+    "distance_m": 50.19329386949539,
+    "local_base_m_per_detected_step": 0.6435037675576333,
+    "feature_normalization_from_earlier_local_sessions": {
+      "mean": [
+        1.722136108478384,
+        2.638020273599568
+      ],
+      "scale": [
+        0.42419338965848774,
+        1.218932487409319
+      ],
+      "rows": 851
+    },
+    "test_sessions": [
+      "indoor_positioning_ios_20260914_170738.jsonl",
+      "indoor_positioning_ios_20260914_170901.jsonl",
+      "indoor_positioning_ios_20260914_171021.jsonl",
+      "indoor_positioning_ios_20260914_171142.jsonl"
+    ],
+    "fixed_endpoint_mae_m": 0.9652556513364523,
+    "variants": {
+      "public_relative_direct": {
+        "endpoint_mae_m": 2.4497556433964682,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "estimate_m": 53.691568232691104,
+            "error_m": 3.498274363195712,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "estimate_m": 53.63986861352087,
+            "error_m": 3.446574744025476,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "estimate_m": 51.965567988099174,
+            "error_m": 1.7722741186037823,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "estimate_m": 51.275193217256295,
+            "error_m": 1.0818993477609027,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          }
+        ]
+      },
+      "public_relative_ema_0_8": {
+        "endpoint_mae_m": 2.3017891326396747,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "estimate_m": 53.535693413313616,
+            "error_m": 3.3423995438182246,
+            "min_stride_m": 0.6268068896710592,
+            "max_stride_m": 0.6951968246480851
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "estimate_m": 53.45714838236641,
+            "error_m": 3.2638545128710206,
+            "min_stride_m": 0.6254360558494397,
+            "max_stride_m": 0.6995988190630757
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "estimate_m": 51.87060444658412,
+            "error_m": 1.6773105770887256,
+            "min_stride_m": 0.6317496705530654,
+            "max_stride_m": 0.7037364375236572
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "estimate_m": 51.11688576627612,
+            "error_m": 0.923591896780728,
+            "min_stride_m": 0.6206372399396386,
+            "max_stride_m": 0.7025538898114778
+          }
+        ]
+      },
+      "public_domain_normalized_direct": {
+        "endpoint_mae_m": 1.1183968760728966,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "estimate_m": 52.365400590864695,
+            "error_m": 2.1721067213693033,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "estimate_m": 52.01946985455185,
+            "error_m": 1.8261759850564587,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "estimate_m": 50.59201219372007,
+            "error_m": 0.39871832422468145,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "estimate_m": 50.11670739585425,
+            "error_m": 0.07658647364114302,
+            "min_stride_m": 0.57915339080187,
+            "max_stride_m": 0.7078541443133967
+          }
+        ]
+      },
+      "public_domain_normalized_ema_0_8": {
+        "endpoint_mae_m": 1.098817502408739,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "estimate_m": 52.316578359549965,
+            "error_m": 2.123284490054573,
+            "min_stride_m": 0.6195933825399937,
+            "max_stride_m": 0.6786675002941442
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "estimate_m": 51.97034936172773,
+            "error_m": 1.7770554922323356,
+            "min_stride_m": 0.6162054187185187,
+            "max_stride_m": 0.6842934306745809
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "estimate_m": 50.57169435443157,
+            "error_m": 0.3784004849361793,
+            "min_stride_m": 0.622452215132954,
+            "max_stride_m": 0.6875038121932845
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "estimate_m": 50.076764327083524,
+            "error_m": 0.11652954241186819,
+            "min_stride_m": 0.6179413026940692,
+            "max_stride_m": 0.6873701805428427
+          }
+        ]
+      },
+      "public_prior_local_endpoint_finetune_ema_0_8": {
+        "endpoint_mae_m": 0.9572034006049108,
+        "trials": [
+          {
+            "file": "indoor_positioning_ios_20260914_170738.jsonl",
+            "estimate_m": 51.079490513720515,
+            "error_m": 0.886196644225123,
+            "min_stride_m": 0.6381602814881472,
+            "max_stride_m": 0.6435037675576333
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_170901.jsonl",
+            "estimate_m": 50.441377850733474,
+            "error_m": 0.24808398123808217,
+            "min_stride_m": 0.6381606739064648,
+            "max_stride_m": 0.6435037675576333
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171021.jsonl",
+            "estimate_m": 49.16512274757397,
+            "error_m": 1.0281711219214245,
+            "min_stride_m": 0.6381608261978449,
+            "max_stride_m": 0.6435037675576333
+          },
+          {
+            "file": "indoor_positioning_ios_20260914_171142.jsonl",
+            "estimate_m": 48.52693201446038,
+            "error_m": 1.6663618550350137,
+            "min_stride_m": 0.6381614745703924,
+            "max_stride_m": 0.6435037675576333
+          }
+        ],
+        "transfer": {
+          "intercept": 0.6381589155616074,
+          "gain": 0.00010298784933507605,
+          "ridge": 2.0,
+          "training_session_feature_mean": 1.0057124674066913,
+          "training_session_feature_std": 0.004484245774152835
+        }
+      }
+    }
+  },
+  "limits": [
+    "RIDI is Android/Tango data, while local data is iPhone Expo; only a bounded relative multiplier is transferred.",
+    "RIDI x-y ground-truth target and the 4F reference are both horizontal distances.",
+    "No local per-step physical ground truth exists, so local evaluation is endpoint-only."
+  ]
+}

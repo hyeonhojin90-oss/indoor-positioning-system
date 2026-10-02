@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-09-15T09:45:59.448Z",
+  "purpose": "AP·BLE 신호 환경의 반복성·구역 분리력 사전검증. 위치 보정 또는 Fusion 적용 결과가 아님.",
+  "thresholds": {
+    "min_shared_signals_for_classification": 2,
+    "recommended_sessions_per_zone": 3
+  },
+  "input": {
+    "files": 4,
+    "accepted_schema7_zone_sessions": 4,
+    "skipped": 0
+  },
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260915_173155.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "core_junction",
+      "detail": "코어 교차점",
+      "duration_s": 15.958,
+      "completed": true,
+      "wifi_scans": 1,
+      "fresh_wifi_scans": 1,
+      "wifi_unique_aps": 107,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 586,
+      "ble_unique_transmitters": 187
+    },
+    {
+      "file": "indoor_positioning_20260915_173215.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "core_junction",
+      "detail": "코어 교차점",
+      "duration_s": 33.785,
+      "completed": true,
+      "wifi_scans": 6,
+      "fresh_wifi_scans": 1,
+      "wifi_unique_aps": 96,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 1031,
+      "ble_unique_transmitters": 180
+    },
+    {
+      "file": "indoor_positioning_20260915_173252.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "core_junction",
+      "detail": "코어 교차점",
+      "duration_s": 22.993,
+      "completed": true,
+      "wifi_scans": 5,
+      "fresh_wifi_scans": 0,
+      "wifi_unique_aps": 0,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 742,
+      "ble_unique_transmitters": 157
+    },
+    {
+      "file": "indoor_positioning_20260915_181508.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "stairs_right",
+      "detail": "오른쪽 계단 앞",
+      "duration_s": 96.205,
+      "completed": true,
+      "wifi_scans": 3,
+      "fresh_wifi_scans": 3,
+      "wifi_unique_aps": 100,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 1173,
+      "ble_unique_transmitters": 106
+    }
+  ],
+  "zones": {
+    "wifi": [
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "core_junction",
+        "sessions": 3,
+        "unique_signals": 136,
+        "signals_seen_in_67_percent_sessions": 0,
+        "median_signal_rssi_sd_db": null,
+        "recommended_repeat_complete": true
+      },
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "stairs_right",
+        "sessions": 1,
+        "unique_signals": 100,
+        "signals_seen_in_67_percent_sessions": 100,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      }
+    ],
+    "ble": [
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "core_junction",
+        "sessions": 3,
+        "unique_signals": 280,
+        "signals_seen_in_67_percent_sessions": 85,
+        "median_signal_rssi_sd_db": 1.9293061504650375,
+        "recommended_repeat_complete": true
+      },
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "stairs_right",
+        "sessions": 1,
+        "unique_signals": 106,
+        "signals_seen_in_67_percent_sessions": 106,
+        "median_signal_rssi_sd_db": 0,
+        "recommended_repeat_complete": false
+      }
+    ]
+  },
+  "leave_one_session_out": {
+    "wifi": {
+      "evaluated_sessions": 2,
+      "top1_accuracy": 1,
+      "median_rssi_mae_db": 10.343283582089553,
+      "median_shared_signals": 67,
+      "limitation": null
+    },
+    "ble": {
+      "evaluated_sessions": 3,
+      "top1_accuracy": 1,
+      "median_rssi_mae_db": 3.160472972972973,
+      "median_shared_signals": 128,
+      "limitation": null
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "coordinate": "surveyed 4F core center <-> right stair entrance before stairs",
+  "interpretation": "Hardware step counter is independent corroboration, not manually counted ground truth. Mid-route room labels are approximate.",
+  "oldReferenceDate": "2026-09-17",
+  "newStationaryDate": "2026-09-19",
+  "oldReferenceIds": 1196,
+  "anchorPersistence": [
+    {
+      "zone": "core_junction",
+      "oldReferenceIds": 297,
+      "recentStationaryIds": 40,
+      "crossDateIds": 3,
+      "uniqueToOldAnchor": 1
+    },
+    {
+      "zone": "stairs_right",
+      "oldReferenceIds": 126,
+      "recentStationaryIds": 19,
+      "crossDateIds": 1,
+      "uniqueToOldAnchor": 1
+    },
+    {
+      "zone": "stairs_left",
+      "oldReferenceIds": 291,
+      "recentStationaryIds": 23,
+      "crossDateIds": 5,
+      "uniqueToOldAnchor": 2
+    }
+  ],
+  "pairedStableIdPool": 8,
+  "walks": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "sha256": "0436540d9e5eeaabbf66d49716cb0cc542bcb4b113aae255dc5be596aa7492cc",
+      "direction": "right_to_core",
+      "corridorM": 50.19329386949539,
+      "fixedStrideM": 0.6196702946851282,
+      "calibrationSteps": 81,
+      "accelerometerSteps": 87,
+      "hardwareStepsAtLastLabel": 69,
+      "fixedStrideTravelM": 53.91131563760616,
+      "fixedStrideProgressErrorM": 3.7180217681107663,
+      "fusionEndpointErrorM": 3.657656730919534,
+      "fusionFinalZone": "main_left",
+      "fusionStepReasons": {
+        "tracking": 87
+      },
+      "firstLabel": {
+        "location": "4204 앞",
+        "elapsedS": 15.299,
+        "accelerometerSteps": 28,
+        "hardwareSteps": 16
+      },
+      "lastLabel": {
+        "location": "코어복도 출구 중앙점 앞",
+        "elapsedS": 44.172,
+        "accelerometerSteps": 87,
+        "hardwareSteps": 69
+      },
+      "labels": [
+        {
+          "location": "4204 앞",
+          "elapsedS": 15.299,
+          "accelerometerSteps": 28,
+          "hardwareSteps": 16
+        },
+        {
+          "location": "4205 앞",
+          "elapsedS": 18.103,
+          "accelerometerSteps": 33,
+          "hardwareSteps": 20
+        },
+        {
+          "location": "4206 앞",
+          "elapsedS": 20.984,
+          "accelerometerSteps": 38,
+          "hardwareSteps": 26
+        },
+        {
+          "location": "4207 앞",
+          "elapsedS": 22.416,
+          "accelerometerSteps": 41,
+          "hardwareSteps": 28
+        },
+        {
+          "location": "4208 앞",
+          "elapsedS": 26.027,
+          "accelerometerSteps": 47,
+          "hardwareSteps": 35
+        },
+        {
+          "location": "4209 앞",
+          "elapsedS": 27.268,
+          "accelerometerSteps": 50,
+          "hardwareSteps": 38
+        },
+        {
+          "location": "4210 앞",
+          "elapsedS": 30.913,
+          "accelerometerSteps": 57,
+          "hardwareSteps": 45
+        },
+        {
+          "location": "4211 앞",
+          "elapsedS": 33.252,
+          "accelerometerSteps": 61,
+          "hardwareSteps": 49
+        },
+        {
+          "location": "4212 앞",
+          "elapsedS": 34.301,
+          "accelerometerSteps": 64,
+          "hardwareSteps": 51
+        },
+        {
+          "location": "4213 앞",
+          "elapsedS": 38.521,
+          "accelerometerSteps": 73,
+          "hardwareSteps": 59
+        },
+        {
+          "location": "코어복도 출구 중앙점 앞",
+          "elapsedS": 44.172,
+          "accelerometerSteps": 87,
+          "hardwareSteps": 69
+        }
+      ],
+      "ble": {
+        "observations": 391,
+        "evaluated": 14,
+        "eligibleAtFive": 0,
+        "eligibleAtThree": 2,
+        "maxCommonPerWindow": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          2,
+          3,
+          2,
+          2,
+          3,
+          0
+        ],
+        "uniqueIds": 63,
+        "currentReferenceIdsSeen": 12,
+        "crossDatePairedAnchorIdsSeen": 6
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "sha256": "1151ac394094d34c76803372d34068d9cff2b810cb2287b05b6da1454056de0c",
+      "direction": "core_to_right",
+      "corridorM": 50.19329386949539,
+      "fixedStrideM": 0.6196702946851282,
+      "calibrationSteps": 81,
+      "accelerometerSteps": 69,
+      "hardwareStepsAtLastLabel": 66,
+      "fixedStrideTravelM": 42.75725033327385,
+      "fixedStrideProgressErrorM": -7.43604353622154,
+      "fusionEndpointErrorM": 7.6846558935698965,
+      "fusionFinalZone": "main_right",
+      "fusionStepReasons": {
+        "tracking": 69
+      },
+      "firstLabel": {
+        "location": "4213 앞",
+        "elapsedS": 4.277,
+        "accelerometerSteps": 11,
+        "hardwareSteps": 10
+      },
+      "lastLabel": {
+        "location": "오른쪽 계단 입구",
+        "elapsedS": 31.669,
+        "accelerometerSteps": 69,
+        "hardwareSteps": 66
+      },
+      "labels": [
+        {
+          "location": "4213 앞",
+          "elapsedS": 4.277,
+          "accelerometerSteps": 11,
+          "hardwareSteps": 10
+        },
+        {
+          "location": "4212 앞",
+          "elapsedS": 7.582,
+          "accelerometerSteps": 17,
+          "hardwareSteps": 17
+        },
+        {
+          "location": "4211 앞",
+          "elapsedS": 8.571,
+          "accelerometerSteps": 19,
+          "hardwareSteps": 19
+        },
+        {
+          "location": "4210 앞",
+          "elapsedS": 10.705,
+          "accelerometerSteps": 24,
+          "hardwareSteps": 24
+        },
+        {
+          "location": "4209 앞",
+          "elapsedS": 14.065,
+          "accelerometerSteps": 31,
+          "hardwareSteps": 30
+        },
+        {
+          "location": "4208 앞",
+          "elapsedS": 15.112,
+          "accelerometerSteps": 33,
+          "hardwareSteps": 32
+        },
+        {
+          "location": "4207 앞",
+          "elapsedS": 18.093,
+          "accelerometerSteps": 40,
+          "hardwareSteps": 38
+        },
+        {
+          "location": "4206 앞",
+          "elapsedS": 19.409,
+          "accelerometerSteps": 42,
+          "hardwareSteps": 41
+        },
+        {
+          "location": "4205 앞",
+          "elapsedS": 21.955,
+          "accelerometerSteps": 48,
+          "hardwareSteps": 46
+        },
+        {
+          "location": "4204 앞",
+          "elapsedS": 23.47,
+          "accelerometerSteps": 51,
+          "hardwareSteps": 49
+        },
+        {
+          "location": "오른쪽 계단 입구",
+          "elapsedS": 31.669,
+          "accelerometerSteps": 69,
+          "hardwareSteps": 66
+        }
+      ],
+      "ble": {
+        "observations": 300,
+        "evaluated": 11,
+        "eligibleAtFive": 0,
+        "eligibleAtThree": 0,
+        "maxCommonPerWindow": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        "uniqueIds": 58,
+        "currentReferenceIdsSeen": 9,
+        "crossDatePairedAnchorIdsSeen": 4
+      }
+    }
+  ]
+}

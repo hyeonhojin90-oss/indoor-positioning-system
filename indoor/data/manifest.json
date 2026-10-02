@@ -1,0 +1,34 @@
+{
+  "dataset_id": "it-convergence-2026-09-01-walks-v1",
+  "building": "조선대학교 IT융합대학",
+  "device": "samsung SM-S938N",
+  "collection_date": "2026-09-01",
+  "raw_directory": "raw/2026-09-01",
+  "notes": [
+    "사용자가 잘못 측정했다고 확정한 로그는 포함하지 않는다.",
+    "대부분 경로가 1회 측정이므로 반복 재현성은 아직 평가할 수 없다.",
+    "1층 오른쪽과 수정 전 5층 왼쪽 로그는 폐기되어 포함하지 않는다.",
+    "휴대폰에 남은 구형 로그는 원본 보존을 위해 manifest에 기록하되 include_in_analysis=false이면 위치 학습과 주 결과에서 제외한다."
+  ],
+  "sessions": [
+    {"file":"indoor_positioning_20260901_124041.jsonl","route_id":"9F_LEGACY_MISLABELED","status":"legacy_excluded","include_in_analysis":false,"note":"초기 schema 2. 9228 라벨과 실제 이동 방향이 일치하지 않아 위치 앵커로 사용하지 않음"},
+    {"file":"indoor_positioning_20260901_124143.jsonl","route_id":"4F_LEGACY_TO_4204","status":"legacy_excluded","include_in_analysis":false,"note":"초기 schema 2. 중간 랩·걸음 기준이 없고 종료 직전 라벨도 시작 위치로 저장됨"},
+    {"file":"indoor_positioning_20260901_124318.jsonl","route_id":"4F_LEGACY_TO_4128","status":"legacy_excluded","include_in_analysis":false,"note":"초기 schema 2. 중간 랩·걸음 기준이 없고 종료 직전 라벨도 시작 위치로 저장됨"},
+    {"file":"indoor_positioning_20260901_151808.jsonl","route_id":"4F_CORE_TO_RIGHT_STAIRS","status":"accepted","note":"4층 오른쪽 1차 반복 측정"},
+    {"file":"indoor_positioning_20260901_151915.jsonl","route_id":"4F_LEFT_OLD_MIXED_ROWS","status":"legacy_excluded","include_in_analysis":false,"note":"완주 로그지만 이전 방식으로 위·아래 강의실 랩을 번갈아 기록하여 현재 상단 대표행 경로와 직접 비교하지 않음"},
+    {"file":"indoor_positioning_20260901_153038.jsonl","route_id":"4F_CORE_TO_RIGHT_STAIRS","status":"accepted_with_review","note":"4층 오른쪽 2차 반복 측정; 일부 짧은 구간 걸음 센서 지연"},
+    {"file":"indoor_positioning_20260901_155425.jsonl","route_id":"4F_CORE_TO_LEFT_STAIRS","status":"accepted","note":"사용자 유지 결정"},
+    {"file":"indoor_positioning_20260901_155615.jsonl","route_id":"3F_CORE_TO_RIGHT_STAIRS","status":"accepted"},
+    {"file":"indoor_positioning_20260901_160634.jsonl","route_id":"3F_CORE_TO_LEFT_STAIRS","status":"accepted"},
+    {"file":"indoor_positioning_20260901_160817.jsonl","route_id":"3F_EXTENSION","status":"accepted"},
+    {"file":"indoor_positioning_20260901_161014.jsonl","route_id":"3F_IT_HALL","status":"accepted_with_review","note":"마지막 짧은 구간 걸음 증가 0"},
+    {"file":"indoor_positioning_20260901_161220.jsonl","route_id":"2F_CORE_TO_LEFT_STAIRS","status":"accepted"},
+    {"file":"indoor_positioning_20260901_161342.jsonl","route_id":"2F_CORE_TO_RIGHT_STAIRS","status":"accepted_with_review","note":"2205-2204 구간 걸음 증가 0"},
+    {"file":"indoor_positioning_20260901_161506.jsonl","route_id":"2F_2107_OPEN","status":"accepted"},
+    {"file":"indoor_positioning_20260901_161605.jsonl","route_id":"2F_STUDY","status":"accepted"},
+    {"file":"indoor_positioning_20260901_161730.jsonl","route_id":"2F_EXTENSION","status":"accepted_with_review","note":"일부 인접 라벨 사이 걸음 증가 0"},
+    {"file":"indoor_positioning_20260901_161957.jsonl","route_id":"1F_CORE_TO_LEFT_STAIRS","status":"accepted"},
+    {"file":"indoor_positioning_20260901_162413.jsonl","route_id":"5F_CORE_TO_RIGHT_STAIRS","status":"accepted_with_review","note":"시작-5213 구간 걸음 증가 0"},
+    {"file":"indoor_positioning_20260901_163040.jsonl","route_id":"5F_OUTDOOR","status":"accepted_with_review","note":"입구-중앙 걸음 증가는 0이지만 가속도상 이동이 명확하여 사용 가능; 걸음 센서 지연으로 판정"}
+  ]
+}

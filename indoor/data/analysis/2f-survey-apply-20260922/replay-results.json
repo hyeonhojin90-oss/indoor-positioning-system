@@ -1,0 +1,1534 @@
+{
+  "method": "Same raw sensors, seed, mode4 and production references; query excluded from templates. Android rotation-vector heading follows SensorManager, not generic quaternion yaw.",
+  "limitations": [
+    "No production 2F BLE references: observations are delivered but cannot correct position.",
+    "Extension endpoint residual is a longitudinal PROXY, not surveyed error: final stair-entry lap is not confirmed identical to scanned end wall; start label is main-corridor center.",
+    "Only start coordinates used. Intermediate labels never reset particles; room door coordinates remain unmeasured.",
+    "Both variants start at corresponding endpoint boundaries, not the old deployed area midpoint. Geometry/unit correction comparison; not an isolated sensor ablation.",
+    "The after engine also shares one stride across all particles in a constrained extension axis; the before engine retains per-particle scale there.",
+    "For duplicated start/destination labels, evaluation begins after the repeated start marker and ends at the first arrival marker."
+  ],
+  "results": [
+    {
+      "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161220.jsonl",
+      "route": "2F_CORE_TO_LEFT_STAIRS",
+      "bleObservations": 0,
+      "before": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 136.30892262177608,
+          "y": 6.675599275677387e-23,
+          "zone": "stairs_left"
+        },
+        "steps": 79,
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "2119 앞",
+            "x": 82.53695910351844,
+            "y": 0.00030785767844265473,
+            "zone": "main_left",
+            "steps": 17
+          },
+          {
+            "label": "2122 앞",
+            "x": 95.64881095536997,
+            "y": 9.395070753254826e-9,
+            "zone": "main_left",
+            "steps": 32
+          },
+          {
+            "label": "2125 앞",
+            "x": 109.63478626401191,
+            "y": 1.4335740285117825e-13,
+            "zone": "main_left",
+            "steps": 48
+          },
+          {
+            "label": "2128 앞",
+            "x": 124.49488502944443,
+            "y": 1.0937301853269856e-18,
+            "zone": "main_left",
+            "steps": 65
+          },
+          {
+            "label": "왼쪽 계단 입구",
+            "x": 136.3089226217762,
+            "y": 6.675599275677389e-23,
+            "zone": "stairs_left",
+            "steps": 79
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      },
+      "after": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 132.2647302982458,
+          "y": 6.335500282824133e-23,
+          "zone": "main_left"
+        },
+        "steps": 79,
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "2119 앞",
+            "x": 80.98353034158376,
+            "y": 0.0002921733807404281,
+            "zone": "main_left",
+            "steps": 17
+          },
+          {
+            "label": "2122 앞",
+            "x": 93.39023906017914,
+            "y": 8.91642397279138e-9,
+            "zone": "main_left",
+            "steps": 32
+          },
+          {
+            "label": "2125 앞",
+            "x": 106.62406169334778,
+            "y": 1.3605383259264207e-13,
+            "zone": "main_left",
+            "steps": 48
+          },
+          {
+            "label": "2128 앞",
+            "x": 120.68499824108925,
+            "y": 1.0380083663379055e-18,
+            "zone": "main_left",
+            "steps": 65
+          },
+          {
+            "label": "왼쪽 계단 입구",
+            "x": 132.2647302982458,
+            "y": 6.335500282824133e-23,
+            "zone": "main_left",
+            "steps": 79
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      }
+    },
+    {
+      "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161342.jsonl",
+      "route": "2F_CORE_TO_RIGHT_STAIRS",
+      "bleObservations": 0,
+      "before": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 4.19398331782334,
+          "y": -0.05104859278417822,
+          "zone": "main_right"
+        },
+        "steps": 77,
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "2211 앞",
+            "x": 61.03613679179473,
+            "y": 0.0014073143221714308,
+            "zone": "main_right",
+            "steps": 12
+          },
+          {
+            "label": "2210 앞",
+            "x": 47.92446422045661,
+            "y": 5.3101590895380426e-8,
+            "zone": "main_right",
+            "steps": 27
+          },
+          {
+            "label": "2210-1 앞",
+            "x": 32.190241998234214,
+            "y": 2.02566493588944e-13,
+            "zone": "main_right",
+            "steps": 45
+          },
+          {
+            "label": "2205 앞",
+            "x": 24.32313088712323,
+            "y": 3.956376827909082e-16,
+            "zone": "main_right",
+            "steps": 54
+          },
+          {
+            "label": "2204 앞",
+            "x": 19.07839014638241,
+            "y": 6.1818387936079116e-18,
+            "zone": "main_right",
+            "steps": 60
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "x": 4.193983317823344,
+            "y": -0.05104859278417824,
+            "zone": "main_right",
+            "steps": 77
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      },
+      "after": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 7.433314203244362,
+          "y": 3.6362451301008275e-23,
+          "zone": "main_right"
+        },
+        "steps": 77,
+        "ble": {
+          "evaluated": 0,
+          "applied": 0,
+          "reasons": {}
+        },
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "no_sequence_reference": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "2211 앞",
+            "x": 62.06502178399609,
+            "y": 0.0013415376660848542,
+            "zone": "main_right",
+            "steps": 12
+          },
+          {
+            "label": "2210 앞",
+            "x": 49.45770464997658,
+            "y": 4.094048053237472e-8,
+            "zone": "main_right",
+            "steps": 27
+          },
+          {
+            "label": "2210-1 앞",
+            "x": 34.32892408915296,
+            "y": 1.561755391402234e-13,
+            "zone": "main_right",
+            "steps": 45
+          },
+          {
+            "label": "2205 앞",
+            "x": 26.764533808741163,
+            "y": 3.050303498832488e-16,
+            "zone": "main_right",
+            "steps": 54
+          },
+          {
+            "label": "2204 앞",
+            "x": 21.721606955133286,
+            "y": 4.7660992169257566e-18,
+            "zone": "main_right",
+            "steps": 60
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "x": 7.433314203244362,
+            "y": 3.6362451301008275e-23,
+            "zone": "main_right",
+            "steps": 77
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      }
+    },
+    {
+      "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161506.jsonl",
+      "route": "2F_2107_OPEN",
+      "labels": [
+        {
+          "kind": "session_start",
+          "floor": "2",
+          "location": "메인복도·2107 교차점",
+          "destination": "2107 개방공간",
+          "event": "시작",
+          "route_id": "2F_2107_OPEN",
+          "lap_index": 0,
+          "lap_total": 2
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "2107 입구",
+          "destination": "2107 개방공간",
+          "event": "랜드마크",
+          "route_id": "2F_2107_OPEN",
+          "lap_index": 1,
+          "lap_total": 2
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "2107 개방공간",
+          "destination": "2107 개방공간",
+          "event": "도착",
+          "route_id": "2F_2107_OPEN",
+          "lap_index": 2,
+          "lap_total": 2
+        }
+      ],
+      "sensors": [
+        "accelerometer_mps2",
+        "magnetic_field_ut",
+        "gyroscope_rads",
+        "rotation_vector",
+        "pressure_hpa",
+        "step_counter"
+      ],
+      "excluded": "Legacy ambiguous branch labels or unsurveyed study endpoint; no fabricated start/end truth."
+    },
+    {
+      "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161605.jsonl",
+      "route": "2F_STUDY",
+      "labels": [
+        {
+          "kind": "session_start",
+          "floor": "2",
+          "location": "메인복도·2107 교차점",
+          "destination": "ㄷ자 학습공간",
+          "event": "시작",
+          "route_id": "2F_STUDY",
+          "lap_index": 0,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "2107 입구",
+          "destination": "ㄷ자 학습공간",
+          "event": "랜드마크",
+          "route_id": "2F_STUDY",
+          "lap_index": 1,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "2107 개방공간",
+          "destination": "ㄷ자 학습공간",
+          "event": "랜드마크",
+          "route_id": "2F_STUDY",
+          "lap_index": 2,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "ㄷ자 학습공간",
+          "destination": "ㄷ자 학습공간",
+          "event": "도착",
+          "route_id": "2F_STUDY",
+          "lap_index": 3,
+          "lap_total": 3
+        }
+      ],
+      "sensors": [
+        "accelerometer_mps2",
+        "magnetic_field_ut",
+        "rotation_vector",
+        "gyroscope_rads",
+        "pressure_hpa",
+        "step_counter"
+      ],
+      "excluded": "Legacy ambiguous branch labels or unsurveyed study endpoint; no fabricated start/end truth."
+    },
+    {
+      "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161730.jsonl",
+      "route": "2F_EXTENSION",
+      "labels": [
+        {
+          "kind": "session_start",
+          "floor": "2",
+          "location": "메인복도·2107 교차점",
+          "destination": "증축부 복도 끝",
+          "event": "시작",
+          "route_id": "2F_EXTENSION",
+          "lap_index": 0,
+          "lap_total": 5
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "2107 입구",
+          "destination": "증축부 복도 끝",
+          "event": "랜드마크",
+          "route_id": "2F_EXTENSION",
+          "lap_index": 1,
+          "lap_total": 5
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "2107 개방공간",
+          "destination": "증축부 복도 끝",
+          "event": "랜드마크",
+          "route_id": "2F_EXTENSION",
+          "lap_index": 2,
+          "lap_total": 5
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "TDM 앞",
+          "destination": "증축부 복도 끝",
+          "event": "랜드마크",
+          "route_id": "2F_EXTENSION",
+          "lap_index": 3,
+          "lap_total": 5
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "증축부 입구",
+          "destination": "증축부 복도 끝",
+          "event": "랜드마크",
+          "route_id": "2F_EXTENSION",
+          "lap_index": 4,
+          "lap_total": 5
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "증축부 복도 끝",
+          "destination": "증축부 복도 끝",
+          "event": "도착",
+          "route_id": "2F_EXTENSION",
+          "lap_index": 5,
+          "lap_total": 5
+        }
+      ],
+      "sensors": [
+        "accelerometer_mps2",
+        "magnetic_field_ut",
+        "gyroscope_rads",
+        "rotation_vector",
+        "pressure_hpa",
+        "step_counter"
+      ],
+      "excluded": "Legacy ambiguous branch labels or unsurveyed study endpoint; no fabricated start/end truth."
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114450.jsonl",
+      "route": "2F_CORE_TO_LEFT_STAIRS",
+      "bleObservations": 163,
+      "before": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 128.22619872798393,
+          "y": 3.013574655825179e-11,
+          "zone": "main_left"
+        },
+        "steps": 67,
+        "ble": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 6,
+            "no_usable_features": 5
+          }
+        },
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 8
+          }
+        },
+        "laps": [
+          {
+            "label": "2119 앞",
+            "x": 78.40113743185306,
+            "y": 0.0039316874664734516,
+            "zone": "main_left",
+            "steps": 10
+          },
+          {
+            "label": "2122 앞",
+            "x": 90.63888931726753,
+            "y": 0.000007268919220243366,
+            "zone": "main_left",
+            "steps": 24
+          },
+          {
+            "label": "2125 앞",
+            "x": 103.75074193629331,
+            "y": 1.471423767915268e-8,
+            "zone": "main_left",
+            "steps": 39
+          },
+          {
+            "label": "2128 앞",
+            "x": 117.73671724493512,
+            "y": 2.2452144896167989e-13,
+            "zone": "main_left",
+            "steps": 55
+          },
+          {
+            "label": "왼쪽 계단 입구",
+            "x": 128.22619872798398,
+            "y": 3.01357465582518e-11,
+            "zone": "main_left",
+            "steps": 67
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      },
+      "after": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 124.45552917047665,
+          "y": 2.9048097346835214e-20,
+          "zone": "main_left"
+        },
+        "steps": 67,
+        "ble": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 6,
+            "no_usable_features": 5
+          }
+        },
+        "sequence": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 8
+          }
+        },
+        "laps": [
+          {
+            "label": "2119 앞",
+            "x": 77.31003603981323,
+            "y": 0.004186272012384921,
+            "zone": "main_left",
+            "steps": 10
+          },
+          {
+            "label": "2122 앞",
+            "x": 88.88963084383603,
+            "y": 2.5550976638091626e-7,
+            "zone": "main_left",
+            "steps": 24
+          },
+          {
+            "label": "2125 앞",
+            "x": 101.29633956243141,
+            "y": 7.797539257230102e-12,
+            "zone": "main_left",
+            "steps": 39
+          },
+          {
+            "label": "2128 앞",
+            "x": 114.5301621955995,
+            "y": 1.1898100673263647e-16,
+            "zone": "main_left",
+            "steps": 55
+          },
+          {
+            "label": "왼쪽 계단 입구",
+            "x": 124.45552917047658,
+            "y": 2.9048097346835214e-20,
+            "zone": "main_left",
+            "steps": 67
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      }
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114551.jsonl",
+      "route": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "bleObservations": 166,
+      "before": {
+        "start": {
+          "x": 134.907,
+          "y": 0
+        },
+        "final": {
+          "x": 79.1082350605267,
+          "y": -6.87246410437741e-20,
+          "zone": "main_left"
+        },
+        "steps": 64,
+        "ble": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 5,
+            "no_usable_features": 6
+          }
+        },
+        "sequence": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 7
+          }
+        },
+        "laps": [
+          {
+            "label": "2128 앞",
+            "x": 123.68853135682313,
+            "y": -0.00015475413389795607,
+            "zone": "main_left",
+            "steps": 13
+          },
+          {
+            "label": "2125 앞",
+            "x": 111.45080296176134,
+            "y": -9.44544274279517e-9,
+            "zone": "main_left",
+            "steps": 27
+          },
+          {
+            "label": "2122 앞",
+            "x": 99.21307456669956,
+            "y": -5.765040736569318e-13,
+            "zone": "main_left",
+            "steps": 41
+          },
+          {
+            "label": "2119 앞",
+            "x": 86.97534617163782,
+            "y": -3.518701621441234e-17,
+            "zone": "main_left",
+            "steps": 55
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "x": 79.1082350605267,
+            "y": -6.87246410437741e-20,
+            "zone": "main_left",
+            "steps": 64
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      },
+      "after": {
+        "start": {
+          "x": 134.907,
+          "y": 0
+        },
+        "final": {
+          "x": 82.101382700668,
+          "y": -7.184627878809574e-20,
+          "zone": "main_left"
+        },
+        "steps": 64,
+        "ble": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 5,
+            "no_usable_features": 6
+          }
+        },
+        "sequence": {
+          "evaluated": 7,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 7
+          }
+        },
+        "laps": [
+          {
+            "label": "2128 앞",
+            "x": 124.28419234389276,
+            "y": -0.00016178343718901237,
+            "zone": "main_left",
+            "steps": 13
+          },
+          {
+            "label": "2125 앞",
+            "x": 112.70459753987028,
+            "y": -9.874477367493431e-9,
+            "zone": "main_left",
+            "steps": 27
+          },
+          {
+            "label": "2122 앞",
+            "x": 101.12500273584779,
+            "y": -6.026902690120502e-13,
+            "zone": "main_left",
+            "steps": 41
+          },
+          {
+            "label": "2119 앞",
+            "x": 89.54540793182522,
+            "y": -3.678529473950502e-17,
+            "zone": "main_left",
+            "steps": 55
+          },
+          {
+            "label": "코어복도 출구 중앙점 앞",
+            "x": 82.101382700668,
+            "y": -7.184627878809574e-20,
+            "zone": "main_left",
+            "steps": 64
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      }
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114630.jsonl",
+      "route": "2F_CORE_TO_RIGHT_STAIRS",
+      "bleObservations": 477,
+      "before": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 4.42972909822035,
+          "y": -0.000026494174459821688,
+          "zone": "main_right"
+        },
+        "steps": 92,
+        "ble": {
+          "evaluated": 16,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 15
+          }
+        },
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "2211 문 1 앞",
+            "x": 63.88858068913284,
+            "y": -0.000039308549366978805,
+            "zone": "main_right",
+            "steps": 8
+          },
+          {
+            "label": "2211 문 2 앞",
+            "x": 57.76971649160192,
+            "y": -3.070980419295219e-7,
+            "zone": "main_right",
+            "steps": 15
+          },
+          {
+            "label": "2210 문 1 앞",
+            "x": 49.028481923700674,
+            "y": -2.9990043157179875e-10,
+            "zone": "main_right",
+            "steps": 25
+          },
+          {
+            "label": "2107 진입 가능점 앞",
+            "x": 34.15315406883231,
+            "y": -3.8717594082578423e-19,
+            "zone": "main_right",
+            "steps": 56
+          },
+          {
+            "label": "2210 문 2 · 2107 끝점 앞",
+            "x": 32.4049071552521,
+            "y": -9.679398520644622e-20,
+            "zone": "main_right",
+            "steps": 60
+          },
+          {
+            "label": "2210-1 앞 앞",
+            "x": 30.653266537654947,
+            "y": 0.0046932974088159845,
+            "zone": "main_right",
+            "steps": 62
+          },
+          {
+            "label": "2205 앞 앞",
+            "x": 24.533761018618083,
+            "y": 0.00026355574146726785,
+            "zone": "main_right",
+            "steps": 69
+          },
+          {
+            "label": "2204 앞 앞",
+            "x": 20.16314373466759,
+            "y": 0.000008236116920852163,
+            "zone": "main_right",
+            "steps": 74
+          },
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "x": 8.799538796395941,
+            "y": 1.0053853663149573e-9,
+            "zone": "main_right",
+            "steps": 87
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "x": 4.42972909822035,
+            "y": -0.000026494174459821685,
+            "zone": "main_right",
+            "steps": 92
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      },
+      "after": {
+        "start": {
+          "x": 70.804,
+          "y": 0
+        },
+        "final": {
+          "x": 7.641165512087362,
+          "y": 1.9987813408340848e-11,
+          "zone": "main_right"
+        },
+        "steps": 92,
+        "ble": {
+          "evaluated": 16,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 15
+          }
+        },
+        "sequence": {
+          "evaluated": 9,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 9
+          }
+        },
+        "laps": [
+          {
+            "label": "2211 문 1 앞",
+            "x": 64.83085930917133,
+            "y": -0.000039308549366978805,
+            "zone": "main_right",
+            "steps": 8
+          },
+          {
+            "label": "2211 문 2 앞",
+            "x": 58.94744464662882,
+            "y": -3.070980419295219e-7,
+            "zone": "main_right",
+            "steps": 15
+          },
+          {
+            "label": "2210 문 1 앞",
+            "x": 50.54256655728239,
+            "y": -2.9990043157179875e-10,
+            "zone": "main_right",
+            "steps": 25
+          },
+          {
+            "label": "2107 진입 가능점 앞",
+            "x": 36.23133387526278,
+            "y": -3.871759408257846e-19,
+            "zone": "main_right",
+            "steps": 56
+          },
+          {
+            "label": "2210 문 2 · 2107 끝점 앞",
+            "x": 34.55035825739345,
+            "y": -9.679398520644603e-20,
+            "zone": "main_right",
+            "steps": 60
+          },
+          {
+            "label": "2210-1 앞 앞",
+            "x": 32.85679152687358,
+            "y": 0.017270522205902007,
+            "zone": "main_right",
+            "steps": 62
+          },
+          {
+            "label": "2205 앞 앞",
+            "x": 26.972385117584135,
+            "y": 0.0001676699314597153,
+            "zone": "main_right",
+            "steps": 69
+          },
+          {
+            "label": "2204 앞 앞",
+            "x": 22.769946072910923,
+            "y": 0.000005239685358116103,
+            "zone": "main_right",
+            "steps": 74
+          },
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "x": 11.843604556760567,
+            "y": 6.396100290669071e-10,
+            "zone": "main_right",
+            "steps": 87
+          },
+          {
+            "label": "오른쪽 계단 입구",
+            "x": 7.641165512087362,
+            "y": 1.9987813408340848e-11,
+            "zone": "main_right",
+            "steps": 92
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      }
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114722.jsonl",
+      "route": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "bleObservations": 481,
+      "before": {
+        "start": {
+          "x": 0.5,
+          "y": 0
+        },
+        "final": {
+          "x": 66.81801215308599,
+          "y": 4.812037666826146e-13,
+          "zone": "main_right"
+        },
+        "steps": 106,
+        "ble": {
+          "evaluated": 17,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 16
+          }
+        },
+        "sequence": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 10,
+            "outside_pdr_gate": 1
+          }
+        },
+        "laps": [
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "x": 5.610765998094908,
+            "y": -0.1254826907881769,
+            "zone": "main_right",
+            "steps": 6
+          },
+          {
+            "label": "2204 앞 앞",
+            "x": 16.100247479576357,
+            "y": -0.0000306354225557071,
+            "zone": "main_right",
+            "steps": 18
+          },
+          {
+            "label": "2205 앞 앞",
+            "x": 19.59674130673685,
+            "y": -0.0000019147139097316938,
+            "zone": "main_right",
+            "steps": 22
+          },
+          {
+            "label": "2210-1 앞 앞",
+            "x": 27.463852417847935,
+            "y": -3.739675604944711e-9,
+            "zone": "main_right",
+            "steps": 31
+          },
+          {
+            "label": "2210 문 2 · 2107 끝점 앞",
+            "x": 39.71805301379498,
+            "y": 0.0001831862391479518,
+            "zone": "main_right",
+            "steps": 45
+          },
+          {
+            "label": "2107 진입 가능점 앞",
+            "x": 39.718053013795014,
+            "y": 1.0918750712153518e-11,
+            "zone": "main_right",
+            "steps": 71
+          },
+          {
+            "label": "2210 문 1 앞",
+            "x": 52.83203684444396,
+            "y": 3.153617005331216e-8,
+            "zone": "main_right",
+            "steps": 90
+          },
+          {
+            "label": "2211 문 2 앞",
+            "x": 59.82502449876497,
+            "y": 1.2318816427075006e-10,
+            "zone": "main_right",
+            "steps": 98
+          },
+          {
+            "label": "2211 문 1 앞",
+            "x": 60.69914795555509,
+            "y": 6.159408213537495e-11,
+            "zone": "main_right",
+            "steps": 99
+          },
+          {
+            "label": "코어·오른쪽 메인복도 교차점",
+            "x": 66.81801215308597,
+            "y": 4.812037666826146e-13,
+            "zone": "main_right",
+            "steps": 106
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      },
+      "after": {
+        "start": {
+          "x": 0.5,
+          "y": 0
+        },
+        "final": {
+          "x": 64.45383276763107,
+          "y": 6.205707458215475e-12,
+          "zone": "main_right"
+        },
+        "steps": 106,
+        "ble": {
+          "evaluated": 17,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 16
+          }
+        },
+        "sequence": {
+          "evaluated": 11,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 10,
+            "outside_pdr_gate": 1
+          }
+        },
+        "laps": [
+          {
+            "label": "오른쪽 끝 화장실 통로 앞 앞",
+            "x": 5.51749552370116,
+            "y": -0.08491150061727545,
+            "zone": "main_right",
+            "steps": 6
+          },
+          {
+            "label": "2204 앞 앞",
+            "x": 15.603349230916878,
+            "y": -0.000020730346830389515,
+            "zone": "main_right",
+            "steps": 18
+          },
+          {
+            "label": "2205 앞 앞",
+            "x": 18.96530046665545,
+            "y": -0.0000012956466768993447,
+            "zone": "main_right",
+            "steps": 22
+          },
+          {
+            "label": "2210-1 앞 앞",
+            "x": 26.529690747067235,
+            "y": -2.5305599158190326e-9,
+            "zone": "main_right",
+            "steps": 31
+          },
+          {
+            "label": "2210 문 2 · 2107 끝점 앞",
+            "x": 38.31314135615551,
+            "y": 0.00013903435012527194,
+            "zone": "main_right",
+            "steps": 45
+          },
+          {
+            "label": "2107 진입 가능점 앞",
+            "x": 38.326790127333226,
+            "y": 2.605665104556393e-9,
+            "zone": "main_right",
+            "steps": 71
+          },
+          {
+            "label": "2210 문 1 앞",
+            "x": 51.006027824677076,
+            "y": 4.066972439816106e-7,
+            "zone": "main_right",
+            "steps": 90
+          },
+          {
+            "label": "2211 문 2 앞",
+            "x": 57.72993029615404,
+            "y": 1.5886611093031625e-9,
+            "zone": "main_right",
+            "steps": 98
+          },
+          {
+            "label": "2211 문 1 앞",
+            "x": 58.57041810508873,
+            "y": 7.943305546515819e-10,
+            "zone": "main_right",
+            "steps": 99
+          },
+          {
+            "label": "코어·오른쪽 메인복도 교차점",
+            "x": 64.45383276763135,
+            "y": 6.205707458215498e-12,
+            "zone": "main_right",
+            "steps": 106
+          }
+        ],
+        "extensionAxisProxyResidualM": null,
+        "extensionCrossAxisProxyResidualM": null
+      }
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114854.jsonl",
+      "route": "2F_STUDY_V3_REVERSE",
+      "labels": [
+        {
+          "kind": "session_start",
+          "floor": "2",
+          "location": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "event": "시작",
+          "route_id": "2F_STUDY_V3_REVERSE",
+          "zone_id": null,
+          "lap_index": 0,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+          "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "event": "랜드마크",
+          "route_id": "2F_STUDY_V3_REVERSE",
+          "zone_id": null,
+          "lap_index": 1,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "책상공간 진입 전 · 책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "event": "랜드마크",
+          "route_id": "2F_STUDY_V3_REVERSE",
+          "zone_id": null,
+          "lap_index": 2,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "event": "도착",
+          "route_id": "2F_STUDY_V3_REVERSE",
+          "zone_id": null,
+          "lap_index": 3,
+          "lap_total": 3
+        }
+      ],
+      "sensors": [
+        "gyroscope_radps",
+        "accelerometer_mps2",
+        "magnetic_field_ut",
+        "rotation_vector",
+        "pressure_hpa",
+        "step_counter"
+      ],
+      "excluded": "Legacy ambiguous branch labels or unsurveyed study endpoint; no fabricated start/end truth."
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114920.jsonl",
+      "route": "2F_STUDY_V3",
+      "labels": [
+        {
+          "kind": "session_start",
+          "floor": "2",
+          "location": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "event": "시작",
+          "route_id": "2F_STUDY_V3",
+          "zone_id": null,
+          "lap_index": 0,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "책상공간 진입 전 · 책상공간 하단 진입구 정면 · 메인복도 중앙선",
+          "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "event": "랜드마크",
+          "route_id": "2F_STUDY_V3",
+          "zone_id": null,
+          "lap_index": 1,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+          "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "event": "랜드마크",
+          "route_id": "2F_STUDY_V3",
+          "zone_id": null,
+          "lap_index": 2,
+          "lap_total": 3
+        },
+        {
+          "kind": "label",
+          "floor": "2",
+          "location": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+          "event": "도착",
+          "route_id": "2F_STUDY_V3",
+          "zone_id": null,
+          "lap_index": 3,
+          "lap_total": 3
+        }
+      ],
+      "sensors": [
+        "accelerometer_mps2",
+        "rotation_vector",
+        "magnetic_field_ut",
+        "gyroscope_radps",
+        "step_counter",
+        "pressure_hpa"
+      ],
+      "excluded": "Legacy ambiguous branch labels or unsurveyed study endpoint; no fabricated start/end truth."
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114945.jsonl",
+      "route": "2F_EXTENSION_V3",
+      "bleObservations": 501,
+      "before": {
+        "start": {
+          "x": 16.57528027681661,
+          "y": 1.18
+        },
+        "final": {
+          "x": 16.575181864525696,
+          "y": 39.9006337891238,
+          "zone": "extension"
+        },
+        "steps": 47,
+        "ble": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 7
+          }
+        },
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 5
+          }
+        },
+        "laps": [
+          {
+            "label": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+            "x": 16.64897663447471,
+            "y": 1.2900056050415418,
+            "zone": "entry",
+            "steps": 0
+          },
+          {
+            "label": "TDM 옆 · TDM 외벽 가로폭 중앙 정면 · 증축복도 중앙선",
+            "x": 14.396360424319933,
+            "y": 6.73277427050463,
+            "zone": "entry",
+            "steps": 7
+          },
+          {
+            "label": "2105-1·2104-1 사이 · 증축복도 중앙선",
+            "x": 6.0687386547125435,
+            "y": 0.0002538345715878474,
+            "zone": "main_right",
+            "steps": 12
+          },
+          {
+            "label": "2105-2·2104-2 사이 · 증축복도 중앙선",
+            "x": 16.575275024681435,
+            "y": 26.5187591065192,
+            "zone": "extension",
+            "steps": 30
+          },
+          {
+            "label": "증축복도 계단 진입 전 · 복도 중앙선",
+            "x": 16.575181864525696,
+            "y": 39.9006337891238,
+            "zone": "extension",
+            "steps": 47
+          }
+        ],
+        "extensionAxisProxyResidualM": -3.8109832844879676,
+        "extensionCrossAxisProxyResidualM": -0.00008947196560489174
+      },
+      "after": {
+        "start": {
+          "x": 17.662486523461922,
+          "y": 1.18
+        },
+        "final": {
+          "x": 17.6624081222514,
+          "y": 29.27984583484545,
+          "zone": "extension"
+        },
+        "steps": 47,
+        "ble": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 7
+          }
+        },
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 5
+          }
+        },
+        "laps": [
+          {
+            "label": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+            "x": 17.73618288112001,
+            "y": 1.2900056050415418,
+            "zone": "entry",
+            "steps": 0
+          },
+          {
+            "label": "TDM 옆 · TDM 외벽 가로폭 중앙 정면 · 증축복도 중앙선",
+            "x": 15.850163037973408,
+            "y": 5.160868886571369,
+            "zone": "entry",
+            "steps": 7
+          },
+          {
+            "label": "2105-1·2104-1 사이 · 증축복도 중앙선",
+            "x": 7.5595726756236274,
+            "y": 0.0002538345715878474,
+            "zone": "main_right",
+            "steps": 12
+          },
+          {
+            "label": "2105-2·2104-2 사이 · 증축복도 중앙선",
+            "x": 17.662472840076468,
+            "y": 19.16491475835371,
+            "zone": "extension",
+            "steps": 30
+          },
+          {
+            "label": "증축복도 계단 진입 전 · 복도 중앙선",
+            "x": 17.6624081222514,
+            "y": 29.279845834845457,
+            "zone": "extension",
+            "steps": 47
+          }
+        ],
+        "extensionAxisProxyResidualM": -3.9823800124468782,
+        "extensionCrossAxisProxyResidualM": -0.00007127880416304452
+      }
+    },
+    {
+      "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_115013.jsonl",
+      "route": "2F_EXTENSION_V3_REVERSE",
+      "bleObservations": 451,
+      "before": {
+        "start": {
+          "x": 16.57528027681661,
+          "y": 45.33818181818182
+        },
+        "final": {
+          "x": 17.765936414581237,
+          "y": 6.126817799695349,
+          "zone": "entry"
+        },
+        "steps": 44,
+        "ble": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 7
+          }
+        },
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 4,
+            "unsupported_sequence_area": 1
+          }
+        },
+        "laps": [
+          {
+            "label": "2105-2·2104-2 사이 · 증축복도 중앙선",
+            "x": 16.58317515583274,
+            "y": 40.976636889465084,
+            "zone": "extension",
+            "steps": 5
+          },
+          {
+            "label": "2105-1·2104-1 사이 · 증축복도 중앙선",
+            "x": 16.57528027684603,
+            "y": 16.641739776947873,
+            "zone": "extension",
+            "steps": 33
+          },
+          {
+            "label": "TDM 옆 · TDM 외벽 가로폭 중앙 정면 · 증축복도 중앙선",
+            "x": 16.575280276816994,
+            "y": 13.049491275356091,
+            "zone": "extension",
+            "steps": 39
+          },
+          {
+            "label": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+            "x": 17.765936414581244,
+            "y": 6.126817799695349,
+            "zone": "entry",
+            "steps": 44
+          }
+        ],
+        "extensionAxisProxyResidualM": 5.326038643402733,
+        "extensionCrossAxisProxyResidualM": 1.082490246047179
+      },
+      "after": {
+        "start": {
+          "x": 17.662486523461922,
+          "y": 33.26222584729232
+        },
+        "final": {
+          "x": 18.48129545757221,
+          "y": 6.192594671477415,
+          "zone": "entry"
+        },
+        "steps": 44,
+        "ble": {
+          "evaluated": 8,
+          "applied": 0,
+          "reasons": {
+            "insufficient_ble_window": 1,
+            "no_usable_features": 7
+          }
+        },
+        "sequence": {
+          "evaluated": 5,
+          "applied": 0,
+          "reasons": {
+            "ambiguous_sequence": 4,
+            "unsupported_sequence_area": 1
+          }
+        },
+        "laps": [
+          {
+            "label": "2105-2·2104-2 사이 · 증축복도 중앙선",
+            "x": 17.66927542209357,
+            "y": 30.14687979306404,
+            "zone": "extension",
+            "steps": 5
+          },
+          {
+            "label": "2105-1·2104-1 사이 · 증축복도 중앙선",
+            "x": 17.66248652348721,
+            "y": 12.803082661981625,
+            "zone": "extension",
+            "steps": 33
+          },
+          {
+            "label": "TDM 옆 · TDM 외벽 가로폭 중앙 정면 · 증축복도 중앙선",
+            "x": 17.662486523462317,
+            "y": 9.086554705321111,
+            "zone": "extension",
+            "steps": 39
+          },
+          {
+            "label": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+            "x": 18.481295457572205,
+            "y": 6.192594671477415,
+            "zone": "entry",
+            "steps": 44
+          }
+        ],
+        "extensionAxisProxyResidualM": 6.192594671477415,
+        "extensionCrossAxisProxyResidualM": 0.7444237311158008
+      }
+    }
+  ]
+}

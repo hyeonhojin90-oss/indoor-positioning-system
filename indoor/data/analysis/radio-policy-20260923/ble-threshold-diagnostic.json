@@ -1,0 +1,1826 @@
+{
+  "note": "Same overlapping 5s windows, production references; NOT independent accuracy or full particle replay. Movement gate uses saved predictions.",
+  "results": [
+    {
+      "file": "indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "threshold": 5,
+      "windows": 13,
+      "classified": 0,
+      "correct": 0,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 13
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3124,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6142,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9142,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12298,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15342,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18453,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 21574,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 24579,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 27590,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 30595,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 33635,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 36662,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "threshold": 4,
+      "windows": 13,
+      "classified": 0,
+      "correct": 0,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 13
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3124,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6142,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9142,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12298,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15342,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18453,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 21574,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 24579,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 27590,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 30595,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 33635,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 36662,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "threshold": 3,
+      "windows": 13,
+      "classified": 8,
+      "correct": 8,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 5,
+        "core_junction": 8
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3124,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6142,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9142,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 12298,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15342,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18453,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 21574,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 24579,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 27590,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 30595,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 33635,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 36662,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "threshold": 2,
+      "windows": 13,
+      "classified": 11,
+      "correct": 10,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 2,
+        "stairs_left": 1,
+        "core_junction": 10
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3124,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": false,
+          "gateCandidates": []
+        },
+        {
+          "time": 6142,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 9142,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 12298,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 15342,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18453,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 21574,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 24579,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 27590,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 30595,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 33635,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 36662,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": true,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "threshold": 5,
+      "windows": 12,
+      "classified": 0,
+      "correct": 0,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 12
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3218,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6324,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9440,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12470,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15658,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 19112,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 22114,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 25437,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 29481,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 32541,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 35617,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "threshold": 4,
+      "windows": 12,
+      "classified": 0,
+      "correct": 0,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 12
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3218,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6324,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9440,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12470,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15658,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 19112,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 22114,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 25437,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 29481,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 32541,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 35617,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "threshold": 3,
+      "windows": 12,
+      "classified": 0,
+      "correct": 0,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 12
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3218,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6324,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9440,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12470,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15658,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 19112,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 22114,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 25437,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 29481,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 32541,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 35617,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "threshold": 2,
+      "windows": 12,
+      "classified": 0,
+      "correct": 0,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 12
+      },
+      "details": [
+        {
+          "time": 53,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3218,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6324,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9440,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12470,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15658,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 19112,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 22114,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 25437,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 29481,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 32541,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 35617,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "threshold": 5,
+      "windows": 12,
+      "classified": 0,
+      "correct": 0,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 12
+      },
+      "details": [
+        {
+          "time": 49,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3110,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6114,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9128,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12165,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15188,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18210,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 21235,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 24241,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 27297,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 30304,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 33320,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "threshold": 4,
+      "windows": 12,
+      "classified": 2,
+      "correct": 2,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 10,
+        "stairs_left": 2
+      },
+      "details": [
+        {
+          "time": 49,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3110,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6114,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9128,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12165,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15188,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 18210,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 21235,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 24241,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 27297,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 30304,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 33320,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "threshold": 3,
+      "windows": 12,
+      "classified": 10,
+      "correct": 8,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 2,
+        "stairs_left": 8,
+        "main_left": 2
+      },
+      "details": [
+        {
+          "time": 49,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3110,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 6114,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 9128,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 12165,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15188,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 18210,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 21235,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 24241,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": false,
+          "gateCandidates": []
+        },
+        {
+          "time": 27297,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": false,
+          "gateCandidates": []
+        },
+        {
+          "time": 30304,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 33320,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "threshold": 2,
+      "windows": 12,
+      "classified": 11,
+      "correct": 8,
+      "pdrGateEligible": null,
+      "topZones": {
+        "unavailable": 1,
+        "stairs_left": 8,
+        "main_left": 3
+      },
+      "details": [
+        {
+          "time": 49,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3110,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 6114,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 9128,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 12165,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": false,
+          "gateCandidates": []
+        },
+        {
+          "time": 15188,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 18210,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 21235,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 24241,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": false,
+          "gateCandidates": []
+        },
+        {
+          "time": 27297,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": false,
+          "gateCandidates": []
+        },
+        {
+          "time": 30304,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        },
+        {
+          "time": 33320,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": true,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211757.jsonl",
+      "truth": "moving-no-point-truth",
+      "threshold": 5,
+      "windows": 18,
+      "classified": 0,
+      "correct": null,
+      "pdrGateEligible": 0,
+      "topZones": {
+        "unavailable": 18
+      },
+      "details": [
+        {
+          "time": 55,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3118,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6149,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9587,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 12768,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15791,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18880,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 21932,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 24958,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 27963,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 30982,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 34038,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 37077,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 40134,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 43179,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 46195,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 49240,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 52408,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211757.jsonl",
+      "truth": "moving-no-point-truth",
+      "threshold": 4,
+      "windows": 18,
+      "classified": 3,
+      "correct": null,
+      "pdrGateEligible": 1,
+      "topZones": {
+        "unavailable": 15,
+        "stairs_left": 3
+      },
+      "details": [
+        {
+          "time": 55,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3118,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6149,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 9587,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "stairs_left"
+          ]
+        },
+        {
+          "time": 12768,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15791,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18880,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 21932,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 24958,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 27963,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 30982,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 34038,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 37077,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 40134,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 43179,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 46195,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 49240,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 52408,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211757.jsonl",
+      "truth": "moving-no-point-truth",
+      "threshold": 3,
+      "windows": 18,
+      "classified": 9,
+      "correct": null,
+      "pdrGateEligible": 8,
+      "topZones": {
+        "unavailable": 9,
+        "stairs_left": 5,
+        "main_left": 1,
+        "core_junction": 3
+      },
+      "details": [
+        {
+          "time": 55,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3118,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 6149,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "stairs_left"
+          ]
+        },
+        {
+          "time": 9587,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": null,
+          "gateCandidates": [
+            "stairs_left"
+          ]
+        },
+        {
+          "time": 12768,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15791,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 18880,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 21932,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 24958,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 27963,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 30982,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 34038,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 37077,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 40134,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 43179,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "core_junction"
+          ]
+        },
+        {
+          "time": 46195,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "core_junction"
+          ]
+        },
+        {
+          "time": 49240,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "core_junction"
+          ]
+        },
+        {
+          "time": 52408,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        }
+      ]
+    },
+    {
+      "file": "indoor_positioning_20260922_211757.jsonl",
+      "truth": "moving-no-point-truth",
+      "threshold": 2,
+      "windows": 18,
+      "classified": 16,
+      "correct": null,
+      "pdrGateEligible": 12,
+      "topZones": {
+        "unavailable": 2,
+        "stairs_left": 4,
+        "main_left": 3,
+        "core_junction": 9
+      },
+      "details": [
+        {
+          "time": 55,
+          "reason": "insufficient_ble_window",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 3118,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "stairs_left"
+          ]
+        },
+        {
+          "time": 6149,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "stairs_left"
+          ]
+        },
+        {
+          "time": 9587,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": null,
+          "gateCandidates": [
+            "stairs_left"
+          ]
+        },
+        {
+          "time": 12768,
+          "reason": "no_usable_features",
+          "best": null,
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 15791,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 18880,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 21932,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 24958,
+          "reason": "relative_zone_scores",
+          "best": "stairs_left",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 27963,
+          "reason": "relative_zone_scores",
+          "best": "main_left",
+          "correct": null,
+          "gateCandidates": [
+            "main_left"
+          ]
+        },
+        {
+          "time": 30982,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 34038,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 37077,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 40134,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": []
+        },
+        {
+          "time": 43179,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "core_junction"
+          ]
+        },
+        {
+          "time": 46195,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "core_junction"
+          ]
+        },
+        {
+          "time": 49240,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "core_junction"
+          ]
+        },
+        {
+          "time": 52408,
+          "reason": "relative_zone_scores",
+          "best": "core_junction",
+          "correct": null,
+          "gateCandidates": [
+            "core_junction"
+          ]
+        }
+      ]
+    }
+  ]
+}

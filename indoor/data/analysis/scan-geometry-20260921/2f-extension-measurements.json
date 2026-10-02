@@ -1,0 +1,191 @@
+{
+  "source": "indoor\\data\\raw\\scans\\2026-09-21\\2f-rescan.glb",
+  "sha256": "06caa3ceeec86c346f645009ee69b68f21f4a7ff45f95d3f72b7e5bb5a7e4d40",
+  "measurements": {
+    "extension_start_wall_to_end_wall_m": 25.167399806749202,
+    "main_entry_to_extension_start_m": 6.924826040543125,
+    "main_entry_to_end_m": 32.092225847292326,
+    "extension_local_widths_m": {
+      "0": 3.7698966861029355,
+      "10": 3.70148141624279,
+      "18": 3.6467492003546713
+    },
+    "axis_angle_deg": -2.463112979172757
+  },
+  "surfaces": {
+    "main_entry_adjacent_face": {
+      "axis": 0,
+      "coordinate_m": -12.527912926812729,
+      "area_m2": 2.7566684099111236,
+      "triangles": 1093,
+      "selection_box": [
+        [
+          0,
+          -12.9,
+          -12.3
+        ],
+        [
+          2,
+          14,
+          18
+        ]
+      ],
+      "centroid_range_m": [
+        -12.620588938395182,
+        -12.351372400919596
+      ]
+    },
+    "extension_start": {
+      "axis": 0,
+      "coordinate_m": -5.609484755914106,
+      "area_m2": 13.353888521570898,
+      "triangles": 3388,
+      "selection_box": [
+        [
+          0,
+          -6.3,
+          -5.1
+        ],
+        [
+          2,
+          5,
+          10
+        ]
+      ],
+      "centroid_range_m": [
+        -6.266751289367676,
+        -5.366097291310628
+      ]
+    },
+    "extension_end": {
+      "axis": 0,
+      "coordinate_m": 19.534662807051365,
+      "area_m2": 4.241737228397655,
+      "triangles": 582,
+      "selection_box": [
+        [
+          0,
+          19.3,
+          19.8
+        ],
+        [
+          2,
+          11,
+          14
+        ]
+      ],
+      "centroid_range_m": [
+        19.463480631510418,
+        19.794477462768555
+      ]
+    },
+    "open_back": {
+      "axis": 0,
+      "coordinate_m": -5.2969314549088065,
+      "area_m2": 11.939051434411418,
+      "triangles": 2762,
+      "selection_box": [
+        [
+          0,
+          -5.6,
+          -5.1
+        ],
+        [
+          2,
+          -1.5,
+          3.5
+        ]
+      ],
+      "centroid_range_m": [
+        -5.427153905232747,
+        -5.214347839355469
+      ]
+    },
+    "study_back": {
+      "axis": 0,
+      "coordinate_m": -5.609484755914106,
+      "area_m2": 13.353888521570898,
+      "triangles": 3388,
+      "selection_box": [
+        [
+          0,
+          -6.3,
+          -5.1
+        ],
+        [
+          2,
+          5,
+          10
+        ]
+      ],
+      "centroid_range_m": [
+        -6.266751289367676,
+        -5.366097291310628
+      ]
+    },
+    "open_study_divider": {
+      "axis": 2,
+      "coordinate_m": 4.253444760273044,
+      "area_m2": 13.162535014197301,
+      "triangles": 4945,
+      "selection_box": [
+        [
+          0,
+          -11.5,
+          -6
+        ],
+        [
+          2,
+          3.8,
+          4.7
+        ]
+      ],
+      "centroid_range_m": [
+        3.8525047302246094,
+        4.698520024617513
+      ]
+    }
+  },
+  "wall_fits": [
+    {
+      "slope": -0.03959200685320193,
+      "intercept": 11.450985984381697,
+      "area_m2": 58.15670665320977,
+      "rms_m": 0.142314427615086,
+      "selection": {
+        "x": [
+          -3,
+          19
+        ],
+        "z": [
+          10.5,
+          12
+        ],
+        "normal_z_min": 0.9
+      }
+    },
+    {
+      "slope": -0.04643986059389915,
+      "intercept": 15.224368911430572,
+      "area_m2": 68.66124483784259,
+      "rms_m": 0.12392328452973822,
+      "selection": {
+        "x": [
+          -3,
+          19
+        ],
+        "z": [
+          14,
+          15.8
+        ],
+        "normal_z_min": 0.9
+      }
+    }
+  ],
+  "limitations": [
+    "Start is the study back-wall continuation, not main corridor center or stair entrance.",
+    "End is scanned transverse wall, not a verified classroom threshold.",
+    "Widths vary in the mesh; taper may include scan drift. Do not treat as survey precision.",
+    "GLB meter scale assumed. Unscanned room interiors and illegible door numbers are not established."
+  ]
+}

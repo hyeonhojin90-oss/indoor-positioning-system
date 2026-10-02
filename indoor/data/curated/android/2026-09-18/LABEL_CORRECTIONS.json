@@ -1,0 +1,167 @@
+{
+  "created_at": "2026-09-18T07:30:23.211Z",
+  "corrections": [
+    {
+      "source_file": "indoor\\data\\raw\\android\\2026-09-18\\device-pull\\indoor_positioning_20260917_104448.jsonl",
+      "source_sha256": "f6e9e3e5c01ec112cb3019f7bb474ba0cdd7e27dc781fcaf12d5c967c8c51389",
+      "curated_file": "indoor\\data\\curated\\android\\2026-09-18\\indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "curated_sha256": "7fba0733079659401f94bcf4a832ccfeb5c931dee3e4d5ca20bca729d00e7ed4",
+      "original_label": {
+        "floor": "4",
+        "location": "오른쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선 · 4209",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F4_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "stairs_right",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "corrected_label": {
+        "floor": "4",
+        "location": "오른쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F4_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "stairs_right",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "reason": "The exact stair anchor already defines the location; stale classroom detail 4209 is removed. Raw file retained."
+    },
+    {
+      "source_file": "indoor\\data\\raw\\android\\2026-09-18\\device-pull\\indoor_positioning_20260918_160943.jsonl",
+      "source_sha256": "025fca6cf98e8d70c82d4eb9f7d0dc3e83bf4d51c9fbeae6aec2fa9590e1f1f1",
+      "curated_file": "indoor\\data\\curated\\android\\2026-09-18\\indoor_positioning_20260918_160943__corrected-f5-stairs-right-inside.jsonl",
+      "curated_sha256": "0f0e4754e1a91d6d9b2390ab9cd1e5716198e8b06573dd672555f4125abce37c",
+      "original_label": {
+        "floor": "9",
+        "location": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F9_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "stairs_right_inside",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "corrected_label": {
+        "floor": "5",
+        "location": "오른쪽 계단 내부 · 출입문 통과 후 첫 계단참 중앙",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "stairs_right_inside",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source_file": "indoor\\data\\raw\\android\\2026-09-18\\device-pull\\indoor_positioning_20260918_161212.jsonl",
+      "source_sha256": "ac349db5b6fadd4190cf9af0e31d27c52aadf6a9dc12737c906fc9c54a124e20",
+      "curated_file": "indoor\\data\\curated\\android\\2026-09-18\\indoor_positioning_20260918_161212__corrected-f5-main-right-5209.jsonl",
+      "curated_sha256": "97477f53f3ca7d41d449d2fb83d3cd1549c7d7183f371521f4aad4d04fb94b56",
+      "original_label": {
+        "floor": "9",
+        "location": "오른쪽 강의실 라인 · 5209",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F9_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "main_right",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "corrected_label": {
+        "floor": "5",
+        "location": "오른쪽 강의실 라인 · 5209",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "main_right",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source_file": "indoor\\data\\raw\\android\\2026-09-18\\device-pull\\indoor_positioning_20260918_161443.jsonl",
+      "source_sha256": "b4f062da37d72a1809170b870410af2cfcc55d712f61dc2fd91b76400051ca8f",
+      "curated_file": "indoor\\data\\curated\\android\\2026-09-18\\indoor_positioning_20260918_161443__corrected-f5-core.jsonl",
+      "curated_sha256": "0355000e2d6c190c789d9b249b7dcadd062b2f3c3b5916a931c57c569c1b4017",
+      "original_label": {
+        "floor": "9",
+        "location": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F9_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "core_junction",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "corrected_label": {
+        "floor": "5",
+        "location": "코어 교차점 · 코어복도와 메인복도 중심축 교차점",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "core_junction",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source_file": "indoor\\data\\raw\\android\\2026-09-18\\device-pull\\indoor_positioning_20260918_161545.jsonl",
+      "source_sha256": "88155c10feb5c0c7d74f49c56e02760e51861c37f8c9f6599d782a6c99a0824d",
+      "curated_file": "indoor\\data\\curated\\android\\2026-09-18\\indoor_positioning_20260918_161545__corrected-f5-main-left-5119.jsonl",
+      "curated_sha256": "f95d71e56e68f92b55c55d084cdd3364e0f6c2b17df97735d67db5abb3843840",
+      "original_label": {
+        "floor": "9",
+        "location": "왼쪽 강의실 라인 · 5519",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F9_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "main_left",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "corrected_label": {
+        "floor": "5",
+        "location": "왼쪽 강의실 라인 · 5119",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "main_left",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source_file": "indoor\\data\\raw\\android\\2026-09-18\\device-pull\\indoor_positioning_20260918_161643.jsonl",
+      "source_sha256": "7ab42e0fffab2057b9ec4b5f10c4983227fcd50b50c7e3c16603ec93f5e4ec0a",
+      "curated_file": "indoor\\data\\curated\\android\\2026-09-18\\indoor_positioning_20260918_161643__corrected-f5-stairs-left.jsonl",
+      "curated_sha256": "e7ce973b474a643b8dfa7e2e5cf25ae6d9a24e6e7b6ca273d2281b730c71c652",
+      "original_label": {
+        "floor": "9",
+        "location": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F9_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "stairs_left",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "corrected_label": {
+        "floor": "5",
+        "location": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+        "destination": "다중 센서+AP+BLE 구역 판별 기준점",
+        "event": "기준점 측정 시작",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2",
+        "zone_id": "stairs_left",
+        "lap_index": 0,
+        "lap_total": 0
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    }
+  ]
+}

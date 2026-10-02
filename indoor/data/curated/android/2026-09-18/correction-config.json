@@ -1,0 +1,59 @@
+{
+  "output": "LABEL_CORRECTIONS.json",
+  "corrections": [
+    {
+      "source": "../../../raw/android/2026-09-18/device-pull/indoor_positioning_20260917_104448.jsonl",
+      "target": "indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "label": {
+        "location": "오른쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선"
+      },
+      "reason": "The exact stair anchor already defines the location; stale classroom detail 4209 is removed. Raw file retained."
+    },
+    {
+      "source": "../../../raw/android/2026-09-18/device-pull/indoor_positioning_20260918_160943.jsonl",
+      "target": "indoor_positioning_20260918_160943__corrected-f5-stairs-right-inside.jsonl",
+      "label": {
+        "floor": "5",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2"
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source": "../../../raw/android/2026-09-18/device-pull/indoor_positioning_20260918_161212.jsonl",
+      "target": "indoor_positioning_20260918_161212__corrected-f5-main-right-5209.jsonl",
+      "label": {
+        "floor": "5",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2"
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source": "../../../raw/android/2026-09-18/device-pull/indoor_positioning_20260918_161443.jsonl",
+      "target": "indoor_positioning_20260918_161443__corrected-f5-core.jsonl",
+      "label": {
+        "floor": "5",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2"
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source": "../../../raw/android/2026-09-18/device-pull/indoor_positioning_20260918_161545.jsonl",
+      "target": "indoor_positioning_20260918_161545__corrected-f5-main-left-5119.jsonl",
+      "label": {
+        "floor": "5",
+        "location": "왼쪽 강의실 라인 · 5119",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2"
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    },
+    {
+      "source": "../../../raw/android/2026-09-18/device-pull/indoor_positioning_20260918_161643.jsonl",
+      "target": "indoor_positioning_20260918_161643__corrected-f5-stairs-left.jsonl",
+      "label": {
+        "floor": "5",
+        "route_id": "F5_MULTISENSOR_RADIO_ZONE_ANCHOR_V2"
+      },
+      "reason": "User explicitly confirmed room 5119 and stated that these five sessions were probably floor 5. Floor assignment remains provisional, supported by pressure and room labels; movement order and why floor 9 was saved are not established. Raw file retained."
+    }
+  ]
+}

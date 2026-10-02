@@ -1,0 +1,14 @@
+{
+  "corrections": [
+    {
+      "source": "../../../../raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714.jsonl",
+      "target": "./indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "label": {
+        "location": "왼쪽 계단 앞 · 출입문 정면 · 메인복도 중앙선",
+        "zone_id": "stairs_left"
+      },
+      "reason": "사용자 확인: 기준점 측정 순서는 코어, 오른쪽 계단, 왼쪽 계단이며 세 번째 파일의 앱 선택 라벨이 잘못 저장됨."
+    }
+  ],
+  "output": "LABEL_CORRECTIONS.json"
+}

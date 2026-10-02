@@ -1,0 +1,48 @@
+{
+  "source": "indoor\\data\\raw\\scans\\2026-09-21\\4f-left-corridor.glb",
+  "method": "Area-weighted centroids of selected transverse wall triangles; Z-axis projection",
+  "restroom_corridor_end_side_wall": {
+    "z_m": 16.220076491982947,
+    "triangle_count": 270,
+    "surface_area_m2": 4.852258306907254,
+    "centroid_z_range_m": [
+      16.177944819132488,
+      16.263570149739582
+    ]
+  },
+  "scanned_end_wall": {
+    "z_m": -23.718846287468192,
+    "triangle_count": 443,
+    "surface_area_m2": 4.91912146719871,
+    "centroid_z_range_m": [
+      -23.831557591756184,
+      -23.615617752075195
+    ]
+  },
+  "restroom_to_scanned_end_wall_m": 39.93892277945114,
+  "status": "joined_glb_reference_to_end_wall_not_runtime_adopted",
+  "limitations": [
+    "End wall is not automatically the side-stair entrance threshold.",
+    "Visual correspondence of restroom side wall across scans; no rigid point-cloud registration or independent tape survey. Structured model uses wall centers; textured scan uses observed faces, so wall-thickness convention may differ by centimeters.",
+    "Coordinate units assume GLB meter scale; scan drift is not independently assessed.",
+    "Selected centroid spread is not a survey accuracy confidence interval."
+  ],
+  "core_connection": {
+    "source": "indoor\\data\\analysis\\detailed-20260915\\core-20260915.glb",
+    "core_left_wall": {
+      "node": "Wall_2",
+      "x_min_m": -2.2415530681610107,
+      "x_max_m": -2.1415531635284424,
+      "center_x_m": -2.1915531158447266
+    },
+    "restroom_corridor_end_side_wall": {
+      "node": "Wall_4",
+      "x_min_m": 5.166901111602783,
+      "x_max_m": 5.26690149307251,
+      "center_x_m": 5.2169013023376465
+    },
+    "reference": "Wall-center X-axis separation in structured core model; core width excluded",
+    "length_m": 7.408454418182373
+  },
+  "joined_core_left_to_scanned_end_wall_m": 47.34737719763351
+}

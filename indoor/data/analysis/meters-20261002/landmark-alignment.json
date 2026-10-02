@@ -1,0 +1,357 @@
+{
+  "diagnostics": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "rawCounterEnd": 69,
+      "redetectedSteps": 87
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "rawCounterEnd": 66,
+      "redetectedSteps": 69
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "rawCounterEnd": 62,
+      "redetectedSteps": 85
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "rawCounterEnd": 71,
+      "redetectedSteps": 78
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "rawCounterEnd": 64,
+      "redetectedSteps": 73
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "rawCounterEnd": 58,
+      "redetectedSteps": 76
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+      "rawCounterEnd": 38,
+      "redetectedSteps": 87
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl",
+      "rawCounterEnd": 43,
+      "redetectedSteps": 94
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "rawCounterEnd": 0,
+      "redetectedSteps": 79
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "rawCounterEnd": 21,
+      "redetectedSteps": 80
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "rawCounterEnd": 48,
+      "redetectedSteps": 73
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "4204",
+      "label": "4204 앞",
+      "xM": 12.864904465363331,
+      "sources": 6,
+      "spreadM": 5.76702613964563,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4205",
+      "label": "4205 앞",
+      "xM": 15.27008225671387,
+      "sources": 6,
+      "spreadM": 5.19032352568107,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4206",
+      "label": "4206 앞",
+      "xM": 18.65411147477683,
+      "sources": 6,
+      "spreadM": 4.6136209117165095,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4207",
+      "label": "4207 앞",
+      "xM": 21.08725644974772,
+      "sources": 6,
+      "spreadM": 3.895810211356359,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4208",
+      "label": "4208 앞",
+      "xM": 25.729808930726662,
+      "sources": 6,
+      "spreadM": 2.90386727972745,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4209",
+      "label": "4209 앞",
+      "xM": 27.659544600531163,
+      "sources": 6,
+      "spreadM": 2.272886772683865,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4210",
+      "label": "4210 앞",
+      "xM": 32.8720489959801,
+      "sources": 6,
+      "spreadM": 1.7301078418936875,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4211",
+      "label": "4211 앞",
+      "xM": 36.35733870646159,
+      "sources": 6,
+      "spreadM": 2.1841077720360005,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4212",
+      "label": "4212 앞",
+      "xM": 38.06237252166116,
+      "sources": 6,
+      "spreadM": 3.1227833032762007,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4213",
+      "label": "4213 앞",
+      "xM": 43.25269604734223,
+      "sources": 6,
+      "spreadM": 2.7362698492361233,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+      ]
+    },
+    {
+      "id": "4120",
+      "label": "4120 앞",
+      "xM": 56.86286045601288,
+      "sources": 5,
+      "spreadM": 2.2168542978947343,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4121",
+      "label": "4121 앞",
+      "xM": 66.89746001765673,
+      "sources": 5,
+      "spreadM": 2.0883410052631604,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4122",
+      "label": "4122 앞",
+      "xM": 75.23321947807489,
+      "sources": 5,
+      "spreadM": 1.0034599561643773,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4123",
+      "label": "4123 앞",
+      "xM": 77.60103288341014,
+      "sources": 5,
+      "spreadM": 1.5139922145637996,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4124",
+      "label": "4124 앞",
+      "xM": 82.52634883491699,
+      "sources": 5,
+      "spreadM": 1.3379466082191698,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4125",
+      "label": "4125 앞",
+      "xM": 84.87171642544331,
+      "sources": 5,
+      "spreadM": 2.0746640443905022,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4126",
+      "label": "4126 앞",
+      "xM": 88.02029209491698,
+      "sources": 5,
+      "spreadM": 1.710539334558689,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4127",
+      "label": "4127 앞",
+      "xM": 92.3184455738211,
+      "sources": 5,
+      "spreadM": 2.015387928836475,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    },
+    {
+      "id": "4128",
+      "label": "4128 앞",
+      "xM": 97.00125870258822,
+      "sources": 5,
+      "spreadM": 0.7389514326315805,
+      "evidence": "endpoint_aligned_redetected_imu_step_fraction_not_surveyed_door",
+      "sourceFiles": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl"
+      ]
+    }
+  ],
+  "limitations": "Display candidates only. End-aligned average-stride fractions are not independent door surveys or correction ground truth."
+}

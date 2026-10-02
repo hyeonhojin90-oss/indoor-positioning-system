@@ -1,0 +1,93 @@
+[
+  {
+    "a": "indoor_positioning_20260901_151808",
+    "b": "indoor_positioning_20260901_153038",
+    "direction": "forward",
+    "normR": 0.5949682480168156,
+    "mvR": 0.3982190933847425
+  },
+  {
+    "a": "indoor_positioning_20260901_151808",
+    "b": "indoor_positioning_20260919_111532",
+    "direction": "forward",
+    "normR": 0.20978741731139758,
+    "mvR": 0.38938793150231205
+  },
+  {
+    "a": "indoor_positioning_20260901_151808",
+    "b": "indoor_positioning_20260922_191446",
+    "direction": "forward",
+    "normR": 0.8994697947714113,
+    "mvR": 0.9142031594422058
+  },
+  {
+    "a": "indoor_positioning_20260901_151808",
+    "b": "indoor_positioning_20260922_202729",
+    "direction": "forward",
+    "normR": 0.9164681336040714,
+    "mvR": 0.9330322614219687
+  },
+  {
+    "a": "indoor_positioning_20260901_153038",
+    "b": "indoor_positioning_20260919_111532",
+    "direction": "forward",
+    "normR": 0.8300390766367328,
+    "mvR": 0.7744749935742242
+  },
+  {
+    "a": "indoor_positioning_20260901_153038",
+    "b": "indoor_positioning_20260922_191446",
+    "direction": "forward",
+    "normR": 0.8232743553924072,
+    "mvR": 0.5414902146182662
+  },
+  {
+    "a": "indoor_positioning_20260901_153038",
+    "b": "indoor_positioning_20260922_202729",
+    "direction": "forward",
+    "normR": 0.782617877331623,
+    "mvR": 0.4572722494078602
+  },
+  {
+    "a": "indoor_positioning_20260919_111300",
+    "b": "indoor_positioning_20260922_191556",
+    "direction": "reverse",
+    "normR": 0.2334811842866861,
+    "mvR": 0.011566244025583748
+  },
+  {
+    "a": "indoor_positioning_20260919_111300",
+    "b": "indoor_positioning_20260922_202917",
+    "direction": "reverse",
+    "normR": 0.9823333976260197,
+    "mvR": 0.9174122326527545
+  },
+  {
+    "a": "indoor_positioning_20260919_111532",
+    "b": "indoor_positioning_20260922_191446",
+    "direction": "forward",
+    "normR": 0.4806413789041164,
+    "mvR": 0.5116096942942427
+  },
+  {
+    "a": "indoor_positioning_20260919_111532",
+    "b": "indoor_positioning_20260922_202729",
+    "direction": "forward",
+    "normR": 0.42064176619167387,
+    "mvR": 0.3978278788559298
+  },
+  {
+    "a": "indoor_positioning_20260922_191446",
+    "b": "indoor_positioning_20260922_202729",
+    "direction": "forward",
+    "normR": 0.996650874598421,
+    "mvR": 0.9839521765058993
+  },
+  {
+    "a": "indoor_positioning_20260922_191556",
+    "b": "indoor_positioning_20260922_202917",
+    "direction": "reverse",
+    "normR": 0.16028307407780612,
+    "mvR": -0.07926494933180503
+  }
+]

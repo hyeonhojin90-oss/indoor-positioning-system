@@ -1,0 +1,1038 @@
+[
+  {
+    "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161220.jsonl",
+    "route": "2F_CORE_TO_LEFT_STAIRS",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "코어복도 출구 중앙점",
+        "destination": "왼쪽 계단 입구",
+        "event": "시작",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "lap_index": 0,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2119 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "lap_index": 1,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2122 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "lap_index": 2,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2125 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "lap_index": 3,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2128 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "lap_index": 4,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "왼쪽 계단 입구",
+        "destination": "왼쪽 계단 입구",
+        "event": "도착",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "lap_index": 5,
+        "lap_total": 5
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "rotation_vector",
+      "magnetic_field_ut",
+      "gyroscope_rads",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161342.jsonl",
+    "route": "2F_CORE_TO_RIGHT_STAIRS",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "코어복도 출구 중앙점",
+        "destination": "오른쪽 계단 입구",
+        "event": "시작",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "lap_index": 0,
+        "lap_total": 6
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2211 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "lap_index": 1,
+        "lap_total": 6
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "lap_index": 2,
+        "lap_total": 6
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210-1 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "lap_index": 3,
+        "lap_total": 6
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2205 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "lap_index": 4,
+        "lap_total": 6
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2204 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "lap_index": 5,
+        "lap_total": 6
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "오른쪽 계단 입구",
+        "destination": "오른쪽 계단 입구",
+        "event": "도착",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "lap_index": 6,
+        "lap_total": 6
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "gyroscope_rads",
+      "magnetic_field_ut",
+      "rotation_vector",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161506.jsonl",
+    "route": "2F_2107_OPEN",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "메인복도·2107 교차점",
+        "destination": "2107 개방공간",
+        "event": "시작",
+        "route_id": "2F_2107_OPEN",
+        "lap_index": 0,
+        "lap_total": 2
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 입구",
+        "destination": "2107 개방공간",
+        "event": "랜드마크",
+        "route_id": "2F_2107_OPEN",
+        "lap_index": 1,
+        "lap_total": 2
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 개방공간",
+        "destination": "2107 개방공간",
+        "event": "도착",
+        "route_id": "2F_2107_OPEN",
+        "lap_index": 2,
+        "lap_total": 2
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "magnetic_field_ut",
+      "gyroscope_rads",
+      "rotation_vector",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161605.jsonl",
+    "route": "2F_STUDY",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "메인복도·2107 교차점",
+        "destination": "ㄷ자 학습공간",
+        "event": "시작",
+        "route_id": "2F_STUDY",
+        "lap_index": 0,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 입구",
+        "destination": "ㄷ자 학습공간",
+        "event": "랜드마크",
+        "route_id": "2F_STUDY",
+        "lap_index": 1,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 개방공간",
+        "destination": "ㄷ자 학습공간",
+        "event": "랜드마크",
+        "route_id": "2F_STUDY",
+        "lap_index": 2,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "ㄷ자 학습공간",
+        "destination": "ㄷ자 학습공간",
+        "event": "도착",
+        "route_id": "2F_STUDY",
+        "lap_index": 3,
+        "lap_total": 3
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "magnetic_field_ut",
+      "rotation_vector",
+      "gyroscope_rads",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\2026-09-01\\indoor_positioning_20260901_161730.jsonl",
+    "route": "2F_EXTENSION",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "메인복도·2107 교차점",
+        "destination": "증축부 복도 끝",
+        "event": "시작",
+        "route_id": "2F_EXTENSION",
+        "lap_index": 0,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 입구",
+        "destination": "증축부 복도 끝",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION",
+        "lap_index": 1,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 개방공간",
+        "destination": "증축부 복도 끝",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION",
+        "lap_index": 2,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "TDM 앞",
+        "destination": "증축부 복도 끝",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION",
+        "lap_index": 3,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "증축부 입구",
+        "destination": "증축부 복도 끝",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION",
+        "lap_index": 4,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "증축부 복도 끝",
+        "destination": "증축부 복도 끝",
+        "event": "도착",
+        "route_id": "2F_EXTENSION",
+        "lap_index": 5,
+        "lap_total": 5
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "magnetic_field_ut",
+      "gyroscope_rads",
+      "rotation_vector",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114450.jsonl",
+    "route": "2F_CORE_TO_LEFT_STAIRS",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "코어복도 출구 중앙점",
+        "destination": "왼쪽 계단 입구",
+        "event": "시작",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2119 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2122 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2125 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2128 앞",
+        "destination": "왼쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "zone_id": null,
+        "lap_index": 4,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "왼쪽 계단 입구",
+        "destination": "왼쪽 계단 입구",
+        "event": "도착",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS",
+        "zone_id": null,
+        "lap_index": 5,
+        "lap_total": 5
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "magnetic_field_ut",
+      "pressure_hpa",
+      "rotation_vector",
+      "gyroscope_radps",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114551.jsonl",
+    "route": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "왼쪽 계단 입구",
+        "destination": "코어복도 출구 중앙점",
+        "event": "시작",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2128 앞",
+        "destination": "코어복도 출구 중앙점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2125 앞",
+        "destination": "코어복도 출구 중앙점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2122 앞",
+        "destination": "코어복도 출구 중앙점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2119 앞",
+        "destination": "코어복도 출구 중앙점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 4,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "코어복도 출구 중앙점 앞",
+        "destination": "코어복도 출구 중앙점",
+        "event": "도착",
+        "route_id": "2F_CORE_TO_LEFT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 5,
+        "lap_total": 5
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "gyroscope_radps",
+      "rotation_vector",
+      "magnetic_field_ut",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114630.jsonl",
+    "route": "2F_CORE_TO_RIGHT_STAIRS",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "코어·오른쪽 메인복도 교차점",
+        "destination": "오른쪽 계단 입구",
+        "event": "시작",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2211 문 1 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2211 문 2 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210 문 1 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 진입 가능점 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 4,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210 문 2 · 2107 끝점 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 5,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210-1 앞 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 6,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2205 앞 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 7,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2204 앞 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 8,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "오른쪽 끝 화장실 통로 앞 앞",
+        "destination": "오른쪽 계단 입구",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 9,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "오른쪽 계단 입구",
+        "destination": "오른쪽 계단 입구",
+        "event": "도착",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+        "zone_id": null,
+        "lap_index": 10,
+        "lap_total": 10
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "magnetic_field_ut",
+      "gyroscope_radps",
+      "rotation_vector",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114722.jsonl",
+    "route": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "오른쪽 계단 입구",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "시작",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "오른쪽 끝 화장실 통로 앞 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2204 앞 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2205 앞 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210-1 앞 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 4,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210 문 2 · 2107 끝점 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 5,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2107 진입 가능점 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 6,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2210 문 1 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 7,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2211 문 2 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 8,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2211 문 1 앞",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 9,
+        "lap_total": 10
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "코어·오른쪽 메인복도 교차점",
+        "destination": "코어·오른쪽 메인복도 교차점",
+        "event": "도착",
+        "route_id": "2F_CORE_TO_RIGHT_STAIRS_REVERSE",
+        "zone_id": null,
+        "lap_index": 10,
+        "lap_total": 10
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "magnetic_field_ut",
+      "gyroscope_radps",
+      "rotation_vector",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114854.jsonl",
+    "route": "2F_STUDY_V3_REVERSE",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+        "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "event": "시작",
+        "route_id": "2F_STUDY_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "event": "랜드마크",
+        "route_id": "2F_STUDY_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "책상공간 진입 전 · 책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "event": "랜드마크",
+        "route_id": "2F_STUDY_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "destination": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "event": "도착",
+        "route_id": "2F_STUDY_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 3
+      }
+    ],
+    "sensors": [
+      "gyroscope_radps",
+      "accelerometer_mps2",
+      "magnetic_field_ut",
+      "rotation_vector",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114920.jsonl",
+    "route": "2F_STUDY_V3",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+        "event": "시작",
+        "route_id": "2F_STUDY_V3",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "책상공간 진입 전 · 책상공간 하단 진입구 정면 · 메인복도 중앙선",
+        "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+        "event": "랜드마크",
+        "route_id": "2F_STUDY_V3",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+        "event": "랜드마크",
+        "route_id": "2F_STUDY_V3",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 3
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+        "destination": "책상공간 내부 · ㄴ자 책상 열린 쪽 통로 중앙",
+        "event": "도착",
+        "route_id": "2F_STUDY_V3",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 3
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "rotation_vector",
+      "magnetic_field_ut",
+      "gyroscope_radps",
+      "step_counter",
+      "pressure_hpa"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_114945.jsonl",
+    "route": "2F_EXTENSION_V3",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "destination": "증축복도 계단 진입 전 · 복도 중앙선",
+        "event": "시작",
+        "route_id": "2F_EXTENSION_V3",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "destination": "증축복도 계단 진입 전 · 복도 중앙선",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "TDM 옆 · TDM 외벽 가로폭 중앙 정면 · 증축복도 중앙선",
+        "destination": "증축복도 계단 진입 전 · 복도 중앙선",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2105-1·2104-1 사이 · 증축복도 중앙선",
+        "destination": "증축복도 계단 진입 전 · 복도 중앙선",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2105-2·2104-2 사이 · 증축복도 중앙선",
+        "destination": "증축복도 계단 진입 전 · 복도 중앙선",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3",
+        "zone_id": null,
+        "lap_index": 4,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "증축복도 계단 진입 전 · 복도 중앙선",
+        "destination": "증축복도 계단 진입 전 · 복도 중앙선",
+        "event": "도착",
+        "route_id": "2F_EXTENSION_V3",
+        "zone_id": null,
+        "lap_index": 5,
+        "lap_total": 5
+      }
+    ],
+    "sensors": [
+      "magnetic_field_ut",
+      "accelerometer_mps2",
+      "gyroscope_radps",
+      "rotation_vector",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  },
+  {
+    "file": "indoor\\data\\raw\\android\\2026-09-19\\kakao-pull\\indoor_positioning_20260919_115013.jsonl",
+    "route": "2F_EXTENSION_V3_REVERSE",
+    "labels": [
+      {
+        "kind": "session_start",
+        "floor": "2",
+        "location": "증축복도 계단 진입 전 · 복도 중앙선",
+        "destination": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "event": "시작",
+        "route_id": "2F_EXTENSION_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 0,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2105-2·2104-2 사이 · 증축복도 중앙선",
+        "destination": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 1,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "2105-1·2104-1 사이 · 증축복도 중앙선",
+        "destination": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 2,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "TDM 옆 · TDM 외벽 가로폭 중앙 정면 · 증축복도 중앙선",
+        "destination": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 3,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "destination": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "event": "랜드마크",
+        "route_id": "2F_EXTENSION_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 4,
+        "lap_total": 5
+      },
+      {
+        "kind": "label",
+        "floor": "2",
+        "location": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "destination": "기둥·TDM 사이 · 메인복도와 증축복도 중심축 교차점",
+        "event": "도착",
+        "route_id": "2F_EXTENSION_V3_REVERSE",
+        "zone_id": null,
+        "lap_index": 5,
+        "lap_total": 5
+      }
+    ],
+    "sensors": [
+      "accelerometer_mps2",
+      "gyroscope_radps",
+      "rotation_vector",
+      "magnetic_field_ut",
+      "pressure_hpa",
+      "step_counter"
+    ]
+  }
+]

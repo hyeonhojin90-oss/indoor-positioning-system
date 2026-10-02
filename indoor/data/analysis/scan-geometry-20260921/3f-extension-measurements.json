@@ -1,0 +1,174 @@
+{
+  "source": "indoor\\data\\raw\\scans\\2026-09-21\\3f-right-corridor.glb",
+  "sha256": "dd0927a2aebcb8d4d1188d15ee7aed930989b47941bf886a107db16e805b7add",
+  "measurements": {
+    "branch_straight_length_m": 25.244458081812375,
+    "branch_wall_face_width_m": 2.0585136790233065,
+    "free_wall_reference_width_m": 6.793780680711055,
+    "free_wall_reference_length_m": 14.284221713219603
+  },
+  "surfaces": {
+    "branch_end": {
+      "axis": 0,
+      "coordinate_m": -23.53922836503349,
+      "area_m2": 3.265234560488997,
+      "triangles": 711,
+      "selection_box": [
+        [
+          0,
+          -23.85,
+          -23.25
+        ],
+        [
+          2,
+          -14.7,
+          -12.1
+        ]
+      ],
+      "centroid_range_m": [
+        -23.662408192952473,
+        -23.303206125895183
+      ]
+    },
+    "free_branch_boundary": {
+      "axis": 0,
+      "coordinate_m": 1.7052297167788852,
+      "area_m2": 23.967202102226732,
+      "triangles": 5095,
+      "selection_box": [
+        [
+          0,
+          1.55,
+          1.95
+        ],
+        [
+          2,
+          -25,
+          -15
+        ]
+      ],
+      "centroid_range_m": [
+        1.6376463572184246,
+        1.917780876159668
+      ]
+    },
+    "branch_side_a": {
+      "axis": 2,
+      "coordinate_m": -12.344578533781213,
+      "area_m2": 62.9478847067175,
+      "triangles": 10270,
+      "selection_box": [
+        [
+          0,
+          -22,
+          0
+        ],
+        [
+          2,
+          -12.55,
+          -12.1
+        ]
+      ],
+      "centroid_range_m": [
+        -12.532448450724283,
+        -12.100613276163736
+      ]
+    },
+    "branch_side_b": {
+      "axis": 2,
+      "coordinate_m": -14.40309221280452,
+      "area_m2": 60.89142493050862,
+      "triangles": 12857,
+      "selection_box": [
+        [
+          0,
+          -22,
+          0
+        ],
+        [
+          2,
+          -14.7,
+          -14.2
+        ]
+      ],
+      "centroid_range_m": [
+        -14.692458470662435,
+        -14.230806350708008
+      ]
+    },
+    "free_main_boundary": {
+      "axis": 0,
+      "coordinate_m": 8.49901039748994,
+      "area_m2": 20.070211006250155,
+      "triangles": 4159,
+      "selection_box": [
+        [
+          0,
+          8.25,
+          8.7
+        ],
+        [
+          2,
+          -26,
+          -15
+        ]
+      ],
+      "centroid_range_m": [
+        8.277697881062826,
+        8.672749201456705
+      ]
+    },
+    "free_far_wall": {
+      "axis": 2,
+      "coordinate_m": -26.689037921663697,
+      "area_m2": 8.968545098960579,
+      "triangles": 3257,
+      "selection_box": [
+        [
+          0,
+          2.3,
+          8
+        ],
+        [
+          2,
+          -27.0,
+          -26.4
+        ]
+      ],
+      "centroid_range_m": [
+        -26.99907620747884,
+        -26.40288734436035
+      ]
+    },
+    "free_near_wall": {
+      "axis": 2,
+      "coordinate_m": -12.404816208444094,
+      "area_m2": 10.64818739414461,
+      "triangles": 3013,
+      "selection_box": [
+        [
+          0,
+          2.3,
+          8
+        ],
+        [
+          2,
+          -12.7,
+          -12.1
+        ]
+      ],
+      "centroid_range_m": [
+        -12.534968694051107,
+        -12.267403284708658
+      ]
+    }
+  },
+  "method": "Area-weighted transverse/longitudinal wall triangle centroids after visual region identification. Axis projected distances, not full bbox.",
+  "limitations": [
+    "Free-space dimensions describe selected wall lines, not obstacle-free clearance.",
+    "Wall recesses, columns, door setbacks and scan drift mean local clear widths differ.",
+    "Door presence is visually observed; room-number assignment requires legible signage or independent floorplan correspondence.",
+    "Unscanned room interiors cannot establish room depth or equal room split.",
+    "GLB meter scale assumed; no independent tape or calibrated survey validation."
+  ]
+}

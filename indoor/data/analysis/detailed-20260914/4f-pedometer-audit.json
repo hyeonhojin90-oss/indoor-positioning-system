@@ -1,0 +1,158 @@
+{
+  "purpose": "Analysis only; compare existing native iOS Pedometer logs to PDR peak-detector events.",
+  "sessions": [
+    {
+      "file": "indoor_positioning_ios_20260905_170448.jsonl",
+      "peak_detector_events": 82,
+      "pedometer_first": 1,
+      "pedometer_last": 66,
+      "pedometer_delta": 65,
+      "pedometer_max": 66,
+      "pedometer_samples": 25
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170648.jsonl",
+      "peak_detector_events": 83,
+      "pedometer_first": 3,
+      "pedometer_last": 43,
+      "pedometer_delta": 40,
+      "pedometer_max": 43,
+      "pedometer_samples": 31
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170852.jsonl",
+      "peak_detector_events": 81,
+      "pedometer_first": 4,
+      "pedometer_last": 70,
+      "pedometer_delta": 66,
+      "pedometer_max": 70,
+      "pedometer_samples": 23
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_132920.jsonl",
+      "peak_detector_events": 83,
+      "pedometer_first": 4,
+      "pedometer_last": 81,
+      "pedometer_delta": 77,
+      "pedometer_max": 81,
+      "pedometer_samples": 21
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133049.jsonl",
+      "peak_detector_events": 78,
+      "pedometer_first": 12,
+      "pedometer_last": 73,
+      "pedometer_delta": 61,
+      "pedometer_max": 73,
+      "pedometer_samples": 15
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133154.jsonl",
+      "peak_detector_events": 78,
+      "pedometer_first": 10,
+      "pedometer_last": 70,
+      "pedometer_delta": 60,
+      "pedometer_max": 70,
+      "pedometer_samples": 15
+    },
+    {
+      "file": "indoor_positioning_ios_20260908_133254.jsonl",
+      "peak_detector_events": 78,
+      "pedometer_first": 9,
+      "pedometer_last": 70,
+      "pedometer_delta": 61,
+      "pedometer_max": 70,
+      "pedometer_samples": 15
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170738.jsonl",
+      "peak_detector_events": 80,
+      "pedometer_first": 3,
+      "pedometer_last": 67,
+      "pedometer_delta": 64,
+      "pedometer_max": 67,
+      "pedometer_samples": 27
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_170901.jsonl",
+      "peak_detector_events": 79,
+      "pedometer_first": 11,
+      "pedometer_last": 71,
+      "pedometer_delta": 60,
+      "pedometer_max": 71,
+      "pedometer_samples": 21
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171021.jsonl",
+      "peak_detector_events": 77,
+      "pedometer_first": 4,
+      "pedometer_last": 51,
+      "pedometer_delta": 47,
+      "pedometer_max": 51,
+      "pedometer_samples": 22
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_171142.jsonl",
+      "peak_detector_events": 76,
+      "pedometer_first": 11,
+      "pedometer_last": 73,
+      "pedometer_delta": 62,
+      "pedometer_max": 73,
+      "pedometer_samples": 20
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133338.jsonl",
+      "peak_detector_events": 78,
+      "pedometer_first": 3,
+      "pedometer_last": 71,
+      "pedometer_delta": 68,
+      "pedometer_max": 71,
+      "pedometer_samples": 18
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133534.jsonl",
+      "peak_detector_events": 80,
+      "pedometer_first": 12,
+      "pedometer_last": 66,
+      "pedometer_delta": 54,
+      "pedometer_max": 66,
+      "pedometer_samples": 14
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133637.jsonl",
+      "peak_detector_events": 72,
+      "pedometer_first": 10,
+      "pedometer_last": 63,
+      "pedometer_delta": 53,
+      "pedometer_max": 63,
+      "pedometer_samples": 13
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_133734.jsonl",
+      "peak_detector_events": 75,
+      "pedometer_first": 11,
+      "pedometer_last": 66,
+      "pedometer_delta": 55,
+      "pedometer_max": 66,
+      "pedometer_samples": 14
+    }
+  ],
+  "peak_detector_summary": {
+    "count": 15,
+    "min": 72,
+    "max": 83,
+    "range": 11,
+    "median": 78,
+    "stdev": 2.913569784454954
+  },
+  "pedometer_delta_summary": {
+    "count": 15,
+    "min": 40,
+    "max": 77,
+    "range": 37,
+    "median": 61,
+    "stdev": 8.609039177257563
+  },
+  "pedometer_available_sessions": 15,
+  "limit": "Pedometer delta starts at its first recorded callback, so it is a stability diagnostic, not an endpoint distance truth."
+}

@@ -1,0 +1,480 @@
+{
+  "referenceLength": 50.19329386949539,
+  "coreWidth": 3.0156809091567993,
+  "rightLength": 48.68545341491699,
+  "assumptions": [
+    "Scan boundary registration pending.",
+    "Current engine core uses map 69.424..72.184 (2.76), not outer core 12.734.",
+    "81 is previous calibration count, not personal measured stride.",
+    "Endpoint leave-one-session-out has only 3 training runs each, same day/user.",
+    "No magnetic/particle replay: isolates distance and stride calibration.",
+    "Room distances are projected diagram positions, not physical ground truth."
+  ],
+  "results": [
+    {
+      "id": "133338",
+      "steps": 76,
+      "direction": -1,
+      "variants": {
+        "legacyNumberMisusedAsMeters": {
+          "stride": 0.8741234567901235,
+          "distance": 66.43338271604938,
+          "signedEndpointError": 16.240088846553988,
+          "absoluteEndpointError": 16.240088846553988
+        },
+        "rescaled81": {
+          "stride": 0.6196702946851282,
+          "distance": 47.09494239606975,
+          "signedEndpointError": -3.0983514734256445,
+          "absoluteEndpointError": 3.0983514734256445
+        },
+        "heldoutEndpointCalibration": {
+          "stride": 0.681356930355141,
+          "distance": 51.783126706990714,
+          "signedEndpointError": 1.5898328374953223,
+          "absoluteEndpointError": 1.5898328374953223
+        }
+      },
+      "laps": [
+        {
+          "label": "4213 앞",
+          "steps": 9,
+          "diagramX": 61.5076,
+          "provisionalPhysicalX": 43.13386428991916,
+          "pdrX": 44.61626121732924,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4212 앞",
+          "steps": 17,
+          "diagramX": 55.8159,
+          "provisionalPhysicalX": 39.142406073716074,
+          "pdrX": 39.65889885984821,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4211 앞",
+          "steps": 21,
+          "diagramX": 50.2681,
+          "provisionalPhysicalX": 35.25186161567165,
+          "pdrX": 37.1802176811077,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4210 앞",
+          "steps": 26,
+          "diagramX": 44.3642,
+          "provisionalPhysicalX": 31.111592423226263,
+          "pdrX": 34.081866207682054,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4209 앞",
+          "steps": 33,
+          "diagramX": 38.0361,
+          "provisionalPhysicalX": 26.673841533693306,
+          "pdrX": 29.74417414488616,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4208 앞",
+          "steps": 37,
+          "diagramX": 31.7837,
+          "provisionalPhysicalX": 22.28917731193387,
+          "pdrX": 27.265492966145644,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4207 앞",
+          "steps": 43,
+          "diagramX": 25.6752,
+          "provisionalPhysicalX": 18.005426848333094,
+          "pdrX": 23.547471198034874,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4206 앞",
+          "steps": 47,
+          "diagramX": 19.8471,
+          "provisionalPhysicalX": 13.918314451359747,
+          "pdrX": 21.06879001929436,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4205 앞",
+          "steps": 53,
+          "diagramX": 14.1554,
+          "provisionalPhysicalX": 9.92685623515666,
+          "pdrX": 17.350768251183595,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4204 앞",
+          "steps": 58,
+          "diagramX": 8.6315,
+          "provisionalPhysicalX": 6.0530722970565805,
+          "pdrX": 14.25241677775795,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 76,
+          "diagramX": 0,
+          "provisionalPhysicalX": 0,
+          "pdrX": 3.0983514734256445,
+          "notSurveyedClassroomTruth": true
+        }
+      ]
+    },
+    {
+      "id": "133534",
+      "steps": 78,
+      "direction": 1,
+      "variants": {
+        "legacyNumberMisusedAsMeters": {
+          "stride": 0.8741234567901235,
+          "distance": 68.18162962962963,
+          "signedEndpointError": 17.988335760134234,
+          "absoluteEndpointError": 17.988335760134234
+        },
+        "rescaled81": {
+          "stride": 0.6196702946851282,
+          "distance": 48.334282985440005,
+          "signedEndpointError": -1.8590108840553867,
+          "absoluteEndpointError": 1.8590108840553867
+        },
+        "heldoutEndpointCalibration": {
+          "stride": 0.6875793680752793,
+          "distance": 53.63119070987179,
+          "signedEndpointError": 3.4378968403763963,
+          "absoluteEndpointError": 3.4378968403763963
+        }
+      },
+      "laps": [
+        {
+          "label": "4204 앞",
+          "steps": 20,
+          "diagramX": 8.6315,
+          "provisionalPhysicalX": 6.0530722970565805,
+          "pdrX": 12.393405893702566,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4205 앞",
+          "steps": 24,
+          "diagramX": 14.1554,
+          "provisionalPhysicalX": 9.92685623515666,
+          "pdrX": 14.87208707244308,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4206 앞",
+          "steps": 30,
+          "diagramX": 19.8471,
+          "provisionalPhysicalX": 13.918314451359747,
+          "pdrX": 18.59010884055385,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4207 앞",
+          "steps": 34,
+          "diagramX": 25.6752,
+          "provisionalPhysicalX": 18.005426848333094,
+          "pdrX": 21.06879001929436,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4208 앞",
+          "steps": 40,
+          "diagramX": 31.7837,
+          "provisionalPhysicalX": 22.28917731193387,
+          "pdrX": 24.78681178740513,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4209 앞",
+          "steps": 44,
+          "diagramX": 38.0361,
+          "provisionalPhysicalX": 26.673841533693306,
+          "pdrX": 27.265492966145644,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4210 앞",
+          "steps": 52,
+          "diagramX": 44.3642,
+          "provisionalPhysicalX": 31.111592423226263,
+          "pdrX": 32.222855323626675,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4211 앞",
+          "steps": 58,
+          "diagramX": 50.2681,
+          "provisionalPhysicalX": 35.25186161567165,
+          "pdrX": 35.94087709173744,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4212 앞",
+          "steps": 61,
+          "diagramX": 55.8159,
+          "provisionalPhysicalX": 39.142406073716074,
+          "pdrX": 37.79988797579283,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4213 앞",
+          "steps": 70,
+          "diagramX": 61.5076,
+          "provisionalPhysicalX": 43.13386428991916,
+          "pdrX": 43.37692062795898,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 78,
+          "diagramX": 70.804,
+          "provisionalPhysicalX": 50.193293869495385,
+          "pdrX": 48.334282985440005,
+          "notSurveyedClassroomTruth": true
+        }
+      ]
+    },
+    {
+      "id": "133637",
+      "steps": 71,
+      "direction": -1,
+      "variants": {
+        "legacyNumberMisusedAsMeters": {
+          "stride": 0.8741234567901235,
+          "distance": 62.062765432098765,
+          "signedEndpointError": 11.869471562603373,
+          "absoluteEndpointError": 11.869471562603373
+        },
+        "rescaled81": {
+          "stride": 0.6196702946851282,
+          "distance": 43.9965909226441,
+          "signedEndpointError": -6.196702946851289,
+          "absoluteEndpointError": 6.196702946851289
+        },
+        "heldoutEndpointCalibration": {
+          "stride": 0.6662826619844522,
+          "distance": 47.3060690008961,
+          "signedEndpointError": -2.88722486859929,
+          "absoluteEndpointError": 2.88722486859929
+        }
+      },
+      "laps": [
+        {
+          "label": "4213 앞",
+          "steps": 8,
+          "diagramX": 61.5076,
+          "provisionalPhysicalX": 43.13386428991916,
+          "pdrX": 45.23593151201437,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4212 앞",
+          "steps": 16,
+          "diagramX": 55.8159,
+          "provisionalPhysicalX": 39.142406073716074,
+          "pdrX": 40.27856915453334,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4211 앞",
+          "steps": 18,
+          "diagramX": 50.2681,
+          "provisionalPhysicalX": 35.25186161567165,
+          "pdrX": 39.039228565163086,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4210 앞",
+          "steps": 23,
+          "diagramX": 44.3642,
+          "provisionalPhysicalX": 31.111592423226263,
+          "pdrX": 35.94087709173744,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4209 앞",
+          "steps": 30,
+          "diagramX": 38.0361,
+          "provisionalPhysicalX": 26.673841533693306,
+          "pdrX": 31.603185028941542,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4208 앞",
+          "steps": 34,
+          "diagramX": 31.7837,
+          "provisionalPhysicalX": 22.28917731193387,
+          "pdrX": 29.12450385020103,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4207 앞",
+          "steps": 40,
+          "diagramX": 25.6752,
+          "provisionalPhysicalX": 18.005426848333094,
+          "pdrX": 25.40648208209026,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4206 앞",
+          "steps": 43,
+          "diagramX": 19.8471,
+          "provisionalPhysicalX": 13.918314451359747,
+          "pdrX": 23.547471198034874,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4205 앞",
+          "steps": 49,
+          "diagramX": 14.1554,
+          "provisionalPhysicalX": 9.92685623515666,
+          "pdrX": 19.829449429924104,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4204 앞",
+          "steps": 55,
+          "diagramX": 8.6315,
+          "provisionalPhysicalX": 6.0530722970565805,
+          "pdrX": 16.111427661813337,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "오른쪽 계단 입구",
+          "steps": 71,
+          "diagramX": 0,
+          "provisionalPhysicalX": 0,
+          "pdrX": 6.196702946851282,
+          "notSurveyedClassroomTruth": true
+        }
+      ]
+    },
+    {
+      "id": "133734",
+      "steps": 72,
+      "direction": 1,
+      "variants": {
+        "legacyNumberMisusedAsMeters": {
+          "stride": 0.8741234567901235,
+          "distance": 62.93688888888889,
+          "signedEndpointError": 12.743595019393496,
+          "absoluteEndpointError": 12.743595019393496
+        },
+        "rescaled81": {
+          "stride": 0.6196702946851282,
+          "distance": 44.61626121732923,
+          "signedEndpointError": -5.57703265216616,
+          "absoluteEndpointError": 5.57703265216616
+        },
+        "heldoutEndpointCalibration": {
+          "stride": 0.6692439182599386,
+          "distance": 48.18556211471558,
+          "signedEndpointError": -2.0077317547798117,
+          "absoluteEndpointError": 2.0077317547798117
+        }
+      },
+      "laps": [
+        {
+          "label": "4204 앞",
+          "steps": 16,
+          "diagramX": 8.6315,
+          "provisionalPhysicalX": 6.0530722970565805,
+          "pdrX": 9.914724714962052,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4205 앞",
+          "steps": 21,
+          "diagramX": 14.1554,
+          "provisionalPhysicalX": 9.92685623515666,
+          "pdrX": 13.013076188387695,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4206 앞",
+          "steps": 26,
+          "diagramX": 19.8471,
+          "provisionalPhysicalX": 13.918314451359747,
+          "pdrX": 16.111427661813337,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4207 앞",
+          "steps": 30,
+          "diagramX": 25.6752,
+          "provisionalPhysicalX": 18.005426848333094,
+          "pdrX": 18.59010884055385,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4208 앞",
+          "steps": 36,
+          "diagramX": 31.7837,
+          "provisionalPhysicalX": 22.28917731193387,
+          "pdrX": 22.30813060866462,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4209 앞",
+          "steps": 40,
+          "diagramX": 38.0361,
+          "provisionalPhysicalX": 26.673841533693306,
+          "pdrX": 24.78681178740513,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4210 앞",
+          "steps": 47,
+          "diagramX": 44.3642,
+          "provisionalPhysicalX": 31.111592423226263,
+          "pdrX": 29.12450385020103,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4211 앞",
+          "steps": 52,
+          "diagramX": 50.2681,
+          "provisionalPhysicalX": 35.25186161567165,
+          "pdrX": 32.222855323626675,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4212 앞",
+          "steps": 55,
+          "diagramX": 55.8159,
+          "provisionalPhysicalX": 39.142406073716074,
+          "pdrX": 34.081866207682054,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "4213 앞",
+          "steps": 62,
+          "diagramX": 61.5076,
+          "provisionalPhysicalX": 43.13386428991916,
+          "pdrX": 38.41955827047796,
+          "notSurveyedClassroomTruth": true
+        },
+        {
+          "label": "코어복도 출구 중앙점",
+          "steps": 72,
+          "diagramX": 70.804,
+          "provisionalPhysicalX": 50.193293869495385,
+          "pdrX": 44.61626121732924,
+          "notSurveyedClassroomTruth": true
+        }
+      ]
+    }
+  ],
+  "averages": {
+    "legacyNumberMisusedAsMeters": 14.710372797171273,
+    "rescaled81": 4.18277448912462,
+    "heldoutEndpointCalibration": 2.480671575312705
+  }
+}

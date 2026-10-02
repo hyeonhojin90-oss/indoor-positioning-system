@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-09-15T08:46:13.416Z",
+  "purpose": "AP·BLE 신호 환경의 반복성·구역 분리력 사전검증. 위치 보정 또는 Fusion 적용 결과가 아님.",
+  "thresholds": {
+    "min_shared_signals_for_classification": 2,
+    "recommended_sessions_per_zone": 3
+  },
+  "input": {
+    "files": 3,
+    "accepted_schema7_zone_sessions": 3,
+    "skipped": 0
+  },
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260915_173155.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "core_junction",
+      "detail": "코어 교차점",
+      "duration_s": 15.958,
+      "completed": true,
+      "wifi_scans": 1,
+      "fresh_wifi_scans": 1,
+      "wifi_unique_aps": 107,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 586,
+      "ble_unique_transmitters": 187
+    },
+    {
+      "file": "indoor_positioning_20260915_173215.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "core_junction",
+      "detail": "코어 교차점",
+      "duration_s": 33.785,
+      "completed": true,
+      "wifi_scans": 6,
+      "fresh_wifi_scans": 1,
+      "wifi_unique_aps": 96,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 1031,
+      "ble_unique_transmitters": 180
+    },
+    {
+      "file": "indoor_positioning_20260915_173252.jsonl",
+      "accepted": true,
+      "reason": null,
+      "parse_errors": [],
+      "literal_delimiter_repaired": false,
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "floor": "4",
+      "zone": "core_junction",
+      "detail": "코어 교차점",
+      "duration_s": 22.993,
+      "completed": true,
+      "wifi_scans": 5,
+      "fresh_wifi_scans": 0,
+      "wifi_unique_aps": 0,
+      "ble_status_count": 2,
+      "ble_active_seen": true,
+      "ble_failure": null,
+      "ble_observations": 742,
+      "ble_unique_transmitters": 157
+    }
+  ],
+  "zones": {
+    "wifi": [
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "core_junction",
+        "sessions": 3,
+        "unique_signals": 136,
+        "signals_seen_in_67_percent_sessions": 0,
+        "median_signal_rssi_sd_db": null,
+        "recommended_repeat_complete": true
+      }
+    ],
+    "ble": [
+      {
+        "platform": "android",
+        "floor": "4",
+        "zone": "core_junction",
+        "sessions": 3,
+        "unique_signals": 280,
+        "signals_seen_in_67_percent_sessions": 85,
+        "median_signal_rssi_sd_db": 1.9293061504650375,
+        "recommended_repeat_complete": true
+      }
+    ]
+  },
+  "leave_one_session_out": {
+    "wifi": {
+      "evaluated_sessions": 0,
+      "top1_accuracy": null,
+      "median_rssi_mae_db": null,
+      "median_shared_signals": null,
+      "limitation": "같은 플랫폼·층에서 구역 2개 이상과 각 구역의 반복 수집이 필요합니다."
+    },
+    "ble": {
+      "evaluated_sessions": 0,
+      "top1_accuracy": null,
+      "median_rssi_mae_db": null,
+      "median_shared_signals": null,
+      "limitation": "같은 플랫폼·층에서 구역 2개 이상과 각 구역의 반복 수집이 필요합니다."
+    }
+  }
+}

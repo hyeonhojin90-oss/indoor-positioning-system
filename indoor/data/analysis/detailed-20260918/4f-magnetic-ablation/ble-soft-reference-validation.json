@@ -1,0 +1,424 @@
+{
+  "createdAt": "2026-09-18T09:53:25.973Z",
+  "method": "First half of each stationary session builds one reference; disjoint 5 s windows from the second half are classified. Same-day, same-session split is not independent field validation.",
+  "references": [
+    {
+      "id": "f4_core",
+      "signals": 241
+    },
+    {
+      "id": "f4_4225",
+      "signals": 376
+    },
+    {
+      "id": "f4_stairs_left",
+      "signals": 270
+    },
+    {
+      "id": "f4_4209",
+      "signals": 236
+    },
+    {
+      "id": "f4_stairs_right",
+      "signals": 123
+    }
+  ],
+  "windows": 49,
+  "evaluated": 48,
+  "correct": 48,
+  "top1": 1,
+  "rows": [
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 38,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 44,
+      "topWeight": 0.5889422781836207,
+      "margin": 0.3518141450292135
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 25,
+      "topWeight": 0.760692417700627,
+      "margin": 0.521384835401254
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 36,
+      "topWeight": 0.6811426920275225,
+      "margin": 0.36228538405504507
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 46,
+      "topWeight": 0.688736373985342,
+      "margin": 0.3774727479706841
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 44,
+      "topWeight": 0.9703059428381074,
+      "margin": 0.9406118856762149
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 36,
+      "topWeight": 0.8007336717264101,
+      "margin": 0.6014673434528202
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 22,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_core",
+      "predicted": "f4_core",
+      "reason": "relative_zone_scores",
+      "signals": 37,
+      "topWeight": 0.72116595760642,
+      "margin": 0.44233191521283993
+    },
+    {
+      "truth": "f4_core",
+      "predicted": null,
+      "reason": "no_usable_features",
+      "signals": 5,
+      "topWeight": null,
+      "margin": null
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 74,
+      "topWeight": 0.7137350974331016,
+      "margin": 0.42747019486620313
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 60,
+      "topWeight": 0.6817085484029548,
+      "margin": 0.3634170968059096
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 59,
+      "topWeight": 0.6306909493547277,
+      "margin": 0.3367617676181485
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 80,
+      "topWeight": 0.90122041016283,
+      "margin": 0.8024408203256601
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 53,
+      "topWeight": 0.755281536415291,
+      "margin": 0.5105630728305821
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 71,
+      "topWeight": 0.7133072239635206,
+      "margin": 0.4266144479270412
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 52,
+      "topWeight": 0.6062432170717339,
+      "margin": 0.3107037991354063
+    },
+    {
+      "truth": "f4_4225",
+      "predicted": "f4_4225",
+      "reason": "relative_zone_scores",
+      "signals": 48,
+      "topWeight": 0.7058394720931171,
+      "margin": 0.4116789441862343
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 47,
+      "topWeight": 0.671995343599874,
+      "margin": 0.343990687199748
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 49,
+      "topWeight": 0.8034990466161189,
+      "margin": 0.6069980932322379
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 36,
+      "topWeight": 0.7053257878457408,
+      "margin": 0.4106515756914817
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 42,
+      "topWeight": 0.7174304930406313,
+      "margin": 0.4348609860812626
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 39,
+      "topWeight": 0.7303516976542511,
+      "margin": 0.46070339530850224
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 64,
+      "topWeight": 0.6103079113446112,
+      "margin": 0.22061582268922236
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 53,
+      "topWeight": 0.6616134578415134,
+      "margin": 0.32322691568302675
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 47,
+      "topWeight": 0.7132337968801877,
+      "margin": 0.42646759376037535
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 51,
+      "topWeight": 0.5144803030763143,
+      "margin": 0.2631000607658556
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 44,
+      "topWeight": 0.745587439016598,
+      "margin": 0.491174878033196
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 42,
+      "topWeight": 0.7217260867119728,
+      "margin": 0.4434521734239455
+    },
+    {
+      "truth": "f4_stairs_left",
+      "predicted": "f4_stairs_left",
+      "reason": "relative_zone_scores",
+      "signals": 8,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 66,
+      "topWeight": 0.699559933533974,
+      "margin": 0.39911986706794816
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 32,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 49,
+      "topWeight": 0.7523897877653855,
+      "margin": 0.5047795755307709
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 75,
+      "topWeight": 0.8430241005045146,
+      "margin": 0.6860482010090293
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 54,
+      "topWeight": 0.7706339389080106,
+      "margin": 0.5412678778160213
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 53,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 59,
+      "topWeight": 0.7274584958991493,
+      "margin": 0.4549169917982988
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 61,
+      "topWeight": 0.6845478470496897,
+      "margin": 0.36909569409937953
+    },
+    {
+      "truth": "f4_4209",
+      "predicted": "f4_4209",
+      "reason": "relative_zone_scores",
+      "signals": 59,
+      "topWeight": 0.6030559322712145,
+      "margin": 0.39889573066717726
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 25,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 27,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 27,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 21,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 28,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 24,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 38,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 35,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 34,
+      "topWeight": 1,
+      "margin": 1
+    },
+    {
+      "truth": "f4_stairs_right",
+      "predicted": "f4_stairs_right",
+      "reason": "relative_zone_scores",
+      "signals": 23,
+      "topWeight": 1,
+      "margin": 1
+    }
+  ]
+}

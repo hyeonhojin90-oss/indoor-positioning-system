@@ -1,0 +1,16 @@
+{
+  "new_planes": {
+    "core_wall": {
+      "z_m": 23.965893797868148,
+      "surface_area_m2": 18.421661214977746
+    },
+    "end_wall": {
+      "z_m": -26.917834525227395,
+      "surface_area_m2": 2.624801234283697
+    }
+  },
+  "new_core_side_wall_to_end_wall_m": 50.88372832309554,
+  "four_floor_adopted_core_side_to_stair_entry_m": 48.68545341491699,
+  "different_endpoint_raw_difference_m": 2.198274908178547,
+  "comparison_status": "NOT a same-endpoint length difference; old reference is stair entry, new measurement is end wall"
+}

@@ -1,0 +1,11 @@
+﻿group,left,right,btotal_pearson_lap_aligned,btotal_dtw_z_cost,mag_mean_difference_ut,mag_x_pearson,mag_y_pearson,mag_z_pearson
+ios_repeat,indoor_positioning_ios_20260905_170448.jsonl,indoor_positioning_ios_20260905_170648.jsonl,0.8689,0.1601,2.521,0.8627,0.8139,0.808
+ios_repeat,indoor_positioning_ios_20260905_170448.jsonl,indoor_positioning_ios_20260905_170852.jsonl,0.923,0.1766,0.0697,0.8941,0.8208,0.8918
+ios_repeat,indoor_positioning_ios_20260905_170648.jsonl,indoor_positioning_ios_20260905_170852.jsonl,0.8817,0.2062,2.4513,0.9392,0.9091,0.857
+android_repeat,indoor_positioning_20260901_151808.jsonl,indoor_positioning_20260901_153038.jsonl,0.4464,0.4555,13.1609,0.5921,0.3385,0.6083
+ios_android,indoor_positioning_ios_20260905_170448.jsonl,indoor_positioning_20260901_151808.jsonl,0.7593,0.3088,9.8964,0.763,0.778,0.716
+ios_android,indoor_positioning_ios_20260905_170448.jsonl,indoor_positioning_20260901_153038.jsonl,0.5487,0.4078,3.2645,0.5951,0.3528,0.5714
+ios_android,indoor_positioning_ios_20260905_170648.jsonl,indoor_positioning_20260901_151808.jsonl,0.6801,0.3125,7.3754,0.7609,0.8299,0.7213
+ios_android,indoor_positioning_ios_20260905_170648.jsonl,indoor_positioning_20260901_153038.jsonl,0.5634,0.4131,5.7855,0.5776,0.3815,0.5676
+ios_android,indoor_positioning_ios_20260905_170852.jsonl,indoor_positioning_20260901_151808.jsonl,0.7836,0.2932,9.8267,0.7944,0.8713,0.7604
+ios_android,indoor_positioning_ios_20260905_170852.jsonl,indoor_positioning_20260901_153038.jsonl,0.5217,0.4276,3.3342,0.6162,0.3319,0.5666

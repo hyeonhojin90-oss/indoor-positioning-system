@@ -1,0 +1,1325 @@
+{
+  "lengthM": 48.835051199999995,
+  "method": "Full runtime LOSO, same raw sensor stream, query hash excluded from templates, BLE refs from separate stationary sessions; no query laps used by engine",
+  "limitations": [
+    "Endpoint uses survey and user start/end labels, not independently tracked trajectory",
+    "Intermediate errors are weak step-interpolated truth and cannot certify meter accuracy",
+    "No AP observations; does not evaluate AP fusion",
+    "This compares V2 pattern features, not a left-grid HMM"
+  ],
+  "summary": {
+    "pdr": {
+      "endpointMAE": 1.9855103452123373,
+      "worstEndpoint": 3.6823558224065778,
+      "weakIntermediateMAE": 1.0317599484794455,
+      "sequenceApplied": 0,
+      "bleApplied": 0
+    },
+    "ble": {
+      "endpointMAE": 1.972219420740744,
+      "worstEndpoint": 3.690507092835851,
+      "weakIntermediateMAE": 1.0288891146083026,
+      "sequenceApplied": 0,
+      "bleApplied": 10
+    },
+    "norm": {
+      "endpointMAE": 1.971950155186427,
+      "worstEndpoint": 3.6891607650642655,
+      "weakIntermediateMAE": 1.02867886616178,
+      "sequenceApplied": 1,
+      "bleApplied": 10
+    },
+    "mv": {
+      "endpointMAE": 1.96992646146456,
+      "worstEndpoint": 3.690507092835851,
+      "weakIntermediateMAE": 1.0278870545697785,
+      "sequenceApplied": 4,
+      "bleApplied": 10
+    }
+  },
+  "folds": [
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "sha256": "36012da448caa08ee06471d51cd5543b2b1905a58fddc3b2fe933ba29a5ac6b2",
+      "direction": "forward",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.641317526192964,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 1.8554972615207972
+        },
+        "ble": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.641317526192921,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "weakIntermediateMAE": 1.8554972615207983
+        },
+        "norm": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.641317526192921,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "weakIntermediateMAE": 1.8554972615207983
+        },
+        "mv": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.634278473647001,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "ambiguous_sequence": 6,
+              "outside_pdr_gate": 2,
+              "applied": 1
+            }
+          },
+          "ble": {
+            "evaluated": 15,
+            "applied": 0,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 2
+            }
+          },
+          "weakIntermediateMAE": 1.851543821049699
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "sha256": "a9fa387ef0ec2f70dcf6e9b01f7a56e88785ad276140c70678dbc5ea798899a4",
+      "direction": "reverse",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.8378154345874265,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 0.9551752233674816
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9096,
+              "steps": 13,
+              "beforeM": 40.84763538901183,
+              "afterM": 40.85578665944095,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.9525390625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12200,
+              "steps": 18,
+              "beforeM": 37.75868002889058,
+              "afterM": 37.76640465263036,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.0853515625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.8528914605440647,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "weakIntermediateMAE": 0.967816780548179
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9096,
+              "steps": 13,
+              "beforeM": 40.84763538901183,
+              "afterM": 40.85578665944095,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.9525390625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12200,
+              "steps": 18,
+              "beforeM": 37.75868002889058,
+              "afterM": 37.76640465263036,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.0853515625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.8528914605440647,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "weakIntermediateMAE": 0.967816780548179
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9096,
+              "steps": 13,
+              "beforeM": 40.84763538901183,
+              "afterM": 40.85578665944095,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.9525390625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12200,
+              "steps": 18,
+              "beforeM": 37.75868002889058,
+              "afterM": 37.76640465263036,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.0853515625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 76,
+          "endpointErrorM": 1.8528914605440647,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 16,
+            "applied": 2,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 11,
+              "relative_zone_scores": 4
+            }
+          },
+          "weakIntermediateMAE": 0.967816780548179
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "sha256": "72e83cb3e821401411b310861127af84864d337d1206568eaa5e0851d80099cd",
+      "direction": "reverse",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.6823558224065778,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 1.8972826119843598
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9587,
+              "steps": 13,
+              "beforeM": 40.847635389011856,
+              "afterM": 40.85578665944098,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.235009765625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.690507092835851,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "weakIntermediateMAE": 1.9039822863097589
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9587,
+              "steps": 13,
+              "beforeM": 40.847635389011856,
+              "afterM": 40.85578665944098,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.235009765625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.6891607650642655,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "ambiguous_sequence": 8,
+              "applied": 1
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "weakIntermediateMAE": 1.902931044077146
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9587,
+              "steps": 13,
+              "beforeM": 40.847635389011856,
+              "afterM": 40.85578665944098,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.235009765625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 73,
+          "endpointErrorM": 3.690507092835851,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 18,
+            "applied": 1,
+            "reasons": {
+              "insufficient_ble_window": 2,
+              "no_usable_features": 13,
+              "relative_zone_scores": 3
+            }
+          },
+          "weakIntermediateMAE": 1.9039822863097589
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "sha256": "18d62c8c11910ebb932fba49b4fae252481ae42e06dbf613d78362197dc9b8fa",
+      "direction": "forward",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 79,
+          "endpointErrorM": 0.09742238616291843,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 0.14798191866932572
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 45917,
+              "steps": 63,
+              "beforeM": 38.82062553599391,
+              "afterM": 38.84588433241336,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.568994140625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 48976,
+              "steps": 66,
+              "beforeM": 40.704148310743676,
+              "afterM": 40.72931633575914,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.865625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 55015,
+              "steps": 79,
+              "beforeM": 48.79086927499236,
+              "afterM": 48.791985274596584,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.752587890625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 79,
+          "endpointErrorM": 0.04306592540341114,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 9
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "weakIntermediateMAE": 0.1386530024538099
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 45917,
+              "steps": 63,
+              "beforeM": 38.82062553599391,
+              "afterM": 38.84588433241336,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.568994140625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 48976,
+              "steps": 66,
+              "beforeM": 40.704148310743676,
+              "afterM": 40.72931633575914,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.865625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 55015,
+              "steps": 79,
+              "beforeM": 48.79086927499236,
+              "afterM": 48.791985274596584,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.752587890625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 79,
+          "endpointErrorM": 0.04306592540341114,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 9
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "weakIntermediateMAE": 0.1386530024538099
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 45917,
+              "steps": 63,
+              "beforeM": 38.823300723868456,
+              "afterM": 38.84834150631089,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.568994140625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 48976,
+              "steps": 66,
+              "beforeM": 40.706605484641116,
+              "afterM": 40.73155238050401,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.865625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 55015,
+              "steps": 79,
+              "beforeM": 48.79304341236136,
+              "afterM": 48.794130875989595,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.752587890625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 79,
+          "endpointErrorM": 0.04092032401040058,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "reasons": {
+              "applied": 1,
+              "outside_pdr_gate": 1,
+              "ambiguous_sequence": 7
+            }
+          },
+          "ble": {
+            "evaluated": 19,
+            "applied": 3,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 6
+            }
+          },
+          "weakIntermediateMAE": 0.1363992553818153
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "sha256": "6fbbfeff7c38d50540bfe13f91c4f4de4a68d711e4b6114cc4382b5c1e549c3b",
+      "direction": "reverse",
+      "trainingSources": [
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+        "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+        "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+        "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl"
+      ],
+      "variants": {
+        "pdr": {
+          "bleEvents": [],
+          "detectedSteps": 80,
+          "endpointErrorM": 0.6686405567118001,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "ble": {
+            "evaluated": 0,
+            "applied": 0,
+            "reasons": {}
+          },
+          "weakIntermediateMAE": 0.30286272685526294
+        },
+        "ble": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9195,
+              "steps": 9,
+              "beforeM": 43.32532069345217,
+              "afterM": 43.331831309940526,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.6625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12270,
+              "steps": 13,
+              "beforeM": 40.85414600550018,
+              "afterM": 40.86231643374347,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.6634765625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 15294,
+              "steps": 18,
+              "beforeM": 37.765209803193045,
+              "afterM": 37.77295669133642,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.533837890625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 18320,
+              "steps": 19,
+              "beforeM": 37.15353536522639,
+              "afterM": 37.16085314692114,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.32265625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 80,
+          "endpointErrorM": 0.633315098727472,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "pattern_disabled": 8
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "weakIntermediateMAE": 0.2784962422089666
+        },
+        "norm": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9195,
+              "steps": 9,
+              "beforeM": 43.32532069345217,
+              "afterM": 43.331831309940526,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.6625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12270,
+              "steps": 13,
+              "beforeM": 40.85414600550018,
+              "afterM": 40.86231643374347,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.6634765625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 15294,
+              "steps": 18,
+              "beforeM": 37.765209803193045,
+              "afterM": 37.77295669133642,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.533837890625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 18320,
+              "steps": 19,
+              "beforeM": 37.15353536522639,
+              "afterM": 37.16085314692114,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.32265625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 80,
+          "endpointErrorM": 0.633315098727472,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "reasons": {
+              "ambiguous_sequence": 8
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "weakIntermediateMAE": 0.2784962422089666
+        },
+        "mv": {
+          "bleEvents": [
+            {
+              "elapsedMs": 9195,
+              "steps": 9,
+              "beforeM": 43.32532069345217,
+              "afterM": 43.331831309940526,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 1.6625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 12270,
+              "steps": 13,
+              "beforeM": 40.85414600550018,
+              "afterM": 40.86231643374347,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 2.6634765625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 15294,
+              "steps": 18,
+              "beforeM": 37.762838683731076,
+              "afterM": 37.77056118321062,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.533837890625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "elapsedMs": 18320,
+              "steps": 19,
+              "beforeM": 37.15113985710053,
+              "afterM": 37.158434390034046,
+              "candidates": [
+                {
+                  "floor": 4,
+                  "zone": "stairs_left",
+                  "score": 3.32265625,
+                  "wifiScore": null,
+                  "anchor": {
+                    "id": "f4_stairs_left",
+                    "x": 135.407,
+                    "y": 0,
+                    "verified": false,
+                    "sources": 1,
+                    "sigma_m": 6
+                  },
+                  "features": [
+                    "ble"
+                  ],
+                  "weight": 1
+                }
+              ]
+            }
+          ],
+          "detectedSteps": 80,
+          "endpointErrorM": 0.6310349562854825,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 2,
+            "reasons": {
+              "ambiguous_sequence": 6,
+              "applied": 2
+            }
+          },
+          "ble": {
+            "evaluated": 23,
+            "applied": 4,
+            "reasons": {
+              "insufficient_ble_window": 1,
+              "no_usable_features": 12,
+              "relative_zone_scores": 10
+            }
+          },
+          "weakIntermediateMAE": 0.27969312955944053
+        }
+      }
+    }
+  ]
+}

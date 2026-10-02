@@ -1,0 +1,3511 @@
+{
+  "version": 1,
+  "createdAt": "2026-09-22T10:24:02.443Z",
+  "runtimeChanged": false,
+  "coordinate": {
+    "lengthM": 50.17312741491699,
+    "basis": "navigation distanceMetric from the shared 2F-10F corridor survey",
+    "legacyFloor4Survey": {
+      "reference_length_m": 50.19329386949539,
+      "status": "user_confirmed_20260914",
+      "formula": "right corridor + half core wall-center width",
+      "limitation": "Adopted by explicit user confirmation; GLB-derived reference."
+    },
+    "legacySurveyDifferenceM": -0.02016645457840127,
+    "baseStrideM": 0.6194213261100863,
+    "diagramCoordinateNotMeters": 67.44089965397924
+  },
+  "extraction": {
+    "stepDetector": "app/expo-sensor-collector/positionTracking.js",
+    "gravity": "causal vector EMA tau=1s",
+    "mv": "dot(magnetic, unit_gravity)",
+    "calibration": "first 8 steps estimate a constant offset against the absolute training grid near the known start",
+    "intermediateTruth": "linear detected-step progress between confirmed endpoints"
+  },
+  "dataset": {
+    "included": [
+      {
+        "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+        "sha256": "748bf6c7e2a75969a47a328a80ac3a83833758a1042103a1272b4ce9ccbef697",
+        "platform": "android",
+        "device": "samsung SM-S938N",
+        "direction": "forward",
+        "steps": 108,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.4645659945825647,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+        "sha256": "4146c8c88de6741f4508dbf955b1c106da5604cc30b2ed7410206c0c1639e052",
+        "platform": "android",
+        "device": "samsung SM-S938N",
+        "direction": "forward",
+        "steps": 96,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.5226367439053853,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+        "sha256": "0436540d9e5eeaabbf66d49716cb0cc542bcb4b113aae255dc5be596aa7492cc",
+        "platform": "android",
+        "device": "samsung SM-S938N",
+        "direction": "reverse",
+        "steps": 87,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.5767026139645631,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+        "sha256": "1151ac394094d34c76803372d34068d9cff2b810cb2287b05b6da1454056de0c",
+        "platform": "android",
+        "device": "samsung SM-S938N",
+        "direction": "forward",
+        "steps": 69,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.7271467741292318,
+        "fixedPdrTerminalErrorM": 7.433055913321041
+      },
+      {
+        "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+        "sha256": "40c42039f9b994f768bdeb66656303b5e8add21b1e65638fa07881aec147b776",
+        "platform": "android",
+        "device": "samsung SM-S938N",
+        "direction": "forward",
+        "steps": 85,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.5902720872343176,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+        "sha256": "423e57c8c3ff2ee633fce1f72ffd2a21365c7372b4a063c8c3da368530dc3b95",
+        "platform": "android",
+        "device": "samsung SM-S938N",
+        "direction": "reverse",
+        "steps": 78,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6432452232681666,
+        "fixedPdrTerminalErrorM": 1.858263978330264
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170448.jsonl",
+        "sha256": "160f26a38538f7440014f631790e1b90cafdd0b3530a896b66368fe60eaaa861",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 82,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.6118674074989877,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170648.jsonl",
+        "sha256": "72994a78fff96b93e1d8436252a15045c5debc40b5cccad238f3b2474581bd0b",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 83,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.6044955110230963,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170852.jsonl",
+        "sha256": "8f221a8985cc44f1cfb5252ba69b0e0ec5ff08c040981d5fd10537cf2b6777ba",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 81,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.6194213261100863,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+        "sha256": "5b0e6c73cb004b1c2db0b4cb7e4d0a506e1b084452251aa4778c6c8a12d658f5",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 83,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.6044955110230963,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+        "sha256": "339142dee5907606a51e3139b6e13b79147492e56adacdc684712af0229884bc",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "reverse",
+        "steps": 77,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.6515990573365843,
+        "fixedPdrTerminalErrorM": 2.4776853044403495
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+        "sha256": "f655d48b3a907deb7778bc1239f3ae37eec43ec2e955ba7c506582363f35591c",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 78,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.6432452232681666,
+        "fixedPdrTerminalErrorM": 1.858263978330264
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+        "sha256": "ea005fd1e98b5f0250931a1a84cd11ee3d8a1ced8d26824ba08566c968d40816",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "reverse",
+        "steps": 78,
+        "labels": 11,
+        "endpointAlignedStrideM": 0.6432452232681666,
+        "fixedPdrTerminalErrorM": 1.858263978330264
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+        "sha256": "2f4b6089eb5737591abf8b431c65672bb912f338a15570d4dacf16463b9a99db",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 80,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6271640926864623,
+        "fixedPdrTerminalErrorM": 0.6194213261100856
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+        "sha256": "cd38cb162c197665f38b1881b72c36bad91d98531c8be07a1c03715a79812a3a",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "reverse",
+        "steps": 79,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6351028786698353,
+        "fixedPdrTerminalErrorM": 1.2388426522201783
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+        "sha256": "32c50908ba8c8f6a96f95c6f722d7afc22641578aff1c3816ea72852132b9647",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 77,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6515990573365843,
+        "fixedPdrTerminalErrorM": 2.4776853044403495
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+        "sha256": "bff7f6ed51f0373ec71818648b2d141502c0fa20dd58a994fd7dedc14309a918",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "reverse",
+        "steps": 76,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6601727291436447,
+        "fixedPdrTerminalErrorM": 3.097106630550435
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+        "sha256": "000fe494b72c1309ae9ea38b90613b6828613a684a3bc22d371be00e55ae9b5d",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 82,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6118674074989877,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+        "sha256": "fc849ca751678344d26b1e67b6ddc07bcb2fff428dac90a62590a27d2065127f",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "reverse",
+        "steps": 81,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6194213261100863,
+        "fixedPdrTerminalErrorM": 0
+      },
+      {
+        "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+        "sha256": "7fe89824a3229b6aa79f749fe60990ca2bba051ad4deb2943ec6b616f82658c2",
+        "platform": "ios",
+        "device": "iPhone 13 Pro",
+        "direction": "forward",
+        "steps": 79,
+        "labels": 12,
+        "endpointAlignedStrideM": 0.6351028786698353,
+        "fixedPdrTerminalErrorM": 1.2388426522201783
+      }
+    ],
+    "excluded": [
+      {
+        "excluded": true,
+        "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111521.jsonl",
+        "route": "4F_CORE_TO_RIGHT_STAIRS",
+        "reason": "insufficient_route_labels"
+      }
+    ]
+  },
+  "variants": {
+    "baseline": "fixed-stride PDR only",
+    "e0": "8-step magnitude session templates, current thresholds, 25% accepted correction",
+    "e1": "E0 plus vertical magnetic component",
+    "e2": "0.5m 1D absolute grid HMM using start-calibrated magnitude",
+    "e3": "E2 plus start-calibrated vertical magnetic component"
+  },
+  "gridDiagnostics": {
+    "android": {
+      "magnitude": {
+        "cells": 101,
+        "measuredCells": 101,
+        "rangeUt": 27.636993278907262,
+        "medianCellStandardDeviationUt": 11.184506213428019,
+        "minIndependentSessionsPerCell": 2,
+        "medianIndependentSessionsPerCell": 6
+      },
+      "vertical": {
+        "cells": 101,
+        "measuredCells": 101,
+        "rangeUt": 22.732663931339115,
+        "medianCellStandardDeviationUt": 10.009938716927739,
+        "minIndependentSessionsPerCell": 2,
+        "medianIndependentSessionsPerCell": 6
+      }
+    },
+    "ios": {
+      "magnitude": {
+        "cells": 101,
+        "measuredCells": 101,
+        "rangeUt": 31.701809398032616,
+        "medianCellStandardDeviationUt": 2.7686812568537893,
+        "minIndependentSessionsPerCell": 5,
+        "medianIndependentSessionsPerCell": 14
+      },
+      "vertical": {
+        "cells": 101,
+        "measuredCells": 101,
+        "rangeUt": 22.826880409848705,
+        "medianCellStandardDeviationUt": 3.027099254908889,
+        "minIndependentSessionsPerCell": 5,
+        "medianIndependentSessionsPerCell": 14
+      }
+    }
+  },
+  "summary": {
+    "all": {
+      "baseline": {
+        "trajectoryWeakTruth": {
+          "meanM": 1.4472690471864458,
+          "medianM": 0.7370329703082241,
+          "p90M": 3.65929881240035,
+          "maxM": 12.543281853729205
+        },
+        "terminalConfirmedEndpoint": {
+          "meanM": 1.207871585914694,
+          "medianM": 0.3097106630550872,
+          "p90M": 2.5396274370514007,
+          "maxM": 7.43305591332107
+        },
+        "arrivalWithin1m": {
+          "reached": 11,
+          "medianStepDifference": -3,
+          "medianTimingErrorEquivalentM": 1.8134865330692889
+        },
+        "sessions": 20
+      },
+      "e0": {
+        "trajectoryWeakTruth": {
+          "meanM": 1.499902843989202,
+          "medianM": 0.6713545165614292,
+          "p90M": 4.840912320360332,
+          "maxM": 12.543281853729205
+        },
+        "terminalConfirmedEndpoint": {
+          "meanM": 1.0789439184182363,
+          "medianM": 0.39234552425239855,
+          "p90M": 1.944120478594927,
+          "maxM": 7.43305591332107
+        },
+        "arrivalWithin1m": {
+          "reached": 11,
+          "medianStepDifference": -3,
+          "medianTimingErrorEquivalentM": 1.8134865330692889
+        },
+        "sessions": 20
+      },
+      "e1": {
+        "trajectoryWeakTruth": {
+          "meanM": 1.567999733498996,
+          "medianM": 0.6908930175843366,
+          "p90M": 4.402604403732441,
+          "maxM": 14.343475082736646
+        },
+        "terminalConfirmedEndpoint": {
+          "meanM": 1.0124656117717445,
+          "medianM": 0.40046465447446644,
+          "p90M": 1.770865073610909,
+          "maxM": 7.43305591332107
+        },
+        "arrivalWithin1m": {
+          "reached": 12,
+          "medianStepDifference": -2,
+          "medianTimingErrorEquivalentM": 1.216362918522084
+        },
+        "sessions": 20
+      },
+      "e2": {
+        "trajectoryWeakTruth": {
+          "meanM": 1.1918644681474218,
+          "medianM": 0.6525145430212049,
+          "p90M": 2.735655627509528,
+          "maxM": 8.774462103001085
+        },
+        "terminalConfirmedEndpoint": {
+          "meanM": 1.2032916821474324,
+          "medianM": 0.7942144546395973,
+          "p90M": 2.2766940996724365,
+          "maxM": 5.136807709638923
+        },
+        "arrivalWithin1m": {
+          "reached": 15,
+          "medianStepDifference": 0,
+          "medianTimingErrorEquivalentM": 0
+        },
+        "sessions": 20
+      },
+      "e3": {
+        "trajectoryWeakTruth": {
+          "meanM": 1.1230598416670778,
+          "medianM": 0.5580107163731753,
+          "p90M": 2.7704136850035925,
+          "maxM": 9.371763158379792
+        },
+        "terminalConfirmedEndpoint": {
+          "meanM": 1.307587496954892,
+          "medianM": 0.8080056674106508,
+          "p90M": 3.033028578662713,
+          "maxM": 5.332777722774317
+        },
+        "arrivalWithin1m": {
+          "reached": 13,
+          "medianStepDifference": 0,
+          "medianTimingErrorEquivalentM": 0
+        },
+        "sessions": 20
+      }
+    },
+    "byPlatform": {
+      "android": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.132045309556635,
+            "medianM": 2.0131193098577826,
+            "p90M": 7.323647255176619,
+            "maxM": 12.543281853729205
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.548553315275229,
+            "medianM": 0,
+            "p90M": 4.645659945825687,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 4,
+            "medianStepDifference": -11.5,
+            "medianTimingErrorEquivalentM": 6.199553100119053
+          },
+          "sessions": 6
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.4268275081585178,
+            "medianM": 2.3228299729128237,
+            "p90M": 7.323647255176619,
+            "maxM": 12.543281853729205
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.4470963739296108,
+            "medianM": 0,
+            "p90M": 4.341289121788831,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 4,
+            "medianStepDifference": -15,
+            "medianTimingErrorEquivalentM": 8.218012248995024
+          },
+          "sessions": 6
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.716485720042641,
+            "medianM": 2.8095768372632364,
+            "p90M": 8.251096034216383,
+            "maxM": 14.343475082736646
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.4213983986545669,
+            "medianM": 0,
+            "p90M": 4.264195195963701,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 4,
+            "medianStepDifference": -12.5,
+            "medianTimingErrorEquivalentM": 6.803500672133046
+          },
+          "sessions": 6
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 2.4312755966038013,
+            "medianM": 1.7031153964654875,
+            "p90M": 5.806537963073561,
+            "maxM": 8.774462103001085
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 2.238864153723607,
+            "medianM": 1.600060498133484,
+            "p90M": 4.537861017492796,
+            "maxM": 5.136807709638923
+          },
+          "arrivalWithin1m": {
+            "reached": 2,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.5098394823933354
+          },
+          "sessions": 6
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 2.2759172263928016,
+            "medianM": 1.3537007925940472,
+            "p90M": 5.539435016529224,
+            "maxM": 9.371763158379792
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 2.4397438522785415,
+            "medianM": 2.0740850585737913,
+            "p90M": 4.7359965363453025,
+            "maxM": 5.332777722774317
+          },
+          "arrivalWithin1m": {
+            "reached": 2,
+            "medianStepDifference": -5.5,
+            "medianTimingErrorEquivalentM": 2.6712544688497473
+          },
+          "sessions": 6
+        }
+      },
+      "ios": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6577188812190516,
+            "medianM": 0.4826659683974732,
+            "p90M": 1.6200250067494992,
+            "maxM": 3.0971066305504777
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.0618651304744648,
+            "medianM": 0.929131989165171,
+            "p90M": 2.4776853044403895,
+            "maxM": 3.0971066305504777
+          },
+          "arrivalWithin1m": {
+            "reached": 7,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2237348149979754
+          },
+          "sessions": 14
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.596872737035303,
+            "medianM": 0.48757248287747146,
+            "p90M": 1.3584144904882953,
+            "maxM": 2.7168289809765644
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.9211642946276472,
+            "medianM": 0.9744555008317626,
+            "p90M": 1.815923786418977,
+            "maxM": 2.7168289809765644
+          },
+          "arrivalWithin1m": {
+            "reached": 7,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2237348149979754
+          },
+          "sessions": 14
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.5611375731384983,
+            "medianM": 0.443458887630775,
+            "p90M": 1.2207308405157207,
+            "maxM": 2.661943547017387
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.8372087031076781,
+            "medianM": 0.7263628769628253,
+            "p90M": 1.757309366412939,
+            "maxM": 1.8582639783302994
+          },
+          "arrivalWithin1m": {
+            "reached": 8,
+            "medianStepDifference": -1.5,
+            "medianTimingErrorEquivalentM": 0.9180775573663275
+          },
+          "sessions": 14
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6110293246145471,
+            "medianM": 0.4240507795965396,
+            "p90M": 1.305015261657399,
+            "maxM": 2.4543543955692435
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.7594749086147858,
+            "medianM": 0.7535437894950211,
+            "p90M": 0.9749812642243995,
+            "maxM": 1.1541832838396826
+          },
+          "arrivalWithin1m": {
+            "reached": 13,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 14
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.5827870708681959,
+            "medianM": 0.41533198635633184,
+            "p90M": 1.3159124384763095,
+            "maxM": 2.1761265778509618
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.8223776303876138,
+            "medianM": 0.7524189774711005,
+            "p90M": 1.2273800283454155,
+            "maxM": 1.5901215240649658
+          },
+          "arrivalWithin1m": {
+            "reached": 11,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 14
+        }
+      }
+    },
+    "byDirection": {
+      "forward": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.670664536996824,
+            "medianM": 0.6418100487405525,
+            "p90M": 5.479185599873803,
+            "maxM": 12.543281853729205
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.0482514749555492,
+            "medianM": 0,
+            "p90M": 2.3538010392183684,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 9,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.8134865330692889
+          },
+          "sessions": 13
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.6629421487207483,
+            "medianM": 0.6704324941426769,
+            "p90M": 5.419936603463239,
+            "maxM": 12.543281853729205
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.9951434322587175,
+            "medianM": 0,
+            "p90M": 1.825937927873926,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 9,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.8134865330692889
+          },
+          "sessions": 13
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.933700717829066,
+            "medianM": 0.7079100869829595,
+            "p90M": 6.246056132960092,
+            "maxM": 14.343475082736646
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.942030067323759,
+            "medianM": 0,
+            "p90M": 1.7912890474446446,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 10,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.216362918522084
+          },
+          "sessions": 13
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.3475514711904655,
+            "medianM": 0.6045210257686122,
+            "p90M": 3.975811293104202,
+            "maxM": 8.774462103001085
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.1250517234700768,
+            "medianM": 0.6476583457509335,
+            "p90M": 1.8694469191972383,
+            "maxM": 5.136807709638923
+          },
+          "arrivalWithin1m": {
+            "reached": 11,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6118674074989877
+          },
+          "sessions": 13
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.2138082726067463,
+            "medianM": 0.500006616892108,
+            "p90M": 3.233163142214035,
+            "maxM": 9.371763158379792
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.1831465720930576,
+            "medianM": 0.6324268116647715,
+            "p90M": 2.505225575252679,
+            "maxM": 5.332777722774317
+          },
+          "arrivalWithin1m": {
+            "reached": 11,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6118674074989877
+          },
+          "sessions": 13
+        }
+      },
+      "reverse": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.0121299905953647,
+            "medianM": 0.8734828432307236,
+            "p90M": 2.2957146864698075,
+            "maxM": 3.4602156837873337
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.5043089348388203,
+            "medianM": 1.858263978330305,
+            "p90M": 2.725453834884426,
+            "maxM": 3.0971066305504777
+          },
+          "arrivalWithin1m": {
+            "reached": 2,
+            "medianStepDifference": -4,
+            "medianTimingErrorEquivalentM": 2.328169811931014
+          },
+          "sessions": 7
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.182328083154192,
+            "medianM": 0.676740577109566,
+            "p90M": 2.6066261821194088,
+            "maxM": 7.29686434605418
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.2345733927144853,
+            "medianM": 1.405923404657803,
+            "p90M": 2.1170095955661608,
+            "maxM": 2.7168289809765644
+          },
+          "arrivalWithin1m": {
+            "reached": 2,
+            "medianStepDifference": -7.5,
+            "medianTimingErrorEquivalentM": 4.346628960806985
+          },
+          "sessions": 7
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.8556720967553738,
+            "medianM": 0.6670691204262731,
+            "p90M": 1.9849054488914533,
+            "maxM": 3.6031590667358486
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.1432744800322898,
+            "medianM": 1.2388426522202116,
+            "p90M": 1.7534646486282346,
+            "maxM": 1.7611540841976432
+          },
+          "arrivalWithin1m": {
+            "reached": 2,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.7301078418936893
+          },
+          "sessions": 7
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.888610827327964,
+            "medianM": 0.7291362795350249,
+            "p90M": 1.7025810422864995,
+            "maxM": 5.486228390056768
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.3485944625482351,
+            "medianM": 0.9650844826533693,
+            "p90M": 2.268075700442478,
+            "maxM": 3.9389143253466687
+          },
+          "arrivalWithin1m": {
+            "reached": 4,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 7
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.9462962612576206,
+            "medianM": 0.6738902668081277,
+            "p90M": 2.062779444994405,
+            "maxM": 4.924083202010787
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.5386920716982995,
+            "medianM": 1.2380511797352687,
+            "p90M": 2.6097590544054956,
+            "maxM": 4.139215349916288
+          },
+          "arrivalWithin1m": {
+            "reached": 2,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 7
+        }
+      }
+    },
+    "pairedComparisons": {
+      "all": {
+        "sessions": 20,
+        "beatsBaseline": {
+          "e0": 10,
+          "e1": 9,
+          "e2": 13,
+          "e3": 13
+        },
+        "mvBeatsMagnitude": {
+          "sequence": 7,
+          "grid": 12
+        }
+      },
+      "byPlatform": {
+        "android": {
+          "sessions": 6,
+          "beatsBaseline": {
+            "e0": 4,
+            "e1": 1,
+            "e2": 5,
+            "e3": 5
+          },
+          "mvBeatsMagnitude": {
+            "sequence": 1,
+            "grid": 4
+          }
+        },
+        "ios": {
+          "sessions": 14,
+          "beatsBaseline": {
+            "e0": 6,
+            "e1": 8,
+            "e2": 8,
+            "e3": 8
+          },
+          "mvBeatsMagnitude": {
+            "sequence": 6,
+            "grid": 8
+          }
+        }
+      }
+    }
+  },
+  "folds": [
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl",
+      "sha256": "748bf6c7e2a75969a47a328a80ac3a83833758a1042103a1272b4ce9ccbef697",
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "direction": "forward",
+      "steps": 108,
+      "endpointAlignedStrideM": 0.4645659945825647,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 6.271640926864612,
+            "medianM": 6.271640926864606,
+            "p90M": 11.1960404694398,
+            "maxM": 12.543281853729205
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -28,
+            "medianTimingErrorEquivalentM": 13.007847848311814
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 6.253499662180832,
+            "medianM": 6.271640926864606,
+            "p90M": 11.1960404694398,
+            "maxM": 12.543281853729205
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -28,
+            "medianTimingErrorEquivalentM": 13.007847848311814
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 13,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 12
+          },
+          "references": 115
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 7.774988957224061,
+            "medianM": 7.607268161289483,
+            "p90M": 12.99623369844721,
+            "maxM": 14.343475082736646
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -32,
+            "medianTimingErrorEquivalentM": 14.86611182664207
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 13,
+            "applied": 4,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 115
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 4.568680520974647,
+            "medianM": 4.4100019339624605,
+            "p90M": 8.513876068743947,
+            "maxM": 8.774462103001085
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.6092294933176632,
+            "medianM": 0.6092294933176632,
+            "p90M": 0.6092294933176632,
+            "maxM": 0.6092294933176632
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 0.9291319891651294
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 4.876784722173138,
+            "medianM": 4.760803004214383,
+            "p90M": 8.952732619197784,
+            "maxM": 9.371763158379792
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5126863445223009,
+            "medianM": 0.5126863445223009,
+            "p90M": 0.5126863445223009,
+            "maxM": 0.5126863445223009
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -7,
+            "medianTimingErrorEquivalentM": 3.2519619620779534
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl",
+      "sha256": "4146c8c88de6741f4508dbf955b1c106da5604cc30b2ed7410206c0c1639e052",
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "direction": "forward",
+      "steps": 96,
+      "endpointAlignedStrideM": 0.5226367439053853,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.919775579290374,
+            "medianM": 3.9197755792903717,
+            "p90M": 7.016882209840787,
+            "maxM": 7.83955115858074
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -16,
+            "medianTimingErrorEquivalentM": 8.362187902486165
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.906870968329747,
+            "medianM": 3.8229909970856717,
+            "p90M": 7.016882209840787,
+            "maxM": 7.83955115858074
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -16,
+            "medianTimingErrorEquivalentM": 8.362187902486165
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 12,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 11
+          },
+          "references": 121
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 4.439326437966045,
+            "medianM": 4.544246535776356,
+            "p90M": 7.641353166326766,
+            "maxM": 8.36723753286202
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -17,
+            "medianTimingErrorEquivalentM": 8.88482464639155
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 12,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 10
+          },
+          "references": 121
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 2.796384461578452,
+            "medianM": 2.5241793196388453,
+            "p90M": 4.9018777870150565,
+            "maxM": 5.390140058095554
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5481123977714191,
+            "medianM": 0.5481123977714191,
+            "p90M": 0.5481123977714191,
+            "maxM": 0.5481123977714191
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -4,
+            "medianTimingErrorEquivalentM": 2.090546975621541
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.7178568445703373,
+            "medianM": 1.3838139985826476,
+            "p90M": 3.6654569870466425,
+            "maxM": 3.7292053985512013
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5056135793107615,
+            "medianM": 0.5056135793107615,
+            "p90M": 0.5056135793107615,
+            "maxM": 0.5056135793107615
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -4,
+            "medianTimingErrorEquivalentM": 2.090546975621541
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "sha256": "0436540d9e5eeaabbf66d49716cb0cc542bcb4b113aae255dc5be596aa7492cc",
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "direction": "reverse",
+      "steps": 87,
+      "endpointAlignedStrideM": 0.5767026139645631,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.7301078418936633,
+            "medianM": 1.7301078418936873,
+            "p90M": 3.0928347593358327,
+            "maxM": 3.4602156837873337
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -7,
+            "medianTimingErrorEquivalentM": 4.036918297751942
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.9462180513516056,
+            "medianM": 2.960427289527111,
+            "p90M": 6.934304680100853,
+            "maxM": 7.29686434605418
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -14,
+            "medianTimingErrorEquivalentM": 8.073836595503884
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 3,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 36
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.905282543025149,
+            "medianM": 2.1687961550804005,
+            "p90M": 3.2357781422843535,
+            "maxM": 3.6031590667358486
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -6,
+            "medianTimingErrorEquivalentM": 3.4602156837873785
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 7,
+            "noReference": 0,
+            "ambiguous": 3
+          },
+          "references": 36
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.251043877723479,
+            "medianM": 1.3048222934046052,
+            "p90M": 1.8580055946606493,
+            "maxM": 1.9443389942573948
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.1081180327805602,
+            "medianM": 1.1081180327805602,
+            "p90M": 1.1081180327805602,
+            "maxM": 1.1081180327805602
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7257155438886669,
+            "medianM": 0.7474704641000809,
+            "p90M": 1.1420151763232897,
+            "maxM": 1.5638403038109807
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.2380511797352687,
+            "medianM": 1.2380511797352687,
+            "p90M": 1.2380511797352687,
+            "maxM": 1.2380511797352687
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "sha256": "1151ac394094d34c76803372d34068d9cff2b810cb2287b05b6da1454056de0c",
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "direction": "forward",
+      "steps": 69,
+      "endpointAlignedStrideM": 0.7271467741292318,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.770390680670105,
+            "medianM": 3.7703906806701077,
+            "p90M": 6.700522866790873,
+            "maxM": 7.43305591332107
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 7.43305591332107,
+            "medianM": 7.43305591332107,
+            "p90M": 7.43305591332107,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.770390680670105,
+            "medianM": 3.7703906806701077,
+            "p90M": 6.700522866790873,
+            "maxM": 7.43305591332107
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 7.43305591332107,
+            "medianM": 7.43305591332107,
+            "p90M": 7.43305591332107,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 135
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.770390680670105,
+            "medianM": 3.7703906806701077,
+            "p90M": 6.700522866790873,
+            "maxM": 7.43305591332107
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 7.43305591332107,
+            "medianM": 7.43305591332107,
+            "p90M": 7.43305591332107,
+            "maxM": 7.43305591332107
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 8,
+            "applied": 0,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 135
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.309004044531731,
+            "medianM": 3.034795892629404,
+            "p90M": 5.815975400430726,
+            "maxM": 6.1455584303501
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 5.136807709638923,
+            "medianM": 5.136807709638923,
+            "p90M": 5.136807709638923,
+            "maxM": 5.136807709638923
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 3.1053005835250205,
+            "medianM": 2.6906887404511046,
+            "p90M": 5.503073570511421,
+            "maxM": 5.716306831389836
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 5.332777722774317,
+            "medianM": 5.332777722774317,
+            "p90M": 5.332777722774317,
+            "maxM": 5.332777722774317
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "sha256": "40c42039f9b994f768bdeb66656303b5e8add21b1e65638fa07881aec147b776",
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "direction": "forward",
+      "steps": 85,
+      "endpointAlignedStrideM": 0.5902720872343176,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.180544174468618,
+            "medianM": 1.1805441744686362,
+            "p90M": 2.1162347423807764,
+            "maxM": 2.36108834893723
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -5,
+            "medianTimingErrorEquivalentM": 2.9513604361715875
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.1564049610246219,
+            "medianM": 1.1805441744686362,
+            "p90M": 2.0579362646292414,
+            "maxM": 2.302789871185688
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -4,
+            "medianTimingErrorEquivalentM": 2.3610883489372703
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 127
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 2.4728535012571156,
+            "medianM": 2.6270751536786427,
+            "p90M": 3.577340341028688,
+            "maxM": 3.8221939475851414
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -8,
+            "medianTimingErrorEquivalentM": 4.7221766978745405
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 127
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6559269656997189,
+            "medianM": 0.5191939700679491,
+            "p90M": 1.5653438274645788,
+            "maxM": 2.2142086736352837
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 2.092002963486408,
+            "medianM": 2.092002963486408,
+            "p90M": 2.092002963486408,
+            "maxM": 2.092002963486408
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.4236822579284964,
+            "medianM": 0.27043313652048084,
+            "p90M": 0.5939021225602024,
+            "maxM": 2.9101189374123138
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 2.9101189374123138,
+            "medianM": 2.9101189374123138,
+            "p90M": 2.9101189374123138,
+            "maxM": 2.9101189374123138
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "sha256": "423e57c8c3ff2ee633fce1f72ffd2a21365c7372b4a063c8c3da368530dc3b95",
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "direction": "reverse",
+      "steps": 78,
+      "endpointAlignedStrideM": 0.6432452232681666,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.9410439377441966,
+            "medianM": 0.9410439377441957,
+            "p90M": 1.674819970213089,
+            "maxM": 1.858263978330305
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.858263978330305,
+            "medianM": 1.858263978330305,
+            "p90M": 1.858263978330305,
+            "maxM": 1.858263978330305
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.5130879637281558,
+            "medianM": 0.44608193644269356,
+            "p90M": 1.0660783221393777,
+            "maxM": 1.2495223302565939
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.2495223302565939,
+            "medianM": 1.2495223302565939,
+            "p90M": 1.2495223302565939,
+            "maxM": 1.2495223302565939
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 40
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.5351128248856175,
+            "medianM": 0.4708300365077225,
+            "p90M": 1.0469319185827692,
+            "maxM": 1.1657279333557184
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.0953344786063313,
+            "medianM": 1.0953344786063313,
+            "p90M": 1.0953344786063313,
+            "maxM": 1.0953344786063313
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 3,
+            "noReference": 0,
+            "ambiguous": 6
+          },
+          "references": 40
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.4970621016395838,
+            "medianM": 1.1210300246314286,
+            "p90M": 3.905250368310333,
+            "maxM": 5.486228390056768
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 3.9389143253466687,
+            "medianM": 3.9389143253466687,
+            "p90M": 3.9389143253466687,
+            "maxM": 3.9389143253466687
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 2.3754066387759205,
+            "medianM": 2.6316507810936756,
+            "p90M": 4.287266522192615,
+            "maxM": 4.924083202010787
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 4.139215349916288,
+            "medianM": 4.139215349916288,
+            "p90M": 4.139215349916288,
+            "maxM": 4.139215349916288
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170448.jsonl",
+      "sha256": "160f26a38538f7440014f631790e1b90cafdd0b3530a896b66368fe60eaaa861",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 82,
+      "endpointAlignedStrideM": 0.6118674074989877,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.30593370374947637,
+            "medianM": 0.30593370374947604,
+            "p90M": 0.5506806667490545,
+            "maxM": 0.6118674074989485
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2237348149979754
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.30593370374947637,
+            "medianM": 0.30593370374947604,
+            "p90M": 0.5506806667490545,
+            "maxM": 0.6118674074989485
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2237348149979754
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 0,
+            "noReference": 0,
+            "ambiguous": 10
+          },
+          "references": 295
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.4607890352769989,
+            "medianM": 0.6118674074989823,
+            "p90M": 0.8528374111929964,
+            "maxM": 0.9140241519428898
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.835602222496963
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 295
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.2840767348581061,
+            "medianM": 0.2997283896255783,
+            "p90M": 0.539325008641736,
+            "maxM": 0.6476583457509335
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.6476583457509335,
+            "medianM": 0.6476583457509335,
+            "p90M": 0.6476583457509335,
+            "maxM": 0.6476583457509335
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6118674074989877
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.2779813818681605,
+            "medianM": 0.2872446865410545,
+            "p90M": 0.5193727023003767,
+            "maxM": 0.5714407053481594
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5481830512444503,
+            "medianM": 0.5481830512444503,
+            "p90M": 0.5481830512444503,
+            "maxM": 0.5481830512444503
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6118674074989877
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170648.jsonl",
+      "sha256": "72994a78fff96b93e1d8436252a15045c5debc40b5cccad238f3b2474581bd0b",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 83,
+      "endpointAlignedStrideM": 0.6044955110230963,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6044955110230792,
+            "medianM": 0.6044955110230958,
+            "p90M": 1.08659933833284,
+            "maxM": 1.208991022046149
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.8134865330692889
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.5964510782164549,
+            "medianM": 0.6044955110230958,
+            "p90M": 1.0567477081588592,
+            "maxM": 1.1791393918721766
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.8134865330692889
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 295
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6187627020407215,
+            "medianM": 0.6828560402297832,
+            "p90M": 1.1425711449090556,
+            "maxM": 1.264962828622373
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2089910220461926
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 3,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 295
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.45421787273554315,
+            "medianM": 0.3755736678974557,
+            "p90M": 0.8742869313353437,
+            "maxM": 1.2119211290804586
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.7908623764591098,
+            "medianM": 0.7908623764591098,
+            "p90M": 0.7908623764591098,
+            "maxM": 0.7908623764591098
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.29596369846945425,
+            "medianM": 0.21997645741018168,
+            "p90M": 0.6873847960768827,
+            "maxM": 0.9087183808577066
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.8526604407181395,
+            "medianM": 0.8526604407181395,
+            "p90M": 0.8526604407181395,
+            "maxM": 0.8526604407181395
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170852.jsonl",
+      "sha256": "8f221a8985cc44f1cfb5252ba69b0e0ec5ff08c040981d5fd10537cf2b6777ba",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 81,
+      "endpointAlignedStrideM": 0.6194213261100863,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.717693203037341e-14,
+            "medianM": 1.7763568394002505e-14,
+            "p90M": 3.552713678800501e-14,
+            "maxM": 4.263256414560601e-14
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 4.263256414560601e-14,
+            "medianM": 4.263256414560601e-14,
+            "p90M": 4.263256414560601e-14,
+            "maxM": 4.263256414560601e-14
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6194213261100863
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.0037314537717566556,
+            "medianM": 1.7763568394002505e-14,
+            "p90M": 0.033583083945693204,
+            "maxM": 0.03358308394570031
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6194213261100863
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 296
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.18188084333373852,
+            "medianM": 0.25252158344965636,
+            "p90M": 0.381472889860504,
+            "maxM": 0.3814728898605111
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.25252158344966347,
+            "medianM": 0.25252158344966347,
+            "p90M": 0.25252158344966347,
+            "maxM": 0.25252158344966347
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6194213261100863
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 296
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7869472060034776,
+            "medianM": 0.6924308270952366,
+            "p90M": 1.6025673339606286,
+            "maxM": 1.9869977487565151
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.581684944900374,
+            "medianM": 0.581684944900374,
+            "p90M": 0.581684944900374,
+            "maxM": 0.581684944900374
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6194213261100863
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6208867702297399,
+            "medianM": 0.5717493944018948,
+            "p90M": 1.1631028190659656,
+            "maxM": 1.4274414489064924
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.6324268116647715,
+            "medianM": 0.6324268116647715,
+            "p90M": 0.6324268116647715,
+            "maxM": 0.6324268116647715
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6194213261100863
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl",
+      "sha256": "5b0e6c73cb004b1c2db0b4cb7e4d0a506e1b084452251aa4778c6c8a12d658f5",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 83,
+      "endpointAlignedStrideM": 0.6044955110230963,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6044955110230792,
+            "medianM": 0.6044955110230958,
+            "p90M": 1.08659933833284,
+            "maxM": 1.208991022046149
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.8134865330692889
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.5970326034795843,
+            "medianM": 0.6044955110230958,
+            "p90M": 1.0567477081588592,
+            "maxM": 1.1791393918721766
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -3,
+            "medianTimingErrorEquivalentM": 1.8134865330692889
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 295
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.46581796931151936,
+            "medianM": 0.4437595972856556,
+            "p90M": 0.8288456265299828,
+            "maxM": 0.9512373102433003
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2089910220461926
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 3,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 295
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.28261748978019235,
+            "medianM": 0.25902922547746243,
+            "p90M": 0.4691372152760975,
+            "maxM": 0.6103915646187588
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5827069348225109,
+            "medianM": 0.5827069348225109,
+            "p90M": 0.5827069348225109,
+            "maxM": 0.5827069348225109
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6044955110230963
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.3034580036041431,
+            "medianM": 0.3272083630772329,
+            "p90M": 0.4289818057935818,
+            "maxM": 0.6052075627880278
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.6048082791045886,
+            "medianM": 0.6048082791045886,
+            "p90M": 0.6048082791045886,
+            "maxM": 0.6048082791045886
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl",
+      "sha256": "339142dee5907606a51e3139b6e13b79147492e56adacdc684712af0229884bc",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "reverse",
+      "steps": 77,
+      "endpointAlignedStrideM": 0.6515990573365843,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.2549315178334481,
+            "medianM": 1.2549315178334446,
+            "p90M": 2.2331345471190063,
+            "maxM": 2.4776853044403913
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 2.4776853044403913,
+            "medianM": 2.4776853044403913,
+            "p90M": 2.4776853044403913,
+            "maxM": 2.4776853044403913
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.8005738066542237,
+            "medianM": 0.7517980684976067,
+            "p90M": 1.4725792479711726,
+            "maxM": 1.7171300052925578
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.7171300052925578,
+            "medianM": 1.7171300052925578,
+            "p90M": 1.7171300052925578,
+            "maxM": 1.7171300052925578
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 144
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.8127329052085371,
+            "medianM": 0.7517980684976067,
+            "p90M": 1.5037876009272435,
+            "maxM": 1.7483383582486287
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.7483383582486287,
+            "medianM": 1.7483383582486287,
+            "p90M": 1.7483383582486287,
+            "maxM": 1.7483383582486287
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 3,
+            "noReference": 0,
+            "ambiguous": 6
+          },
+          "references": 144
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6134265902291466,
+            "medianM": 0.6069771462733016,
+            "p90M": 0.9399713917436927,
+            "maxM": 1.1571679454136472
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.9650844826533693,
+            "medianM": 0.9650844826533693,
+            "p90M": 0.9650844826533693,
+            "maxM": 0.9650844826533693
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7050284459108248,
+            "medianM": 0.695309459487472,
+            "p90M": 1.037509882483978,
+            "maxM": 1.5901215240649658
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.5901215240649658,
+            "medianM": 1.5901215240649658,
+            "p90M": 1.5901215240649658,
+            "maxM": 1.5901215240649658
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl",
+      "sha256": "f655d48b3a907deb7778bc1239f3ae37eec43ec2e955ba7c506582363f35591c",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 78,
+      "endpointAlignedStrideM": 0.6432452232681666,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.9410439377441864,
+            "medianM": 0.941043937744185,
+            "p90M": 1.6748199702130782,
+            "maxM": 1.8582639783302994
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.8582639783302994,
+            "medianM": 1.8582639783302994,
+            "p90M": 1.8582639783302994,
+            "maxM": 1.8582639783302994
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.9410439377441864,
+            "medianM": 0.941043937744185,
+            "p90M": 1.6748199702130782,
+            "maxM": 1.8582639783302994
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.8582639783302994,
+            "medianM": 1.8582639783302994,
+            "p90M": 1.8582639783302994,
+            "maxM": 1.8582639783302994
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 297
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.9410439377441864,
+            "medianM": 0.941043937744185,
+            "p90M": 1.6748199702130782,
+            "maxM": 1.8582639783302994
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.8582639783302994,
+            "medianM": 1.8582639783302994,
+            "p90M": 1.8582639783302994,
+            "maxM": 1.8582639783302994
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 297
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.2602908670494464,
+            "medianM": 1.3348820333289035,
+            "p90M": 2.2428109707165773,
+            "maxM": 2.4543543955692435
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.7975665328200847,
+            "medianM": 0.7975665328200847,
+            "p90M": 0.7975665328200847,
+            "maxM": 0.7975665328200847
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.0471055011429513,
+            "medianM": 1.2356701341103955,
+            "p90M": 1.5701036477791745,
+            "maxM": 2.0135448625435046
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.8405046524743298,
+            "medianM": 0.8405046524743298,
+            "p90M": 0.8405046524743298,
+            "maxM": 0.8405046524743298
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl",
+      "sha256": "ea005fd1e98b5f0250931a1a84cd11ee3d8a1ced8d26824ba08566c968d40816",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "reverse",
+      "steps": 78,
+      "endpointAlignedStrideM": 0.6432452232681666,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.9410439377441966,
+            "medianM": 0.9410439377441957,
+            "p90M": 1.674819970213089,
+            "maxM": 1.858263978330305
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.858263978330305,
+            "medianM": 1.858263978330305,
+            "p90M": 1.858263978330305,
+            "maxM": 1.858263978330305
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6338966053960364,
+            "medianM": 0.5607662881702833,
+            "p90M": 1.2945423206391757,
+            "maxM": 1.4779863287563917
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.4779863287563917,
+            "medianM": 1.4779863287563917,
+            "p90M": 1.4779863287563917,
+            "maxM": 1.4779863287563917
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 143
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6948636671106981,
+            "medianM": 0.7266288633214737,
+            "p90M": 1.0958992692717258,
+            "maxM": 1.2388426522202116
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.2388426522202116,
+            "medianM": 1.2388426522202116,
+            "p90M": 1.2388426522202116,
+            "maxM": 1.2388426522202116
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 143
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.4249061082568595,
+            "medianM": 0.2761078453540966,
+            "p90M": 1.3232875012039746,
+            "maxM": 1.562510749271727
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.6078808796151088,
+            "medianM": 0.6078808796151088,
+            "p90M": 0.6078808796151088,
+            "maxM": 0.6078808796151088
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.29879775593079333,
+            "medianM": 0.254630870249855,
+            "p90M": 0.6083291411466714,
+            "maxM": 0.9223423499421344
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.6880168084758207,
+            "medianM": 0.6880168084758207,
+            "p90M": 0.6880168084758207,
+            "maxM": 0.6880168084758207
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl",
+      "sha256": "2f4b6089eb5737591abf8b431c65672bb912f338a15570d4dacf16463b9a99db",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 80,
+      "endpointAlignedStrideM": 0.6271640926864623,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.31358204634324843,
+            "medianM": 0.3135820463432477,
+            "p90M": 0.5582534701567504,
+            "maxM": 0.6194213261101282
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.6194213261101282,
+            "medianM": 0.6194213261101282,
+            "p90M": 0.6194213261101282,
+            "maxM": 0.6194213261101282
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.3509739434681863,
+            "medianM": 0.3135820463432477,
+            "p90M": 0.6489004934899335,
+            "maxM": 0.7100683494433113
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.7100683494433113,
+            "medianM": 0.7100683494433113,
+            "p90M": 0.7100683494433113,
+            "maxM": 0.7100683494433113
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 296
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.30954485226626893,
+            "medianM": 0.2958007590102003,
+            "p90M": 0.5792155943025407,
+            "maxM": 0.6403834502559178
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.2636818156145466,
+            "medianM": 0.2636818156145466,
+            "p90M": 0.2636818156145466,
+            "maxM": 0.2636818156145466
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6271640926864623
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 3,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 296
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7404527008877003,
+            "medianM": 0.9313061448736999,
+            "p90M": 1.3375411662796644,
+            "maxM": 1.5619673229354234
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5648941600270518,
+            "medianM": 0.5648941600270518,
+            "p90M": 0.5648941600270518,
+            "maxM": 0.5648941600270518
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6271640926864623
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.8295260629136745,
+            "medianM": 0.9041596272133852,
+            "p90M": 1.4432643226159276,
+            "maxM": 1.702663397310868
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5332613805007185,
+            "medianM": 0.5332613805007185,
+            "p90M": 0.5332613805007185,
+            "maxM": 0.5332613805007185
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6271640926864623
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl",
+      "sha256": "cd38cb162c197665f38b1881b72c36bad91d98531c8be07a1c03715a79812a3a",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "reverse",
+      "steps": 79,
+      "endpointAlignedStrideM": 0.6351028786698353,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6272621023899883,
+            "medianM": 0.6272621023899916,
+            "p90M": 1.1165265422541775,
+            "maxM": 1.2388426522202187
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.2388426522202187,
+            "medianM": 1.2388426522202187,
+            "p90M": 1.2388426522202187,
+            "maxM": 1.2388426522202187
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7626186613267656,
+            "medianM": 0.7943428548275762,
+            "p90M": 1.283607294691762,
+            "maxM": 1.405923404657803
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.405923404657803,
+            "medianM": 1.405923404657803,
+            "p90M": 1.405923404657803,
+            "maxM": 1.405923404657803
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 143
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.9382318847493144,
+            "medianM": 1.1271869823115424,
+            "p90M": 1.8010866251508544,
+            "maxM": 2.661943547017387
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.5372474933343863,
+            "medianM": 0.5372474933343863,
+            "p90M": 0.5372474933343863,
+            "maxM": 0.5372474933343863
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 5,
+            "noReference": 0,
+            "ambiguous": 4
+          },
+          "references": 143
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.31485778519075,
+            "medianM": 1.2739912573429413,
+            "p90M": 2.0411364581084355,
+            "maxM": 2.330787942634821
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.9497550310713248,
+            "medianM": 0.9497550310713248,
+            "p90M": 0.9497550310713248,
+            "maxM": 0.9497550310713248
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.3920508037503598,
+            "medianM": 1.3735200937216847,
+            "p90M": 2.094103066398593,
+            "maxM": 2.1761265778509618
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.107239571562379,
+            "medianM": 1.107239571562379,
+            "p90M": 1.107239571562379,
+            "maxM": 1.107239571562379
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl",
+      "sha256": "32c50908ba8c8f6a96f95c6f722d7afc22641578aff1c3816ea72852132b9647",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 77,
+      "endpointAlignedStrideM": 0.6515990573365843,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.2549315178334377,
+            "medianM": 1.254931517833434,
+            "p90M": 2.2331345471189934,
+            "maxM": 2.477685304440385
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 2.477685304440385,
+            "medianM": 2.477685304440385,
+            "p90M": 2.477685304440385,
+            "maxM": 2.477685304440385
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.1486193105233884,
+            "medianM": 1.254931517833434,
+            "p90M": 1.8226371965379429,
+            "maxM": 2.0271970672694053
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.6966337260484323,
+            "medianM": 1.6966337260484323,
+            "p90M": 1.6966337260484323,
+            "maxM": 1.6966337260484323
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 298
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7950413498197202,
+            "medianM": 0.7910694111214518,
+            "p90M": 1.3156770410644727,
+            "maxM": 1.5233893239020233
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.5233893239020233,
+            "medianM": 1.5233893239020233,
+            "p90M": 1.5233893239020233,
+            "maxM": 1.5233893239020233
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 298
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.3056492874750152,
+            "medianM": 0.16759176236012863,
+            "p90M": 0.6566783683262813,
+            "maxM": 0.933747533286649
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.8470670510696152,
+            "medianM": 0.8470670510696152,
+            "p90M": 0.8470670510696152,
+            "maxM": 0.8470670510696152
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.2648752158424704,
+            "medianM": 0.16212738014493766,
+            "p90M": 0.6100551877584424,
+            "maxM": 0.7755066823469718
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.7755066823469718,
+            "medianM": 0.7755066823469718,
+            "p90M": 0.7755066823469718,
+            "maxM": 0.7755066823469718
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl",
+      "sha256": "bff7f6ed51f0373ec71818648b2d141502c0fa20dd58a994fd7dedc14309a918",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "reverse",
+      "steps": 76,
+      "endpointAlignedStrideM": 0.6601727291436447,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.568929016792021,
+            "medianM": 1.5689290167920227,
+            "p90M": 2.791471107798793,
+            "maxM": 3.0971066305504777
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 3.0971066305504777,
+            "medianM": 3.0971066305504777,
+            "p90M": 3.0971066305504777,
+            "maxM": 3.0971066305504777
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 1.2637061664761176,
+            "medianM": 1.1886513672181103,
+            "p90M": 2.4111934582248797,
+            "maxM": 2.7168289809765644
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 2.7168289809765644,
+            "medianM": 2.7168289809765644,
+            "p90M": 2.7168289809765644,
+            "maxM": 2.7168289809765644
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 144
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.8639318442617245,
+            "medianM": 0.8403836074466877,
+            "p90M": 1.4555185614459583,
+            "maxM": 1.7611540841976432
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.7611540841976432,
+            "medianM": 1.7611540841976432,
+            "p90M": 1.7611540841976432,
+            "maxM": 1.7611540841976432
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 3,
+            "noReference": 0,
+            "ambiguous": 6
+          },
+          "references": 144
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.4484574830038552,
+            "medianM": 0.3796301524320418,
+            "p90M": 1.0086304147990814,
+            "maxM": 1.1887459295894525
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.1541832838396826,
+            "medianM": 1.1541832838396826,
+            "p90M": 1.1541832838396826,
+            "maxM": 1.1541832838396826
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.4282548114702158,
+            "medianM": 0.34057321444025135,
+            "p90M": 1.1724817571270205,
+            "maxM": 1.3622873835983293
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.278868795538145,
+            "medianM": 1.278868795538145,
+            "p90M": 1.278868795538145,
+            "maxM": 1.278868795538145
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl",
+      "sha256": "000fe494b72c1309ae9ea38b90613b6828613a684a3bc22d371be00e55ae9b5d",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 82,
+      "endpointAlignedStrideM": 0.6118674074989877,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.30593370374947637,
+            "medianM": 0.30593370374947604,
+            "p90M": 0.5506806667490545,
+            "maxM": 0.6118674074989485
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2237348149979754
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.34332560087441516,
+            "medianM": 0.30593370374947604,
+            "p90M": 0.6360399470544664,
+            "maxM": 0.6972266878043598
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2237348149979754
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 1,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 295
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.12901919240630855,
+            "medianM": 0.11142029951368837,
+            "p90M": 0.2639747934895706,
+            "maxM": 0.29460282583282904
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0,
+            "medianM": 0,
+            "p90M": 0,
+            "maxM": 0
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -2,
+            "medianTimingErrorEquivalentM": 1.2237348149979754
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 295
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.26407255924042966,
+            "medianM": 0.26436870110480637,
+            "p90M": 0.4429513230545818,
+            "maxM": 0.5576060044606024
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.44785675300634864,
+            "medianM": 0.44785675300634864,
+            "p90M": 0.44785675300634864,
+            "maxM": 0.44785675300634864
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6118674074989877
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.20748258319079182,
+            "medianM": 0.18779111606407106,
+            "p90M": 0.40118238212633706,
+            "maxM": 0.508513881000189
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.44670542852195183,
+            "medianM": 0.44670542852195183,
+            "p90M": 0.44670542852195183,
+            "maxM": 0.44670542852195183
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6118674074989877
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl",
+      "sha256": "fc849ca751678344d26b1e67b6ddc07bcb2fff428dac90a62590a27d2065127f",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "reverse",
+      "steps": 81,
+      "endpointAlignedStrideM": 0.6194213261100863,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 2.7151120857777438e-14,
+            "medianM": 2.842170943040401e-14,
+            "p90M": 4.618527782440651e-14,
+            "maxM": 4.796163466380676e-14
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 4.618527782440651e-14,
+            "medianM": 4.618527782440651e-14,
+            "p90M": 4.618527782440651e-14,
+            "maxM": 4.618527782440651e-14
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6194213261100863
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.0821718687047113,
+            "medianM": 0.07462269906148578,
+            "p90M": 0.12871092490598102,
+            "maxM": 0.12871092490598812
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.07462269906148578,
+            "medianM": 0.07462269906148578,
+            "p90M": 0.07462269906148578,
+            "maxM": 0.07462269906148578
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": -1,
+            "medianTimingErrorEquivalentM": 0.6194213261100863
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 8
+          },
+          "references": 142
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.14439957304866563,
+            "medianM": 0.12871092490596325,
+            "p90M": 0.2038347262108675,
+            "maxM": 1.6220042936188273
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.6220042936188273,
+            "medianM": 1.6220042936188273,
+            "p90M": 1.6220042936188273,
+            "maxM": 1.6220042936188273
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 10,
+            "applied": 4,
+            "noReference": 0,
+            "ambiguous": 6
+          },
+          "references": 142
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6188012478330467,
+            "medianM": 0.5890267934119332,
+            "p90M": 1.0718030275778432,
+            "maxM": 1.2274587399401433
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.7162252025309324,
+            "medianM": 0.7162252025309324,
+            "p90M": 0.7162252025309324,
+            "maxM": 0.7162252025309324
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7112216870450705,
+            "medianM": 0.7690408805585331,
+            "p90M": 1.2101923663204204,
+            "maxM": 1.3751641024342405
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.7293312725952292,
+            "medianM": 0.7293312725952292,
+            "p90M": 0.7293312725952292,
+            "maxM": 0.7293312725952292
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    },
+    {
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl",
+      "sha256": "7fe89824a3229b6aa79f749fe60990ca2bba051ad4deb2943ec6b616f82658c2",
+      "platform": "ios",
+      "device": "iPhone 13 Pro",
+      "direction": "forward",
+      "steps": 79,
+      "endpointAlignedStrideM": 0.6351028786698353,
+      "variants": {
+        "baseline": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6272621023899777,
+            "medianM": 0.6272621023899809,
+            "p90M": 1.1165265422541653,
+            "maxM": 1.2388426522202138
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.2388426522202138,
+            "medianM": 1.2388426522202138,
+            "p90M": 1.2388426522202138,
+            "maxM": 1.2388426522202138
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1
+        },
+        "e0": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.6272621023899777,
+            "medianM": 0.6272621023899809,
+            "p90M": 1.1165265422541653,
+            "maxM": 1.2388426522202138
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 1.2388426522202138,
+            "medianM": 1.2388426522202138,
+            "p90M": 1.2388426522202138,
+            "maxM": 1.2388426522202138
+          },
+          "arrivalWithin1m": {
+            "reached": 0,
+            "medianStepDifference": null,
+            "medianTimingErrorEquivalentM": null
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 0,
+            "noReference": 0,
+            "ambiguous": 9
+          },
+          "references": 297
+        },
+        "e1": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.5756229043933864,
+            "medianM": 0.6272621023899809,
+            "p90M": 0.9113620677424692,
+            "maxM": 1.0201038874485207
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.9154782605912644,
+            "medianM": 0.9154782605912644,
+            "p90M": 0.9154782605912644,
+            "maxM": 0.9154782605912644
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "sequence": {
+            "evaluated": 9,
+            "applied": 2,
+            "noReference": 0,
+            "ambiguous": 7
+          },
+          "references": 297
+        },
+        "e2": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.7915261751607473,
+            "medianM": 0.8813766636989868,
+            "p90M": 1.0473269178239035,
+            "maxM": 1.1763926848759354
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.9792227420405553,
+            "medianM": 0.9792227420405553,
+            "p90M": 0.9792227420405553,
+            "maxM": 0.9792227420405553
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1
+          }
+        },
+        "e3": {
+          "trajectoryWeakTruth": {
+            "meanM": 0.8150004991751805,
+            "medianM": 0.9488215057751788,
+            "p90M": 1.122526597131872,
+            "maxM": 1.1989226750533248
+          },
+          "terminalConfirmedEndpoint": {
+            "meanM": 0.8856521266141328,
+            "medianM": 0.8856521266141328,
+            "p90M": 0.8856521266141328,
+            "maxM": 0.8856521266141328
+          },
+          "arrivalWithin1m": {
+            "reached": 1,
+            "medianStepDifference": 0,
+            "medianTimingErrorEquivalentM": 0
+          },
+          "sessions": 1,
+          "coverage": {
+            "normDelta": 1,
+            "mvDelta": 1
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Intermediate truth is endpoint-aligned detected-step progress, not surveyed foot position.",
+    "Confirmed endpoint error is stronger evidence than intermediate trajectory error.",
+    "All sessions are the same user; platform-specific grids are evaluated separately.",
+    "m_v uses a causal accelerometer-vector EMA because TYPE_GRAVITY was not recorded.",
+    "Thresholds and grid-filter constants were fixed before examining this run and were not tuned on held-out folds.",
+    "The candidate grid is an offline review artifact and is not loaded by the app."
+  ]
+}

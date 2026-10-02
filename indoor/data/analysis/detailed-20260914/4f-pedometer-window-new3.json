@@ -1,0 +1,174 @@
+{
+  "purpose": "Compare the new iOS session-window Pedometer count with the current accelerometer PDR on the same user-confirmed 4F route. Analysis only.",
+  "routeReference": {
+    "meters": 50.19329386949539,
+    "nominalDetectorSteps": 81,
+    "start": "core center or right stair entry main-corridor line",
+    "end": "opposite endpoint"
+  },
+  "sessions": [
+    {
+      "file": "indoor_positioning_ios_20260914_200838.jsonl",
+      "sha256": "000fe494b72c1309ae9ea38b90613b6828613a684a3bc22d371be00e55ae9b5d",
+      "route": "core_to_right",
+      "durationSeconds": 51.302,
+      "completed": true,
+      "laps": {
+        "completed": 12,
+        "expected": 12
+      },
+      "counts": {
+        "accelerometer_detector": 82,
+        "watch_steps": 84,
+        "query_steps": 82,
+        "detector_minus_query": 0,
+        "query_supported": true,
+        "query_error": null
+      },
+      "endpoint": {
+        "truthMetricMeters": 0,
+        "legacyPdrErrorMeters": 0.6196702946851878,
+        "fusionOffErrorMeters": 0.4143197223058212,
+        "fusionOnErrorMeters": 0.41431972230581754,
+        "fusionOnMinusOffMapUnits": 4.884981308350689e-15,
+        "legacyZone": "RIGHT_STAIRS",
+        "fusionZone": "stairs_right"
+      },
+      "queryCountOnlyReferenceErrorMeters": 0.6196702946851282
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_200949.jsonl",
+      "sha256": "fc849ca751678344d26b1e67b6ddc07bcb2fff428dac90a62590a27d2065127f",
+      "route": "right_to_core",
+      "durationSeconds": 58.649,
+      "completed": true,
+      "laps": {
+        "completed": 12,
+        "expected": 12
+      },
+      "counts": {
+        "accelerometer_detector": 82,
+        "watch_steps": 83,
+        "query_steps": 83,
+        "detector_minus_query": -1,
+        "query_supported": true,
+        "query_error": null
+      },
+      "endpoint": {
+        "truthMetricMeters": 50.19329386949539,
+        "legacyPdrErrorMeters": 0.6196702946852,
+        "fusionOffErrorMeters": 0.6704043192924587,
+        "fusionOnErrorMeters": 0.6704043192924587,
+        "fusionOnMinusOffMapUnits": 0,
+        "legacyZone": "CORE",
+        "fusionZone": "core_junction"
+      },
+      "queryCountOnlyReferenceErrorMeters": 1.2393405893702565
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_201100.jsonl",
+      "sha256": "7fe89824a3229b6aa79f749fe60990ca2bba051ad4deb2943ec6b616f82658c2",
+      "route": "core_to_right",
+      "durationSeconds": 56.735,
+      "completed": true,
+      "laps": {
+        "completed": 12,
+        "expected": 12
+      },
+      "counts": {
+        "accelerometer_detector": 79,
+        "watch_steps": 81,
+        "query_steps": 81,
+        "detector_minus_query": -2,
+        "query_supported": true,
+        "query_error": null
+      },
+      "endpoint": {
+        "truthMetricMeters": 0,
+        "legacyPdrErrorMeters": 1.2393405893701974,
+        "fusionOffErrorMeters": 1.4636870511075235,
+        "fusionOnErrorMeters": 1.4636870511075222,
+        "fusionOnMinusOffMapUnits": -1.7763568394002505e-15,
+        "legacyZone": "RIGHT_STAIRS",
+        "fusionZone": "main_right"
+      },
+      "queryCountOnlyReferenceErrorMeters": 0
+    }
+  ],
+  "summary": {
+    "accelerometerDetector": {
+      "mean": 81,
+      "stdev": 1.4142135623730951,
+      "min": 79,
+      "max": 82
+    },
+    "watch": {
+      "mean": 82.66666666666667,
+      "stdev": 1.247219128924647,
+      "min": 81,
+      "max": 84
+    },
+    "query": {
+      "mean": 82,
+      "stdev": 0.816496580927726,
+      "min": 81,
+      "max": 83
+    },
+    "legacyPdrEndpointErrorMeters": {
+      "mean": 0.8262270595801949,
+      "stdev": 0.29211537831442147,
+      "min": 0.6196702946851878,
+      "max": 1.2393405893701974
+    },
+    "fusionOffEndpointErrorMeters": {
+      "mean": 0.8494703642352679,
+      "stdev": 0.44672245972020114,
+      "min": 0.4143197223058212,
+      "max": 1.4636870511075235
+    },
+    "fusionOnEndpointErrorMeters": {
+      "mean": 0.8494703642352661,
+      "stdev": 0.4467224597202017,
+      "min": 0.41431972230581754,
+      "max": 1.4636870511075222
+    },
+    "queryCountOnlyReferenceErrorMeters": {
+      "mean": 0.6196702946851282,
+      "stdev": 0.5059586769128837,
+      "min": 0,
+      "max": 1.2393405893702565
+    }
+  },
+  "conclusion": "query_steps is more stable in these three runs, but substituting it blindly would improve one forward run and worsen the reverse run. Keep it diagnostic until an independent holdout confirms a direction-independent rule.",
+  "queryStrideLearningLeaveOneOut": [
+    {
+      "file": "indoor_positioning_ios_20260914_200838.jsonl",
+      "learnedStrideMeters": 0.612113339871895,
+      "heldOutDetectorSteps": 82,
+      "heldOutQuerySteps": 82,
+      "detectorRuntimeEndpointErrorMeters": 0,
+      "queryCountReferenceErrorMeters": 0
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_200949.jsonl",
+      "learnedStrideMeters": 0.6158686364355263,
+      "heldOutDetectorSteps": 82,
+      "heldOutQuerySteps": 83,
+      "detectorRuntimeEndpointErrorMeters": 0.30793431821776096,
+      "queryCountReferenceErrorMeters": 0.92380295465329
+    },
+    {
+      "file": "indoor_positioning_ios_20260914_201100.jsonl",
+      "learnedStrideMeters": 0.6084035620544896,
+      "heldOutDetectorSteps": 79,
+      "heldOutQuerySteps": 81,
+      "detectorRuntimeEndpointErrorMeters": 2.1294124671907113,
+      "queryCountReferenceErrorMeters": 0.9126053430817294
+    }
+  ],
+  "queryStrideLearningLeaveOneOutSummary": {
+    "detectorRuntimeEndpointMAEMeters": 0.8124489284694908,
+    "queryCountReferenceMAEMeters": 0.6121360992450064,
+    "currentFixedDetectorEndpointMAEMeters": 0.8262270595801949
+  }
+}

@@ -1,0 +1,2128 @@
+{
+  "method": "All local 4F stationary files, curated priority, device+start dedup; malformed/incomplete/conflicting labels excluded. Whole-session median fingerprint diagnostic using production classifier; LOSO and leave-day-out; exact classroom anchors distinct; not online 5-second window accuracy.",
+  "inventory": [
+    {
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "day": "20260917",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 174,
+      "bleIds": 293,
+      "freshScans": 3
+    },
+    {
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103649__verified-f4-main-left-4225.jsonl",
+      "day": "20260917",
+      "device": "samsung SM-S938N",
+      "zone": "main_left",
+      "anchor": "main_left:4225",
+      "quality": [],
+      "steps": 0,
+      "apIds": 139,
+      "bleIds": 400,
+      "freshScans": 3
+    },
+    {
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "day": "20260917",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_left",
+      "anchor": "stairs_left",
+      "quality": [],
+      "steps": 0,
+      "apIds": 137,
+      "bleIds": 287,
+      "freshScans": 3
+    },
+    {
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "day": "20260917",
+      "device": "samsung SM-S938N",
+      "zone": "main_right",
+      "anchor": "main_right:4209",
+      "quality": [],
+      "steps": 0,
+      "apIds": 149,
+      "bleIds": 275,
+      "freshScans": 3
+    },
+    {
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "day": "20260917",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_right",
+      "anchor": "stairs_right",
+      "quality": [],
+      "steps": 2,
+      "apIds": 102,
+      "bleIds": 124,
+      "freshScans": 3
+    },
+    {
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "day": "20260922",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_left",
+      "anchor": "stairs_left",
+      "quality": [],
+      "steps": 0,
+      "apIds": 125,
+      "bleIds": 57,
+      "freshScans": 2
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "day": "20260915",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 107,
+      "bleIds": 72,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "day": "20260915",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 96,
+      "bleIds": 100,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "day": "20260915",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 0,
+      "bleIds": 89,
+      "freshScans": 0
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "day": "20260915",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_right",
+      "anchor": "stairs_right",
+      "quality": [],
+      "steps": 0,
+      "apIds": 100,
+      "bleIds": 63,
+      "freshScans": 3
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-18/device-pull/indoor_positioning_20260917_103837.jsonl",
+      "day": "20260917",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_left",
+      "anchor": "stairs_left",
+      "quality": [
+        "invalid_json",
+        "contradictory_label",
+        "incomplete"
+      ],
+      "apIds": 110,
+      "bleIds": 186,
+      "freshScans": 2
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "day": "20260919",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_right",
+      "anchor": "stairs_right",
+      "quality": [],
+      "steps": 0,
+      "apIds": 82,
+      "bleIds": 18,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111707.jsonl",
+      "day": "20260919",
+      "device": "samsung SM-S938N",
+      "zone": "main_right",
+      "anchor": "main_right:4206",
+      "quality": [],
+      "steps": 0,
+      "apIds": 96,
+      "bleIds": 20,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "day": "20260919",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 1,
+      "apIds": 0,
+      "bleIds": 20,
+      "freshScans": 0
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "day": "20260919",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_left",
+      "anchor": "stairs_left",
+      "quality": [],
+      "steps": 0,
+      "apIds": 82,
+      "bleIds": 23,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112915.jsonl",
+      "day": "20260919",
+      "device": "samsung SM-S938N",
+      "zone": "main_left",
+      "anchor": "main_left:4124",
+      "quality": [],
+      "steps": 0,
+      "apIds": 100,
+      "bleIds": 24,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "day": "20260919",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 0,
+      "bleIds": 28,
+      "freshScans": 0
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "day": "20260922",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 159,
+      "bleIds": 52,
+      "freshScans": 2
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "day": "20260922",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_right",
+      "anchor": "stairs_right",
+      "quality": [],
+      "steps": 0,
+      "apIds": 92,
+      "bleIds": 24,
+      "freshScans": 2
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 132,
+      "bleIds": 143,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_left",
+      "anchor": "stairs_left",
+      "quality": [],
+      "steps": 0,
+      "apIds": 70,
+      "bleIds": 119,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133657.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_right",
+      "anchor": "stairs_right",
+      "quality": [],
+      "steps": 4,
+      "apIds": 53,
+      "bleIds": 56,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "core_junction",
+      "anchor": "core_junction",
+      "quality": [],
+      "steps": 0,
+      "apIds": 102,
+      "bleIds": 127,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145312.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "main_left",
+      "anchor": "main_left:4122",
+      "quality": [],
+      "steps": 0,
+      "apIds": 93,
+      "bleIds": 176,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145359.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_left",
+      "anchor": "stairs_left",
+      "quality": [],
+      "steps": 0,
+      "apIds": 0,
+      "bleIds": 142,
+      "freshScans": 0
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "main_right",
+      "anchor": "main_right:4209",
+      "quality": [],
+      "steps": 0,
+      "apIds": 106,
+      "bleIds": 152,
+      "freshScans": 1
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145654.jsonl",
+      "day": "20260923",
+      "device": "samsung SM-S938N",
+      "zone": "stairs_right",
+      "anchor": "stairs_right",
+      "quality": [],
+      "steps": 1,
+      "apIds": 74,
+      "bleIds": 99,
+      "freshScans": 1
+    }
+  ],
+  "duplicates": [
+    "indoor/data/raw/android/2026-09-18/device-pull/indoor_positioning_20260917_103443.jsonl",
+    "indoor/data/raw/android/2026-09-18/device-pull/indoor_positioning_20260917_103649.jsonl",
+    "indoor/data/raw/android/2026-09-18/device-pull/indoor_positioning_20260917_103959.jsonl",
+    "indoor/data/raw/android/2026-09-18/device-pull/indoor_positioning_20260917_104254.jsonl",
+    "indoor/data/raw/android/2026-09-18/device-pull/indoor_positioning_20260917_104448.jsonl",
+    "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714.jsonl"
+  ],
+  "summary": [
+    {
+      "split": "session",
+      "feature": "wifi",
+      "n": 22,
+      "correct": 18,
+      "wrong": 0,
+      "noCandidate": 4
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "n": 22,
+      "correct": 9,
+      "wrong": 13,
+      "noCandidate": 0
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "n": 22,
+      "correct": 21,
+      "wrong": 1,
+      "noCandidate": 0
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "n": 22,
+      "correct": 18,
+      "wrong": 0,
+      "noCandidate": 4
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "n": 22,
+      "correct": 10,
+      "wrong": 0,
+      "noCandidate": 12
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "n": 22,
+      "correct": 21,
+      "wrong": 0,
+      "noCandidate": 1
+    }
+  ],
+  "pairs": [
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "commonBle": 3,
+      "medianDb": 2
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "commonBle": 2,
+      "medianDb": 3.5
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "commonBle": 3,
+      "medianDb": 6
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "commonBle": 3,
+      "medianDb": 4.5
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "commonBle": 3,
+      "medianDb": 3
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "commonBle": 3,
+      "medianDb": 2
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "commonBle": 4,
+      "medianDb": 4
+    },
+    {
+      "today": "stairs_left",
+      "reference": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "commonBle": 2,
+      "medianDb": 4
+    },
+    {
+      "today": "stairs_left",
+      "reference": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "commonBle": 2,
+      "medianDb": 3.25
+    },
+    {
+      "today": "stairs_left",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "commonBle": 2,
+      "medianDb": 2.5
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "commonBle": 2,
+      "medianDb": 1.75
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "commonBle": 2,
+      "medianDb": 4.5
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "commonBle": 1,
+      "medianDb": 13
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "commonBle": 1,
+      "medianDb": 11
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "commonBle": 2,
+      "medianDb": 2
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "commonBle": 2,
+      "medianDb": 2.5
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "commonBle": 2,
+      "medianDb": 4.75
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "commonBle": 2,
+      "medianDb": 3.75
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "commonBle": 2,
+      "medianDb": 2.75
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "commonBle": 2,
+      "medianDb": 4
+    },
+    {
+      "today": "core_junction",
+      "reference": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "commonBle": 2,
+      "medianDb": 3
+    },
+    {
+      "today": "stairs_left",
+      "reference": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "commonBle": 4,
+      "medianDb": 0.25
+    },
+    {
+      "today": "stairs_left",
+      "reference": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "commonBle": 4,
+      "medianDb": 1.5
+    },
+    {
+      "today": "stairs_left",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "commonBle": 4,
+      "medianDb": 3.75
+    },
+    {
+      "today": "main_right:4209",
+      "reference": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "commonBle": 2,
+      "medianDb": 3
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "commonBle": 0,
+      "medianDb": null
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "commonBle": 1,
+      "medianDb": 1
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "commonBle": 1,
+      "medianDb": 0
+    },
+    {
+      "today": "stairs_right",
+      "reference": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "commonBle": 1,
+      "medianDb": 1.5
+    }
+  ],
+  "results": [
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103649__verified-f4-main-left-4225.jsonl",
+      "truth": "main_left:4225",
+      "represented": false,
+      "prediction": "main_left:4124",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111707.jsonl",
+      "truth": "main_right:4206",
+      "represented": false,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112915.jsonl",
+      "truth": "main_left:4124",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133657.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145312.jsonl",
+      "truth": "main_left:4122",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145359.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145654.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103649__verified-f4-main-left-4225.jsonl",
+      "truth": "main_left:4225",
+      "represented": false,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "main_right:4206",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111707.jsonl",
+      "truth": "main_right:4206",
+      "represented": false,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112915.jsonl",
+      "truth": "main_left:4124",
+      "represented": false,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133657.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145312.jsonl",
+      "truth": "main_left:4122",
+      "represented": false,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145359.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145654.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103649__verified-f4-main-left-4225.jsonl",
+      "truth": "main_left:4225",
+      "represented": false,
+      "prediction": "main_left:4124",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111707.jsonl",
+      "truth": "main_right:4206",
+      "represented": false,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112915.jsonl",
+      "truth": "main_left:4124",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133657.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145312.jsonl",
+      "truth": "main_left:4122",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145359.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "session",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145654.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103649__verified-f4-main-left-4225.jsonl",
+      "truth": "main_left:4225",
+      "represented": false,
+      "prediction": "main_left:4124",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111707.jsonl",
+      "truth": "main_right:4206",
+      "represented": false,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112915.jsonl",
+      "truth": "main_left:4124",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133657.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145312.jsonl",
+      "truth": "main_left:4122",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145359.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "wifi",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145654.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103649__verified-f4-main-left-4225.jsonl",
+      "truth": "main_left:4225",
+      "represented": false,
+      "prediction": "main_left:4124",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111707.jsonl",
+      "truth": "main_right:4206",
+      "represented": false,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112915.jsonl",
+      "truth": "main_left:4124",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133657.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145312.jsonl",
+      "truth": "main_left:4122",
+      "represented": false,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145359.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "ble",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145654.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103443__verified-f4-core.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103649__verified-f4-main-left-4225.jsonl",
+      "truth": "main_left:4225",
+      "represented": false,
+      "prediction": "main_left:4124",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_103959__verified-f4-stairs-left.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104254__verified-f4-main-right-4209.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-18/indoor_positioning_20260917_104448__corrected-f4-stairs-right.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/curated/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211714-left-stairs-corrected.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173155.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173215.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/indoor_positioning_20260915_173252.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": null,
+      "reason": "no_usable_features",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-15/latest-anchor-check/indoor_positioning_20260915_181508.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111618.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111707.jsonl",
+      "truth": "main_right:4206",
+      "represented": false,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111758.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112827.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_112915.jsonl",
+      "truth": "main_left:4124",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_113013.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211406.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211528.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133352.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133501.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/device-check/indoor_positioning_20260923_133657.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145204.jsonl",
+      "truth": "core_junction",
+      "represented": true,
+      "prediction": "core_junction",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145312.jsonl",
+      "truth": "main_left:4122",
+      "represented": false,
+      "prediction": "main_left:4225",
+      "reason": "relative_zone_scores",
+      "correct": false
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145359.jsonl",
+      "truth": "stairs_left",
+      "represented": true,
+      "prediction": "stairs_left",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145603.jsonl",
+      "truth": "main_right:4209",
+      "represented": true,
+      "prediction": "main_right:4209",
+      "reason": "relative_zone_scores",
+      "correct": true
+    },
+    {
+      "split": "day",
+      "feature": "joint",
+      "file": "indoor/data/raw/android/2026-09-23/kakao-pull-4f/indoor_positioning_20260923_145654.jsonl",
+      "truth": "stairs_right",
+      "represented": true,
+      "prediction": "stairs_right",
+      "reason": "relative_zone_scores",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "date": "2026-09-08",
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260901_160817.jsonl",
+      "route": "3F_EXTENSION",
+      "sha256": "0b79d9f3d457ee562f6cff28005873746c25adcccc5accec55f71aef02856dea",
+      "records": 39606,
+      "segments": [
+        {
+          "from": "메인복도·증축부 교차점",
+          "to": "증축부 입구",
+          "durationMs": 33679,
+          "stepDelta": 55,
+          "magneticMean": 42.57579400239003,
+          "magneticSd": 6.092925038879311,
+          "pressureDelta": -0.016340000000013788
+        },
+        {
+          "from": "증축부 입구",
+          "to": "자유공간",
+          "durationMs": 4892,
+          "stepDelta": 1,
+          "magneticMean": 39.368831860730864,
+          "magneticSd": 4.956405281356487,
+          "pressureDelta": 0.01315999999997075
+        },
+        {
+          "from": "자유공간",
+          "to": "3104-2 앞",
+          "durationMs": 12519,
+          "stepDelta": 6,
+          "magneticMean": 40.054929238309235,
+          "magneticSd": 4.76598461373627,
+          "pressureDelta": -0.007699999999999818
+        },
+        {
+          "from": "3104-2 앞",
+          "to": "3104-1 앞",
+          "durationMs": 12129,
+          "stepDelta": 19,
+          "magneticMean": 42.365101823788294,
+          "magneticSd": 4.102843247182296,
+          "pressureDelta": 0.009090000000014697
+        }
+      ],
+      "durationMs": 65363,
+      "ended": true,
+      "backwards": 0,
+      "sensors": {
+        "gyroscope_rads": 2990,
+        "accelerometer_mps2": 29876,
+        "magnetic_field_ut": 3269,
+        "rotation_vector": 2990,
+        "pressure_hpa": 409,
+        "step_counter": 66
+      },
+      "labels": [
+        {
+          "kind": "session_start",
+          "time": 0,
+          "label": {
+            "floor": "3",
+            "location": "메인복도·증축부 교차점",
+            "destination": "3104-1",
+            "event": "시작",
+            "route_id": "3F_EXTENSION",
+            "lap_index": 0,
+            "lap_total": 4
+          },
+          "steps": null
+        },
+        {
+          "kind": "label",
+          "time": 33679,
+          "label": {
+            "floor": "3",
+            "location": "증축부 입구",
+            "destination": "3104-1",
+            "event": "랜드마크",
+            "route_id": "3F_EXTENSION",
+            "lap_index": 1,
+            "lap_total": 4
+          },
+          "steps": 55
+        },
+        {
+          "kind": "label",
+          "time": 38571,
+          "label": {
+            "floor": "3",
+            "location": "자유공간",
+            "destination": "3104-1",
+            "event": "랜드마크",
+            "route_id": "3F_EXTENSION",
+            "lap_index": 2,
+            "lap_total": 4
+          },
+          "steps": 56
+        },
+        {
+          "kind": "label",
+          "time": 51090,
+          "label": {
+            "floor": "3",
+            "location": "3104-2 앞",
+            "destination": "3104-1",
+            "event": "랜드마크",
+            "route_id": "3F_EXTENSION",
+            "lap_index": 3,
+            "lap_total": 4
+          },
+          "steps": 62
+        },
+        {
+          "kind": "label",
+          "time": 63219,
+          "label": {
+            "floor": "3",
+            "location": "3104-1 앞",
+            "destination": "3104-1",
+            "event": "도착",
+            "route_id": "3F_EXTENSION",
+            "lap_index": 4,
+            "lap_total": 4
+          },
+          "steps": 81
+        }
+      ],
+      "limitation": "Single session; labels are event evidence, not surveyed continuous XY truth."
+    },
+    {
+      "file": "indoor_positioning_20260901_161014.jsonl",
+      "route": "3F_IT_HALL",
+      "sha256": "ad59f3afc69d5bdb4f86f149e8440deed38d49f81b1741cfffb44d158b84d551",
+      "records": 32027,
+      "segments": [
+        {
+          "from": "자유공간 IT홀 계단 아래",
+          "to": "IT홀 계단 아래",
+          "durationMs": 34796,
+          "stepDelta": 57,
+          "magneticMean": 45.968370525088574,
+          "magneticSd": 10.491932698993226,
+          "pressureDelta": 0.007000000000061846
+        },
+        {
+          "from": "IT홀 계단 아래",
+          "to": "IT홀 계단 위 회전점",
+          "durationMs": 12543,
+          "stepDelta": 18,
+          "magneticMean": 38.254517163641786,
+          "magneticSd": 4.869188196003848,
+          "pressureDelta": -0.18269999999995434
+        },
+        {
+          "from": "IT홀 계단 위 회전점",
+          "to": "IT홀 입구",
+          "durationMs": 4693,
+          "stepDelta": 0,
+          "magneticMean": 38.810822149417724,
+          "magneticSd": 3.7008239468609445,
+          "pressureDelta": -0.021419999999920947
+        }
+      ],
+      "durationMs": 52823,
+      "ended": true,
+      "backwards": 0,
+      "sensors": {
+        "accelerometer_mps2": 24150,
+        "magnetic_field_ut": 2642,
+        "gyroscope_rads": 2415,
+        "rotation_vector": 2415,
+        "pressure_hpa": 330,
+        "step_counter": 70
+      },
+      "labels": [
+        {
+          "kind": "session_start",
+          "time": 0,
+          "label": {
+            "floor": "3",
+            "location": "자유공간 IT홀 계단 아래",
+            "destination": "IT홀 입구",
+            "event": "시작",
+            "route_id": "3F_IT_HALL",
+            "lap_index": 0,
+            "lap_total": 3
+          },
+          "steps": null
+        },
+        {
+          "kind": "label",
+          "time": 34796,
+          "label": {
+            "floor": "3",
+            "location": "IT홀 계단 아래",
+            "destination": "IT홀 입구",
+            "event": "랜드마크",
+            "route_id": "3F_IT_HALL",
+            "lap_index": 1,
+            "lap_total": 3
+          },
+          "steps": 57
+        },
+        {
+          "kind": "label",
+          "time": 47339,
+          "label": {
+            "floor": "3",
+            "location": "IT홀 계단 위 회전점",
+            "destination": "IT홀 입구",
+            "event": "랜드마크",
+            "route_id": "3F_IT_HALL",
+            "lap_index": 2,
+            "lap_total": 3
+          },
+          "steps": 75
+        },
+        {
+          "kind": "label",
+          "time": 52032,
+          "label": {
+            "floor": "3",
+            "location": "IT홀 입구",
+            "destination": "IT홀 입구",
+            "event": "도착",
+            "route_id": "3F_IT_HALL",
+            "lap_index": 3,
+            "lap_total": 3
+          },
+          "steps": 75
+        }
+      ],
+      "limitation": "Single session; labels are event evidence, not surveyed continuous XY truth."
+    },
+    {
+      "file": "indoor_positioning_20260901_161506.jsonl",
+      "route": "2F_2107_OPEN",
+      "sha256": "d9ff3cdfb9ce44befdcf117d26b43c6d2bed27473b13c97c82a720d9934808e1",
+      "records": 17788,
+      "segments": [
+        {
+          "from": "메인복도·2107 교차점",
+          "to": "2107 입구",
+          "durationMs": 22391,
+          "stepDelta": 37,
+          "magneticMean": 45.512511874952715,
+          "magneticSd": 5.979841228228735,
+          "pressureDelta": 0.021259999999983847
+        },
+        {
+          "from": "2107 입구",
+          "to": "2107 개방공간",
+          "durationMs": 5875,
+          "stepDelta": 7,
+          "magneticMean": 48.259708068013445,
+          "magneticSd": 4.162282950796808,
+          "pressureDelta": -0.018050000000016553
+        }
+      ],
+      "durationMs": 29339,
+      "ended": true,
+      "backwards": 0,
+      "sensors": {
+        "accelerometer_mps2": 13412,
+        "magnetic_field_ut": 1468,
+        "gyroscope_rads": 1341,
+        "rotation_vector": 1341,
+        "pressure_hpa": 183,
+        "step_counter": 39
+      },
+      "labels": [
+        {
+          "kind": "session_start",
+          "time": 0,
+          "label": {
+            "floor": "2",
+            "location": "메인복도·2107 교차점",
+            "destination": "2107 개방공간",
+            "event": "시작",
+            "route_id": "2F_2107_OPEN",
+            "lap_index": 0,
+            "lap_total": 2
+          },
+          "steps": null
+        },
+        {
+          "kind": "label",
+          "time": 22391,
+          "label": {
+            "floor": "2",
+            "location": "2107 입구",
+            "destination": "2107 개방공간",
+            "event": "랜드마크",
+            "route_id": "2F_2107_OPEN",
+            "lap_index": 1,
+            "lap_total": 2
+          },
+          "steps": 37
+        },
+        {
+          "kind": "label",
+          "time": 28266,
+          "label": {
+            "floor": "2",
+            "location": "2107 개방공간",
+            "destination": "2107 개방공간",
+            "event": "도착",
+            "route_id": "2F_2107_OPEN",
+            "lap_index": 2,
+            "lap_total": 2
+          },
+          "steps": 44
+        }
+      ],
+      "limitation": "Single session; labels are event evidence, not surveyed continuous XY truth."
+    },
+    {
+      "file": "indoor_positioning_20260901_161605.jsonl",
+      "route": "2F_STUDY",
+      "sha256": "0b43b5401776ab3044c9047b7434910fce2d87bccb5fada26045520b1e1588af",
+      "records": 32239,
+      "segments": [
+        {
+          "from": "메인복도·2107 교차점",
+          "to": "2107 입구",
+          "durationMs": 24896,
+          "stepDelta": 37,
+          "magneticMean": 53.22247088736146,
+          "magneticSd": 7.096816099333508,
+          "pressureDelta": 0.034700000000043474
+        },
+        {
+          "from": "2107 입구",
+          "to": "2107 개방공간",
+          "durationMs": 12178,
+          "stepDelta": 3,
+          "magneticMean": 58.4835546193454,
+          "magneticSd": 4.998825867067958,
+          "pressureDelta": -0.018070000000079744
+        },
+        {
+          "from": "2107 개방공간",
+          "to": "ㄷ자 학습공간",
+          "durationMs": 15313,
+          "stepDelta": 18,
+          "magneticMean": 48.75739893748799,
+          "magneticSd": 3.8942313170899245,
+          "pressureDelta": -0.010350000000016735
+        }
+      ],
+      "durationMs": 53228,
+      "ended": true,
+      "backwards": 0,
+      "sensors": {
+        "accelerometer_mps2": 24328,
+        "magnetic_field_ut": 2662,
+        "rotation_vector": 2432,
+        "gyroscope_rads": 2432,
+        "pressure_hpa": 332,
+        "step_counter": 48
+      },
+      "labels": [
+        {
+          "kind": "session_start",
+          "time": 0,
+          "label": {
+            "floor": "2",
+            "location": "메인복도·2107 교차점",
+            "destination": "ㄷ자 학습공간",
+            "event": "시작",
+            "route_id": "2F_STUDY",
+            "lap_index": 0,
+            "lap_total": 3
+          },
+          "steps": null
+        },
+        {
+          "kind": "label",
+          "time": 24896,
+          "label": {
+            "floor": "2",
+            "location": "2107 입구",
+            "destination": "ㄷ자 학습공간",
+            "event": "랜드마크",
+            "route_id": "2F_STUDY",
+            "lap_index": 1,
+            "lap_total": 3
+          },
+          "steps": 37
+        },
+        {
+          "kind": "label",
+          "time": 37074,
+          "label": {
+            "floor": "2",
+            "location": "2107 개방공간",
+            "destination": "ㄷ자 학습공간",
+            "event": "랜드마크",
+            "route_id": "2F_STUDY",
+            "lap_index": 2,
+            "lap_total": 3
+          },
+          "steps": 40
+        },
+        {
+          "kind": "label",
+          "time": 52387,
+          "label": {
+            "floor": "2",
+            "location": "ㄷ자 학습공간",
+            "destination": "ㄷ자 학습공간",
+            "event": "도착",
+            "route_id": "2F_STUDY",
+            "lap_index": 3,
+            "lap_total": 3
+          },
+          "steps": 58
+        }
+      ],
+      "limitation": "Legacy 2107 start label differs from confirmed pillar/TDM entry; no coordinate truth or forced path replay."
+    },
+    {
+      "file": "indoor_positioning_20260901_161730.jsonl",
+      "route": "2F_EXTENSION",
+      "sha256": "63d8955297fa838cce594367136baae4b38c65987aa0ebe7b1b95eb31781bcfe",
+      "records": 43358,
+      "segments": [
+        {
+          "from": "메인복도·2107 교차점",
+          "to": "2107 입구",
+          "durationMs": 23668,
+          "stepDelta": 37,
+          "magneticMean": 45.47102315630993,
+          "magneticSd": 7.247153988699618,
+          "pressureDelta": 0.009580000000028122
+        },
+        {
+          "from": "2107 입구",
+          "to": "2107 개방공간",
+          "durationMs": 5553,
+          "stepDelta": 0,
+          "magneticMean": 51.63588943430935,
+          "magneticSd": 6.92942977376665,
+          "pressureDelta": -0.00830000000007658
+        },
+        {
+          "from": "2107 개방공간",
+          "to": "TDM 앞",
+          "durationMs": 15572,
+          "stepDelta": 27,
+          "magneticMean": 44.010869334650984,
+          "magneticSd": 4.158298429452373,
+          "pressureDelta": 0.008299999999962893
+        },
+        {
+          "from": "TDM 앞",
+          "to": "증축부 입구",
+          "durationMs": 4454,
+          "stepDelta": 0,
+          "magneticMean": 50.60914873954854,
+          "magneticSd": 4.856979893079098,
+          "pressureDelta": -0.016799999999989268
+        },
+        {
+          "from": "증축부 입구",
+          "to": "증축부 복도 끝",
+          "durationMs": 20949,
+          "stepDelta": 39,
+          "magneticMean": 48.98030920821309,
+          "magneticSd": 4.409884763924197,
+          "pressureDelta": 0.003199999999992542
+        }
+      ],
+      "durationMs": 71536,
+      "ended": true,
+      "backwards": 0,
+      "sensors": {
+        "accelerometer_mps2": 32699,
+        "magnetic_field_ut": 3578,
+        "gyroscope_rads": 3270,
+        "rotation_vector": 3269,
+        "pressure_hpa": 447,
+        "step_counter": 88
+      },
+      "labels": [
+        {
+          "kind": "session_start",
+          "time": 0,
+          "label": {
+            "floor": "2",
+            "location": "메인복도·2107 교차점",
+            "destination": "증축부 복도 끝",
+            "event": "시작",
+            "route_id": "2F_EXTENSION",
+            "lap_index": 0,
+            "lap_total": 5
+          },
+          "steps": null
+        },
+        {
+          "kind": "label",
+          "time": 23668,
+          "label": {
+            "floor": "2",
+            "location": "2107 입구",
+            "destination": "증축부 복도 끝",
+            "event": "랜드마크",
+            "route_id": "2F_EXTENSION",
+            "lap_index": 1,
+            "lap_total": 5
+          },
+          "steps": 37
+        },
+        {
+          "kind": "label",
+          "time": 29221,
+          "label": {
+            "floor": "2",
+            "location": "2107 개방공간",
+            "destination": "증축부 복도 끝",
+            "event": "랜드마크",
+            "route_id": "2F_EXTENSION",
+            "lap_index": 2,
+            "lap_total": 5
+          },
+          "steps": 37
+        },
+        {
+          "kind": "label",
+          "time": 44793,
+          "label": {
+            "floor": "2",
+            "location": "TDM 앞",
+            "destination": "증축부 복도 끝",
+            "event": "랜드마크",
+            "route_id": "2F_EXTENSION",
+            "lap_index": 3,
+            "lap_total": 5
+          },
+          "steps": 64
+        },
+        {
+          "kind": "label",
+          "time": 49247,
+          "label": {
+            "floor": "2",
+            "location": "증축부 입구",
+            "destination": "증축부 복도 끝",
+            "event": "랜드마크",
+            "route_id": "2F_EXTENSION",
+            "lap_index": 4,
+            "lap_total": 5
+          },
+          "steps": 64
+        },
+        {
+          "kind": "label",
+          "time": 70196,
+          "label": {
+            "floor": "2",
+            "location": "증축부 복도 끝",
+            "destination": "증축부 복도 끝",
+            "event": "도착",
+            "route_id": "2F_EXTENSION",
+            "lap_index": 5,
+            "lap_total": 5
+          },
+          "steps": 103
+        }
+      ],
+      "limitation": "Legacy 2107 start label differs from confirmed pillar/TDM entry; no coordinate truth or forced path replay."
+    }
+  ]
+}

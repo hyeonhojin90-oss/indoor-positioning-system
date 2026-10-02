@@ -1,0 +1,470 @@
+{
+  "purpose": "Analysis-only ADVIO iPhone experiment; production engine and model unchanged.",
+  "source": {
+    "name": "ADVIO",
+    "archives": [
+      {
+        "file": "advio-13.zip",
+        "sha256": "3274ed2ac336a0408da8c3a3d5916ad1554bc1b098d1af2687e9497af86d3dbb"
+      },
+      {
+        "file": "advio-16.zip",
+        "sha256": "ad25eb330a05c061d7067f578e63c53efe7796a56eba236d19506741dba16d60"
+      },
+      {
+        "file": "advio-17.zip",
+        "sha256": "41cfaffd7bb7f99aee73b4845b9cb45657b91996c21ba572eea3334a31c785de"
+      },
+      {
+        "file": "advio-19.zip",
+        "sha256": "6af87655230ca143d88f73fa239d82bcd79185068d5a8da76cde6395cd110046"
+      }
+    ],
+    "detector": "Expo acceleration magnitude peak >=1.0m/s\u00b2, 280ms separation, 20Hz resample",
+    "horizontal_reference": "ADVIO x-z; y is vertical in office stair data"
+  },
+  "advio_sequences": [
+    {
+      "file": "advio-13.zip",
+      "raw_samples": 15544,
+      "samples_20hz": 2591,
+      "detected_events": 208,
+      "magnitude_median": 9.821077524681417,
+      "usable_stride_rows": 204,
+      "stride_median_m": 0.6041431562886929,
+      "holdout": {
+        "training_rows": 122,
+        "held_rows": 82,
+        "model_mae_m": 0.18848535573100306,
+        "median_baseline_mae_m": 0.23077513617188866
+      }
+    },
+    {
+      "file": "advio-16.zip",
+      "raw_samples": 14996,
+      "samples_20hz": 2500,
+      "detected_events": 222,
+      "magnitude_median": 9.779608142926826,
+      "usable_stride_rows": 218,
+      "stride_median_m": 0.6168069766403381,
+      "holdout": {
+        "training_rows": 131,
+        "held_rows": 87,
+        "model_mae_m": 0.16205910274231314,
+        "median_baseline_mae_m": 0.22732435310274857
+      }
+    },
+    {
+      "file": "advio-17.zip",
+      "raw_samples": 16143,
+      "samples_20hz": 2691,
+      "detected_events": 236,
+      "magnitude_median": 9.76286893556935,
+      "usable_stride_rows": 226,
+      "stride_median_m": 0.574349613807082,
+      "holdout": {
+        "training_rows": 136,
+        "held_rows": 90,
+        "model_mae_m": 0.2907669141086831,
+        "median_baseline_mae_m": 0.27501307995362306
+      }
+    },
+    {
+      "file": "advio-19.zip",
+      "raw_samples": 14555,
+      "samples_20hz": 2426,
+      "detected_events": 223,
+      "magnitude_median": 9.68957006057178,
+      "usable_stride_rows": 222,
+      "stride_median_m": 0.5882014906647468,
+      "holdout": {
+        "training_rows": 133,
+        "held_rows": 89,
+        "model_mae_m": 0.14407654161555566,
+        "median_baseline_mae_m": 0.15985142034145614
+      }
+    }
+  ],
+  "advio_leave_one_route_out": [
+    {
+      "held_file": "advio-13.zip",
+      "training_rows": 666,
+      "held_rows": 204,
+      "model_mae_m": 0.16630124098057464,
+      "median_baseline_mae_m": 0.18803248580213908
+    },
+    {
+      "held_file": "advio-16.zip",
+      "training_rows": 652,
+      "held_rows": 218,
+      "model_mae_m": 0.14414540827806777,
+      "median_baseline_mae_m": 0.18868304516211432
+    },
+    {
+      "held_file": "advio-17.zip",
+      "training_rows": 644,
+      "held_rows": 226,
+      "model_mae_m": 0.18363113602176626,
+      "median_baseline_mae_m": 0.1961212840930863
+    },
+    {
+      "held_file": "advio-19.zip",
+      "training_rows": 648,
+      "held_rows": 222,
+      "model_mae_m": 0.14028941765378788,
+      "median_baseline_mae_m": 0.162769218653799
+    }
+  ],
+  "local_transfer": {
+    "base_m_per_event": 0.6435037675576333,
+    "fixed_endpoint_mae_m": 0.9652556513364523,
+    "advio_domain_normalized_ema_endpoint_mae_m": 1.3442665648354257,
+    "test_sessions": [
+      "indoor_positioning_ios_20260914_170738.jsonl",
+      "indoor_positioning_ios_20260914_170901.jsonl",
+      "indoor_positioning_ios_20260914_171021.jsonl",
+      "indoor_positioning_ios_20260914_171142.jsonl"
+    ],
+    "local_feature_domain": {
+      "rows": 851,
+      "mean": [
+        1.722136108478384,
+        2.638020273599568
+      ],
+      "scale": [
+        0.42419338965848774,
+        1.218932487409319
+      ]
+    }
+  },
+  "local_transfer_trials": {
+    "fixed": [
+      {
+        "file": "indoor_positioning_ios_20260914_170738.jsonl",
+        "estimate_m": 51.480301404610664,
+        "signed_error_m": 1.287007535115272,
+        "error_m": 1.287007535115272
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_170901.jsonl",
+        "estimate_m": 50.83679763705303,
+        "signed_error_m": 0.6435037675576396,
+        "error_m": 0.6435037675576396
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171021.jsonl",
+        "estimate_m": 49.54979010193776,
+        "signed_error_m": -0.6435037675576325,
+        "error_m": 0.6435037675576325
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171142.jsonl",
+        "estimate_m": 48.90628633438013,
+        "signed_error_m": -1.287007535115265,
+        "error_m": 1.287007535115265
+      }
+    ],
+    "advio_domain_normalized_ema": [
+      {
+        "file": "indoor_positioning_ios_20260914_170738.jsonl",
+        "estimate_m": 52.60098009238896,
+        "signed_error_m": 2.4076862228935667,
+        "error_m": 2.4076862228935667,
+        "min_stride_m": 0.6153295723459031,
+        "max_stride_m": 0.6922728743021923
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_170901.jsonl",
+        "estimate_m": 52.67219240660435,
+        "signed_error_m": 2.478898537108961,
+        "error_m": 2.478898537108961,
+        "min_stride_m": 0.6078795887258339,
+        "max_stride_m": 0.7027798983598147
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171021.jsonl",
+        "estimate_m": 50.61750522474861,
+        "signed_error_m": 0.4242113552532203,
+        "error_m": 0.4242113552532203,
+        "min_stride_m": 0.6168658742773665,
+        "max_stride_m": 0.6962988748196801
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171142.jsonl",
+        "estimate_m": 50.25956401358135,
+        "signed_error_m": 0.066270144085955,
+        "error_m": 0.066270144085955,
+        "min_stride_m": 0.6070310600992287,
+        "max_stride_m": 0.7013184604399665
+      }
+    ]
+  },
+  "local_leave_one_walk_out": {
+    "sessions": 15,
+    "personal_fixed_endpoint_mae_m": 1.790949726080235,
+    "advio_endpoint_mae_m": 2.444014950660652,
+    "delta_m": 0.6530652245804172,
+    "trials": [
+      {
+        "file": "indoor_positioning_ios_20260905_170448.jsonl",
+        "detected_events": 82,
+        "personal_fixed": {
+          "base_m_per_event": 0.6435037675576333,
+          "estimate_m": 52.76730893972593,
+          "signed_error_m": 2.574015070230537,
+          "error_m": 2.574015070230537
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 53.29109015973779,
+          "signed_error_m": 3.0977962902423997,
+          "error_m": 3.0977962902423997,
+          "min_stride_m": 0.61260652342916,
+          "max_stride_m": 0.6859511176447292
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260905_170648.jsonl",
+        "detected_events": 83,
+        "personal_fixed": {
+          "base_m_per_event": 0.6435037675576333,
+          "estimate_m": 53.41081270728356,
+          "signed_error_m": 3.2175188377881696,
+          "error_m": 3.2175188377881696
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 55.74811023827381,
+          "signed_error_m": 5.554816368778418,
+          "error_m": 5.554816368778418,
+          "min_stride_m": 0.6342787830622376,
+          "max_stride_m": 0.7027521677057639
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260905_170852.jsonl",
+        "detected_events": 81,
+        "personal_fixed": {
+          "base_m_per_event": 0.6435037675576333,
+          "estimate_m": 52.1238051721683,
+          "signed_error_m": 1.9305113026729046,
+          "error_m": 1.9305113026729046
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 52.55070822238931,
+          "signed_error_m": 2.357414352893919,
+          "error_m": 2.357414352893919,
+          "min_stride_m": 0.6117413893137411,
+          "max_stride_m": 0.6830021165060592
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_132920.jsonl",
+        "detected_events": 83,
+        "personal_fixed": {
+          "base_m_per_event": 0.6435037675576333,
+          "estimate_m": 53.41081270728356,
+          "signed_error_m": 3.2175188377881696,
+          "error_m": 3.2175188377881696
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 53.8464722682893,
+          "signed_error_m": 3.653178398793905,
+          "error_m": 3.653178398793905,
+          "min_stride_m": 0.6079804091526542,
+          "max_stride_m": 0.6873199374944996
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_133049.jsonl",
+        "detected_events": 78,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 49.55793571924861,
+          "signed_error_m": -0.6353581502467804,
+          "error_m": 0.6353581502467804
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 48.31588619607082,
+          "signed_error_m": -1.877407673424571,
+          "error_m": 1.877407673424571,
+          "min_stride_m": 0.597710340235134,
+          "max_stride_m": 0.6480653132517127
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_133154.jsonl",
+        "detected_events": 78,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 49.55793571924861,
+          "signed_error_m": -0.6353581502467804,
+          "error_m": 0.6353581502467804
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 48.980168050721275,
+          "signed_error_m": -1.2131258187741167,
+          "error_m": 1.2131258187741167,
+          "min_stride_m": 0.5969223473648104,
+          "max_stride_m": 0.6612563523034395
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260908_133254.jsonl",
+        "detected_events": 78,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 49.55793571924861,
+          "signed_error_m": -0.6353581502467804,
+          "error_m": 0.6353581502467804
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 48.111267661037,
+          "signed_error_m": -2.0820262084583945,
+          "error_m": 2.0820262084583945,
+          "min_stride_m": 0.5810278736589455,
+          "max_stride_m": 0.6492282782108609
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_170738.jsonl",
+        "detected_events": 80,
+        "personal_fixed": {
+          "base_m_per_event": 0.6435037675576333,
+          "estimate_m": 51.480301404610664,
+          "signed_error_m": 1.287007535115272,
+          "error_m": 1.287007535115272
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 52.319647369565665,
+          "signed_error_m": 2.126353500070273,
+          "error_m": 2.126353500070273,
+          "min_stride_m": 0.6134781815949628,
+          "max_stride_m": 0.6898278696020176
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_170901.jsonl",
+        "detected_events": 79,
+        "personal_fixed": {
+          "base_m_per_event": 0.6435037675576333,
+          "estimate_m": 50.83679763705303,
+          "signed_error_m": 0.6435037675576396,
+          "error_m": 0.6435037675576396
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 52.46395656647017,
+          "signed_error_m": 2.2706626969747816,
+          "error_m": 2.2706626969747816,
+          "min_stride_m": 0.603179091344856,
+          "max_stride_m": 0.7022879786342271
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171021.jsonl",
+        "detected_events": 77,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 48.92257756900184,
+          "signed_error_m": -1.2707163004935538,
+          "error_m": 1.2707163004935538
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 49.71766688801105,
+          "signed_error_m": -0.47562698148433924,
+          "error_m": 0.47562698148433924,
+          "min_stride_m": 0.6050658081428888,
+          "max_stride_m": 0.6846091139780593
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_171142.jsonl",
+        "detected_events": 76,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 48.28721941875506,
+          "signed_error_m": -1.9060744507403342,
+          "error_m": 1.9060744507403342
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 49.42631934220672,
+          "signed_error_m": -0.7669745272886743,
+          "error_m": 0.7669745272886743,
+          "min_stride_m": 0.5973918604118931,
+          "max_stride_m": 0.6909172276806265
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133338.jsonl",
+        "detected_events": 78,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 49.55793571924861,
+          "signed_error_m": -0.6353581502467804,
+          "error_m": 0.6353581502467804
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 48.86425960906781,
+          "signed_error_m": -1.3290342604275835,
+          "error_m": 1.3290342604275835,
+          "min_stride_m": 0.6019112468641092,
+          "max_stride_m": 0.6576675219315996
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133534.jsonl",
+        "detected_events": 80,
+        "personal_fixed": {
+          "base_m_per_event": 0.6435037675576333,
+          "estimate_m": 51.480301404610664,
+          "signed_error_m": 1.287007535115272,
+          "error_m": 1.287007535115272
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 50.96453447562187,
+          "signed_error_m": 0.7712406061264758,
+          "error_m": 0.7712406061264758,
+          "min_stride_m": 0.5893554140701952,
+          "max_stride_m": 0.6744345086908624
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133637.jsonl",
+        "detected_events": 72,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 45.74578681776795,
+          "signed_error_m": -4.447507051727442,
+          "error_m": 4.447507051727442
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 44.984975820826826,
+          "signed_error_m": -5.208318048668566,
+          "error_m": 5.208318048668566,
+          "min_stride_m": 0.6011039571029718,
+          "max_stride_m": 0.6620887181014434
+        }
+      },
+      {
+        "file": "indoor_positioning_ios_20260914_133734.jsonl",
+        "detected_events": 75,
+        "personal_fixed": {
+          "base_m_per_event": 0.6353581502467771,
+          "estimate_m": 47.651861268508284,
+          "signed_error_m": -2.5414326009871075,
+          "error_m": 2.5414326009871075
+        },
+        "advio_domain_normalized_ema": {
+          "estimate_m": 46.31704534199203,
+          "signed_error_m": -3.876248527503364,
+          "error_m": 3.876248527503364,
+          "min_stride_m": 0.5866611957541789,
+          "max_stride_m": 0.6595850991021132
+        }
+      }
+    ]
+  },
+  "limits": [
+    "ADVIO contains four office/stair routes, but not a participant-held-out iPhone population evaluation.",
+    "ADVIO ground-truth pose is a reference trajectory; this experiment does not claim an independent per-step foot-placement truth.",
+    "No production model changes are made from this result."
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "createdAt": "2026-09-19T07:34:30.765Z",
+  "method": "Disjoint 5 s moving BLE windows classified against the later stationary anchors from the same day/device.",
+  "anchors": [
+    {
+      "zone": "stairs_right",
+      "signals": 19
+    },
+    {
+      "zone": "main_right",
+      "signals": 20
+    },
+    {
+      "zone": "core_junction",
+      "signals": 21
+    },
+    {
+      "zone": "stairs_left",
+      "signals": 23
+    },
+    {
+      "zone": "main_left",
+      "signals": 24
+    },
+    {
+      "zone": "core_junction",
+      "signals": 30
+    }
+  ],
+  "routes": [
+    {
+      "file": "indoor_positioning_20260919_111300.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS_REVERSE",
+      "durationSeconds": 45.482,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "오른쪽 계단 입구",
+          "signals": 5,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 5,
+          "lap": 0,
+          "at": "오른쪽 계단 입구",
+          "signals": 16,
+          "predicted": "stairs_right",
+          "weight": 0.5474327219014523,
+          "margin": 0.09486544380290457,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 0,
+          "at": "오른쪽 계단 입구",
+          "signals": 18,
+          "predicted": "stairs_right",
+          "weight": 0.5280250960732632,
+          "margin": 0.05605019214652651,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 0,
+          "at": "오른쪽 계단 입구",
+          "signals": 9,
+          "predicted": "stairs_right",
+          "weight": 0.37865817652388667,
+          "margin": 0.0385619959733175,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "lap": 2,
+          "at": "4205 앞",
+          "signals": 15,
+          "predicted": "main_right",
+          "weight": 0.3809253374443385,
+          "margin": 0.038713216739738876,
+          "secondZone": "core_junction",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 25,
+          "lap": 4,
+          "at": "4207 앞",
+          "signals": 14,
+          "predicted": "core_junction",
+          "weight": 0.40621873655663016,
+          "margin": 0.0797136503045967,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 30,
+          "lap": 6,
+          "at": "4209 앞",
+          "signals": 15,
+          "predicted": "core_junction",
+          "weight": 0.44596610057902203,
+          "margin": 0.1396841609121553,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 35,
+          "lap": 9,
+          "at": "4212 앞",
+          "signals": 8,
+          "predicted": "core_junction",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 40,
+          "reason": "insufficient_signals",
+          "signals": 2
+        },
+        {
+          "second": 45,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "stairs_right": 3,
+        "main_right": 1,
+        "core_junction": 3
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_111351.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS",
+      "durationSeconds": 40.651,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "코어복도 출구 중앙점",
+          "signals": 17,
+          "predicted": "core_junction",
+          "weight": 0.43330275988145245,
+          "margin": 0.1429850692134469,
+          "secondZone": "stairs_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 0,
+          "at": "코어복도 출구 중앙점",
+          "signals": 14,
+          "predicted": "core_junction",
+          "weight": 0.4098575617861208,
+          "margin": 0.089547167813953,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 1,
+          "at": "4120 앞",
+          "signals": 12,
+          "predicted": "core_junction",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 1,
+          "at": "4120 앞",
+          "signals": 16,
+          "predicted": "main_right",
+          "weight": 0.56770654807336,
+          "margin": 0.13541309614671998,
+          "secondZone": "core_junction",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "lap": 1,
+          "at": "4120 앞",
+          "signals": 16,
+          "predicted": "main_left",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 25,
+          "lap": 3,
+          "at": "4123 앞",
+          "signals": 19,
+          "predicted": "main_left",
+          "weight": 0.5806242134195058,
+          "margin": 0.16124842683901147,
+          "secondZone": "stairs_left",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 30,
+          "lap": 5,
+          "at": "4125 앞",
+          "signals": 22,
+          "predicted": "main_left",
+          "weight": 0.5536667155675983,
+          "margin": 0.10733343113519644,
+          "secondZone": "stairs_left",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 35,
+          "lap": 7,
+          "at": "4127 앞",
+          "signals": 20,
+          "predicted": "main_left",
+          "weight": 0.5182731081286716,
+          "margin": 0.03654621625734317,
+          "secondZone": "stairs_left",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 40,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "core_junction": 3,
+        "main_right": 1,
+        "main_left": 4
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_111437.jsonl",
+      "route": "4F_CORE_TO_LEFT_STAIRS_REVERSE",
+      "durationSeconds": 41.133,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "왼쪽 계단 입구",
+          "signals": 23,
+          "predicted": "stairs_left",
+          "weight": 0.5344958924602035,
+          "margin": 0.0689917849204068,
+          "secondZone": "main_left",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 0,
+          "at": "왼쪽 계단 입구",
+          "signals": 19,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 10,
+          "lap": 1,
+          "at": "4128 앞",
+          "signals": 22,
+          "predicted": "main_left",
+          "weight": 0.52212096687763,
+          "margin": 0.04424193375525998,
+          "secondZone": "stairs_left",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 2,
+          "at": "4127 앞",
+          "signals": 21,
+          "predicted": "main_left",
+          "weight": 0.6368195165286044,
+          "margin": 0.27363903305720877,
+          "secondZone": "stairs_left",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 20,
+          "lap": 5,
+          "at": "4124 앞",
+          "signals": 14,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 25,
+          "lap": 7,
+          "at": "4122 앞",
+          "signals": 14,
+          "predicted": "stairs_right",
+          "weight": 0.39494378222474275,
+          "margin": 0.03991722509424972,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 30,
+          "lap": 7,
+          "at": "4122 앞",
+          "signals": 12,
+          "predicted": "core_junction",
+          "weight": 0.6325153544569957,
+          "margin": 0.26503070891399133,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 35,
+          "lap": 7,
+          "at": "4122 앞",
+          "signals": 17,
+          "predicted": "core_junction",
+          "weight": 0.4477740462054196,
+          "margin": 0.15373850855531807,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 40,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "stairs_left": 1,
+        "main_left": 2,
+        "stairs_right": 1,
+        "core_junction": 2
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_111521.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "durationSeconds": 5.574,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "코어복도 출구 중앙점",
+          "signals": 17,
+          "predicted": "core_junction",
+          "weight": 0.49181886211584597,
+          "margin": 0.1952515261588021,
+          "secondZone": "stairs_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "reason": "insufficient_signals",
+          "signals": 0
+        }
+      ],
+      "counts": {
+        "core_junction": 1
+      }
+    },
+    {
+      "file": "indoor_positioning_20260919_111532.jsonl",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "durationSeconds": 33.585,
+      "windows": [
+        {
+          "second": 0,
+          "lap": 0,
+          "at": "코어복도 출구 중앙점",
+          "signals": 15,
+          "predicted": "core_junction",
+          "weight": 0.42564459851230346,
+          "margin": 0.12252472375900769,
+          "secondZone": "stairs_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 5,
+          "lap": 1,
+          "at": "4213 앞",
+          "signals": 15,
+          "predicted": "core_junction",
+          "weight": 0.39874645494402167,
+          "margin": 0.08699414094999364,
+          "secondZone": "stairs_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 10,
+          "lap": 3,
+          "at": "4211 앞",
+          "signals": 15,
+          "predicted": "core_junction",
+          "weight": 0.4116776097170751,
+          "margin": 0.08967733702466257,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 15,
+          "lap": 6,
+          "at": "4208 앞",
+          "signals": 6,
+          "predicted": null,
+          "weight": null,
+          "margin": null,
+          "secondZone": null,
+          "reason": "no_usable_features"
+        },
+        {
+          "second": 20,
+          "lap": 8,
+          "at": "4206 앞",
+          "signals": 12,
+          "predicted": "stairs_right",
+          "weight": 0.5388247095186424,
+          "margin": 0.07764941903728467,
+          "secondZone": "main_right",
+          "reason": "relative_zone_scores"
+        },
+        {
+          "second": 25,
+          "reason": "insufficient_signals",
+          "signals": 4
+        },
+        {
+          "second": 30,
+          "lap": 10,
+          "at": "4204 앞",
+          "signals": 5,
+          "predicted": "stairs_right",
+          "weight": 1,
+          "margin": 1,
+          "secondZone": null,
+          "reason": "relative_zone_scores"
+        }
+      ],
+      "counts": {
+        "core_junction": 3,
+        "stairs_right": 2
+      }
+    }
+  ],
+  "limitation": "A moving window is labelled only by the most recently pressed lap, so this is a temporal plausibility check, not coordinate accuracy. Same-day references are not an independent test."
+}

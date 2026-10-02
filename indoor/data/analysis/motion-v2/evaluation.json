@@ -1,0 +1,313 @@
+{
+  "version": 2,
+  "sessions": [
+    {
+      "file": "indoor_positioning_20260901_151808.jsonl",
+      "sha256": "748bf6c7e2a75969a47a328a80ac3a83833758a1042103a1272b4ce9ccbef697",
+      "platform": "android",
+      "floor": 4,
+      "direction": "right",
+      "steps": 107,
+      "lapCount": 11
+    },
+    {
+      "file": "indoor_positioning_20260901_153038.jsonl",
+      "sha256": "4146c8c88de6741f4508dbf955b1c106da5604cc30b2ed7410206c0c1639e052",
+      "platform": "android",
+      "floor": 4,
+      "direction": "right",
+      "steps": 87,
+      "lapCount": 11
+    },
+    {
+      "file": "indoor_positioning_20260901_155425.jsonl",
+      "sha256": "e0715500a50e0ddb748c1c8149ad268616e5a366b45dd1d517bdff08d5ff0d27",
+      "platform": "android",
+      "floor": 4,
+      "direction": "left",
+      "steps": 79,
+      "lapCount": 9
+    },
+    {
+      "file": "indoor_positioning_20260901_155615.jsonl",
+      "sha256": "4ee505dc759c50184dee7620250f7d14437c6cb560559b806a772270b4ce42b9",
+      "platform": "android",
+      "floor": 3,
+      "direction": "right",
+      "steps": 76,
+      "lapCount": 5
+    },
+    {
+      "file": "indoor_positioning_20260901_160634.jsonl",
+      "sha256": "7b42a9900da70208b7fe45a38e781a6f6f8698fd50617fea4f834744c3ea666f",
+      "platform": "android",
+      "floor": 3,
+      "direction": "left",
+      "steps": 76,
+      "lapCount": 4
+    },
+    {
+      "file": "indoor_positioning_20260901_161220.jsonl",
+      "sha256": "c9f7e05bff22ee3d24b512867f2378fe713461bca866b3592509bb1599ea298d",
+      "platform": "android",
+      "floor": 2,
+      "direction": "left",
+      "steps": 78,
+      "lapCount": 5
+    },
+    {
+      "file": "indoor_positioning_20260901_161342.jsonl",
+      "sha256": "8b80774ecc2dc38f54be1f81b88c639e8bee49d1e57ab29fead426bd86cf0046",
+      "platform": "android",
+      "floor": 2,
+      "direction": "right",
+      "steps": 78,
+      "lapCount": 6
+    },
+    {
+      "file": "indoor_positioning_20260901_162413.jsonl",
+      "sha256": "656861d10f1ed935228397324c9464e5f156137a7bd62a1529ee66b682b4a3d0",
+      "platform": "android",
+      "floor": 5,
+      "direction": "right",
+      "steps": 101,
+      "lapCount": 5
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170448.jsonl",
+      "sha256": "160f26a38538f7440014f631790e1b90cafdd0b3530a896b66368fe60eaaa861",
+      "platform": "ios",
+      "floor": 4,
+      "direction": "right",
+      "steps": 81,
+      "lapCount": 11
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170648.jsonl",
+      "sha256": "72994a78fff96b93e1d8436252a15045c5debc40b5cccad238f3b2474581bd0b",
+      "platform": "ios",
+      "floor": 4,
+      "direction": "right",
+      "steps": 82,
+      "lapCount": 11
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170852.jsonl",
+      "sha256": "8f221a8985cc44f1cfb5252ba69b0e0ec5ff08c040981d5fd10537cf2b6777ba",
+      "platform": "ios",
+      "floor": 4,
+      "direction": "right",
+      "steps": 81,
+      "lapCount": 11
+    }
+  ],
+  "skipped": [
+    {
+      "file": "indoor_positioning_20260901_124041.jsonl",
+      "reason": "manifest_excluded"
+    },
+    {
+      "file": "indoor_positioning_20260901_124143.jsonl",
+      "reason": "manifest_excluded"
+    },
+    {
+      "file": "indoor_positioning_20260901_124318.jsonl",
+      "reason": "manifest_excluded"
+    },
+    {
+      "file": "indoor_positioning_20260901_151915.jsonl",
+      "reason": "manifest_excluded"
+    },
+    {
+      "file": "indoor_positioning_20260901_160817.jsonl",
+      "reason": "no_verified_one_dimensional_route"
+    },
+    {
+      "file": "indoor_positioning_20260901_161014.jsonl",
+      "reason": "no_verified_one_dimensional_route"
+    },
+    {
+      "file": "indoor_positioning_20260901_161506.jsonl",
+      "reason": "no_verified_one_dimensional_route"
+    },
+    {
+      "file": "indoor_positioning_20260901_161605.jsonl",
+      "reason": "no_verified_one_dimensional_route"
+    },
+    {
+      "file": "indoor_positioning_20260901_161730.jsonl",
+      "reason": "no_verified_one_dimensional_route"
+    },
+    {
+      "file": "indoor_positioning_20260901_161957.jsonl",
+      "reason": "no_verified_one_dimensional_route"
+    },
+    {
+      "file": "indoor_positioning_20260901_163040.jsonl",
+      "reason": "no_verified_one_dimensional_route"
+    }
+  ],
+  "strideValidation": {
+    "ios": {
+      "folds": [
+        {
+          "source": "indoor_positioning_ios_20260905_170448.jsonl",
+          "n": 9,
+          "baselineMAE": 0.2340564422888497,
+          "modelMAE": 0.23961736663910863
+        },
+        {
+          "source": "indoor_positioning_ios_20260905_170648.jsonl",
+          "n": 9,
+          "baselineMAE": 0.23246096725868176,
+          "modelMAE": 0.23489037188518364
+        },
+        {
+          "source": "indoor_positioning_ios_20260905_170852.jsonl",
+          "n": 9,
+          "baselineMAE": 0.2215034310054973,
+          "modelMAE": 0.17634524805397905
+        }
+      ],
+      "reason": "map_lap_targets_not_surveyed_stride; segment_cadence_includes_stops"
+    },
+    "android": {
+      "folds": [
+        {
+          "source": "indoor_positioning_20260901_151808.jsonl",
+          "n": 11,
+          "baselineMAE": 0.20532857941721575,
+          "modelMAE": 0.1750020522753723
+        },
+        {
+          "source": "indoor_positioning_20260901_153038.jsonl",
+          "n": 10,
+          "baselineMAE": 0.28385943630751964,
+          "modelMAE": 0.25875265049087687
+        },
+        {
+          "source": "indoor_positioning_20260901_155425.jsonl",
+          "n": 7,
+          "baselineMAE": 0.20579346465278345,
+          "modelMAE": 0.23160010868898356
+        },
+        {
+          "source": "indoor_positioning_20260901_155615.jsonl",
+          "n": 4,
+          "baselineMAE": 0.25774998626373635,
+          "modelMAE": 0.25321460018291686
+        },
+        {
+          "source": "indoor_positioning_20260901_160634.jsonl",
+          "n": 3,
+          "baselineMAE": 0.15700862425423812,
+          "modelMAE": 0.1930795843604259
+        },
+        {
+          "source": "indoor_positioning_20260901_161220.jsonl",
+          "n": 5,
+          "baselineMAE": 0.17107193760125153,
+          "modelMAE": 0.15356715165078544
+        },
+        {
+          "source": "indoor_positioning_20260901_161342.jsonl",
+          "n": 6,
+          "baselineMAE": 0.21161574074074074,
+          "modelMAE": 0.2764396613509063
+        },
+        {
+          "source": "indoor_positioning_20260901_162413.jsonl",
+          "n": 5,
+          "baselineMAE": 0.19309814367029202,
+          "modelMAE": 0.16571052500410788
+        }
+      ],
+      "reason": "map_lap_targets_not_surveyed_stride; segment_cadence_includes_stops"
+    }
+  },
+  "sequenceValidation": [
+    {
+      "source": "indoor_positioning_20260901_151808.jsonl",
+      "windows": 48,
+      "accepted": 1,
+      "medianMapError": 2.3513931410956275,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_20260901_153038.jsonl",
+      "windows": 40,
+      "accepted": 2,
+      "medianMapError": 55.655641525714486,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_20260901_155425.jsonl",
+      "windows": 36,
+      "accepted": 0,
+      "medianMapError": null,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_20260901_155615.jsonl",
+      "windows": 35,
+      "accepted": 0,
+      "medianMapError": null,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_20260901_160634.jsonl",
+      "windows": 35,
+      "accepted": 0,
+      "medianMapError": null,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_20260901_161220.jsonl",
+      "windows": 35,
+      "accepted": 0,
+      "medianMapError": null,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_20260901_161342.jsonl",
+      "windows": 35,
+      "accepted": 0,
+      "medianMapError": null,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_20260901_162413.jsonl",
+      "windows": 47,
+      "accepted": 0,
+      "medianMapError": null,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_ios_20260905_170448.jsonl",
+      "windows": 37,
+      "accepted": 1,
+      "medianMapError": 0.05725642433870348,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_ios_20260905_170648.jsonl",
+      "windows": 38,
+      "accepted": 0,
+      "medianMapError": null,
+      "reason": "weak_lap_interpolated_targets"
+    },
+    {
+      "source": "indoor_positioning_ios_20260905_170852.jsonl",
+      "windows": 37,
+      "accepted": 2,
+      "medianMapError": 21.548327708127225,
+      "reason": "weak_lap_interpolated_targets"
+    }
+  ],
+  "limits": [
+    "No surveyed distances",
+    "Holdout is per session, not independent day/user",
+    "Android/iOS separate",
+    "Special routes excluded from 1D postprocessing"
+  ]
+}

@@ -1,0 +1,916 @@
+{
+  "version": "areas-v1-20260909",
+  "status": "partial-survey-not-complete-building-graph",
+  "coordinates": "Common map: x=0 right stairs; positive y away from core. Extension geometry is diagram-derived, not surveyed distance.",
+  "svg_frame": {
+    "left": 70,
+    "right": 1310,
+    "center_y": 732,
+    "corridor_top": 700,
+    "corridor_bottom": 764
+  },
+  "common": [
+    {
+      "id": "stairs_right",
+      "label": "오른쪽 계단 입구",
+      "rect": [
+        -2,
+        -1.17,
+        3,
+        1.17
+      ],
+      "vertical": true
+    },
+    {
+      "id": "stairs_left",
+      "label": "왼쪽 계단 입구",
+      "rect": [
+        132.407,
+        -1.17,
+        137.407,
+        1.17
+      ],
+      "vertical": true
+    },
+    {
+      "id": "core_junction",
+      "label": "코어·메인복도 교차영역",
+      "rect": [
+        69.424,
+        -1.17,
+        72.184,
+        1.17
+      ]
+    },
+    {
+      "id": "core",
+      "label": "코어복도",
+      "rect": [
+        69.424,
+        -10.37,
+        72.184,
+        -1.17
+      ],
+      "vertical": true,
+      "status": "connector-vicinity-not-door-survey"
+    },
+    {
+      "id": "main_right",
+      "label": "오른쪽 강의실 라인",
+      "rect": [
+        3,
+        -1.17,
+        69.424,
+        1.17
+      ]
+    },
+    {
+      "id": "main_left",
+      "label": "왼쪽 강의실 라인",
+      "rect": [
+        72.184,
+        -1.17,
+        132.407,
+        1.17
+      ]
+    }
+  ],
+  "floors": {
+    "1": {
+      "areas": [],
+      "portals": [],
+      "walls": [],
+      "note": "정문·야외 정확한 통행 영역은 미확인. 공통 복도만 사용."
+    },
+    "2": {
+      "areas": [
+        {
+          "id": "open_2107",
+          "label": "2107 자유공간",
+          "svg_rect": [
+            1018,
+            590,
+            1080,
+            700
+          ]
+        },
+        {
+          "id": "mspace",
+          "label": "M-space",
+          "svg_rect": [
+            1018,
+            85,
+            1068,
+            590
+          ]
+        },
+        {
+          "id": "study",
+          "label": "ㄷ자 책상공간 주변",
+          "svg_rect": [
+            1080,
+            590,
+            1146,
+            682
+          ],
+          "status": "furniture-clearance-unverified"
+        },
+        {
+          "id": "study_entry_left",
+          "label": "기둥 왼쪽 책상 진입부",
+          "svg_rect": [
+            1080,
+            682,
+            1128,
+            700
+          ],
+          "status": "user-confirmed-connection-diagram-width",
+          "evidence": "user-pillar-left-photo"
+        },
+        {
+          "id": "entry",
+          "label": "기둥·TDM 옆 진입구",
+          "svg_rect": [
+            1146,
+            585,
+            1198,
+            700
+          ]
+        },
+        {
+          "id": "extension",
+          "label": "증축부 복도",
+          "svg_rect": [
+            1146,
+            85,
+            1198,
+            585
+          ],
+          "motion_axis": "y",
+          "status": "diagram-width-unverified",
+          "end_status": "stairs-exist-excluded-by-user"
+        },
+        {
+          "id": "side_passage",
+          "label": "사이드 화장실 통로",
+          "rect": [
+            4.3415,
+            -9.07,
+            5.6035,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-04.json",
+          "source_version": "4f-v0.11-fixed-plan-frame",
+          "end_status": "interior-door-and-room-not-modeled",
+          "display_svg_rect": [
+            1252,
+            764,
+            1282,
+            874
+          ],
+          "display_note": "Existing floor SVG is nonuniform; display bounds are separate from shared map coordinates."
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_study_left",
+          "between": [
+            "main_right",
+            "study_entry_left"
+          ],
+          "svg_line": [
+            [
+              1080,
+              700
+            ],
+            [
+              1128,
+              700
+            ]
+          ],
+          "evidence": "user-pillar-left-photo-connection-only-width-provisional"
+        },
+        {
+          "id": "study_left_inner",
+          "between": [
+            "study_entry_left",
+            "study"
+          ],
+          "svg_line": [
+            [
+              1080,
+              682
+            ],
+            [
+              1128,
+              682
+            ]
+          ],
+          "evidence": "user-pillar-left-photo-connection-only-width-provisional"
+        },
+        {
+          "id": "main_2107",
+          "between": [
+            "main_right",
+            "open_2107"
+          ],
+          "svg_line": [
+            [
+              1018,
+              700
+            ],
+            [
+              1080,
+              700
+            ]
+          ],
+          "evidence": "user-20260907"
+        },
+        {
+          "id": "2107_mspace",
+          "between": [
+            "open_2107",
+            "mspace"
+          ],
+          "svg_line": [
+            [
+              1035,
+              590
+            ],
+            [
+              1068,
+              590
+            ]
+          ],
+          "evidence": "user-20260907"
+        },
+        {
+          "id": "main_entry",
+          "between": [
+            "main_right",
+            "entry"
+          ],
+          "svg_line": [
+            [
+              1146,
+              700
+            ],
+            [
+              1198,
+              700
+            ]
+          ],
+          "evidence": "user-20260907"
+        },
+        {
+          "id": "entry_study",
+          "between": [
+            "entry",
+            "study"
+          ],
+          "svg_line": [
+            [
+              1146,
+              590
+            ],
+            [
+              1146,
+              682
+            ]
+          ],
+          "evidence": "user-connection-only-door-width-unverified"
+        },
+        {
+          "id": "entry_extension",
+          "between": [
+            "entry",
+            "extension"
+          ],
+          "svg_line": [
+            [
+              1146,
+              585
+            ],
+            [
+              1198,
+              585
+            ]
+          ],
+          "evidence": "user-20260907"
+        },
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 4.3415,
+              "y": -1.17
+            },
+            {
+              "x": 5.6035,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection",
+          "display_svg_line": [
+            [
+              1252,
+              764
+            ],
+            [
+              1282,
+              764
+            ]
+          ]
+        }
+      ],
+      "walls": [
+        {
+          "id": "2107_study_wall",
+          "svg_line": [
+            [
+              1080,
+              590
+            ],
+            [
+              1080,
+              700
+            ]
+          ],
+          "evidence": "user-confirmed-no-direct-passage",
+          "hard": true
+        },
+        {
+          "id": "pillar_left",
+          "svg_line": [
+            [
+              1128,
+              682
+            ],
+            [
+              1128,
+              700
+            ]
+          ],
+          "evidence": "existing-map-pillar",
+          "hard": true
+        },
+        {
+          "id": "pillar_top",
+          "svg_line": [
+            [
+              1128,
+              682
+            ],
+            [
+              1146,
+              682
+            ]
+          ],
+          "evidence": "existing-map-pillar",
+          "hard": true
+        },
+        {
+          "id": "pillar_right",
+          "svg_line": [
+            [
+              1146,
+              682
+            ],
+            [
+              1146,
+              700
+            ]
+          ],
+          "evidence": "existing-map-pillar",
+          "hard": true
+        },
+        {
+          "id": "pillar_bottom",
+          "svg_line": [
+            [
+              1128,
+              700
+            ],
+            [
+              1146,
+              700
+            ]
+          ],
+          "evidence": "existing-map-pillar",
+          "hard": true
+        }
+      ],
+      "note": "2107에서 책상공간 직접 진입 금지. 교실·TDM 문, 책상 사이 여유 폭은 아직 하드 제약 아님. 파란선은 연결 근거이지 실측 폭이 아님."
+    },
+    "3": {
+      "areas": [
+        {
+          "id": "entry",
+          "label": "증축부 진입구",
+          "svg_rect": [
+            1180,
+            585,
+            1248,
+            700
+          ],
+          "status": "diagram-derived"
+        },
+        {
+          "id": "free",
+          "label": "자유공간",
+          "svg_rect": [
+            1146,
+            455,
+            1282,
+            585
+          ],
+          "status": "diagram-derived"
+        },
+        {
+          "id": "extension",
+          "label": "증축부 복도",
+          "svg_rect": [
+            1146,
+            85,
+            1192,
+            455
+          ],
+          "motion_axis": "y",
+          "status": "diagram-derived"
+        },
+        {
+          "id": "it_stairs",
+          "label": "IT홀 층내 계단",
+          "svg_rect": [
+            1082,
+            520,
+            1146,
+            585
+          ],
+          "within_floor": true,
+          "status": "turning-path-unverified"
+        },
+        {
+          "id": "it_lower",
+          "label": "IT홀 계단 위 연결부",
+          "svg_rect": [
+            1018,
+            455,
+            1082,
+            585
+          ],
+          "within_floor": true,
+          "status": "turning-path-unverified"
+        },
+        {
+          "id": "it_hall",
+          "label": "IT홀",
+          "svg_rect": [
+            1018,
+            85,
+            1146,
+            455
+          ],
+          "within_floor": true,
+          "status": "door-position-unverified"
+        },
+        {
+          "id": "side_passage",
+          "label": "사이드 화장실 통로",
+          "rect": [
+            4.3415,
+            -9.07,
+            5.6035,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-04.json",
+          "source_version": "4f-v0.11-fixed-plan-frame",
+          "end_status": "interior-door-and-room-not-modeled",
+          "display_svg_rect": [
+            1252,
+            764,
+            1282,
+            874
+          ],
+          "display_note": "Existing floor SVG is nonuniform; display bounds are separate from shared map coordinates."
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_entry",
+          "between": [
+            "main_right",
+            "entry"
+          ],
+          "svg_line": [
+            [
+              1180,
+              700
+            ],
+            [
+              1248,
+              700
+            ]
+          ],
+          "evidence": "existing-map"
+        },
+        {
+          "id": "entry_free",
+          "between": [
+            "entry",
+            "free"
+          ],
+          "svg_line": [
+            [
+              1180,
+              585
+            ],
+            [
+              1248,
+              585
+            ]
+          ],
+          "evidence": "existing-map"
+        },
+        {
+          "id": "free_extension",
+          "between": [
+            "free",
+            "extension"
+          ],
+          "svg_line": [
+            [
+              1146,
+              455
+            ],
+            [
+              1192,
+              455
+            ]
+          ],
+          "evidence": "existing-map"
+        },
+        {
+          "id": "free_it_stairs",
+          "between": [
+            "free",
+            "it_stairs"
+          ],
+          "svg_line": [
+            [
+              1146,
+              545
+            ],
+            [
+              1146,
+              585
+            ]
+          ],
+          "evidence": "map-and-IT-hall-log-route"
+        },
+        {
+          "id": "it_turn",
+          "between": [
+            "it_stairs",
+            "it_lower"
+          ],
+          "svg_line": [
+            [
+              1082,
+              520
+            ],
+            [
+              1082,
+              545
+            ]
+          ],
+          "evidence": "provisional-needs-turn-location-check"
+        },
+        {
+          "id": "it_door",
+          "between": [
+            "it_lower",
+            "it_hall"
+          ],
+          "svg_line": [
+            [
+              1018,
+              455
+            ],
+            [
+              1082,
+              455
+            ]
+          ],
+          "evidence": "provisional-needs-door-check"
+        },
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 4.3415,
+              "y": -1.17
+            },
+            {
+              "x": 5.6035,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection",
+          "display_svg_line": [
+            [
+              1252,
+              764
+            ],
+            [
+              1282,
+              764
+            ]
+          ]
+        }
+      ],
+      "walls": [],
+      "note": "IT홀은 3층 내부 높이차. 세부 회전·문 위치 미확인으로 폐쇄 벽을 추가하지 않는다. 전체 통행 가능성 보장 아님."
+    },
+    "4": {
+      "areas": [
+        {
+          "id": "stairs_right",
+          "label": "오른쪽 계단 진입 전 기준점",
+          "rect": [-2, -1.17, 3.363100346020758, 1.17],
+          "vertical": true,
+          "source": "2026-09-14 user-confirmed stair-entry threshold"
+        },
+        {
+          "id": "main_right",
+          "label": "오른쪽 강의실 라인",
+          "rect": [3.363100346020758, -1.17, 69.424, 1.17],
+          "source": "2026-09-14 user-confirmed stair-entry threshold"
+        },
+        {
+          "id": "side_passage",
+          "label": "사이드 화장실 통로",
+          "rect": [
+            4.3415,
+            -9.07,
+            5.6035,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-04.json",
+          "source_version": "4f-v0.11-fixed-plan-frame",
+          "end_status": "interior-door-and-room-not-modeled"
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 4.3415,
+              "y": -1.17
+            },
+            {
+              "x": 5.6035,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection"
+        }
+      ],
+      "walls": [],
+      "distanceMetric": {
+      "mapBreaks": [
+        3.363100346020758,
+          69.424,
+          72.184
+        ],
+        "meterBreaks": [
+          0,
+          48.68545341491699,
+          51.70113432407379
+        ],
+        "metersPerLegacyUnit": 0.7089047775478136,
+        "calibrationSteps": 81,
+        "status": "user_confirmed_20260914"
+      }
+    },
+    "6": {
+    "areas": [
+      {
+          "id": "side_passage",
+          "label": "6202 끝방 통로",
+          "rect": [
+            5.295,
+            -5.33,
+            7.255000000000001,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-06.json",
+          "source_version": "6f-v1-right-stair-and-6202",
+          "end_status": "interior-door-and-room-not-modeled"
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 5.295,
+              "y": -1.17
+            },
+            {
+              "x": 7.255000000000001,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection"
+        }
+      ],
+      "walls": []
+    },
+    "7": {
+      "areas": [
+        {
+          "id": "side_passage",
+          "label": "7202 끝방 통로",
+          "rect": [
+            5.295,
+            -5.33,
+            7.255000000000001,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-07.json",
+          "source_version": "7f-v1-evacuation-plan-verified",
+          "end_status": "interior-door-and-room-not-modeled"
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 5.295,
+              "y": -1.17
+            },
+            {
+              "x": 7.255000000000001,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection"
+        }
+      ],
+      "walls": []
+    },
+    "8": {
+      "areas": [
+        {
+          "id": "side_passage",
+          "label": "8202 끝방 통로",
+          "rect": [
+            5.295,
+            -5.33,
+            7.255000000000001,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-08.json",
+          "source_version": "8f-v1-evacuation-plan-verified",
+          "end_status": "interior-door-and-room-not-modeled"
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 5.295,
+              "y": -1.17
+            },
+            {
+              "x": 7.255000000000001,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection"
+        }
+      ],
+      "walls": []
+    },
+    "9": {
+      "areas": [
+        {
+          "id": "side_passage",
+          "label": "9202 끝방 통로",
+          "rect": [
+            5.295,
+            -5.33,
+            7.255000000000001,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-09.json",
+          "source_version": "9f-v1-evacuation-plan-verified",
+          "end_status": "interior-door-and-room-not-modeled"
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 5.295,
+              "y": -1.17
+            },
+            {
+              "x": 7.255000000000001,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection"
+        }
+      ],
+      "walls": []
+    },
+    "10": {
+      "areas": [
+        {
+          "id": "side_passage",
+          "label": "10202 끝방 통로",
+          "rect": [
+            5.295,
+            -5.33,
+            7.255000000000001,
+            -1.17
+          ],
+          "motion_axis": "y",
+          "status": "shared-plan-geometry-not-new-survey",
+          "source": "data/maps/floor-10.json",
+          "source_version": "10f-v1-evacuation-plan-verified",
+          "end_status": "interior-door-and-room-not-modeled"
+        }
+      ],
+      "portals": [
+        {
+          "id": "main_side_passage",
+          "between": [
+            "main_right",
+            "side_passage"
+          ],
+          "line": [
+            {
+              "x": 5.295,
+              "y": -1.17
+            },
+            {
+              "x": 7.255000000000001,
+              "y": -1.17
+            }
+          ],
+          "evidence": "shared-floor-map-and-user-connection"
+        }
+      ],
+      "walls": []
+    }
+  }
+}

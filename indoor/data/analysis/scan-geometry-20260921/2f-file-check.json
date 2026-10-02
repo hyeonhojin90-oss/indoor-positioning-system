@@ -1,0 +1,17 @@
+{
+  "archive": "2026. 9. 21 (2).zip",
+  "archive_sha256": "633521fad328fcebbdbd387ba995029d477069b63cfc27a3127903079a5c307b",
+  "stored_as": "2f-rescan.glb",
+  "sha256": "06caa3ceeec86c346f645009ee69b68f21f4a7ff45f95d3f72b7e5bb5a7e4d40",
+  "bytes": 23645048,
+  "user_identification": "2층 새 스캔",
+  "scope_note": "공유 링크 FE373BB5-7E56-4A58-9C41-2C61E5EBE7A5 관련 사용자 다운로드 완료 후 확인",
+  "meshes": 8,
+  "vertices": 294566,
+  "bbox_m": [
+    44.81182289123535,
+    4.165731430053711,
+    55.26652145385742
+  ],
+  "bbox_not_corridor_length": true
+}

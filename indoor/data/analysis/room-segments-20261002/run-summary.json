@@ -1,0 +1,2137 @@
+{
+  "included": 22,
+  "excluded": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111521.jsonl",
+      "sha256": "abab7234e6c10e26f1eb7e882eeced6f1deb5bf2331940df25d85f67fb6eff36",
+      "route": "4F_CORE_TO_RIGHT_STAIRS",
+      "platform": "android",
+      "device": "samsung SM-S938N",
+      "excluded": "incomplete_or_less_than_8_room_labels"
+    }
+  ],
+  "stepSummary": [
+    {
+      "platform": "android",
+      "forward": {
+        "n": 5,
+        "mean": 9.4,
+        "median": 10,
+        "min": 6,
+        "max": 11,
+        "sd": 1.8547236990991407
+      },
+      "reverse": {
+        "n": 3,
+        "mean": 8.666666666666666,
+        "median": 9,
+        "min": 8,
+        "max": 9,
+        "sd": 0.4714045207910317
+      }
+    },
+    {
+      "platform": "ios",
+      "forward": {
+        "n": 9,
+        "mean": 8.444444444444445,
+        "median": 8,
+        "min": 8,
+        "max": 10,
+        "sd": 0.6849348892187752
+      },
+      "reverse": {
+        "n": 5,
+        "mean": 8,
+        "median": 8,
+        "min": 7,
+        "max": 9,
+        "sd": 0.6324555320336759
+      }
+    }
+  ],
+  "targets": [
+    {
+      "session": "indoor_positioning_20260901_151808",
+      "date": "2026-09-01",
+      "platform": "android",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1788243496596,
+      "endTime": 1788243502291,
+      "durationS": 5.695,
+      "steps": 11,
+      "callbackSteps": 11,
+      "rawCounterSteps": 7,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 10,
+        "max": 13
+      },
+      "magneticSamples": 284,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 11,
+        "mean": 38.38139326617175,
+        "median": 33.605176116848426,
+        "min": 29.715033191806192,
+        "max": 55.792679754635735,
+        "sd": 8.921749135234846
+      },
+      "vertical": {
+        "n": 11,
+        "mean": -33.35479962048708,
+        "median": -30.70386561825475,
+        "min": -42.89922684892284,
+        "max": -27.41250168556935,
+        "sd": 5.141543662508793
+      },
+      "startMag": 32.02201652508124,
+      "endMag": 30.013577885811085,
+      "deltaMag": -2.0084386392701568,
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_151808.jsonl"
+    },
+    {
+      "session": "indoor_positioning_20260901_153038",
+      "date": "2026-09-01",
+      "platform": "android",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1788244245664,
+      "endTime": 1788244252305,
+      "durationS": 6.641,
+      "steps": 11,
+      "callbackSteps": 11,
+      "rawCounterSteps": 8,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 11,
+        "max": 11
+      },
+      "magneticSamples": 332,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 11,
+        "mean": 58.26320769912081,
+        "median": 57.072522501747756,
+        "min": 47.668212629329844,
+        "max": 68.23311531602295,
+        "sd": 5.956599309703557
+      },
+      "vertical": {
+        "n": 11,
+        "mean": -48.7430912620377,
+        "median": -48.183288381126516,
+        "min": -54.53141042941719,
+        "max": -44.16850923901741,
+        "sd": 2.8385353899735364
+      },
+      "startMag": 49.81522372586137,
+      "endMag": 55.61120047638374,
+      "deltaMag": 5.795976750522371,
+      "file": "indoor/data/raw/2026-09-01/indoor_positioning_20260901_153038.jsonl"
+    },
+    {
+      "session": "indoor_positioning_20260919_111300",
+      "date": "2026-09-19",
+      "platform": "android",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1789784015095,
+      "endTime": 1789784019315,
+      "durationS": 4.22,
+      "steps": 9,
+      "callbackSteps": 9,
+      "rawCounterSteps": 8,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 7,
+        "max": 12
+      },
+      "magneticSamples": 211,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 9,
+        "mean": 47.07518406116257,
+        "median": 44.66142674235234,
+        "min": 38.45050679949569,
+        "max": 57.51073727324752,
+        "sd": 6.527787538909084
+      },
+      "vertical": {
+        "n": 9,
+        "mean": -39.964141601876356,
+        "median": -39.615726073527355,
+        "min": -45.25134446926829,
+        "max": -35.01505403053727,
+        "sd": 3.2051611833870126
+      },
+      "startMag": 42.62881533255805,
+      "endMag": 39.54934799390354,
+      "deltaMag": -3.07946733865451,
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl"
+    },
+    {
+      "session": "indoor_positioning_20260919_111532",
+      "date": "2026-09-19",
+      "platform": "android",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1789784136469,
+      "endTime": 1789784139774,
+      "durationS": 3.305,
+      "steps": 6,
+      "callbackSteps": 6,
+      "rawCounterSteps": 7,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 4,
+        "max": 8
+      },
+      "magneticSamples": 165,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 6,
+        "mean": 40.94246566848961,
+        "median": 41.80962303842179,
+        "min": 28.910413295192548,
+        "max": 50.41668844911384,
+        "sd": 7.979907561375422
+      },
+      "vertical": {
+        "n": 6,
+        "mean": -25.4015665326542,
+        "median": -24.22117597057388,
+        "min": -31.573531229199403,
+        "max": -18.7175829183904,
+        "sd": 4.7489930438745
+      },
+      "startMag": 31.1126938831452,
+      "endMag": 44.16800641809057,
+      "deltaMag": 13.055312534945369,
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl"
+    },
+    {
+      "session": "indoor_positioning_20260922_191446",
+      "date": "2026-09-22",
+      "platform": "android",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1790072094134,
+      "endTime": 1790072099795,
+      "durationS": 5.661,
+      "steps": 10,
+      "callbackSteps": 10,
+      "rawCounterSteps": 0,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 9,
+        "max": 11
+      },
+      "magneticSamples": 283,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 10,
+        "mean": 56.485290718024046,
+        "median": 55.8153515933145,
+        "min": 47.867341684412295,
+        "max": 66.6514385168606,
+        "sd": 6.810125143355546
+      },
+      "vertical": {
+        "n": 10,
+        "mean": -51.87895495525047,
+        "median": -51.84553886014716,
+        "min": -59.44098855086915,
+        "max": -46.04628507552525,
+        "sd": 4.906087397276652
+      },
+      "startMag": 50.32200817775117,
+      "endMag": 48.34243912010305,
+      "deltaMag": -1.9795690576481206,
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl"
+    },
+    {
+      "session": "indoor_positioning_20260922_191556",
+      "date": "2026-09-22",
+      "platform": "android",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1790072193872,
+      "endTime": 1790072198950,
+      "durationS": 5.078,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 9,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 7,
+        "max": 9
+      },
+      "magneticSamples": 254,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 60.156055050981955,
+        "median": 63.21803578591967,
+        "min": 42.76377133275326,
+        "max": 80.53194143837254,
+        "sd": 13.80317479702738
+      },
+      "vertical": {
+        "n": 8,
+        "mean": -27.936548563222797,
+        "median": -26.53677646479141,
+        "min": -35.15961065196353,
+        "max": -23.592888679917657,
+        "sd": 4.0925990033087
+      },
+      "startMag": 43.07007958109986,
+      "endMag": 63.60202844038566,
+      "deltaMag": 20.531948859285798,
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl"
+    },
+    {
+      "session": "indoor_positioning_20260922_202729",
+      "date": "2026-09-22",
+      "platform": "android",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1790076458847,
+      "endTime": 1790076464806,
+      "durationS": 5.959,
+      "steps": 9,
+      "callbackSteps": 9,
+      "rawCounterSteps": 0,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 9
+      },
+      "magneticSamples": 298,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 9,
+        "mean": 52.553394603944255,
+        "median": 51.303488658789234,
+        "min": 43.46894759167718,
+        "max": 62.96768022086678,
+        "sd": 7.35013650200875
+      },
+      "vertical": {
+        "n": 9,
+        "mean": -47.098065491388724,
+        "median": -47.29453264218663,
+        "min": -53.49301903746506,
+        "max": -41.84905820781382,
+        "sd": 4.391568430984009
+      },
+      "startMag": 46.79063429418294,
+      "endMag": 43.79515555636752,
+      "deltaMag": -2.995478737815418,
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl"
+    },
+    {
+      "session": "indoor_positioning_20260922_202917",
+      "date": "2026-09-22",
+      "platform": "android",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1790076611567,
+      "endTime": 1790076618208,
+      "durationS": 6.641,
+      "steps": 9,
+      "callbackSteps": 9,
+      "rawCounterSteps": 6,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 9,
+        "max": 11
+      },
+      "magneticSamples": 332,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 9,
+        "mean": 60.768740947625474,
+        "median": 59.086047553229555,
+        "min": 48.27395697345516,
+        "max": 74.00796052900324,
+        "sd": 8.480055200584651
+      },
+      "vertical": {
+        "n": 9,
+        "mean": -45.43339396998573,
+        "median": -46.068442785557885,
+        "min": -52.81162830198707,
+        "max": -37.274646683250516,
+        "sd": 4.061058217661242
+      },
+      "startMag": 57.78439264767063,
+      "endMag": 49.79133336977825,
+      "deltaMag": -7.993059277892378,
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260905_170448",
+      "date": "2026-09-05",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1788595497062,
+      "endTime": 1788595504494,
+      "durationS": 7.432,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 13,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 9
+      },
+      "magneticSamples": 74,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 53.791381620049734,
+        "median": 53.70642672538091,
+        "min": 39.38912023028112,
+        "max": 66.7948436430951,
+        "sd": 8.995157219861422
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 42.64071574459598,
+        "median": 42.501057268102784,
+        "min": 35.62466988674948,
+        "max": 48.57460421194783,
+        "sd": 3.799316751663046
+      },
+      "startMag": 42.211777606342444,
+      "endMag": 51.122809938388905,
+      "deltaMag": 8.91103233204646,
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170448.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260905_170648",
+      "date": "2026-09-05",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1788595615358,
+      "endTime": 1788595624390,
+      "durationS": 9.032,
+      "steps": 9,
+      "callbackSteps": 9,
+      "rawCounterSteps": 8,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 9
+      },
+      "magneticSamples": 91,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 9,
+        "mean": 50.43616290232252,
+        "median": 50.88804938770262,
+        "min": 37.44188257925139,
+        "max": 64.68127313736352,
+        "sd": 8.919424018203392
+      },
+      "vertical": {
+        "n": 9,
+        "mean": 41.450886169241905,
+        "median": 42.39588910716398,
+        "min": 33.40487002107004,
+        "max": 46.596749209132355,
+        "sd": 4.188302001241002
+      },
+      "startMag": 38.59937139794674,
+      "endMag": 48.69590119918092,
+      "deltaMag": 10.096529801234183,
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170648.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260905_170852",
+      "date": "2026-09-05",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1788595740025,
+      "endTime": 1788595745757,
+      "durationS": 5.732,
+      "steps": 9,
+      "callbackSteps": 9,
+      "rawCounterSteps": 6,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 10
+      },
+      "magneticSamples": 58,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 9,
+        "mean": 52.03620454116063,
+        "median": 51.675092980460526,
+        "min": 40.92138447806937,
+        "max": 64.44955865845856,
+        "sd": 7.752876437764304
+      },
+      "vertical": {
+        "n": 9,
+        "mean": 42.412808158550526,
+        "median": 40.78414988843909,
+        "min": 37.29341983296292,
+        "max": 50.15551155928557,
+        "sd": 4.637996731647759
+      },
+      "startMag": 42.371089430940536,
+      "endMag": 48.83851949248786,
+      "deltaMag": 6.467430061547326,
+      "file": "indoor/data/raw/ios/2026-09-05/indoor_positioning_ios_20260905_170852.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260908_132920",
+      "date": "2026-09-08",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1788841766545,
+      "endTime": 1788841771760,
+      "durationS": 5.215,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 8,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 7,
+        "max": 9
+      },
+      "magneticSamples": 53,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 55.720702687898516,
+        "median": 56.5943680394457,
+        "min": 42.3473976530822,
+        "max": 67.38375707131854,
+        "sd": 8.246217970983942
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 45.82032772478119,
+        "median": 45.69030877865349,
+        "min": 38.94658146819501,
+        "max": 51.41195323218541,
+        "sd": 4.008075493234404
+      },
+      "startMag": 44.168914675831935,
+      "endMag": 56.5943680394457,
+      "deltaMag": 12.425453363613762,
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_132920.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260908_133049",
+      "date": "2026-09-08",
+      "platform": "ios",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1788841886291,
+      "endTime": 1788841890674,
+      "durationS": 4.383,
+      "steps": 7,
+      "callbackSteps": 7,
+      "rawCounterSteps": 9,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 6,
+        "max": 9
+      },
+      "magneticSamples": 44,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 7,
+        "mean": 57.640747088745265,
+        "median": 55.352233040853605,
+        "min": 44.6074065907591,
+        "max": 72.94631112664271,
+        "sd": 9.651979032682236
+      },
+      "vertical": {
+        "n": 7,
+        "mean": 44.27267123205073,
+        "median": 45.65037146441949,
+        "min": 36.97794256851155,
+        "max": 50.93227338812172,
+        "sd": 5.010719182862876
+      },
+      "startMag": 46.00076227398197,
+      "endMag": 60.02840366591864,
+      "deltaMag": 14.027641391936669,
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133049.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260908_133154",
+      "date": "2026-09-08",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1788841920627,
+      "endTime": 1788841925545,
+      "durationS": 4.918,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 10,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 7,
+        "max": 10
+      },
+      "magneticSamples": 50,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 48.56941013927147,
+        "median": 48.08967230437834,
+        "min": 37.28678756424579,
+        "max": 58.462465038319635,
+        "sd": 6.913431681565423
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 39.12879855306418,
+        "median": 37.9881678549563,
+        "min": 32.31556458597508,
+        "max": 45.17386441299226,
+        "sd": 4.550879923842055
+      },
+      "startMag": 40.2528880865111,
+      "endMag": 45.0190216151572,
+      "deltaMag": 4.766133528646101,
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133154.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260908_133254",
+      "date": "2026-09-08",
+      "platform": "ios",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1788842009781,
+      "endTime": 1788842014354,
+      "durationS": 4.573,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 5,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 6,
+        "max": 9
+      },
+      "magneticSamples": 46,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 59.2239440809107,
+        "median": 60.07048970609969,
+        "min": 44.338168431615,
+        "max": 74.37000947486318,
+        "sd": 10.451025888498796
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 49.37269676514419,
+        "median": 49.93506073962476,
+        "min": 40.52466281442452,
+        "max": 57.933401221578364,
+        "sd": 6.821550328316654
+      },
+      "startMag": 45.16993042690469,
+      "endMag": 60.07048970609969,
+      "deltaMag": 14.900559279195,
+      "file": "indoor/data/raw/ios/2026-09-08/indoor_positioning_ios_20260908_133254.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260914_170738",
+      "date": "2026-09-14",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1789373268785,
+      "endTime": 1789373273884,
+      "durationS": 5.099,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 0,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 9
+      },
+      "magneticSamples": 52,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 57.519939691889576,
+        "median": 58.10558683663244,
+        "min": 43.850463986960115,
+        "max": 67.66194696339234,
+        "sd": 8.049574389800414
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 45.13656859678768,
+        "median": 45.756931703910475,
+        "min": 40.44026693147618,
+        "max": 49.52543802774227,
+        "sd": 3.185893817701361
+      },
+      "startMag": 47.448906425937366,
+      "endMag": 53.55596450166445,
+      "deltaMag": 6.107058075727082,
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170738.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260914_170901",
+      "date": "2026-09-14",
+      "platform": "ios",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1789373390005,
+      "endTime": 1789373395784,
+      "durationS": 5.779,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 4,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 9
+      },
+      "magneticSamples": 58,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 55.62424335823618,
+        "median": 54.33413172647695,
+        "min": 45.50747868117573,
+        "max": 68.04835355801211,
+        "sd": 8.633633133686958
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 44.97364808667653,
+        "median": 44.30506657968229,
+        "min": 40.50891230435789,
+        "max": 50.1315705322469,
+        "sd": 3.598310688481876
+      },
+      "startMag": 47.33370088189009,
+      "endMag": 48.09647763994019,
+      "deltaMag": 0.7627767580501015,
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_170901.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260914_171021",
+      "date": "2026-09-14",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1789373428357,
+      "endTime": 1789373433265,
+      "durationS": 4.908,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 4,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 7,
+        "max": 9
+      },
+      "magneticSamples": 49,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 55.22626186775432,
+        "median": 55.22931114544602,
+        "min": 43.68130851225714,
+        "max": 67.10171731516591,
+        "sd": 8.194216623557407
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 44.65000607534868,
+        "median": 42.97555823550246,
+        "min": 39.36969483180902,
+        "max": 52.624857423850415,
+        "sd": 4.557230695257617
+      },
+      "startMag": 47.15521886825377,
+      "endMag": 48.54892839509494,
+      "deltaMag": 1.393709526841171,
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171021.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260914_171142",
+      "date": "2026-09-14",
+      "platform": "ios",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1789373549844,
+      "endTime": 1789373555704,
+      "durationS": 5.86,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 12,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 9
+      },
+      "magneticSamples": 59,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 57.90086272081386,
+        "median": 56.37950086660619,
+        "min": 45.84566362653427,
+        "max": 73.72585185491366,
+        "sd": 9.406842343547552
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 44.68878504772211,
+        "median": 44.30899089171179,
+        "min": 39.93429187172068,
+        "max": 50.27231929754198,
+        "sd": 3.6391854795408265
+      },
+      "startMag": 48.262069894733074,
+      "endMag": 50.46947197083731,
+      "deltaMag": 2.2074020761042377,
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_171142.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260914_200838",
+      "date": "2026-09-14",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1789384124763,
+      "endTime": 1789384129410,
+      "durationS": 4.647,
+      "steps": 8,
+      "callbackSteps": 8,
+      "rawCounterSteps": 9,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 7,
+        "max": 9
+      },
+      "magneticSamples": 47,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 8,
+        "mean": 54.18327279474903,
+        "median": 52.831085836423526,
+        "min": 44.99340482042125,
+        "max": 66.60629267910379,
+        "sd": 7.771439888345654
+      },
+      "vertical": {
+        "n": 8,
+        "mean": 45.08233227414901,
+        "median": 42.45732025529601,
+        "min": 38.73602942344018,
+        "max": 54.40899447275709,
+        "sd": 5.245560068711302
+      },
+      "startMag": 48.615511070375064,
+      "endMag": 46.13555613087614,
+      "deltaMag": -2.479954939498924,
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200838.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260914_200949",
+      "date": "2026-09-14",
+      "platform": "ios",
+      "direction": "reverse",
+      "from": "4212",
+      "to": "4213",
+      "pair": "4212~4213",
+      "startTime": 1789384231116,
+      "endTime": 1789384236733,
+      "durationS": 5.617,
+      "steps": 9,
+      "callbackSteps": 9,
+      "rawCounterSteps": 7,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 8,
+        "max": 10
+      },
+      "magneticSamples": 56,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 9,
+        "mean": 54.4362089779041,
+        "median": 52.10075485525347,
+        "min": 37.88923163260043,
+        "max": 70.78285512197361,
+        "sd": 10.0807830466633
+      },
+      "vertical": {
+        "n": 9,
+        "mean": 43.832738385616594,
+        "median": 43.599092862696395,
+        "min": 34.917963604203024,
+        "max": 52.71870705854424,
+        "sd": 4.856019983582802
+      },
+      "startMag": 49.08047259914398,
+      "endMag": 41.546146921123466,
+      "deltaMag": -7.534325678020515,
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_200949.jsonl"
+    },
+    {
+      "session": "indoor_positioning_ios_20260914_201100",
+      "date": "2026-09-14",
+      "platform": "ios",
+      "direction": "forward",
+      "from": "4213",
+      "to": "4212",
+      "pair": "4212~4213",
+      "startTime": 1789384266556,
+      "endTime": 1789384271640,
+      "durationS": 5.084,
+      "steps": 10,
+      "callbackSteps": 10,
+      "rawCounterSteps": 12,
+      "tapTimingSensitivityHalfSecond": {
+        "min": 9,
+        "max": 11
+      },
+      "magneticSamples": 51,
+      "mvCoverage": 1,
+      "magnetic": {
+        "n": 10,
+        "mean": 53.489897774325016,
+        "median": 52.85439872212368,
+        "min": 40.56032445074917,
+        "max": 65.8066651535286,
+        "sd": 8.218370956695118
+      },
+      "vertical": {
+        "n": 10,
+        "mean": 44.88258237044428,
+        "median": 45.41069128859184,
+        "min": 38.48162279392789,
+        "max": 51.2254379635377,
+        "sd": 4.431758078666753
+      },
+      "startMag": 42.2297377523668,
+      "endMag": 49.012966804605284,
+      "deltaMag": 6.783229052238482,
+      "file": "indoor/data/raw/ios/2026-09-14/indoor_positioning_ios_20260914_201100.jsonl"
+    }
+  ],
+  "classification": [
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "steps",
+      "total": 72,
+      "correct": 16,
+      "accuracy": 0.23425925925925928,
+      "target": {
+        "total": 8,
+        "correct": 5,
+        "tieAdjustedCorrect": 5.5,
+        "accuracy": 0.6875
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape",
+      "total": 72,
+      "correct": 25,
+      "accuracy": 0.3472222222222222,
+      "target": {
+        "total": 8,
+        "correct": 3,
+        "tieAdjustedCorrect": 3,
+        "accuracy": 0.375
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv",
+      "total": 72,
+      "correct": 26,
+      "accuracy": 0.3611111111111111,
+      "target": {
+        "total": 8,
+        "correct": 3,
+        "tieAdjustedCorrect": 3,
+        "accuracy": 0.375
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm",
+      "total": 72,
+      "correct": 13,
+      "accuracy": 0.18055555555555555,
+      "target": {
+        "total": 8,
+        "correct": 0,
+        "tieAdjustedCorrect": 0,
+        "accuracy": 0
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv",
+      "total": 72,
+      "correct": 21,
+      "accuracy": 0.2916666666666667,
+      "target": {
+        "total": 8,
+        "correct": 1,
+        "tieAdjustedCorrect": 1,
+        "accuracy": 0.125
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape_steps",
+      "total": 72,
+      "correct": 27,
+      "accuracy": 0.375,
+      "target": {
+        "total": 8,
+        "correct": 4,
+        "tieAdjustedCorrect": 4,
+        "accuracy": 0.5
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv_steps",
+      "total": 72,
+      "correct": 29,
+      "accuracy": 0.4027777777777778,
+      "target": {
+        "total": 8,
+        "correct": 4,
+        "tieAdjustedCorrect": 4,
+        "accuracy": 0.5
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm_steps",
+      "total": 72,
+      "correct": 25,
+      "accuracy": 0.3472222222222222,
+      "target": {
+        "total": 8,
+        "correct": 2,
+        "tieAdjustedCorrect": 2,
+        "accuracy": 0.25
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv_steps",
+      "total": 72,
+      "correct": 25,
+      "accuracy": 0.3472222222222222,
+      "target": {
+        "total": 8,
+        "correct": 3,
+        "tieAdjustedCorrect": 3,
+        "accuracy": 0.375
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw",
+      "total": 72,
+      "correct": 19,
+      "accuracy": 0.2638888888888889,
+      "target": {
+        "total": 8,
+        "correct": 3,
+        "tieAdjustedCorrect": 3,
+        "accuracy": 0.375
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv",
+      "total": 72,
+      "correct": 26,
+      "accuracy": 0.3611111111111111,
+      "target": {
+        "total": 8,
+        "correct": 7,
+        "tieAdjustedCorrect": 7,
+        "accuracy": 0.875
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw_steps",
+      "total": 72,
+      "correct": 28,
+      "accuracy": 0.3888888888888889,
+      "target": {
+        "total": 8,
+        "correct": 7,
+        "tieAdjustedCorrect": 7,
+        "accuracy": 0.875
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv_steps",
+      "total": 72,
+      "correct": 31,
+      "accuracy": 0.4305555555555556,
+      "target": {
+        "total": 8,
+        "correct": 7,
+        "tieAdjustedCorrect": 7,
+        "accuracy": 0.875
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "steps",
+      "total": 72,
+      "correct": 14,
+      "accuracy": 0.20856481481481481,
+      "target": {
+        "total": 8,
+        "correct": 3,
+        "tieAdjustedCorrect": 4.5,
+        "accuracy": 0.5625
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape",
+      "total": 72,
+      "correct": 28,
+      "accuracy": 0.3888888888888889,
+      "target": {
+        "total": 8,
+        "correct": 5,
+        "tieAdjustedCorrect": 5,
+        "accuracy": 0.625
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv",
+      "total": 72,
+      "correct": 30,
+      "accuracy": 0.4166666666666667,
+      "target": {
+        "total": 8,
+        "correct": 5,
+        "tieAdjustedCorrect": 5,
+        "accuracy": 0.625
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm",
+      "total": 72,
+      "correct": 12,
+      "accuracy": 0.16666666666666666,
+      "target": {
+        "total": 8,
+        "correct": 0,
+        "tieAdjustedCorrect": 0,
+        "accuracy": 0
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv",
+      "total": 72,
+      "correct": 15,
+      "accuracy": 0.20833333333333334,
+      "target": {
+        "total": 8,
+        "correct": 0,
+        "tieAdjustedCorrect": 0,
+        "accuracy": 0
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape_steps",
+      "total": 72,
+      "correct": 31,
+      "accuracy": 0.4305555555555556,
+      "target": {
+        "total": 8,
+        "correct": 5,
+        "tieAdjustedCorrect": 5,
+        "accuracy": 0.625
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv_steps",
+      "total": 72,
+      "correct": 36,
+      "accuracy": 0.5,
+      "target": {
+        "total": 8,
+        "correct": 5,
+        "tieAdjustedCorrect": 5,
+        "accuracy": 0.625
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm_steps",
+      "total": 72,
+      "correct": 23,
+      "accuracy": 0.3194444444444444,
+      "target": {
+        "total": 8,
+        "correct": 1,
+        "tieAdjustedCorrect": 1,
+        "accuracy": 0.125
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv_steps",
+      "total": 72,
+      "correct": 23,
+      "accuracy": 0.3194444444444444,
+      "target": {
+        "total": 8,
+        "correct": 2,
+        "tieAdjustedCorrect": 2,
+        "accuracy": 0.25
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw",
+      "total": 72,
+      "correct": 22,
+      "accuracy": 0.3055555555555556,
+      "target": {
+        "total": 8,
+        "correct": 4,
+        "tieAdjustedCorrect": 4,
+        "accuracy": 0.5
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv",
+      "total": 72,
+      "correct": 30,
+      "accuracy": 0.4166666666666667,
+      "target": {
+        "total": 8,
+        "correct": 7,
+        "tieAdjustedCorrect": 7,
+        "accuracy": 0.875
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw_steps",
+      "total": 72,
+      "correct": 29,
+      "accuracy": 0.4027777777777778,
+      "target": {
+        "total": 8,
+        "correct": 7,
+        "tieAdjustedCorrect": 7,
+        "accuracy": 0.875
+      }
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv_steps",
+      "total": 72,
+      "correct": 29,
+      "accuracy": 0.4027777777777778,
+      "target": {
+        "total": 8,
+        "correct": 7,
+        "tieAdjustedCorrect": 7,
+        "accuracy": 0.875
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "steps",
+      "total": 126,
+      "correct": 50,
+      "accuracy": 0.4074074074074074,
+      "target": {
+        "total": 14,
+        "correct": 6,
+        "tieAdjustedCorrect": 7.5,
+        "accuracy": 0.5357142857142857
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape",
+      "total": 126,
+      "correct": 87,
+      "accuracy": 0.6904761904761905,
+      "target": {
+        "total": 14,
+        "correct": 11,
+        "tieAdjustedCorrect": 11,
+        "accuracy": 0.7857142857142857
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv",
+      "total": 126,
+      "correct": 96,
+      "accuracy": 0.7619047619047619,
+      "target": {
+        "total": 14,
+        "correct": 12,
+        "tieAdjustedCorrect": 12,
+        "accuracy": 0.8571428571428571
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm",
+      "total": 126,
+      "correct": 91,
+      "accuracy": 0.7222222222222222,
+      "target": {
+        "total": 14,
+        "correct": 11,
+        "tieAdjustedCorrect": 11,
+        "accuracy": 0.7857142857142857
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv",
+      "total": 126,
+      "correct": 106,
+      "accuracy": 0.8412698412698413,
+      "target": {
+        "total": 14,
+        "correct": 12,
+        "tieAdjustedCorrect": 12,
+        "accuracy": 0.8571428571428571
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape_steps",
+      "total": 126,
+      "correct": 94,
+      "accuracy": 0.746031746031746,
+      "target": {
+        "total": 14,
+        "correct": 11,
+        "tieAdjustedCorrect": 11,
+        "accuracy": 0.7857142857142857
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv_steps",
+      "total": 126,
+      "correct": 96,
+      "accuracy": 0.7619047619047619,
+      "target": {
+        "total": 14,
+        "correct": 13,
+        "tieAdjustedCorrect": 13,
+        "accuracy": 0.9285714285714286
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm_steps",
+      "total": 126,
+      "correct": 96,
+      "accuracy": 0.7619047619047619,
+      "target": {
+        "total": 14,
+        "correct": 12,
+        "tieAdjustedCorrect": 12,
+        "accuracy": 0.8571428571428571
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv_steps",
+      "total": 126,
+      "correct": 106,
+      "accuracy": 0.8412698412698413,
+      "target": {
+        "total": 14,
+        "correct": 13,
+        "tieAdjustedCorrect": 13,
+        "accuracy": 0.9285714285714286
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw",
+      "total": 126,
+      "correct": 73,
+      "accuracy": 0.5793650793650794,
+      "target": {
+        "total": 14,
+        "correct": 12,
+        "tieAdjustedCorrect": 12,
+        "accuracy": 0.8571428571428571
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv",
+      "total": 126,
+      "correct": 81,
+      "accuracy": 0.6428571428571429,
+      "target": {
+        "total": 14,
+        "correct": 13,
+        "tieAdjustedCorrect": 13,
+        "accuracy": 0.9285714285714286
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw_steps",
+      "total": 126,
+      "correct": 90,
+      "accuracy": 0.7142857142857143,
+      "target": {
+        "total": 14,
+        "correct": 14,
+        "tieAdjustedCorrect": 14,
+        "accuracy": 1
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv_steps",
+      "total": 126,
+      "correct": 93,
+      "accuracy": 0.7380952380952381,
+      "target": {
+        "total": 14,
+        "correct": 14,
+        "tieAdjustedCorrect": 14,
+        "accuracy": 1
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "steps",
+      "total": 126,
+      "correct": 45,
+      "accuracy": 0.37037037037037035,
+      "target": {
+        "total": 14,
+        "correct": 3,
+        "tieAdjustedCorrect": 6.5,
+        "accuracy": 0.4642857142857143
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape",
+      "total": 126,
+      "correct": 77,
+      "accuracy": 0.6111111111111112,
+      "target": {
+        "total": 14,
+        "correct": 10,
+        "tieAdjustedCorrect": 10,
+        "accuracy": 0.7142857142857143
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv",
+      "total": 126,
+      "correct": 91,
+      "accuracy": 0.7222222222222222,
+      "target": {
+        "total": 14,
+        "correct": 10,
+        "tieAdjustedCorrect": 10,
+        "accuracy": 0.7142857142857143
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm",
+      "total": 126,
+      "correct": 82,
+      "accuracy": 0.6507936507936508,
+      "target": {
+        "total": 14,
+        "correct": 9,
+        "tieAdjustedCorrect": 9,
+        "accuracy": 0.6428571428571429
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv",
+      "total": 126,
+      "correct": 100,
+      "accuracy": 0.7936507936507936,
+      "target": {
+        "total": 14,
+        "correct": 12,
+        "tieAdjustedCorrect": 12,
+        "accuracy": 0.8571428571428571
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape_steps",
+      "total": 126,
+      "correct": 91,
+      "accuracy": 0.7222222222222222,
+      "target": {
+        "total": 14,
+        "correct": 10,
+        "tieAdjustedCorrect": 10,
+        "accuracy": 0.7142857142857143
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_shape_mv_steps",
+      "total": 126,
+      "correct": 91,
+      "accuracy": 0.7222222222222222,
+      "target": {
+        "total": 14,
+        "correct": 12,
+        "tieAdjustedCorrect": 12,
+        "accuracy": 0.8571428571428571
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm_steps",
+      "total": 126,
+      "correct": 92,
+      "accuracy": 0.7301587301587301,
+      "target": {
+        "total": 14,
+        "correct": 11,
+        "tieAdjustedCorrect": 11,
+        "accuracy": 0.7857142857142857
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_norm_mv_steps",
+      "total": 126,
+      "correct": 104,
+      "accuracy": 0.8253968253968254,
+      "target": {
+        "total": 14,
+        "correct": 13,
+        "tieAdjustedCorrect": 13,
+        "accuracy": 0.9285714285714286
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw",
+      "total": 126,
+      "correct": 66,
+      "accuracy": 0.5238095238095238,
+      "target": {
+        "total": 14,
+        "correct": 9,
+        "tieAdjustedCorrect": 9,
+        "accuracy": 0.6428571428571429
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv",
+      "total": 126,
+      "correct": 72,
+      "accuracy": 0.5714285714285714,
+      "target": {
+        "total": 14,
+        "correct": 13,
+        "tieAdjustedCorrect": 13,
+        "accuracy": 0.9285714285714286
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw_steps",
+      "total": 126,
+      "correct": 84,
+      "accuracy": 0.6666666666666666,
+      "target": {
+        "total": 14,
+        "correct": 14,
+        "tieAdjustedCorrect": 14,
+        "accuracy": 1
+      }
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "directionPolicy": "same",
+      "method": "mag_dtw_mv_steps",
+      "total": 126,
+      "correct": 89,
+      "accuracy": 0.7063492063492064,
+      "target": {
+        "total": 14,
+        "correct": 14,
+        "tieAdjustedCorrect": 14,
+        "accuracy": 1
+      }
+    }
+  ],
+  "arrivalSummary": [
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 0.7142857142857143,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.14285714285714285
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_norm",
+      "total": 8,
+      "detected": 5,
+      "missedBeforeNextLap": 3,
+      "maeSteps": 4.6,
+      "maxErrorSteps": 8,
+      "meanSignedErrorSteps": -3.4
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_norm_mv",
+      "total": 8,
+      "detected": 3,
+      "missedBeforeNextLap": 5,
+      "maeSteps": 7.666666666666667,
+      "maxErrorSteps": 11,
+      "meanSignedErrorSteps": -0.3333333333333333
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_norm_steps",
+      "total": 8,
+      "detected": 6,
+      "missedBeforeNextLap": 2,
+      "maeSteps": 1.6666666666666667,
+      "maxErrorSteps": 4,
+      "meanSignedErrorSteps": 0.3333333333333333
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_norm_mv_steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 1.4285714285714286,
+      "maxErrorSteps": 3,
+      "meanSignedErrorSteps": 0.5714285714285714
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_relative_steps",
+      "total": 8,
+      "detected": 6,
+      "missedBeforeNextLap": 2,
+      "maeSteps": 1,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": -0.6666666666666666
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_relative_mv_steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 1.2857142857142858,
+      "maxErrorSteps": 5,
+      "meanSignedErrorSteps": 0.14285714285714285
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_dtw_steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 0.7142857142857143,
+      "maxErrorSteps": 3,
+      "meanSignedErrorSteps": 0.42857142857142855
+    },
+    {
+      "platform": "android",
+      "fold": "session",
+      "method": "mag_dtw_mv_steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 0.7142857142857143,
+      "maxErrorSteps": 3,
+      "meanSignedErrorSteps": 0.42857142857142855
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 1.1428571428571428,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_norm",
+      "total": 8,
+      "detected": 4,
+      "missedBeforeNextLap": 4,
+      "maeSteps": 4,
+      "maxErrorSteps": 8,
+      "meanSignedErrorSteps": -2.5
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_norm_mv",
+      "total": 8,
+      "detected": 4,
+      "missedBeforeNextLap": 4,
+      "maeSteps": 5.75,
+      "maxErrorSteps": 11,
+      "meanSignedErrorSteps": -0.25
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_norm_steps",
+      "total": 8,
+      "detected": 3,
+      "missedBeforeNextLap": 5,
+      "maeSteps": 1.3333333333333333,
+      "maxErrorSteps": 3,
+      "meanSignedErrorSteps": -0.6666666666666666
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_norm_mv_steps",
+      "total": 8,
+      "detected": 6,
+      "missedBeforeNextLap": 2,
+      "maeSteps": 3,
+      "maxErrorSteps": 6,
+      "meanSignedErrorSteps": 1.6666666666666667
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_relative_steps",
+      "total": 8,
+      "detected": 6,
+      "missedBeforeNextLap": 2,
+      "maeSteps": 0.5,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": -0.5
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_relative_mv_steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 1.1428571428571428,
+      "maxErrorSteps": 5,
+      "meanSignedErrorSteps": 0.2857142857142857
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_dtw_steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 1.1428571428571428,
+      "maxErrorSteps": 3,
+      "meanSignedErrorSteps": 0.5714285714285714
+    },
+    {
+      "platform": "android",
+      "fold": "day",
+      "method": "mag_dtw_mv_steps",
+      "total": 8,
+      "detected": 7,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 1,
+      "maxErrorSteps": 3,
+      "meanSignedErrorSteps": 0.42857142857142855
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.42857142857142855,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": -0.2857142857142857
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_norm",
+      "total": 14,
+      "detected": 13,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 2.769230769230769,
+      "maxErrorSteps": 7,
+      "meanSignedErrorSteps": -2
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_norm_mv",
+      "total": 14,
+      "detected": 12,
+      "missedBeforeNextLap": 2,
+      "maeSteps": 1.75,
+      "maxErrorSteps": 7,
+      "meanSignedErrorSteps": -0.75
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_norm_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.5714285714285714,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.2857142857142857
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_norm_mv_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.5714285714285714,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.2857142857142857
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_relative_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.5714285714285714,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.2857142857142857
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_relative_mv_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.6428571428571429,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.35714285714285715
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_dtw_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.5714285714285714,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.2857142857142857
+    },
+    {
+      "platform": "ios",
+      "fold": "session",
+      "method": "mag_dtw_mv_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.5714285714285714,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.2857142857142857
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.42857142857142855,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": -0.2857142857142857
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_norm",
+      "total": 14,
+      "detected": 13,
+      "missedBeforeNextLap": 1,
+      "maeSteps": 2.6153846153846154,
+      "maxErrorSteps": 8,
+      "meanSignedErrorSteps": -2
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_norm_mv",
+      "total": 14,
+      "detected": 10,
+      "missedBeforeNextLap": 4,
+      "maeSteps": 2.8,
+      "maxErrorSteps": 9,
+      "meanSignedErrorSteps": -2.2
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_norm_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.8571428571428571,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.14285714285714285
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_norm_mv_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.7857142857142857,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.07142857142857142
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_relative_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.9285714285714286,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.07142857142857142
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_relative_mv_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.9285714285714286,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.07142857142857142
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_dtw_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.5,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.21428571428571427
+    },
+    {
+      "platform": "ios",
+      "fold": "day",
+      "method": "mag_dtw_mv_steps",
+      "total": 14,
+      "detected": 14,
+      "missedBeforeNextLap": 0,
+      "maeSteps": 0.5,
+      "maxErrorSteps": 2,
+      "meanSignedErrorSteps": 0.21428571428571427
+    }
+  ]
+}

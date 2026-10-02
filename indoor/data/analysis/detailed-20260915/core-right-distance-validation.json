@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-15",
+  "scope": "4F core-to-right-stair-entry distance validation",
+  "measurement_basis": "Existing Polycam GLB coordinate survey; not an independent tape survey.",
+  "physical_reference_m": {
+    "right_stair_entry_to_core_side_wall": 48.68545341491699,
+    "core_wall_center_width": 3.0156809091567993,
+    "right_stair_entry_to_core_center": 50.19329386949539,
+    "right_stair_entry_to_opposite_core_wall": 51.7011343240738
+  },
+  "definition": {
+    "right_corridor": "Main-corridor line from the right stair entry threshold to the core-side wall. It excludes the core and the stair interior.",
+    "right_stair_entry": "Map x=3.363100346020758. The confirmed route endpoint is before entering the stairs."
+  },
+  "runtime_verification": {
+    "distance_metric_map_breaks": [3.363100346020758, 69.424, 72.184],
+    "distance_metric_meter_breaks": [0, 48.68545341491699, 51.7011343240738],
+    "core_center_map_x": 70.804,
+    "eighty_one_legacy_steps_from_core_center_end_at_entry": true,
+    "computed_end_map_x": 3.3631003460206776,
+    "computed_end_m": 0,
+    "stair_module_length_along_corridor_m": 6.87,
+    "stair_module_used_in_distance_metric": false,
+    "result": "No stair length is added to the 48.685m corridor or the 50.193m core-center reference."
+  },
+  "rendering_validation": {
+    "display_axis_segments": {
+      "main_length": 135.407,
+      "right_path_visual_map_span_entry_to_core_wall": 66.06089965397924,
+      "right_path_physical_m": 48.68545341491699
+    },
+    "finding": "The 2D/3D layout numbers are diagram-axis units and must not be interpreted as meters. Existing labels showing 64.44m or 58.24m are display-axis labels, not the physical right-corridor reference."
+  },
+  "remaining_unverified": [
+    "The restroom-left-edge longitudinal registration to the same physical axis is not independently measured.",
+    "The 2026-09-15 core/stair GLBs confirm local geometry but are not yet registered to the full corridor coordinate frame.",
+    "Stair interior distance is intentionally excluded until a separate inside-stair route is surveyed."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": "it-convergence-ios-2026-09-05-4f-right-v1",
+  "building": "조선대학교 IT융합대학",
+  "collector": "expo-go",
+  "device": "iPhone 13 Pro",
+  "collection_date": "2026-09-05",
+  "raw_directory": "raw/ios/2026-09-05",
+  "comparison_policy": "Android 원본과 분리 보존하고 같은 경로의 반복성 및 장치 간 유사성만 비교한다.",
+  "sessions": [
+    {
+      "file": "indoor_positioning_ios_20260905_170448.jsonl",
+      "route_id": "4F_CORE_TO_RIGHT_STAIRS",
+      "status": "accepted",
+      "sha256": "160f26a38538f7440014f631790e1b90cafdd0b3530a896b66368fe60eaaa861"
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170648.jsonl",
+      "route_id": "4F_CORE_TO_RIGHT_STAIRS",
+      "status": "accepted_with_pedometer_review",
+      "sha256": "72994a78fff96b93e1d8436252a15045c5debc40b5cccad238f3b2474581bd0b"
+    },
+    {
+      "file": "indoor_positioning_ios_20260905_170852.jsonl",
+      "route_id": "4F_CORE_TO_RIGHT_STAIRS",
+      "status": "accepted",
+      "sha256": "8f221a8985cc44f1cfb5252ba69b0e0ec5ff08c040981d5fd10537cf2b6777ba"
+    }
+  ]
+}

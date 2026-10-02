@@ -1,0 +1,6846 @@
+{
+  "method": "3-second disjoint query times with rolling 5-second BLE/2-second magnetic observations; no PDR position or heading gates. Known 4F, different-day fingerprint sources only. Raw candidates versus provisional score<=2 and margin>=1 abstention.",
+  "limitations": [
+    "No AP in these 11 moving recordings; AP signal-only/hybrid not evaluated",
+    "Adjacent windows share some data; windows are not independent sessions",
+    "Opposite corridor is a contradiction diagnostic, not precise coordinate accuracy",
+    "Stationary magnetic prototypes do not replace a moving-pattern map; new threshold not calibrated",
+    "No signal-first engine or beacon performance claim; review only"
+  ],
+  "summary": {
+    "ble": {
+      "windows": 197,
+      "candidates": 25,
+      "accepted": 8,
+      "oppositeCorridorCandidates": 0,
+      "oppositeCorridorAccepted": 0,
+      "acceptedZones": {
+        "stairs_left": 8
+      },
+      "acceptedFeatures": {
+        "ble": 8
+      }
+    },
+    "magnetic": {
+      "windows": 197,
+      "candidates": 182,
+      "accepted": 38,
+      "oppositeCorridorCandidates": 40,
+      "oppositeCorridorAccepted": 0,
+      "acceptedZones": {
+        "core_junction": 38
+      },
+      "acceptedFeatures": {
+        "magnetic": 38
+      }
+    },
+    "joint": {
+      "windows": 197,
+      "candidates": 183,
+      "accepted": 38,
+      "oppositeCorridorCandidates": 40,
+      "oppositeCorridorAccepted": 0,
+      "acceptedZones": {
+        "core_junction": 37,
+        "stairs_left": 1
+      },
+      "acceptedFeatures": {
+        "magnetic": 37,
+        "ble": 1
+      }
+    }
+  },
+  "results": [
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111300.jsonl",
+      "corridor": "main_right",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1789783980794,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783980794,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783980794,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783983794,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783983794,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.045447320501550405,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783983794,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.045447320501550405,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783986794,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783986794,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06440505241375413,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783986794,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06440505241375413,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783989796,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783989796,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8629747226489672,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783989796,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8629747226489672,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783992796,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783992796,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 1.06498144190983,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783992796,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 1.06498144190983,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783995796,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783995796,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1836912948487333,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783995796,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1836912948487333,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783998796,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789783998796,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.39103530030904704,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789783998796,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.39103530030904704,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784001801,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784001801,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.09726587452342568,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784001801,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.09726587452342568,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784004802,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784004802,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.12294011136490136,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784004802,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.12294011136490136,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784007804,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784007804,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.00197420093231643,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784007804,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.00197420093231643,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784010804,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784010804,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0036835959614030093,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784010804,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0036835959614030093,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784013804,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784013804,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0405828761332471,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784013804,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0405828761332471,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784016805,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784016805,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.06051620839726283,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784016805,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.06051620839726283,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784019805,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784019805,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.08170342607963847,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784019805,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.08170342607963847,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784022805,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784022805,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.053217778660882696,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784022805,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.053217778660882696,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-19/kakao-pull-4f/indoor_positioning_20260919_111532.jsonl",
+      "corridor": "main_right",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1789784132192,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784132192,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784132192,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784135195,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784135195,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1303532368145162,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784135195,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1303532368145162,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784138196,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784138196,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784138196,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784141198,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784141198,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8366829700026778,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784141198,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8366829700026778,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784144199,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784144199,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784144199,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784147199,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784147199,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.6929980652605182,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784147199,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.6929980652605182,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784150199,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784150199,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0013236165887590171,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784150199,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0013236165887590171,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784153200,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784153200,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.006779927173943389,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784153200,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.006779927173943389,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784156200,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784156200,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8271216379417909,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784156200,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8271216379417909,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784159200,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784159200,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.8923940441077567,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784159200,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.8923940441077567,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784162201,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1789784162201,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.11527630409581978,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1789784162201,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.11527630409581978,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191446.jsonl",
+      "corridor": "main_right",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790072086656,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072086656,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072086656,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072089657,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072089657,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.27652958878955775,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072089657,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.27652958878955775,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072092657,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072092657,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10494367211100315,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072092657,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10494367211100315,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072095658,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072095658,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.003015301939118847,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072095658,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.003015301939118847,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072098660,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072098660,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.20440321850062665,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072098660,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.20440321850062665,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072101661,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072101661,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.02512797699994219,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072101661,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.02512797699994219,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072104662,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072104662,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.4721264084465552,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072104662,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.4721264084465552,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072107662,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072107662,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.01726263764154906,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072107662,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.01726263764154906,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072110663,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072110663,
+          "mode": "magnetic",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.00005803446573042125,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072110663,
+          "mode": "joint",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.00005803446573042125,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072113663,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072113663,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.001954522918662752,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072113663,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.001954522918662752,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072116664,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072116664,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.006549514762428346,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072116664,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.006549514762428346,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072119665,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072119665,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0027518780337490714,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072119665,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0027518780337490714,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072122667,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072122667,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.48466563872756385,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072122667,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.48466563872756385,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072125667,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072125667,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.2906587484436548,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072125667,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.2906587484436548,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072128667,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072128667,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.3635332182087755,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072128667,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.3635332182087755,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072131667,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072131667,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0499628912875417,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072131667,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0499628912875417,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072134667,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072134667,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.7648329855707767,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072134667,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.7648329855707767,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072137667,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072137667,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1662801187697447,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072137667,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1662801187697447,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191556.jsonl",
+      "corridor": "main_right",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790072156888,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072156888,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072156888,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072159889,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072159889,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04642759777395078,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072159889,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04642759777395078,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072162889,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072162889,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.06482017002981184,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072162889,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.06482017002981184,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072165890,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072165890,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04599514757192034,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072165890,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04599514757192034,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072168892,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072168892,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09205786609485453,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072168892,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09205786609485453,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072171892,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072171892,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.32426692357821335,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072171892,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.32426692357821335,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072174892,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072174892,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0070203831219450945,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072174892,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0070203831219450945,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072177892,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072177892,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0143000024229521,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072177892,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0143000024229521,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072180893,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072180893,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.3005665634438879,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072180893,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.3005665634438879,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072183895,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072183895,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0703109796764619,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072183895,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0703109796764619,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072186896,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072186896,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.000019854419946788434,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072186896,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.000019854419946788434,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072189898,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072189898,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072189898,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072192899,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072192899,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.2304986041182379,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072192899,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.2304986041182379,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072195900,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072195900,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.07163687450226759,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072195900,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.07163687450226759,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072198900,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072198900,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.5873885407474524,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072198900,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.5873885407474524,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072201902,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072201902,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.060661759950075826,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072201902,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.060661759950075826,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "corridor": "main_left",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790072208697,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072208697,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072208697,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072211698,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072211698,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07670631558395935,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072211698,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07670631558395935,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072214698,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072214698,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.37526226780390637,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072214698,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.37526226780390637,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072217699,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072217699,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0548539069264431,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072217699,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0548539069264431,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072220700,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072220700,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0221831656647019,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072220700,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0221831656647019,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072223700,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072223700,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.1178572372435023,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072223700,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.1178572372435023,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072226701,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072226701,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.018754739663337138,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072226701,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.018754739663337138,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072229701,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072229701,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3143913010343669,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072229701,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3143913010343669,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072232704,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072232704,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.12976799770975658,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072232704,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.12976799770975658,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072235704,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072235704,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.79171094334578,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072235704,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.79171094334578,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072238705,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072238705,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.23081539737390688,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072238705,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.23081539737390688,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072241705,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.07265625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072241705,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.049195519446045104,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072241705,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.049195519446045104,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072244707,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 3.7572265625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072244707,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.02683161817140892,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072244707,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.02683161817140892,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072247707,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072247707,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.15317793599964882,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072247707,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.15317793599964882,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072250707,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072250707,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.026533696202130374,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072250707,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.026533696202130374,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072253707,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072253707,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.013079996369704567,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072253707,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.013079996369704567,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "corridor": "main_left",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790072261915,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072261915,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072261915,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072264917,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072264917,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.05702491060502283,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072264917,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.05702491060502283,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072267918,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072267918,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.04824817208365951,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072267918,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.04824817208365951,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072270918,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.3119140625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072270918,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.052086909718176526,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072270918,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.052086909718176526,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072273919,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 3.4056640625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072273919,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.005155559309226024,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072273919,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.005155559309226024,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072276919,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 3.1625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072276919,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.06064193942312885,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072276919,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.06064193942312885,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072279920,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.4212890625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072279920,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.37573718574736986,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072279920,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.37573718574736986,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072282920,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072282920,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1478080264104948,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072282920,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.1478080264104948,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072285921,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072285921,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06883598767125593,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072285921,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06883598767125593,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072288921,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072288921,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.052039678086211016,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072288921,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.052039678086211016,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072291922,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072291922,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3758726185943013,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072291922,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3758726185943013,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072294922,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072294922,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.03270928225169965,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072294922,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.03270928225169965,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072297923,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072297923,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.06693387901157137,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072297923,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.06693387901157137,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072300923,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072300923,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08841179170599313,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072300923,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08841179170599313,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072303925,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072303925,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.00798388074266798,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072303925,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.00798388074266798,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072306927,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790072306927,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.017815323706020344,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790072306927,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.017815323706020344,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202729.jsonl",
+      "corridor": "main_right",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790076449238,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076449238,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076449238,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076452238,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076452238,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07707322546402286,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076452238,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07707322546402286,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076455238,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076455238,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10601715280041599,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076455238,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10601715280041599,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076458239,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076458239,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0034852471162263652,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076458239,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.0034852471162263652,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076461239,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076461239,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.005207068330116983,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076461239,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.005207068330116983,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076464240,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076464240,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.052261916955483774,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076464240,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.052261916955483774,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076467240,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076467240,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.018692286555026204,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076467240,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.018692286555026204,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076470240,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076470240,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.31709160095437716,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076470240,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.31709160095437716,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076473241,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076473241,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.02150049890978477,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076473241,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.02150049890978477,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076476243,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076476243,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10138647589164744,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076476243,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10138647589164744,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076479244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076479244,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.08904109563446243,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076479244,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.08904109563446243,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076482244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076482244,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.025865580963112474,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076482244,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.025865580963112474,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076485244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076485244,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06703671553122204,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076485244,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06703671553122204,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076488244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076488244,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.01723297955960997,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076488244,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.01723297955960997,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076491244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076491244,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.003519907606202667,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076491244,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.003519907606202667,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076494244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076494244,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.014163556408148315,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076494244,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.014163556408148315,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076497244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076497244,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8609392899541234,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076497244,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.8609392899541234,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076500244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076500244,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.8139454228203364,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076500244,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.8139454228203364,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076503244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076503244,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.11148304174908469,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076503244,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.11148304174908469,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076506244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076506244,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08279830847336937,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076506244,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08279830847336937,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076509244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076509244,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.014283278995827799,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076509244,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.014283278995827799,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076512244,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076512244,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.14507725584080014,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076512244,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.14507725584080014,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_202917.jsonl",
+      "corridor": "main_right",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790076557184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076557184,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076557184,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076560184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076560184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10358597615488722,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076560184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.10358597615488722,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076563184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076563184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09845813562598212,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076563184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09845813562598212,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076566184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076566184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08135570061063839,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076566184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08135570061063839,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076569184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076569184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.13428511692168021,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076569184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.13428511692168021,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076572184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076572184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.22581866467244477,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076572184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.22581866467244477,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076575184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076575184,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.04535169489541877,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076575184,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.04535169489541877,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076578184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076578184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08129881460614694,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076578184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08129881460614694,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076581184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076581184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0030928418153686895,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076581184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0030928418153686895,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076584184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076584184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07144001476185684,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076584184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07144001476185684,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076587184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076587184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.017613395184485188,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076587184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.017613395184485188,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076590184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076590184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.1531347116510325,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076590184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.1531347116510325,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076593184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076593184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07760984259839424,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076593184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.07760984259839424,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076596184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076596184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.03585021894084049,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076596184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.03585021894084049,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076599184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076599184,
+          "mode": "magnetic",
+          "predictedZone": "stairs_left",
+          "anchor": null,
+          "score": 0.00002430612127190007,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076599184,
+          "mode": "joint",
+          "predictedZone": "stairs_left",
+          "anchor": null,
+          "score": 0.00002430612127190007,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076602184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076602184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0757419040187563,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076602184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0757419040187563,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076605184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076605184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.4987362852347652,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076605184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.4987362852347652,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076608184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076608184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.032706992320047236,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076608184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.032706992320047236,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076611184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076611184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.00016226150792903054,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076611184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.00016226150792903054,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076614184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076614184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.5495362876613445,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076614184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.5495362876613445,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076617184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076617184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.019702927810457307,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076617184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.019702927810457307,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076620184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076620184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04331210468405076,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076620184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04331210468405076,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076623184,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076623184,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.2089174764253374,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076623184,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.2089174764253374,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "corridor": "main_left",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790076635378,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076635378,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076635378,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076638379,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076638379,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04018718482596029,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076638379,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04018718482596029,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076641379,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076641379,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.000001430680370296504,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076641379,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.000001430680370296504,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076644379,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076644379,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.05046873466852602,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076644379,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.05046873466852602,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076647380,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076647380,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09343318986586656,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076647380,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09343318986586656,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076650380,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076650380,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0004572707408336797,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076650380,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0004572707408336797,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076653382,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076653382,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.01855080014657128,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076653382,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.01855080014657128,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076656384,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076656384,
+          "mode": "magnetic",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.00012853930821877507,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076656384,
+          "mode": "joint",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.00012853930821877507,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076659384,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076659384,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08621033929552045,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076659384,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.08621033929552045,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076662384,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076662384,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09563216765249391,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076662384,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09563216765249391,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076665384,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076665384,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.05181685794002633,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076665384,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.05181685794002633,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076668384,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.8822265625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076668384,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.001344780966187102,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076668384,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.001344780966187102,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076671384,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.85,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076671384,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.03466048696475912,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076671384,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.03466048696475912,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076674384,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076674384,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0029018827395808178,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076674384,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0029018827395808178,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076677384,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076677384,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0808751813888282,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076677384,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0808751813888282,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076680384,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.26015625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076680384,
+          "mode": "magnetic",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0025017669860899817,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076680384,
+          "mode": "joint",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0025017669860899817,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076683384,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.72890625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076683384,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06406661147237867,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076683384,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.06406661147237867,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076686385,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.6,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076686385,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.000011371149393140433,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076686385,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.000011371149393140433,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076689385,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076689385,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.02509232531211154,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076689385,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.02509232531211154,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "corridor": "main_left",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790076698321,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076698321,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076698321,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076701322,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076701322,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3754737681955344,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076701322,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3754737681955344,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076704322,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076704322,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3949841958296871,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076704322,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.3949841958296871,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076707324,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.740625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076707324,
+          "mode": "magnetic",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.00009889716083026314,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076707324,
+          "mode": "joint",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.00009889716083026314,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076710324,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.9369140625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076710324,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.39604157741448276,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076710324,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.39604157741448276,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076713324,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 3.7572265625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076713324,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.03168768741481139,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076713324,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.03168768741481139,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076716324,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 3.2416015625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076716324,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.20173198306746465,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076716324,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.20173198306746465,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076719324,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 3.5775390625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076719324,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.39244686252773947,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076719324,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.39244686252773947,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076722324,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.9369140625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076722324,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.04799025124194652,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076722324,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.04799025124194652,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076725324,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.07265625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076725324,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.019300585296804486,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076725324,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.019300585296804486,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076728325,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.79140625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076728325,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.02599960561419536,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076728325,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.02599960561419536,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076731325,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.9525390625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076731325,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.7936963880463672,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076731325,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.7936963880463672,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076734325,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.1625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076734325,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.4844065838762166,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076734325,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 1.4844065838762166,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076737325,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.91640625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076737325,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076737325,
+          "mode": "joint",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.91640625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076740325,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076740325,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.5599703275385276,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076740325,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.5599703275385276,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076743327,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076743327,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.18853282314263695,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076743327,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.18853282314263695,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076746328,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076746328,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.7320069655442921,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076746328,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.7320069655442921,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076749328,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076749328,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.045602450123936954,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076749328,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.045602450123936954,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076752328,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076752328,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.0217411094313653,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076752328,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.0217411094313653,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076755328,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076755328,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.05196294916737811,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076755328,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.05196294916737811,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076758328,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076758328,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.05503653011464713,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076758328,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.05503653011464713,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076761329,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076761329,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0692392147555584,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076761329,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0692392147555584,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076764329,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790076764329,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.1926817294459747,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790076764329,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.1926817294459747,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "corridor": "main_left",
+      "wifiScans": 0,
+      "observations": [
+        {
+          "time": 1790079477208,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079477208,
+          "mode": "magnetic",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079477208,
+          "mode": "joint",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079480209,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079480209,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.021223685952185038,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079480209,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.021223685952185038,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079483210,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079483210,
+          "mode": "magnetic",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0007657937951632502,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079483210,
+          "mode": "joint",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0007657937951632502,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079486210,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079486210,
+          "mode": "magnetic",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0027299579321202277,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079486210,
+          "mode": "joint",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0027299579321202277,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079489210,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079489210,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0012912526556886378,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079489210,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0012912526556886378,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079492210,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079492210,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09392377498893922,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079492210,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.09392377498893922,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079495211,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 2.2103515625,
+          "accepted": false,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079495211,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0778635615995649,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079495211,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.0778635615995649,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079498211,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.91640625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079498211,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04005151578766176,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079498211,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04005151578766176,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079501213,
+          "mode": "ble",
+          "predictedZone": "stairs_left",
+          "anchor": "f4_stairs_left",
+          "score": 1.91640625,
+          "accepted": true,
+          "features": [
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079501213,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.136431034508494,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079501213,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.136431034508494,
+          "accepted": false,
+          "features": [
+            "magnetic",
+            "ble"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079504214,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079504214,
+          "mode": "magnetic",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.04508279500308679,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079504214,
+          "mode": "joint",
+          "predictedZone": "main_right",
+          "anchor": null,
+          "score": 0.04508279500308679,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079507214,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079507214,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.1004757658348651,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079507214,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.1004757658348651,
+          "accepted": true,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079510214,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079510214,
+          "mode": "magnetic",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.030746933440940805,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079510214,
+          "mode": "joint",
+          "predictedZone": "main_left",
+          "anchor": null,
+          "score": 0.030746933440940805,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079513214,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079513214,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.050600469654839116,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079513214,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.050600469654839116,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079516215,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079516215,
+          "mode": "magnetic",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0018523428571402317,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079516215,
+          "mode": "joint",
+          "predictedZone": "stairs_right",
+          "anchor": null,
+          "score": 0.0018523428571402317,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079519215,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079519215,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.041948651019729395,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079519215,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.041948651019729395,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079522215,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079522215,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.004522519045821962,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079522215,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.004522519045821962,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079525215,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079525215,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04698653097935001,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079525215,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.04698653097935001,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079528216,
+          "mode": "ble",
+          "predictedZone": null,
+          "anchor": null,
+          "score": null,
+          "accepted": false,
+          "features": [],
+          "reason": "no_usable_features"
+        },
+        {
+          "time": 1790079528216,
+          "mode": "magnetic",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.034983783880172994,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        },
+        {
+          "time": 1790079528216,
+          "mode": "joint",
+          "predictedZone": "core_junction",
+          "anchor": null,
+          "score": 0.034983783880172994,
+          "accepted": false,
+          "features": [
+            "magnetic"
+          ],
+          "reason": "relative_zone_scores"
+        }
+      ]
+    }
+  ]
+}

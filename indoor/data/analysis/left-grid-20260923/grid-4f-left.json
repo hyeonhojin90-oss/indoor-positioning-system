@@ -1,0 +1,724 @@
+{
+  "version": "left-grid-20260923",
+  "coordinate": {
+    "corridor": "main_left",
+    "lengthM": 48.835051199999995,
+    "gridStepM": 0.5,
+    "strideM": 0.6194213261100863
+  },
+  "platforms": {
+    "android": {
+      "norm": [
+        {
+          "x": 0,
+          "mean": 43.74089539290938,
+          "variance": 16.982975926202446,
+          "sessions": 3,
+          "samples": 3
+        },
+        {
+          "x": 0.5,
+          "mean": 41.99571827815771,
+          "variance": 17.78801108828521,
+          "sessions": 3,
+          "samples": 3
+        },
+        {
+          "x": 1,
+          "mean": 43.56157922900588,
+          "variance": 45.8299664677643,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 1.5,
+          "mean": 41.82913296129639,
+          "variance": 43.734104975497175,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 2,
+          "mean": 40.75313002204274,
+          "variance": 29.344053535625907,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 2.5,
+          "mean": 41.24799827433111,
+          "variance": 19.408270178541564,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 3,
+          "mean": 41.2361690685435,
+          "variance": 16.856712293674054,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 3.5,
+          "mean": 41.99222232290022,
+          "variance": 17.393534731193576,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 4,
+          "mean": 43.13825407392197,
+          "variance": 20.79177376074309,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 4.5,
+          "mean": 44.80386698430671,
+          "variance": 20.664610827214513,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 5,
+          "mean": 45.814489156590966,
+          "variance": 22.25724214271643,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 5.5,
+          "mean": 47.37562234457406,
+          "variance": 21.738413384046346,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 6,
+          "mean": 48.39003746776372,
+          "variance": 26.855449954154405,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 6.5,
+          "mean": 48.65808431973146,
+          "variance": 33.213450487977894,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 7,
+          "mean": 48.2661634224354,
+          "variance": 38.193126939954546,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 7.5,
+          "mean": 47.601456991556546,
+          "variance": 40.81520772810725,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 8,
+          "mean": 47.29301642948876,
+          "variance": 45.42381703837795,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 8.5,
+          "mean": 46.788691448242105,
+          "variance": 44.39148125255809,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 9,
+          "mean": 46.01525586731379,
+          "variance": 37.49944690434414,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 9.5,
+          "mean": 44.92730676249761,
+          "variance": 32.65598020476119,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 10,
+          "mean": 44.3055245753063,
+          "variance": 27.69766323920403,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 10.5,
+          "mean": 44.110798167507184,
+          "variance": 21.816665946399915,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 11,
+          "mean": 44.07832821816108,
+          "variance": 18.761912669727657,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 11.5,
+          "mean": 43.91123794683148,
+          "variance": 22.098639752176368,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 12,
+          "mean": 44.80193425826756,
+          "variance": 17.58085400543719,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 12.5,
+          "mean": 45.53352599061365,
+          "variance": 19.165642682418575,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 13,
+          "mean": 46.062023973326326,
+          "variance": 23.2652292643919,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 13.5,
+          "mean": 46.62771637533243,
+          "variance": 21.2948266572272,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 14,
+          "mean": 46.68159349151616,
+          "variance": 21.67965314779708,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 14.5,
+          "mean": 46.85331007456403,
+          "variance": 20.434683015718544,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 15,
+          "mean": 46.08284000837931,
+          "variance": 28.001550195271154,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 15.5,
+          "mean": 45.199898672324096,
+          "variance": 39.20511445001942,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 16,
+          "mean": 44.524465309427725,
+          "variance": 43.03532908084516,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 16.5,
+          "mean": 42.96346981812701,
+          "variance": 35.403823745490875,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 17,
+          "mean": 41.77522614189748,
+          "variance": 39.97373219500047,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 17.5,
+          "mean": 41.80149445110788,
+          "variance": 44.43513473179939,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 18,
+          "mean": 42.13573258686877,
+          "variance": 62.9137299273615,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 18.5,
+          "mean": 41.87764634396143,
+          "variance": 72.45533781862918,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 19,
+          "mean": 40.74256868127832,
+          "variance": 51.723162169155735,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 19.5,
+          "mean": 39.05906445953393,
+          "variance": 36.27547759520846,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 20,
+          "mean": 38.3273453069375,
+          "variance": 38.85170113339912,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 20.5,
+          "mean": 38.503267864822156,
+          "variance": 33.56170226512705,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 21,
+          "mean": 40.43394219507477,
+          "variance": 28.012815071016195,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 21.5,
+          "mean": 43.295427217649305,
+          "variance": 43.70980304806748,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 22,
+          "mean": 46.32575603390249,
+          "variance": 56.59357952804022,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 22.5,
+          "mean": 47.942294616869816,
+          "variance": 53.088147468753824,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 23,
+          "mean": 49.05569067812038,
+          "variance": 66.84973297764957,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 23.5,
+          "mean": 49.594864707694434,
+          "variance": 75.61476399047312,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 24,
+          "mean": 48.41450777951783,
+          "variance": 49.071208768304125,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 24.5,
+          "mean": 47.36564448515492,
+          "variance": 27.926487802868124,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 25,
+          "mean": 44.41955821473907,
+          "variance": 42.285273578140206,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 25.5,
+          "mean": 39.77210555478688,
+          "variance": 70.19599691248615,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 26,
+          "mean": 37.36133865050111,
+          "variance": 55.83747808112639,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 26.5,
+          "mean": 35.246629284925035,
+          "variance": 51.48583615044481,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 27,
+          "mean": 34.16060017505876,
+          "variance": 42.73092188664617,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 27.5,
+          "mean": 34.175541310139586,
+          "variance": 35.56228344551514,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 28,
+          "mean": 35.35853491695104,
+          "variance": 31.669426502292882,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 28.5,
+          "mean": 36.62928266755547,
+          "variance": 31.632851475826637,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 29,
+          "mean": 37.65406122213365,
+          "variance": 31.436683560196897,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 29.5,
+          "mean": 38.68244632331936,
+          "variance": 30.761453144942607,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 30,
+          "mean": 39.938742526825834,
+          "variance": 24.927797440575922,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 30.5,
+          "mean": 40.154474322265244,
+          "variance": 33.58914933168691,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 31,
+          "mean": 40.39789204444214,
+          "variance": 37.45071042924877,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 31.5,
+          "mean": 41.20336566496257,
+          "variance": 28.15353849036309,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 32,
+          "mean": 42.58829897975657,
+          "variance": 24.566242531364153,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 32.5,
+          "mean": 43.53241576589964,
+          "variance": 23.564896165726083,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 33,
+          "mean": 43.740128462936624,
+          "variance": 18.757349161808254,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 33.5,
+          "mean": 43.48616089586809,
+          "variance": 10.233547926043023,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 34,
+          "mean": 42.5926833732163,
+          "variance": 4,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 34.5,
+          "mean": 41.80200305474714,
+          "variance": 9.690850749905419,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 35,
+          "mean": 41.70150571337807,
+          "variance": 19.916099772137812,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 35.5,
+          "mean": 41.96076553666057,
+          "variance": 24.738127230836103,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 36,
+          "mean": 42.358349796473526,
+          "variance": 35.34013936513101,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 36.5,
+          "mean": 42.073974524150955,
+          "variance": 44.68391746152309,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 37,
+          "mean": 42.75731550711337,
+          "variance": 40.02856254272419,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 37.5,
+          "mean": 43.60168123479073,
+          "variance": 35.33876941066866,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 38,
+          "mean": 44.268303750327085,
+          "variance": 42.561615350011465,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 38.5,
+          "mean": 43.86383281235024,
+          "variance": 34.102444556472804,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 39,
+          "mean": 43.30805470315446,
+          "variance": 27.61844443216472,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 39.5,
+          "mean": 41.735107462767246,
+          "variance": 18.664606133350308,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 40,
+          "mean": 41.334913151607125,
+          "variance": 19.57005430277479,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 40.5,
+          "mean": 42.34706002713597,
+          "variance": 26.41768883279987,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 41,
+          "mean": 43.79844531212556,
+          "variance": 39.44154220805174,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 41.5,
+          "mean": 45.644570270836695,
+          "variance": 44.77618540902301,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 42,
+          "mean": 46.96317042588665,
+          "variance": 45.11034465310314,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 42.5,
+          "mean": 47.865476808398434,
+          "variance": 40.59648544081188,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 43,
+          "mean": 46.965270221634,
+          "variance": 35.27836344734024,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 43.5,
+          "mean": 46.32456514856436,
+          "variance": 25.29576778579326,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 44,
+          "mean": 46.52751616774936,
+          "variance": 27.442580537369377,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 44.5,
+          "mean": 46.577443534055625,
+          "variance": 34.27360731736124,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 45,
+          "mean": 44.852993705562476,
+          "variance": 21.043403856563117,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 45.5,
+          "mean": 43.206276872435055,
+          "variance": 23.971659375673056,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 46,
+          "mean": 42.86091988323911,
+          "variance": 31.295038451996312,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 46.5,
+          "mean": 42.81757553131426,
+          "variance": 29.047125017089044,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 47,
+          "mean": 42.07572896373883,
+          "variance": 35.90102161155143,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 47.5,
+          "mean": 42.68570219884312,
+          "variance": 32.70022567261243,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 48,
+          "mean": 42.95584028037892,
+          "variance": 37.042079718881794,
+          "sessions": 5,
+          "samples": 5
+        },
+        {
+          "x": 48.5,
+          "mean": 46.56026320579414,
+          "variance": 25.129797208192354,
+          "sessions": 2,
+          "samples": 2
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191648.jsonl",
+      "sha256": "36012da448caa08ee06471d51cd5543b2b1905a58fddc3b2fe933ba29a5ac6b2"
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/latest-four/indoor_positioning_20260922_191741.jsonl",
+      "sha256": "a9fa387ef0ec2f70dcf6e9b01f7a56e88785ad276140c70678dbc5ea798899a4"
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203035.jsonl",
+      "sha256": "18d62c8c11910ebb932fba49b4fae252481ae42e06dbf613d78362197dc9b8fa"
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/retest-2027/indoor_positioning_20260922_203138.jsonl",
+      "sha256": "6fbbfeff7c38d50540bfe13f91c4f4de4a68d711e4b6114cc4382b5c1e549c3b"
+    },
+    {
+      "file": "indoor/data/raw/android/2026-09-22/post-grid-four/indoor_positioning_20260922_211757.jsonl",
+      "sha256": "72e83cb3e821401411b310861127af84864d337d1206568eaa5e0851d80099cd"
+    }
+  ],
+  "alignment": "Surveyed endpoints plus detected-step interpolation; weak intermediate coordinates"
+}
