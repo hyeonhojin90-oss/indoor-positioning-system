@@ -1,6 +1,6 @@
 ## 2026-10-03 GitHub 개발 소스 정리 및 복제 빌드 검증
 
-사용자가 측정 원본을 포함한 공개·업로드를 명시적으로 승인했다. 현재·과거 텍스트를 재검사한 뒤 저장소의 공개 전환을 완료했다. 실제 저장소 이름은 `indoor-positioning-system`이며 최신 소스 업로드를 진행한다. 재검사 범위·한계는 `GITHUB_PUBLICATION_REVIEW_20261003.json`, 최종 배포 결과는 `GITHUB_SNAPSHOT_20261003.md`를 따른다.
+사용자가 측정 원본을 포함한 공개·업로드를 명시적으로 승인했다. 현재·과거 텍스트를 재검사한 뒤 [indoor-positioning-system](https://github.com/hyeonhojin90-oss/indoor-positioning-system)의 공개 전환과 최신 코드·자료 업로드를 완료했다. 첫 배포 커밋은 `05aba6c324989e78ae9fbf14395a97fc1ba3c507`이며 LFS 182개(약696MB)를 업로드했다. 재검사 범위·한계는 `GITHUB_PUBLICATION_REVIEW_20261003.json`, 배포 기록은 `GITHUB_SNAPSHOT_20261003.md`를 따른다. 공개·빌드 완료는 현장 정확도 검증과 구분한다.
 
 최신 웹 지도·측위/수집·분석 자료와 저장소 외부의 Android Studio 소스를 `app/android-native`로 정리했다. 원본 Android 프로젝트는 변경하지 않고 웹 자산 경로만 저장소 기준으로 바꿨다. 소스 manifest와 빌드 README, 루트 npm 검사 명령을 추가했다. 측정 원본·정정본은 LFS로 보존하며 개인 보고서·APK/복제본·캐시는 업로드에서 제외했다. 상세 범위·재현은 `GITHUB_SNAPSHOT_20261003.md`를 따른다.
 
