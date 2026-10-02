@@ -75,9 +75,9 @@ IT융합대학 1~10층의 강의실과 주요 코어를 확인할 수 있는 2D�
 
 사용자가 셔틀 위치, 현재 위치, 목적 강의실과 이동 경로를 확인할 수 있는 모바일 서비스를 개발할 예정이다.
 
-현재 모바일 앱은 구현 전이다. Windows 개발 환경과 센서·AR 기능 접근 조건을 고려해 Android 앱을 우선 개발하고, 핵심 기능과 지도 연동을 검증한 뒤 iOS의 개발·배포 제약과 지원 가능한 센서 기능을 검토해 확장한다.
+현재 Android 앱에는 공용 지도 표시, 경로 라벨·센서 기준점 수집과 실내 위치 추정 실험 기능을 구현했다. 최신 소스는 `app/android-native`에서 확인할 수 있다. 셔틀·실외·실내 안내의 전체 서비스 연계와 iOS 확장은 후속 작업이다.
 
-먼저 웹 지도 데이터와 센서 실험 결과를 Android 앱에서 재사용할 수 있도록 인터페이스와 기술 스택을 정리한다. 이후 카메라 화면에 이동 방향과 남은 거리를 표시하는 AR 안내로 확장한다.
+Android 앱은 공용 웹 지도와 측위 코드를 재사용한다. 카메라 화면에 이동 방향과 남은 거리를 표시하는 AR 안내는 향후 확장 후보다.
 
 ## 현재 진행상황
 
@@ -95,8 +95,8 @@ IT융합대학 1~10층의 강의실과 주요 코어를 확인할 수 있는 2D�
 ## 저장소 복제 및 데이터
 
 ```powershell
-git clone https://github.com/hyeonhojin90-oss/indoor-nav-it4f.git
-cd indoor-nav-it4f
+git clone https://github.com/hyeonhojin90-oss/indoor-positioning-system.git
+cd indoor-positioning-system
 git lfs pull
 ```
 
