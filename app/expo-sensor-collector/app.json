@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "아이폰 실내측위 수집기",
+    "slug": "it-building-ios-sensor-collector",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.jhh4835.indoorsurvey",
+      "infoPlist": {
+        "NSMotionUsageDescription": "실내측위 연구를 위해 가속도, 자이로, 자기장, 기압 및 걸음 데이터를 수집합니다.",
+        "NSLocationWhenInUseUsageDescription": "실내 진행 방향과 외부·내부 전환 실험을 위해 나침반 방위와 위치를 사용합니다.",
+        "NSBluetoothAlwaysUsageDescription": "교내 실내측위 환경 조사에서 주변 Bluetooth 저전력 신호의 세기와 변화를 수집합니다.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-sharing",
+      "expo-location"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1dcf6a32-dab4-47da-90f5-1f343bbf4a38"
+      }
+    }
+  }
+}

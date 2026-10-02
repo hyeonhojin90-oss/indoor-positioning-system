@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,"><title>통행 영역 검토 · 2·3층</title>
+  <link rel="stylesheet" href="src/floors/floor-03.css">
+  <link rel="stylesheet" href="src/floors/floor-02.css">
+  <link rel="stylesheet" href="src/positioning/review.css">
+</head>
+<body>
+  <main class="review-shell">
+    <header class="review-header"><div><h1>2·3층 통행 영역 검토</h1><p>기존 2D 지도 위에 측위용 영역·연결부만 겹쳐 표시합니다.</p></div><a href="index.html?floor=2">전체 2D 지도</a><a href="clay.html">3D 지도</a></header>
+    <section class="review-controls">
+      <label>층 <select id="floor"><option value="2">2층</option><option value="3">3층</option></select></label>
+      <label>검증 경로 <select id="route"></select></label>
+      <button id="showRoute">경로 확인</button><button id="clear">직접 두 점 찍기</button>
+      <label><input type="checkbox" id="overlay" checked>영역 표시</label>
+    </section>
+    <p class="review-legend"><span>초록: 지도에 표시한 영역</span> · <span class="amber">점선: 세부 동선 미확인</span> · <span class="blue">굵은 파랑: 연결부</span> · <span class="red">굵은 빨강: 통과 제한 벽·기둥 (기존 외곽선과 구분)</span></p>
+    <p id="status" role="status">지도를 불러오는 중입니다.</p>
+    <p id="caution">미표시 영역은 이번 측위 대상에서 제외합니다. 실제 공간이 막혀 있다는 뜻은 아닙니다. 지도 픽셀은 실측 cm가 아니며, 교실 내부·정확한 출입문·가구 사이 통로는 추가 확인 대상입니다.</p>
+    <div id="plan" class="review-plan"></div>
+    <p id="notes"></p>
+  </main>
+  <script src="src/positioning/navigation.js"></script>
+  <script src="src/positioning/review.js"></script>
+</body></html>

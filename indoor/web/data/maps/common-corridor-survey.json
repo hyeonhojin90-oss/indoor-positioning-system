@@ -1,0 +1,36 @@
+{
+  "version": "common-corridor-glb-20260922",
+  "applies_to_floors": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "excluded_floors": [
+    1
+  ],
+  "right_core_to_stair_entry_m": 48.68545341491699,
+  "core_wall_center_width_m": 2.975348,
+  "left_core_to_corridor_end_m": 47.3473772,
+  "core_left_to_core_right_and_both_corridors_m": 99.00817861491699,
+  "map_breaks": [
+    3.363100346020758,
+    69.424,
+    72.184,
+    135.407
+  ],
+  "meter_breaks": [
+    0,
+    48.68545341491699,
+    51.66080141491699,
+    99.00817861491699
+  ],
+  "meters_per_legacy_unit": 0.7086199567103129,
+  "right_end_note": "3F 50.8837m reaches the scan end wall; 48.6855m remains the corridor-to-stair-entry distance, so stair depth is not added twice.",
+  "display_note": "2D/3D room drawings remain schematic; positioning motion uses this physical piecewise metric."
+}

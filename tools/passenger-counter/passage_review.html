@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>승하차 원본 검토</title>
+<style>
+body{margin:0;background:#f4f6fa;color:#18263a;font:16px system-ui,sans-serif}main{max-width:1100px;margin:32px auto;padding:0 24px}h1{font-size:27px;margin-bottom:8px}.note{color:#526174;line-height:1.65}.layout{display:grid;grid-template-columns:minmax(300px,1fr) minmax(300px,1fr);gap:28px}.panel{background:white;border:1px solid #d8e0eb;border-radius:12px;padding:20px}img{width:100%;height:450px;object-fit:contain;background:#101721;border-radius:6px}input,select,button{font:inherit;border:1px solid #c4cfde;border-radius:6px;padding:9px;box-sizing:border-box}button{cursor:pointer;background:#fff}button.primary{background:#2558a7;color:white;border-color:#2558a7}input[type=range]{width:100%;padding:0}label{display:block;font-size:14px;margin:12px 0 5px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}td,th{padding:9px 5px;border-bottom:1px solid #e4e9f0;text-align:left;font-size:14px}table{width:100%;border-collapse:collapse}.status{min-height:44px;white-space:pre-wrap;line-height:1.5}#source{overflow-wrap:anywhere}.time{font-variant-numeric:tabular-nums;color:#425777}.full{width:100%}@media(max-width:800px){.layout{grid-template-columns:1fr}img{height:400px}}
+</style>
+<main><h1>승하차 원본 검토</h1><p class="note">원본에서 사람을 확인하고 승하차가 일어난 구간을 기록합니다. 검출 박스는 표시하지 않습니다. 저장되는 기록은 검토한 일부 구간의 정답입니다.</p>
+<p id="source" class="time">원본 확인 중</p><div class="layout">
+<section class="panel"><img id="frame" alt="선택한 원본 프레임"><p id="position" class="time"></p>
+<input id="slider" aria-label="프레임 이동" type="range" min="0" value="0">
+<div class="row"><button data-step="-10">−10</button><button data-step="-1">−1</button><button id="play">검토 재생</button><button data-step="1">+1</button><button data-step="10">+10</button></div>
+<label for="index">프레임 번호</label><div class="row"><input id="index" type="number" min="0" value="0"><button id="go">이동</button></div></section>
+<section class="panel"><label for="person">구분할 수 있는 사람 이름</label><input id="person" class="full" placeholder="예: 파란 상의·검은 가방">
+<label for="direction">방향</label><select id="direction" class="full"><option value="in">승차</option><option value="out">하차</option></select>
+<p class="note">시작과 끝 프레임을 선택해 진입·통과가 확인되는 구간을 묶습니다. 영상 시작부터 안에 있던 사람이나 아직 통과하지 않은 사람은 제외합니다.</p>
+<div class="row"><button id="start">현재 프레임을 시작으로</button><button id="end">현재 프레임을 끝으로</button></div>
+<p id="interval" class="time">시작·끝을 선택하세요.</p><button id="add" class="primary">구간 추가</button>
+<table><thead><tr><th>사람</th><th>방향</th><th>구간</th><th></th></tr></thead><tbody id="events"></tbody></table>
+<label for="reviewer">검토자 이름</label><input id="reviewer" class="full" placeholder="검토한 사람 이름">
+<label for="kind">검토자 종류</label><select id="kind" class="full"><option value="human">사람</option><option value="assistant">Codex 검토·도구 시험</option></select>
+<p><button id="save" class="primary">새 정답 기록 저장</button></p><p id="status" class="status" role="status"></p>
+</section></div></main>
+<script>
+'use strict';
+const el=id=>document.getElementById(id);let manifest,current=0,begin=null,end=null,events=[],timer=null,loading=false;
+const message=text=>el('status').textContent=text;
+async function show(index){
+ if(loading)return;index=Number(index);
+ if(!Number.isInteger(index)||index<0||index>=manifest.frames){message('원본 범위 안의 프레임 번호를 입력하세요.');return;}
+ loading=true;try{const response=await fetch('/frame?index='+index);if(!response.ok)throw Error((await response.json()).error);
+ const url=URL.createObjectURL(await response.blob());const previous=el('frame').src;el('frame').src=url;await el('frame').decode();if(previous.startsWith('blob:'))URL.revokeObjectURL(previous);
+ current=index;el('slider').value=index;el('index').value=index;el('position').textContent=`프레임 ${index} / ${manifest.frames-1} · ${(index/manifest.fps).toFixed(3)}초`;
+ }catch(error){message(error.message);}finally{loading=false;}
+}
+function interval(){el('interval').textContent=`시작 ${begin===null?'미선택':begin} · 끝 ${end===null?'미선택':end}`;}
+function render(){const body=el('events');body.replaceChildren();events.forEach((event,i)=>{
+ const tr=document.createElement('tr');for(const text of [event.person,event.direction==='in'?'승차':'하차',`${event.start_frame}–${event.end_frame}`]){const td=document.createElement('td');td.textContent=text;tr.append(td);}
+ const td=document.createElement('td'),button=document.createElement('button');button.textContent='삭제';button.onclick=()=>{events.splice(i,1);render();};td.append(button);tr.append(td);body.append(tr);
+});}
+el('slider').onchange=()=>show(el('slider').value);el('go').onclick=()=>show(el('index').value);
+document.querySelectorAll('[data-step]').forEach(button=>button.onclick=()=>show(Math.max(0,Math.min(manifest.frames-1,current+Number(button.dataset.step)))));
+el('play').onclick=()=>{if(timer){clearInterval(timer);timer=null;el('play').textContent='검토 재생';return;}el('play').textContent='재생 정지';timer=setInterval(()=>{if(current>=manifest.frames-1){el('play').click();return;}show(current+1);},200);};
+el('start').onclick=()=>{if(loading){message('프레임 이동이 끝난 후 선택하세요.');return;}begin=current;interval();};el('end').onclick=()=>{if(loading){message('프레임 이동이 끝난 후 선택하세요.');return;}end=current;interval();};
+el('add').onclick=()=>{const person=el('person').value.trim();if(!person||begin===null||end===null||end<begin){message('사람 이름과 시작·끝 구간을 확인하세요.');return;}
+ const event={person,direction:el('direction').value,start_frame:begin,end_frame:end};if(events.some(e=>JSON.stringify(e)===JSON.stringify(event))){message('같은 구간을 이미 추가했습니다.');return;}
+ events.push(event);render();begin=end=null;interval();message('구간을 추가했습니다. 저장 전까지 파일은 생성하지 않습니다.');};
+el('save').onclick=async()=>{try{if(!el('reviewer').value.trim())throw Error('검토자 이름을 입력하세요.');
+ const response=await fetch('/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({source_sha256:manifest.source_sha256,reviewer:el('reviewer').value,reviewer_kind:el('kind').value,events})});
+ const result=await response.json();if(!response.ok)throw Error(result.error);message(`${result.windows_file} 저장 · ${result.events}건\n전체 영상의 완전한 정답으로 처리하지 않습니다.`);
+ }catch(error){message(error.message);}};
+fetch('/manifest').then(r=>r.json()).then(async data=>{manifest=data;el('source').textContent=`${data.source.split(/[/\\]/).pop()} · ${data.frames}프레임 · ${data.fps} FPS`;el('slider').max=data.frames-1;el('index').max=data.frames-1;await show(0);}).catch(e=>message(e.message));
+</script></html>

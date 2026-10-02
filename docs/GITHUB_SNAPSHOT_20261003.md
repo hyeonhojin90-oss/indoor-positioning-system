@@ -1,0 +1,43 @@
+# GitHub 개발 소스 업데이트 — 2026-10-03
+
+대상: https://github.com/hyeonhojin90-oss/indoor-nav-it4f
+
+기존 원격 main은 로컬 보존·구조 정리 커밋의 선조다. 강제 푸시나 과거 기록 재작성 없이 현재 개발 소스를 이어서 배포한다. 이 문서는 코드 배포 범위와 검증 기록이며 전체 구현·미완료 상태의 기준은 `CURRENT_STATUS.md`다.
+
+## 포함 범위
+
+- 1~10층 공용 2D·3D 지도, 실측 거리표, navigation·PDR·파티클·자기장/BLE/AP 코드
+- Android Studio 원본에서 복사한 `app/android-native` 소스·Gradle wrapper·단위검사. 공용 웹 자산 경로만 저장소 상대경로로 변경했고 원본 프로젝트는 수정하지 않았다. 파일별 SHA는 `app/android-native/SOURCE_MANIFEST.json`에 기록한다.
+- 기존 Expo 수집 앱, 경로·센서 수집 도구, 분석·비교 코드, 측정 원본과 정정본 및 결과 기록
+- 승차 인원 계수 프로토타입 코드·설정·시험·결과·모델 출처 안내와 GPS 보존 펌웨어
+- 전체 설계·결정·상태·작업 기록과 실행 README
+
+측정 JSONL 원본/정정본, GLB·PDF·이미지·NPZ는 Git LFS로 관리한다. 복제 후 `git lfs pull`이 필요하다. 외부 영상·사전학습 모델은 도구 README의 출처와 라이선스에 따라 따로 준비한다.
+
+APK·소스 ZIP 복제본·보고서 내보내기(`exports/`), 개인 보고서 초안(`docs/reports/`), 실행 임시 결과, `.pnpm-store`, Android 빌드·IDE 상태, SDK 로컬 경로, 환경 파일과 개인 서명키는 제외했다. 로컬 파일을 삭제하지 않았다. 업로드 후보의 비밀키·토큰 패턴 및 환경/키/보고서 파일 포함 여부를 검사했으며 발견하지 않았다. 이는 모든 개인 정보의 자동 판별을 보장하는 검사는 아니다.
+
+## 이번 정리에서 수정한 검증 불일치
+
+기존 Expo 테스트가 실측 거리 반영 전의 지도 단위, 이전 호실명, 이전 통행 범위·AP 최소 신호 수를 기대하고 있었다. 최근 확인된 거리·지도·수집 정책에 맞춰 테스트를 갱신했다. 3층은 실측 이후의 통로 위치를 사용하며 미확인 IT홀 연결을 허용하지 않는다. 보폭 및 센서 보정 조건 자체는 변경하지 않았다.
+
+이 과정에서 공용 엔진의 관측 호실 목록이 중앙/계단 기준점을 대체해 최근접 장소 목록에서 기준점을 누락하는 문제를 발견했다. 관측 호실과 실측 중앙/양끝 계단을 함께 비교하도록 수정하고 기존/미터 좌표 양쪽의 기준점 표시 회귀를 추가했다. 호실 좌표를 도면 비율로 새로 추정하지 않는다.
+
+## 최종 검증
+
+- Windows의 새 영문 임시 경로에 저장소 Android 소스와 공용 `indoor/web`만 복사해 `testDebugUnitTest lintDebug assembleDebug` 실행 성공
+- Android 단위검사 37개, 실패 0; Lint 오류 0 / 경고 14
+- APK ZIP CRC 및 공용 핵심 자산 34개 SHA256 일치
+- 실내 검사 스크립트 14개 통과: 지도 제약·미터/계단 141개, Fusion 32개 및 AP/BLE·회전·걸음/좌표 검증 포함
+- 브라우저: 지도 화면·상호작용 요소, 센서 브리지, 경로 모드4/AP 연결, 기존/미터 좌표·전층/계단 32개, AP 신선도·이동 품질·거리 거부·정지/재시작 검사 통과. 페이지 오류 및 관련 데이터 요청 오류 없음
+- 승차 인원 계수 프로토타입 Python 단위검사 261개 통과
+- `git diff --check` 및 최종 staged 파일 검사
+
+로컬 검증 APK: `exports/github-20261003/app-debug.apk`(GitHub 업로드 제외). 이 빌드는 versionCode 8의 저장소 소스 검증용이며 기기에 설치하지 않았다. 필드 정확도, 실제 회전 검색 지연·오보정, 카메라/Orin 장치 성공을 증명한 것은 아니다.
+
+## 복제 후 실행
+
+지도는 저장소 루트에서 `python -m http.server 4175 --bind 127.0.0.1 --directory indoor/web`로 실행한다. `http://127.0.0.1:4175/index.html`에서 2D, `clay.html`에서 3D를 확인한다.
+
+Android는 `app/android-native/README.md`, 승차 계수는 `tools/passenger-counter/README.md`를 따른다. 실내 단위검사는 `npm test`로 실행한다. 브라우저 검사는 `npm ci`로 고정된 Playwright를 설치하고 Windows Edge 및 위 4175 서버를 준비한 뒤 `npm run test:browser`로 실행한다.
+
+보고서에는 저장소 일반 링크와 함께 업데이트 완료 후의 커밋 링크를 사용하면 제출 시점 코드를 특정할 수 있다.

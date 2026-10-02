@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "mode4 AP reference loading, accepted fingerprint, moving-scan quality, duplicate rejection",
+    "distant core match rejected at right stair start; rejection reason reaches Android host",
+    "AP disabled comparison and baseline preserved; stop/restart controls"
+  ],
+  "errors": [],
+  "failedRequests": []
+}

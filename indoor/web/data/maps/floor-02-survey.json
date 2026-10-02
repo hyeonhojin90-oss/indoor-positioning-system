@@ -1,0 +1,15 @@
+{
+  "version": "2f-glb-20260922",
+  "source": "2f-rescan.glb",
+  "entry_to_straight_m": 6.924826040543125,
+  "straight_length_m": 25.167399806749202,
+  "entry_to_end_m": 32.092225847292326,
+  "corridor_width_m": 3.70148141624279,
+  "svg_near_y": 603.5783715873742,
+  "svg_far_y": 253.146222379474,
+  "svg_corridor_right": 1179.8966002949703,
+  "entry_axis_svg_x": 1162.948300147485,
+  "entry_axis_map_x": 17.662486523461936,
+  "source_status": "scan-derived-approximate",
+  "room_interiors_surveyed": false
+}

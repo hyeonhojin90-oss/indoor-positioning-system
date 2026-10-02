@@ -6,7 +6,7 @@ const isEmbed = new URLSearchParams(window.location.search).get("embed") === "1"
 const views = {
   all: {
     box: isEmbed ? "0 45 1380 1030" : "0 0 1380 1160",
-    status: "1층 본동 강의실 전체와 야외 복도, 별도 행정실 건물을 함께 표시합니다."
+    status: "1층 iSPACE·S-SPACE·오른쪽 통합공간과 야외 복도, 별도 행정실 건물을 함께 표시합니다."
   },
   admin: {
     box: "720 35 650 560",

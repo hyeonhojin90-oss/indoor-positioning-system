@@ -17,6 +17,7 @@
         <div class="top-actions">
           <a class="link-button" href="./clay.html">클레이 3D 보기</a>
           <a class="link-button secondary" href="./pdr.html">알고리즘 테스트</a>
+          <a class="link-button secondary" href="./navigation-review.html?floor=2">2·3층 통행 영역 검토</a>
           <div id="mapBadge" class="badge">4F map graph v0.4</div>
         </div>
       </header>
@@ -45,9 +46,10 @@
               <input id="labelToggle" type="checkbox" checked />
               전체 강의실 번호 보기
             </label>
+            <button id="nodeEditorToggle" type="button">상단 강의실 노드 편집</button>
           </div>
-          <div class="svg-wrap" data-floor-view="4">
-            <svg id="mapSvg" viewBox="0 0 980 500" role="img" aria-label="IT융합대학 4층 복도와 강의실 배치도"></svg>
+          <div id="floor4Host" class="floor-plan-inline-wrap" data-floor-view="4" role="img" aria-label="IT융합대학 4층 2D 구조도">
+            <div class="loading-note">4층 2D 지도를 불러오는 중</div>
           </div>
           <div id="floor1Host" class="floor-plan-inline-wrap" data-floor-view="1" role="img" aria-label="IT융합대학 1층 2D 구조도">
             <div class="loading-note">1층 2D 지도를 불러오는 중</div>
@@ -75,13 +77,33 @@
         </div>
       </section>
 
+      <section id="nodeEditorPanel" class="node-editor-panel" hidden aria-labelledby="nodeEditorTitle">
+        <div>
+          <p id="nodeEditorEyebrow" class="eyebrow">선택 층 · 초안 편집</p>
+          <h2 id="nodeEditorTitle">상단 강의실 복도 노드</h2>
+          <p>현재 층의 위쪽 강의실 번호를 지도에서 누르거나 아래에서 고른 뒤, 메인 복도 중심선 노드로 기록합니다. 아래쪽 강의실은 다음 단계에서 같은 노드에 연결합니다.</p>
+        </div>
+        <div class="node-editor-controls">
+          <label>
+            기준 강의실
+            <select id="nodeRoomSelect"></select>
+          </label>
+          <button id="addNodeButton" class="primary" type="button">선택 강의실 노드 기록</button>
+          <button id="copyNodesButton" type="button">노드 JSON 복사</button>
+          <button id="downloadNodesButton" type="button">JSON 내려받기</button>
+          <button id="clearNodesButton" class="danger" type="button">현재 층 초안 비우기</button>
+        </div>
+        <p id="nodeEditorStatus" class="node-editor-status" aria-live="polite"></p>
+        <ul id="nodeDraftList" class="node-draft-list"></ul>
+      </section>
+
       <section class="notes">
         <h2>현재 모델 기준</h2>
         <ul id="mapNotes"></ul>
       </section>
     </main>
 
-  <script type="module" src="./src/map-2d.js?v=floor10-10202-pink-2"></script>
+  <script type="module" src="./src/map-2d.js?v=2f-equal-2211-2210-1-20260922"></script>
   </body>
 </html>
 

@@ -6,7 +6,7 @@ const isEmbed = new URLSearchParams(window.location.search).get("embed") === "1"
 const views = {
   all: {
     box: isEmbed ? "0 40 1380 1050" : "0 0 1380 1180",
-    status: "코어와 계단의 고정 좌표 위에 2층 강의실, 2107, S-space, TDM과 증축부 동선을 함께 표시합니다."
+    status: "코어와 계단의 고정 좌표 위에 2층 강의실, 2107, M-space, TDM과 증축부 동선을 함께 표시합니다. 오른쪽 메인복도 수집 순서는 별도 경로 데이터에 저장됩니다."
   },
   extension: {
     box: "820 35 540 720",

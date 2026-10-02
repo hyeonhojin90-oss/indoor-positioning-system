@@ -1,0 +1,11 @@
+const {chromium}=require('playwright'),A=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});try{const page=await browser.newPage(),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`);});
+ await page.addInitScript(()=>{window.records=[];window.SensorHost={start:()=>JSON.stringify({ok:true,device:'samsung SM-S938N'}),record:r=>window.records.push(JSON.parse(r)),stop:()=>{}};});
+ await page.goto('http://127.0.0.1:4175/fusion-experiment.html');await page.waitForFunction(()=>!document.querySelector('#begin').disabled);
+ A.equal(await page.locator('#floor option').count(),10);A.equal(await page.locator('#mode option').count(),4);await page.click('#begin');
+ await page.evaluate(()=>{const rows=[];for(let i=0;i<160;i++){const time=1000+i*50;rows.push({sensor:'heading_degrees',time,values:[355],accuracy:3},{sensor:'accelerometer_mps2',time,values:[0,0,9.81+2*Math.sin(i*Math.PI/5)]},{sensor:'magnetic_field_ut',time,values:[42,0,0]});if(i%20===0)for(let j=0;j<8;j++)rows.push({sensor:'ble',time,observation:{anonymous_id:`test-${j}`,rssi_dbm:-50-j}});}window.receiveSensorBatch(rows);});
+ A.ok((await page.locator('#details').textContent()).includes('걸음'));await page.click('#stop');
+ const records=await page.evaluate(()=>window.records);A.equal(records[0].kind,'fusion_experiment_mode');A.equal(records[0].ap_enabled,true);A.ok(records.some(r=>r.kind==='derived_fusion'));A.equal(records.at(-1).kind,'derived_fusion_final');A.ok(records.at(-1).steps>0);A.deepEqual(errors,[]);
+ console.log(JSON.stringify({test:'Android sensor bridge mock',records:records.length,steps:records.at(-1).steps,errors}));
+ }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

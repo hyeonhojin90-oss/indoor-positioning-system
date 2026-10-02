@@ -39,7 +39,7 @@
     <div class="plan-stage">
       <svg id="floorPlan" viewBox="0 0 1380 1160" role="img" aria-labelledby="planTitle planDesc">
         <title id="planTitle">IT융합대학 1층 평면 구조</title>
-        <desc id="planDesc">다른 층과 같은 코어와 계단 좌표를 유지한 본동, 오른쪽 위 1107부터 1101까지의 강의실, 야외 복도와 하나로 통합한 행정실을 표시한다.</desc>
+        <desc id="planDesc">다른 층과 같은 코어와 계단 좌표를 유지한 본동, iSPACE, S-SPACE, 오른쪽 위 명칭 미확정 통합공간과 1101, 야외 복도와 행정실을 표시한다.</desc>
         <defs>
           <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
             <path d="M20 0H0V20" fill="none" stroke="#e7ebef" />
@@ -83,7 +83,8 @@
               <rect x="512" y="120" width="118" height="110" />
               <text x="134" y="175">1128</text>
               <text x="273" y="175">1125</text>
-              <text x="430" y="175">1122</text>
+              <text x="430" y="164">1122</text>
+              <text class="small-room-label" x="430" y="188">iSPACE</text>
               <text x="571" y="175">1119</text>
 
               <rect x="70" y="294" width="150" height="110" />
@@ -91,9 +92,10 @@
               <rect x="365" y="294" width="205" height="110" />
               <text x="145" y="349">1228</text>
               <text x="292" y="349">1225</text>
-              <text x="468" y="349">1221</text>
-              <text class="row-label upper-row" x="310" y="98">왼쪽복도 위쪽: 1128 · 1125 · 1122 · 1119</text>
-              <text class="row-label lower-row" x="300" y="430">왼쪽복도 아래쪽: 1228 · 1225 · 1221</text>
+              <text x="468" y="338">1221</text>
+              <text class="small-room-label" x="468" y="362">S-SPACE</text>
+              <text class="row-label upper-row" x="310" y="98">왼쪽복도 위쪽: 1128 · 1125 · 1122(iSPACE) · 1119</text>
+              <text class="row-label lower-row" x="300" y="430">왼쪽복도 아래쪽: 1228 · 1225 · 1221(S-SPACE)</text>
             </g>
 
             <g class="upper-gap rest-area" aria-label="1층 휴식공간">
@@ -107,16 +109,11 @@
               <path class="door-swing" d="M636 120A36 36 0 0 1 662 146M694 120A36 36 0 0 0 668 146" />
             </g>
 
-            <g class="room-row right-upper-rooms">
-              <rect x="1018" y="120" width="76" height="110" />
-              <rect x="1094" y="120" width="33" height="110" />
-              <rect x="1127" y="120" width="33" height="110" />
-              <rect x="1160" y="120" width="69" height="110" />
+            <g class="room-row right-upper-rooms" aria-label="1층 오른쪽 위 통합공간과 1101">
+              <rect x="1018" y="120" width="211" height="110" />
               <rect x="1229" y="120" width="81" height="110" />
-              <text x="1056" y="175">1107</text>
-              <text class="small-room-label" x="1110.5" y="175">1105-2</text>
-              <text class="small-room-label" x="1143.5" y="175">1105-1</text>
-              <text x="1194.5" y="175">1103</text>
+              <text x="1123.5" y="164">통합공간</text>
+              <text class="small-room-label" x="1123.5" y="188">명칭 확인 중</text>
               <text x="1269.5" y="175">1101</text>
             </g>
 
@@ -196,7 +193,7 @@
         <h2>이번 구조 원칙</h2>
         <ul>
           <li>빨간 본동 틀과 코어·계단 위치는 다른 층과 동일하게 고정합니다.</li>
-          <li>오른쪽복도 위쪽 1107·1105-2·1105-1·1103·1101은 모두 독립 강의실입니다.</li>
+          <li>오른쪽복도 위쪽의 기존 1107~1103 구간은 하나의 통합공간이며 최종 명칭은 현장 확인 중입니다. 1101은 별도 공간으로 유지합니다.</li>
           <li>행정실은 야외 복도 위쪽 노란 박스만 통합해 표시합니다.</li>
           <li>1213과 1210 사이 문 하나만 표시합니다.</li>
         </ul>

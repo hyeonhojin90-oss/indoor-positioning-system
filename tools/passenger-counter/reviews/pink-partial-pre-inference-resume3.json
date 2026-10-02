@@ -1,0 +1,21 @@
+{
+  "source": "data\\regression\\bus-pink-31337217-1280.mp4",
+  "source_sha256": "374d41fc14036a275ec9972dc8b51ee1399adcc25d4e4c007be5b5910b16f96e",
+  "reviewed_before_new_inference": true,
+  "assistant_review": true,
+  "human_reviewed": false,
+  "complete_ground_truth": false,
+  "windows": [
+    {
+      "person": "brown-shirt-alighting-man",
+      "direction": "out",
+      "frames": [
+        30,
+        110
+      ],
+      "start_s": 1.0,
+      "end_s": 3.6666666666666665
+    }
+  ],
+  "note": "Six-frame source collage observed a man stepping down and walking away; sparse partial reference only, no precision/whole-scene accuracy claim. This source is a previous development clip, not blind test."
+}

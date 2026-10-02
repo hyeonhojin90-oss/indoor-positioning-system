@@ -1,5 +1,28 @@
 # Dependencies
 node_modules/
+.pnpm-store/
+
+# Generated copies, report exports, and local experiment execution artifacts
+/exports/
+/runs/
+/docs/reports/
+/tools/passenger-counter/exports/
+/app/expo-sensor-collector/dist*/
+
+# Android machine-specific settings and build output
+**/.gradle/
+**/.kotlin/
+**/build/
+**/local.properties
+*.jks
+*.keystore
+
+# Downloaded research weights (source URLs/hashes and licenses are documented)
+indoor/data/models/ronin/*.zip
+indoor/data/models/ronin/**/*.pt
+
+# Local full checkpoints (source and raw data remain tracked separately)
+backups/
 
 # Python
 __pycache__/

@@ -1,0 +1,94 @@
+{
+  "experiment_note": "Development all four models dynamic ONNX CPU FP32; pose keypoint numerical parity passed at six positive frames. Full counting parity pending, Orin/TensorRT unverified.",
+  "door_mode": "custom",
+  "door_model": "runs/door-dynamic-onnx-parity-20260930/model.onnx",
+  "door_prompt": "a bus door.",
+  "door_classes": [
+    0
+  ],
+  "person_model": "runs/person-small-dynamic-onnx-parity-20260930/model.onnx",
+  "imgsz": 416,
+  "door_conf": 0.35,
+  "max_door_area": 0.6,
+  "door_interval_frames": 5,
+  "person_anchor_y": 1.0,
+  "door_lock": {
+    "stable": 2,
+    "min_iou": 0.75,
+    "ttl": 1.5
+  },
+  "counting": {
+    "axis": "y",
+    "entry": "negative",
+    "low": 0.95,
+    "high": 1.05,
+    "confirm": 2,
+    "max_gap": 0.75,
+    "outside_margin": 0.6,
+    "geometry": "doorway",
+    "lateral_inset": 0.25
+  },
+  "door_primary_model": "models/doors-v8s.pt",
+  "door_locked_interval_frames": 15,
+  "cascade": {
+    "primary_conf": 0.2,
+    "min_iou": 0.75,
+    "refresh_calls": 3,
+    "associated_conf": 0.25
+  },
+  "min_door_aspect": 1.0,
+  "bus_gate": {
+    "enabled": true,
+    "min_conf": 0.4,
+    "min_area": 0.08,
+    "grace_s": 0.75,
+    "max_door_bus_width_ratio": 0.65,
+    "associated_conf": 0.15,
+    "associated_iou": 0.5,
+    "max_associated_span_s": 3
+  },
+  "door_selection": {
+    "enabled": true,
+    "min_support": 0.2,
+    "switch_margin": 0.5,
+    "max_distance": 1
+  },
+  "person_imgsz": 640,
+  "cpu_threads": 2,
+  "track_bridge": {
+    "enabled": true,
+    "confirm": 3,
+    "max_gap": 0.75,
+    "bottom_approach_high": 1.1
+  },
+  "bus_visual_fallback": {
+    "enabled": true,
+    "max_gap": 2,
+    "min_points": 24,
+    "min_inlier_ratio": 0.7,
+    "min_span": 0.3
+  },
+  "bus_model": "runs/person-dynamic-onnx-parity-20260930/model.onnx",
+  "bus_detector": {
+    "interval_frames": 5,
+    "imgsz": 640,
+    "conf": 0.05
+  },
+  "person_anchor_kind": "pose_dual",
+  "pose_anchor": {
+    "min_visible": 2,
+    "ankle_conf": 0.5,
+    "foot_choice": "leading"
+  },
+  "dual_anchor": {
+    "defer_ankle": true,
+    "require_body_transition": true
+  },
+  "pose_aux_model": "runs/pose-small-dynamic-onnx-parity-20261001/model.onnx",
+  "pose_aux_gate": {
+    "margin": 0.1,
+    "high": 1.2,
+    "low": 0.9
+  },
+  "profile_pipeline": true
+}

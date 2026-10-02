@@ -16,17 +16,43 @@
     {
       "side": "lower",
       "direction": "right_from_elevator",
-      "order_from_hub": ["4213", "4212", "4211", "4210", "4209", "4208", "4207", "4206", "4205", "4204"]
+      "order_from_hub": [
+        "4213",
+        "4212",
+        "4211",
+        "4210",
+        "4209",
+        "4208",
+        "4207",
+        "4206",
+        "4205",
+        "4204"
+      ]
     },
     {
       "side": "lower",
       "direction": "left_from_elevator",
-      "order_from_hub": ["4218", "4222", "4225", "4228"]
+      "order_from_hub": [
+        "4218",
+        "4222",
+        "4225",
+        "4228"
+      ]
     },
     {
       "side": "upper",
       "direction": "left_from_elevator",
-      "order_from_hub": ["4120", "4122", "4123", "4124", "4125", "4126", "4127", "4128"]
+      "order_from_hub": [
+        "4120",
+        "4121",
+        "4122",
+        "4123",
+        "4124",
+        "4125",
+        "4126",
+        "4127",
+        "4128"
+      ]
     }
   ],
   "layout_dimensions": {
@@ -49,7 +75,7 @@
     "main_corridor_width": 2.34,
     "core_origin_from_main_centerline": 1.17,
     "stair_start_from_main_corridor": 2.44,
-    "main_stair_door_width": 1.0,
+    "main_stair_door_width": 1,
     "first_elevator_start_from_main_corridor": 3.59,
     "elevator_door_width": 1.1,
     "elevator_door_width_sources": {
@@ -60,14 +86,21 @@
     "wall_between_elevators": 2.27,
     "second_elevator_start_from_main_corridor": 6.96,
     "elevator_count": 2,
-    "provisional_floor_height": 4.0,
+    "provisional_floor_height": 4,
     "floor_height_status": "층간 높이 현장 실측 전 임시값",
     "main_stair_flight_width": 1.5,
     "main_stair_first_run": 3.4,
     "main_stair_second_run": 3.5,
     "main_stair_half_landing_side": "main_corridor_side",
     "stair_model": "dogleg_two_flights_with_half_landing",
-    "left_to_right_sequence": ["classrooms", "main_restroom", "elevator", "hub_connector", "stairs", "classrooms"],
+    "left_to_right_sequence": [
+      "classrooms",
+      "main_restroom",
+      "elevator",
+      "hub_connector",
+      "stairs",
+      "classrooms"
+    ],
     "reuse_note": "4층 코어를 기준 모듈로 관리하고, 추후 층별 차이를 반영해 1~9층에 수직 적층한다."
   },
   "measured_adjacent_spaces": {
@@ -78,7 +111,10 @@
     "right_end_stair_width_previous": 2.685,
     "right_end_stair_length_along_corridor_report": 6.87,
     "right_end_stair_depth_from_corridor_report": 3.1,
-    "previous_uncertain_segments": [2.792, 3.908],
+    "previous_uncertain_segments": [
+      2.792,
+      3.908
+    ],
     "sources": {
       "main_corridor_width": "기존 왼쪽 복도 GLB의 7 ft 8.02 in 측정",
       "right_end_module": "오른쪽 복도 GLB의 4 ft 1.69 in, 2 ft 11.54 in, 8 ft 9.71 in 측정"
@@ -86,6 +122,8 @@
     "model_rounding_note": "복도 폭은 반복 측정 중 2.337m를 우선한다. 2.792m와 3.908m는 화장실 외곽 치수로 확정하지 않는다."
   },
   "origin_note": "4층 메인 복도 데이터 좌표는 x=0이 화면/도면 기준 오른쪽 끝, x=135.407이 화면/도면 기준 왼쪽 끝으로 렌더링된다. 메인 복도 중심선을 y=0으로 두며, 중앙 코어는 x=64.437~77.171, 중앙 허브 연결 복도는 x=69.584~72.024이다.",
+  "right_stair_entry_map_x": 3.363100346020758,
+  "right_stair_entry_note": "2026-09-14 사용자 확인: 측정 종료점은 계단 내부 시작이 아니라 메인복도 끝의 계단 진입 전 기준점이다.",
   "orientation_model": {
     "primary_navigation_frame": "fixed_plan_frame",
     "description": "2D 렌더링은 코어 연결복도가 아래쪽인 고정 좌표계를 사용하며 피난안내도 사진 방향과 무관하게 회전·반전하지 않는다.",
@@ -240,7 +278,7 @@
       "entry_anchor_width_along_corridor": 3.1,
       "entry_landing_width": 1.55,
       "rotation_degrees": 90,
-      "floor_height": 4.0,
+      "floor_height": 4,
       "floor_height_status": "층간 높이 현장 실측 전 임시값",
       "flight_width": 1.5,
       "first_run": 3.4,
@@ -392,13 +430,23 @@
     },
     {
       "id": "4120",
-      "label": "전자정보시스템 소프트웨어실험실 4120",
-      "x": 85.954,
+      "label": "행정실 4120",
+      "x": 81.5625,
       "y": 8,
-      "front_x": 85.954,
+      "front_x": 81.5625,
       "front_y": 0,
       "side": "upper",
-      "width": 17.566
+      "width": 8.783
+    },
+    {
+      "id": "4121",
+      "label": "단장실 4121",
+      "x": 90.3455,
+      "y": 8,
+      "front_x": 90.3455,
+      "front_y": 0,
+      "side": "upper",
+      "width": 8.783
     },
     {
       "id": "4122",
@@ -626,47 +674,110 @@
         "id": "EV_CORE_3F_4F",
         "type": "elevator",
         "label": "코어 엘레베이터 3F-4F",
-        "floors": [3, 4],
+        "floors": [
+          3,
+          4
+        ],
         "x": 74.597,
         "y": -5.29,
         "status": "connected",
-        "node_labels": { "3": "3F_EV_BANK", "4": "4F_ELEVATOR_BANK" },
+        "node_labels": {
+          "3": "3F_EV_BANK",
+          "4": "4F_ELEVATOR_BANK"
+        },
         "note": "알고리즘 기준점은 코어복도/엘레베이터 앞이며, 실제 층 이동은 엘레베이터 내부 이벤트와 연결한다."
       },
       {
         "id": "CENTER_STAIR_3F_4F",
         "type": "stairs",
         "label": "중앙 메인계단 3F-4F",
-        "floors": [3, 4],
+        "floors": [
+          3,
+          4
+        ],
         "x": 67.011,
         "y": -6.99,
         "status": "connected",
-        "node_labels": { "3": "3F_CENTER_STAIRS", "4": "4F_CENTER_STAIRS" },
+        "node_labels": {
+          "3": "3F_CENTER_STAIRS",
+          "4": "4F_CENTER_STAIRS"
+        },
         "note": "코어 우측 메인계단의 동일 위치를 3층과 4층 층간 이동 노드로 연결한다."
       },
       {
         "id": "LEFT_END_STAIR_3F_4F",
         "type": "stairs",
         "label": "왼쪽 사이드계단 3F-4F",
-        "floors": [3, 4],
+        "floors": [
+          3,
+          4
+        ],
         "x": 135.407,
         "y": -4.605,
         "status": "connected",
-        "node_labels": { "3": "3F_LEFT_END_STAIRS", "4": "4F_4228_END_STAIRS" },
+        "node_labels": {
+          "3": "3F_LEFT_END_STAIRS",
+          "4": "4F_4228_END_STAIRS"
+        },
         "note": "4228/3228 쪽 왼쪽 끝 계단은 복도 끝 문을 지난 외부 계단실로 보고 층간 이동 노드로 연결한다."
       },
       {
         "id": "RIGHT_END_STAIR_3F_4F",
         "type": "stairs",
         "label": "오른쪽 사이드계단 3F-4F",
-        "floors": [3, 4],
+        "floors": [
+          3,
+          4
+        ],
         "x": 1.55,
         "y": -4.605,
         "status": "connected",
-        "node_labels": { "3": "3F_RIGHT_END_STAIRS", "4": "4F_4204_END_STAIRS" },
+        "node_labels": {
+          "3": "3F_RIGHT_END_STAIRS",
+          "4": "4F_4204_END_STAIRS"
+        },
         "note": "4204/3203 쪽 오른쪽 끝 계단은 90도 회전된 사이드계단 모듈로 보고 층간 이동 노드로 연결한다."
       }
     ]
+  },
+  "physical_survey_reference": {
+    "file": "floor-04-survey.json",
+    "note": "Physical GLB distances are separate from diagram coordinates. Core portals: one main stair entrance and two elevators confirmed by user. Other scan door detections are not entrances."
+  },
+  "common_corridor_survey": {
+    "version": "common-corridor-glb-20260922",
+    "applies_to_floors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "excluded_floors": [
+      1
+    ],
+    "right_core_to_stair_entry_m": 48.68545341491699,
+    "core_wall_center_width_m": 2.975348,
+    "left_core_to_corridor_end_m": 47.3473772,
+    "core_left_to_core_right_and_both_corridors_m": 99.00817861491699,
+    "map_breaks": [
+      3.363100346020758,
+      69.424,
+      72.184,
+      135.407
+    ],
+    "meter_breaks": [
+      0,
+      48.68545341491699,
+      51.66080141491699,
+      99.00817861491699
+    ],
+    "meters_per_legacy_unit": 0.7086199567103129,
+    "right_end_note": "3F 50.8837m reaches the scan end wall; 48.6855m remains the corridor-to-stair-entry distance, so stair depth is not added twice.",
+    "display_note": "2D/3D room drawings remain schematic; positioning motion uses this physical piecewise metric."
   }
 }
-

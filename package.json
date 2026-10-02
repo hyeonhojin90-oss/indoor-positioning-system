@@ -1,0 +1,12 @@
+{
+  "name": "indoor-nav-it4f",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node tools/test_indoor_snapshot.cjs",
+    "test:browser": "node indoor/tools/test_fusion_experiment.cjs && node indoor/tools/test_route_fusion_runtime.cjs && node indoor/tools/test_meter_browser_20261002.cjs && node indoor/tools/test_event_ap_browser_20261002.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

@@ -114,6 +114,12 @@ p {
   border-bottom: 1px solid var(--line);
 }
 
+#nodeEditorToggle.active {
+  border-color: #8b5cf6;
+  background: #8b5cf6;
+  color: #fff;
+}
+
 .floor-tabs {
   display: inline-grid;
   grid-template-columns: repeat(5, 62px);
@@ -251,6 +257,108 @@ button.primary {
   padding: 18px;
   color: var(--muted);
   font-weight: 700;
+}
+
+.node-editor-panel {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.9fr) minmax(420px, 1.1fr);
+  gap: 18px;
+  margin-top: 16px;
+  padding: 18px;
+  border: 1px solid #cfc8f4;
+  border-radius: 8px;
+  background: #fbfaff;
+}
+
+.node-editor-panel h2 {
+  margin: 2px 0 7px;
+  font-size: 20px;
+}
+
+.eyebrow {
+  color: #6d4ec3;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.node-editor-controls {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) repeat(2, auto);
+  gap: 8px;
+  align-content: start;
+}
+
+.node-editor-controls .danger {
+  grid-column: 2 / -1;
+  border-color: #efb1b5;
+  color: #b4232a;
+}
+
+.node-editor-status {
+  grid-column: 1 / -1;
+  margin: -8px 0 0;
+  color: #53448e;
+  font-size: 13px;
+}
+
+.node-draft-list {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.node-draft-list li {
+  display: grid;
+  gap: 3px;
+  padding: 9px 10px;
+  border: 1px solid #ddd8f3;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 12px;
+}
+
+.node-draft-list li span,
+.node-draft-list li code {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.remove-node-button {
+  height: 30px;
+  justify-self: start;
+  padding: 0 8px;
+  border-color: #efb1b5;
+  color: #b4232a;
+  font-size: 12px;
+}
+
+.node-draft-list .empty-node-draft {
+  color: var(--muted);
+}
+
+.node-editor-overlay {
+  pointer-events: none;
+}
+
+.node-marker {
+  fill: #f2b300;
+  stroke: #7a5100;
+  stroke-width: 3;
+}
+
+.node-marker.saved {
+  fill: #2f6fed;
+  stroke: #fff;
+}
+
+.node-marker.selected {
+  fill: #f2b300;
+  stroke: #7a5100;
 }
 
 svg {
@@ -878,6 +986,18 @@ pre {
 }
 
 @media (max-width: 700px) {
+  .node-editor-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .node-editor-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .node-editor-controls .danger {
+    grid-column: auto;
+  }
+
   .navigation-page main {
     width: min(100% - 20px, 1440px);
   }

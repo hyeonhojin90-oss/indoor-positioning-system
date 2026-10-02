@@ -1,0 +1,1149 @@
+{
+  "version": 1,
+  "references": [
+    {
+      "floor": 1,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 41.8256,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 80.698,
+        "y": 0
+      }
+    },
+    {
+      "floor": 1,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 37.0071,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 96.095,
+        "y": 0
+      }
+    },
+    {
+      "floor": 1,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 38.235,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 113.24,
+        "y": 0
+      }
+    },
+    {
+      "floor": 1,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 29.6605,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 128.418,
+        "y": 0
+      }
+    },
+    {
+      "floor": 1,
+      "platform": "android",
+      "device": null,
+      "zone": "core_junction",
+      "magnetic": 46.5699,
+      "spread": 3.8797,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 70.804,
+        "y": 0
+      }
+    },
+    {
+      "floor": 1,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_left",
+      "magnetic": 38.5251,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 135.407,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 42.312,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 80.698,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 44.4401,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 96.095,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 43.8483,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 113.24,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 42.2099,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 128.418,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 33.7868,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 9.435,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 35.5813,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 17.116,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 43.295,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 39.964,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 42.8137,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 24.689,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 40.4447,
+      "spread": 4.668,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 60.089,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "core_junction",
+      "magnetic": 46.8187,
+      "spread": 3.4007,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl",
+        "indoor_positioning_20260901_161342.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 70.804,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_left",
+      "magnetic": 40.1795,
+      "spread": 4.324,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 135.407,
+        "y": 0
+      }
+    },
+    {
+      "floor": 2,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_right",
+      "magnetic": 42.1951,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 29.3187,
+      "spread": 3.5535,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_160634.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 86.267,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 59.9198,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 13.433,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 36.0525,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 28.816,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 57.4037,
+      "spread": 4.3981,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 54.726,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 49.7926,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 40.734,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "core_junction",
+      "magnetic": 46.4573,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl",
+        "indoor_positioning_20260901_160634.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 70.804,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_left",
+      "magnetic": 32.9953,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_160634.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 135.407,
+        "y": 0
+      }
+    },
+    {
+      "floor": 3,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_right",
+      "magnetic": 45.3932,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 41.3829,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 85.954,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 39.8454,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 99.418,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 34.9244,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 106.443,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 46.1375,
+      "spread": 3.0688,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 111.13,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 40.7867,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 115.817,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 43.3143,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 120.505,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 42.4053,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 125.192,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_left",
+      "magnetic": 43.0976,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 131.4703,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 29.5293,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 8.6315,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 34.8359,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 14.1554,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 39.02,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 19.8471,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 41.7638,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 25.6752,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 39.0515,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 31.7837,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 35.4899,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 38.0361,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 44.1694,
+      "spread": 3.3363,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 44.3642,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 41.5117,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 50.2681,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 41.7126,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 55.8159,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 39.3944,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 61.5076,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "core_junction",
+      "magnetic": 51.1746,
+      "spread": 18.781,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl",
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 70.804,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_left",
+      "magnetic": 50.6977,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 135.407,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_right",
+      "magnetic": 49.5253,
+      "spread": 4.4131,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "floor": 5,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 56.3632,
+      "spread": 5.5114,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 12.991,
+        "y": 0
+      }
+    },
+    {
+      "floor": 5,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 51.4243,
+      "spread": 3.8053,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 30.332,
+        "y": 0
+      }
+    },
+    {
+      "floor": 5,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 40.8352,
+      "spread": 3.4693,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 46.96,
+        "y": 0
+      }
+    },
+    {
+      "floor": 5,
+      "platform": "android",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 45.3869,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 58.993,
+        "y": 0
+      }
+    },
+    {
+      "floor": 5,
+      "platform": "android",
+      "device": null,
+      "zone": "core_junction",
+      "magnetic": 53.3952,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 70.804,
+        "y": 0
+      }
+    },
+    {
+      "floor": 5,
+      "platform": "android",
+      "device": null,
+      "zone": "stairs_right",
+      "magnetic": 58.9844,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 34.4573,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 8.6315,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 40.7458,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 14.1554,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 43.3972,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 19.8471,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 44.9182,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 25.6752,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 43.2263,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 31.7837,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 41.5855,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 38.0361,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 45.5713,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 44.3642,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 42.9519,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 50.2681,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 42.6802,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 55.8159,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "main_right",
+      "magnetic": 38.5273,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 61.5076,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "core_junction",
+      "magnetic": 48.7138,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 70.804,
+        "y": 0
+      }
+    },
+    {
+      "floor": 4,
+      "platform": "ios",
+      "device": null,
+      "zone": "stairs_right",
+      "magnetic": 51.2357,
+      "spread": 3,
+      "wifi": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ],
+      "provenance": "legacy-stationary-window",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

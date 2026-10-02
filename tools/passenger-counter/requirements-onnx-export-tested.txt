@@ -1,0 +1,5 @@
+# Optional export and CPU verification additions, verified 2026-09-30.
+# Install after the tested project environment; not a Jetson CUDA environment.
+onnx==1.19.0
+onnxruntime==1.30.0
+ml_dtypes==0.6.0

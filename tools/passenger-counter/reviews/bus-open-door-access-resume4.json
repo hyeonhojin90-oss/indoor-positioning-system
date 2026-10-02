@@ -1,0 +1,18 @@
+{
+  "page": "https://universe.roboflow.com/bus-door/bus-open-door",
+  "version_page": "https://universe.roboflow.com/bus-door/bus-open-door/dataset/1",
+  "original_images": 542,
+  "version1_augmented_images": 1626,
+  "train_images": 1626,
+  "val_images": 0,
+  "test_images": 0,
+  "license": "CC BY 4.0",
+  "classes": [
+    "Front_door",
+    "Rear_door"
+  ],
+  "models": 0,
+  "download_attempt": "actual in-app browser visible Login or create a free account dialog",
+  "downloaded": false,
+  "screenshot": "reviews/bus-open-door-auth-resume4.png"
+}

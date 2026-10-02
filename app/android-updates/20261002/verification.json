@@ -1,0 +1,250 @@
+{
+  "apk": "C:\\Users\\20222967\\Documents\\ChatGPT\\자율설계 2\\exports\\android\\indoor-20261002-event-ap.apk",
+  "apk_sha256": "227521ad883acd3e2510242ce341d7a7be74064942429a7f08cb48d6a16d0c31",
+  "device_installation": "not_performed_no_device",
+  "field_accuracy": "not_validated",
+  "source": [
+    {
+      "name": "EventApPolicy.kt",
+      "sha256": "4a9007a94ac2508eae58108863f8ec228895e736862793e0edc77f44c6a2ae72"
+    },
+    {
+      "name": "EventApPolicyTest.kt",
+      "sha256": "4f041ee5c45b9b0858dcf9b706655bc15a0ea87d1dd179fa2324ebbd8925bb7b"
+    },
+    {
+      "name": "FusionExperiment.kt",
+      "sha256": "df6064ef412bdc1d752647118636fb9adabae8e1dae2a7449229eca9b4c8f604"
+    },
+    {
+      "name": "GuidanceApCoordinator.kt",
+      "sha256": "f7e18163dd28115f723940b92a552fbc16636568a20eeda3d9a330a429453992"
+    },
+    {
+      "name": "MainActivity.kt",
+      "sha256": "c21a62eed9d14de96510f43f5f976939b9d093918952961307112f3818372bfb"
+    },
+    {
+      "name": "RouteFusionController.kt",
+      "sha256": "529efdff90d4d09f21817a1c3b2075fc7ca21424e0e07362179ede8754047829"
+    },
+    {
+      "name": "WifiFingerprintScanner.kt",
+      "sha256": "66d265b030c3914b509de55d401acb2fc376a70de9c0b000e5d61eb54b74a866"
+    }
+  ],
+  "assets": [
+    {
+      "name": "src/positioning/android-experiment.js",
+      "sha256": "28417a313355c27f2e737f0a9230896f93ab650741c838daeff59f5515694c30"
+    },
+    {
+      "name": "src/positioning/android-route-runtime.js",
+      "sha256": "da76d600cd8e904d12bb94582f1f43cd0335776250ff714e36a292084b3b0935"
+    },
+    {
+      "name": "src/positioning/calibration.js",
+      "sha256": "76e6a08593bd890870ed5ae70cdc966ca802bb169c676d9035e4b13e12c00640"
+    },
+    {
+      "name": "src/positioning/fusion-engine.js",
+      "sha256": "680eaffd473960df5c810a5e79a208995f25f64c7e1606888ce95eec8f2a0324"
+    },
+    {
+      "name": "src/positioning/navigation.js",
+      "sha256": "5044778bf2177e05594accaf608dbb69f77acba14a8932e0539f3037dce1ff0b"
+    },
+    {
+      "name": "src/positioning/quality.js",
+      "sha256": "18e8b34d6cf1b7829662e79c48b2c43fb412cb10c8d35eadd8b0183f7161599f"
+    },
+    {
+      "name": "src/positioning/radio-scan-policy.js",
+      "sha256": "824b7874fc18613c0acb87eb245d5231d297686319e2cfd6a7d80d31ebc447af"
+    },
+    {
+      "name": "src/positioning/review.js",
+      "sha256": "60c0462518ce32b9133df451fbce5ffc19ede70cc3a6f6aa1f3caf8521513985"
+    },
+    {
+      "name": "src/positioning/runtime.js",
+      "sha256": "72a82975cd8e8c612994dd84192ccf446cc4b9cffe66cf82c7db3fd55db0ec22"
+    },
+    {
+      "name": "src/positioning/sequence.js",
+      "sha256": "e57ff47f945c9aebec763a458210742c1ba53c15ba812969afab73d339e90e71"
+    },
+    {
+      "name": "src/positioning/vertical-tracker.js",
+      "sha256": "6b072236bde02db7f7f812168b77eec229836dcb703dbb322f7c26984f28ee72"
+    },
+    {
+      "name": "src/positioning/zone-classifier.js",
+      "sha256": "9d1a9b57a24383ad68e43354c4c2dc5e5cb76419a24dbb31c7dae375461150ec"
+    },
+    {
+      "name": "data/positioning/ble-references.json",
+      "sha256": "71e656a3b44bdf5806222b75080efeab340904262cb593bfaf0b80eff510823f"
+    },
+    {
+      "name": "data/positioning/grid-4f-right.json",
+      "sha256": "1c0baafcf3b2e7d91bf2bc83f32369b74dfaf27227f82a094973a5df41180182"
+    },
+    {
+      "name": "data/positioning/motion-models.json",
+      "sha256": "3ab4393e98bb65b3eee65d6c7ab7c8ee4f5c6fe72aaeabf5979a74d2dcb2a743"
+    },
+    {
+      "name": "data/positioning/wifi-references.json",
+      "sha256": "bbf996c91e109711461ebccf7daa26b56c1a1493a57c3973cd259bd825e9344b"
+    },
+    {
+      "name": "data/positioning/zone-references.json",
+      "sha256": "3b5dafeb07fea699dae7a1ab3faaece15c9bed35c551abe6186b021de10494fd"
+    },
+    {
+      "name": "data/maps/common-corridor-survey.json",
+      "sha256": "69bfefd3a060246933103fed726d6877ad895b1616b0932f4f36876d494db16b"
+    },
+    {
+      "name": "data/maps/floor-01.json",
+      "sha256": "f0784e17666c5e8623c731d3b8d18ed4e89b4778d68bc9b90f5159af5dd9ffd7"
+    },
+    {
+      "name": "data/maps/floor-02-survey.json",
+      "sha256": "0a53d172e0ae7bd56c8210f4e74c0965b8e78c43d57494a740c7566039d1bfc6"
+    },
+    {
+      "name": "data/maps/floor-02.json",
+      "sha256": "2dd3a943fc0a201a9c93a1a4ef89e88bbefd2f3f253454ff45500d7744064b6b"
+    },
+    {
+      "name": "data/maps/floor-03-survey.json",
+      "sha256": "dc8c42a8b7379373519250bd6d0342c3851ffba48402e2db9e27f432e365828c"
+    },
+    {
+      "name": "data/maps/floor-03.json",
+      "sha256": "41add4f3a436c0bb1264ae132b0cebccd3c0093e70afd6c01f127d9ea505815e"
+    },
+    {
+      "name": "data/maps/floor-04-survey.json",
+      "sha256": "3eac7f059cc61de2d97419703f0b4c975b45b72da03c161ae3831a40ff4497f0"
+    },
+    {
+      "name": "data/maps/floor-04.json",
+      "sha256": "35f98d8a7db0b22bcc24d74beec4540ebfa05211fcf82119885b1a5b9e8123d4"
+    },
+    {
+      "name": "data/maps/floor-05.json",
+      "sha256": "e6ea00a48570b60ffded2cc2c14618be9fee758f87b502f06a25130cf50226ae"
+    },
+    {
+      "name": "data/maps/floor-06.json",
+      "sha256": "8535c4a8f7ee2411b495e7aeb3372154c8a7654593f8f4576311f15dfd132a50"
+    },
+    {
+      "name": "data/maps/floor-07.json",
+      "sha256": "1c3e16309b6abfb3ffa20a43741cfa7352532c3fa86b05b3eaf0ca3001eecb9f"
+    },
+    {
+      "name": "data/maps/floor-08.json",
+      "sha256": "f5c431cc6855d949a25a4c25be010681ab5f02ce53f7a9baba41098e77ae20e2"
+    },
+    {
+      "name": "data/maps/floor-09.json",
+      "sha256": "30372e12ee1080ba4fc1cd57ff6dfc10ed82363682d501c1cbe85c9655abab24"
+    },
+    {
+      "name": "data/maps/floor-10.json",
+      "sha256": "e9c9af9466b791635c8cd22b0965f4234d5219b3fc6c30856e5350e8715aade9"
+    },
+    {
+      "name": "data/navigation/areas-v1.json",
+      "sha256": "2cde60d7ca80e4c57ed7b980b59ecb8dc451342ce1c3960744fb43a9e5155d78"
+    },
+    {
+      "name": "fusion-experiment.html",
+      "sha256": "ff5611cfa1a81889c1f26a6f03501d8a37e38d3c2cbe088f3fee5ff0beb48079"
+    },
+    {
+      "name": "fusion-route-runtime.html",
+      "sha256": "4a33b5c90d98d9b26161f6d39cdfeb5c5fcd802b29061263fda522df3a8c5746"
+    }
+  ],
+  "tests": [
+    {
+      "name": "com.example.indoorpositioning.EventApPolicyTest",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.example.indoorpositioning.ExampleUnitTest",
+      "tests": "27",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "lint_errors": [],
+  "lint_warnings": [
+    "RedundantLabel",
+    "AndroidGradlePluginVersion",
+    "GradleDependency",
+    "GradleDependency",
+    "GradleDependency",
+    "GradleDependency",
+    "GradleDependency",
+    "GradleDependency",
+    "NewerVersionAvailable",
+    "SetJavaScriptEnabled",
+    "SetJavaScriptEnabled",
+    "UnusedResources",
+    "UnusedResources",
+    "UnusedResources",
+    "UnusedResources",
+    "UnusedResources",
+    "UnusedResources",
+    "UnusedResources",
+    "UseKtx",
+    "UseKtx"
+  ],
+  "browser": {
+    "checks": [
+      "mode4 AP reference loading, accepted fingerprint, moving-scan quality, duplicate rejection",
+      "distant core match rejected at right stair start; rejection reason reaches Android host",
+      "AP disabled comparison and baseline preserved; stop/restart controls"
+    ],
+    "errors": [],
+    "failedRequests": []
+  },
+  "backup": [
+    {
+      "name": "build.gradle.kts",
+      "sha256": "68f254d44019d6605a4ea6ef9004cb9a5f746167027789c5b88e4c7513d9f6a6"
+    },
+    {
+      "name": "fusion-engine.js",
+      "sha256": "9abaace7e1a9d679c7834a67fd261e835989f9a1541150ec5aabae3c6b121edb"
+    },
+    {
+      "name": "FusionExperiment.kt",
+      "sha256": "2b5841e8327232a99a2b8bfb39abefb298fd00940575ee03a3578e382257e7a7"
+    },
+    {
+      "name": "GuidanceApCoordinator.kt",
+      "sha256": "105ebb9f24226f6ae14380705b56492d5cd07098bb3d2ced06e5b407423bcbb5"
+    },
+    {
+      "name": "MainActivity.kt",
+      "sha256": "70b26e8c21a04fd91e5e11496c9dd42cffd0ceeeeae6520ceee9d58dd0998126"
+    },
+    {
+      "name": "RouteFusionController.kt",
+      "sha256": "10f132ceceed92bbd14acd3eb683ea4e10608e51befe773de75af0d77e29132e"
+    },
+    {
+      "name": "WifiFingerprintScanner.kt",
+      "sha256": "64164c37f3eca400ca866fdaa95a8e6221a840e77faac33989a21bfdaf3d129e"
+    }
+  ]
+}

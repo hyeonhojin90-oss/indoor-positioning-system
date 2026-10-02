@@ -1,0 +1,46 @@
+{
+  "experiment_note": "Development nested head continuity only after bottom approach; no arbitrary proximity merges.",
+  "door_mode": "cascade",
+  "door_model": "models/hf/models--IDEA-Research--grounding-dino-tiny/snapshots/a2bb814dd30d776dcf7e30523b00659f4f141c71",
+  "door_prompt": "a bus door.",
+  "door_classes": [
+    0
+  ],
+  "person_model": "models/yolo11m.pt",
+  "imgsz": 640,
+  "door_conf": 0.35,
+  "max_door_area": 0.6,
+  "door_interval_frames": 5,
+  "person_anchor_y": 1.0,
+  "door_lock": {
+    "stable": 2,
+    "min_iou": 0.75,
+    "ttl": 1.5
+  },
+  "counting": {
+    "axis": "y",
+    "entry": "negative",
+    "low": 0.95,
+    "high": 1.1,
+    "confirm": 2,
+    "max_gap": 0.75,
+    "outside_margin": 0.6,
+    "geometry": "doorway",
+    "lateral_inset": 0.25
+  },
+  "door_primary_model": "models/doors-v8s.pt",
+  "door_locked_interval_frames": 15,
+  "cascade": {
+    "primary_conf": 0.2,
+    "min_iou": 0.75,
+    "refresh_calls": 3,
+    "associated_conf": 0.25
+  },
+  "min_door_aspect": 1.0,
+  "track_bridge": {
+    "enabled": true,
+    "confirm": 3,
+    "max_gap": 0.75,
+    "bottom_approach_high": 1.1
+  }
+}

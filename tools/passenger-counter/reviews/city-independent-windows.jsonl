@@ -1,0 +1,3 @@
+{"person": "red-coat", "direction": "in", "start_s": 16.8, "end_s": 18.0, "door": "middle"}
+{"person": "pink-hat-child", "direction": "out", "start_s": 14.0, "end_s": 15.6, "door": "middle"}
+{"person": "grey-coat-white-bags", "direction": "out", "start_s": 16.8, "end_s": 18.4, "door": "middle", "note": "Visible departure with white shopping bags; other grey/purple-bag person excluded as ambiguous."}

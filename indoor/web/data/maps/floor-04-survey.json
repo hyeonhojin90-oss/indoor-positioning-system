@@ -1,0 +1,49 @@
+{
+  "version": "4f-survey-20260921",
+  "units": "meters",
+  "source": "GLB rescans and user confirmations, 2026-09-14 and 2026-09-21",
+  "distance_basis": "GLB model coordinates, not independently tape-surveyed",
+  "right_corridor": {
+    "length_m": 48.68545341491699,
+    "source_asset": "../../../tools/glb-viewer/assets/20260914-rescan.glb",
+    "measurement": "Floor_Room Z-axis floor endpoints",
+    "status": "adopted_glb_reference"
+  },
+  "core": {
+    "wall_center_width_m": 3.0156809091567993,
+    "clear_width_m": 2.9156808853149414,
+    "source_asset": "../../../tools/glb-viewer/assets/20260914-core.glb",
+    "measurement": "Wall_0 and Wall_6 opposing wall planes",
+    "main_stair_entrances": 1,
+    "elevator_entrances": 2,
+    "semantic_confirmation": "User: blue marking is main stairs; two purple markings are elevators; other apparent side openings are mirrors or noticeboards.",
+    "unmarked_scanned_openings_are_portals": false,
+    "scan_door_mesh_to_portal_mapping": "pending exact correspondence; never import Door_* automatically"
+  },
+  "core_center_to_right_end": {
+    "reference_length_m": 50.19329386949539,
+    "status": "user_confirmed_20260914",
+    "formula": "right corridor + half core wall-center width",
+    "limitation": "Adopted by explicit user confirmation; GLB-derived reference."
+  },
+  "left_corridor": {
+    "length_m": null,
+    "source_asset": "../../../data/raw/scans/2026-09-21/4f-left-corridor.glb",
+    "model_long_axis_m": 49.39421463012695,
+    "horizontal_lower_face_extent_m": 46.809374491373696,
+    "status": "joined_glb_reference_to_end_wall_not_runtime_adopted",
+    "user_scope_confirmation": "Left-corridor structure is shared by floors 2 through 10.",
+    "capture_extent_confirmation": "User: scan includes part of the restroom's right side; the captured boundary is NOT the restroom left boundary or the core left boundary.",
+    "measurement_reference": "Identify the restroom left boundary INSIDE the new scan and measure along the corridor to the left corridor endpoint. Connect that same boundary to the core left boundary using the existing core scan.",
+    "length_formula": "core left boundary to restroom left boundary + restroom left boundary to left corridor endpoint, with no shared segment counted twice",
+    "limitation": "Joined length uses visually corresponding restroom side walls across scans. Core model wall centers and scanned surfaces may differ by centimeters. End wall is not confirmed as stair threshold; runtime distance remains unchanged.",
+    "restroom_to_scanned_end_wall_candidate_m": 39.93892277945114,
+    "boundary_measurement_report": "../../../data/analysis/scan-geometry-20260921/left-restroom-planes.json",
+    "core_left_to_restroom_left_candidate_m": 7.408454418182373,
+    "core_left_to_scanned_end_wall_candidate_m": 47.34737719763351
+  },
+  "classroom_front_distances": {
+    "status": "not_surveyed",
+    "allow_diagram_coordinates_as_meter_training_targets": false
+  }
+}

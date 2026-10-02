@@ -1,0 +1,25 @@
+{
+  "name": "it-building-ios-sensor-collector",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "start:tunnel": "expo start --tunnel",
+    "test": "node scripts/test-floor-tracking.js && node scripts/test-position-tracking.js && node scripts/test-initial-positioning.js && node scripts/test-fusion.js && node scripts/test-radio-scan-policy.js",
+    "test:fusion": "node scripts/test-fusion.js && node scripts/test-motion-v2.js && node scripts/test-radio-scan-policy.js",
+    "replay:fusion": "node scripts/replay-fusion.js"
+  },
+  "dependencies": {
+    "expo": "~57.0.20",
+    "expo-dev-client": "~57.0.19",
+    "expo-device": "~57.0.1",
+    "expo-file-system": "~57.0.6",
+    "expo-location": "~57.0.16",
+    "expo-sensors": "~57.0.2",
+    "expo-sharing": "~57.0.18",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3"
+  }
+}

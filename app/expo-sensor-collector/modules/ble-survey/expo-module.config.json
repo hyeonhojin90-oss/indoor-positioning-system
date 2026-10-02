@@ -1,0 +1,7 @@
+{
+  "platforms": ["apple"],
+  "apple": {
+    "modules": ["BleSurveyModule"],
+    "podspecPath": "ios/BleSurvey.podspec"
+  }
+}

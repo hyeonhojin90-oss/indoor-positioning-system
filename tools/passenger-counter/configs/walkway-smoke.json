@@ -1,0 +1,8 @@
+{
+  "door_mode": "manual",
+  "manual_box": [0.0, 0.05, 1.0, 0.95],
+  "person_model": "yolo11n.pt",
+  "imgsz": 640,
+  "person_anchor_y": 1.0,
+  "counting": {"axis": "y", "entry": "positive", "low": 0.4, "high": 0.6, "confirm": 2, "max_gap": 0.75}
+}

@@ -1,0 +1,1139 @@
+{
+  "schema_version": 1,
+  "window_ms": 900,
+  "purpose": "experimental_stationary_initial_position_candidates",
+  "limitations": [
+    "Most Android nodes have one observation only.",
+    "iOS coverage is currently limited to the 4F right corridor.",
+    "Absolute pressure is retained for diagnostics and must not decide the floor alone."
+  ],
+  "coverage": {
+    "android": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ios": [
+      4
+    ]
+  },
+  "validation": {
+    "android": {
+      "evaluated_observations": 29,
+      "top1_accuracy": 0.1034,
+      "top3_accuracy": 0.1724,
+      "mean_map_x_error": 60.0184,
+      "method": "leave-one-source-out, same-floor magnetic median only"
+    },
+    "ios": {
+      "evaluated_observations": 36,
+      "top1_accuracy": 0.3611,
+      "top3_accuracy": 0.5278,
+      "mean_map_x_error": 18.032,
+      "method": "leave-one-source-out, same-floor magnetic median only"
+    },
+    "ios_hybrid_all_floors": {
+      "evaluated_observations": 36,
+      "top1_accuracy": 0.25,
+      "top3_accuracy": 0.3889,
+      "floor_accuracy": 0.8611,
+      "mean_map_x_error": 33.2664,
+      "method": "iOS leave-one-source-out; direct iOS plus Android-to-iOS transfer; all covered floors"
+    }
+  },
+  "transfer_models": [
+    {
+      "source_platform": "android",
+      "target_platform": "ios",
+      "slope": 0.667228,
+      "intercept": 16.079274,
+      "rmse_ut": 1.697,
+      "correlation": 0.9144,
+      "overlap_nodes": 12,
+      "scope": "4F right corridor overlap; experimental transfer only"
+    }
+  ],
+  "fingerprints": [
+    {
+      "platform": "android",
+      "floor": 1,
+      "node_id": "1119",
+      "label": "1119",
+      "map_x": 80.698,
+      "observation_count": 1,
+      "magnetic_median_ut": 41.8256,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.0143,
+      "pressure_median_hpa": 1000.2227,
+      "heading_mean_deg": 133.57,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 1,
+      "node_id": "1122",
+      "label": "1122 · iSPACE",
+      "map_x": 96.095,
+      "observation_count": 1,
+      "magnetic_median_ut": 37.0071,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.7231,
+      "pressure_median_hpa": 1000.2388,
+      "heading_mean_deg": 163.27,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 1,
+      "node_id": "1125",
+      "label": "1125",
+      "map_x": 113.24,
+      "observation_count": 1,
+      "magnetic_median_ut": 38.235,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.6354,
+      "pressure_median_hpa": 1000.2399,
+      "heading_mean_deg": 152.58,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 1,
+      "node_id": "1128",
+      "label": "1128",
+      "map_x": 128.418,
+      "observation_count": 1,
+      "magnetic_median_ut": 29.6605,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.3676,
+      "pressure_median_hpa": 1000.242,
+      "heading_mean_deg": 162.73,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 1,
+      "node_id": "CORE",
+      "label": "코어복도 출구 중앙점",
+      "map_x": 70.804,
+      "observation_count": 1,
+      "magnetic_median_ut": 46.5699,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 3.8797,
+      "pressure_median_hpa": 1000.2383,
+      "heading_mean_deg": 94.27,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 1,
+      "node_id": "LEFT_STAIRS",
+      "label": "왼쪽 계단 입구",
+      "map_x": 135.407,
+      "observation_count": 1,
+      "magnetic_median_ut": 38.5251,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.9743,
+      "pressure_median_hpa": 1000.2502,
+      "heading_mean_deg": 187.43,
+      "sources": [
+        "indoor_positioning_20260901_161957.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2119",
+      "label": "2119",
+      "map_x": 80.698,
+      "observation_count": 1,
+      "magnetic_median_ut": 42.312,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.7113,
+      "pressure_median_hpa": 999.8091,
+      "heading_mean_deg": 182.48,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2122",
+      "label": "2122",
+      "map_x": 96.095,
+      "observation_count": 1,
+      "magnetic_median_ut": 44.4401,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 0.9559,
+      "pressure_median_hpa": 999.8212,
+      "heading_mean_deg": 165.19,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2125",
+      "label": "2125",
+      "map_x": 113.24,
+      "observation_count": 1,
+      "magnetic_median_ut": 43.8483,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.129,
+      "pressure_median_hpa": 999.8155,
+      "heading_mean_deg": 164.49,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2128",
+      "label": "2128",
+      "map_x": 128.418,
+      "observation_count": 1,
+      "magnetic_median_ut": 42.2099,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.8311,
+      "pressure_median_hpa": 999.8038,
+      "heading_mean_deg": 169.83,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2204",
+      "label": "2204",
+      "map_x": 9.435,
+      "observation_count": 1,
+      "magnetic_median_ut": 33.7868,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.1989,
+      "pressure_median_hpa": 999.8195,
+      "heading_mean_deg": 338.13,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2205",
+      "label": "2205",
+      "map_x": 17.116,
+      "observation_count": 1,
+      "magnetic_median_ut": 35.5813,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.0745,
+      "pressure_median_hpa": 999.8189,
+      "heading_mean_deg": 337.19,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2210",
+      "label": "2210",
+      "map_x": 38.474,
+      "observation_count": 1,
+      "magnetic_median_ut": 43.295,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.7385,
+      "pressure_median_hpa": 999.8182,
+      "heading_mean_deg": 339.84,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2210-1",
+      "label": "2210-1",
+      "map_x": 24.689,
+      "observation_count": 1,
+      "magnetic_median_ut": 42.8137,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.9335,
+      "pressure_median_hpa": 999.8198,
+      "heading_mean_deg": 344.51,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "2211",
+      "label": "2211",
+      "map_x": 58.598,
+      "observation_count": 1,
+      "magnetic_median_ut": 40.4447,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 4.668,
+      "pressure_median_hpa": 999.8044,
+      "heading_mean_deg": 345.17,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "CORE",
+      "label": "코어복도 출구 중앙점",
+      "map_x": 70.804,
+      "observation_count": 2,
+      "magnetic_median_ut": 46.8187,
+      "magnetic_between_observation_std_ut": 2.0666,
+      "magnetic_within_window_std_ut": 3.4007,
+      "pressure_median_hpa": 999.7997,
+      "heading_mean_deg": 71.01,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl",
+        "indoor_positioning_20260901_161342.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "LEFT_STAIRS",
+      "label": "왼쪽 계단 입구",
+      "map_x": 135.407,
+      "observation_count": 1,
+      "magnetic_median_ut": 40.1795,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 4.324,
+      "pressure_median_hpa": 999.8097,
+      "heading_mean_deg": 180.11,
+      "sources": [
+        "indoor_positioning_20260901_161220.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 2,
+      "node_id": "RIGHT_STAIRS",
+      "label": "오른쪽 계단 입구",
+      "map_x": 0.0,
+      "observation_count": 1,
+      "magnetic_median_ut": 42.1951,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.2631,
+      "pressure_median_hpa": 999.8229,
+      "heading_mean_deg": 334.87,
+      "sources": [
+        "indoor_positioning_20260901_161342.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "3120",
+      "label": "3120",
+      "map_x": 86.267,
+      "observation_count": 1,
+      "magnetic_median_ut": 29.3187,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 3.5535,
+      "pressure_median_hpa": 999.3525,
+      "heading_mean_deg": 152.42,
+      "sources": [
+        "indoor_positioning_20260901_160634.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "3203",
+      "label": "3203",
+      "map_x": 13.433,
+      "observation_count": 1,
+      "magnetic_median_ut": 59.9198,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.5759,
+      "pressure_median_hpa": 999.3223,
+      "heading_mean_deg": 330.61,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "3208",
+      "label": "3208",
+      "map_x": 28.816,
+      "observation_count": 1,
+      "magnetic_median_ut": 36.0525,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.4327,
+      "pressure_median_hpa": 999.3261,
+      "heading_mean_deg": 334.91,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "3210",
+      "label": "3210",
+      "map_x": 54.726,
+      "observation_count": 1,
+      "magnetic_median_ut": 57.4037,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 4.3981,
+      "pressure_median_hpa": 999.3357,
+      "heading_mean_deg": 313.47,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "3210-1",
+      "label": "3210-1",
+      "map_x": 40.734,
+      "observation_count": 1,
+      "magnetic_median_ut": 49.7926,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.9357,
+      "pressure_median_hpa": 999.3414,
+      "heading_mean_deg": 336.75,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "CORE",
+      "label": "코어복도 출구 중앙점",
+      "map_x": 70.804,
+      "observation_count": 2,
+      "magnetic_median_ut": 46.4573,
+      "magnetic_between_observation_std_ut": 3.8846,
+      "magnetic_within_window_std_ut": 2.7806,
+      "pressure_median_hpa": 999.3456,
+      "heading_mean_deg": 58.5,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl",
+        "indoor_positioning_20260901_160634.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "LEFT_STAIRS",
+      "label": "왼쪽 계단 입구",
+      "map_x": 135.407,
+      "observation_count": 1,
+      "magnetic_median_ut": 32.9953,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.8144,
+      "pressure_median_hpa": 999.3353,
+      "heading_mean_deg": 171.57,
+      "sources": [
+        "indoor_positioning_20260901_160634.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 3,
+      "node_id": "RIGHT_STAIRS",
+      "label": "오른쪽 계단 입구",
+      "map_x": 0.0,
+      "observation_count": 1,
+      "magnetic_median_ut": 45.3932,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.912,
+      "pressure_median_hpa": 999.322,
+      "heading_mean_deg": 316.42,
+      "sources": [
+        "indoor_positioning_20260901_155615.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4120",
+      "label": "전자정보시스템 소프트웨어실험실 4120",
+      "map_x": 85.954,
+      "observation_count": 1,
+      "magnetic_median_ut": 41.3829,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.1867,
+      "pressure_median_hpa": 998.9224,
+      "heading_mean_deg": 176.96,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4122",
+      "label": "4122",
+      "map_x": 99.418,
+      "observation_count": 1,
+      "magnetic_median_ut": 39.8454,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.5308,
+      "pressure_median_hpa": 998.9188,
+      "heading_mean_deg": 177.2,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4123",
+      "label": "4123",
+      "map_x": 106.443,
+      "observation_count": 1,
+      "magnetic_median_ut": 34.9244,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.9298,
+      "pressure_median_hpa": 998.9136,
+      "heading_mean_deg": 179.84,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4124",
+      "label": "4124",
+      "map_x": 111.13,
+      "observation_count": 1,
+      "magnetic_median_ut": 46.1375,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 3.0688,
+      "pressure_median_hpa": 998.9017,
+      "heading_mean_deg": 184.65,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4125",
+      "label": "4125",
+      "map_x": 115.817,
+      "observation_count": 1,
+      "magnetic_median_ut": 40.7867,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.4359,
+      "pressure_median_hpa": 998.9069,
+      "heading_mean_deg": 190.63,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4126",
+      "label": "4126",
+      "map_x": 120.505,
+      "observation_count": 1,
+      "magnetic_median_ut": 43.3143,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.2454,
+      "pressure_median_hpa": 998.9141,
+      "heading_mean_deg": 176.51,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4127",
+      "label": "4127",
+      "map_x": 125.192,
+      "observation_count": 1,
+      "magnetic_median_ut": 42.4053,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.5864,
+      "pressure_median_hpa": 998.9056,
+      "heading_mean_deg": 182.23,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4128",
+      "label": "4128",
+      "map_x": 131.4703,
+      "observation_count": 1,
+      "magnetic_median_ut": 43.0976,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.0255,
+      "pressure_median_hpa": 998.8996,
+      "heading_mean_deg": 156.99,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4204",
+      "label": "4204",
+      "map_x": 8.6315,
+      "observation_count": 2,
+      "magnetic_median_ut": 29.5293,
+      "magnetic_between_observation_std_ut": 8.4575,
+      "magnetic_within_window_std_ut": 1.6493,
+      "pressure_median_hpa": 999.0592,
+      "heading_mean_deg": 11.21,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4205",
+      "label": "4205",
+      "map_x": 14.1554,
+      "observation_count": 2,
+      "magnetic_median_ut": 34.8359,
+      "magnetic_between_observation_std_ut": 2.1572,
+      "magnetic_within_window_std_ut": 1.643,
+      "pressure_median_hpa": 999.0555,
+      "heading_mean_deg": 18.35,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4206",
+      "label": "4206",
+      "map_x": 19.8471,
+      "observation_count": 2,
+      "magnetic_median_ut": 39.02,
+      "magnetic_between_observation_std_ut": 6.3819,
+      "magnetic_within_window_std_ut": 2.9303,
+      "pressure_median_hpa": 999.053,
+      "heading_mean_deg": 15.89,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4207",
+      "label": "4207",
+      "map_x": 25.6752,
+      "observation_count": 2,
+      "magnetic_median_ut": 41.7638,
+      "magnetic_between_observation_std_ut": 4.7799,
+      "magnetic_within_window_std_ut": 1.236,
+      "pressure_median_hpa": 999.0581,
+      "heading_mean_deg": 19.68,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4208",
+      "label": "4208",
+      "map_x": 31.7837,
+      "observation_count": 2,
+      "magnetic_median_ut": 39.0515,
+      "magnetic_between_observation_std_ut": 4.0748,
+      "magnetic_within_window_std_ut": 2.93,
+      "pressure_median_hpa": 999.0453,
+      "heading_mean_deg": 25.06,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4209",
+      "label": "4209",
+      "map_x": 38.0361,
+      "observation_count": 2,
+      "magnetic_median_ut": 35.4899,
+      "magnetic_between_observation_std_ut": 3.0565,
+      "magnetic_within_window_std_ut": 1.3524,
+      "pressure_median_hpa": 999.0485,
+      "heading_mean_deg": 28.17,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4210",
+      "label": "4210",
+      "map_x": 44.3642,
+      "observation_count": 2,
+      "magnetic_median_ut": 44.1694,
+      "magnetic_between_observation_std_ut": 10.9808,
+      "magnetic_within_window_std_ut": 3.3363,
+      "pressure_median_hpa": 999.0494,
+      "heading_mean_deg": 16.52,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4211",
+      "label": "4211",
+      "map_x": 50.2681,
+      "observation_count": 2,
+      "magnetic_median_ut": 41.5117,
+      "magnetic_between_observation_std_ut": 7.7321,
+      "magnetic_within_window_std_ut": 1.6344,
+      "pressure_median_hpa": 999.0456,
+      "heading_mean_deg": 11.23,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4212",
+      "label": "4212",
+      "map_x": 55.8159,
+      "observation_count": 2,
+      "magnetic_median_ut": 41.7126,
+      "magnetic_between_observation_std_ut": 11.7853,
+      "magnetic_within_window_std_ut": 1.1103,
+      "pressure_median_hpa": 999.0523,
+      "heading_mean_deg": 15.01,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "4213",
+      "label": "4213",
+      "map_x": 61.5076,
+      "observation_count": 2,
+      "magnetic_median_ut": 39.3944,
+      "magnetic_between_observation_std_ut": 7.9088,
+      "magnetic_within_window_std_ut": 1.185,
+      "pressure_median_hpa": 999.0437,
+      "heading_mean_deg": 9.79,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "CORE",
+      "label": "코어복도 출구 중앙점",
+      "map_x": 70.804,
+      "observation_count": 3,
+      "magnetic_median_ut": 51.1746,
+      "magnetic_between_observation_std_ut": 2.5545,
+      "magnetic_within_window_std_ut": 18.781,
+      "pressure_median_hpa": 999.0381,
+      "heading_mean_deg": 95.45,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl",
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "LEFT_STAIRS",
+      "label": "왼쪽 계단 입구",
+      "map_x": 135.407,
+      "observation_count": 1,
+      "magnetic_median_ut": 50.6977,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.4624,
+      "pressure_median_hpa": 998.9032,
+      "heading_mean_deg": 179.72,
+      "sources": [
+        "indoor_positioning_20260901_155425.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 4,
+      "node_id": "RIGHT_STAIRS",
+      "label": "오른쪽 계단 입구",
+      "map_x": 0.0,
+      "observation_count": 2,
+      "magnetic_median_ut": 49.5253,
+      "magnetic_between_observation_std_ut": 9.1407,
+      "magnetic_within_window_std_ut": 4.4131,
+      "pressure_median_hpa": 999.0523,
+      "heading_mean_deg": 351.39,
+      "sources": [
+        "indoor_positioning_20260901_151808.jsonl",
+        "indoor_positioning_20260901_153038.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 5,
+      "node_id": "5205",
+      "label": "편의점",
+      "map_x": 12.991,
+      "observation_count": 1,
+      "magnetic_median_ut": 56.3632,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 5.5114,
+      "pressure_median_hpa": 998.3945,
+      "heading_mean_deg": 354.56,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 5,
+      "node_id": "5209",
+      "label": "5209",
+      "map_x": 30.332,
+      "observation_count": 1,
+      "magnetic_median_ut": 51.4243,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 3.8053,
+      "pressure_median_hpa": 998.3928,
+      "heading_mean_deg": 355.94,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 5,
+      "node_id": "5212",
+      "label": "5212",
+      "map_x": 46.96,
+      "observation_count": 1,
+      "magnetic_median_ut": 40.8352,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 3.4693,
+      "pressure_median_hpa": 998.4088,
+      "heading_mean_deg": 351.81,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 5,
+      "node_id": "5213",
+      "label": "5213",
+      "map_x": 58.993,
+      "observation_count": 1,
+      "magnetic_median_ut": 45.3869,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.492,
+      "pressure_median_hpa": 998.4162,
+      "heading_mean_deg": 350.6,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 5,
+      "node_id": "CORE",
+      "label": "코어복도 출구 중앙점",
+      "map_x": 70.804,
+      "observation_count": 1,
+      "magnetic_median_ut": 53.3952,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 2.0092,
+      "pressure_median_hpa": 998.413,
+      "heading_mean_deg": 53.59,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ]
+    },
+    {
+      "platform": "android",
+      "floor": 5,
+      "node_id": "RIGHT_STAIRS",
+      "label": "오른쪽 계단 입구",
+      "map_x": 0.0,
+      "observation_count": 1,
+      "magnetic_median_ut": 58.9844,
+      "magnetic_between_observation_std_ut": 0.0,
+      "magnetic_within_window_std_ut": 1.3031,
+      "pressure_median_hpa": 998.379,
+      "heading_mean_deg": 0.28,
+      "sources": [
+        "indoor_positioning_20260901_162413.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4204",
+      "label": "4204",
+      "map_x": 8.6315,
+      "observation_count": 3,
+      "magnetic_median_ut": 34.4573,
+      "magnetic_between_observation_std_ut": 0.9983,
+      "magnetic_within_window_std_ut": 0.7448,
+      "pressure_median_hpa": 998.9087,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4205",
+      "label": "4205",
+      "map_x": 14.1554,
+      "observation_count": 3,
+      "magnetic_median_ut": 40.7458,
+      "magnetic_between_observation_std_ut": 0.9343,
+      "magnetic_within_window_std_ut": 0.6088,
+      "pressure_median_hpa": 998.9139,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4206",
+      "label": "4206",
+      "map_x": 19.8471,
+      "observation_count": 3,
+      "magnetic_median_ut": 43.3972,
+      "magnetic_between_observation_std_ut": 1.6667,
+      "magnetic_within_window_std_ut": 0.4761,
+      "pressure_median_hpa": 998.9097,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4207",
+      "label": "4207",
+      "map_x": 25.6752,
+      "observation_count": 3,
+      "magnetic_median_ut": 44.9182,
+      "magnetic_between_observation_std_ut": 1.9008,
+      "magnetic_within_window_std_ut": 0.4782,
+      "pressure_median_hpa": 998.9069,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4208",
+      "label": "4208",
+      "map_x": 31.7837,
+      "observation_count": 3,
+      "magnetic_median_ut": 43.2263,
+      "magnetic_between_observation_std_ut": 1.9739,
+      "magnetic_within_window_std_ut": 0.6095,
+      "pressure_median_hpa": 998.9041,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4209",
+      "label": "4209",
+      "map_x": 38.0361,
+      "observation_count": 3,
+      "magnetic_median_ut": 41.5855,
+      "magnetic_between_observation_std_ut": 2.6053,
+      "magnetic_within_window_std_ut": 0.4014,
+      "pressure_median_hpa": 998.9071,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4210",
+      "label": "4210",
+      "map_x": 44.3642,
+      "observation_count": 3,
+      "magnetic_median_ut": 45.5713,
+      "magnetic_between_observation_std_ut": 2.4799,
+      "magnetic_within_window_std_ut": 1.7271,
+      "pressure_median_hpa": 998.9086,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4211",
+      "label": "4211",
+      "map_x": 50.2681,
+      "observation_count": 3,
+      "magnetic_median_ut": 42.9519,
+      "magnetic_between_observation_std_ut": 1.2575,
+      "magnetic_within_window_std_ut": 0.6613,
+      "pressure_median_hpa": 998.9071,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4212",
+      "label": "4212",
+      "map_x": 55.8159,
+      "observation_count": 3,
+      "magnetic_median_ut": 42.6802,
+      "magnetic_between_observation_std_ut": 0.9963,
+      "magnetic_within_window_std_ut": 0.6218,
+      "pressure_median_hpa": 998.9085,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "4213",
+      "label": "4213",
+      "map_x": 61.5076,
+      "observation_count": 3,
+      "magnetic_median_ut": 38.5273,
+      "magnetic_between_observation_std_ut": 1.5822,
+      "magnetic_within_window_std_ut": 1.5432,
+      "pressure_median_hpa": 998.9072,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "CORE",
+      "label": "코어복도 출구 중앙점",
+      "map_x": 70.804,
+      "observation_count": 3,
+      "magnetic_median_ut": 48.7138,
+      "magnetic_between_observation_std_ut": 1.6469,
+      "magnetic_within_window_std_ut": 0.2683,
+      "pressure_median_hpa": 998.9145,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    },
+    {
+      "platform": "ios",
+      "floor": 4,
+      "node_id": "RIGHT_STAIRS",
+      "label": "오른쪽 계단 입구",
+      "map_x": 0.0,
+      "observation_count": 3,
+      "magnetic_median_ut": 51.2357,
+      "magnetic_between_observation_std_ut": 0.4829,
+      "magnetic_within_window_std_ut": 0.5144,
+      "pressure_median_hpa": 998.8982,
+      "heading_mean_deg": null,
+      "sources": [
+        "indoor_positioning_ios_20260905_170448.jsonl",
+        "indoor_positioning_ios_20260905_170648.jsonl",
+        "indoor_positioning_ios_20260905_170852.jsonl"
+      ]
+    }
+  ]
+}

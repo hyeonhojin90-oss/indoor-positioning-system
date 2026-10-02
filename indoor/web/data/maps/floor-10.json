@@ -5,35 +5,262 @@
   "inherits": "floor-04.json",
   "units": "meter-like-map-coordinate",
   "scale_note": "10층은 공통 고정 코어·계단 틀을 재사용하고 10층 2D 피난안내도에 맞춰 강의실 순서와 폭을 배치한다.",
-  "remove_facility_ids": ["4F_4204_END_STAIRS"],
-  "floor6_right_end": { "stair_anchor": "reuse_4f_right_end_stair", "room_id": "10202", "room_depth": 3.73, "passage_center_x": 6.275, "passage_width": 1.96, "passage_depth": 4.16, "note": "10206 오른쪽 통로를 통해 10202로 진입한다." },
-  "rooms": [
-    { "id": "10128", "label": "10128", "x": 130.86, "y": 8, "width": 9.10, "side": "upper" },
-    { "id": "10126", "label": "10126", "x": 124.03, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "10125", "label": "10125", "x": 119.48, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "10123", "label": "10123", "x": 112.66, "y": 8, "width": 9.10, "side": "upper" },
-    { "id": "10122", "label": "10122", "x": 103.56, "y": 8, "width": 9.10, "side": "upper" },
-    { "id": "10120", "label": "10120", "x": 96.73, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "10119", "label": "10119", "x": 92.18, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "10117", "label": "10117", "x": 85.36, "y": 8, "width": 9.10, "side": "upper" },
-    { "id": "10228", "label": "10228", "x": 130.31, "y": -8, "width": 10.19, "side": "lower" },
-    { "id": "10228-1", "label": "10228-1", "x": 122.67, "y": -8, "width": 5.10, "side": "lower" },
-    { "id": "10225", "label": "10225", "x": 110.84, "y": -8, "width": 18.56, "side": "lower" },
-    { "id": "10221", "label": "10221", "x": 91.185, "y": -8, "width": 20.75, "side": "lower" },
-    { "id": "10114", "label": "10114", "x": 63.61, "y": 8, "width": 10.10, "side": "upper" },
-    { "id": "10112", "label": "10112", "x": 56.035, "y": 8, "width": 5.05, "side": "upper" },
-    { "id": "10111", "label": "10111", "x": 50.985, "y": 8, "width": 5.05, "side": "upper" },
-    { "id": "10109", "label": "10109", "x": 43.41, "y": 8, "width": 10.10, "side": "upper" },
-    { "id": "10108", "label": "10108", "x": 33.31, "y": 8, "width": 10.10, "side": "upper" },
-    { "id": "10106", "label": "10106", "x": 25.735, "y": 8, "width": 5.05, "side": "upper" },
-    { "id": "10105", "label": "10105", "x": 20.685, "y": 8, "width": 5.05, "side": "upper" },
-    { "id": "10103", "label": "10103", "x": 14.58, "y": 8, "width": 7.16, "side": "upper" },
-    { "id": "10213", "label": "10213", "x": 66.135, "y": -8, "width": 5.05, "side": "lower" },
-    { "id": "10212", "label": "10212", "x": 56.035, "y": -8, "width": 15.15, "side": "lower" },
-    { "id": "10210", "label": "10210", "x": 38.36, "y": -8, "width": 20.20, "side": "lower" },
-    { "id": "10206", "label": "10206", "x": 19.63, "y": -8, "width": 17.26, "side": "lower" },
-    { "id": "10202", "label": "10202", "placement": "floor6-end-room", "x": 6.275, "y": -8, "width": 9.45, "side": "lower", "hide_door": true }
+  "remove_facility_ids": [
+    "4F_4204_END_STAIRS"
   ],
-  "routing": { "hub_junction": { "x": 70.804, "y": 0 } }
+  "floor6_right_end": {
+    "stair_anchor": "reuse_4f_right_end_stair",
+    "room_id": "10202",
+    "room_depth": 3.73,
+    "passage_center_x": 6.275,
+    "passage_width": 1.96,
+    "passage_depth": 4.16,
+    "note": "10206 오른쪽 통로를 통해 10202로 진입한다."
+  },
+  "rooms": [
+    {
+      "id": "10128",
+      "label": "10128",
+      "x": 130.86,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "10126",
+      "label": "10126",
+      "x": 124.03,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "10125",
+      "label": "10125",
+      "x": 119.48,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "10123",
+      "label": "10123",
+      "x": 112.66,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "10122",
+      "label": "10122",
+      "x": 103.56,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "10120",
+      "label": "10120",
+      "x": 96.73,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "10119",
+      "label": "10119",
+      "x": 92.18,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "10117",
+      "label": "10117",
+      "x": 85.36,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "10228",
+      "label": "10228",
+      "x": 130.31,
+      "y": -8,
+      "width": 10.19,
+      "side": "lower"
+    },
+    {
+      "id": "10228-1",
+      "label": "10228-1",
+      "x": 122.67,
+      "y": -8,
+      "width": 5.1,
+      "side": "lower"
+    },
+    {
+      "id": "10225",
+      "label": "10225",
+      "x": 110.84,
+      "y": -8,
+      "width": 18.56,
+      "side": "lower"
+    },
+    {
+      "id": "10221",
+      "label": "10221",
+      "x": 91.185,
+      "y": -8,
+      "width": 20.75,
+      "side": "lower"
+    },
+    {
+      "id": "10114",
+      "label": "10114",
+      "x": 63.61,
+      "y": 8,
+      "width": 10.1,
+      "side": "upper"
+    },
+    {
+      "id": "10112",
+      "label": "10112",
+      "x": 56.035,
+      "y": 8,
+      "width": 5.05,
+      "side": "upper"
+    },
+    {
+      "id": "10111",
+      "label": "10111",
+      "x": 50.985,
+      "y": 8,
+      "width": 5.05,
+      "side": "upper"
+    },
+    {
+      "id": "10109",
+      "label": "10109",
+      "x": 43.41,
+      "y": 8,
+      "width": 10.1,
+      "side": "upper"
+    },
+    {
+      "id": "10108",
+      "label": "10108",
+      "x": 33.31,
+      "y": 8,
+      "width": 10.1,
+      "side": "upper"
+    },
+    {
+      "id": "10106",
+      "label": "10106",
+      "x": 25.735,
+      "y": 8,
+      "width": 5.05,
+      "side": "upper"
+    },
+    {
+      "id": "10105",
+      "label": "10105",
+      "x": 20.685,
+      "y": 8,
+      "width": 5.05,
+      "side": "upper"
+    },
+    {
+      "id": "10103",
+      "label": "10103",
+      "x": 14.58,
+      "y": 8,
+      "width": 7.16,
+      "side": "upper"
+    },
+    {
+      "id": "10213",
+      "label": "10213",
+      "x": 66.135,
+      "y": -8,
+      "width": 5.05,
+      "side": "lower"
+    },
+    {
+      "id": "10212",
+      "label": "10212",
+      "x": 56.035,
+      "y": -8,
+      "width": 15.15,
+      "side": "lower"
+    },
+    {
+      "id": "10210",
+      "label": "10210",
+      "x": 38.36,
+      "y": -8,
+      "width": 20.2,
+      "side": "lower"
+    },
+    {
+      "id": "10206",
+      "label": "10206",
+      "x": 19.63,
+      "y": -8,
+      "width": 17.26,
+      "side": "lower"
+    },
+    {
+      "id": "10202",
+      "label": "10202",
+      "placement": "floor6-end-room",
+      "x": 6.275,
+      "y": -8,
+      "width": 9.45,
+      "side": "lower",
+      "hide_door": true
+    }
+  ],
+  "routing": {
+    "hub_junction": {
+      "x": 70.804,
+      "y": 0
+    }
+  },
+  "common_corridor_survey": {
+    "version": "common-corridor-glb-20260922",
+    "applies_to_floors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "excluded_floors": [
+      1
+    ],
+    "right_core_to_stair_entry_m": 48.68545341491699,
+    "core_wall_center_width_m": 2.975348,
+    "left_core_to_corridor_end_m": 47.3473772,
+    "core_left_to_core_right_and_both_corridors_m": 99.00817861491699,
+    "map_breaks": [
+      3.363100346020758,
+      69.424,
+      72.184,
+      135.407
+    ],
+    "meter_breaks": [
+      0,
+      48.68545341491699,
+      51.66080141491699,
+      99.00817861491699
+    ],
+    "meters_per_legacy_unit": 0.7086199567103129,
+    "right_end_note": "3F 50.8837m reaches the scan end wall; 48.6855m remains the corridor-to-stair-entry distance, so stair depth is not added twice.",
+    "display_note": "2D/3D room drawings remain schematic; positioning motion uses this physical piecewise metric."
+  }
 }
-

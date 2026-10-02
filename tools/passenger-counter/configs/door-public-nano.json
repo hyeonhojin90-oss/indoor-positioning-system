@@ -1,0 +1,13 @@
+{
+  "door_mode": "custom",
+  "door_model": "runs/public-nano-5epochs/training/door/weights/best.pt",
+  "door_classes": [0],
+  "person_model": "yolo11n.pt",
+  "imgsz": 416,
+  "door_conf": 0.25,
+  "door_interval_frames": 5,
+  "max_door_area": 0.6,
+  "person_anchor_y": 1.0,
+  "door_lock": {"stable": 3, "min_iou": 0.75, "ttl": 1.5},
+  "counting": {"axis": "y", "entry": "negative", "low": 0.4, "high": 0.6, "confirm": 2, "max_gap": 0.75}
+}

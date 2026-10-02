@@ -1,8 +1,14 @@
 # 자율설계 프로젝트
 
+개발 보조 도구: [학교 AI MCP](tools/school-ai-mcp/README.md)는 기본 Codex를 유지하면서 학교 6.1 Sol·6 Astra·Opus 5.5에 선택한 내용의 검토를 요청한다. 실행·키 관리·검증 범위는 도구 문서를 따른다.
+
 조선대학교 자율설계학기제에서 진행하는 교내 셔틀·실내 이동 통합 안내 시스템 프로젝트다.
 
+실내 측위의 최신 완료·미완료 상태는 [CURRENT_STATUS](docs/CURRENT_STATUS.md)를 기준으로 확인한다. [BLE/AP 수정 및 실험 결과](indoor/data/analysis/radio-fix-20260923/REPORT.md), [RoNIN PC 추론 실행 방법](indoor/tools/ronin/README.md)은 각 상세 문서에 기록한다. PC 실험 완료와 Android 배포 완료는 구분한다.
+
 ## 프로젝트 목적
+
+셔틀 승차 인원 계수의 공개 영상 실험은 [실행 방법](tools/passenger-counter/README.md)과 [결과·실패 사례](tools/passenger-counter/RESULTS.md)에 기록한다. 문 검출·사람 추적·집계를 PC에서 비교 중이며 Jetson Orin Nano와 실제 정류장·강의실 카메라 검증은 미완료다. 최신 전체 상태는 `docs/CURRENT_STATUS.md`를 따른다.
 
 대학교 내 이동 편의성을 높이기 위해 셔틀버스의 실외 위치 안내부터 하차 후 단과대학 건물 내부의 목적 강의실 안내까지 하나의 서비스로 연결한다.
 
@@ -49,9 +55,9 @@
 PDR + 자기장 기반 보정 + 지도 정합
 ```
 
-Wi-Fi RTT(왕복 시간 측정)를 이용한 실내 위치 보조 방식도 후보로 검토한다. 현재는 실제 건물의 무선 공유기와 사용자 휴대폰이 Wi-Fi RTT를 지원하는지 확인하지 않은 단계이므로, 적용 방식 결정 전에 장비·환경 지원 여부와 측정 가능 범위를 먼저 시험해야 한다.
+Wi-Fi RTT 지원 환경의 1차 확인은 완료했다. Galaxy Tab SM-X216N은 미지원이었고, 별도 RTT 지원 Android 휴대폰에서는 현장 AP 12개 중 RTT responder가 0개였다. 현재 측위에서는 RTT 거리측정을 제외한다. 건물 전체 AP의 미지원을 확정한 것은 아니며, 일반 AP의 BSSID·RSSI 지문은 별도 보정 후보로 수집·검증한다. 단계별 완료 여부는 [`docs/ROADMAP.md`](docs/ROADMAP.md), 전체 진행상황은 [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)를 따른다.
 
-현재 3·4층 PDR 실험 화면과 4층 자기장 측정 자료가 준비되어 있다. 앞으로 실제 휴대폰 보행 실험을 통해 누적 오차, 자기장 간섭, 층간 이동 판정과 보정 방식을 검증해야 한다.
+현재 Android 앱과 4층 반복 보행·기준점 자료를 이용한 센서 보정 비교까지 진행했다. 실제 현장 정확도와 미완료 항목은 최신 진행상황 문서를 따른다.
 
 ### 3. 건물 지도
 
@@ -75,31 +81,26 @@ IT융합대학 1~10층의 강의실과 주요 코어를 확인할 수 있는 2D�
 
 ## 현재 진행상황
 
-### 완료
+최신 구현·현장 검증 여부의 기준은 [CURRENT_STATUS](docs/CURRENT_STATUS.md)다. 2026-10-03 저장소 정리 기준으로 다음을 포함한다.
 
-- IT융합대학 1~10층 2D 지도 데이터 작성
-- 1~10층 단독·통합 3D 지도 구현
-- 3·4층 PDR 실험 화면 구현
-- 4층 자기장 측정 자료 보존
-- GPS 원시 수집 펌웨어 보존
-- 프로젝트를 `gps`, `indoor`, `app`, `docs` 영역으로 분리
-- GLB·PDF·이미지 Git LFS 관리 적용
+- IT융합대학 1~10층 공용 2D·3D 웹 지도와 2~10층 실측 거리표, 2·3층 추가 영역 자료
+- [Android 앱 소스](app/android-native/README.md): 지도, 경로 라벨·센서 기준점 수집, PDR·파티클 및 자기장/BLE/AP 보정
+- 기준점 접근뿐 아니라 걸음 동반 회전·지속 불확실성에서 AP를 요청하는 정책과 요청 예산·이동 품질 기록
+- 자기장 격자 우선/V2 보조 및 보폭·RoNIN·신호 비교 실험 코드와 결과
+- [버스 승차 인원 계수 프로토타입](tools/passenger-counter/README.md)의 코드·설정·결과 기록
+- GPS 원시 수집 펌웨어와 전체 설계·결정·작업 기록
 
-### 다음 우선순위
+최신 Android 버전은 `1.0.20261002.1`(versionCode 8)이다. 빌드·단위검증과 실제 기기 설치·보행 정확도는 구분한다. 회전/AP 최신 구성의 현장 정확도, 자동 초기 위치, 계단 층 확정 후 재개, 설치 비콘 등록 등은 아직 검증 또는 구현이 남아 있다. [미완료 합의 목록](docs/INDOOR_AGREEMENT_AUDIT_20261002.md)을 참고한다. 실제 카메라·Orin 검증과 셔틀·실외·실내 전체 서비스 연계도 완료한 것으로 주장하지 않는다.
 
-1. 1~10층 2D·3D 지도를 피난안내도와 현장 구조에 맞춰 최종 검수
-2. 공용 지도 데이터 스키마와 경로 그래프 정리
-3. GPS 수신 환경을 확정하고 원시 데이터 수집
-4. GPS 오차 분석, 보정 방식 선정 및 검증
-5. 실제 휴대폰 센서를 이용한 PDR 보행 실험
-6. 자기장 간섭 판정과 자기장 기반 PDR 보정 구현
-7. 복도 지도 정합과 계단·엘리베이터 층간 이동 판정
-8. Android 앱 기술 스택 및 지도 연동 인터페이스 확정
-9. 셔틀·휴대폰 GPS·실내 위치·경로 안내 통합
-10. Android 카메라 기반 AR 화살표 안내와 실제 기기 검증
-11. iOS 개발·배포 조건 검토 후 지원 범위 결정
+## 저장소 복제 및 데이터
 
-전체 진행상황의 기준 문서는 [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)다.
+```powershell
+git clone https://github.com/hyeonhojin90-oss/indoor-nav-it4f.git
+cd indoor-nav-it4f
+git lfs pull
+```
+
+측정 원본·정정본의 JSONL, GLB·이미지·PDF는 Git LFS로 관리한다. 실험 재현에는 해당 자료가 필요하므로 원본을 보존한다. APK와 소스 ZIP 복제본, 개인·팀 보고서 내보내기, 빌드 캐시, 실행 임시 결과는 GitHub 업로드에서 제외한다. 다운로드한 연구 모델과 외부 영상은 각 도구 README의 출처·라이선스·설치 방법을 따른다. 세부 포함 범위는 [GitHub 소스 배포 기록](docs/GITHUB_SNAPSHOT_20261003.md)을 참고한다.
 
 ## 프로젝트 구조
 
@@ -114,6 +115,8 @@ IT융합대학 1~10층의 강의실과 주요 코어를 확인할 수 있는 2D�
 작업을 시작하기 전 루트 `AGENTS.md`, `docs/CURRENT_STATUS.md`, 해당 작업 영역의 `AGENTS.md`와 상태 문서를 확인한다.
 
 ## 실내 지도 실행
+
+실내 검사는 저장소 루트의 `npm test`로 실행한다. 브라우저 검사는 `npm ci` 후 Windows Edge와 4175 서버를 준비해 `npm run test:browser`로 실행한다. Android 빌드는 [앱 README](app/android-native/README.md)를 따른다.
 
 ```powershell
 cd .\indoor\web

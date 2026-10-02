@@ -1,42 +1,267 @@
 {
   "building": "조선대학교 IT융합대학",
   "floor": 2,
-  "version": "2f-v0.1-rebuilt-from-current-2d",
+  "version": "2f-v1.3-centered-mspace-door-desk-trim",
   "inherits": "floor-04.json",
   "remove_facility_ids": [],
   "room_mapping_note": "2층 피난안내도와 확정된 pages/floors/floor-02.html 좌표를 사용하며 코어, 화장실, 메인계단, 양쪽 계단은 공통 기준틀을 재사용한다.",
   "rooms": [
-    { "id": "2128", "label": "2128", "x": 128.418, "y": 8, "front_x": 128.418, "front_y": 0, "side": "upper", "width": 13.977 },
-    { "id": "2125", "label": "2125", "x": 113.240, "y": 8, "front_x": 113.240, "front_y": 0, "side": "upper", "width": 16.380 },
-    { "id": "2122", "label": "2122", "x": 96.095, "y": 8, "front_x": 96.095, "front_y": 0, "side": "upper", "width": 17.909 },
-    { "id": "2119", "label": "2119", "x": 80.698, "y": 8, "front_x": 80.698, "front_y": 0, "side": "upper", "width": 12.886 },
-    { "id": "2228", "label": "2228", "x": 127.217, "y": -8, "front_x": 127.217, "front_y": 0, "side": "lower", "width": 16.380 },
-    { "id": "2225", "label": "2225", "x": 111.110, "y": -8, "front_x": 111.110, "front_y": 0, "side": "lower", "width": 15.834 },
-    { "id": "2221", "label": "2221", "x": 92.000, "y": -8, "front_x": 92.000, "front_y": 0, "side": "lower", "width": 22.386 },
-    { "id": "2211", "label": "2211", "x": 60.089, "y": -8, "front_x": 60.089, "front_y": 0, "side": "lower", "width": 17.143 },
-    { "id": "2210", "label": "2210", "x": 39.964, "y": -8, "front_x": 39.964, "front_y": 0, "side": "lower", "width": 23.105 },
-    { "id": "2210-1", "label": "2210-1", "x": 24.689, "y": -8, "front_x": 24.689, "front_y": 0, "side": "lower", "width": 7.445 },
-    { "id": "2205", "label": "2205", "x": 17.116, "y": -8, "front_x": 17.116, "front_y": 0, "side": "lower", "width": 7.702 },
-    { "id": "2204", "label": "2204", "x": 9.435, "y": -8, "front_x": 9.435, "front_y": 0, "side": "lower", "width": 7.661 },
-    { "id": "2107", "label": "2107 개방공간", "placement": "extension-marker", "extension_zone": "2107" },
-    { "id": "S-SPACE", "label": "S-space", "placement": "extension-marker", "extension_zone": "s-space" },
-    { "id": "STUDY", "label": "ㄷ자 학습공간", "placement": "extension-marker", "extension_zone": "study" },
-    { "id": "TDM", "label": "TDM", "placement": "extension-marker", "extension_zone": "tdm" },
-    { "id": "2105-1", "label": "2105-1", "placement": "extension-marker", "extension_zone": "2105-1" },
-    { "id": "2105-2", "label": "2105-2", "placement": "extension-marker", "extension_zone": "2105-2" },
-    { "id": "2104-1", "label": "2104-1", "placement": "extension-marker", "extension_zone": "2104-1" },
-    { "id": "2104-2", "label": "2104-2", "placement": "extension-marker", "extension_zone": "2104-2" }
+    {
+      "id": "2128",
+      "label": "2128",
+      "x": 128.418,
+      "y": 8,
+      "front_x": 128.418,
+      "front_y": 0,
+      "side": "upper",
+      "width": 13.977
+    },
+    {
+      "id": "2125",
+      "label": "2125",
+      "x": 113.24,
+      "y": 8,
+      "front_x": 113.24,
+      "front_y": 0,
+      "side": "upper",
+      "width": 16.38
+    },
+    {
+      "id": "2122",
+      "label": "2122",
+      "x": 96.095,
+      "y": 8,
+      "front_x": 96.095,
+      "front_y": 0,
+      "side": "upper",
+      "width": 17.909
+    },
+    {
+      "id": "2119",
+      "label": "2119",
+      "x": 80.698,
+      "y": 8,
+      "front_x": 80.698,
+      "front_y": 0,
+      "side": "upper",
+      "width": 12.886
+    },
+    {
+      "id": "2228",
+      "label": "2228",
+      "x": 127.217,
+      "y": -8,
+      "front_x": 127.217,
+      "front_y": 0,
+      "side": "lower",
+      "width": 16.38
+    },
+    {
+      "id": "2225",
+      "label": "2225",
+      "x": 111.11,
+      "y": -8,
+      "front_x": 111.11,
+      "front_y": 0,
+      "side": "lower",
+      "width": 15.834
+    },
+    {
+      "id": "2221",
+      "label": "2221",
+      "x": 92.0,
+      "y": -8,
+      "front_x": 92.0,
+      "front_y": 0,
+      "side": "lower",
+      "width": 22.386
+    },
+    {
+      "id": "2211",
+      "label": "2211",
+      "x": 58.598,
+      "y": -8,
+      "front_x": 58.598,
+      "front_y": 0,
+      "side": "lower",
+      "width": 20.125,
+      "hide_door": true,
+      "display_x": 54.6065,
+      "display_width": 19.661
+    },
+    {
+      "id": "2210-1",
+      "label": "2210-1",
+      "x": 38.474,
+      "front_x": 38.474,
+      "front_y": 0,
+      "side": "lower",
+      "width": 20.125,
+      "hide_door": true,
+      "display_x": 34.9455,
+      "display_width": 19.661
+    },
+    {
+      "id": "2205",
+      "label": "서버실 2205",
+      "x": 20.83825,
+      "y": -8,
+      "front_x": 20.83825,
+      "front_y": 0,
+      "side": "lower",
+      "width": 15.1465,
+      "display_x": 21.515,
+      "display_width": 7.212
+    },
+    {
+      "id": "2204",
+      "label": "2204",
+      "x": 9.435,
+      "y": -8,
+      "front_x": 9.435,
+      "front_y": 0,
+      "side": "lower",
+      "width": 7.661,
+      "display_x": 12.119,
+      "display_width": 11.576,
+      "extend_to_restroom_passage": true
+    },
+    {
+      "id": "2107",
+      "label": "2107 개방공간",
+      "placement": "extension-marker",
+      "extension_zone": "2107"
+    },
+    {
+      "id": "M-SPACE",
+      "label": "M-space",
+      "placement": "extension-marker",
+      "extension_zone": "m-space"
+    },
+    {
+      "id": "STUDY",
+      "label": "ㄴ자 학습공간",
+      "placement": "extension-marker",
+      "extension_zone": "study"
+    },
+    {
+      "id": "TDM",
+      "label": "TDM",
+      "placement": "extension-marker",
+      "extension_zone": "tdm"
+    },
+    {
+      "id": "2105-1",
+      "label": "2105-1",
+      "placement": "extension-marker",
+      "extension_zone": "2105-1"
+    },
+    {
+      "id": "2105-2",
+      "label": "2105-2",
+      "placement": "extension-marker",
+      "extension_zone": "2105-2"
+    },
+    {
+      "id": "2104-1",
+      "label": "2104-1",
+      "placement": "extension-marker",
+      "extension_zone": "2104-1"
+    },
+    {
+      "id": "2104-2",
+      "label": "2104-2",
+      "placement": "extension-marker",
+      "extension_zone": "2104-2"
+    }
   ],
   "floor2_extension": {
     "status": "rebuilt_from_current_2d_plan",
     "shared_structure_rule": "core_restrooms_main_stairs_and_side_stairs_are_fixed",
     "entry_map_x": 15.397,
+    "open_2107_left_svg_x": 996,
+    "m_space_door_svg_start_x": 1037,
+    "m_space_door_svg_end_x": 1049,
+    "study_right_svg_x": 1146,
+    "extension_corridor_right_svg_x": 1232,
+    "tdm_left_svg_x": 1252,
+    "main_right_display_rule": "2211과 2210-1은 전체 양끝선을 유지하면서 같은 표시 폭으로 나눈다. 기존 작은 2210-1·2205 두 칸은 하나의 2205 서버실로 합친다. 2205의 오른쪽 끝은 기둥 오른쪽선(파란 진입구 왼쪽선)에 맞추고, 그 이후 화장실 통로 전 남은 메인복도 방 면적은 2204로 표시한다. display_x/display_width와 extend_to_restroom_passage는 지도 렌더링 전용이며 수집·PDR 좌표는 x/front_x를 유지한다.",
     "side": "upper",
-    "room_door_width": 1.2
+    "room_door_width": 1.2,
+    "survey": {
+      "version": "2f-glb-20260922",
+      "source": "2f-rescan.glb",
+      "entry_to_straight_m": 6.924826040543125,
+      "straight_length_m": 25.167399806749202,
+      "entry_to_end_m": 32.092225847292326,
+      "corridor_width_m": 3.70148141624279,
+      "svg_near_y": 603.5783715873742,
+      "svg_far_y": 253.146222379474,
+      "svg_corridor_right": 1179.8966002949703,
+      "entry_axis_svg_x": 1162.948300147485,
+      "entry_axis_map_x": 17.662486523461936,
+      "source_status": "scan-derived-approximate",
+      "room_interiors_surveyed": false
+    }
   },
   "routing": {
-    "hub_junction": { "x": 70.804, "y": 0 },
-    "extension_junction": { "x": 15.397, "y": 0 }
+    "hub_junction": {
+      "x": 70.804,
+      "y": 0
+    },
+    "extension_junction": {
+      "x": 15.397,
+      "y": 0
+    }
+  },
+  "collection_landmarks": {
+    "status": "order-confirmed-geometry-unmeasured",
+    "route_id": "2F_CORE_TO_RIGHT_STAIRS",
+    "start": "코어·오른쪽 메인복도 교차점",
+    "points": [
+      "2211 문 1",
+      "2211 문 2",
+      "2210-1 문 1",
+      "2107 진입 가능점",
+      "2210-1 문 2 · 2107 끝점",
+      "2205 서버실 앞"
+    ],
+    "note": "2211·2210-1의 두 문과 2107의 시작·끝 순서만 현장 확인됨. 기존 작은 2210-1·2205 두 칸은 2205 서버실로 정정했다. 문 폭과 개별 문 좌표는 실측 전까지 측위 제약으로 사용하지 않는다."
+  },
+  "common_corridor_survey": {
+    "version": "common-corridor-glb-20260922",
+    "applies_to_floors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "excluded_floors": [
+      1
+    ],
+    "right_core_to_stair_entry_m": 48.68545341491699,
+    "core_wall_center_width_m": 2.975348,
+    "left_core_to_corridor_end_m": 47.3473772,
+    "core_left_to_core_right_and_both_corridors_m": 99.00817861491699,
+    "map_breaks": [
+      3.363100346020758,
+      69.424,
+      72.184,
+      135.407
+    ],
+    "meter_breaks": [
+      0,
+      48.68545341491699,
+      51.66080141491699,
+      99.00817861491699
+    ],
+    "meters_per_legacy_unit": 0.7086199567103129,
+    "right_end_note": "3F 50.8837m reaches the scan end wall; 48.6855m remains the corridor-to-stair-entry distance, so stair depth is not added twice.",
+    "display_note": "2D/3D room drawings remain schematic; positioning motion uses this physical piecewise metric."
   }
 }
-

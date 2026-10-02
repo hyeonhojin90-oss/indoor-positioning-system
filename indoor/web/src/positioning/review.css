@@ -1,0 +1,21 @@
+body { margin:0; background:#f1f5f9; color:#19334a; font:16px/1.5 system-ui,sans-serif; }
+.review-shell {max-width:1500px; margin:auto; padding:22px;}
+.review-header {display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
+.review-header>div {margin-right:auto;}
+.review-header h1 {font-size:25px; margin:0;}
+.review-header p {margin:5px 0 18px;}
+.review-controls {display:flex; gap:16px; align-items:center; flex-wrap:wrap; padding:16px; background:white; border:1px solid #ccd8e5; border-radius:12px;}
+.review-controls select,.review-controls button {font:inherit; padding:8px; border:1px solid #ccd8e5; border-radius:6px; background:white; color:#19334a;}
+.review-controls button {cursor:pointer; background:#e7efff;}
+.review-plan {background:white; border:1px solid #ccd8e5; border-radius:12px; overflow:auto;}
+.review-plan svg {display:block; width:100%; min-width:600px; height:auto; cursor:crosshair;}
+.review-legend {color:#15724a;}
+.amber {color:#926307}.blue {color:#1757d9}.red {color:#bb2929}
+#status {padding:12px; background:#e5eefb; border-radius:8px; font-weight:600; min-height:24px;}
+#caution,#notes {font-size:14px; color:#5b6471;}
+.nav-area {fill:#24b47e; fill-opacity:.16; stroke:#08784e; stroke-width:2; pointer-events:none;}
+.nav-area.unverified {fill:#e7ae30; fill-opacity:.13; stroke:#a76d09; stroke-dasharray:7 5;}
+.nav-portal {stroke:#255ff1; stroke-width:7; pointer-events:none;}
+.nav-wall {stroke:#e33232; stroke-width:5; pointer-events:none;}
+.nav-trace {fill:none; stroke:#b321d5; stroke-width:4; pointer-events:none;}
+.nav-dot {fill:#b321d5; stroke:white; stroke-width:2; pointer-events:none;}

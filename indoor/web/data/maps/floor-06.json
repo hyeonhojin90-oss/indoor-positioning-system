@@ -5,7 +5,9 @@
   "inherits": "floor-04.json",
   "units": "meter-like-map-coordinate",
   "scale_note": "6층은 6~10층 공통 본동 틀을 사용한다. 코어, 메인화장실, 엘리베이터, 메인계단, 좌우 사이드계단의 기준 좌표는 고정하고 강의실 비율과 오른쪽 끝 6202·통로·계단만 6층 피난안내도 기준으로 재배치한다.",
-  "remove_facility_ids": ["4F_4204_END_STAIRS"],
+  "remove_facility_ids": [
+    "4F_4204_END_STAIRS"
+  ],
   "floor6_right_end": {
     "stair_anchor": "reuse_4f_right_end_stair",
     "room_id": "6202",
@@ -16,36 +18,241 @@
     "note": "6층 2D 도면의 6203 이후 통로·계단 입구·6202 배치를 사용한다. 오른쪽 계단의 기준 위치와 방향은 4층 고정틀을 그대로 재사용한다."
   },
   "rooms": [
-    { "id": "6128", "label": "6128", "x": 130.86, "y": 8, "width": 9.10, "side": "upper" },
-    { "id": "6126", "label": "6126", "x": 124.03, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "6125", "label": "6125", "x": 119.48, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "6123", "label": "6123", "x": 112.66, "y": 8, "width": 9.10, "side": "upper" },
-    { "id": "6122", "label": "6122", "x": 103.56, "y": 8, "width": 9.10, "side": "upper" },
-    { "id": "6120", "label": "6120", "x": 96.73, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "6119", "label": "6119", "x": 92.18, "y": 8, "width": 4.55, "side": "upper" },
-    { "id": "6117", "label": "6117", "x": 85.36, "y": 8, "width": 9.10, "side": "upper" },
-
-    { "id": "6228", "label": "6228", "x": 130.31, "y": -8, "width": 10.19, "side": "lower" },
-    { "id": "6226", "label": "6226", "x": 122.67, "y": -8, "width": 5.10, "side": "lower" },
-    { "id": "6225", "label": "6225", "x": 110.84, "y": -8, "width": 18.56, "side": "lower" },
-    { "id": "6221", "label": "6221", "x": 91.185, "y": -8, "width": 20.75, "side": "lower" },
-
-    { "id": "6114", "label": "6114", "x": 63.508, "y": 8, "width": 10.304, "side": "upper" },
-    { "id": "6112", "label": "6112", "x": 55.832, "y": 8, "width": 5.047, "side": "upper" },
-    { "id": "6111", "label": "6111", "x": 50.785, "y": 8, "width": 5.047, "side": "upper" },
-    { "id": "6109", "label": "6109", "x": 43.219, "y": 8, "width": 10.086, "side": "upper" },
-    { "id": "6108", "label": "6108", "x": 35.652, "y": 8, "width": 5.047, "side": "upper" },
-    { "id": "6108-1", "label": "6108-1", "x": 30.605, "y": 8, "width": 5.047, "side": "upper" },
-    { "id": "6103", "label": "6103", "x": 19.5405, "y": 8, "width": 17.081, "side": "upper" },
-
-    { "id": "6213", "label": "6213", "x": 65.873, "y": -8, "width": 5.574, "side": "lower" },
-    { "id": "6212", "label": "6212", "x": 57.518, "y": -8, "width": 11.136, "side": "lower" },
-    { "id": "6210", "label": "6210", "x": 40.905, "y": -8, "width": 22.09, "side": "lower" },
-    { "id": "6203", "label": "6203", "x": 20.43, "y": -8, "width": 18.86, "side": "lower" },
-    { "id": "6202", "label": "6202", "placement": "floor6-end-room", "x": 6.275, "y": -8, "width": 9.45, "side": "lower", "hide_door": true }
+    {
+      "id": "6128",
+      "label": "6128",
+      "x": 130.86,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "6126",
+      "label": "6126",
+      "x": 124.03,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "6125",
+      "label": "6125",
+      "x": 119.48,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "6123",
+      "label": "6123",
+      "x": 112.66,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "6122",
+      "label": "6122",
+      "x": 103.56,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "6120",
+      "label": "6120",
+      "x": 96.73,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "6119",
+      "label": "6119",
+      "x": 92.18,
+      "y": 8,
+      "width": 4.55,
+      "side": "upper"
+    },
+    {
+      "id": "6117",
+      "label": "6117",
+      "x": 85.36,
+      "y": 8,
+      "width": 9.1,
+      "side": "upper"
+    },
+    {
+      "id": "6228",
+      "label": "6228",
+      "x": 130.31,
+      "y": -8,
+      "width": 10.19,
+      "side": "lower"
+    },
+    {
+      "id": "6226",
+      "label": "6226",
+      "x": 122.67,
+      "y": -8,
+      "width": 5.1,
+      "side": "lower"
+    },
+    {
+      "id": "6225",
+      "label": "6225",
+      "x": 110.84,
+      "y": -8,
+      "width": 18.56,
+      "side": "lower"
+    },
+    {
+      "id": "6221",
+      "label": "6221",
+      "x": 91.185,
+      "y": -8,
+      "width": 20.75,
+      "side": "lower"
+    },
+    {
+      "id": "6114",
+      "label": "6114",
+      "x": 63.508,
+      "y": 8,
+      "width": 10.304,
+      "side": "upper"
+    },
+    {
+      "id": "6112",
+      "label": "6112",
+      "x": 55.832,
+      "y": 8,
+      "width": 5.047,
+      "side": "upper"
+    },
+    {
+      "id": "6111",
+      "label": "6111",
+      "x": 50.785,
+      "y": 8,
+      "width": 5.047,
+      "side": "upper"
+    },
+    {
+      "id": "6109",
+      "label": "6109",
+      "x": 43.219,
+      "y": 8,
+      "width": 10.086,
+      "side": "upper"
+    },
+    {
+      "id": "6108",
+      "label": "6108",
+      "x": 35.652,
+      "y": 8,
+      "width": 5.047,
+      "side": "upper"
+    },
+    {
+      "id": "6108-1",
+      "label": "6108-1",
+      "x": 30.605,
+      "y": 8,
+      "width": 5.047,
+      "side": "upper"
+    },
+    {
+      "id": "6103",
+      "label": "6103",
+      "x": 19.5405,
+      "y": 8,
+      "width": 17.081,
+      "side": "upper"
+    },
+    {
+      "id": "6213",
+      "label": "6213",
+      "x": 65.873,
+      "y": -8,
+      "width": 5.574,
+      "side": "lower"
+    },
+    {
+      "id": "6212",
+      "label": "6212",
+      "x": 57.518,
+      "y": -8,
+      "width": 11.136,
+      "side": "lower"
+    },
+    {
+      "id": "6210",
+      "label": "6210",
+      "x": 40.905,
+      "y": -8,
+      "width": 22.09,
+      "side": "lower"
+    },
+    {
+      "id": "6203",
+      "label": "6203",
+      "x": 20.43,
+      "y": -8,
+      "width": 18.86,
+      "side": "lower"
+    },
+    {
+      "id": "6202",
+      "label": "6202",
+      "placement": "floor6-end-room",
+      "x": 6.275,
+      "y": -8,
+      "width": 9.45,
+      "side": "lower",
+      "hide_door": true
+    }
   ],
   "routing": {
-    "hub_junction": { "x": 70.804, "y": 0 }
+    "hub_junction": {
+      "x": 70.804,
+      "y": 0
+    }
+  },
+  "common_corridor_survey": {
+    "version": "common-corridor-glb-20260922",
+    "applies_to_floors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "excluded_floors": [
+      1
+    ],
+    "right_core_to_stair_entry_m": 48.68545341491699,
+    "core_wall_center_width_m": 2.975348,
+    "left_core_to_corridor_end_m": 47.3473772,
+    "core_left_to_core_right_and_both_corridors_m": 99.00817861491699,
+    "map_breaks": [
+      3.363100346020758,
+      69.424,
+      72.184,
+      135.407
+    ],
+    "meter_breaks": [
+      0,
+      48.68545341491699,
+      51.66080141491699,
+      99.00817861491699
+    ],
+    "meters_per_legacy_unit": 0.7086199567103129,
+    "right_end_note": "3F 50.8837m reaches the scan end wall; 48.6855m remains the corridor-to-stair-entry distance, so stair depth is not added twice.",
+    "display_note": "2D/3D room drawings remain schematic; positioning motion uses this physical piecewise metric."
   }
 }
-

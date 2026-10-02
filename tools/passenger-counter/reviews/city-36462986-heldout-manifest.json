@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-30T02:43:33.388421+00:00",
+  "frames": 761,
+  "fps": 25.0,
+  "source_page": "https://www.pexels.com/video/city-bus-stop-with-people-boarding-in-urban-area-36462986/",
+  "source_sha256": "30448b9c906e4bde3296eb940fc9bc30a0529236f7b725faa86cefb54b733234",
+  "derived_sha256": "40ab287acf679eb3a6da238724df791a6ee51ac0de128275b46d719916be1e6f",
+  "config_path": "configs\\bus-side-view-penetration-candidate.json",
+  "config_sha256": "98e151931c178dd20687bb9ef2e883f0897d4b3f22547ade1d57f4ecd3d27fd1",
+  "freeze_before_source_visual_review": true,
+  "change_settings_after_review": false
+}

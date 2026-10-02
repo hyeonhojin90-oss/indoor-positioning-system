@@ -194,6 +194,10 @@
           <label>
             스캔 선택
             <select id="scanSelect">
+              <option value="scan_4f_left_20260921">9월 21일 · 4층 왼쪽 복도 재측정</option>
+              <option value="scan_3f_right_20260921">9월 21일 · 3층 오른쪽 복도 재측정</option>
+              <option value="core_20260914">9월 14일 코어 재측정</option>
+              <option value="rescan_20260914">9월 14일 재측정 · 구간 확인 중</option>
               <option value="it_3f_right_wing">3층 오른쪽 복도/IT홀 확장부</option>
               <option value="it_4f_elevator_stairs">4층 엘레베이터/메인계단 일부</option>
               <option value="it_4f_left_from_elevator_right_wing">4층 엘레베이터 기준 왼쪽 복도</option>
@@ -225,6 +229,38 @@
 
     <script>
       const scans = {
+        scan_4f_left_20260921: {
+          color: "../../data/raw/scans/2026-09-21/4f-left-corridor.glb",
+          mono: "../../data/raw/scans/2026-09-21/4f-left-corridor.glb",
+          file: "2026. 9. 21.zip / 4f-left-corridor.glb",
+          size: "전체 외곽 약 8.33 × 3.34 × 49.39m",
+          use: "4층 왼쪽 복도 재측정 및 2~10층 공통 복도 치수 후보",
+          description: "사용자가 첫 번째 파일을 4층 왼쪽 복도 재측정본으로 확인했습니다. 외곽 바운딩박스와 실제 바닥 진행축은 분리해 판정합니다."
+        },
+        scan_3f_right_20260921: {
+          color: "../../data/raw/scans/2026-09-21/3f-right-corridor.glb",
+          mono: "../../data/raw/scans/2026-09-21/3f-right-corridor.glb",
+          file: "2026. 9. 21 (1).zip / 3f-right-corridor.glb",
+          size: "전체 외곽 약 45.11 × 4.08 × 57.81m",
+          use: "3층 오른쪽 메인복도와 증축·분기부 구조 재검토",
+          description: "사용자가 두 번째 파일을 3층 오른쪽 복도 재측정본으로 확인했습니다. 분기부를 포함하므로 전체 외곽 크기를 복도 길이로 사용하지 않습니다."
+        },
+        core_20260914: {
+          color: "./assets/20260914-core.glb",
+          mono: "./assets/20260914-core.glb",
+          file: "2026. 9. 14 (2).zip / 2026. 9. 14.glb",
+          size: "전체 평면 범위 약 12.07 × 12.69m",
+          use: "코어 통로와 메인복도의 접속 위치 확인",
+          description: "사용자가 코어 부분으로 제공한 별도 스캔입니다. 전체 외곽 크기를 복도 폭으로 사용하지 않습니다."
+        },
+        rescan_20260914: {
+          color: "./assets/20260914-rescan.glb",
+          mono: "./assets/20260914-rescan.glb",
+          file: "2026. 9. 14.glb",
+          size: "바닥 긴 축 약 48.69m (보행 구간 미확정)",
+          use: "새 구조 스캔의 코어·복도 시작과 끝 확인",
+          description: "9월 14일 받은 ZIP 두 개는 동일한 파일입니다. 기존 스캔과 같은 범위를 담았는지 확인 중입니다."
+        },
         it_3f_right_wing: {
           color: "../../web/assets/3f/it_3f_right_wing.glb",
           mono: "../../web/assets/3f/it_3f_right_wing.glb",

@@ -1,0 +1,304 @@
+{
+  "source": "AndroidStudioProjects/IndoorPositioningPrototype",
+  "shared_assets": "../../indoor/web",
+  "excluded": [
+    "*.jks",
+    "*.keystore",
+    ".git",
+    ".gradle",
+    ".idea",
+    ".kotlin",
+    "build",
+    "local.properties"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "source_sha256": "703238443066325af08e3868d1e4b571a633baf68fcc93e323f0066999a97e1b",
+      "repository_sha256": "703238443066325af08e3868d1e4b571a633baf68fcc93e323f0066999a97e1b",
+      "adaptation": null
+    },
+    {
+      "path": "app/.gitignore",
+      "source_sha256": "5c3174b74edc6f2b9e0743594b8bd3c7f31e4f4405758cc9872b3fe1de1d28b4",
+      "repository_sha256": "5c3174b74edc6f2b9e0743594b8bd3c7f31e4f4405758cc9872b3fe1de1d28b4",
+      "adaptation": null
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "source_sha256": "a128d606b515fab7f21c89f14d2a026ab49eeb432773db98d4c0a431a9540f9b",
+      "repository_sha256": "8a1b23b5a2986c61bb6a5a77ea0383f27d260d013e787186a1aba69701f56edc",
+      "adaptation": "Repository-relative shared web assets path only; Trailing empty lines removed only"
+    },
+    {
+      "path": "app/src/androidTest/java/com/example/indoorpositioning/ExampleInstrumentedTest.kt",
+      "source_sha256": "62e7518b934cd2f036e245c05500e4f6283219e3e2bd79b1e2ee5e27f5bec9f6",
+      "repository_sha256": "62e7518b934cd2f036e245c05500e4f6283219e3e2bd79b1e2ee5e27f5bec9f6",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "source_sha256": "124c3b4ed2c5710ffa4dfeac5b2caae3f1a425e54ec232e913d9b80600bc8b27",
+      "repository_sha256": "124c3b4ed2c5710ffa4dfeac5b2caae3f1a425e54ec232e913d9b80600bc8b27",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/BleEnvironmentScanner.kt",
+      "source_sha256": "2b991a4b3e2810610b76fac565492cea19800000ff681fe550745c1207bf6eda",
+      "repository_sha256": "2b991a4b3e2810610b76fac565492cea19800000ff681fe550745c1207bf6eda",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/EventApPolicy.kt",
+      "source_sha256": "4a9007a94ac2508eae58108863f8ec228895e736862793e0edc77f44c6a2ae72",
+      "repository_sha256": "4a9007a94ac2508eae58108863f8ec228895e736862793e0edc77f44c6a2ae72",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/FusionExperiment.kt",
+      "source_sha256": "df6064ef412bdc1d752647118636fb9adabae8e1dae2a7449229eca9b4c8f604",
+      "repository_sha256": "df6064ef412bdc1d752647118636fb9adabae8e1dae2a7449229eca9b4c8f604",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/GuidanceApCoordinator.kt",
+      "source_sha256": "f7e18163dd28115f723940b92a552fbc16636568a20eeda3d9a330a429453992",
+      "repository_sha256": "f7e18163dd28115f723940b92a552fbc16636568a20eeda3d9a330a429453992",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/MainActivity.kt",
+      "source_sha256": "c21a62eed9d14de96510f43f5f976939b9d093918952961307112f3818372bfb",
+      "repository_sha256": "c21a62eed9d14de96510f43f5f976939b9d093918952961307112f3818372bfb",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/MapMatcher.kt",
+      "source_sha256": "db00719ea526e489d0589983d3adc39773302b90b126f8fd75f4e2766d856fdc",
+      "repository_sha256": "db00719ea526e489d0589983d3adc39773302b90b126f8fd75f4e2766d856fdc",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/MeasurementRecorder.kt",
+      "source_sha256": "d50c68c82f0886ab56449f8095c80f3761706ba636a8564f77822adbbbb08d59",
+      "repository_sha256": "d50c68c82f0886ab56449f8095c80f3761706ba636a8564f77822adbbbb08d59",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/RouteFusionController.kt",
+      "source_sha256": "529efdff90d4d09f21817a1c3b2075fc7ca21424e0e07362179ede8754047829",
+      "repository_sha256": "529efdff90d4d09f21817a1c3b2075fc7ca21424e0e07362179ede8754047829",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/ui/theme/Color.kt",
+      "source_sha256": "e2fd515411815d19519cf90730f3f2b615bfd181d5ff4e9acd17102e3df44f97",
+      "repository_sha256": "e2fd515411815d19519cf90730f3f2b615bfd181d5ff4e9acd17102e3df44f97",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/ui/theme/Theme.kt",
+      "source_sha256": "2273685230092d38f2d4685ea359f428c4ecd2d6fd452334ca601c746f4488f3",
+      "repository_sha256": "2273685230092d38f2d4685ea359f428c4ecd2d6fd452334ca601c746f4488f3",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/ui/theme/Type.kt",
+      "source_sha256": "faa099db0bcff08207510cf25017058a92e8b94157e188dc8eab050bde594f04",
+      "repository_sha256": "faa099db0bcff08207510cf25017058a92e8b94157e188dc8eab050bde594f04",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/java/com/example/indoorpositioning/WifiFingerprintScanner.kt",
+      "source_sha256": "66d265b030c3914b509de55d401acb2fc376a70de9c0b000e5d61eb54b74a866",
+      "repository_sha256": "66d265b030c3914b509de55d401acb2fc376a70de9c0b000e5d61eb54b74a866",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/keepRules/rules.keep",
+      "source_sha256": "cd9f36ade2d8604e1b7cf24eff5b171f9c0816c0aa013ba7eb55be4fe2e1dac7",
+      "repository_sha256": "cd9f36ade2d8604e1b7cf24eff5b171f9c0816c0aa013ba7eb55be4fe2e1dac7",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_background.xml",
+      "source_sha256": "ed423c73a6f40a4d2909f0901e60527b3a807cd59e1b5593bcaae1808b1c6321",
+      "repository_sha256": "ed423c73a6f40a4d2909f0901e60527b3a807cd59e1b5593bcaae1808b1c6321",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "source_sha256": "01d1a6a6c1234eb7fe270d097eb283d72b9c95ae5118886f1b6573aad280f1f7",
+      "repository_sha256": "01d1a6a6c1234eb7fe270d097eb283d72b9c95ae5118886f1b6573aad280f1f7",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi/ic_launcher.xml",
+      "source_sha256": "88f7653499ef524126ea5018a99baf9cc3269e7e584d6205dfdd76db39f39cc0",
+      "repository_sha256": "88f7653499ef524126ea5018a99baf9cc3269e7e584d6205dfdd76db39f39cc0",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi/ic_launcher_round.xml",
+      "source_sha256": "88f7653499ef524126ea5018a99baf9cc3269e7e584d6205dfdd76db39f39cc0",
+      "repository_sha256": "88f7653499ef524126ea5018a99baf9cc3269e7e584d6205dfdd76db39f39cc0",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+      "source_sha256": "dd00996198640ed28fbc09cdcd7a3807cf8707f3eb255b659634da3ca6a6ff01",
+      "repository_sha256": "dd00996198640ed28fbc09cdcd7a3807cf8707f3eb255b659634da3ca6a6ff01",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+      "source_sha256": "1ed73f5341a69d3b41c7e02e126803f50cc8c3284adf4bbb737f0c93577aef07",
+      "repository_sha256": "1ed73f5341a69d3b41c7e02e126803f50cc8c3284adf4bbb737f0c93577aef07",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+      "source_sha256": "846219e6f72fe9a6c104ca8919cbee36a101e7d2ff8da9da67b689a5888f060d",
+      "repository_sha256": "846219e6f72fe9a6c104ca8919cbee36a101e7d2ff8da9da67b689a5888f060d",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+      "source_sha256": "4e2c58b91de01130e6479e00cbbaaf6e77cd961dd2c8e303cf13cd077fa92632",
+      "repository_sha256": "4e2c58b91de01130e6479e00cbbaaf6e77cd961dd2c8e303cf13cd077fa92632",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+      "source_sha256": "398340dad816fc9a6338cb151a8cf1e45b926f9bfb70628b24c4bd2523cc94d4",
+      "repository_sha256": "398340dad816fc9a6338cb151a8cf1e45b926f9bfb70628b24c4bd2523cc94d4",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+      "source_sha256": "91b490aef86574901137f0a252272e1f1add99c1ad709e0696ed68929b88d261",
+      "repository_sha256": "91b490aef86574901137f0a252272e1f1add99c1ad709e0696ed68929b88d261",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+      "source_sha256": "58ae87fa0c5b5d1562d27fd648d2c061553fe20e3ed570bde588162d01ea7a27",
+      "repository_sha256": "58ae87fa0c5b5d1562d27fd648d2c061553fe20e3ed570bde588162d01ea7a27",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+      "source_sha256": "3009fad079f5772f30ecd767f98924367fbe0f81c30048d672d4fda2d5ca7d12",
+      "repository_sha256": "3009fad079f5772f30ecd767f98924367fbe0f81c30048d672d4fda2d5ca7d12",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+      "source_sha256": "f98fef5bc3bfe5b65692c40ad1cbae2bec4faf9f1b249c397626740db71b62d8",
+      "repository_sha256": "f98fef5bc3bfe5b65692c40ad1cbae2bec4faf9f1b249c397626740db71b62d8",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+      "source_sha256": "5faf033745c8c882c43bb1b372d4e4a5890caec63d9892a2e756c954108b85dc",
+      "repository_sha256": "5faf033745c8c882c43bb1b372d4e4a5890caec63d9892a2e756c954108b85dc",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/values/colors.xml",
+      "source_sha256": "b5626527d503417f0d8e5b1e08f338de7b31173bf0e122815f03e64932adbd88",
+      "repository_sha256": "b5626527d503417f0d8e5b1e08f338de7b31173bf0e122815f03e64932adbd88",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "source_sha256": "24ddf097c52d11abb2109f5a161099068717831806362dfb5160408b7b6e6e2d",
+      "repository_sha256": "24ddf097c52d11abb2109f5a161099068717831806362dfb5160408b7b6e6e2d",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/values/themes.xml",
+      "source_sha256": "189251d8497d5ae0b77c733b9abfc52e4f9f66b99f336eedc4b8804316eabefa",
+      "repository_sha256": "189251d8497d5ae0b77c733b9abfc52e4f9f66b99f336eedc4b8804316eabefa",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "source_sha256": "6cf1a27e6807b1d24e41d3fbe7ddc1bfe1f42226027964f6eaf477d71b43b283",
+      "repository_sha256": "6cf1a27e6807b1d24e41d3fbe7ddc1bfe1f42226027964f6eaf477d71b43b283",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/main/res/xml/data_extraction_rules.xml",
+      "source_sha256": "cb1fc47ab4a984530ed60e0e6ee638929c3038290e7e7e0b4b03a3a30fbe7381",
+      "repository_sha256": "cb1fc47ab4a984530ed60e0e6ee638929c3038290e7e7e0b4b03a3a30fbe7381",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/test/java/com/example/indoorpositioning/EventApPolicyTest.kt",
+      "source_sha256": "4f041ee5c45b9b0858dcf9b706655bc15a0ea87d1dd179fa2324ebbd8925bb7b",
+      "repository_sha256": "4f041ee5c45b9b0858dcf9b706655bc15a0ea87d1dd179fa2324ebbd8925bb7b",
+      "adaptation": null
+    },
+    {
+      "path": "app/src/test/java/com/example/indoorpositioning/ExampleUnitTest.kt",
+      "source_sha256": "8f376c0e8c48a349b5f28aed81b840ab3af6f53901e35b17bc9741d1da62be22",
+      "repository_sha256": "8f376c0e8c48a349b5f28aed81b840ab3af6f53901e35b17bc9741d1da62be22",
+      "adaptation": null
+    },
+    {
+      "path": "build.gradle.kts",
+      "source_sha256": "be7dbfa1841b18b020f744e203b995d3dac5709c2a6b8e310fbcfaed0364919a",
+      "repository_sha256": "be7dbfa1841b18b020f744e203b995d3dac5709c2a6b8e310fbcfaed0364919a",
+      "adaptation": null
+    },
+    {
+      "path": "gradle/gradle-daemon-jvm.properties",
+      "source_sha256": "6c13aa5ba36690ccfbbb25a8807d01d98c15833e446d7ae82ddc726472cb8ef7",
+      "repository_sha256": "6c13aa5ba36690ccfbbb25a8807d01d98c15833e446d7ae82ddc726472cb8ef7",
+      "adaptation": null
+    },
+    {
+      "path": "gradle/libs.versions.toml",
+      "source_sha256": "fcc86c1d1c5ee7a3d043a9cef45974dd3da0608d323807af68b74fb148553cf6",
+      "repository_sha256": "33f5567d76bd5327b4e20ed0370b9cb93ede7aff134790affb05516bec3c6921",
+      "adaptation": "Trailing empty lines removed only"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "source_sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+      "repository_sha256": "76805e32c009c0cf0dd5d206bddc9fb22ea42e84db904b764f3047de095493f3",
+      "adaptation": null
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "source_sha256": "c81d557ba64d01d155e81df11a001cfd751ee629db6c498bee1da552cc58e5f8",
+      "repository_sha256": "c81d557ba64d01d155e81df11a001cfd751ee629db6c498bee1da552cc58e5f8",
+      "adaptation": null
+    },
+    {
+      "path": "gradle.properties",
+      "source_sha256": "cf774135f23cd1e6c054168ce772e24140800347f95b29819744c96f97e4ef26",
+      "repository_sha256": "cf774135f23cd1e6c054168ce772e24140800347f95b29819744c96f97e4ef26",
+      "adaptation": null
+    },
+    {
+      "path": "gradlew",
+      "source_sha256": "3238afb2aed5cb16eb7d6718077e7138059108f007b54179e9cc157c5a6e0e89",
+      "repository_sha256": "3238afb2aed5cb16eb7d6718077e7138059108f007b54179e9cc157c5a6e0e89",
+      "adaptation": null
+    },
+    {
+      "path": "gradlew.bat",
+      "source_sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b",
+      "repository_sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b",
+      "adaptation": null
+    },
+    {
+      "path": "settings.gradle.kts",
+      "source_sha256": "0c985d4659bc89251fc9566f99f4adcb65e00b4ca66f8ae908e784f2221dd780",
+      "repository_sha256": "0c985d4659bc89251fc9566f99f4adcb65e00b4ca66f8ae908e784f2221dd780",
+      "adaptation": null
+    }
+  ]
+}

@@ -6,23 +6,132 @@
   "remove_facility_ids": [],
   "room_mapping_note": "방 번호와 순서는 3층 피난안내도, 형상과 문은 2026-08-17 GLB/Polycam 자료를 우선한다.",
   "rooms": [
-    { "id": "3220", "label": "3220", "x": 89.543, "y": -8, "front_x": 89.543, "front_y": 0, "side": "lower", "width": 17.472 },
-    { "id": "3224", "label": "3224", "x": 107.561, "y": -8, "front_x": 107.561, "front_y": 0, "side": "lower", "width": 18.564 },
-    { "id": "3228", "label": "3228", "x": 126.125, "y": -8, "front_x": 126.125, "front_y": 0, "side": "lower", "width": 18.564 },
-    { "id": "3120", "label": "3120", "x": 86.267, "y": 8, "front_x": 86.267, "front_y": 0, "side": "upper", "width": 24.024 },
-    { "id": "3128-A", "label": "3128", "x": 126.125, "y": 8, "front_x": 126.125, "front_y": 0, "side": "upper", "width": 18.564 },
-    { "id": "3128-B", "label": "3128", "x": 107.561, "y": 8, "front_x": 107.561, "front_y": 0, "side": "upper", "width": 18.564 },
-    { "id": "3210", "label": "3210", "x": 54.726, "y": -8, "front_x": 54.726, "front_y": 0, "side": "lower", "width": 19.254 },
-    { "id": "3210-1", "label": "3210-1", "x": 40.734, "y": -8, "front_x": 40.734, "front_y": 0, "side": "lower", "width": 8.729 },
-    { "id": "3208", "label": "3208", "x": 28.816, "y": -8, "front_x": 28.816, "front_y": 0, "side": "lower", "width": 15.108 },
-    { "id": "3203", "label": "3203", "x": 13.433, "y": -8, "front_x": 13.433, "front_y": 0, "side": "lower", "width": 15.659 },
-    { "id": "3108", "label": "3108 IT홀", "placement": "extension-marker", "extension_zone": "it-hall" },
-    { "id": "3104-1", "label": "3104-1", "placement": "extension-marker", "extension_zone": "3104-1" },
-    { "id": "3104-2", "label": "3104-2", "placement": "extension-marker", "extension_zone": "3104-2" }
+    {
+      "id": "3220",
+      "label": "3220",
+      "x": 89.543,
+      "y": -8,
+      "front_x": 89.543,
+      "front_y": 0,
+      "side": "lower",
+      "width": 17.472
+    },
+    {
+      "id": "3224",
+      "label": "3224",
+      "x": 107.561,
+      "y": -8,
+      "front_x": 107.561,
+      "front_y": 0,
+      "side": "lower",
+      "width": 18.564
+    },
+    {
+      "id": "3228",
+      "label": "3228",
+      "x": 126.125,
+      "y": -8,
+      "front_x": 126.125,
+      "front_y": 0,
+      "side": "lower",
+      "width": 18.564
+    },
+    {
+      "id": "3120",
+      "label": "3120",
+      "x": 86.267,
+      "y": 8,
+      "front_x": 86.267,
+      "front_y": 0,
+      "side": "upper",
+      "width": 24.024
+    },
+    {
+      "id": "3128-A",
+      "label": "3128",
+      "x": 126.125,
+      "y": 8,
+      "front_x": 126.125,
+      "front_y": 0,
+      "side": "upper",
+      "width": 18.564
+    },
+    {
+      "id": "3128-B",
+      "label": "3128",
+      "x": 107.561,
+      "y": 8,
+      "front_x": 107.561,
+      "front_y": 0,
+      "side": "upper",
+      "width": 18.564
+    },
+    {
+      "id": "3210",
+      "label": "3210",
+      "x": 54.726,
+      "y": -8,
+      "front_x": 54.726,
+      "front_y": 0,
+      "side": "lower",
+      "width": 19.254
+    },
+    {
+      "id": "3210-1",
+      "label": "3210-1",
+      "x": 40.734,
+      "y": -8,
+      "front_x": 40.734,
+      "front_y": 0,
+      "side": "lower",
+      "width": 8.729
+    },
+    {
+      "id": "3208",
+      "label": "3208",
+      "x": 28.816,
+      "y": -8,
+      "front_x": 28.816,
+      "front_y": 0,
+      "side": "lower",
+      "width": 15.108
+    },
+    {
+      "id": "3203",
+      "label": "3203",
+      "x": 13.433,
+      "y": -8,
+      "front_x": 13.433,
+      "front_y": 0,
+      "side": "lower",
+      "width": 15.659
+    },
+    {
+      "id": "3108",
+      "label": "3108 IT홀",
+      "placement": "extension-marker",
+      "extension_zone": "it-hall"
+    },
+    {
+      "id": "3104-1",
+      "label": "3104-1",
+      "placement": "extension-marker",
+      "extension_zone": "3104-1"
+    },
+    {
+      "id": "3104-2",
+      "label": "3104-2",
+      "placement": "extension-marker",
+      "extension_zone": "3104-2"
+    }
   ],
   "floor3_extension": {
-    "status": "rebuilt_from_current_2d_plan",
-    "source_glb_bbox": [39.8218, 7.382324, 53.039406],
+    "status": "glb-survey-applied-20260922",
+    "source_glb_bbox": [
+      39.8218,
+      7.382324,
+      53.039406
+    ],
     "measurement_source": "2026-08-17 Polycam GLB in-app measurements",
     "shared_structure_rule": "red_boundary_right_side_is_identical_to_floor_4",
     "new_space_length": 25.317,
@@ -36,21 +145,80 @@
     "corridor_start_z": 1.17,
     "corridor_length": 28.6,
     "corridor_width": 2.34,
-    "front_free_space_depth": 5.2,
-    "front_free_space_width": 7.167,
-    "extension_corridor_width": 1.45,
-    "extension_corridor_length": 20.117,
+    "front_free_space_depth": 6.793780680711055,
+    "front_free_space_width": 14.284221713219603,
+    "extension_corridor_width": 2.0585136790233065,
+    "extension_corridor_length": 25.244458081812375,
     "outside_common_frame_offset": 7.9,
     "it_hall_door_offset": 1.2,
     "room_3104_split_ratio": 0.5,
     "new_space_opening_center_z": 8.3,
     "it_hall_door_width": 1.2,
     "side_stair_door_width": 1.0,
-    "red_marker_geometry_status": "unconfirmed-preserve-glb"
+    "red_marker_geometry_status": "unconfirmed-preserve-glb",
+    "survey": {
+      "version": "3f-extension-glb-20260922",
+      "source": "3f-right-corridor.glb",
+      "straight_length_m": 25.244458081812375,
+      "corridor_width_m": 2.0585136790233065,
+      "front_space_length_m": 14.284221713219603,
+      "front_space_depth_m": 6.793780680711055,
+      "svg_free_left": 1146.0,
+      "svg_free_right": 1276.8088571816252,
+      "svg_free_far_y": 490.4030538128841,
+      "svg_free_near_y": 585.0,
+      "svg_corridor_left": 1146.0,
+      "svg_corridor_right": 1164.8509970827868,
+      "svg_corridor_far_y": 138.8979412813194,
+      "svg_corridor_near_y": 490.4030538128841,
+      "it_hall_interior_surveyed": false,
+      "room_interiors_surveyed": false
+    }
   },
   "routing": {
-    "hub_junction": { "x": 70.804, "y": 0 },
-    "extension_junction": { "x": 115.23, "y": 0 }
+    "hub_junction": {
+      "x": 70.804,
+      "y": 0
+    },
+    "extension_junction": {
+      "x": 115.23,
+      "y": 0
+    }
+  },
+  "common_corridor_survey": {
+    "version": "common-corridor-glb-20260922",
+    "applies_to_floors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "excluded_floors": [
+      1
+    ],
+    "right_core_to_stair_entry_m": 48.68545341491699,
+    "core_wall_center_width_m": 2.975348,
+    "left_core_to_corridor_end_m": 47.3473772,
+    "core_left_to_core_right_and_both_corridors_m": 99.00817861491699,
+    "map_breaks": [
+      3.363100346020758,
+      69.424,
+      72.184,
+      135.407
+    ],
+    "meter_breaks": [
+      0,
+      48.68545341491699,
+      51.66080141491699,
+      99.00817861491699
+    ],
+    "meters_per_legacy_unit": 0.7086199567103129,
+    "right_end_note": "3F 50.8837m reaches the scan end wall; 48.6855m remains the corridor-to-stair-entry distance, so stair depth is not added twice.",
+    "display_note": "2D/3D room drawings remain schematic; positioning motion uses this physical piecewise metric."
   }
 }
-

@@ -1,0 +1,11 @@
+{
+  "door_mode": "custom",
+  "door_model": "models/door.engine",
+  "door_classes": [0],
+  "person_model": "models/person.engine",
+  "imgsz": 640,
+  "door_interval_frames": 10,
+  "person_anchor_y": 1.0,
+  "door_lock": {"stable": 3, "min_iou": 0.75, "ttl": 1.5},
+  "counting": {"axis": "y", "entry": "negative", "low": 0.4, "high": 0.6, "confirm": 2, "max_gap": 0.75}
+}

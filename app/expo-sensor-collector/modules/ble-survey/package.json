@@ -1,0 +1,7 @@
+{
+  "name": "ble-survey",
+  "version": "1.0.0",
+  "description": "Local iOS CoreBluetooth module for indoor BLE environment surveys.",
+  "main": "src/index.js",
+  "private": true
+}

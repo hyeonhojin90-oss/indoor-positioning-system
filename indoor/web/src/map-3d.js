@@ -1324,7 +1324,10 @@ function addRightEndFacilities() {
 
   const currentRoomEdgeX = state.data.rooms
     .filter((room) => !room.placement && (room.side || facilitySide) === facilitySide && room.x != null)
-    .map((room) => mapX(room.x) + (room.width || 4.5) / 2)
+    .map((room) => {
+      if (room.extend_to_restroom_passage) return passageLeftX;
+      return mapX(room.display_x ?? room.x) + (room.display_width || room.width || 4.5) / 2;
+    })
     .filter((edgeX) => edgeX < passageLeftX - 0.04)
     .sort((a, b) => b - a)[0];
   const rawGapFillWidth = currentFloor !== 4 && currentRoomEdgeX != null
@@ -1332,7 +1335,7 @@ function addRightEndFacilities() {
     : 0;
   const seamCoverFloors = new Set([1, 2, 3]);
   const shouldCoverRestroomSeam = rawGapFillWidth > 0.01
-    || (seamCoverFloors.has(currentFloor) && currentRoomEdgeX != null);
+    || (seamCoverFloors.has(currentFloor) && currentFloor !== 2 && currentRoomEdgeX != null);
   if (shouldCoverRestroomSeam) {
     const gapFillOverlap = currentFloor === 5
       ? 1.35
@@ -1697,9 +1700,11 @@ function addRoom(room) {
     return;
   }
   const layout = { ...DEFAULT_LAYOUT, ...state.data.layout_dimensions };
-  const width = room.width || 4.5;
+  // 2층의 끝 세 방은 현장 수집 좌표와 GLB 정합 전의 방 폭을 분리한다.
+  // display_*는 2D 평면의 기둥·진입구 선에 맞춘 렌더링 전용 값이다.
+  const authoredWidth = room.display_width || room.width || 4.5;
   const depth = room.depth || layout.room_depth;
-  const x = mapX(room.x);
+  const authoredX = mapX(room.display_x ?? room.x);
   const corridorHalf = layout.corridor_width / 2;
   const z = room.side === "upper"
     ? -(corridorHalf + depth / 2)
@@ -1707,11 +1712,6 @@ function addRoom(room) {
   const target = room.id === state.targetId;
   const wallHeight = 2.75;
   const wallThickness = 0.14;
-  const roomColor = target ? 0xffe2df : palette.roomFloor;
-  const outerZ = z + (room.side === "upper" ? -depth / 2 : depth / 2);
-  const frontZ = z + (room.side === "upper" ? depth / 2 : -depth / 2);
-  const leftEdge = x - width / 2;
-  const rightEdge = x + width / 2;
   const side = room.side || "lower";
   const sharedWallTolerance = 0.04;
   const restroom = state.data.facilities.find((item) => item.id === "4F_RESTROOM");
@@ -1721,6 +1721,15 @@ function addRoom(room) {
   const restroomPassageRightX = restroom?.passage_center_map_x == null
     ? null
     : mapX(restroom.passage_center_map_x) + (restroom.passage_width || 1.262) / 2;
+  const leftEdge = authoredX - authoredWidth / 2;
+  const rightEdge = room.extend_to_restroom_passage && restroomPassageLeftX != null
+    ? restroomPassageLeftX
+    : authoredX + authoredWidth / 2;
+  const width = rightEdge - leftEdge;
+  const x = (leftEdge + rightEdge) / 2;
+  const roomColor = target ? 0xffe2df : palette.roomFloor;
+  const outerZ = z + (room.side === "upper" ? -depth / 2 : depth / 2);
+  const frontZ = z + (room.side === "upper" ? depth / 2 : -depth / 2);
   const endsAtRestroomPassageLeft = restroomPassageLeftX != null
     && side === (restroom.side || "lower")
     && Math.abs(rightEdge - restroomPassageLeftX) <= sharedWallTolerance;
@@ -1730,8 +1739,8 @@ function addRoom(room) {
   const hasNeighborEndingAtLeftEdge = state.data.rooms.some((candidate) => {
     if (candidate === room || candidate.placement || candidate.x == null) return false;
     if ((candidate.side || "lower") !== side) return false;
-    const candidateWidth = candidate.width || 4.5;
-    const candidateX = mapX(candidate.x);
+    const candidateWidth = candidate.display_width || candidate.width || 4.5;
+    const candidateX = mapX(candidate.display_x ?? candidate.x);
     const candidateRightEdge = candidateX + candidateWidth / 2;
     return Math.abs(candidateRightEdge - leftEdge) <= sharedWallTolerance;
   });
@@ -2166,11 +2175,19 @@ function getFloor2ExtensionLayout() {
   const corridorCenterY = 732;
   const xScale = layout.main_length / (commonRight - commonLeft);
   const zScale = layout.room_depth / 110;
-  const toWorldX = (svgX) => (svgX - (commonLeft + commonRight) / 2) * xScale;
-  const toWorldZ = (svgY) => (svgY - corridorCenterY) * zScale;
+  const survey = state.data.floor2_extension.survey;
+  const surveyY = y => !survey || y >= 700 ? y : y >= 590
+    ? 700 + (y - 700) * (700 - survey.svg_near_y) / 110
+    : survey.svg_near_y + (y - 585) * (survey.svg_near_y - survey.svg_far_y) / 500;
+  const surveyX = x => !survey || x <= 1146 ? x : x <= 1232
+    ? 1146 + (x - 1146) * (survey.svg_corridor_right - 1146) / 86
+    : x + survey.svg_corridor_right - 1232;
+  const toWorldX = (svgX, upper = false) => ((upper ? surveyX(svgX) : svgX) - (commonLeft + commonRight) / 2) * xScale;
+  const toWorldZ = (svgY) => (surveyY(svgY) - corridorCenterY) * zScale;
   const rect = (x1, y1, x2, y2) => {
-    const left = Math.min(toWorldX(x1), toWorldX(x2));
-    const right = Math.max(toWorldX(x1), toWorldX(x2));
+    const upper = Math.max(y1, y2) <= 585;
+    const left = Math.min(toWorldX(x1, upper), toWorldX(x2, upper));
+    const right = Math.max(toWorldX(x1, upper), toWorldX(x2, upper));
     const nearZ = Math.max(toWorldZ(y1), toWorldZ(y2));
     const farZ = Math.min(toWorldZ(y1), toWorldZ(y2));
     return {
@@ -2188,15 +2205,19 @@ function getFloor2ExtensionLayout() {
   const sSpace = rect(1018, 85, 1068, 585);
   const room21052 = rect(1068, 85, 1146, 335);
   const room21051 = rect(1068, 335, 1146, 585);
-  const extensionCorridor = rect(1146, 85, 1198, 585);
+  const studyRight = state.data.floor2_extension.study_right_svg_x ?? 1146;
+  const extensionCorridorRight = state.data.floor2_extension.extension_corridor_right_svg_x ?? 1198;
+  const tdmLeft = state.data.floor2_extension.tdm_left_svg_x ?? 1198;
+  const extensionCorridor = rect(1146, 85, extensionCorridorRight, 585);
   const extensionRightSvg = 1310;
-  const room21042 = rect(1198, 85, extensionRightSvg, 335);
-  const room21041 = rect(1198, 335, extensionRightSvg, 585);
-  const open2107 = rect(1018, 590, 1080, 700);
-  const study = rect(1080, 590, 1310, 700);
-  const tdm = rect(1198, 596, 1310, 700);
+  const room21042 = rect(extensionCorridorRight, 85, extensionRightSvg, 335);
+  const room21041 = rect(extensionCorridorRight, 335, extensionRightSvg, 585);
+  const open2107Left = state.data.floor2_extension.open_2107_left_svg_x ?? 1018;
+  const open2107 = rect(open2107Left, 590, 1080, 700);
+  const study = rect(1080, 590, studyRight, 700);
+  const tdm = rect(tdmLeft, 596, 1310, 700);
   const pillar = rect(1128, 682, 1146, 700);
-  const entry = rect(1146, 690, 1198, 700);
+  const entry = rect(studyRight, 590, tdmLeft, 700);
 
   return {
     toWorldX,
@@ -2212,18 +2233,18 @@ function getFloor2ExtensionLayout() {
     tdm,
     pillar,
     entry,
-    branchWorldX: toWorldX(1169),
+    branchWorldX: (toWorldX(1146, true) + toWorldX(extensionCorridorRight, true)) / 2,
     mainEntryZ: toWorldZ(700),
     extensionEntryZ: toWorldZ(585),
     roomSplitZ: toWorldZ(335),
     farZ: toWorldZ(85),
     sSpaceOpening: {
-      center: (toWorldX(1035) + toWorldX(1068)) / 2,
-      width: Math.abs(toWorldX(1068) - toWorldX(1035))
+      center: (toWorldX(state.data.floor2_extension.m_space_door_svg_start_x ?? 1035) + toWorldX(state.data.floor2_extension.m_space_door_svg_end_x ?? 1068)) / 2,
+      width: Math.abs(toWorldX(state.data.floor2_extension.m_space_door_svg_end_x ?? 1068) - toWorldX(state.data.floor2_extension.m_space_door_svg_start_x ?? 1035))
     },
     corridorOpening: {
-      center: (toWorldX(1146) + toWorldX(1198)) / 2,
-      width: Math.abs(toWorldX(1198) - toWorldX(1146))
+      center: (toWorldX(1146, true) + toWorldX(extensionCorridorRight, true)) / 2,
+      width: Math.abs(toWorldX(extensionCorridorRight, true) - toWorldX(1146, true))
     }
   };
 }
@@ -2248,7 +2269,7 @@ function addFloor2Extension() {
     name
   });
 
-  addFloorRect(wing.sSpace, 0xd9eee8, "2f-s-space-floor", "S-SPACE");
+  addFloorRect(wing.sSpace, 0xd9eee8, "2f-m-space-floor", "M-SPACE");
   addFloorRect(wing.room21052, 0xf7e9af, "2f-2105-2-floor", "2105-2");
   addFloorRect(wing.room21051, 0xf7e9af, "2f-2105-1-floor", "2105-1");
   addFloorRect(wing.extensionCorridor, 0xcfe7df, "2f-extension-corridor");
@@ -2256,10 +2277,11 @@ function addFloor2Extension() {
   addFloorRect(wing.room21041, 0xe5e7eb, "2f-2104-1-floor", "2104-1");
   addFloorRect(wing.open2107, 0xe8edf4, "2f-2107-open-floor", "2107");
   addFloorRect(wing.study, 0xead7b5, "2f-study-floor", "STUDY");
+  addFloorRect(wing.entry, 0xcfe7df, "2f-study-entry-corridor-floor");
   addFloorRect(wing.tdm, 0xdce5f4, "2f-tdm-floor", "TDM");
 
   const extensionLeft = wing.sSpace.left;
-  const extensionRight = Math.max(wing.room21042.right, wing.tdm.right);
+  const extensionRight = wing.room21042.right;
   const extensionFarZ = Math.min(wing.sSpace.farZ, wing.room21042.farZ);
   const extensionNearZ = Math.max(wing.sSpace.nearZ, wing.room21041.nearZ);
   const extensionCenterZ = (extensionFarZ + extensionNearZ) / 2;
@@ -2268,7 +2290,15 @@ function addFloor2Extension() {
   addWall(state.scene, extensionRight, extensionCenterZ, 0.14, extensionDepth, { height: wallHeight, name: "2f-extension-right-wall" });
   addWall(state.scene, (extensionLeft + extensionRight) / 2, wing.farZ, extensionRight - extensionLeft, 0.14, { height: wallHeight, name: "2f-extension-far-wall" });
 
-  addWall(state.scene, wing.sSpace.right, wing.sSpace.centerZ, 0.14, wing.sSpace.depth, { height: wallHeight, name: "2f-s-space-room-wall" });
+  addWall(state.scene, wing.sSpace.right, wing.sSpace.centerZ, 0.14, wing.sSpace.depth, { height: wallHeight, name: "2f-m-space-room-wall" });
+  addWallXSegments(wing.sSpace.nearZ, wing.sSpace.left, wing.sSpace.right, [wing.sSpaceOpening], {
+    height: wallHeight,
+    name: "2f-m-space-near-wall-with-door"
+  });
+  addWall(state.scene, wing.open2107.right, wing.open2107.centerZ, 0.14, wing.open2107.depth, {
+    height: wallHeight,
+    name: "2f-2107-study-exterior-wall"
+  });
   addWallZSegments(wing.extensionCorridor.left, wing.extensionCorridor.farZ, wing.extensionCorridor.nearZ, [
     { center: wing.room21052.centerZ, width: doorWidth },
     { center: wing.room21051.centerZ, width: doorWidth }
@@ -2279,6 +2309,12 @@ function addFloor2Extension() {
   ], { height: wallHeight, name: "2f-2104-corridor-wall" });
   addWall(state.scene, wing.room21052.centerX, wing.roomSplitZ, wing.room21052.width, 0.14, { height: wallHeight, name: "2f-2105-divider" });
   addWall(state.scene, wing.room21042.centerX, wing.roomSplitZ, wing.room21042.width, 0.14, { height: wallHeight, name: "2f-2104-divider" });
+  addWall(state.scene, wing.room21051.centerX, wing.room21051.nearZ, wing.room21051.width, 0.14, { height: wallHeight, name: "2f-2105-1-near-outer-wall" });
+  addWall(state.scene, wing.room21041.centerX, wing.room21041.nearZ, wing.room21041.width, 0.14, { height: wallHeight, name: "2f-2104-1-near-outer-wall" });
+  addWall(state.scene, wing.tdm.left, wing.tdm.centerZ, 0.14, wing.tdm.depth, { height: wallHeight, name: "2f-tdm-left-wall" });
+  addWall(state.scene, wing.tdm.right, wing.tdm.centerZ, 0.14, wing.tdm.depth, { height: wallHeight, name: "2f-tdm-right-wall" });
+  addWall(state.scene, wing.tdm.centerX, wing.tdm.farZ, wing.tdm.width, 0.14, { height: wallHeight, name: "2f-tdm-far-wall" });
+  addWall(state.scene, wing.tdm.centerX, wing.tdm.nearZ, wing.tdm.width, 0.14, { height: wallHeight, name: "2f-tdm-near-wall" });
 
   const pillarSize = Math.min(wing.pillar.width, wing.pillar.depth);
   addBox(state.scene, {
@@ -2293,7 +2329,7 @@ function addFloor2Extension() {
   });
 
   const deskColor = 0x9a6a35;
-  const addDesk = (x1, y1, x2, y2, name) => {
+  const addDesk = (x1, y1, x2, y2, name, color = deskColor) => {
     const box = {
       left: Math.min(wing.toWorldX(x1), wing.toWorldX(x2)),
       right: Math.max(wing.toWorldX(x1), wing.toWorldX(x2)),
@@ -2307,15 +2343,16 @@ function addFloor2Extension() {
       d: box.nearZ - box.farZ,
       h: 0.72,
       y: 0.38,
-      color: deskColor,
+      color,
       name
     });
   };
-  addDesk(1090, 600, 1128, 613, "2f-u-desk-back");
-  addDesk(1090, 677, 1128, 690, "2f-u-desk-front");
-  addDesk(1090, 613, 1103, 677, "2f-u-desk-side");
-  addDesk(1106, 628, 1124, 639, "2f-u-desk-inner-1");
-  addDesk(1106, 654, 1124, 665, "2f-u-desk-inner-2");
+  addDesk(1067, 590, 1080, 678, "2f-2107-high-ceiling-facing-study-desk", 0x4a4f57);
+  addDesk(1080, 687, 1115, 700, "2f-u-desk-front");
+  addDesk(1080, 620, 1093, 687, "2f-u-desk-side");
+  [1080, 1094, 1108, 1122, 1136].forEach((x, index) => {
+    addDesk(x, 590, x + 10, 598, `2f-study-single-table-${index + 1}`);
+  });
 
   [
     [wing.extensionCorridor.left, wing.room21052.centerZ, "2f-2105-2-door"],
@@ -2324,16 +2361,17 @@ function addFloor2Extension() {
     [wing.extensionCorridor.right, wing.room21041.centerZ, "2f-2104-1-door"]
   ].forEach(([x, z, name]) => addBox(state.scene, { x, z, w: 0.12, d: doorWidth, h: 0.05, y: 0.16, color: doorColor, name }));
   addBox(state.scene, { x: wing.branchWorldX, z: wing.mainEntryZ, w: wing.corridorOpening.width, d: 0.12, h: 0.05, y: 0.16, color: doorColor, name: "2f-main-extension-entry" });
-  addBox(state.scene, { x: wing.sSpaceOpening.center, z: wing.extensionEntryZ, w: wing.sSpaceOpening.width, d: 0.12, h: 0.05, y: 0.16, color: doorColor, name: "2f-2107-s-space-entry" });
+  addBox(state.scene, { x: wing.sSpaceOpening.center, z: wing.extensionEntryZ, w: wing.sSpaceOpening.width, d: 0.12, h: 0.05, y: 0.16, color: doorColor, name: "2f-2107-m-space-entry" });
 
-  addLabel("S-space", wing.sSpace.centerX, wing.sSpace.centerZ, 1.05, 0.55, "#22584d");
+  addLabel("M-space", wing.sSpace.centerX, wing.sSpace.centerZ, 1.05, 0.55, "#22584d");
   addLabel("2105-2", wing.room21052.centerX, wing.room21052.centerZ, 1.15, 0.62, "#1f2937");
   addLabel("2105-1", wing.room21051.centerX, wing.room21051.centerZ, 1.15, 0.62, "#1f2937");
   addLabel("증축부 복도", wing.extensionCorridor.centerX, wing.extensionCorridor.centerZ, 1.0, 0.5, "#22584d");
   addLabel("2104-2", wing.room21042.centerX, wing.room21042.centerZ, 1.15, 0.62, "#1f2937");
   addLabel("2104-1", wing.room21041.centerX, wing.room21041.centerZ, 1.15, 0.62, "#1f2937");
   addLabel("2107 개방공간", wing.open2107.centerX, wing.open2107.centerZ, 1.0, 0.52, "#334155");
-  addLabel("ㄷ자 학습공간", wing.study.left + wing.study.width * 0.28, wing.study.centerZ, 1.25, 0.52, "#7c4a18");
+  addLabel("ㄴ자 학습공간", wing.study.left + wing.study.width * 0.28, wing.study.centerZ, 1.25, 0.52, "#7c4a18");
+  addLabel("진입 복도", wing.entry.centerX, wing.entry.centerZ, 0.92, 0.48, "#22584d");
   addLabel("TDM", wing.tdm.centerX, wing.tdm.centerZ, 1.15, 0.62, "#1e3a8a");
   addLabel("기둥", wing.pillar.centerX, wing.pillar.centerZ, 3.15, 0.4, "#8a5b12");
 }
@@ -2369,14 +2407,26 @@ function getFloor3ExtensionLayout() {
     };
   };
 
-  const free = rect(1146, 455, 1282, 585);
-  const corridor = rect(1146, 85, 1192, 455);
-  const itHall = rect(1018, 85, 1146, 455);
-  const itHallLower = rect(1018, 455, 1146, 585);
-  const unknownSpace = rect(1082, 455, 1146, 520);
-  const stair = rect(1082, 520, 1146, 585);
-  const room31041 = rect(1198, 85, 1282, 270);
-  const room31042 = rect(1198, 270, 1282, 455);
+  const survey = ext.survey || {};
+  const freeLeft = survey.svg_free_left ?? 1146;
+  const freeRight = survey.svg_free_right ?? 1282;
+  const freeFarY = survey.svg_free_far_y ?? 455;
+  const freeNearY = survey.svg_free_near_y ?? 585;
+  const corridorLeft = survey.svg_corridor_left ?? 1146;
+  const corridorRight = survey.svg_corridor_right ?? 1192;
+  const corridorFarY = survey.svg_corridor_far_y ?? 85;
+  const corridorNearY = survey.svg_corridor_near_y ?? 455;
+  const lowerSplitY = freeFarY + (freeNearY - freeFarY) / 2;
+  const roomSplitY = corridorFarY + (corridorNearY - corridorFarY) / 2;
+  const roomLeft = corridorRight + 6;
+  const free = rect(freeLeft, freeFarY, freeRight, freeNearY);
+  const corridor = rect(corridorLeft, corridorFarY, corridorRight, corridorNearY);
+  const itHall = rect(1018, corridorFarY, freeLeft, corridorNearY);
+  const itHallLower = rect(1018, freeFarY, freeLeft, freeNearY);
+  const unknownSpace = rect(1082, freeFarY, freeLeft, lowerSplitY);
+  const stair = rect(1082, lowerSplitY, freeLeft, freeNearY);
+  const room31041 = rect(roomLeft, corridorFarY, freeRight, roomSplitY);
+  const room31042 = rect(roomLeft, roomSplitY, freeRight, corridorNearY);
   const entryStartX = toWorldX(1180);
   const entryEndX = toWorldX(1248);
   const entryZ = toWorldZ(590);
@@ -2758,9 +2808,11 @@ function addRoute() {
   if (!room) return;
 
   const layout = { ...DEFAULT_LAYOUT, ...state.data.layout_dimensions };
-  const start = new THREE.Vector3(HUB_X, 0.16, layout.corridor_width / 2 + EV_FRONT_Z);
   const hub = state.data.routing.hub_junction;
   const junction = new THREE.Vector3(mapX(hub.x), 0.16, mapZ(hub.y));
+  // 경로 수집과 동일하게 코어에서 메인복도로 나오는 교차점에서 시작한다.
+  // 코어 내부 임시 좌표에서 시작하면 복도 중앙선과 어긋난 안내선이 생긴다.
+  const start = junction.clone();
   let dest;
   let points;
   if (room.placement === "free" || room.placement === "extension-marker") {
@@ -2775,23 +2827,23 @@ function addRoute() {
       const corridorBranch = new THREE.Vector3(target.centerX, 0.16, 0);
       dest = new THREE.Vector3(target.centerX, 0.16, target.centerZ);
       if (room.extension_zone === "rest-area") {
-        points = [start, junction, corridorBranch, dest];
+        points = [start, corridorBranch, dest];
       } else {
         const entranceBranch = new THREE.Vector3(wing.mainEntranceCenter, 0.16, 0);
         const mainEntrance = new THREE.Vector3(wing.mainEntranceCenter, 0.16, wing.upperOuterZ);
         const outdoorTurn = new THREE.Vector3(target.centerX, 0.16, wing.upperOuterZ);
         if (room.extension_zone === "admin") {
           const adminEntrance = new THREE.Vector3(wing.adminDoor.center, 0.16, wing.admin.nearZ);
-          points = [start, junction, entranceBranch, mainEntrance, outdoorTurn, adminEntrance, dest];
+          points = [start, entranceBranch, mainEntrance, outdoorTurn, adminEntrance, dest];
         } else {
-          points = [start, junction, entranceBranch, mainEntrance, outdoorTurn, dest];
+          points = [start, entranceBranch, mainEntrance, outdoorTurn, dest];
         }
       }
     } else if (state.floor === 2) {
       const wing = getFloor2ExtensionLayout();
       const targetByZone = {
         "2107": wing.open2107,
-        "s-space": wing.sSpace,
+        "m-space": wing.sSpace,
         "study": wing.study,
         "tdm": wing.tdm,
         "2105-1": wing.room21051,
@@ -2802,17 +2854,21 @@ function addRoute() {
       const target = targetByZone[room.extension_zone] || wing.open2107;
       const extensionJunction = new THREE.Vector3(wing.branchWorldX, 0.16, 0);
       const mainEntry = new THREE.Vector3(wing.branchWorldX, 0.16, wing.mainEntryZ);
+      const open2107Corridor = new THREE.Vector3(wing.open2107.centerX, 0.16, 0);
+      const open2107Entry = new THREE.Vector3(wing.open2107.centerX, 0.16, wing.open2107.nearZ);
       dest = new THREE.Vector3(target.centerX, 0.16, target.centerZ);
-      if (room.extension_zone === "2107" || room.extension_zone === "study" || room.extension_zone === "tdm") {
-        points = [start, junction, extensionJunction, mainEntry, dest];
-      } else if (room.extension_zone === "s-space") {
-        const openSpace = new THREE.Vector3(wing.open2107.centerX, 0.16, wing.open2107.centerZ);
+      if (room.extension_zone === "2107") {
+        // 2107은 메인복도에서 바로 들어간다. 학습공간 외벽을 가로지르지 않는다.
+        points = [start, open2107Corridor, open2107Entry, dest];
+      } else if (room.extension_zone === "study" || room.extension_zone === "tdm") {
+        points = [start, extensionJunction, mainEntry, dest];
+      } else if (room.extension_zone === "m-space") {
         const sSpaceEntry = new THREE.Vector3(wing.sSpaceOpening.center, 0.16, wing.extensionEntryZ);
-        points = [start, junction, extensionJunction, mainEntry, openSpace, sSpaceEntry, dest];
+        points = [start, open2107Corridor, open2107Entry, sSpaceEntry, dest];
       } else {
         const corridorEntry = new THREE.Vector3(wing.branchWorldX, 0.16, wing.extensionEntryZ);
         const corridorTarget = new THREE.Vector3(wing.extensionCorridor.centerX, 0.16, target.centerZ);
-        points = [start, junction, extensionJunction, mainEntry, corridorEntry, corridorTarget, dest];
+        points = [start, extensionJunction, mainEntry, corridorEntry, corridorTarget, dest];
       }
     } else {
       const wing = getFloor3ExtensionLayout();
@@ -2831,25 +2887,23 @@ function addRoute() {
     if (room.extension_zone === "it-hall") {
       const stairTurn = new THREE.Vector3(wing.branchWorldX, 0.16, wing.itHallDoorZ);
       const stairEntry = new THREE.Vector3(wing.stair.centerX, 0.16, wing.itHallDoorZ);
-      points = [start, junction, extensionJunction, entryPoint, stairTurn, stairEntry, dest];
+      points = [start, extensionJunction, entryPoint, stairTurn, stairEntry, dest];
     } else {
       const corridorPoint = new THREE.Vector3(wing.corridorX, 0.16, target.corridorZ);
-      points = [start, junction, extensionJunction, entryPoint, corridorPoint, dest];
+      points = [start, extensionJunction, entryPoint, corridorPoint, dest];
     }
     }
   } else {
     // Standard-floor data is authored from the 2D room centerline. Floors that
     // do not need a separately measured doorway use that 2D coordinate at the
     // main-corridor centerline as their route entry point.
-    const frontX = Number.isFinite(room.front_x) ? room.front_x : room.x;
-    const frontY = Number.isFinite(room.front_y) ? room.front_y : 0;
-    const front = new THREE.Vector3(mapX(frontX), 0.16, mapZ(frontY));
     const roomDepth = room.depth || layout.room_depth;
     const roomZ = room.side === "upper"
       ? -(layout.corridor_width / 2 + roomDepth / 2)
       : layout.corridor_width / 2 + roomDepth / 2;
-    dest = new THREE.Vector3(mapX(room.x), 0.16, roomZ);
-    points = [start, junction, front, dest];
+    const visualFront = room.display_front_x ?? room.display_x ?? room.front_x;
+    dest = new THREE.Vector3(mapX(room.display_x ?? room.x), 0.16, roomZ);
+    points = [start, new THREE.Vector3(mapX(visualFront), 0.16, 0), dest];
   }
   for (let index = 0; index < points.length - 1; index += 1) {
     const from = points[index];
@@ -3615,7 +3669,8 @@ function updateDetail() {
     $("detail").innerHTML = `
       <strong>${room.label || room.id} 안내 기준</strong>
       ${isOutdoor ? "1119 오른쪽 정문으로 나간 뒤 야외 복도를 통해 행정실 방향으로 이동한다." : "코어와 양쪽 계단은 위층과 같은 고정 위치를 사용한다."}<br>
-      휴식공간은 정문 오른쪽부터 1107 시작선 전까지만 차지하며 정문 영역을 침범하지 않는다.<br>
+      휴식공간은 정문 오른쪽부터 명칭 미확정 통합공간 시작선 전까지만 차지하며 정문 영역을 침범하지 않는다.<br>
+      1122는 iSPACE, 1221은 S-SPACE이며 기존 1107~1103 구간은 하나의 통합공간으로 표시한다.<br>
       행정실은 본동과 분리된 하나의 건물로 표시하고, 사이 공간은 야외 복도로 연결한다.<br>
       1213과 1210 사이에는 별도 강의실이 아닌 출입문이 있는 빈 통로가 있다.
     `;
@@ -3626,8 +3681,8 @@ function updateDetail() {
     $("detail").innerHTML = `
       <strong>${room.label || room.id} 안내 기준</strong>
       ${isExtension ? "메인복도에서 2107 개방공간으로 진입한 뒤 목적 구역으로 이동한다." : "코어와 양쪽 계단은 3·4층과 같은 고정 위치를 사용한다."}<br>
-      2107은 2210 오른쪽 선에서 끝나며, 그 옆 같은 건물 틀 안에 ㄷ자 학습공간과 TDM이 이어진다.<br>
-      S-space는 별도 외벽 증축이 아니라 2105-1·2 왼쪽에 남는 세로 공간이며 2107에서 진입한다.<br>
+      2107은 2210 오른쪽 선에서 끝나며, 그 옆 같은 건물 틀 안에 ㄴ자 학습공간과 TDM이 이어진다.<br>
+      M-space는 별도 외벽 증축이 아니라 2105-1·2 왼쪽에 남는 세로 공간이며 2107에서 진입한다.<br>
       정사각형 기둥과 TDM 사이의 넓은 입구를 지나 증축부 복도와 2104·2105 구역으로 이동한다.
     `;
     return;
@@ -3648,6 +3703,7 @@ function updateDetail() {
       <strong>${room.label || room.id} 안내 기준</strong>
       5층은 빨간박스 공통 본동 틀과 야외공간을 함께 표시합니다.<br>
       코어, 화장실, 엘레베이터, 메인계단, 좌우 사이드계단은 4층과 같은 위치로 고정합니다.<br>
+      5123 왼쪽 구간은 하나의 5126 심리상담센터로 통합합니다.<br>
       기존 노란 증축 외형과 복도 위 빈 공간은 하나의 야외공간으로 통합합니다.<br>
       야외 출입문은 5111 오른쪽 복도 위 경계와 오른쪽 복도 끝에 표시합니다.<br>
       5205와 5205-1은 편의점으로 통합 표기했습니다.<br>
@@ -3776,7 +3832,7 @@ function applyFloor(floor, preferredTargetId = null) {
     : floor === 1
       ? "공통 코어 기준틀에 정문, 휴식공간, 야외복도와 행정실을 결합한 1층 모델"
       : floor === 2
-      ? "공통 코어 기준틀에 S-space, 학습공간, TDM과 2층 증축부를 결합한 모델"
+      ? "공통 코어 기준틀에 M-space, 학습공간, TDM과 2층 증축부를 결합한 모델"
       : floor === 3
       ? "4층 기준틀과 실제 3층 GLB 신규 공간을 결합한 3층 초안"
     : floor >= 7
@@ -3919,4 +3975,3 @@ init().catch((error) => {
     </main>
   `;
 });
-
